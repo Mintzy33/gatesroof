@@ -108,7 +108,7 @@ function Counter({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
   return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
-function ServiceCard({ icon, title, desc, delay }: { icon: ReactNode; title: string; desc: string; delay: number }) {
+function ServiceCard({ icon, title, desc, delay, href }: { icon: ReactNode; title: string; desc: string; delay: number; href?: string }) {
   const [h, setH] = useState(false);
   return (
     <FadeIn delay={delay}>
@@ -141,6 +141,7 @@ function ServiceCard({ icon, title, desc, delay }: { icon: ReactNode; title: str
           opacity: h ? 1 : 0, transform: h ? "translateX(0)" : "translateX(-8px)",
           transition: "all 0.35s cubic-bezier(0.16,1,0.3,1)",
         }}>Learn more <span style={{ fontSize: 18 }}>→</span></div>
+        {href && <a href={href} style={{ position: "absolute", inset: 0 }} />}
       </div>
     </FadeIn>
   );
