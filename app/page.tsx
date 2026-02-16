@@ -344,7 +344,7 @@ export default function Home() {
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
                   <div style={{ marginBottom: 12 }}>{Icons.award(WHITE)}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>4x Manufacturer Certified</div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>GAF • Malarkey • CertainTeed • Emerald</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>GAF • Malarkey • CertainTeed Platinum Preferred • Emerald</div>
                 </div>
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
                   <div style={{ marginBottom: 12 }}>{Icons.shield(WHITE)}</div>
