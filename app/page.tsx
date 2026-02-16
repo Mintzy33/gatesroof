@@ -1,65 +1,494 @@
-import Image from "next/image";
+"use client";
+import { useState, useEffect, useRef, ReactNode } from "react";
+
+const NAVY = "#0D2137";
+const ACCENT = "#3B7DD8";
+const GOLD = "#C9A54E";
+const LIGHT_BG = "#FAFBFD";
+const WHITE = "#FFFFFF";
+const TEXT = "#2D3748";
+const TEXT_LIGHT = "#64748B";
+
+const VIDEO_URL = "https://drive.google.com/uc?export=download&id=1jN6_Zunxv1CvN4icZ_bayvJhm-ElyLWB";
+
+function useInView(threshold = 0.12) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      { threshold }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return [ref, visible] as const;
+}
+
+function FadeIn({ children, delay = 0, direction = "up" }: { children: ReactNode; delay?: number; direction?: string }) {
+  const [ref, visible] = useInView();
+  const dirs: Record<string, string> = { up: "translateY(32px)", down: "translateY(-32px)", left: "translateX(32px)", right: "translateX(-32px)", none: "none" };
+  return (
+    <div ref={ref} style={{
+      opacity: visible ? 1 : 0,
+      transform: visible ? "none" : dirs[direction],
+      transition: `opacity 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s, transform 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s`,
+    }}>{children}</div>
+  );
+}
+
+function Counter({ end, suffix = "", duration = 2000 }: { end: number; suffix?: string; duration?: number }) {
+  const [count, setCount] = useState(0);
+  const [ref, visible] = useInView();
+  useEffect(() => {
+    if (!visible) return;
+    let start = 0;
+    const step = end / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= end) { setCount(end); clearInterval(timer); }
+      else setCount(Math.floor(start));
+    }, 16);
+    return () => clearInterval(timer);
+  }, [visible, end, duration]);
+  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
+}
+
+function ServiceCard({ icon, title, desc, delay }: { icon: string; title: string; desc: string; delay: number }) {
+  const [h, setH] = useState(false);
+  return (
+    <FadeIn delay={delay}>
+      <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+        style={{
+          background: WHITE, borderRadius: 20, padding: "40px 32px",
+          cursor: "pointer", transition: "all 0.4s cubic-bezier(0.16,1,0.3,1)",
+          transform: h ? "translateY(-6px)" : "none",
+          boxShadow: h ? "0 20px 50px rgba(13,33,55,0.1)" : "0 2px 12px rgba(13,33,55,0.04)",
+          border: `1px solid ${h ? "rgba(59,125,216,0.15)" : "rgba(13,33,55,0.05)"}`,
+          position: "relative", overflow: "hidden",
+        }}>
+        <div style={{
+          position: "absolute", top: 0, left: 0, width: "100%", height: 3,
+          background: `linear-gradient(90deg, ${ACCENT}, ${GOLD})`,
+          transform: h ? "scaleX(1)" : "scaleX(0)", transformOrigin: "left",
+          transition: "transform 0.5s cubic-bezier(0.16,1,0.3,1)",
+        }} />
+        <div style={{
+          width: 56, height: 56, borderRadius: 16,
+          background: h ? `${ACCENT}12` : LIGHT_BG,
+          display: "flex", alignItems: "center", justifyContent: "center",
+          fontSize: 28, marginBottom: 20, transition: "background 0.3s",
+        }}>{icon}</div>
+        <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 21, fontWeight: 700, color: NAVY, marginBottom: 10 }}>{title}</h3>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{desc}</p>
+        <div style={{
+          marginTop: 24, display: "flex", alignItems: "center", gap: 8,
+          color: ACCENT, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+          opacity: h ? 1 : 0, transform: h ? "translateX(0)" : "translateX(-8px)",
+          transition: "all 0.35s cubic-bezier(0.16,1,0.3,1)",
+        }}>Learn more <span style={{ fontSize: 18 }}>→</span></div>
+      </div>
+    </FadeIn>
+  );
+}
+
+function TestimonialCard({ name, location, text, stars, delay }: { name: string; location: string; text: string; stars: number; delay: number }) {
+  return (
+    <FadeIn delay={delay}>
+      <div style={{
+        background: WHITE, borderRadius: 20, padding: "36px 32px",
+        border: "1px solid rgba(13,33,55,0.05)", boxShadow: "0 2px 12px rgba(13,33,55,0.03)",
+        height: "100%", display: "flex", flexDirection: "column" as const,
+      }}>
+        <div style={{ display: "flex", gap: 3, marginBottom: 20 }}>
+          {Array(stars).fill(0).map((_, i) => <span key={i} style={{ color: GOLD, fontSize: 18 }}>★</span>)}
+        </div>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.8, color: TEXT, margin: "0 0 24px", flex: 1, fontStyle: "italic" }}>&ldquo;{text}&rdquo;</p>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{
+            width: 44, height: 44, borderRadius: "50%",
+            background: `linear-gradient(135deg, ${NAVY}, ${ACCENT})`,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            color: WHITE, fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700,
+          }}>{name[0]}</div>
+          <div>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY }}>{name}</div>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>{location}</div>
+          </div>
+        </div>
+      </div>
+    </FadeIn>
+  );
+}
+
+function CityPill({ name, delay }: { name: string; delay: number }) {
+  const [h, setH] = useState(false);
+  return (
+    <FadeIn delay={delay} direction="none">
+      <span onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)} style={{
+        display: "inline-block", padding: "10px 22px", borderRadius: 100,
+        border: `1.5px solid ${h ? ACCENT : "rgba(13,33,55,0.12)"}`,
+        background: h ? ACCENT : "transparent", color: h ? WHITE : NAVY,
+        fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500,
+        cursor: "pointer", transition: "all 0.3s",
+      }}>{name}</span>
+    </FadeIn>
+  );
+}
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const headerSolid = scrollY > 60;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>
+
+      {/* HEADER */}
+      <header style={{
+        position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
+        background: headerSolid ? "rgba(255,255,255,0.95)" : "transparent",
+        backdropFilter: headerSolid ? "blur(20px)" : "none",
+        borderBottom: headerSolid ? "1px solid rgba(13,33,55,0.06)" : "none",
+        transition: "all 0.4s",
+      }}>
+        <div style={{
+          maxWidth: 1200, margin: "0 auto", padding: "0 24px",
+          height: headerSolid ? 68 : 80,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          transition: "height 0.4s",
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 10, background: NAVY, display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <span style={{ color: WHITE, fontSize: 20, fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif" }}>G</span>
+            </div>
+            <div>
+              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: headerSolid ? NAVY : WHITE, transition: "color 0.4s" }}>GATES</div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, fontWeight: 600, color: headerSolid ? TEXT_LIGHT : "rgba(255,255,255,0.5)", letterSpacing: "0.18em", transition: "color 0.4s" }}>ENTERPRISES LLC</div>
+            </div>
+          </div>
+          <nav style={{ display: "flex", alignItems: "center", gap: 28 }}>
+            {["Services", "About", "Gallery", "Reviews", "Blog", "Contact"].map(item => (
+              <a key={item} href={`#${item.toLowerCase()}`} style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500,
+                color: headerSolid ? TEXT : "rgba(255,255,255,0.8)",
+                textDecoration: "none", transition: "color 0.3s",
+              }}>{item}</a>
+            ))}
+            <div style={{ width: 1, height: 20, background: headerSolid ? "rgba(13,33,55,0.1)" : "rgba(255,255,255,0.15)" }} />
+            <a href="tel:7207663377" style={{
+              fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+              color: headerSolid ? NAVY : WHITE, textDecoration: "none", transition: "color 0.4s",
+            }}>(720) 766-3377</a>
+            <a href="#estimate" style={{
+              background: ACCENT, color: WHITE, border: "none", borderRadius: 100,
+              padding: "12px 26px", textDecoration: "none",
+              fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600,
+              boxShadow: "0 4px 14px rgba(59,125,216,0.25)",
+            }}>Free Estimate</a>
+          </nav>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      {/* HERO */}
+      <section style={{
+        position: "relative", minHeight: "100vh", background: NAVY,
+        display: "flex", alignItems: "center", overflow: "hidden",
+      }}>
+        <video autoPlay muted loop playsInline style={{
+          position: "absolute", inset: 0, width: "100%", height: "100%",
+          objectFit: "cover", opacity: 0.35,
+        }}>
+          <source src={VIDEO_URL} type="video/mp4" />
+        </video>
+        <div style={{
+          position: "absolute", inset: 0,
+          background: "linear-gradient(170deg, rgba(13,33,55,0.85) 0%, rgba(10,31,51,0.75) 50%, rgba(13,33,55,0.9) 100%)",
+        }} />
+        <div style={{
+          maxWidth: 1200, margin: "0 auto", padding: "160px 24px 120px",
+          position: "relative", zIndex: 1, width: "100%",
+          display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center",
+        }}>
+          <div>
+            <FadeIn delay={0.1}>
+              <div style={{
+                display: "inline-flex", alignItems: "center", gap: 8,
+                background: "rgba(59,125,216,0.08)", border: "1px solid rgba(59,125,216,0.15)",
+                borderRadius: 100, padding: "8px 18px", marginBottom: 28,
+              }}>
+                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#4ADE80", boxShadow: "0 0 10px rgba(74,222,128,0.4)" }} />
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, color: "rgba(255,255,255,0.65)" }}>GAF Master Elite — Top 2% in North America</span>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <h1 style={{
+                fontFamily: "'Playfair Display', Georgia, serif",
+                fontSize: "clamp(40px, 4.5vw, 64px)", fontWeight: 800,
+                color: WHITE, lineHeight: 1.08, margin: "0 0 24px",
+              }}>
+                Colorado&apos;s Most{" "}
+                <span style={{
+                  background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`,
+                  WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                }}>Trusted</span>
+                <br />Roofing Team
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.35}>
+              <p style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 18, lineHeight: 1.75,
+                color: "rgba(255,255,255,0.5)", margin: "0 0 36px", maxWidth: 480,
+              }}>From hail damage claims to full exterior restoration — 7,200+ roofs completed across the Denver metro. Your roof. Our reputation.</p>
+            </FadeIn>
+            <FadeIn delay={0.45}>
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
+                <a href="#estimate" style={{
+                  background: ACCENT, color: WHITE, borderRadius: 100,
+                  padding: "18px 36px", textDecoration: "none",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 600,
+                  boxShadow: "0 8px 30px rgba(59,125,216,0.3)",
+                }}>Get Your Free Inspection →</a>
+                <a href="tel:7207663377" style={{
+                  background: "rgba(255,255,255,0.06)", color: WHITE,
+                  border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100,
+                  padding: "18px 36px", textDecoration: "none",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 500,
+                }}>(720) 766-3377</a>
+              </div>
+            </FadeIn>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column" as const, gap: 16 }}>
+            <FadeIn delay={0.3} direction="left">
+              <div style={{
+                background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: 20, padding: "32px 36px", backdropFilter: "blur(10px)",
+              }}>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 24 }}>
+                  {[
+                    { num: 7204, suffix: "+", label: "Roofs Completed" },
+                    { num: 10, suffix: "+", label: "Years in Business" },
+                    { num: 0, suffix: "", label: "Google Rating", display: "4.8★" },
+                  ].map((s, i) => (
+                    <div key={i} style={{ textAlign: "center" as const }}>
+                      <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: WHITE, lineHeight: 1 }}>
+                        {s.display ? s.display : <Counter end={s.num} suffix={s.suffix} />}
+                      </div>
+                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 8, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.45} direction="left">
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
+                  <div style={{ fontSize: 28, marginBottom: 8 }}>🏆</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>4x Manufacturer Certified</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>GAF • Malarkey • CertainTeed • Emerald</div>
+                </div>
+                <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
+                  <div style={{ fontSize: 28, marginBottom: 8 }}>📋</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>Insurance Claim Experts</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>Inspection to payment — we handle it all</div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
         </div>
-      </main>
+        <div style={{ position: "absolute", bottom: 28, left: "50%", animation: "heroFloat 2.5s ease-in-out infinite", display: "flex", flexDirection: "column" as const, alignItems: "center" }}>
+          <div style={{ width: 24, height: 40, borderRadius: 12, border: "1.5px solid rgba(255,255,255,0.15)", display: "flex", justifyContent: "center", paddingTop: 8 }}>
+            <div style={{ width: 3, height: 8, borderRadius: 3, background: "rgba(255,255,255,0.4)", animation: "scrollDot 2s ease-in-out infinite" }} />
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST BAR */}
+      <section style={{ background: WHITE, padding: "32px 24px", borderBottom: "1px solid rgba(13,33,55,0.05)" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 40, flexWrap: "wrap" as const }}>
+          {["GAF MASTER ELITE", "PLATINUM PREFERRED", "MALARKEY CERTIFIED", "EMERALD PREMIUM", "BBB A+ RATED"].map((badge) => (
+            <div key={badge} style={{ display: "flex", alignItems: "center", gap: 10, opacity: 0.45 }}>
+              <div style={{ width: 8, height: 8, borderRadius: "50%", background: GOLD }} />
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11.5, fontWeight: 700, color: NAVY, letterSpacing: "0.12em" }}>{badge}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" style={{ padding: "110px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <FadeIn>
+            <div style={{ textAlign: "center" as const, marginBottom: 64 }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>WHAT WE DO</span>
+              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, color: NAVY, margin: "14px 0 16px" }}>Complete Exterior Solutions</h2>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: TEXT_LIGHT, maxWidth: 520, margin: "0 auto", lineHeight: 1.7 }}>One contractor for everything above your foundation. No subcontractor runaround.</p>
+            </div>
+          </FadeIn>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+            <ServiceCard icon="🏠" title="Roof Replacement" desc="Full tear-off and install with impact-resistant Class 4 shingles. GAF Golden Pledge warranty available." delay={0.05} />
+            <ServiceCard icon="⚡" title="Storm & Hail Damage" desc="Colorado's insurance claim experts. We handle the entire process from inspection to final payment." delay={0.1} />
+            <ServiceCard icon="🔧" title="Roof Repair" desc="Leak repair, flashing, vent replacement, and emergency tarping. Fast response across Denver metro." delay={0.15} />
+            <ServiceCard icon="🏗️" title="Siding & Exterior" desc="James Hardie, vinyl, and wood siding installation. Plus professional exterior painting." delay={0.2} />
+            <ServiceCard icon="🌧️" title="Gutters & Guards" desc="Seamless gutter installation, downspouts, and leaf guard systems to protect your foundation." delay={0.25} />
+            <ServiceCard icon="📋" title="Insurance Claims" desc="We speak adjuster. From supplement requests to O&P negotiations — we fight for your full payout." delay={0.3} />
+          </div>
+        </div>
+      </section>
+
+      {/* WHY GATES */}
+      <section id="about" style={{ padding: "110px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", gap: 80, alignItems: "center" }}>
+            <div>
+              <FadeIn>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>WHY GATES</span>
+                <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(30px, 3.5vw, 44px)", fontWeight: 800, color: NAVY, margin: "14px 0 20px", lineHeight: 1.12 }}>
+                  Not Your Average<br />Roofing Company
+                </h2>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.8, color: TEXT_LIGHT, marginBottom: 36 }}>
+                  While storm chasers come and go, we&apos;ve been protecting Colorado homes for over a decade. Our four manufacturer certifications mean access to the best warranties in the industry.
+                </p>
+              </FadeIn>
+              <FadeIn delay={0.15}>
+                <div style={{ display: "flex", gap: 32 }}>
+                  {[{ v: "7,204+", l: "Roofs" }, { v: "10+", l: "Years" }, { v: "4.8★", l: "Rating" }].map((s, i) => (
+                    <div key={i} style={{ textAlign: "center" as const }}>
+                      <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: NAVY }}>{s.v}</div>
+                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, marginTop: 4, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+              </FadeIn>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+              {[
+                { n: "01", title: "Top 2% Nationwide", desc: "GAF Master Elite means the highest training, best warranties, and manufacturer backing.", c: ACCENT },
+                { n: "02", title: "Insurance Fighters", desc: "We've recovered millions in supplements. We know what adjusters miss.", c: GOLD },
+                { n: "03", title: "One-Stop Exterior", desc: "Roof, siding, gutters, windows, paint — one company, one warranty, one contact.", c: ACCENT },
+                { n: "04", title: "Lakewood Local", desc: "Not a storm chaser. We live here, work here, and we'll be here next time.", c: GOLD },
+              ].map((item, i) => (
+                <FadeIn key={i} delay={0.1 + i * 0.08}>
+                  <div style={{ background: LIGHT_BG, borderRadius: 20, padding: "32px 28px", border: "1px solid rgba(13,33,55,0.04)" }}>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: item.c, letterSpacing: "0.15em" }}>{item.n}</span>
+                    <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: NAVY, margin: "10px 0 8px" }}>{item.title}</h3>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section id="reviews" style={{ padding: "110px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <FadeIn>
+            <div style={{ textAlign: "center" as const, marginBottom: 64 }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>REVIEWS</span>
+              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, color: NAVY, margin: "14px 0 12px" }}>What Homeowners Say</h2>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
+                <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i} style={{ color: GOLD, fontSize: 18 }}>★</span>)}</div>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT }}>4.8 average · 200+ Google reviews</span>
+              </div>
+            </div>
+          </FadeIn>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+            <TestimonialCard delay={0.05} name="Sarah Mitchell" location="Lakewood, CO" stars={5} text="Gates handled our entire insurance claim after the hail storm. They found damage the first adjuster missed and got us an extra $8,000. Roof looks incredible." />
+            <TestimonialCard delay={0.12} name="James Rodriguez" location="Arvada, CO" stars={5} text="Best contractor experience we've ever had. On time, on budget, and they cleaned up everything. The GAF warranty gives us real peace of mind." />
+            <TestimonialCard delay={0.19} name="Mike & Linda Chen" location="Golden, CO" stars={5} text="We got quotes from 5 companies. Gates was the only one who walked us through the insurance process step by step. They even negotiated directly with our adjuster." />
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE AREAS */}
+      <section style={{ padding: "110px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 1000, margin: "0 auto", textAlign: "center" as const }}>
+          <FadeIn>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>SERVICE AREAS</span>
+            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, color: NAVY, margin: "14px 0 16px" }}>Proudly Serving Denver Metro</h2>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: TEXT_LIGHT, maxWidth: 520, margin: "0 auto 48px", lineHeight: 1.7 }}>Based in Lakewood. Serving every community along the Front Range.</p>
+          </FadeIn>
+          <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 10, justifyContent: "center" }}>
+            {["Lakewood","Denver","Aurora","Arvada","Westminster","Thornton","Centennial","Littleton","Englewood","Wheat Ridge","Golden","Broomfield","Highlands Ranch","Parker","Castle Rock","Commerce City","Conifer","Edgewater","Federal Heights","Northglenn"].map((city, i) => (
+              <CityPill key={city} name={city} delay={0.02 * i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="estimate" style={{ padding: "100px 24px", background: NAVY, position: "relative", overflow: "hidden" }}>
+        <div style={{
+          position: "absolute", inset: 0,
+          backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(201,165,78,0.06) 0%, transparent 40%)`,
+        }} />
+        <div style={{ maxWidth: 680, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
+          <FadeIn>
+            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 4.5vw, 52px)", fontWeight: 800, color: WHITE, margin: "0 0 20px", lineHeight: 1.1 }}>
+              Ready to Protect{" "}
+              <span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
+            </h2>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: "0 0 40px" }}>Free inspections. No-pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
+            <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" as const }}>
+              <a href="tel:7207663377" style={{
+                background: ACCENT, color: WHITE, borderRadius: 100, padding: "20px 44px",
+                textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 17, fontWeight: 600,
+                boxShadow: "0 8px 30px rgba(59,125,216,0.3)",
+              }}>Schedule Free Inspection</a>
+              <a href="tel:7207663377" style={{
+                background: "transparent", color: WHITE,
+                border: "1px solid rgba(255,255,255,0.2)", borderRadius: 100,
+                padding: "20px 44px", textDecoration: "none",
+                fontFamily: "'DM Sans', sans-serif", fontSize: 17, fontWeight: 500,
+              }}>Call (720) 766-3377</a>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer id="contact" style={{ padding: "64px 24px 36px", background: "#F8F9FA", borderTop: "1px solid rgba(13,33,55,0.06)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48, marginBottom: 48 }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
+                <div style={{ width: 36, height: 36, borderRadius: 8, background: NAVY, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <span style={{ color: WHITE, fontSize: 17, fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif" }}>G</span>
+                </div>
+                <span style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY }}>GATES ENTERPRISES</span>
+              </div>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.8, color: TEXT_LIGHT, maxWidth: 280 }}>
+                1445 Holland St, Lakewood, CO 80215<br />Colorado Licensed General Contractor<br />GAF Master Elite Certified
+              </p>
+            </div>
+            {[
+              { title: "Services", links: ["Roof Replacement", "Storm Damage", "Siding", "Gutters", "Insurance Claims"] },
+              { title: "Company", links: ["About Us", "Certifications", "Gallery", "Reviews", "Blog"] },
+              { title: "Contact", links: ["(720) 766-3377", "gatesroof.com", "Free Estimate", "Service Areas"] },
+            ].map((col, i) => (
+              <div key={i}>
+                <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: 20 }}>{col.title}</h4>
+                {col.links.map(link => (
+                  <a key={link} href="#" style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>{link}</a>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 24, display: "flex", justifyContent: "space-between" }}>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>© 2026 Gates Enterprises LLC. All rights reserved.</span>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Lakewood, Colorado</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
