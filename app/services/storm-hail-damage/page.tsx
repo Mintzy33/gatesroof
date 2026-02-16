@@ -4,7 +4,7 @@ import StormContent from "./content";
 
 export const metadata: Metadata = {
   title: "Hail Damage Roof Repair Denver | Storm Experts",
-  description: "Colorado's hail damage roof repair experts. Free storm damage inspections in Denver. We handle your insurance claim from inspection to final payment. Call (720) 766-3377.",
+  description: "Colorado hail damage experts. Free storm damage inspections, insurance claim assistance, and fast repairs. 7,200+ roofs completed. Call Gates Enterprises at (720) 766-3377.",
 };
 
 const serviceSchema = {

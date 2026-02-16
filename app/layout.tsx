@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gates Enterprises LLC | Lakewood's Premier Roofing Contractor",
-  description: "Colorado's most trusted roofing team. GAF Master Elite Certified. 7,200+ roofs completed across Denver metro. Roof replacement, storm damage, siding, gutters, and insurance claims.",
+  description: "Gates Enterprises is Colorado's trusted roofing contractor with 7,200+ roofs completed. GAF Master Elite & CertainTeed Platinum Preferred certified. Free inspections. Call (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance claim roofer, storm damage repair",
   openGraph: {
     title: "Gates Enterprises LLC | Colorado's Most Trusted Roofing Team",

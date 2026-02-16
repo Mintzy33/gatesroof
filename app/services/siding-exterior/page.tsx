@@ -4,7 +4,7 @@ import SidingContent from "./content";
 
 export const metadata: Metadata = {
   title: "Siding Installation Denver | James Hardie & More",
-  description: "Expert siding installation in Denver and Lakewood. James Hardie fiber cement, vinyl, and wood siding. Exterior painting and full exterior renovation. Call (720) 766-3377.",
+  description: "Professional siding installation and repair in Colorado. James Hardie, vinyl & wood siding options. Storm damage replacement available. Call (720) 766-3377.",
 };
 
 const serviceSchema = {
