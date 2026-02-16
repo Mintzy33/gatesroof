@@ -11,6 +11,58 @@ const TEXT_LIGHT = "#64748B";
 
 const VIDEO_URL = "https://res.cloudinary.com/dyr5ihrer/video/upload/v1771207837/gatesroof.com_Header_on1ccl.mov";
 
+// ── SVG Icons ──
+const Icons = {
+  home: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  ),
+  storm: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    </svg>
+  ),
+  wrench: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+    </svg>
+  ),
+  siding: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><line x1="3" y1="9" x2="21" y2="9" /><line x1="3" y1="15" x2="21" y2="15" /><line x1="9" y1="3" x2="9" y2="9" /><line x1="15" y1="9" x2="15" y2="15" /><line x1="9" y1="15" x2="9" y2="21" />
+    </svg>
+  ),
+  gutter: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+    </svg>
+  ),
+  clipboard: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" /><rect x="8" y="2" width="8" height="4" rx="1" ry="1" /><line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="15" y2="16" />
+    </svg>
+  ),
+  award: (color = GOLD) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="7" /><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+    </svg>
+  ),
+  shield: (color = ACCENT) => (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" />
+    </svg>
+  ),
+  star: (color = GOLD) => (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill={color} stroke="none">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </svg>
+  ),
+  trustDot: (color = GOLD) => (
+    <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill={color} /></svg>
+  ),
+};
+
 function useInView(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -56,7 +108,7 @@ function Counter({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
   return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
-function ServiceCard({ icon, title, desc, delay }: { icon: string; title: string; desc: string; delay: number }) {
+function ServiceCard({ icon, title, desc, delay }: { icon: ReactNode; title: string; desc: string; delay: number }) {
   const [h, setH] = useState(false);
   return (
     <FadeIn delay={delay}>
@@ -67,10 +119,10 @@ function ServiceCard({ icon, title, desc, delay }: { icon: string; title: string
           transform: h ? "translateY(-6px)" : "none",
           boxShadow: h ? "0 20px 50px rgba(13,33,55,0.1)" : "0 2px 12px rgba(13,33,55,0.04)",
           border: `1px solid ${h ? "rgba(59,125,216,0.15)" : "rgba(13,33,55,0.05)"}`,
-          position: "relative", overflow: "hidden",
+          position: "relative" as const, overflow: "hidden" as const,
         }}>
         <div style={{
-          position: "absolute", top: 0, left: 0, width: "100%", height: 3,
+          position: "absolute" as const, top: 0, left: 0, width: "100%", height: 3,
           background: `linear-gradient(90deg, ${ACCENT}, ${GOLD})`,
           transform: h ? "scaleX(1)" : "scaleX(0)", transformOrigin: "left",
           transition: "transform 0.5s cubic-bezier(0.16,1,0.3,1)",
@@ -79,7 +131,7 @@ function ServiceCard({ icon, title, desc, delay }: { icon: string; title: string
           width: 56, height: 56, borderRadius: 16,
           background: h ? `${ACCENT}12` : LIGHT_BG,
           display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: 28, marginBottom: 20, transition: "background 0.3s",
+          marginBottom: 20, transition: "background 0.3s",
         }}>{icon}</div>
         <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 21, fontWeight: 700, color: NAVY, marginBottom: 10 }}>{title}</h3>
         <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{desc}</p>
@@ -103,7 +155,7 @@ function TestimonialCard({ name, location, text, stars, delay }: { name: string;
         height: "100%", display: "flex", flexDirection: "column" as const,
       }}>
         <div style={{ display: "flex", gap: 3, marginBottom: 20 }}>
-          {Array(stars).fill(0).map((_, i) => <span key={i} style={{ color: GOLD, fontSize: 18 }}>★</span>)}
+          {Array(stars).fill(0).map((_, i) => <span key={i}>{Icons.star()}</span>)}
         </div>
         <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.8, color: TEXT, margin: "0 0 24px", flex: 1, fontStyle: "italic" }}>&ldquo;{text}&rdquo;</p>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -224,7 +276,7 @@ export default function Home() {
                 background: "rgba(59,125,216,0.08)", border: "1px solid rgba(59,125,216,0.15)",
                 borderRadius: 100, padding: "8px 18px", marginBottom: 28,
               }}>
-                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#4ADE80", boxShadow: "0 0 10px rgba(74,222,128,0.4)" }} />
+                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#4ADE80", boxShadow: "0 0 10px rgba(74,222,128,0.4)", display: "inline-block" }} />
                 <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, color: "rgba(255,255,255,0.65)" }}>GAF Master Elite — Top 2% in North America</span>
               </div>
             </FadeIn>
@@ -290,12 +342,12 @@ export default function Home() {
             <FadeIn delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
-                  <div style={{ fontSize: 28, marginBottom: 8 }}>🏆</div>
+                  <div style={{ marginBottom: 12 }}>{Icons.award(WHITE)}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>4x Manufacturer Certified</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>GAF • Malarkey • CertainTeed • Emerald</div>
                 </div>
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
-                  <div style={{ fontSize: 28, marginBottom: 8 }}>📋</div>
+                  <div style={{ marginBottom: 12 }}>{Icons.shield(WHITE)}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>Insurance Claim Experts</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>Inspection to payment — we handle it all</div>
                 </div>
@@ -315,7 +367,7 @@ export default function Home() {
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 40, flexWrap: "wrap" as const }}>
           {["GAF MASTER ELITE", "PLATINUM PREFERRED", "MALARKEY CERTIFIED", "EMERALD PREMIUM", "BBB A+ RATED"].map((badge) => (
             <div key={badge} style={{ display: "flex", alignItems: "center", gap: 10, opacity: 0.45 }}>
-              <div style={{ width: 8, height: 8, borderRadius: "50%", background: GOLD }} />
+              {Icons.trustDot()}
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11.5, fontWeight: 700, color: NAVY, letterSpacing: "0.12em" }}>{badge}</span>
             </div>
           ))}
@@ -333,12 +385,12 @@ export default function Home() {
             </div>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
-            <ServiceCard icon="🏠" title="Roof Replacement" desc="Full tear-off and install with impact-resistant Class 4 shingles. GAF Golden Pledge warranty available." delay={0.05} />
-            <ServiceCard icon="⚡" title="Storm & Hail Damage" desc="Colorado's insurance claim experts. We handle the entire process from inspection to final payment." delay={0.1} />
-            <ServiceCard icon="🔧" title="Roof Repair" desc="Leak repair, flashing, vent replacement, and emergency tarping. Fast response across Denver metro." delay={0.15} />
-            <ServiceCard icon="🏗️" title="Siding & Exterior" desc="James Hardie, vinyl, and wood siding installation. Plus professional exterior painting." delay={0.2} />
-            <ServiceCard icon="🌧️" title="Gutters & Guards" desc="Seamless gutter installation, downspouts, and leaf guard systems to protect your foundation." delay={0.25} />
-            <ServiceCard icon="📋" title="Insurance Claims" desc="We speak adjuster. From supplement requests to O&P negotiations — we fight for your full payout." delay={0.3} />
+            <ServiceCard icon={Icons.home()} title="Roof Replacement" desc="Full tear-off and install with impact-resistant Class 4 shingles. GAF Golden Pledge warranty available." delay={0.05} />
+            <ServiceCard icon={Icons.storm()} title="Storm & Hail Damage" desc="Colorado's insurance claim experts. We handle the entire process from inspection to final payment." delay={0.1} />
+            <ServiceCard icon={Icons.wrench()} title="Roof Repair" desc="Leak repair, flashing, vent replacement, and emergency tarping. Fast response across Denver metro." delay={0.15} />
+            <ServiceCard icon={Icons.siding()} title="Siding & Exterior" desc="James Hardie, vinyl, and wood siding installation. Plus professional exterior painting." delay={0.2} />
+            <ServiceCard icon={Icons.gutter()} title="Gutters & Guards" desc="Seamless gutter installation, downspouts, and leaf guard systems to protect your foundation." delay={0.25} />
+            <ServiceCard icon={Icons.clipboard()} title="Insurance Claims" desc="We speak adjuster. From supplement requests to O&P negotiations — we fight for your full payout." delay={0.3} />
           </div>
         </div>
       </section>
@@ -396,7 +448,7 @@ export default function Home() {
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>REVIEWS</span>
               <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, color: NAVY, margin: "14px 0 12px" }}>What Homeowners Say</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
-                <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i} style={{ color: GOLD, fontSize: 18 }}>★</span>)}</div>
+                <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star()}</span>)}</div>
                 <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT }}>4.8 average · 200+ Google reviews</span>
               </div>
             </div>
