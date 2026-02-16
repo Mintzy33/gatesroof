@@ -1,67 +1,52 @@
 import Link from "next/link";
 import Image from "next/image";
 const NAVY = "#0D2137";
+const ACCENT = "#3B7DD8";
 const TEXT_LIGHT = "#64748B";
 
 export default function Footer() {
   return (
-    <footer style={{ padding: "64px 24px 36px", background: "#F8F9FA", borderTop: "1px solid rgba(13,33,55,0.06)" }}>
+    <footer style={{ padding: "56px 20px 32px", background: "#F8F9FA", borderTop: "1px solid rgba(13,33,55,0.06)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48, marginBottom: 48 }}>
           <div>
             <div style={{ marginBottom: 20 }}>
-              <Link href="/">
-                <Image src="/logo.png" alt="Gates Enterprises" width={180} height={54} style={{ height: 44, width: "auto", objectFit: "contain" }} />
-              </Link>
+              <Link href="/"><Image src="/logo.png" alt="Gates Enterprises" width={180} height={54} style={{ height: 40, width: "auto", objectFit: "contain" }} /></Link>
             </div>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.8, color: TEXT_LIGHT, maxWidth: 280 }}>
-              1445 Holland St, Lakewood, CO 80215<br />Colorado Licensed General Contractor<br />GAF Master Elite Certified
-            </p>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.8, color: TEXT_LIGHT, maxWidth: 280 }}>1445 Holland St, Lakewood, CO 80215<br />Colorado Licensed General Contractor<br />GAF Master Elite Certified</p>
           </div>
           <div>
-            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: 20 }}>Services</h4>
-            {[
-              { l: "Roof Replacement", h: "/services/roof-replacement" },
-              { l: "Storm & Hail Damage", h: "/services/storm-hail-damage" },
-              { l: "Roof Repair", h: "/services/roof-repair" },
-              { l: "Siding & Exterior", h: "/services/siding-exterior" },
-              { l: "Gutters & Guards", h: "/services/gutters-guards" },
-              { l: "Insurance Claims", h: "/services/insurance-claims" },
-            ].map(lk => (
-              <Link key={lk.l} href={lk.h} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>{lk.l}</Link>
+            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Services</h4>
+            {[{l:"Roof Replacement",h:"/services/roof-replacement"},{l:"Storm & Hail Damage",h:"/services/storm-hail-damage"},{l:"Roof Repair",h:"/services/roof-repair"},{l:"Siding & Exterior",h:"/services/siding-exterior"},{l:"Gutters & Guards",h:"/services/gutters-guards"},{l:"Insurance Claims",h:"/services/insurance-claims"}].map(lk=>(
+              <Link key={lk.l} href={lk.h} style={{ display:"block", fontFamily:"'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{lk.l}</Link>
             ))}
           </div>
           <div>
-            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: 20 }}>Company</h4>
-            {[
-              { l: "About Us", h: "/about" },
-              { l: "Gallery", h: "/gallery" },
-              { l: "Reviews", h: "/reviews" },
-              { l: "Blog", h: "/blog" },
-              { l: "Contact", h: "/contact" },
-            ].map(lk => (
-              <Link key={lk.l} href={lk.h} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>{lk.l}</Link>
+            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Company</h4>
+            {[{l:"About Us",h:"/about"},{l:"Gallery",h:"/gallery"},{l:"Reviews",h:"/reviews"},{l:"Blog",h:"/blog"},{l:"Contact",h:"/contact"}].map(lk=>(
+              <Link key={lk.l} href={lk.h} style={{ display:"block", fontFamily:"'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{lk.l}</Link>
             ))}
           </div>
           <div>
-            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: 20 }}>Contact</h4>
-            <a href="tel:7207663377" style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>(720) 766-3377</a>
-            <a href="mailto:info@gatesroof.com" style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>info@gatesroof.com</a>
-            <Link href="/contact" style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", marginBottom: 14 }}>Free Estimate</Link>
+            <h4 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Contact</h4>
+            <a href="tel:7207663377" style={{ display:"block", fontFamily:"'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>(720) 766-3377</a>
+            <a href="mailto:info@gatesroof.com" style={{ display:"block", fontFamily:"'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>info@gatesroof.com</a>
+            <Link href="/contact" style={{ display:"block", fontFamily:"'DM Sans', sans-serif", fontSize:14, color:ACCENT, textDecoration:"none", marginBottom:12, fontWeight:600 }}>Free Estimate →</Link>
           </div>
         </div>
-        <div className="footer-bottom" style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 24, display: "flex", justifyContent: "space-between" }}>
-          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>© 2026 Gates Enterprises LLC. All rights reserved.</span>
-          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Lakewood, Colorado</span>
+        <div className="footer-bottom" style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>© 2026 Gates Enterprises LLC</span>
+          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>Lakewood, Colorado</span>
         </div>
       </div>
       <style>{`
         @media (max-width: 768px) {
-          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
-          .footer-bottom { flex-direction: column !important; gap: 8px !important; text-align: center !important; }
+          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
+          .footer-bottom { flex-direction: column !important; gap: 6px !important; align-items: center !important; }
         }
         @media (max-width: 480px) {
-          .footer-grid { grid-template-columns: 1fr !important; }
+          .footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; text-align: center; }
+          .footer-grid p { margin: 0 auto; }
         }
       `}</style>
     </footer>
