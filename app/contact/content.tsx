@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+declare global { interface Window { fbq: (...args: unknown[]) => void } }
 const NAVY = "#0D2137";
 const ACCENT = "#3B7DD8";
 const GOLD = "#C9A54E";
@@ -53,7 +54,7 @@ export default function ContactContent() {
                     <option value="other">Other</option>
                   </select>
                   <textarea placeholder="Anything else we should know?" rows={4} style={{...inp,resize:"vertical" as const}} value={form.message} onChange={e=>setForm({...form,message:e.target.value})}/>
-                  <button onClick={()=>setSent(true)} style={{background:ACCENT,color:WHITE,border:"none",borderRadius:100,padding:"18px 40px",cursor:"pointer",fontFamily:"'DM Sans', sans-serif",fontSize:16,fontWeight:600,boxShadow:"0 8px 30px rgba(59,125,216,0.25)",alignSelf:"flex-start" as const}}>Submit Request →</button>
+                  <button onClick={()=>{if(window.fbq)window.fbq('track','Lead',{content_name:form.service||'general',content_category:'contact_form'});setSent(true)}} style={{background:ACCENT,color:WHITE,border:"none",borderRadius:100,padding:"18px 40px",cursor:"pointer",fontFamily:"'DM Sans', sans-serif",fontSize:16,fontWeight:600,boxShadow:"0 8px 30px rgba(59,125,216,0.25)",alignSelf:"flex-start" as const}}>Submit Request →</button>
                 </div>
               </div>
             )}
@@ -64,7 +65,7 @@ export default function ContactContent() {
               {[{l:"PHONE",v:"(720) 766-3377",h:"tel:7207663377"},{l:"EMAIL",v:"info@gatesroof.com",h:"mailto:info@gatesroof.com"},{l:"ADDRESS",v:"1445 Holland St, Lakewood, CO 80215",h:"https://maps.google.com/?q=1445+Holland+St+Lakewood+CO"}].map((c,i)=>(
                 <div key={i} style={{marginBottom:20}}>
                   <div style={{fontFamily:"'DM Sans', sans-serif",fontSize:12,fontWeight:700,color:ACCENT,letterSpacing:"0.1em",marginBottom:4}}>{c.l}</div>
-                  <a href={c.h} style={{fontFamily:"'DM Sans', sans-serif",fontSize:16,color:TEXT,textDecoration:"none",fontWeight:500}}>{c.v}</a>
+                  <a href={c.h} onClick={()=>{if(c.h.startsWith("tel:")&&window.fbq)window.fbq('track','Contact',{content_name:'phone_call'})}} style={{fontFamily:"'DM Sans', sans-serif",fontSize:16,color:TEXT,textDecoration:"none",fontWeight:500}}>{c.v}</a>
                 </div>
               ))}
             </div>
@@ -75,7 +76,7 @@ export default function ContactContent() {
             <div style={{background:NAVY,borderRadius:24,padding:"40px 36px"}}>
               <h3 style={{fontFamily:"'Playfair Display', Georgia, serif",fontSize:20,fontWeight:700,color:WHITE,marginBottom:12}}>Prefer to Call?</h3>
               <p style={{fontFamily:"'DM Sans', sans-serif",fontSize:15,color:"rgba(255,255,255,0.7)",lineHeight:1.7,marginBottom:24}}>Talk to a real person — not a call center.</p>
-              <a href="tel:7207663377" style={{display:"inline-block",background:ACCENT,color:WHITE,borderRadius:100,padding:"16px 32px",textDecoration:"none",fontFamily:"'DM Sans', sans-serif",fontSize:16,fontWeight:600}}>Call (720) 766-3377</a>
+              <a href="tel:7207663377" onClick={()=>{if(window.fbq)window.fbq('track','Contact',{content_name:'phone_call'})}} style={{display:"inline-block",background:ACCENT,color:WHITE,borderRadius:100,padding:"16px 32px",textDecoration:"none",fontFamily:"'DM Sans', sans-serif",fontSize:16,fontWeight:600}}>Call (720) 766-3377</a>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+declare global { interface Window { fbq: (...args: unknown[]) => void } }
 const NAVY = "#0D2137";
 const ACCENT = "#3B7DD8";
 const GOLD = "#C9A54E";
@@ -84,7 +85,7 @@ export default function Home() {
             <FadeIn delay={0.4}>
               <div className="hero-btns" style={{ display: "flex", gap: 12 }}>
                 <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Free Inspection →</Link>
-                <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</a>
+                <a href="tel:7207663377" onClick={()=>{if(window.fbq)window.fbq('track','Contact',{content_name:'phone_call'})}} style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</a>
               </div>
             </FadeIn>
           </div>
