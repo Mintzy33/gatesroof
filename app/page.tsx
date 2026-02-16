@@ -385,12 +385,12 @@ export default function Home() {
             </div>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
-            <ServiceCard icon={Icons.home()} title="Roof Replacement" desc="Full tear-off and install with impact-resistant Class 4 shingles. GAF Golden Pledge warranty available." delay={0.05} />
-            <ServiceCard icon={Icons.storm()} title="Storm & Hail Damage" desc="Colorado's insurance claim experts. We handle the entire process from inspection to final payment." delay={0.1} />
-            <ServiceCard icon={Icons.wrench()} title="Roof Repair" desc="Leak repair, flashing, vent replacement, and emergency tarping. Fast response across Denver metro." delay={0.15} />
-            <ServiceCard icon={Icons.siding()} title="Siding & Exterior" desc="James Hardie, vinyl, and wood siding installation. Plus professional exterior painting." delay={0.2} />
-            <ServiceCard icon={Icons.gutter()} title="Gutters & Guards" desc="Seamless gutter installation, downspouts, and leaf guard systems to protect your foundation." delay={0.25} />
-            <ServiceCard icon={Icons.clipboard()} title="Insurance Claims" desc="We speak adjuster. From supplement requests to O&P negotiations — we fight for your full payout." delay={0.3} />
+            <ServiceCard href="/services/roof-replacement" icon={Icons.home()} title="Roof Replacement" desc="Full tear-off and install with impact-resistant Class 4 shingles. GAF Golden Pledge warranty available." delay={0.05} />
+            <ServiceCard href="/services/storm-hail-damage" icon={Icons.storm()} title="Storm & Hail Damage" desc="Colorado's insurance claim experts. We handle the entire process from inspection to final payment." delay={0.1} />
+            <ServiceCard href="/services/roof-repair" icon={Icons.wrench()} title="Roof Repair" desc="Leak repair, flashing, vent replacement, and emergency tarping. Fast response across Denver metro." delay={0.15} />
+            <ServiceCard href="/services/siding-exterior" icon={Icons.siding()} title="Siding & Exterior" desc="James Hardie, vinyl, and wood siding installation. Plus professional exterior painting." delay={0.2} />
+            <ServiceCard href="/services/gutters-guards" icon={Icons.gutter()} title="Gutters & Guards" desc="Seamless gutter installation, downspouts, and leaf guard systems to protect your foundation." delay={0.25} />
+            <ServiceCard href="/services/insurance-claims" icon={Icons.clipboard()} title="Insurance Claims" desc="We speak adjuster. From supplement requests to O&P negotiations — we fight for your full payout." delay={0.3} />
           </div>
         </div>
       </section>
