@@ -59,12 +59,12 @@ export default function Home() {
     <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>
       <Header />
 
-      {/* ════ HERO ════ */}
+      {/* HERO */}
       <section style={{ position: "relative", minHeight: "100vh", background: NAVY, display: "flex", alignItems: "center", overflow: "hidden" }}>
-        <video autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.5 }}>
+        <video autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.35 }}>
           <source src={VIDEO_URL} type="video/mp4" />
         </video>
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(13,33,55,0.7) 0%, rgba(13,33,55,0.4) 40%, rgba(13,33,55,0.65) 100%)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(13,33,55,0.85) 0%, rgba(13,33,55,0.55) 40%, rgba(13,33,55,0.75) 100%)" }} />
         <div className="hero-wrap" style={{ maxWidth: 1200, margin: "0 auto", padding: "140px 20px 80px", position: "relative", zIndex: 1, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}>
           <div>
             <FadeIn delay={0.1}>
@@ -88,8 +88,6 @@ export default function Home() {
               </div>
             </FadeIn>
           </div>
-
-          {/* Desktop right column */}
           <div className="hero-right">
             <FadeIn delay={0.3} d="left">
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "28px 28px", backdropFilter: "blur(10px)", marginBottom: 16 }}>
@@ -115,10 +113,8 @@ export default function Home() {
             </FadeIn>
           </div>
         </div>
-
-        {/* Mobile-only hero stats - shown below buttons */}
         <div className="mobile-hero-stats" style={{ display: "none", position: "relative", zIndex: 1, padding: "0 20px 60px", width: "100%" }}>
-          <div style={{ display: "flex", justifyContent: "center", gap: 28 }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: 28, flexWrap: "wrap" as const }}>
             {[{ v: "7,200+", l: "Roofs" }, { v: "10+", l: "Years" }, { v: "4.8★", l: "Rating" }].map((s, i) => (
               <div key={i} style={{ textAlign: "center" as const }}>
                 <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 24, fontWeight: 800, color: WHITE }}>{s.v}</div>
@@ -129,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════ TRUST BAR ════ */}
+      {/* TRUST BAR */}
       <section className="trust-bar" style={{ background: WHITE, padding: "20px 16px", borderBottom: "1px solid rgba(13,33,55,0.04)", overflow: "hidden" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "nowrap" as const, whiteSpace: "nowrap" as const }}>
           {["GAF MASTER ELITE", "PLATINUM PREFERRED", "MALARKEY", "EMERALD PREMIUM", "BBB A+"].map((b) => (
@@ -138,7 +134,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════ SERVICES ════ */}
+      {/* SERVICES */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <FadeIn>
@@ -159,11 +155,7 @@ export default function Home() {
             ].map((s, i) => (
               <FadeIn key={i} delay={i * 0.05}>
                 <Link href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
-                  <div className="service-card" style={{
-                    background: WHITE, borderRadius: 18, padding: "28px 24px",
-                    border: "1px solid rgba(13,33,55,0.05)", height: "100%",
-                    transition: "all 0.3s", cursor: "pointer",
-                  }}>
+                  <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.05)", height: "100%", transition: "all 0.3s", cursor: "pointer" }}>
                     <div style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>{s.icon}</div>
                     <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{s.t}</h3>
                     <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{s.d}</p>
@@ -175,7 +167,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════ WHY GATES ════ */}
+      {/* WHY GATES */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div className="why-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 64, alignItems: "center" }}>
@@ -216,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════ REVIEWS ════ */}
+      {/* REVIEWS */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <FadeIn>
@@ -253,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════ SERVICE AREAS ════ */}
+      {/* SERVICE AREAS */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" as const }}>
           <FadeIn>
@@ -268,18 +260,13 @@ export default function Home() {
               {n:"Golden",s:"golden"},{n:"Broomfield",s:"broomfield"},{n:"Highlands Ranch",s:"highlands-ranch"},{n:"Parker",s:"parker"},{n:"Castle Rock",s:"castle-rock"},
               {n:"Commerce City",s:"commerce-city"},{n:"Conifer",s:"conifer"},{n:"Edgewater",s:"edgewater"},{n:"Federal Heights",s:"federal-heights"},{n:"Northglenn",s:"northglenn"},
             ].map((c) => (
-              <Link key={c.n} href={`/areas/${c.s}`} style={{
-                display: "inline-block", padding: "8px 18px", borderRadius: 100,
-                border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY,
-                fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none",
-                transition: "all 0.2s",
-              }}>{c.n}</Link>
+              <Link key={c.n} href={`/areas/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ════ CTA ════ */}
+      {/* CTA */}
       <section style={{ padding: "clamp(56px, 8vw, 80px) 20px", background: NAVY, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)` }} />
         <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
