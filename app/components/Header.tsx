@@ -46,7 +46,7 @@ export default function Header() {
           height: 64, display: "flex", alignItems: "center", justifyContent: "space-between",
         }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-            <Image
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}><Image
               src="/logo.png"
               alt="Gates Enterprises"
               width={180}
@@ -59,8 +59,7 @@ export default function Header() {
                 filter: solid ? "none" : "brightness(0) invert(1)",
                 transition: "filter 0.4s",
               }}
-              priority
-            />
+              priority /><div><div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: solid ? "#0D2137" : "#FFFFFF", transition: "color 0.4s" }}>GATES</div><div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 600, color: solid ? "#64748B" : "rgba(255,255,255,0.5)", letterSpacing: "0.18em", transition: "color 0.4s" }}>ENTERPRISES LLC</div></div></div>
           </Link>
 
           {/* Desktop Nav */}
