@@ -277,7 +277,7 @@ export default function Home() {
                 borderRadius: 100, padding: "8px 18px", marginBottom: 28,
               }}>
                 <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#4ADE80", boxShadow: "0 0 10px rgba(74,222,128,0.4)", display: "inline-block" }} />
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, color: "rgba(255,255,255,0.65)" }}>GAF Master Elite — Top 2% in North America</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, color: "rgba(255,255,255,0.9)" }}>GAF Master Elite — Top 2% in North America</span>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
@@ -297,7 +297,7 @@ export default function Home() {
             <FadeIn delay={0.35}>
               <p style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: 18, lineHeight: 1.75,
-                color: "rgba(255,255,255,0.5)", margin: "0 0 36px", maxWidth: 480,
+                color: "rgba(255,255,255,0.85)", margin: "0 0 36px", maxWidth: 480,
               }}>From hail damage claims to full exterior restoration — 7,200+ roofs completed across the Denver metro. Your roof. Our reputation.</p>
             </FadeIn>
             <FadeIn delay={0.45}>
@@ -333,7 +333,7 @@ export default function Home() {
                       <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: WHITE, lineHeight: 1 }}>
                         {s.display ? s.display : <Counter end={s.num} suffix={s.suffix} />}
                       </div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 8, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>{s.label}</div>
+                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 8, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>{s.label}</div>
                     </div>
                   ))}
                 </div>
@@ -344,12 +344,12 @@ export default function Home() {
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
                   <div style={{ marginBottom: 12 }}>{Icons.award(WHITE)}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>4x Manufacturer Certified</div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>GAF • Malarkey • CertainTeed • Emerald</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>GAF • Malarkey • CertainTeed • Emerald</div>
                 </div>
                 <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 24 }}>
                   <div style={{ marginBottom: 12 }}>{Icons.shield(WHITE)}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE }}>Insurance Claim Experts</div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>Inspection to payment — we handle it all</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>Inspection to payment — we handle it all</div>
                 </div>
               </div>
             </FadeIn>
@@ -489,7 +489,7 @@ export default function Home() {
               Ready to Protect{" "}
               <span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
             </h2>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: "0 0 40px" }}>Free inspections. No-pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, lineHeight: 1.75, color: "rgba(255,255,255,0.85)", margin: "0 0 40px" }}>Free inspections. No-pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" as const }}>
               <a href="tel:7207663377" style={{
                 background: ACCENT, color: WHITE, borderRadius: 100, padding: "20px 44px",
