@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import CityContent from "./content";
+export const metadata: Metadata = {
+  title: "Roofing Contractor in Broomfield, CO | Gates Enterprises",
+  description: "Broomfield roofing services. Expert roof replacement, storm damage repair & siding installation. Certified Colorado roofer. Free inspection — (720) 766-3377.",
+};
+export default function Page() { return <CityContent />; }
