@@ -9,7 +9,7 @@ const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 
-const VIDEO_URL = "https://drive.google.com/uc?export=download&id=1jN6_Zunxv1CvN4icZ_bayvJhm-ElyLWB";
+const VIDEO_URL = "https://res.cloudinary.com/dyr5ihrer/video/upload/v1771207837/gatesroof.com_Header_on1ccl.mov";
 
 function useInView(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);
