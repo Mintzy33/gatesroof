@@ -2,10 +2,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 const NAVY = "#0D2137";
 const ACCENT = "#3B7DD8";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
+const TEXT_LIGHT = "#64748B";
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);
@@ -41,28 +43,46 @@ export default function Header() {
         borderBottom: solid ? "1px solid rgba(13,33,55,0.06)" : "1px solid rgba(255,255,255,0.04)",
         transition: "all 0.4s",
       }}>
-        <div className="header-inner" style={{
+        <div style={{
           maxWidth: 1200, margin: "0 auto", padding: "0 20px",
           height: 64, display: "flex", alignItems: "center", justifyContent: "space-between",
         }}>
-          <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}><Image
+
+          {/* ─── Logo + Company Name ─── */}
+          <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
+            <Image
               src="/logo.png"
               alt="Gates Enterprises"
-              width={180}
-              height={54}
+              width={140}
+              height={42}
               className="header-logo"
               style={{
-                height: 38,
+                height: 36,
                 width: "auto",
                 objectFit: "contain",
                 filter: solid ? "none" : "brightness(0) invert(1)",
                 transition: "filter 0.4s",
               }}
-              priority /><div><div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: solid ? "#0D2137" : "#FFFFFF", transition: "color 0.4s" }}>GATES</div><div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 600, color: solid ? "#64748B" : "rgba(255,255,255,0.5)", letterSpacing: "0.18em", transition: "color 0.4s" }}>ENTERPRISES LLC</div></div></div>
+              priority
+            />
+            <div className="header-text">
+              <div style={{
+                fontFamily: "'Playfair Display', Georgia, serif",
+                fontSize: 17, fontWeight: 700,
+                color: solid ? NAVY : WHITE,
+                transition: "color 0.4s", lineHeight: 1.1,
+              }}>GATES</div>
+              <div style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 9, fontWeight: 600,
+                color: solid ? TEXT_LIGHT : "rgba(255,255,255,0.5)",
+                letterSpacing: "0.18em",
+                transition: "color 0.4s",
+              }}>ENTERPRISES LLC</div>
+            </div>
           </Link>
 
-          {/* Desktop Nav */}
+          {/* ─── Desktop Nav ─── */}
           <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {links.map(item => (
               <Link key={item.l} href={item.h} style={{
@@ -84,15 +104,15 @@ export default function Header() {
             }}>Free Estimate</Link>
           </nav>
 
-          {/* Mobile: Phone + Hamburger */}
-          <div className="mobile-header-right" style={{ display: "none", alignItems: "center", gap: 12 }}>
+          {/* ─── Mobile: Call + Hamburger ─── */}
+          <div className="mobile-nav" style={{ display: "none", alignItems: "center", gap: 10 }}>
             <a href="tel:7207663377" style={{
               background: ACCENT, color: WHITE, borderRadius: 100,
-              padding: "8px 16px", textDecoration: "none",
-              fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600,
-              display: "flex", alignItems: "center", gap: 6,
+              padding: "8px 14px", textDecoration: "none",
+              fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+              display: "flex", alignItems: "center", gap: 5,
             }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               Call
             </a>
             <button
@@ -125,7 +145,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* ─── Mobile Full-Screen Menu ─── */}
       <div style={{
         position: "fixed", inset: 0, zIndex: 999, background: WHITE,
         transform: menuOpen ? "translateX(0)" : "translateX(100%)",
@@ -167,13 +187,14 @@ export default function Header() {
 
       <style>{`
         @media (min-width: 769px) {
-          .mobile-header-right { display: none !important; }
+          .mobile-nav { display: none !important; }
         }
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
-          .mobile-header-right { display: flex !important; }
-          .header-logo { height: 32px !important; }
-          .header-inner { padding: 0 16px !important; height: 56px !important; }
+          .mobile-nav { display: flex !important; }
+          .header-logo { height: 28px !important; }
+          .header-text div:first-child { font-size: 15px !important; }
+          .header-text div:last-child { font-size: 8px !important; }
         }
       `}</style>
     </>
