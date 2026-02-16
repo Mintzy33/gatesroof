@@ -204,13 +204,13 @@ export default function Home() {
       }}>
         <video autoPlay muted loop playsInline style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
-          objectFit: "cover", opacity: 0.35,
+          objectFit: "cover", opacity: 0.6,
         }}>
           <source src={VIDEO_URL} type="video/mp4" />
         </video>
         <div style={{
           position: "absolute", inset: 0,
-          background: "linear-gradient(170deg, rgba(13,33,55,0.85) 0%, rgba(10,31,51,0.75) 50%, rgba(13,33,55,0.9) 100%)",
+          background: "linear-gradient(170deg, rgba(13,33,55,0.55) 0%, rgba(10,31,51,0.45) 50%, rgba(13,33,55,0.6) 100%)",
         }} />
         <div style={{
           maxWidth: 1200, margin: "0 auto", padding: "160px 24px 120px",
