@@ -53,7 +53,7 @@ export default function Header() {
         }}>
           <Link href="/" className="header-brand" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
             <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={160} height={48} className="header-logo" style={{ height: 48, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
-            <span className="header-text" style={{ fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif", fontSize: 19, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap", letterSpacing: "0.08em" }}>GATES ENTERPRISES LLC</span>
+            <span className="header-text" style={{ fontFamily: "var(--font-raleway), 'Raleway', sans-serif", fontSize: 19, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap", letterSpacing: "0.08em" }}>GATES ENTERPRISES LLC</span>
           </Link>
           <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 32 }}>
             {links.map(item => (
