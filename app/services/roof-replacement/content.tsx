@@ -4,9 +4,8 @@ export default function RoofReplacementContent() {
   return (
     <ServicePage
       breadcrumb="Roof Replacement"
-      h1="Roof Replacement in Denver and Lakewood, CO"
-      subheadline="Quadruple certified. 7,200+ roofs completed. Backed by up to a 50 year manufacturer warranty."
-      heroCopy="A new roof Colorado homeowners can count on starts with the right contractor. Gates Enterprises has been replacing roofs across Denver and Lakewood for over 10 years, and we do it the right way every single time. Full tear-off, proper deck inspection, manufacturer certified installation, and a warranty that actually means something."
+      h1="Roof Replacement Across Colorado's Front Range"
+      heroCopy="A new roof Colorado homeowners can count on starts with the right contractor. Gates Enterprises has been replacing roofs across the Denver metro and beyond for over a decade, and we do it the right way every single time. Full tear off, proper deck inspection, manufacturer certified installation, and a warranty that actually means something."
       sections={[
         {
           title: "Full Tear-Off Roof Replacement Done Right",

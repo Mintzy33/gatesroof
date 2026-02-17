@@ -14,7 +14,7 @@ const TEXT_LIGHT = "#64748B";
 interface ServicePageProps {
   breadcrumb: string;
   h1: string;
-  subheadline: string;
+  subheadline?: string;
   heroCopy: string;
   sections: { title: string; content: string[] }[];
   process: { step: string; title: string; desc: string }[];
@@ -38,7 +38,7 @@ export default function ServicePageLayout({
             Home → Services → {breadcrumb}
           </Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>{h1}</h1>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>{subheadline}</p>
+          {subheadline && <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>{subheadline}</p>}
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>{heroCopy}</p>
           <div style={{ display: "flex", gap: 14 }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>
