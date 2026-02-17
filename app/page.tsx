@@ -256,7 +256,7 @@ export default function Home() {
         .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
 
-        .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(13,33,55,0.12); border-left-color: #C9A54E !important; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(13,33,55,0.18), 0 8px 20px rgba(13,33,55,0.10); border-left-color: #C9A54E !important; background: #FFFFFF !important; }
         @media (max-width: 768px) {
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }
