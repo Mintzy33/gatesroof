@@ -62,14 +62,14 @@ export default function AboutContent() {
       <Header />
 
       {/* ─── HERO ─── */}
-      <section style={{ position: "relative", minHeight: "85vh", background: DEEP, display: "flex", alignItems: "flex-end", overflow: "hidden" }}>
+      <section style={{ position: "relative", minHeight: "90vh", background: DEEP, display: "flex", alignItems: "flex-end", overflow: "hidden" }}>
         {/* Parallax image */}
-        <div ref={heroImgRef} style={{ position: "absolute", inset: "-80px 0 0 0" }}>
+        <div ref={heroImgRef} style={{ position: "absolute", inset: "-100px 0 0 0" }}>
           <Image
             src="/team-austin.jpg"
             alt="Austin — Senior Project Manager at Gates Enterprises"
             fill
-            style={{ objectFit: "cover", objectPosition: "center 25%" }}
+            style={{ objectFit: "cover", objectPosition: "center 10%" }}
             priority
           />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(6,38,63,0.3) 0%, rgba(6,38,63,0.1) 30%, rgba(6,38,63,0.6) 70%, rgba(6,38,63,0.95) 100%)" }} />
