@@ -72,15 +72,17 @@ export default function LoadingScreen() {
       })
       .to(flashRef.current, {
         opacity: 0,
-        duration: 0.15,
+        duration: 0.2,
         ease: "power2.out",
       })
-      // 6. Overlay wipes up
+      // 6. Overlay wipes up (starts after flash fully fades)
       .to(overlayRef.current, {
         yPercent: -100,
-        duration: 0.45,
+        duration: 0.5,
         ease: "power3.inOut",
-      }, ">-0.05");
+      })
+      // 7. Fade to fully invisible before unmount to prevent flicker
+      .set(overlayRef.current, { opacity: 0 });
   }, [show]);
 
   if (!show) return null;
