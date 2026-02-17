@@ -6,16 +6,24 @@ const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 
 export default function StickyBottomCTA() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const lastY = useRef(0);
 
   useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    if (!mq.matches) return;          // desktop: always visible
-
     const onScroll = () => {
       const y = window.scrollY;
-      setVisible(y < lastY.current || y < 50);
+      const isMobile = window.innerWidth <= 768;
+
+      if (y < 300) {
+        // Hidden at top of page
+        setVisible(false);
+      } else if (isMobile) {
+        // Mobile: show on scroll-up, hide on scroll-down
+        setVisible(y < lastY.current);
+      } else {
+        // Desktop: always show after 300px
+        setVisible(true);
+      }
       lastY.current = y;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
