@@ -1,9 +1,13 @@
 "use client";
-import { useState, useEffect, useRef, ReactNode } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 declare global { interface Window { fbq: (...args: unknown[]) => void } }
 const NAVY = "#0D2137";
@@ -38,31 +42,92 @@ function useInView(threshold = 0.1) {
 }
 
 function FadeIn({ children, delay = 0, d = "up" }: { children: ReactNode; delay?: number; d?: string }) {
-  const [ref, v] = useInView();
-  const t: Record<string, string> = { up: "translateY(24px)", left: "translateX(24px)", none: "none" };
-  return (<div ref={ref} style={{ opacity: v ? 1 : 0, transform: v ? "none" : (t[d] || t.up), transition: `opacity 0.6s ease ${delay}s, transform 0.6s ease ${delay}s` }}>{children}</div>);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const x = d === "left" ? 60 : 0;
+    const y = d === "up" ? 50 : 0;
+    gsap.fromTo(el,
+      { opacity: 0, x, y },
+      { opacity: 1, x: 0, y: 0, duration: 0.8, delay, ease: "power3.out",
+        scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none none" }
+      }
+    );
+  }, [delay, d]);
+  return (<div ref={ref} style={{ opacity: 0 }}>{children}</div>);
 }
 
 function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
   const [count, setCount] = useState(0);
-  const [ref, v] = useInView();
+  const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    if (!v) return;
-    let s = 0; const step = end / 125;
-    const t = setInterval(() => { s += step; if (s >= end) { setCount(end); clearInterval(t); } else setCount(Math.floor(s)); }, 16);
-    return () => clearInterval(t);
-  }, [v, end]);
+    const el = ref.current; if (!el) return;
+    const obj = { val: 0 };
+    gsap.to(obj, {
+      val: end, duration: 2, ease: "power2.out",
+      scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
+      onUpdate: () => setCount(Math.floor(obj.val)),
+    });
+  }, [end]);
   return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
 export default function Home() {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Parallax effect on hero video
+    if (videoRef.current) {
+      gsap.to(videoRef.current, {
+        yPercent: 20,
+        ease: "none",
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.5,
+        },
+      });
+    }
+
+    // Stagger service cards on scroll
+    const cards = document.querySelectorAll(".service-card");
+    if (cards.length) {
+      gsap.fromTo(cards, { y: 40, opacity: 0 }, {
+        y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: "power3.out",
+        scrollTrigger: { trigger: ".services-grid", start: "top 80%", toggleActions: "play none none none" },
+      });
+    }
+
+    // Stagger why-cards
+    const whyCards = document.querySelectorAll(".why-cards > div > div");
+    if (whyCards.length) {
+      gsap.fromTo(whyCards, { y: 30, opacity: 0 }, {
+        y: 0, opacity: 1, duration: 0.5, stagger: 0.12, ease: "power3.out",
+        scrollTrigger: { trigger: ".why-cards", start: "top 80%", toggleActions: "play none none none" },
+      });
+    }
+
+    // Stagger review cards
+    const reviewCards = document.querySelectorAll(".reviews-grid > div > div");
+    if (reviewCards.length) {
+      gsap.fromTo(reviewCards, { y: 30, opacity: 0 }, {
+        y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "power3.out",
+        scrollTrigger: { trigger: ".reviews-grid", start: "top 80%", toggleActions: "play none none none" },
+      });
+    }
+
+    return () => ScrollTrigger.getAll().forEach(t => t.kill());
+  }, []);
+
   return (
     <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>
       <Header />
 
       {/* HERO */}
-      <section style={{ position: "relative", minHeight: "100vh", background: NAVY, display: "flex", alignItems: "center", overflow: "hidden" }}>
-        <video autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.35 }}>
+      <section ref={heroRef} style={{ position: "relative", minHeight: "100vh", background: NAVY, display: "flex", alignItems: "center", overflow: "hidden" }}>
+        <video ref={videoRef} autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.35 }}>
           <source src={VIDEO_URL} type="video/mp4" />
         </video>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(13,33,55,0.85) 0%, rgba(13,33,55,0.55) 40%, rgba(13,33,55,0.75) 100%)" }} />
