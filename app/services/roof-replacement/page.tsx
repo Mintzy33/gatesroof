@@ -4,7 +4,7 @@ import RoofReplacementContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Replacement Denver & Lakewood CO | Gates Roofing",
-  description: "Need a new roof? Gates Enterprises offers expert roof replacement with GAF, CertainTeed & Malarkey shingles. Warranties up to 50 years. Free estimate — call (720) 766-3377.",
+  description: "Need a new roof? Gates Enterprises offers expert roof replacement with GAF, CertainTeed & Malarkey shingles. Warranties up to 50 years. Free estimate. Call (720) 766-3377.",
 };
 
 const serviceSchema = {

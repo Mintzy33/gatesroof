@@ -4,7 +4,7 @@ import GuttersContent from "./content";
 
 export const metadata: Metadata = {
   title: "Gutter Installation Denver | Seamless Gutters",
-  description: "Seamless gutter installation and gutter guard systems in Colorado. Protect your home from water damage. Free estimates from Gates Enterprises — (720) 766-3377.",
+  description: "Seamless gutter installation and gutter guard systems in Colorado. Protect your home from water damage. Free estimates from Gates Enterprises. Call (720) 766-3377.",
 };
 
 const serviceSchema = {

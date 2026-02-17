@@ -38,7 +38,7 @@ export default function CityContent() {
               {t:"Roof Repair",d:"Fast leak repair, emergency tarping, and honest assessments.",h:"/services/roof-repair"},
               {t:"Siding & Exterior",d:"James Hardie, vinyl, and wood siding installation and repair.",h:"/services/siding-exterior"},
               {t:"Gutters & Guards",d:"Seamless gutter fabrication and gutter guard systems.",h:"/services/gutters-guards"},
-              {t:"Insurance Claims",d:"We fight for your full payout — Xactimate certified.",h:"/services/insurance-claims"},
+              {t:"Insurance Claims",d:"We fight for your full payout. Xactimate certified.",h:"/services/insurance-claims"},
             ].map((s,i)=>(
               <Link key={i} href={s.h} style={{textDecoration:"none"}}>
                 <div style={{background:LIGHT_BG,borderRadius:16,padding:"24px 20px",border:"1px solid rgba(13,33,55,0.04)",height:"100%"}}>
@@ -50,7 +50,7 @@ export default function CityContent() {
           </div>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Golden Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-            {["GAF Master Elite — top 2% of contractors nationwide","Up to 50 year manufacturer-backed warranty","Complete insurance claim management","CertainTeed Platinum Preferred certified","7,200+ roofs completed across Colorado","4.8★ Google rating from 200+ reviews","Locally owned and operated from Lakewood","Free inspections with no obligation"].map((item,i)=>(
+            {["GAF Master Elite, top 2% of contractors nationwide","Up to 50 year manufacturer-backed warranty","Complete insurance claim management","CertainTeed Platinum Preferred certified","7,200+ roofs completed across Colorado","4.8★ Google rating from 200+ reviews","Locally owned and operated from Lakewood","Free inspections with no obligation"].map((item,i)=>(
               <div key={i} style={{display:"flex",gap:12,alignItems:"flex-start"}}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{marginTop:2,flexShrink:0}}><polyline points="20 6 9 17 4 12"/></svg>
                 <span style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:TEXT,lineHeight:1.6}}>{item}</span>
@@ -59,7 +59,7 @@ export default function CityContent() {
           </div>
         </div>
       </section>
-      <CTA title={"Need a roofer in Golden?"} subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. No obligation, no pressure — just an honest assessment of your roof." />
+      <CTA title={"Need a roofer in Golden?"} subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. No obligation, no pressure, just an honest assessment of your roof." />
       <Footer />
     </div>
   );

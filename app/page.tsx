@@ -36,7 +36,7 @@ export default function Home() {
           <div>
               <div className="hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 100, padding: "7px 16px", marginBottom: 24 }}>
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#4ADE80", display: "inline-block" }} />
-                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.85)" }}>GAF Master Elite — Top 2% in North America</span>
+                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.85)" }}>GAF Master Elite, Top 2% in North America</span>
               </div>
               <h1 className="hero-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 4.5vw, 62px)", fontWeight: 800, color: WHITE, lineHeight: 1.06, margin: "0 0 20px" }}>
                 Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
@@ -64,7 +64,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                {[{ t: "4x Certified", d: "GAF · Malarkey · CertainTeed · Emerald" }, { t: "Insurance Experts", d: "Inspection to payment — we handle it all" }].map((c, i) => (
+                {[{ t: "4x Certified", d: "GAF · Malarkey · CertainTeed · Emerald" }, { t: "Insurance Experts", d: "Inspection to payment, we handle it all" }].map((c, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)" }}>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE, marginBottom: 4 }}>{c.t}</div>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.5 }}>{c.d}</div>
@@ -102,7 +102,7 @@ export default function Home() {
               { icon: Icons.wrench(), t: "Roof Repair", d: "Leak repair, flashing, emergency tarping. Fast response.", h: "/services/roof-repair" },
               { icon: Icons.siding(), t: "Siding & Exterior", d: "James Hardie, vinyl, and wood siding installation.", h: "/services/siding-exterior" },
               { icon: Icons.gutter(), t: "Gutters & Guards", d: "Seamless gutters and leaf guard systems.", h: "/services/gutters-guards" },
-              { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations — we fight for your payout.", h: "/services/insurance-claims" },
+              { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations. We fight for your payout.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
                 <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderTop: `3px solid ${ACCENT}`, borderRight: "1px solid rgba(13,33,55,0.06)", borderBottom: "1px solid rgba(13,33,55,0.06)", borderLeft: "1px solid rgba(13,33,55,0.06)", height: "100%", transition: "all 0.35s cubic-bezier(0.4,0,0.2,1)", cursor: "pointer", boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
@@ -141,9 +141,9 @@ export default function Home() {
             </div>
             <StaggerCards className="why-cards" stagger={0.1} distance={40}>
               {[
-                { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite — highest training, best warranties.", c: ACCENT },
+                { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite. Highest training, best warranties.", c: ACCENT },
                 { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: GOLD },
-                { n: "03", t: "One-Stop Exterior", d: "Roof, siding, gutters — one company, one warranty.", c: ACCENT },
+                { n: "03", t: "One-Stop Exterior", d: "Roof, siding, gutters. One company, one warranty.", c: ACCENT },
                 { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: GOLD },
               ].map((item, i) => (
                 <div key={i} style={{ background: LIGHT_BG, borderRadius: 18, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>

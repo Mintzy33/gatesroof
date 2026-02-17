@@ -71,11 +71,11 @@ export default function ContactContent() {
             </div>
             <div style={{background:LIGHT_BG,borderRadius:24,padding:"40px 36px",marginBottom:24,border:"1px solid rgba(13,33,55,0.04)"}}>
               <h3 style={{fontFamily:"var(--font-playfair), 'Playfair Display', Georgia, serif",fontSize:20,fontWeight:700,color:NAVY,marginBottom:16}}>Business Hours</h3>
-              <div style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:TEXT_LIGHT,lineHeight:2}}>Monday – Friday: 7:00 AM – 6:00 PM<br/>Saturday: 8:00 AM – 2:00 PM<br/>Sunday: Closed<br/><span style={{color:ACCENT,fontWeight:600}}>24/7 Emergency Service Available</span></div>
+              <div style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:TEXT_LIGHT,lineHeight:2}}>Monday - Friday: 7:00 AM - 6:00 PM<br/>Saturday: 8:00 AM - 2:00 PM<br/>Sunday: Closed<br/><span style={{color:ACCENT,fontWeight:600}}>24/7 Emergency Service Available</span></div>
             </div>
             <div style={{background:NAVY,borderRadius:24,padding:"40px 36px"}}>
               <h3 style={{fontFamily:"var(--font-playfair), 'Playfair Display', Georgia, serif",fontSize:20,fontWeight:700,color:WHITE,marginBottom:12}}>Prefer to Call?</h3>
-              <p style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:"rgba(255,255,255,0.7)",lineHeight:1.7,marginBottom:24}}>Talk to a real person — not a call center.</p>
+              <p style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:"rgba(255,255,255,0.7)",lineHeight:1.7,marginBottom:24}}>Talk to a real person, not a call center.</p>
               <a href="tel:7207663377" onClick={()=>{if(window.fbq)window.fbq('track','Contact',{content_name:'phone_call'})}} style={{display:"inline-block",background:ACCENT,color:WHITE,borderRadius:100,padding:"16px 32px",textDecoration:"none",fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:16,fontWeight:600}}>Call (720) 766-3377</a>
             </div>
           </div>

@@ -81,7 +81,7 @@ export default function AboutContent() {
             Meet the Team<br />Behind Your Roof
           </h1>
           <p className="about-hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.8)", maxWidth: 520, margin: 0, lineHeight: 1.7 }}>
-            We&apos;re not a corporation. We&apos;re a crew of people who care about doing things right — for your home, your family, and your neighborhood.
+            We&apos;re not a corporation. We&apos;re a crew of people who care about doing things right, for your home, your family, and your neighborhood.
           </p>
         </div>
       </section>
@@ -123,7 +123,7 @@ export default function AboutContent() {
           </div>
           <div className="values-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
             {[
-              { icon: "🛡️", t: "Integrity First", d: "We tell you what your roof needs — not what makes us the most money. Honest assessments, always." },
+              { icon: "🛡️", t: "Integrity First", d: "We tell you what your roof needs, not what makes us the most money. Honest assessments, always." },
               { icon: "⚡", t: "Relentless Work Ethic", d: "First ones on site, last ones to leave. Every project gets our full attention until the final nail." },
               { icon: "🤝", t: "Fight For the Homeowner", d: "Insurance companies have adjusters. You have us. We negotiate, supplement, and recover what you're owed." },
               { icon: "📍", t: "Local Roots", d: "We live in Lakewood. Our kids go to school here. When a hailstorm hits, it hits our neighborhood too." },
@@ -175,10 +175,10 @@ export default function AboutContent() {
             {[
               { y: "2014", t: "Gates Enterprises Founded", d: "Started with a truck, a ladder, and a commitment to doing right by Colorado homeowners." },
               { y: "2016", t: "1,000th Roof Completed", d: "Hit our first major milestone. Word of mouth became our biggest marketing channel." },
-              { y: "2018", t: "GAF Master Elite Certification", d: "Earned the roofing industry's most prestigious contractor credential — top 2% nationally." },
+              { y: "2018", t: "GAF Master Elite Certification", d: "Earned the roofing industry's most prestigious contractor credential. Top 2% nationally." },
               { y: "2020", t: "Quadruple Certified", d: "Added CertainTeed Platinum Preferred, Malarkey, and Emerald certifications." },
               { y: "2022", t: "5,000th Roof & Insurance Milestone", d: "Surpassed 5,000 completed projects and $10M+ recovered in insurance supplements for homeowners." },
-              { y: "2024", t: "7,200+ Roofs & Growing", d: "Expanded to full exterior services — siding, gutters, paint. Still based in Lakewood. Still answering our own phones." },
+              { y: "2024", t: "7,200+ Roofs & Growing", d: "Expanded to full exterior services. Siding, gutters, paint. Still based in Lakewood. Still answering our own phones." },
             ].map((m, i) => (
               <div key={i} className="tl-item" style={{ position: "relative", marginBottom: i < 5 ? 40 : 0, paddingLeft: 28 }}>
                 {/* Dot */}
@@ -201,7 +201,7 @@ export default function AboutContent() {
               More Than a Roofing Company
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, marginBottom: 20 }}>
-              We believe the communities that trust us with their homes deserve more than just good craftsmanship. That&apos;s why we invest in the neighborhoods we serve — sponsoring local youth sports, donating materials for community projects, and providing free roof inspections for elderly homeowners after every major storm.
+              We believe the communities that trust us with their homes deserve more than just good craftsmanship. That&apos;s why we invest in the neighborhoods we serve, sponsoring local youth sports, donating materials for community projects, and providing free roof inspections for elderly homeowners after every major storm.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, margin: 0 }}>
               When your roofer lives down the street, they care different. We&apos;re proof.
