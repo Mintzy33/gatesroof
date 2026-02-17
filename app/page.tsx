@@ -167,7 +167,7 @@ export default function Home() {
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 10px" }}>What Homeowners Say</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
                 <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star()}</span>)}</div>
-                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>4.8 stars from 200+ verified reviews</span>
+                <a href="https://www.google.com/maps/place/Gates+Enterprises" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", borderBottom: "1px solid rgba(100,116,139,0.3)", transition: "color 0.2s" }}>4.8 stars from 293+ Google Reviews</a>
               </div>
             </div>
           </ScrollReveal>
@@ -236,8 +236,7 @@ export default function Home() {
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .why-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
         .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
+.home-cta-btns { display: flex; gap: 12px; justify-content: center; }
 
         .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(13,33,55,0.22), 0 8px 20px rgba(13,33,55,0.12); background: #0D2137 !important; border-color: #0D2137 !important; }
         .service-card:hover h3 { color: #FFFFFF !important; }
@@ -260,8 +259,7 @@ export default function Home() {
           .service-card p { font-size: 13px !important; }
           .why-grid { grid-template-columns: 1fr !important; gap: 36px !important; text-align: center; }
           .why-cards { grid-template-columns: 1fr 1fr !important; }
-          .reviews-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
-          .home-cta-btns { flex-direction: column !important; align-items: stretch !important; }
+.home-cta-btns { flex-direction: column !important; align-items: stretch !important; }
           .home-cta-btns a { text-align: center !important; }
         }
         @media (max-width: 400px) {

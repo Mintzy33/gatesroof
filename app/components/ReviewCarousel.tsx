@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -12,6 +13,8 @@ const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 const WHITE = "#FFFFFF";
 
+const CHAR_LIMIT = 220;
+
 const GoogleG = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
@@ -21,18 +24,111 @@ const GoogleG = () => (
   </svg>
 );
 
-const BbbLogo = () => (
-  <svg width="22" height="18" viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg">
-    <rect width="40" height="24" rx="4" fill="#005A78"/>
-    <text x="20" y="16" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="700" fill="#FFFFFF">BBB</text>
-  </svg>
-);
-
 const StarIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill={GOLD} stroke="none">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
   </svg>
 );
+
+function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
+  const [expanded, setExpanded] = useState(false);
+  const isLong = r.text.length > CHAR_LIMIT;
+  const displayText = !isLong || expanded ? r.text : r.text.slice(0, CHAR_LIMIT).trimEnd() + "...";
+
+  return (
+    <div style={{
+      background: WHITE,
+      borderRadius: 16,
+      padding: "28px 24px",
+      border: "1px solid rgba(13,33,55,0.06)",
+      boxShadow: "0 2px 12px rgba(13,33,55,0.05)",
+      display: "flex",
+      flexDirection: "column" as const,
+      height: "100%",
+      position: "relative",
+    }}>
+      {/* Google logo top right */}
+      <div style={{ position: "absolute", top: 20, right: 20 }}>
+        <GoogleG />
+      </div>
+
+      {/* Stars */}
+      <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
+        {Array.from({ length: r.rating }).map((_, j) => (
+          <StarIcon key={j} />
+        ))}
+      </div>
+
+      {/* Review text */}
+      <p style={{
+        fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+        fontSize: 15,
+        lineHeight: 1.75,
+        color: TEXT,
+        margin: "0 0 20px",
+        flex: 1,
+      }}>
+        &ldquo;{displayText}&rdquo;
+        {isLong && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#2563EB",
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 14,
+              fontWeight: 600,
+              cursor: "pointer",
+              padding: "0 0 0 4px",
+              display: "inline",
+            }}
+          >
+            {expanded ? "Show less" : "Read more"}
+          </button>
+        )}
+      </p>
+
+      {/* Reviewer info */}
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: "auto" }}>
+        <div style={{
+          width: 38,
+          height: 38,
+          borderRadius: "50%",
+          background: `linear-gradient(135deg, ${NAVY}, #1a3a5c)`,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: WHITE,
+          fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+          fontSize: 15,
+          fontWeight: 700,
+          flexShrink: 0,
+        }}>
+          {r.name[0]}
+        </div>
+        <div>
+          <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.name}</div>
+          {r.date && (
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.date}</div>
+          )}
+        </div>
+      </div>
+
+      {/* Source text */}
+      <div style={{
+        fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+        fontSize: 11,
+        color: TEXT_LIGHT,
+        marginTop: 16,
+        paddingTop: 12,
+        borderTop: "1px solid rgba(13,33,55,0.06)",
+      }}>
+        Posted on Google
+      </div>
+    </div>
+  );
+}
 
 export default function ReviewCarousel() {
   return (
@@ -53,77 +149,7 @@ export default function ReviewCarousel() {
       >
         {reviews.map((r, i) => (
           <SwiperSlide key={i} style={{ height: "auto" }}>
-            <div style={{
-              background: WHITE,
-              borderRadius: 16,
-              padding: "28px 24px",
-              border: "1px solid rgba(13,33,55,0.06)",
-              boxShadow: "0 2px 12px rgba(13,33,55,0.05)",
-              display: "flex",
-              flexDirection: "column" as const,
-              height: "100%",
-              position: "relative",
-            }}>
-              {/* Source logo top right */}
-              <div style={{ position: "absolute", top: 20, right: 20 }}>
-                {r.source === "google" ? <GoogleG /> : <BbbLogo />}
-              </div>
-
-              {/* Stars */}
-              <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
-                {Array.from({ length: r.rating }).map((_, j) => (
-                  <StarIcon key={j} />
-                ))}
-              </div>
-
-              {/* Review text */}
-              <p style={{
-                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                fontSize: 15,
-                lineHeight: 1.75,
-                color: TEXT,
-                margin: "0 0 20px",
-                flex: 1,
-              }}>
-                &ldquo;{r.text}&rdquo;
-              </p>
-
-              {/* Reviewer info */}
-              <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: "auto" }}>
-                <div style={{
-                  width: 38,
-                  height: 38,
-                  borderRadius: "50%",
-                  background: `linear-gradient(135deg, ${NAVY}, #1a3a5c)`,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: WHITE,
-                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-                  fontSize: 15,
-                  fontWeight: 700,
-                  flexShrink: 0,
-                }}>
-                  {r.name[0]}
-                </div>
-                <div>
-                  <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.name}</div>
-                  <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.location}</div>
-                </div>
-              </div>
-
-              {/* Source text */}
-              <div style={{
-                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                fontSize: 11,
-                color: TEXT_LIGHT,
-                marginTop: 16,
-                paddingTop: 12,
-                borderTop: "1px solid rgba(13,33,55,0.06)",
-              }}>
-                Posted on {r.source === "google" ? "Google" : "BBB"}
-              </div>
-            </div>
+            <ReviewCard r={r} i={i} />
           </SwiperSlide>
         ))}
       </Swiper>
