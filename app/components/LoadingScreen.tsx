@@ -23,23 +23,30 @@ export default function LoadingScreen() {
 
     document.body.style.overflow = "hidden";
 
+    const overlay = overlayRef.current;
+    const cloud = cloudRef.current;
+    const glow = glowRef.current;
+    const flash = flashRef.current;
+
     const tl = gsap.timeline({
       onComplete: () => {
-        setShow(false);
+        // Force invisible immediately, then unmount next frame
+        if (overlay) overlay.style.display = "none";
         document.body.style.overflow = "";
+        requestAnimationFrame(() => setShow(false));
       },
     });
 
     tl
       // 1. Glow pulses in behind logo
-      .from(glowRef.current, {
+      .from(glow, {
         opacity: 0,
         scale: 0.3,
         duration: 0.4,
         ease: "power2.out",
       })
       // 2. Cloud scales up from small with blur (like materializing)
-      .from(cloudRef.current, {
+      .from(cloud, {
         opacity: 0,
         scale: 0.5,
         filter: "blur(12px)",
@@ -47,42 +54,40 @@ export default function LoadingScreen() {
         ease: "back.out(1.4)",
       }, "<0.1")
       // 3. Glow breathes bigger
-      .to(glowRef.current, {
+      .to(glow, {
         scale: 1.3,
         opacity: 0.8,
         duration: 0.4,
         ease: "sine.inOut",
       }, "<0.2")
       // 4. Brief hold — cloud floats slightly
-      .to(cloudRef.current, {
+      .to(cloud, {
         y: -8,
         duration: 0.3,
         ease: "sine.inOut",
       })
-      .to(cloudRef.current, {
+      .to(cloud, {
         y: 0,
         duration: 0.2,
         ease: "sine.inOut",
       })
       // 5. White flash
-      .to(flashRef.current, {
+      .to(flash, {
         opacity: 1,
         duration: 0.08,
         ease: "power4.in",
       })
-      .to(flashRef.current, {
+      .to(flash, {
         opacity: 0,
         duration: 0.2,
         ease: "power2.out",
       })
-      // 6. Overlay wipes up (starts after flash fully fades)
-      .to(overlayRef.current, {
-        yPercent: -100,
-        duration: 0.5,
-        ease: "power3.inOut",
-      })
-      // 7. Fade to fully invisible before unmount to prevent flicker
-      .set(overlayRef.current, { opacity: 0 });
+      // 6. Overlay fades out smoothly (no wipe, no flicker)
+      .to(overlay, {
+        opacity: 0,
+        duration: 0.4,
+        ease: "power2.inOut",
+      });
   }, [show]);
 
   if (!show) return null;
