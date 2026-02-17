@@ -13,7 +13,7 @@ export default function Footer() {
             <div style={{ marginBottom: 20 }}>
               <Link href="/"><Image src="/logo.png" alt="Gates Enterprises" width={180} height={54} style={{ height: 40, width: "auto", objectFit: "contain" }} /></Link>
             </div>
-            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.8, color: TEXT_LIGHT, maxWidth: 280 }}>1445 Holland St, Lakewood, CO 80215<br />Colorado Licensed General Contractor<br />GAF Master Elite Certified</p>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.8, color: TEXT_LIGHT, maxWidth: 280 }}>1445 Holland St, Lakewood, CO 80215<br />Colorado Licensed General Contractor</p>
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Services</h3>
