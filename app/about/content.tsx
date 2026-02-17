@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/Header";
-import { ShieldCheck, Flame, Handshake, MapPin } from "lucide-react";
+import { ShieldCheck, Flame, Handshake, MapPin, Shield, Award, Leaf, Star } from "lucide-react";
 import Footer from "../components/Footer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -142,21 +142,22 @@ export default function AboutContent() {
 
       {/* ─── CERTIFICATIONS ─── */}
       <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG }}>
-        <div style={{ maxWidth: 1000, margin: "0 auto", textAlign: "center" as const }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", textAlign: "center" as const }}>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>CERTIFICATIONS</span>
-          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 48px" }}>Quadruple Manufacturer Certified</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 12px" }}>Quadruple Manufacturer Certified</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: TEXT_LIGHT, lineHeight: 1.7, maxWidth: 600, margin: "0 auto 48px" }}>Only 1% of roofing contractors in the U.S. hold all four of these certifications.</p>
           <div className="certs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
             {[
-              { name: "GAF Master Elite", desc: "Top 2% of roofing contractors in North America. Golden Pledge warranty access.", hl: true },
-              { name: "CertainTeed Platinum", desc: "CertainTeed's highest tier. SureStart PLUS extended warranty.", hl: false },
-              { name: "Malarkey Certified", desc: "Factory-certified installer of Malarkey's premium roofing line.", hl: false },
-              { name: "Emerald Premium", desc: "Premium certification for excellence in installation and service.", hl: false },
+              { Icon: Shield, name: "GAF Master Elite", desc: "Top 2% of contractors nationwide. Qualifies homeowners for the Golden Pledge Limited Lifetime Warranty with 25 years of workmanship coverage and 10 years of 100% material defect coverage." },
+              { Icon: Award, name: "Owens Corning Platinum Preferred", desc: "Platinum Protection Limited Lifetime Warranty with up to 25 years of workmanship coverage. Only available through Platinum Preferred contractors." },
+              { Icon: Leaf, name: "Malarkey Emerald Pro", desc: "Emerald Pro Warranty includes a limited lifetime material warranty plus 25 years of workmanship coverage. Eco-friendly shingles made with upcycled materials." },
+              { Icon: Star, name: "CertainTeed Shingle Master", desc: "5 Star extended warranty with 25 years of workmanship coverage backed directly by CertainTeed. Requires advanced installation training." },
             ].map((c, i) => (
-              <div key={i} style={{ background: WHITE, borderRadius: 20, padding: "32px 24px", border: c.hl ? `2px solid ${ACCENT}` : "1px solid rgba(13,33,55,0.05)", boxShadow: c.hl ? "0 8px 30px rgba(59,125,216,0.1)" : "0 2px 12px rgba(13,33,55,0.03)" }}>
-                <div style={{ width: 52, height: 52, borderRadius: 14, background: c.hl ? "rgba(37,99,235,0.08)" : LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 18px" }}>
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={c.hl ? ACCENT : NAVY} strokeWidth="1.8"><circle cx="12" cy="8" r="7" /><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" /></svg>
+              <div key={i} className="cert-card" style={{ background: WHITE, borderRadius: 20, padding: "36px 24px", border: `2px solid ${ACCENT}`, boxShadow: "0 2px 12px rgba(13,33,55,0.04)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center", transition: "transform 0.25s ease, box-shadow 0.25s ease", cursor: "default" }}>
+                <div style={{ width: 52, height: 52, borderRadius: 14, background: "rgba(37,99,235,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+                  <c.Icon size={26} color={ACCENT} strokeWidth={1.8} />
                 </div>
-                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{c.name}</h3>
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, marginBottom: 10, lineHeight: 1.3 }}>{c.name}</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{c.desc}</p>
               </div>
             ))}
@@ -251,6 +252,10 @@ export default function AboutContent() {
           .about-hero-sub { font-size: 16px !important; }
           .about-cta-btns { flex-direction: column !important; }
           .about-cta-btns a { text-align: center !important; }
+        }
+        .cert-card:hover {
+          transform: translateY(-4px) !important;
+          box-shadow: 0 12px 32px rgba(37,99,235,0.12) !important;
         }
         @media (max-width: 480px) {
           .values-grid { grid-template-columns: 1fr !important; }
