@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/Header";
+import { ShieldCheck, Flame, Handshake, MapPin } from "lucide-react";
 import Footer from "../components/Footer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -122,14 +123,16 @@ export default function AboutContent() {
           </div>
           <div className="values-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
             {[
-              { icon: "🛡️", t: "Integrity First", d: "We tell you what your roof needs, not what makes us the most money. Honest assessments, always." },
-              { icon: "⚡", t: "Relentless Work Ethic", d: "First ones on site, last ones to leave. Every project gets our full attention until the final nail." },
-              { icon: "🤝", t: "Fight For the Homeowner", d: "Insurance companies have adjusters. You have us. We negotiate, supplement, and recover what you're owed." },
-              { icon: "📍", t: "Local Roots", d: "We live in Lakewood. Our kids go to school here. When a hailstorm hits, it hits our neighborhood too." },
+              { Icon: ShieldCheck, t: "Integrity First", d: "We tell you what your roof needs, not what makes us the most money. Honest assessments, always." },
+              { Icon: Flame, t: "Relentless Work Ethic", d: "First ones on site, last ones to leave. Every project gets our full attention until the final nail." },
+              { Icon: Handshake, t: "Fight For the Homeowner", d: "Insurance companies have adjusters. You have us. We negotiate, supplement, and recover what you're owed." },
+              { Icon: MapPin, t: "Local Roots", d: "We live in Lakewood. Our kids go to school here. When a hailstorm hits, it hits our neighborhood too." },
             ].map((v, i) => (
-              <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "32px 24px", backdropFilter: "blur(8px)" }}>
-                <div style={{ fontSize: 32, marginBottom: 16 }}>{v.icon}</div>
-                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: WHITE, marginBottom: 10 }}>{v.t}</h3>
+              <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "36px 24px", backdropFilter: "blur(8px)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center" }}>
+                <div style={{ width: 52, height: 52, borderRadius: 14, background: "rgba(37,99,235,0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
+                  <v.Icon size={26} color={ACCENT} strokeWidth={1.8} />
+                </div>
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: WHITE, marginBottom: 10, whiteSpace: "nowrap" as const }}>{v.t}</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(255,255,255,0.65)", margin: 0 }}>{v.d}</p>
               </div>
             ))}
