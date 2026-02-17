@@ -109,7 +109,7 @@ export function StaggerCards({
 }
 
 /* ─── CounterGSAP ─── scroll-triggered number counter ─── */
-export function CounterGSAP({ end, suffix = "" }: { end: number; suffix?: string }) {
+export function CounterGSAP({ end, suffix = "", duration = 2.2 }: { end: number; suffix?: string; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [display, setDisplay] = useState("0");
 
@@ -120,7 +120,7 @@ export function CounterGSAP({ end, suffix = "" }: { end: number; suffix?: string
     const obj = { val: 0 };
     const tween = gsap.to(obj, {
       val: end,
-      duration: 2.2,
+      duration,
       ease: "power2.out",
       snap: { val: 1 },
       onUpdate: () => setDisplay(obj.val.toLocaleString()),
@@ -132,7 +132,7 @@ export function CounterGSAP({ end, suffix = "" }: { end: number; suffix?: string
     });
 
     return () => { tween.scrollTrigger?.kill(); tween.kill(); };
-  }, [end]);
+  }, [end, duration]);
 
   return <span ref={ref}>{display}{suffix}</span>;
 }

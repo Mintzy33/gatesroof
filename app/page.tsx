@@ -53,9 +53,9 @@ export default function Home() {
             <ScrollReveal delay={0.3} direction="left">
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "28px 28px", backdropFilter: "blur(10px)", marginBottom: 16 }}>
                 <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
-                  {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", d: "4.8★" }].map((s, i) => (
+                  {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", star: true }].map((s, i) => (
                     <div key={i} style={{ textAlign: "center" as const }}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.d || <CounterGSAP end={s.n} suffix={s.s} />}</div>
+                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.star ? <span style={{ color: GOLD }}>4.8★</span> : <CounterGSAP end={s.n} suffix={s.s} duration={2.2} />}</div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.6)", marginTop: 6, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
                   ))}
@@ -72,16 +72,6 @@ export default function Home() {
                 ))}
               </div>
             </ScrollReveal>
-          </div>
-        </div>
-        <div className="mobile-hero-stats" style={{ position: "relative", zIndex: 1, padding: "0 20px 60px", width: "100%" }}>
-          <div style={{ display: "flex", justifyContent: "center", gap: 28, flexWrap: "wrap" as const }}>
-            {[{ v: "7,200+", l: "Roofs" }, { v: "10+", l: "Years" }, { v: "4.8★", l: "Rating" }].map((s, i) => (
-              <div key={i} style={{ textAlign: "center" as const }}>
-                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 24, fontWeight: 800, color: WHITE }}>{s.v}</div>
-                <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, color: "rgba(255,255,255,0.55)", marginTop: 2, letterSpacing: "0.1em", textTransform: "uppercase" as const }}>{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -138,9 +128,11 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
                 <div style={{ display: "flex", gap: 28 }}>
-                  {[{ v: "7,204+", l: "Roofs" }, { v: "10+", l: "Years" }, { v: "4.8★", l: "Rating" }].map((s, i) => (
+                  {[{ n: 7204, s: "+", l: "Roofs", dur: 2.2 }, { n: 10, s: "+", l: "Years", dur: 2.2 }, { n: 0, s: "", l: "Rating", dur: 0, star: true }].map((s, i) => (
                     <div key={i}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 3vw, 34px)", fontWeight: 800, color: NAVY }}>{s.v}</div>
+                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 3vw, 34px)", fontWeight: 800, color: NAVY }}>
+                        {s.star ? <><span style={{ color: GOLD }}>4.8</span><span style={{ color: GOLD }}>★</span></> : <CounterGSAP end={s.n} suffix={s.s} duration={s.dur} />}
+                      </div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: TEXT_LIGHT, marginTop: 2, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
                   ))}
@@ -258,7 +250,6 @@ export default function Home() {
         /* Desktop defaults (unlayered so they override Tailwind CSS layers) */
         .hero-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 140px 20px 80px; }
         .hero-btns { display: flex; gap: 12px; }
-        .mobile-hero-stats { display: none; }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .why-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
         .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -269,7 +260,6 @@ export default function Home() {
         @media (max-width: 768px) {
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }
-          .mobile-hero-stats { display: flex !important; }
           .hero-badge { margin-left: auto; margin-right: auto; margin-bottom: 18px !important; }
           .hero-badge span:last-child { font-size: 11px !important; }
           .hero-h1 { font-size: 34px !important; line-height: 1.12 !important; }
