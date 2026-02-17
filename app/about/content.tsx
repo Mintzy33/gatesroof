@@ -52,7 +52,7 @@ export default function AboutContent() {
 
     const mm = gsap.matchMedia();
 
-    // ── DESKTOP: one-at-a-time centered timeline ──
+    // ── DESKTOP: compact horizontal scroll timeline ──
     mm.add("(min-width: 769px)", () => {
       if (!timelineSectionRef.current || !timelineTrackRef.current || !timelineLineRef.current) return;
 
@@ -62,18 +62,23 @@ export default function AboutContent() {
       const dots = track.querySelectorAll<HTMLElement>(".tl-dot");
       const line = timelineLineRef.current;
       const count = cards.length;
-      const totalDistance = (count - 1) * window.innerWidth;
+      // Total horizontal travel: track width minus one viewport
+      const totalScroll = track.scrollWidth - window.innerWidth;
       const scrollDistance = window.innerHeight * 2;
 
-      // Horizontal slide — moves track left by (count-1) viewport widths
+      // Set first card to full opacity, rest dimmed
+      gsap.set(cards[0], { opacity: 1 });
+      for (let j = 1; j < count; j++) gsap.set(cards[j], { opacity: 0.25 });
+
+      // Horizontal slide
       const scrollTween = gsap.to(track, {
-        x: -totalDistance,
+        x: -totalScroll,
         ease: "none",
         scrollTrigger: {
           trigger: section,
           start: "top top",
           end: () => `+=${scrollDistance}`,
-          scrub: 0.6,
+          scrub: 0.5,
           pin: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
@@ -88,37 +93,37 @@ export default function AboutContent() {
           trigger: section,
           start: "top top",
           end: () => `+=${scrollDistance}`,
-          scrub: 0.6,
+          scrub: 0.5,
         },
       });
 
-      // Each card: active = full opacity, past/upcoming = dimmed
+      // Each card: fade in when approaching center, fade out when leaving
       cards.forEach((card, i) => {
         const dot = dots[i];
 
-        // Fade in to full opacity when entering center
-        gsap.fromTo(card,
-          { opacity: 0.4 },
-          {
-            opacity: 1, duration: 0.3,
+        // Skip first card fade-in (already opacity 1)
+        if (i > 0) {
+          gsap.to(card, {
+            opacity: 1,
             scrollTrigger: {
               trigger: card,
               containerAnimation: scrollTween,
-              start: "left 75%",
-              end: "left 55%",
+              start: "left 70%",
+              end: "left 52%",
               scrub: true,
             },
-          }
-        );
-        // Fade out to dimmed when leaving center (except last card)
+          });
+        }
+
+        // Fade out when leaving center (except last card stays bright)
         if (i < count - 1) {
           gsap.to(card, {
-            opacity: 0.4,
+            opacity: 0.25,
             scrollTrigger: {
               trigger: card,
               containerAnimation: scrollTween,
-              start: "left 35%",
-              end: "left 15%",
+              start: "left 40%",
+              end: "left 20%",
               scrub: true,
             },
           });
@@ -129,12 +134,11 @@ export default function AboutContent() {
           gsap.to(dot, {
             background: ACCENT,
             borderColor: ACCENT,
-            scale: 1.2,
             scrollTrigger: {
               trigger: card,
               containerAnimation: scrollTween,
-              start: "left 70%",
-              end: "left 55%",
+              start: "left 65%",
+              end: "left 52%",
               scrub: true,
             },
           });
@@ -281,24 +285,28 @@ export default function AboutContent() {
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR JOURNEY</span>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 0" }}>Milestones That Matter</h2>
         </div>
-        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 36, paddingBottom: 48, position: "relative", width: `${MILESTONES.length * 100}vw` }}>
+        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 36, paddingBottom: 48, position: "relative", width: "fit-content" }}>
+          {/* Left spacer to center first card */}
+          <div style={{ minWidth: "calc(50vw - 175px)", flexShrink: 0 }} />
           {/* Background line (gray) */}
-          <div style={{ position: "absolute", top: 52, left: "calc(50vw - 20px)", width: `calc(${(MILESTONES.length - 1) * 100}vw + 40px)`, height: 2, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
+          <div style={{ position: "absolute", top: 52, left: "calc(50vw - 175px)", width: `${(MILESTONES.length - 1) * 350}px`, height: 2, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
           {/* Progress line (blue, fills via scaleX) */}
-          <div ref={timelineLineRef} style={{ position: "absolute", top: 52, left: "calc(50vw - 20px)", width: `calc(${(MILESTONES.length - 1) * 100}vw + 40px)`, height: 2, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
+          <div ref={timelineLineRef} style={{ position: "absolute", top: 52, left: "calc(50vw - 175px)", width: `${(MILESTONES.length - 1) * 350}px`, height: 2, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
 
           {MILESTONES.map((m, i) => (
-            <div key={i} className="tl-card" style={{ width: "100vw", flexShrink: 0, display: "flex", flexDirection: "column" as const, alignItems: "center", position: "relative", opacity: i === 0 ? 1 : 0.4 }}>
+            <div key={i} className="tl-card" style={{ width: 350, flexShrink: 0, display: "flex", flexDirection: "column" as const, alignItems: "center", position: "relative" }}>
               {/* Dot on the line */}
-              <div className="tl-dot" style={{ width: 14, height: 14, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, marginBottom: 16, position: "relative", zIndex: 2, ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
+              <div className="tl-dot" style={{ width: 14, height: 14, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, marginBottom: 14, position: "relative", zIndex: 2, ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
               {/* Year */}
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 8, textAlign: "center" as const }}>{m.y}</div>
+              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 28, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 6, textAlign: "center" as const }}>{m.y}</div>
               {/* Title */}
-              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: NAVY, marginBottom: 8, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
+              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, marginBottom: 6, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
               {/* Description */}
-              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const, maxWidth: 380, padding: "0 24px" }}>{m.d}</p>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.65, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const, maxWidth: 300, padding: "0 16px" }}>{m.d}</p>
             </div>
           ))}
+          {/* Right spacer to center last card */}
+          <div style={{ minWidth: "calc(50vw - 175px)", flexShrink: 0 }} />
         </div>
       </section>
 
