@@ -18,8 +18,21 @@ const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 
+const MILESTONES = [
+  { y: "2014", t: "Gates Enterprises Founded", d: "One truck. One ladder. One promise: treat every roof like it's your mom's house." },
+  { y: "2016", t: "1,000 Roofs Completed", d: "Grew entirely through referrals. No ads, no gimmicks. Just good work." },
+  { y: "2018", t: "GAF Master Elite Certified", d: "Joined the top 2% of roofing contractors in North America. Unlocked the Golden Pledge Lifetime Warranty for our customers." },
+  { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Only 1% of contractors hold all four." },
+  { y: "2022", t: "5,000 Roofs and Millions Recovered", d: "Surpassed 5,000 completed projects. Recovered millions in insurance supplements that adjusters tried to deny." },
+  { y: "2024", t: "Full Exterior Services Launched", d: "Expanded beyond roofing into siding, gutters, windows, and paint. One contractor for everything above your foundation." },
+  { y: "2026", t: "7,200+ Roofs and 100 Strong", d: "Grew to over 100 employees with dedicated facilities for every step of the process. Still based in Lakewood. Still answering our own phones." },
+];
+
 export default function AboutContent() {
   const heroImgRef = useRef<HTMLDivElement>(null);
+  const timelineSectionRef = useRef<HTMLDivElement>(null);
+  const timelineTrackRef = useRef<HTMLDivElement>(null);
+  const timelineLineRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,24 +50,100 @@ export default function AboutContent() {
       });
     }
 
-    // Stagger timeline items
-    if (timelineRef.current) {
-      const items = timelineRef.current.querySelectorAll(".tl-item");
-      gsap.from(items, {
-        opacity: 0,
-        x: -30,
-        stagger: 0.12,
-        duration: 0.7,
-        ease: "power3.out",
+    const mm = gsap.matchMedia();
+
+    // ── DESKTOP: horizontal scroll timeline ──
+    mm.add("(min-width: 769px)", () => {
+      if (!timelineSectionRef.current || !timelineTrackRef.current || !timelineLineRef.current) return;
+
+      const track = timelineTrackRef.current;
+      const cards = track.querySelectorAll<HTMLElement>(".tl-card");
+      const dots = track.querySelectorAll<HTMLElement>(".tl-dot");
+      const line = timelineLineRef.current;
+      const totalScroll = track.scrollWidth - window.innerWidth;
+
+      // Horizontal scroll
+      const scrollTween = gsap.to(track, {
+        x: -totalScroll,
+        ease: "none",
         scrollTrigger: {
-          trigger: timelineRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
+          trigger: timelineSectionRef.current,
+          start: "top top",
+          end: () => `+=${totalScroll * 1.2}`,
+          scrub: 1,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
         },
       });
-    }
 
-    return () => { ScrollTrigger.getAll().forEach(t => t.kill()); };
+      // Progress line fill
+      gsap.to(line, {
+        scaleX: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: timelineSectionRef.current,
+          start: "top top",
+          end: () => `+=${totalScroll * 1.2}`,
+          scrub: 1,
+        },
+      });
+
+      // Each card + dot animation
+      cards.forEach((card, i) => {
+        const dot = dots[i];
+        gsap.fromTo(card,
+          { opacity: 0.15, y: 30 },
+          {
+            opacity: 1, y: 0, duration: 0.5,
+            scrollTrigger: {
+              trigger: card,
+              containerAnimation: scrollTween,
+              start: "left 75%",
+              end: "left 40%",
+              scrub: true,
+            },
+          }
+        );
+        if (dot) {
+          gsap.to(dot, {
+            background: ACCENT,
+            borderColor: ACCENT,
+            scrollTrigger: {
+              trigger: card,
+              containerAnimation: scrollTween,
+              start: "left 75%",
+              end: "left 60%",
+              scrub: true,
+            },
+          });
+        }
+      });
+    });
+
+    // ── MOBILE: vertical fade-in timeline ──
+    mm.add("(max-width: 768px)", () => {
+      if (!timelineRef.current) return;
+      const items = timelineRef.current.querySelectorAll(".tl-mob-item");
+      items.forEach((item) => {
+        gsap.from(item, {
+          opacity: 0,
+          y: 40,
+          duration: 0.6,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: item,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      });
+    });
+
+    return () => {
+      mm.revert();
+      ScrollTrigger.getAll().forEach(t => t.kill());
+    };
   }, []);
 
   return (
@@ -165,30 +254,51 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* ─── TIMELINE ─── */}
-      <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: WHITE }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <div style={{ textAlign: "center" as const, marginBottom: "clamp(40px, 5vw, 64px)" }}>
+      {/* ─── TIMELINE: DESKTOP (horizontal scroll) ─── */}
+      <section ref={timelineSectionRef} className="tl-desktop" style={{ background: WHITE, overflow: "hidden" }}>
+        <div style={{ padding: "80px 0 0", textAlign: "center" as const }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR JOURNEY</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 0" }}>Milestones That Matter</h2>
+        </div>
+        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 80, paddingBottom: 100, position: "relative", width: "fit-content" }}>
+          {/* Background line (gray) */}
+          <div style={{ position: "absolute", top: 130, left: 80, right: 80, height: 3, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
+          {/* Progress line (blue, fills via scaleX) */}
+          <div ref={timelineLineRef} style={{ position: "absolute", top: 130, left: 80, right: 80, height: 3, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
+
+          {MILESTONES.map((m, i) => (
+            <div key={i} className="tl-card" style={{ minWidth: 320, maxWidth: 320, padding: "0 40px", position: "relative", flexShrink: 0, opacity: i === 0 ? 1 : 0.15 }}>
+              {/* Dot on the line */}
+              <div className="tl-dot" style={{ width: 18, height: 18, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, margin: "0 auto 32px", position: "relative", zIndex: 2, transition: "background 0.3s, border-color 0.3s", ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
+              {/* Year */}
+              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 52, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 12, textAlign: "center" as const }}>{m.y}</div>
+              {/* Title */}
+              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: NAVY, marginBottom: 10, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
+              {/* Description */}
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const }}>{m.d}</p>
+            </div>
+          ))}
+          {/* Spacer to allow last card to scroll into view */}
+          <div style={{ minWidth: "40vw", flexShrink: 0 }} />
+        </div>
+      </section>
+
+      {/* ─── TIMELINE: MOBILE (vertical) ─── */}
+      <section className="tl-mobile" ref={timelineRef} style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: WHITE }}>
+        <div style={{ maxWidth: 600, margin: "0 auto" }}>
+          <div style={{ textAlign: "center" as const, marginBottom: 48 }}>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR JOURNEY</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 0" }}>Milestones That Matter</h2>
           </div>
-          <div ref={timelineRef} style={{ position: "relative", paddingLeft: 32 }}>
+          <div style={{ position: "relative", paddingLeft: 36 }}>
             {/* Vertical line */}
-            <div style={{ position: "absolute", left: 7, top: 8, bottom: 8, width: 2, background: `linear-gradient(180deg, ${ACCENT}, #60A5FA)`, borderRadius: 2 }} />
-            {[
-              { y: "2014", t: "Gates Enterprises Founded", d: "Started with a truck, a ladder, and a commitment to doing right by Colorado homeowners." },
-              { y: "2016", t: "1,000th Roof Completed", d: "Hit our first major milestone. Word of mouth became our biggest marketing channel." },
-              { y: "2018", t: "GAF Master Elite Certification", d: "Earned the roofing industry's most prestigious contractor credential. Top 2% nationally." },
-              { y: "2020", t: "Quadruple Certified", d: "Added CertainTeed Platinum Preferred, Malarkey, and Emerald certifications." },
-              { y: "2022", t: "5,000th Roof & Insurance Milestone", d: "Surpassed 5,000 completed projects and $10M+ recovered in insurance supplements for homeowners." },
-              { y: "2024", t: "7,200+ Roofs & Growing", d: "Expanded to full exterior services. Siding, gutters, paint. Still based in Lakewood. Still answering our own phones." },
-            ].map((m, i) => (
-              <div key={i} className="tl-item" style={{ position: "relative", marginBottom: i < 5 ? 40 : 0, paddingLeft: 28 }}>
-                {/* Dot */}
-                <div style={{ position: "absolute", left: -32, top: 6, width: 16, height: 16, borderRadius: "50%", background: WHITE, border: `3px solid ${ACCENT}`, zIndex: 1 }} />
-                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.1em" }}>{m.y}</span>
-                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: NAVY, margin: "6px 0 8px" }}>{m.t}</h3>
-                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{m.d}</p>
+            <div style={{ position: "absolute", left: 8, top: 8, bottom: 8, width: 3, background: `linear-gradient(180deg, ${ACCENT}, #60A5FA)`, borderRadius: 2 }} />
+            {MILESTONES.map((m, i) => (
+              <div key={i} className="tl-mob-item" style={{ position: "relative", marginBottom: i < MILESTONES.length - 1 ? 40 : 0, paddingLeft: 24 }}>
+                <div style={{ position: "absolute", left: -36, top: 4, width: 18, height: 18, borderRadius: "50%", background: WHITE, border: `3px solid ${ACCENT}`, zIndex: 1 }} />
+                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 6 }}>{m.y}</div>
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, margin: "0 0 8px", lineHeight: 1.3 }}>{m.t}</h3>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{m.d}</p>
               </div>
             ))}
           </div>
@@ -243,6 +353,7 @@ export default function AboutContent() {
       <Footer />
 
       <style>{`
+        .tl-mobile { display: none; }
         @media (max-width: 768px) {
           .founder-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .values-grid { grid-template-columns: 1fr 1fr !important; }
@@ -252,6 +363,8 @@ export default function AboutContent() {
           .about-hero-sub { font-size: 16px !important; }
           .about-cta-btns { flex-direction: column !important; }
           .about-cta-btns a { text-align: center !important; }
+          .tl-desktop { display: none !important; }
+          .tl-mobile { display: block !important; }
         }
         .cert-card:hover {
           transform: translateY(-4px) !important;
