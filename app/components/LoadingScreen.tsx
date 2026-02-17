@@ -4,23 +4,25 @@ import Image from "next/image";
 import gsap from "gsap";
 
 const NAVY = "#06263f";
+const ACCENT = "#2563EB";
 
 export default function LoadingScreen() {
   const [show, setShow] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLDivElement>(null);
+  const cloudRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
+  const flashRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Only show once per session
     if (sessionStorage.getItem("gates-loaded")) return;
     setShow(true);
     sessionStorage.setItem("gates-loaded", "1");
   }, []);
 
   useEffect(() => {
-    if (!show || !overlayRef.current || !logoRef.current) return;
+    if (!show || !overlayRef.current || !cloudRef.current || !glowRef.current || !ringRef.current || !flashRef.current) return;
 
-    // Lock scroll during loading
     document.body.style.overflow = "hidden";
 
     const tl = gsap.timeline({
@@ -30,18 +32,63 @@ export default function LoadingScreen() {
       },
     });
 
-    tl.from(logoRef.current, {
-      opacity: 0,
-      scale: 0.85,
-      duration: 0.3,
-      ease: "power2.out",
-    })
-    .to({}, { duration: 0.2 }) // brief hold
-    .to(overlayRef.current, {
-      yPercent: -100,
-      duration: 0.4,
-      ease: "power2.inOut",
-    });
+    tl
+      // 1. Glow pulses in behind logo
+      .from(glowRef.current, {
+        opacity: 0,
+        scale: 0.3,
+        duration: 0.4,
+        ease: "power2.out",
+      })
+      // 2. Cloud scales up from small with blur (like materializing)
+      .from(cloudRef.current, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "blur(12px)",
+        duration: 0.5,
+        ease: "back.out(1.4)",
+      }, "<0.1")
+      // 3. Ring expands outward
+      .from(ringRef.current, {
+        opacity: 0,
+        scale: 0.4,
+        duration: 0.5,
+        ease: "power3.out",
+      }, "<0.15")
+      .to(ringRef.current, {
+        scale: 1.6,
+        opacity: 0,
+        duration: 0.4,
+        ease: "power2.in",
+      }, ">-0.1")
+      // 4. Brief hold — cloud floats slightly
+      .to(cloudRef.current, {
+        y: -8,
+        duration: 0.3,
+        ease: "sine.inOut",
+      })
+      .to(cloudRef.current, {
+        y: 0,
+        duration: 0.2,
+        ease: "sine.inOut",
+      })
+      // 5. White flash
+      .to(flashRef.current, {
+        opacity: 1,
+        duration: 0.08,
+        ease: "power4.in",
+      })
+      .to(flashRef.current, {
+        opacity: 0,
+        duration: 0.15,
+        ease: "power2.out",
+      })
+      // 6. Overlay wipes up
+      .to(overlayRef.current, {
+        yPercent: -100,
+        duration: 0.45,
+        ease: "power3.inOut",
+      }, ">-0.05");
   }, [show]);
 
   if (!show) return null;
@@ -57,27 +104,64 @@ export default function LoadingScreen() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        overflow: "hidden",
       }}
     >
-      <div ref={logoRef} style={{ textAlign: "center" }}>
+      {/* Background radial glow */}
+      <div
+        ref={glowRef}
+        style={{
+          position: "absolute",
+          width: 600,
+          height: 600,
+          borderRadius: "50%",
+          background: `radial-gradient(circle, rgba(37,99,235,0.2) 0%, rgba(37,99,235,0.05) 50%, transparent 70%)`,
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* Expanding ring */}
+      <div
+        ref={ringRef}
+        style={{
+          position: "absolute",
+          width: 320,
+          height: 320,
+          borderRadius: "50%",
+          border: `2px solid rgba(37,99,235,0.25)`,
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* Cloud logo — massive */}
+      <div ref={cloudRef} style={{ position: "relative", zIndex: 2 }}>
         <Image
           src="/logo.png"
           alt="Gates Enterprises"
-          width={500}
-          height={160}
-          style={{ height: 160, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)", marginBottom: 20 }}
+          width={800}
+          height={400}
+          style={{
+            height: "clamp(200px, 40vh, 400px)",
+            width: "auto",
+            objectFit: "contain",
+            filter: "brightness(0) invert(1) drop-shadow(0 0 60px rgba(37,99,235,0.3))",
+          }}
           priority
         />
-        <div style={{
-          fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-          fontSize: 28,
-          fontWeight: 700,
-          color: "#FFFFFF",
-          letterSpacing: "0.04em",
-        }}>
-          GATES ENTERPRISES LLC
-        </div>
       </div>
+
+      {/* White flash overlay */}
+      <div
+        ref={flashRef}
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "#FFFFFF",
+          opacity: 0,
+          pointerEvents: "none",
+          zIndex: 10,
+        }}
+      />
     </div>
   );
 }

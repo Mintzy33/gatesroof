@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { DM_Sans, Playfair_Display, Montserrat } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
 import Analytics from "./components/Analytics";
 import StickyBottomCTA from "./components/StickyBottomCTA";
@@ -17,6 +17,13 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["700", "800"],
   variable: "--font-playfair",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -86,7 +93,7 @@ const localBusinessSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${playfairDisplay.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${playfairDisplay.variable} ${montserrat.variable}`}>
       <head>
         <meta name="google-site-verification" content="qt8H-yQxvNQ6cAJlE1eDue5L7A2zS6FDsdhBzUdONFU" />
         <link rel="preload" as="image" href="https://res.cloudinary.com/dyr5ihrer/video/upload/q_40,f_webp,w_800,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov" type="image/webp" />
