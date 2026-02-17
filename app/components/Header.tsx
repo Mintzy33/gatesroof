@@ -36,12 +36,9 @@ export default function Header() {
           maxWidth: 1200, margin: "0 auto", padding: "0 20px",
           height: 64, display: "flex", alignItems: "center", justifyContent: "space-between",
         }}>
-          <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-            <Image src="/logo.png" alt="Gates Enterprises" width={140} height={42} className="header-logo" style={{ height: 36, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
-            <div className="header-text">
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: WHITE, lineHeight: 1.1 }}>GATES</div>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.5)", letterSpacing: "0.18em" }}>ENTERPRISES LLC</div>
-            </div>
+          <Link href="/" className="header-brand" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
+            <Image src="/logo.png" alt="Gates Enterprises" width={140} height={42} className="header-logo" style={{ height: 42, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
+            <span className="header-text" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap" }}>GATES ENTERPRISES LLC</span>
           </Link>
           <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {links.map(item => (
@@ -83,7 +80,13 @@ export default function Header() {
       </div>
       <style>{`
         @media (min-width: 769px) { .mobile-nav { display: none !important; } }
-        @media (max-width: 768px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } .header-logo { height: 28px !important; } .header-text div:first-child { font-size: 15px !important; } .header-text div:last-child { font-size: 8px !important; } }
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-nav { display: flex !important; }
+          .header-brand { flex: 1; justify-content: center; }
+          .header-logo { height: 34px !important; }
+          .header-text { font-size: 14px !important; }
+        }
       `}</style>
     </>
   );
