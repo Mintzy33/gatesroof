@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import CTA from "./CTA";
 
 const NAVY = "#0D2137";
-const ACCENT = "#3B7DD8";
+const ACCENT = "#2563EB";
 const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
@@ -35,15 +35,15 @@ export default function ServicePageLayout({
       {/* Hero */}
       <section style={{ padding: "160px 24px 80px", background: `linear-gradient(170deg, ${NAVY} 0%, #0F2A42 100%)` }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <Link href="/" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+          <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
             Home → Services → {breadcrumb}
           </Link>
-          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>{h1}</h1>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: GOLD, fontWeight: 500, marginBottom: 20 }}>{subheadline}</p>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>{heroCopy}</p>
+          <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>{h1}</h1>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: GOLD, fontWeight: 500, marginBottom: 20 }}>{subheadline}</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>{heroCopy}</p>
           <div style={{ display: "flex", gap: 14 }}>
-            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>
-            <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>(720) 766-3377</a>
+            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>
+            <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>(720) 766-3377</a>
           </div>
         </div>
       </section>
@@ -53,9 +53,9 @@ export default function ServicePageLayout({
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           {sections.map((sec, i) => (
             <div key={i} style={{ marginBottom: 48 }}>
-              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20, lineHeight: 1.2 }}>{sec.title}</h2>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20, lineHeight: 1.2 }}>{sec.title}</h2>
               {sec.content.map((p, j) => (
-                <p key={j} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>{p}</p>
+                <p key={j} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>{p}</p>
               ))}
             </div>
           ))}
@@ -65,14 +65,14 @@ export default function ServicePageLayout({
       {/* Process */}
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 40, textAlign: "center" as const }}>Our Process</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 40, textAlign: "center" as const }}>Our Process</h2>
           <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
             {process.map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 24, alignItems: "flex-start" }}>
-                <div style={{ minWidth: 48, height: 48, borderRadius: 14, background: WHITE, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: ACCENT, border: "1px solid rgba(59,125,216,0.1)" }}>{item.step}</div>
+                <div style={{ minWidth: 48, height: 48, borderRadius: 14, background: WHITE, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: ACCENT, border: "1px solid rgba(59,125,216,0.1)" }}>{item.step}</div>
                 <div>
-                  <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: NAVY, marginBottom: 6 }}>{item.title}</h3>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{item.desc}</p>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: NAVY, marginBottom: 6 }}>{item.title}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -83,14 +83,14 @@ export default function ServicePageLayout({
       {/* Why Gates */}
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 32, textAlign: "center" as const }}>Why Gates</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 32, textAlign: "center" as const }}>Why Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             {whyGates.map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start", background: LIGHT_BG, borderRadius: 16, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: 2, flexShrink: 0 }}>
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: TEXT, lineHeight: 1.6 }}><strong style={{ color: NAVY }}>{item.bold}</strong> {item.rest}</span>
+                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT, lineHeight: 1.6 }}><strong style={{ color: NAVY }}>{item.bold}</strong> {item.rest}</span>
               </div>
             ))}
           </div>
@@ -100,11 +100,11 @@ export default function ServicePageLayout({
       {/* FAQ */}
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 40, textAlign: "center" as const }}>Frequently Asked Questions</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 40, textAlign: "center" as const }}>Frequently Asked Questions</h2>
           {faqs.map((faq, i) => (
             <div key={i} style={{ background: WHITE, borderRadius: 16, padding: "28px 32px", marginBottom: 16, border: "1px solid rgba(13,33,55,0.05)" }}>
-              <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, fontWeight: 600, color: NAVY, marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, fontWeight: 600, color: NAVY, marginBottom: 10 }}>{faq.q}</h3>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>{faq.a}</p>
             </div>
           ))}
         </div>

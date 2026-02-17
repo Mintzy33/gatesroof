@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAVY = "#0D2137";
-const ACCENT = "#3B7DD8";
+const ACCENT = "#2563EB";
 const WHITE = "#FFFFFF";
 
 export default function Header() {
@@ -39,20 +39,20 @@ export default function Header() {
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
             <Image src="/logo.png" alt="Gates Enterprises" width={140} height={42} className="header-logo" style={{ height: 36, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
             <div className="header-text">
-              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: WHITE, lineHeight: 1.1 }}>GATES</div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.5)", letterSpacing: "0.18em" }}>ENTERPRISES LLC</div>
+              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: WHITE, lineHeight: 1.1 }}>GATES</div>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.5)", letterSpacing: "0.18em" }}>ENTERPRISES LLC</div>
             </div>
           </Link>
           <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {links.map(item => (
-              <Link key={item.l} href={item.h} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
+              <Link key={item.l} href={item.h} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
             ))}
             <div style={{ width: 1, height: 20, background: "rgba(255,255,255,0.12)" }} />
-            <a href="tel:7207663377" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: WHITE, textDecoration: "none" }}>(720) 766-3377</a>
-            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "11px 24px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)" }}>Free Estimate</Link>
+            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: WHITE, textDecoration: "none" }}>(720) 766-3377</a>
+            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "11px 24px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)" }}>Free Estimate</Link>
           </nav>
           <div className="mobile-nav" style={{ display: "none", alignItems: "center", gap: 10 }}>
-            <a href="tel:7207663377" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "8px 14px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
+            <a href="tel:7207663377" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "8px 14px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               Call
             </a>
@@ -70,15 +70,15 @@ export default function Header() {
         <div style={{ height: 64 }} />
         <div style={{ padding: "32px 28px", flex: 1 }}>
           {links.map((item, i) => (
-            <Link key={item.l} href={item.h} onClick={() => setMenuOpen(false)} style={{ display: "block", padding: "20px 0", fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 700, color: NAVY, textDecoration: "none", borderBottom: i < links.length - 1 ? "1px solid rgba(13,33,55,0.06)" : "none", opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(20px)", transition: `opacity 0.4s ${0.08 + i * 0.04}s, transform 0.4s ${0.08 + i * 0.04}s` }}>{item.l}</Link>
+            <Link key={item.l} href={item.h} onClick={() => setMenuOpen(false)} style={{ display: "block", padding: "20px 0", fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 700, color: NAVY, textDecoration: "none", borderBottom: i < links.length - 1 ? "1px solid rgba(13,33,55,0.06)" : "none", opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(20px)", transition: `opacity 0.4s ${0.08 + i * 0.04}s, transform 0.4s ${0.08 + i * 0.04}s` }}>{item.l}</Link>
           ))}
         </div>
         <div style={{ padding: "24px 28px 40px", background: "#FAFBFD" }}>
-          <a href="tel:7207663377" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, fontFamily: "'DM Sans', sans-serif", fontSize: 18, fontWeight: 700, color: NAVY, textDecoration: "none", marginBottom: 16 }}>
+          <a href="tel:7207663377" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, fontWeight: 700, color: NAVY, textDecoration: "none", marginBottom: 16 }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             (720) 766-3377
           </a>
-          <Link href="/contact" onClick={() => setMenuOpen(false)} style={{ display: "block", textAlign: "center", background: ACCENT, color: WHITE, borderRadius: 14, padding: "18px 36px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 600 }}>Get Free Estimate</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} style={{ display: "block", textAlign: "center", background: ACCENT, color: WHITE, borderRadius: 14, padding: "18px 36px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600 }}>Get Free Estimate</Link>
         </div>
       </div>
       <style>{`

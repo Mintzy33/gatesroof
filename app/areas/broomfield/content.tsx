@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 const NAVY = "#0D2137";
-const ACCENT = "#3B7DD8";
+const ACCENT = "#2563EB";
 const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
@@ -16,21 +16,21 @@ export default function CityContent() {
       <Header />
       <section style={{ padding: "160px 24px 80px", background: `linear-gradient(170deg, ${NAVY} 0%, #0F2A42 100%)` }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <Link href="/" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home → Service Areas → Broomfield</Link>
-          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>Roofing Contractor in Broomfield, CO</h1>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: GOLD, fontWeight: 500, marginBottom: 20 }}>GAF Master Elite Certified · 7,200+ Roofs · 4.8★ Google Rating</p>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>Gates Enterprises serves Broomfield homeowners with certified roofing expertise. Whether your home is in Interlocken, McKay Landing, or any Broomfield neighborhood, we deliver quality that lasts.</p>
+          <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home → Service Areas → Broomfield</Link>
+          <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>Roofing Contractor in Broomfield, CO</h1>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: GOLD, fontWeight: 500, marginBottom: 20 }}>GAF Master Elite Certified · 7,200+ Roofs · 4.8★ Google Rating</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>Gates Enterprises serves Broomfield homeowners with certified roofing expertise. Whether your home is in Interlocken, McKay Landing, or any Broomfield neighborhood, we deliver quality that lasts.</p>
           <div style={{ display: "flex", gap: 14 }}>
-            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>
-            <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>(720) 766-3377</a>
+            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>
+            <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>(720) 766-3377</a>
           </div>
         </div>
       </section>
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Your Local Broomfield Roofing Experts</h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>Broomfield newer developments and established neighborhoods both need reliable roofing contractors. We work with all major manufacturers and can match any shingle style or color your HOA requires.</p>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Our Services in Broomfield</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Your Local Broomfield Roofing Experts</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>Broomfield newer developments and established neighborhoods both need reliable roofing contractors. We work with all major manufacturers and can match any shingle style or color your HOA requires.</p>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Our Services in Broomfield</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 48 }}>
             {[
               {t:"Roof Replacement",d:"Full tear-off and certified installation with warranties up to 50 years.",h:"/services/roof-replacement"},
@@ -42,18 +42,18 @@ export default function CityContent() {
             ].map((s,i)=>(
               <Link key={i} href={s.h} style={{textDecoration:"none"}}>
                 <div style={{background:LIGHT_BG,borderRadius:16,padding:"24px 20px",border:"1px solid rgba(13,33,55,0.04)",height:"100%"}}>
-                  <h3 style={{fontFamily:"'Playfair Display', Georgia, serif",fontSize:18,fontWeight:700,color:NAVY,marginBottom:8}}>{s.t}</h3>
-                  <p style={{fontFamily:"'DM Sans', sans-serif",fontSize:14,lineHeight:1.7,color:TEXT_LIGHT,margin:0}}>{s.d}</p>
+                  <h3 style={{fontFamily:"var(--font-playfair), 'Playfair Display', Georgia, serif",fontSize:18,fontWeight:700,color:NAVY,marginBottom:8}}>{s.t}</h3>
+                  <p style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:14,lineHeight:1.7,color:TEXT_LIGHT,margin:0}}>{s.d}</p>
                 </div>
               </Link>
             ))}
           </div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Broomfield Homeowners Choose Gates</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Broomfield Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {["GAF Master Elite — top 2% of contractors nationwide","Up to 50 year manufacturer-backed warranty","Complete insurance claim management","CertainTeed Platinum Preferred certified","7,200+ roofs completed across Colorado","4.8★ Google rating from 200+ reviews","Locally owned and operated from Lakewood","Free inspections with no obligation"].map((item,i)=>(
               <div key={i} style={{display:"flex",gap:12,alignItems:"flex-start"}}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{marginTop:2,flexShrink:0}}><polyline points="20 6 9 17 4 12"/></svg>
-                <span style={{fontFamily:"'DM Sans', sans-serif",fontSize:15,color:TEXT,lineHeight:1.6}}>{item}</span>
+                <span style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:15,color:TEXT,lineHeight:1.6}}>{item}</span>
               </div>
             ))}
           </div>

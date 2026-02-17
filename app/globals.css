@@ -11,18 +11,49 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes heroFloat {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
+/* ── Default (desktop) grid layouts ── */
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 140px 20px 80px;
 }
-
-@keyframes scrollDot {
-  0% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0.3; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
+.hero-btns {
+  display: flex;
+  gap: 12px;
+}
+.mobile-hero-stats {
+  display: none;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+.why-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.home-cta-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
 }
