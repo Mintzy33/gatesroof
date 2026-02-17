@@ -34,6 +34,7 @@ export default function AboutContent() {
   const timelineTrackRef = useRef<HTMLDivElement>(null);
   const timelineLineRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
+  const communityRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Parallax on hero image
@@ -164,6 +165,30 @@ export default function AboutContent() {
         });
       });
     });
+
+    // ── COMMUNITY: animated stat counters ──
+    if (communityRef.current) {
+      const counters = communityRef.current.querySelectorAll<HTMLElement>(".stat-count");
+      counters.forEach((el) => {
+        const target = parseFloat(el.dataset.target || "0");
+        const prefix = el.dataset.prefix || "";
+        const suffix = el.dataset.suffix || "";
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: target,
+          duration: 1.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+          onUpdate: () => {
+            el.textContent = prefix + Math.round(obj.val).toLocaleString() + suffix;
+          },
+        });
+      });
+    }
 
     return () => {
       mm.revert();
@@ -333,7 +358,7 @@ export default function AboutContent() {
       </section>
 
       {/* ─── COMMUNITY ─── */}
-      <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG }}>
+      <section ref={communityRef} style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG }}>
         <div className="community-grid" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: "clamp(40px, 6vw, 80px)", alignItems: "center" }}>
           <div>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>GIVING BACK</span>
@@ -341,7 +366,7 @@ export default function AboutContent() {
               More Than a Roofing Company
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, marginBottom: 20 }}>
-              We believe the communities that trust us with their homes deserve more than just good craftsmanship. That&apos;s why we invest in the neighborhoods we serve, sponsoring local youth sports, donating materials for community projects, and providing free roof inspections for elderly homeowners after every major storm.
+              We believe the communities that trust us with their homes deserve more than just good craftsmanship. From building for the Girl Scouts of America to sponsoring local athletes in Thornton, we show up for Colorado the same way we show up on your roof. Every veteran gets a military discount because service deserves service. And in 2026, we&apos;re committing $100K to help homeowners who&apos;ve been wrongfully denied claims or unknowingly locked into bad policies.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, margin: 0 }}>
               When your roofer lives down the street, they care different. We&apos;re proof.
@@ -349,13 +374,18 @@ export default function AboutContent() {
           </div>
           <div style={{ background: WHITE, borderRadius: 24, padding: 40, border: "1px solid rgba(13,33,55,0.05)", boxShadow: "0 4px 24px rgba(13,33,55,0.04)" }}>
             {[
-              { v: "200+", l: "Free post-storm inspections for seniors annually" },
-              { v: "12", l: "Local youth sports teams sponsored" },
-              { v: "$50K+", l: "In materials donated to community projects" },
+              { target: 7, prefix: "", suffix: "", label: "Charity golf tournaments sponsored" },
+              { target: 3, prefix: "", suffix: "", label: "Local youth sports teams sponsored in Thornton" },
+              { target: 100, prefix: "$", suffix: "K", label: "2026 goal to help wrongfully denied homeowners" },
+              { target: 0, prefix: "", suffix: "", label: "Military discount on all services", text: "Every Veteran" },
             ].map((s, i) => (
-              <div key={i} style={{ marginBottom: i < 2 ? 28 : 0, paddingBottom: i < 2 ? 28 : 0, borderBottom: i < 2 ? "1px solid rgba(13,33,55,0.06)" : "none" }}>
-                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.v}</div>
-                <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginTop: 4 }}>{s.l}</div>
+              <div key={i} style={{ marginBottom: i < 3 ? 24 : 0, paddingBottom: i < 3 ? 24 : 0, borderBottom: i < 3 ? "1px solid rgba(13,33,55,0.06)" : "none" }}>
+                {s.text ? (
+                  <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.text}</div>
+                ) : (
+                  <div className="stat-count" data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.prefix}0{s.suffix}</div>
+                )}
+                <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
           </div>
