@@ -52,25 +52,28 @@ export default function AboutContent() {
 
     const mm = gsap.matchMedia();
 
-    // ── DESKTOP: horizontal scroll timeline ──
+    // ── DESKTOP: one-at-a-time centered timeline ──
     mm.add("(min-width: 769px)", () => {
       if (!timelineSectionRef.current || !timelineTrackRef.current || !timelineLineRef.current) return;
 
+      const section = timelineSectionRef.current;
       const track = timelineTrackRef.current;
       const cards = track.querySelectorAll<HTMLElement>(".tl-card");
       const dots = track.querySelectorAll<HTMLElement>(".tl-dot");
       const line = timelineLineRef.current;
-      const totalScroll = track.scrollWidth - window.innerWidth;
+      const count = cards.length;
+      const totalDistance = (count - 1) * window.innerWidth;
+      const scrollDistance = window.innerHeight * 3.5;
 
-      // Horizontal scroll
+      // Horizontal slide — moves track left by (count-1) viewport widths
       const scrollTween = gsap.to(track, {
-        x: -totalScroll,
+        x: -totalDistance,
         ease: "none",
         scrollTrigger: {
-          trigger: timelineSectionRef.current,
+          trigger: section,
           start: "top top",
-          end: () => `+=${totalScroll * 1.2}`,
-          scrub: 1,
+          end: () => `+=${scrollDistance}`,
+          scrub: 0.8,
           pin: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
@@ -82,38 +85,56 @@ export default function AboutContent() {
         scaleX: 1,
         ease: "none",
         scrollTrigger: {
-          trigger: timelineSectionRef.current,
+          trigger: section,
           start: "top top",
-          end: () => `+=${totalScroll * 1.2}`,
-          scrub: 1,
+          end: () => `+=${scrollDistance}`,
+          scrub: 0.8,
         },
       });
 
-      // Each card + dot animation
+      // Each card: fade in when centered, fade out when leaving
       cards.forEach((card, i) => {
         const dot = dots[i];
+
+        // Fade in
         gsap.fromTo(card,
-          { opacity: 0.15, y: 30 },
+          { opacity: 0.12, y: 24, scale: 0.95 },
           {
-            opacity: 1, y: 0, duration: 0.5,
+            opacity: 1, y: 0, scale: 1, duration: 0.3,
             scrollTrigger: {
               trigger: card,
               containerAnimation: scrollTween,
-              start: "left 75%",
-              end: "left 40%",
+              start: "left 80%",
+              end: "left 55%",
               scrub: true,
             },
           }
         );
+        // Fade out (except last card)
+        if (i < count - 1) {
+          gsap.to(card, {
+            opacity: 0.12, y: -16, scale: 0.95,
+            scrollTrigger: {
+              trigger: card,
+              containerAnimation: scrollTween,
+              start: "left 30%",
+              end: "left 5%",
+              scrub: true,
+            },
+          });
+        }
+
+        // Dot fill
         if (dot) {
           gsap.to(dot, {
             background: ACCENT,
             borderColor: ACCENT,
+            scale: 1.3,
             scrollTrigger: {
               trigger: card,
               containerAnimation: scrollTween,
-              start: "left 75%",
-              end: "left 60%",
+              start: "left 70%",
+              end: "left 55%",
               scrub: true,
             },
           });
@@ -260,26 +281,24 @@ export default function AboutContent() {
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR JOURNEY</span>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 0" }}>Milestones That Matter</h2>
         </div>
-        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 56, paddingBottom: 80, paddingLeft: 60, position: "relative", width: "fit-content" }}>
-          {/* Background line (gray) */}
-          <div style={{ position: "absolute", top: 100, left: 60, right: 60, height: 2, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
+        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 56, paddingBottom: 80, position: "relative", width: `${MILESTONES.length * 100}vw` }}>
+          {/* Background line (gray) — spans across all cards via dots */}
+          <div style={{ position: "absolute", top: 100, left: "calc(50vw - 20px)", width: `calc(${(MILESTONES.length - 1) * 100}vw + 40px)`, height: 2, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
           {/* Progress line (blue, fills via scaleX) */}
-          <div ref={timelineLineRef} style={{ position: "absolute", top: 100, left: 60, right: 60, height: 2, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
+          <div ref={timelineLineRef} style={{ position: "absolute", top: 100, left: "calc(50vw - 20px)", width: `calc(${(MILESTONES.length - 1) * 100}vw + 40px)`, height: 2, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
 
           {MILESTONES.map((m, i) => (
-            <div key={i} className="tl-card" style={{ minWidth: 220, maxWidth: 220, padding: "0 16px", position: "relative", flexShrink: 0, opacity: i === 0 ? 1 : 0.15 }}>
+            <div key={i} className="tl-card" style={{ width: "100vw", flexShrink: 0, display: "flex", flexDirection: "column" as const, alignItems: "center", position: "relative", opacity: i === 0 ? 1 : 0.12 }}>
               {/* Dot on the line */}
-              <div className="tl-dot" style={{ width: 14, height: 14, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, margin: "0 auto 24px", position: "relative", zIndex: 2, transition: "background 0.3s, border-color 0.3s", ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
+              <div className="tl-dot" style={{ width: 16, height: 16, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, marginBottom: 32, position: "relative", zIndex: 2, ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
               {/* Year */}
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 8, textAlign: "center" as const }}>{m.y}</div>
+              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(48px, 6vw, 72px)", fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 12, textAlign: "center" as const }}>{m.y}</div>
               {/* Title */}
-              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, marginBottom: 8, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
+              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, color: NAVY, marginBottom: 12, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
               {/* Description */}
-              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: "0 auto", textAlign: "center" as const, maxWidth: 200 }}>{m.d}</p>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 1.5vw, 17px)", lineHeight: 1.75, color: TEXT_LIGHT, margin: "0 auto", textAlign: "center" as const, maxWidth: 420, padding: "0 24px" }}>{m.d}</p>
             </div>
           ))}
-          {/* Spacer to allow last card to scroll into view */}
-          <div style={{ minWidth: "30vw", flexShrink: 0 }} />
         </div>
       </section>
 
