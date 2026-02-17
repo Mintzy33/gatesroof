@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -131,6 +132,12 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
 }
 
 export default function ReviewCarousel() {
+  const onSwiper = useCallback((swiper: SwiperType) => {
+    if (swiper.autoplay && !swiper.autoplay.running) {
+      swiper.autoplay.start();
+    }
+  }, []);
+
   return (
     <>
       <Swiper
@@ -138,9 +145,12 @@ export default function ReviewCarousel() {
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        loopAdditionalSlides={2}
+        autoplay={{ delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        speed={600}
         navigation={true}
         pagination={{ clickable: true }}
+        onSwiper={onSwiper}
         breakpoints={{
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
