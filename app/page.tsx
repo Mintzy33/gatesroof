@@ -63,7 +63,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                {[{ t: "4x Certified", d: "GAF · Malarkey · CertainTeed · Emerald" }, { t: "Insurance Experts", d: "Inspection to payment, we handle it all" }].map((c, i) => (
+                {[{ t: "4x Certified", d: "GAF · Owens Corning · Malarkey · CertainTeed" }, { t: "Insurance Experts", d: "Inspection to payment, we handle it all" }].map((c, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)" }}>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE, marginBottom: 4 }}>{c.t}</div>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.5 }}>{c.d}</div>
@@ -78,7 +78,7 @@ export default function Home() {
       {/* TRUST BAR */}
       <section className="trust-bar" style={{ background: WHITE, padding: "20px 16px", borderBottom: "1px solid rgba(13,33,55,0.04)", overflow: "hidden" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "nowrap" as const, whiteSpace: "nowrap" as const }}>
-          {["GAF MASTER ELITE", "PLATINUM PREFERRED", "MALARKEY", "EMERALD PREMIUM", "BBB A+"].map((b) => (
+          {["GAF MASTER ELITE", "OWENS CORNING PLATINUM PREFERRED", "MALARKEY EMERALD PRO", "CERTAINTEED SHINGLE MASTER", "BBB A+"].map((b) => (
             <span key={b} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", opacity: 0.65, flexShrink: 0 }}>{b}</span>
           ))}
         </div>

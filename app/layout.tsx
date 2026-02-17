@@ -22,7 +22,7 @@ const playfairDisplay = Playfair_Display({
 
 const raleway = Raleway({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["300", "700"],
   variable: "--font-raleway",
   display: "swap",
 });

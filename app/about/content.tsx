@@ -209,6 +209,7 @@ export default function AboutContent() {
             alt="Austin — Senior Project Manager at Gates Enterprises"
             fill
             style={{ objectFit: "cover", objectPosition: "center 25%" }}
+            className="about-hero-img"
             priority
           />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(6,38,63,0.3) 0%, rgba(6,38,63,0.1) 30%, rgba(6,38,63,0.6) 70%, rgba(6,38,63,0.95) 100%)" }} />
@@ -418,6 +419,7 @@ export default function AboutContent() {
           .community-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .about-h1 { font-size: 34px !important; }
           .about-hero-sub { font-size: 16px !important; }
+          .about-hero-img { object-position: 70% 25% !important; }
           .about-cta-btns { flex-direction: column !important; }
           .about-cta-btns a { text-align: center !important; }
           .tl-desktop { display: none !important; }
