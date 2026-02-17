@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
 import { ScrollReveal, StaggerCards, CounterGSAP, PhoneLink } from "./components/GSAPAnimations";
 import BeforeAfterSlider from "./components/BeforeAfterSlider";
+import ReviewCarousel from "./components/ReviewCarousel";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -166,29 +167,11 @@ export default function Home() {
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 10px" }}>What Homeowners Say</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
                 <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star()}</span>)}</div>
-                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>4.8 · 200+ reviews</span>
+                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>4.8 stars from 200+ verified reviews</span>
               </div>
             </div>
           </ScrollReveal>
-          <StaggerCards className="reviews-grid" stagger={0.12} distance={40}>
-            {[
-              { n: "Sarah M.", loc: "Lakewood, CO", t: "Gates handled our entire insurance claim after the hail storm. They found damage the first adjuster missed and got us an extra $8,000." },
-              { n: "James R.", loc: "Arvada, CO", t: "Best contractor experience we've ever had. On time, on budget, and they cleaned up everything. The GAF warranty gives us real peace of mind." },
-              { n: "Mike & Linda C.", loc: "Golden, CO", t: "We got quotes from 5 companies. Gates was the only one who walked us through the insurance process step by step." },
-            ].map((r, i) => (
-              <div key={i} style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.04)", height: "100%", display: "flex", flexDirection: "column" as const }}>
-                <div style={{ display: "flex", gap: 2, marginBottom: 14 }}>{[1,2,3,4,5].map(j => <span key={j}>{Icons.star()}</span>)}</div>
-                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT, margin: "0 0 20px", flex: 1, fontStyle: "italic" }}>&ldquo;{r.t}&rdquo;</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <div style={{ width: 38, height: 38, borderRadius: "50%", background: `linear-gradient(135deg, ${NAVY}, ${ACCENT})`, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 15, fontWeight: 700 }}>{r.n[0]}</div>
-                  <div>
-                    <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.n}</div>
-                    <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.loc}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </StaggerCards>
+          <ReviewCarousel />
         </div>
       </section>
 
