@@ -109,7 +109,7 @@ export function StaggerCards({
 }
 
 /* ─── CounterGSAP ─── scroll-triggered number counter ─── */
-export function CounterGSAP({ end, suffix = "", duration = 2.2 }: { end: number; suffix?: string; duration?: number }) {
+export function CounterGSAP({ end, suffix = "", duration = 2.2, delay = 0 }: { end: number; suffix?: string; duration?: number; delay?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [display, setDisplay] = useState("0");
 
@@ -118,21 +118,32 @@ export function CounterGSAP({ end, suffix = "", duration = 2.2 }: { end: number;
     if (!el) return;
 
     const obj = { val: 0 };
-    const tween = gsap.to(obj, {
+    const tweenVars: gsap.TweenVars = {
       val: end,
       duration,
+      delay,
       ease: "power2.out",
       snap: { val: 1 },
       onUpdate: () => setDisplay(obj.val.toLocaleString()),
-      scrollTrigger: {
+    };
+
+    // If element is already in the viewport (e.g. hero), play on mount with delay
+    // Otherwise use ScrollTrigger for below-fold sections
+    const rect = el.getBoundingClientRect();
+    const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+    if (!inViewport) {
+      tweenVars.scrollTrigger = {
         trigger: el,
         start: "top 90%",
         toggleActions: "play none none none",
-      },
-    });
+      };
+    }
+
+    const tween = gsap.to(obj, tweenVars);
 
     return () => { tween.scrollTrigger?.kill(); tween.kill(); };
-  }, [end, duration]);
+  }, [end, duration, delay]);
 
   return <span ref={ref}>{display}{suffix}</span>;
 }
