@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="hero-right">
             <ScrollReveal delay={0.3} direction="left">
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "28px 28px", backdropFilter: "blur(10px)", marginBottom: 16 }}>
+              <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 20, padding: "28px 28px", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", marginBottom: 16, boxShadow: "0 8px 32px rgba(37,99,235,0.15), 0 0 60px rgba(37,99,235,0.06), inset 0 1px 0 rgba(255,255,255,0.08)" }}>
                 <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
                   {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", star: true }].map((s, i) => (
                     <div key={i} style={{ textAlign: "center" as const }}>
@@ -65,7 +65,7 @@ export default function Home() {
             <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                 {[{ t: "4x Certified", d: "GAF · Malarkey · CertainTeed · Emerald" }, { t: "Insurance Experts", d: "Inspection to payment — we handle it all" }].map((c, i) => (
-                  <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 16, padding: "20px 18px" }}>
+                  <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)" }}>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE, marginBottom: 4 }}>{c.t}</div>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.5 }}>{c.d}</div>
                   </div>
