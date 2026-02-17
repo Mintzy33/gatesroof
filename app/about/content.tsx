@@ -256,30 +256,30 @@ export default function AboutContent() {
 
       {/* ─── TIMELINE: DESKTOP (horizontal scroll) ─── */}
       <section ref={timelineSectionRef} className="tl-desktop" style={{ background: WHITE, overflow: "hidden" }}>
-        <div style={{ padding: "80px 0 0", textAlign: "center" as const }}>
+        <div style={{ padding: "72px 24px 0", textAlign: "center" as const, maxWidth: 1024, margin: "0 auto" }}>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR JOURNEY</span>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "12px 0 0" }}>Milestones That Matter</h2>
         </div>
-        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 80, paddingBottom: 100, position: "relative", width: "fit-content" }}>
+        <div ref={timelineTrackRef} style={{ display: "flex", alignItems: "flex-start", paddingTop: 56, paddingBottom: 80, paddingLeft: 60, position: "relative", width: "fit-content" }}>
           {/* Background line (gray) */}
-          <div style={{ position: "absolute", top: 130, left: 80, right: 80, height: 3, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
+          <div style={{ position: "absolute", top: 100, left: 60, right: 60, height: 2, background: "rgba(13,33,55,0.08)", borderRadius: 2 }} />
           {/* Progress line (blue, fills via scaleX) */}
-          <div ref={timelineLineRef} style={{ position: "absolute", top: 130, left: 80, right: 80, height: 3, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
+          <div ref={timelineLineRef} style={{ position: "absolute", top: 100, left: 60, right: 60, height: 2, background: ACCENT, borderRadius: 2, transformOrigin: "left center", transform: "scaleX(0)" }} />
 
           {MILESTONES.map((m, i) => (
-            <div key={i} className="tl-card" style={{ minWidth: 320, maxWidth: 320, padding: "0 40px", position: "relative", flexShrink: 0, opacity: i === 0 ? 1 : 0.15 }}>
+            <div key={i} className="tl-card" style={{ minWidth: 220, maxWidth: 220, padding: "0 16px", position: "relative", flexShrink: 0, opacity: i === 0 ? 1 : 0.15 }}>
               {/* Dot on the line */}
-              <div className="tl-dot" style={{ width: 18, height: 18, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, margin: "0 auto 32px", position: "relative", zIndex: 2, transition: "background 0.3s, border-color 0.3s", ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
+              <div className="tl-dot" style={{ width: 14, height: 14, borderRadius: "50%", border: `3px solid rgba(13,33,55,0.15)`, background: WHITE, margin: "0 auto 24px", position: "relative", zIndex: 2, transition: "background 0.3s, border-color 0.3s", ...(i === 0 ? { background: ACCENT, borderColor: ACCENT } : {}) }} />
               {/* Year */}
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 52, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 12, textAlign: "center" as const }}>{m.y}</div>
+              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT, lineHeight: 1, marginBottom: 8, textAlign: "center" as const }}>{m.y}</div>
               {/* Title */}
-              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: NAVY, marginBottom: 10, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
+              <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, marginBottom: 8, textAlign: "center" as const, lineHeight: 1.3 }}>{m.t}</h3>
               {/* Description */}
-              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const }}>{m.d}</p>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: "0 auto", textAlign: "center" as const, maxWidth: 200 }}>{m.d}</p>
             </div>
           ))}
           {/* Spacer to allow last card to scroll into view */}
-          <div style={{ minWidth: "40vw", flexShrink: 0 }} />
+          <div style={{ minWidth: "30vw", flexShrink: 0 }} />
         </div>
       </section>
 
