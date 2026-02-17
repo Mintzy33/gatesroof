@@ -52,7 +52,7 @@ export default function Header() {
           height: 80, display: "flex", alignItems: "center", justifyContent: "space-between",
         }}>
           <Link href="/" className="header-brand" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-            <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={160} height={48} className="header-logo" style={{ height: 48, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
+            <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={200} height={58} className="header-logo" style={{ height: 58, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
             <span className="header-text" style={{ fontFamily: "var(--font-raleway), 'Raleway', sans-serif", fontSize: 19, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap", letterSpacing: "0.08em" }}>GATES ENTERPRISES</span>
           </Link>
           <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 32 }}>
