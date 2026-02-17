@@ -146,8 +146,9 @@ export default function ReviewCarousel() {
         slidesPerView={1}
         loop={true}
         loopAdditionalSlides={2}
-        autoplay={{ delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
         speed={600}
+        cssMode={false}
         navigation={true}
         pagination={{ clickable: true }}
         onSwiper={onSwiper}
@@ -168,6 +169,9 @@ export default function ReviewCarousel() {
         .review-swiper {
           padding-bottom: 52px !important;
           overflow: visible !important;
+        }
+        .review-swiper .swiper-wrapper {
+          transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1) !important;
         }
         .review-swiper .swiper-slide {
           height: auto !important;
