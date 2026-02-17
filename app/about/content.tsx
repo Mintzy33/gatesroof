@@ -130,7 +130,7 @@ export default function AboutContent() {
             ].map((v, i) => (
               <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "36px 24px", backdropFilter: "blur(8px)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center" }}>
                 <div style={{ width: 52, height: 52, borderRadius: 14, background: "rgba(37,99,235,0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
-                  <v.Icon size={26} color={ACCENT} strokeWidth={1.8} />
+                  <v.Icon size={26} color={WHITE} strokeWidth={1.8} />
                 </div>
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: WHITE, marginBottom: 10, whiteSpace: "nowrap" as const }}>{v.t}</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(255,255,255,0.65)", margin: 0 }}>{v.d}</p>
