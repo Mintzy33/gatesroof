@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 declare global { interface Window { fbq: (...args: unknown[]) => void } }
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
@@ -18,7 +17,7 @@ export default function ContactContent() {
     <div style={{background:WHITE}}>
       <Header />
       <section style={{padding:"160px 24px 80px",background:`linear-gradient(170deg, ${NAVY} 0%, #0F2A42 100%)`,textAlign:"center" as const}}>
-        <span style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:12,fontWeight:700,color:GOLD,letterSpacing:"0.2em"}}>CONTACT US</span>
+        <span style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:12,fontWeight:700,color:ACCENT,letterSpacing:"0.2em"}}>CONTACT US</span>
         <h1 style={{fontFamily:"var(--font-playfair), 'Playfair Display', Georgia, serif",fontSize:"clamp(36px, 5vw, 56px)",fontWeight:800,color:WHITE,margin:"14px 0 20px"}}>Get Your Free Inspection</h1>
         <p style={{fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif",fontSize:18,color:"rgba(255,255,255,0.7)",maxWidth:550,margin:"0 auto",lineHeight:1.75}}>Fill out the form below and we&apos;ll get back to you within 24 hours. Or call us directly.</p>
       </section>

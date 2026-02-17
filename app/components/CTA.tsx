@@ -1,7 +1,6 @@
 import Link from "next/link";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const WHITE = "#FFFFFF";
 export default function CTA({ title, subtitle }: { title?: string; subtitle?: string }) {
   return (
@@ -9,7 +8,7 @@ export default function CTA({ title, subtitle }: { title?: string; subtitle?: st
       <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)` }} />
       <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
         <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
-          {title || <>Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span></>}
+          {title || <>Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span></>}
         </h2>
         <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2.5vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px" }}>{subtitle || "Free inspections. No-pressure estimates. Colorado's most thorough roof evaluation."}</p>
         <div className="cta-btns" style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" as const }}>

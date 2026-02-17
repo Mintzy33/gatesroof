@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
@@ -18,7 +17,7 @@ export default function CityContent() {
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home → Service Areas → Wheat Ridge</Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>Roofing Contractor in Wheat Ridge, CO</h1>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: GOLD, fontWeight: 500, marginBottom: 20 }}>GAF Master Elite Certified · 7,200+ Roofs · 4.8★ Google Rating</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>GAF Master Elite Certified · 7,200+ Roofs · 4.8★ Google Rating</p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>Wheat Ridge homeowners are our neighbors. Gates Enterprises serves this community with expert roofing, siding, and gutter installation backed by four manufacturer certifications and a 4.8-star Google rating.</p>
           <div style={{ display: "flex", gap: 14 }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get a Free Estimate →</Link>

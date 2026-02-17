@@ -7,7 +7,6 @@ import BeforeAfterSlider from "./components/BeforeAfterSlider";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
@@ -20,7 +19,7 @@ const Icons = {
   siding: (c = ACCENT) => (<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>),
   gutter: (c = ACCENT) => (<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>),
   clipboard: (c = ACCENT) => (<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>),
-  star: (c = GOLD) => (<svg width="14" height="14" viewBox="0 0 24 24" fill={c} stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>),
+  star: (c = ACCENT) => (<svg width="14" height="14" viewBox="0 0 24 24" fill={c} stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>),
 };
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
                 <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.85)" }}>GAF Master Elite, Top 2% in North America</span>
               </div>
               <h1 className="hero-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 4.5vw, 62px)", fontWeight: 800, color: WHITE, lineHeight: 1.06, margin: "0 0 20px" }}>
-                Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
+                Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
               </h1>
               <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>7,200+ roofs completed across the Denver metro. From hail damage claims to full exterior restoration.</p>
             <ScrollReveal delay={0.2}>
@@ -55,7 +54,7 @@ export default function Home() {
                 <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
                   {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", star: true }].map((s, i) => (
                     <div key={i} style={{ textAlign: "center" as const }}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.star ? <span style={{ color: GOLD }}>4.8★</span> : <CounterGSAP end={s.n} suffix={s.s} duration={2.2} delay={0.8} />}</div>
+                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.star ? <span style={{ color: ACCENT }}>4.8★</span> : <CounterGSAP end={s.n} suffix={s.s} duration={2.2} delay={0.8} />}</div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.6)", marginTop: 6, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
                   ))}
@@ -131,7 +130,7 @@ export default function Home() {
                   {[{ n: 7204, s: "+", l: "Roofs", dur: 2.2 }, { n: 10, s: "+", l: "Years", dur: 2.2 }, { n: 0, s: "", l: "Rating", dur: 0, star: true }].map((s, i) => (
                     <div key={i}>
                       <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 3vw, 34px)", fontWeight: 800, color: NAVY }}>
-                        {s.star ? <><span style={{ color: GOLD }}>4.8</span><span style={{ color: GOLD }}>★</span></> : <CounterGSAP end={s.n} suffix={s.s} duration={s.dur} />}
+                        {s.star ? <><span style={{ color: ACCENT }}>4.8</span><span style={{ color: ACCENT }}>★</span></> : <CounterGSAP end={s.n} suffix={s.s} duration={s.dur} />}
                       </div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: TEXT_LIGHT, marginTop: 2, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
@@ -142,9 +141,9 @@ export default function Home() {
             <StaggerCards className="why-cards" stagger={0.1} distance={40}>
               {[
                 { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite. Highest training, best warranties.", c: ACCENT },
-                { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: GOLD },
+                { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: ACCENT },
                 { n: "03", t: "One-Stop Exterior", d: "Roof, siding, gutters. One company, one warranty.", c: ACCENT },
-                { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: GOLD },
+                { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: ACCENT },
               ].map((item, i) => (
                 <div key={i} style={{ background: LIGHT_BG, borderRadius: 18, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>
                   <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: item.c, letterSpacing: "0.15em" }}>{item.n}</span>
@@ -233,7 +232,7 @@ export default function Home() {
         <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
           <ScrollReveal>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
-              Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
+              Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 28px" }}>Free inspections. No-pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
             <div className="home-cta-btns">

@@ -12,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 const NAVY = "#0D2137";
 const DEEP = "#06263f";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
@@ -76,7 +75,7 @@ export default function AboutContent() {
         </div>
         {/* Text overlay at bottom */}
         <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px" }}>
-          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>ABOUT GATES ENTERPRISES</span>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>ABOUT GATES ENTERPRISES</span>
           <h1 className="about-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 800, color: WHITE, lineHeight: 1.08, margin: "0 0 16px", maxWidth: 700 }}>
             Meet the Team<br />Behind Your Roof
           </h1>
@@ -118,7 +117,7 @@ export default function AboutContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 30%, rgba(37,99,235,0.06) 0%, transparent 50%)" }} />
         <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ textAlign: "center" as const, marginBottom: "clamp(40px, 5vw, 64px)" }}>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: "0.2em" }}>WHAT DRIVES US</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>WHAT DRIVES US</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: WHITE, margin: "12px 0 0" }}>Our Core Values</h2>
           </div>
           <div className="values-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
@@ -171,7 +170,7 @@ export default function AboutContent() {
           </div>
           <div ref={timelineRef} style={{ position: "relative", paddingLeft: 32 }}>
             {/* Vertical line */}
-            <div style={{ position: "absolute", left: 7, top: 8, bottom: 8, width: 2, background: `linear-gradient(180deg, ${ACCENT}, ${GOLD})`, borderRadius: 2 }} />
+            <div style={{ position: "absolute", left: 7, top: 8, bottom: 8, width: 2, background: `linear-gradient(180deg, ${ACCENT}, #60A5FA)`, borderRadius: 2 }} />
             {[
               { y: "2014", t: "Gates Enterprises Founded", d: "Started with a truck, a ladder, and a commitment to doing right by Colorado homeowners." },
               { y: "2016", t: "1,000th Roof Completed", d: "Hit our first major milestone. Word of mouth became our biggest marketing channel." },
@@ -227,7 +226,7 @@ export default function AboutContent() {
         <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)" }} />
         <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
-            Ready to Meet{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>the Team?</span>
+            Ready to Meet{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>the Team?</span>
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px" }}>Free inspections. Honest assessments. Real people who answer the phone.</p>
           <div className="about-cta-btns" style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" as const }}>

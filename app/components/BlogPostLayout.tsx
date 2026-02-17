@@ -6,7 +6,6 @@ import CTA from "./CTA";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
-const GOLD = "#C9A54E";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
@@ -112,9 +111,9 @@ export default function BlogPostLayout({
           <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "20px 0 16px", flexWrap: "wrap" }}>
             <span style={{
               fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 11, fontWeight: 700, color: GOLD,
+              fontSize: 11, fontWeight: 700, color: ACCENT,
               letterSpacing: "0.15em", textTransform: "uppercase" as const,
-              background: "rgba(201,165,78,0.1)", padding: "5px 12px", borderRadius: 100,
+              background: "rgba(37,99,235,0.1)", padding: "5px 12px", borderRadius: 100,
             }}>{category}</span>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>
               {formatDate(publishDate)} &middot; {readTime}
@@ -145,7 +144,7 @@ export default function BlogPostLayout({
           <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
             <div style={{
               width: 52, height: 52, borderRadius: "50%",
-              background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`,
+              background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`,
               display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
               fontSize: 20, fontWeight: 800, color: WHITE,
