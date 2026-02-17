@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
-import { FadeIn, Counter, PhoneLink } from "./components/ClientAnimations";
+import { ScrollReveal, StaggerCards, CounterGSAP, PhoneLink } from "./components/GSAPAnimations";
 import BeforeAfterSlider from "./components/BeforeAfterSlider";
 
 const NAVY = "#0D2137";
@@ -42,27 +42,27 @@ export default function Home() {
                 Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
               </h1>
               <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>7,200+ roofs completed across the Denver metro. From hail damage claims to full exterior restoration.</p>
-            <FadeIn delay={0.2}>
+            <ScrollReveal delay={0.2}>
               <div className="hero-btns">
                 <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Free Inspection →</Link>
                 <PhoneLink style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</PhoneLink>
               </div>
-            </FadeIn>
+            </ScrollReveal>
           </div>
           <div className="hero-right">
-            <FadeIn delay={0.3} d="left">
+            <ScrollReveal delay={0.3} direction="left">
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "28px 28px", backdropFilter: "blur(10px)", marginBottom: 16 }}>
                 <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
                   {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", d: "4.8★" }].map((s, i) => (
                     <div key={i} style={{ textAlign: "center" as const }}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.d || <Counter end={s.n} suffix={s.s} />}</div>
+                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.d || <CounterGSAP end={s.n} suffix={s.s} />}</div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.6)", marginTop: 6, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
                   ))}
                 </div>
               </div>
-            </FadeIn>
-            <FadeIn delay={0.45} d="left">
+            </ScrollReveal>
+            <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                 {[{ t: "4x Certified", d: "GAF · Malarkey · CertainTeed · Emerald" }, { t: "Insurance Experts", d: "Inspection to payment — we handle it all" }].map((c, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 16, padding: "20px 18px" }}>
@@ -71,7 +71,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </FadeIn>
+            </ScrollReveal>
           </div>
         </div>
         <div className="mobile-hero-stats" style={{ position: "relative", zIndex: 1, padding: "0 20px 60px", width: "100%" }}>
@@ -98,14 +98,14 @@ export default function Home() {
       {/* SERVICES */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <FadeIn>
+          <ScrollReveal>
             <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
               <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>WHAT WE DO</span>
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Complete Exterior Solutions</h2>
               <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>One contractor for everything above your foundation.</p>
             </div>
-          </FadeIn>
-          <div className="services-grid">
+          </ScrollReveal>
+          <StaggerCards className="services-grid" stagger={0.1} distance={40}>
             {[
               { icon: Icons.home(), t: "Roof Replacement", d: "Full tear-off with Class 4 shingles. GAF Golden Pledge warranty.", h: "/services/roof-replacement" },
               { icon: Icons.storm(), t: "Storm & Hail Damage", d: "Insurance claim experts. Inspection to final payment.", h: "/services/storm-hail-damage" },
@@ -114,17 +114,15 @@ export default function Home() {
               { icon: Icons.gutter(), t: "Gutters & Guards", d: "Seamless gutters and leaf guard systems.", h: "/services/gutters-guards" },
               { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations — we fight for your payout.", h: "/services/insurance-claims" },
             ].map((s, i) => (
-              <FadeIn key={i} delay={i * 0.05}>
-                <Link href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
-                  <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.05)", height: "100%", transition: "all 0.3s", cursor: "pointer" }}>
-                    <div style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>{s.icon}</div>
-                    <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{s.t}</h3>
-                    <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{s.d}</p>
-                  </div>
-                </Link>
-              </FadeIn>
+              <Link key={i} href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
+                <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.05)", height: "100%", transition: "all 0.3s", cursor: "pointer" }}>
+                  <div style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>{s.icon}</div>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{s.t}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{s.d}</p>
+                </div>
+              </Link>
             ))}
-          </div>
+          </StaggerCards>
         </div>
       </section>
 
@@ -133,12 +131,12 @@ export default function Home() {
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div className="why-grid">
             <div>
-              <FadeIn>
+              <ScrollReveal>
                 <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>WHY GATES</span>
                 <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 3.5vw, 42px)", fontWeight: 800, color: NAVY, margin: "10px 0 16px", lineHeight: 1.12 }}>Not Your Average<br />Roofing Company</h2>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.8, color: TEXT_LIGHT, marginBottom: 32 }}>While storm chasers come and go, we&apos;ve been protecting Colorado homes for over a decade. Our four manufacturer certifications mean access to the best warranties in the industry.</p>
-              </FadeIn>
-              <FadeIn delay={0.1}>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
                 <div style={{ display: "flex", gap: 28 }}>
                   {[{ v: "7,204+", l: "Roofs" }, { v: "10+", l: "Years" }, { v: "4.8★", l: "Rating" }].map((s, i) => (
                     <div key={i}>
@@ -147,24 +145,22 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </FadeIn>
+              </ScrollReveal>
             </div>
-            <div className="why-cards">
+            <StaggerCards className="why-cards" stagger={0.1} distance={40}>
               {[
                 { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite — highest training, best warranties.", c: ACCENT },
                 { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: GOLD },
                 { n: "03", t: "One-Stop Exterior", d: "Roof, siding, gutters — one company, one warranty.", c: ACCENT },
                 { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: GOLD },
               ].map((item, i) => (
-                <FadeIn key={i} delay={0.08 + i * 0.06}>
-                  <div style={{ background: LIGHT_BG, borderRadius: 18, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>
-                    <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: item.c, letterSpacing: "0.15em" }}>{item.n}</span>
-                    <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, margin: "8px 0 6px" }}>{item.t}</h3>
-                    <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: 0 }}>{item.d}</p>
-                  </div>
-                </FadeIn>
+                <div key={i} style={{ background: LIGHT_BG, borderRadius: 18, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>
+                  <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: item.c, letterSpacing: "0.15em" }}>{item.n}</span>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, margin: "8px 0 6px" }}>{item.t}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: 0 }}>{item.d}</p>
+                </div>
               ))}
-            </div>
+            </StaggerCards>
           </div>
         </div>
       </section>
@@ -172,7 +168,7 @@ export default function Home() {
       {/* REVIEWS */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <FadeIn>
+          <ScrollReveal>
             <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
               <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>REVIEWS</span>
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 10px" }}>What Homeowners Say</h2>
@@ -181,53 +177,51 @@ export default function Home() {
                 <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>4.8 · 200+ reviews</span>
               </div>
             </div>
-          </FadeIn>
-          <div className="reviews-grid">
+          </ScrollReveal>
+          <StaggerCards className="reviews-grid" stagger={0.12} distance={40}>
             {[
               { n: "Sarah M.", loc: "Lakewood, CO", t: "Gates handled our entire insurance claim after the hail storm. They found damage the first adjuster missed and got us an extra $8,000." },
               { n: "James R.", loc: "Arvada, CO", t: "Best contractor experience we've ever had. On time, on budget, and they cleaned up everything. The GAF warranty gives us real peace of mind." },
               { n: "Mike & Linda C.", loc: "Golden, CO", t: "We got quotes from 5 companies. Gates was the only one who walked us through the insurance process step by step." },
             ].map((r, i) => (
-              <FadeIn key={i} delay={i * 0.06}>
-                <div style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.04)", height: "100%", display: "flex", flexDirection: "column" as const }}>
-                  <div style={{ display: "flex", gap: 2, marginBottom: 14 }}>{[1,2,3,4,5].map(j => <span key={j}>{Icons.star()}</span>)}</div>
-                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT, margin: "0 0 20px", flex: 1, fontStyle: "italic" }}>&ldquo;{r.t}&rdquo;</p>
-                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <div style={{ width: 38, height: 38, borderRadius: "50%", background: `linear-gradient(135deg, ${NAVY}, ${ACCENT})`, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 15, fontWeight: 700 }}>{r.n[0]}</div>
-                    <div>
-                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.n}</div>
-                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.loc}</div>
-                    </div>
+              <div key={i} style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.04)", height: "100%", display: "flex", flexDirection: "column" as const }}>
+                <div style={{ display: "flex", gap: 2, marginBottom: 14 }}>{[1,2,3,4,5].map(j => <span key={j}>{Icons.star()}</span>)}</div>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT, margin: "0 0 20px", flex: 1, fontStyle: "italic" }}>&ldquo;{r.t}&rdquo;</p>
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <div style={{ width: 38, height: 38, borderRadius: "50%", background: `linear-gradient(135deg, ${NAVY}, ${ACCENT})`, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 15, fontWeight: 700 }}>{r.n[0]}</div>
+                  <div>
+                    <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.n}</div>
+                    <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.loc}</div>
                   </div>
                 </div>
-              </FadeIn>
+              </div>
             ))}
-          </div>
+          </StaggerCards>
         </div>
       </section>
 
       {/* BEFORE / AFTER */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" as const }}>
-          <FadeIn>
+          <ScrollReveal>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>TRANSFORMATIONS</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>See the Difference</h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 480, margin: "0 auto 40px", lineHeight: 1.7 }}>Drag the slider to see our roof replacements in action.</p>
-          </FadeIn>
-          <FadeIn delay={0.15}>
+          </ScrollReveal>
+          <ScrollReveal delay={0.15}>
             <BeforeAfterSlider />
-          </FadeIn>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* SERVICE AREAS */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" as const }}>
-          <FadeIn>
+          <ScrollReveal>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>SERVICE AREAS</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Proudly Serving Denver Metro</h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 480, margin: "0 auto 36px", lineHeight: 1.7 }}>Based in Lakewood. Serving every community along the Front Range.</p>
-          </FadeIn>
+          </ScrollReveal>
           <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
             {[
               {n:"Lakewood",s:"lakewood"},{n:"Denver",s:"denver"},{n:"Aurora",s:"aurora"},{n:"Arvada",s:"arvada"},{n:"Westminster",s:"westminster"},
@@ -245,7 +239,7 @@ export default function Home() {
       <section style={{ padding: "clamp(56px, 8vw, 80px) 20px", background: NAVY, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)` }} />
         <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
-          <FadeIn>
+          <ScrollReveal>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
               Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, ${GOLD})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
             </h2>
@@ -254,7 +248,7 @@ export default function Home() {
               <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Get Free Estimate</Link>
               <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.08)", color: WHITE, border: "1px solid rgba(255,255,255,0.15)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</a>
             </div>
-          </FadeIn>
+          </ScrollReveal>
         </div>
       </section>
 
