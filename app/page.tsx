@@ -115,7 +115,7 @@ export default function Home() {
               { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations — we fight for your payout.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
-                <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.05)", height: "100%", transition: "all 0.3s", cursor: "pointer" }}>
+                <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderLeft: `3px solid ${ACCENT}`, border: "1px solid rgba(13,33,55,0.06)", borderLeftWidth: 3, borderLeftColor: ACCENT, height: "100%", transition: "all 0.3s", cursor: "pointer", boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
                   <div style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>{s.icon}</div>
                   <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{s.t}</h3>
                   <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{s.d}</p>
@@ -265,7 +265,7 @@ export default function Home() {
         .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
 
-        .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(13,33,55,0.08); }
+        .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(13,33,55,0.12); border-left-color: #C9A54E !important; }
         @media (max-width: 768px) {
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }
