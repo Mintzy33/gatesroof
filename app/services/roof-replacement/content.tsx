@@ -18,7 +18,7 @@ export default function RoofReplacementContent() {
           title: "Class 4 Impact Resistant Shingles for Colorado Weather",
           content: [
             "Colorado gets hit with hail. A lot. That\u2019s why we recommend Class 4 impact resistant shingles for every roof replacement across the Front Range. These shingles are tested to withstand a 2 inch steel ball dropped from 20 feet. They cost a bit more upfront, but most insurance companies offer a 20 to 30% discount on your premium once they\u2019re installed. Over the life of your roof, they pay for themselves.",
-            "We carry Class 4 options from GAF, CertainTeed, and Malarkey. Each has a slightly different look and price point, and we\u2019ll walk you through the differences so you can make the right call for your home and budget."
+            "We carry Class 4 options from GAF, CertainTeed, Malarkey, and Owens Corning. Each has a slightly different look and price point, and we\u2019ll walk you through the differences so you can make the right call for your home and budget."
           ]
         },
         {
