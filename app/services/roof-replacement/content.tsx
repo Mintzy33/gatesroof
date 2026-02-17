@@ -10,6 +10,7 @@ import { Search, FileText, Shield, Palette, Hammer, CheckCircle, Award, ShieldCh
 const NAVY = "#0D2137";
 const DEEP = "#06263f";
 const ACCENT = "#2563EB";
+const GOLD = "#D4A853";
 const LIGHT_BG = "#FAFBFD";
 const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
@@ -116,25 +117,25 @@ export default function RoofReplacementContent() {
       {/* ─── SECTION 3: GAF Warranty — full width dark premium ─── */}
       <ScrollReveal>
         <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: DEEP, position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 30%, rgba(37,99,235,0.06) 0%, transparent 50%)" }} />
+          <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 30%, rgba(212,168,83,0.06) 0%, transparent 50%)" }} />
           <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>WARRANTY</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>WARRANTY</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.12 }}>
               The GAF Golden Pledge Warranty
             </h2>
-            <div style={{ width: 48, height: 3, background: ACCENT, borderRadius: 2, margin: "0 auto 32px" }} />
+            <div style={{ width: 48, height: 3, background: GOLD, borderRadius: 2, margin: "0 auto 32px" }} />
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: "rgba(255,255,255,0.8)", maxWidth: 700, margin: "0 auto" }}>
               As a GAF Master Elite contractor (top 2% in the country), we can offer the GAF Golden Pledge warranty. This is the strongest warranty in residential roofing. It covers materials for 50 years and includes 25 years of workmanship coverage, backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. That&apos;s a level of protection most contractors simply cannot offer.
             </p>
             <div className="rr-warranty-stats" style={{ display: "flex", justifyContent: "center", gap: 60, marginTop: 48 }}>
               <div>
-                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 48, fontWeight: 800, color: ACCENT }}>
+                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 48, fontWeight: 800, color: GOLD }}>
                   <CounterGSAP end={50} suffix=" yrs" duration={2} />
                 </div>
                 <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Material Coverage</div>
               </div>
               <div>
-                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 48, fontWeight: 800, color: ACCENT }}>
+                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 48, fontWeight: 800, color: GOLD }}>
                   <CounterGSAP end={25} suffix=" yrs" duration={2} delay={0.3} />
                 </div>
                 <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Workmanship Coverage</div>
