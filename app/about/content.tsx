@@ -98,16 +98,16 @@ export default function AboutContent() {
           </div>
           <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.9, color: TEXT }}>
             <p style={{ marginTop: 0, marginBottom: 20 }}>
-              I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, fight their insurance company like it was personal, and still be around five years later when the warranty mattered.
+              I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, fight their insurance company like it was personal, and still be here seven years later when the workmanship warranty kicks in.
             </p>
             <p style={{ marginBottom: 20 }}>
-              That&apos;s what we built. We grew from a two-man crew in Lakewood to a team that&apos;s completed over 7,200 roofs across the Denver metro. We earned four manufacturer certifications — not because they look good on a website, but because they give our customers the strongest warranties in the industry.
+              That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
             </p>
             <p style={{ marginBottom: 20 }}>
-              We&apos;ve recovered millions in insurance supplements that adjusters tried to short-change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
+              We&apos;ve recovered millions in insurance supplements that adjusters tried to short change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
             </p>
             <p style={{ marginBottom: 0, fontWeight: 600, color: NAVY }}>
-              — Alex Gates, Founder
+              — Andrew Gates, Founder
             </p>
           </div>
         </div>
