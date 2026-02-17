@@ -165,7 +165,7 @@ export default function AboutContent() {
         </div>
         {/* Text overlay at bottom */}
         <div style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: 1200, margin: "0 auto", padding: "0 24px 64px" }}>
-          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>ABOUT GATES ENTERPRISES</span>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: WHITE, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>ABOUT GATES ENTERPRISES</span>
           <h1 className="about-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 800, color: WHITE, lineHeight: 1.08, margin: "0 0 16px", maxWidth: 700 }}>
             Meet the Team<br />Behind Your Roof
           </h1>
