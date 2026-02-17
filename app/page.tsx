@@ -261,6 +261,16 @@ export default function Home() {
       <Footer />
 
       <style>{`
+        /* Desktop defaults (unlayered so they override Tailwind CSS layers) */
+        .hero-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 140px 20px 80px; }
+        .hero-btns { display: flex; gap: 12px; }
+        .mobile-hero-stats { display: none; }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .why-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+        .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
+
         .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(13,33,55,0.08); }
         @media (max-width: 768px) {
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
