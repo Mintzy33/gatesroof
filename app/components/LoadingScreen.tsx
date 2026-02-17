@@ -4,14 +4,12 @@ import Image from "next/image";
 import gsap from "gsap";
 
 const NAVY = "#06263f";
-const ACCENT = "#2563EB";
 
 export default function LoadingScreen() {
   const [show, setShow] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
   const cloudRef = useRef<HTMLDivElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
-  const ringRef = useRef<HTMLDivElement>(null);
   const flashRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -21,7 +19,7 @@ export default function LoadingScreen() {
   }, []);
 
   useEffect(() => {
-    if (!show || !overlayRef.current || !cloudRef.current || !glowRef.current || !ringRef.current || !flashRef.current) return;
+    if (!show || !overlayRef.current || !cloudRef.current || !glowRef.current || !flashRef.current) return;
 
     document.body.style.overflow = "hidden";
 
@@ -48,19 +46,13 @@ export default function LoadingScreen() {
         duration: 0.5,
         ease: "back.out(1.4)",
       }, "<0.1")
-      // 3. Ring expands outward
-      .from(ringRef.current, {
-        opacity: 0,
-        scale: 0.4,
-        duration: 0.5,
-        ease: "power3.out",
-      }, "<0.15")
-      .to(ringRef.current, {
-        scale: 1.6,
-        opacity: 0,
+      // 3. Glow breathes bigger
+      .to(glowRef.current, {
+        scale: 1.3,
+        opacity: 0.8,
         duration: 0.4,
-        ease: "power2.in",
-      }, ">-0.1")
+        ease: "sine.inOut",
+      }, "<0.2")
       // 4. Brief hold — cloud floats slightly
       .to(cloudRef.current, {
         y: -8,
@@ -116,19 +108,6 @@ export default function LoadingScreen() {
           height: 600,
           borderRadius: "50%",
           background: `radial-gradient(circle, rgba(37,99,235,0.2) 0%, rgba(37,99,235,0.05) 50%, transparent 70%)`,
-          pointerEvents: "none",
-        }}
-      />
-
-      {/* Expanding ring */}
-      <div
-        ref={ringRef}
-        style={{
-          position: "absolute",
-          width: 320,
-          height: 320,
-          borderRadius: "50%",
-          border: `2px solid rgba(37,99,235,0.25)`,
           pointerEvents: "none",
         }}
       />
