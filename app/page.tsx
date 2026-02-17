@@ -105,10 +105,10 @@ export default function Home() {
               { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations — we fight for your payout.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
-                <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderLeft: `3px solid ${ACCENT}`, border: "1px solid rgba(13,33,55,0.06)", borderLeftWidth: 3, borderLeftColor: ACCENT, height: "100%", transition: "all 0.3s", cursor: "pointer", boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
-                  <div style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>{s.icon}</div>
-                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{s.t}</h3>
-                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{s.d}</p>
+                <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderTop: `3px solid ${ACCENT}`, borderRight: "1px solid rgba(13,33,55,0.06)", borderBottom: "1px solid rgba(13,33,55,0.06)", borderLeft: "1px solid rgba(13,33,55,0.06)", height: "100%", transition: "all 0.35s cubic-bezier(0.4,0,0.2,1)", cursor: "pointer", boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
+                  <div className="service-icon" style={{ width: 48, height: 48, borderRadius: 14, background: LIGHT_BG, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16, transition: "all 0.35s" }}>{s.icon}</div>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8, transition: "color 0.35s" }}>{s.t}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, transition: "color 0.35s" }}>{s.d}</p>
                 </div>
               </Link>
             ))}
@@ -256,7 +256,11 @@ export default function Home() {
         .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
 
-        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(13,33,55,0.18), 0 8px 20px rgba(13,33,55,0.10); border-left-color: #C9A54E !important; background: #FFFFFF !important; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(13,33,55,0.22), 0 8px 20px rgba(13,33,55,0.12); background: #0D2137 !important; border-color: #0D2137 !important; }
+        .service-card:hover h3 { color: #FFFFFF !important; }
+        .service-card:hover p { color: rgba(255,255,255,0.7) !important; }
+        .service-card:hover .service-icon { background: rgba(255,255,255,0.1) !important; }
+        .service-card:hover .service-icon svg { stroke: #FFFFFF !important; }
         @media (max-width: 768px) {
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }
