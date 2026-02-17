@@ -1,20 +1,18 @@
 "use client";
-import { useState, useCallback } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useState, useRef, useEffect, useCallback } from "react";
+import gsap from "gsap";
 import reviews from "../data/reviews.json";
 
 const NAVY = "#0D2137";
+const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 const WHITE = "#FFFFFF";
 
 const CHAR_LIMIT = 220;
+const CARD_GAP = 20;
+const AUTO_DELAY = 5000; // ms between slides
 
 const GoogleG = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +29,7 @@ const StarIcon = () => (
   </svg>
 );
 
-function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
+function ReviewCard({ r }: { r: typeof reviews[0] }) {
   const [expanded, setExpanded] = useState(false);
   const isLong = r.text.length > CHAR_LIMIT;
   const displayText = !isLong || expanded ? r.text : r.text.slice(0, CHAR_LIMIT).trimEnd() + "...";
@@ -48,19 +46,16 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
       height: "100%",
       position: "relative",
     }}>
-      {/* Google logo top right */}
       <div style={{ position: "absolute", top: 20, right: 20 }}>
         <GoogleG />
       </div>
 
-      {/* Stars */}
       <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
         {Array.from({ length: r.rating }).map((_, j) => (
           <StarIcon key={j} />
         ))}
       </div>
 
-      {/* Review text */}
       <p style={{
         fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
         fontSize: 15,
@@ -76,7 +71,7 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
             style={{
               background: "none",
               border: "none",
-              color: "#2563EB",
+              color: ACCENT,
               fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
               fontSize: 14,
               fontWeight: 600,
@@ -90,7 +85,6 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
         )}
       </p>
 
-      {/* Reviewer info */}
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: "auto" }}>
         <div style={{
           width: 38,
@@ -116,7 +110,6 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
         </div>
       </div>
 
-      {/* Source text */}
       <div style={{
         fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
         fontSize: 11,
@@ -132,83 +125,218 @@ function ReviewCard({ r, i }: { r: typeof reviews[0]; i: number }) {
 }
 
 export default function ReviewCarousel() {
-  const onSwiper = useCallback((swiper: SwiperType) => {
-    if (swiper.autoplay && !swiper.autoplay.running) {
-      swiper.autoplay.start();
-    }
+  const trackRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [perView, setPerView] = useState(3);
+  const isPaused = useRef(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const tweenRef = useRef<gsap.core.Tween | null>(null);
+
+  const totalSlides = reviews.length;
+  const maxIndex = Math.max(0, totalSlides - perView);
+
+  // Responsive perView
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      if (w < 640) setPerView(1);
+      else if (w < 1024) setPerView(2);
+      else setPerView(3);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
   }, []);
 
+  // Calculate the x position for a given index
+  const getX = useCallback((index: number) => {
+    if (!containerRef.current) return 0;
+    const containerW = containerRef.current.offsetWidth;
+    const cardW = (containerW - CARD_GAP * (perView - 1)) / perView;
+    return -(index * (cardW + CARD_GAP));
+  }, [perView]);
+
+  // Animate to a specific index
+  const goTo = useCallback((index: number, instant = false) => {
+    // Wrap around
+    let target = index;
+    if (target > maxIndex) target = 0;
+    if (target < 0) target = maxIndex;
+
+    setActiveIndex(target);
+
+    if (tweenRef.current) tweenRef.current.kill();
+
+    if (instant) {
+      gsap.set(trackRef.current, { x: getX(target) });
+    } else {
+      tweenRef.current = gsap.to(trackRef.current, {
+        x: getX(target),
+        duration: 0.6,
+        ease: "power2.inOut",
+      });
+    }
+  }, [maxIndex, getX]);
+
+  // Auto advance
+  const scheduleNext = useCallback(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => {
+      if (!isPaused.current) {
+        goTo(activeIndex + 1);
+      }
+    }, AUTO_DELAY);
+  }, [activeIndex, goTo]);
+
+  useEffect(() => {
+    scheduleNext();
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [scheduleNext]);
+
+  // Reposition instantly on resize/perView change
+  useEffect(() => {
+    const clamped = Math.min(activeIndex, maxIndex);
+    if (clamped !== activeIndex) setActiveIndex(clamped);
+    gsap.set(trackRef.current, { x: getX(clamped) });
+  }, [perView, maxIndex, activeIndex, getX]);
+
+  // Pause / Resume
+  const handleMouseEnter = () => {
+    isPaused.current = true;
+    if (timerRef.current) clearTimeout(timerRef.current);
+  };
+  const handleMouseLeave = () => {
+    isPaused.current = false;
+    scheduleNext();
+  };
+
+  // Touch swipe
+  const touchStart = useRef(0);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = e.touches[0].clientX;
+    isPaused.current = true;
+    if (timerRef.current) clearTimeout(timerRef.current);
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const diff = touchStart.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      goTo(diff > 0 ? activeIndex + 1 : activeIndex - 1);
+    }
+    isPaused.current = false;
+    scheduleNext();
+  };
+
+  // Dots: show one per "page" position
+  const dotCount = maxIndex + 1;
+
   return (
-    <>
-      <Swiper
-        modules={[Autoplay, Navigation, Pagination]}
-        spaceBetween={20}
-        slidesPerView={1}
-        loop={true}
-        loopAdditionalSlides={2}
-        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-        speed={600}
-        cssMode={false}
-        navigation={true}
-        pagination={{ clickable: true }}
-        onSwiper={onSwiper}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+    <div
+      ref={containerRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      style={{ position: "relative", overflow: "hidden" }}
+    >
+      {/* Track */}
+      <div
+        ref={trackRef}
+        style={{
+          display: "flex",
+          gap: CARD_GAP,
+          willChange: "transform",
         }}
-        className="review-swiper"
       >
         {reviews.map((r, i) => (
-          <SwiperSlide key={i} style={{ height: "auto" }}>
-            <ReviewCard r={r} i={i} />
-          </SwiperSlide>
+          <div
+            key={i}
+            style={{
+              flex: `0 0 calc((100% - ${CARD_GAP * (perView - 1)}px) / ${perView})`,
+              minWidth: 0,
+            }}
+          >
+            <ReviewCard r={r} />
+          </div>
         ))}
-      </Swiper>
+      </div>
+
+      {/* Nav arrows (desktop) */}
+      <button
+        onClick={() => goTo(activeIndex - 1)}
+        aria-label="Previous"
+        className="rc-arrow rc-arrow-prev"
+        style={{
+          position: "absolute",
+          top: "calc(50% - 20px)",
+          left: -4,
+          width: 40,
+          height: 40,
+          borderRadius: "50%",
+          background: WHITE,
+          border: "none",
+          boxShadow: "0 2px 8px rgba(13,33,55,0.12)",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 2,
+        }}
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button
+        onClick={() => goTo(activeIndex + 1)}
+        aria-label="Next"
+        className="rc-arrow rc-arrow-next"
+        style={{
+          position: "absolute",
+          top: "calc(50% - 20px)",
+          right: -4,
+          width: 40,
+          height: 40,
+          borderRadius: "50%",
+          background: WHITE,
+          border: "none",
+          boxShadow: "0 2px 8px rgba(13,33,55,0.12)",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 2,
+        }}
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      {/* Dot indicators */}
+      <div style={{ display: "flex", justifyContent: "center", gap: 6, marginTop: 28 }}>
+        {Array.from({ length: dotCount }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            style={{
+              width: activeIndex === i ? 24 : 8,
+              height: 8,
+              borderRadius: 4,
+              border: "none",
+              background: activeIndex === i ? ACCENT : "rgba(13,33,55,0.18)",
+              cursor: "pointer",
+              padding: 0,
+              transition: "all 0.35s cubic-bezier(0.25, 0.1, 0.25, 1)",
+            }}
+          />
+        ))}
+      </div>
 
       <style>{`
-        .review-swiper {
-          padding-bottom: 52px !important;
-          overflow: visible !important;
-        }
-        .review-swiper .swiper-wrapper {
-          transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1) !important;
-        }
-        .review-swiper .swiper-slide {
-          height: auto !important;
-        }
-        .review-swiper .swiper-button-prev,
-        .review-swiper .swiper-button-next {
-          width: 40px;
-          height: 40px;
-          background: ${WHITE};
-          border-radius: 50%;
-          box-shadow: 0 2px 8px rgba(13,33,55,0.1);
-          top: calc(50% - 26px);
-        }
-        .review-swiper .swiper-button-prev::after,
-        .review-swiper .swiper-button-next::after {
-          font-size: 16px;
-          font-weight: 700;
-          color: ${NAVY};
-        }
-        .review-swiper .swiper-pagination-bullet {
-          width: 8px;
-          height: 8px;
-          background: rgba(13,33,55,0.2);
-          opacity: 1;
-        }
-        .review-swiper .swiper-pagination-bullet-active {
-          background: #2563EB;
-          width: 24px;
-          border-radius: 4px;
-        }
         @media (max-width: 768px) {
-          .review-swiper .swiper-button-prev,
-          .review-swiper .swiper-button-next {
-            display: none;
-          }
+          .rc-arrow { display: none !important; }
         }
       `}</style>
-    </>
+    </div>
   );
 }
