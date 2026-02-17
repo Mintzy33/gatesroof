@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import reviews from "../data/reviews.json";
 
@@ -11,8 +11,9 @@ const TEXT_LIGHT = "#64748B";
 const WHITE = "#FFFFFF";
 
 const CHAR_LIMIT = 220;
-const CARD_GAP = 20;
-const AUTO_DELAY = 5000; // ms between slides
+const CARD_WIDTH = 380;   // px per card
+const CARD_GAP = 24;      // gap between cards
+const SPEED = 50;         // pixels per second — smooth and readable
 
 const GoogleG = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,6 +46,8 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
       flexDirection: "column" as const,
       height: "100%",
       position: "relative",
+      width: CARD_WIDTH,
+      flexShrink: 0,
     }}>
       <div style={{ position: "absolute", top: 20, right: 20 }}>
         <GoogleG />
@@ -67,7 +70,7 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
         &ldquo;{displayText}&rdquo;
         {isLong && (
           <button
-            onClick={() => setExpanded(!expanded)}
+            onClick={(e) => { e.stopPropagation(); setExpanded(!expanded); }}
             style={{
               background: "none",
               border: "none",
@@ -126,122 +129,60 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
 
 export default function ReviewCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [perView, setPerView] = useState(3);
-  const isPaused = useRef(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
-  const totalSlides = reviews.length;
-  const maxIndex = Math.max(0, totalSlides - perView);
+  // Duplicate the reviews so we have two identical sets side by side
+  const doubled = [...reviews, ...reviews];
 
-  // Responsive perView
-  useEffect(() => {
-    const update = () => {
-      const w = window.innerWidth;
-      if (w < 640) setPerView(1);
-      else if (w < 1024) setPerView(2);
-      else setPerView(3);
-    };
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
+  // Width of one full set of cards
+  const setWidth = reviews.length * (CARD_WIDTH + CARD_GAP);
 
-  // Calculate the x position for a given index
-  const getX = useCallback((index: number) => {
-    if (!containerRef.current) return 0;
-    const containerW = containerRef.current.offsetWidth;
-    const cardW = (containerW - CARD_GAP * (perView - 1)) / perView;
-    return -(index * (cardW + CARD_GAP));
-  }, [perView]);
-
-  // Animate to a specific index
-  const goTo = useCallback((index: number, instant = false) => {
-    // Wrap around
-    let target = index;
-    if (target > maxIndex) target = 0;
-    if (target < 0) target = maxIndex;
-
-    setActiveIndex(target);
-
-    if (tweenRef.current) tweenRef.current.kill();
-
-    if (instant) {
-      gsap.set(trackRef.current, { x: getX(target) });
-    } else {
-      tweenRef.current = gsap.to(trackRef.current, {
-        x: getX(target),
-        duration: 0.6,
-        ease: "power2.inOut",
-      });
-    }
-  }, [maxIndex, getX]);
-
-  // Auto advance
-  const scheduleNext = useCallback(() => {
-    if (timerRef.current) clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => {
-      if (!isPaused.current) {
-        goTo(activeIndex + 1);
-      }
-    }, AUTO_DELAY);
-  }, [activeIndex, goTo]);
+  // Duration for one full set to scroll past
+  const duration = setWidth / SPEED;
 
   useEffect(() => {
-    scheduleNext();
+    const track = trackRef.current;
+    if (!track) return;
+
+    // Start at 0, scroll left to -setWidth, then seamlessly reset
+    gsap.set(track, { x: 0 });
+
+    tweenRef.current = gsap.to(track, {
+      x: -setWidth,
+      duration: duration,
+      ease: "none",
+      repeat: -1,       // infinite
+    });
+
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
+      if (tweenRef.current) tweenRef.current.kill();
     };
-  }, [scheduleNext]);
+  }, [setWidth, duration]);
 
-  // Reposition instantly on resize/perView change
-  useEffect(() => {
-    const clamped = Math.min(activeIndex, maxIndex);
-    if (clamped !== activeIndex) setActiveIndex(clamped);
-    gsap.set(trackRef.current, { x: getX(clamped) });
-  }, [perView, maxIndex, activeIndex, getX]);
-
-  // Pause / Resume
   const handleMouseEnter = () => {
-    isPaused.current = true;
-    if (timerRef.current) clearTimeout(timerRef.current);
-  };
-  const handleMouseLeave = () => {
-    isPaused.current = false;
-    scheduleNext();
-  };
-
-  // Touch swipe
-  const touchStart = useRef(0);
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStart.current = e.touches[0].clientX;
-    isPaused.current = true;
-    if (timerRef.current) clearTimeout(timerRef.current);
-  };
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    const diff = touchStart.current - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) {
-      goTo(diff > 0 ? activeIndex + 1 : activeIndex - 1);
+    if (tweenRef.current) {
+      gsap.to(tweenRef.current, { timeScale: 0, duration: 0.6, ease: "power2.out" });
     }
-    isPaused.current = false;
-    scheduleNext();
   };
 
-  // Dots: show one per "page" position
-  const dotCount = maxIndex + 1;
+  const handleMouseLeave = () => {
+    if (tweenRef.current) {
+      gsap.to(tweenRef.current, { timeScale: 1, duration: 0.6, ease: "power2.in" });
+    }
+  };
 
   return (
     <div
-      ref={containerRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{
+        overflow: "hidden",
+        position: "relative",
+        /* Soft fade edges */
+        maskImage: "linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%)",
+        WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%)",
+      }}
     >
-      {/* Track */}
       <div
         ref={trackRef}
         style={{
@@ -250,93 +191,10 @@ export default function ReviewCarousel() {
           willChange: "transform",
         }}
       >
-        {reviews.map((r, i) => (
-          <div
-            key={i}
-            style={{
-              flex: `0 0 calc((100% - ${CARD_GAP * (perView - 1)}px) / ${perView})`,
-              minWidth: 0,
-            }}
-          >
-            <ReviewCard r={r} />
-          </div>
+        {doubled.map((r, i) => (
+          <ReviewCard key={i} r={r} />
         ))}
       </div>
-
-      {/* Nav arrows (desktop) */}
-      <button
-        onClick={() => goTo(activeIndex - 1)}
-        aria-label="Previous"
-        className="rc-arrow rc-arrow-prev"
-        style={{
-          position: "absolute",
-          top: "calc(50% - 20px)",
-          left: -4,
-          width: 40,
-          height: 40,
-          borderRadius: "50%",
-          background: WHITE,
-          border: "none",
-          boxShadow: "0 2px 8px rgba(13,33,55,0.12)",
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          zIndex: 2,
-        }}
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-      </button>
-      <button
-        onClick={() => goTo(activeIndex + 1)}
-        aria-label="Next"
-        className="rc-arrow rc-arrow-next"
-        style={{
-          position: "absolute",
-          top: "calc(50% - 20px)",
-          right: -4,
-          width: 40,
-          height: 40,
-          borderRadius: "50%",
-          background: WHITE,
-          border: "none",
-          boxShadow: "0 2px 8px rgba(13,33,55,0.12)",
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          zIndex: 2,
-        }}
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-      </button>
-
-      {/* Dot indicators */}
-      <div style={{ display: "flex", justifyContent: "center", gap: 6, marginTop: 28 }}>
-        {Array.from({ length: dotCount }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            aria-label={`Go to slide ${i + 1}`}
-            style={{
-              width: activeIndex === i ? 24 : 8,
-              height: 8,
-              borderRadius: 4,
-              border: "none",
-              background: activeIndex === i ? ACCENT : "rgba(13,33,55,0.18)",
-              cursor: "pointer",
-              padding: 0,
-              transition: "all 0.35s cubic-bezier(0.25, 0.1, 0.25, 1)",
-            }}
-          />
-        ))}
-      </div>
-
-      <style>{`
-        @media (max-width: 768px) {
-          .rc-arrow { display: none !important; }
-        }
-      `}</style>
     </div>
   );
 }
