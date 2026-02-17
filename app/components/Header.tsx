@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import gsap from "gsap";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -9,11 +10,25 @@ const WHITE = "#FFFFFF";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const logoRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
+
+  // Floating cloud animation
+  useEffect(() => {
+    if (!logoRef.current) return;
+    const tween = gsap.to(logoRef.current, {
+      y: -3.5,
+      duration: 2,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: -1,
+    });
+    return () => { tween.kill(); };
+  }, []);
 
   const links = [
     { l: "Services", h: "/services/roof-replacement" },
@@ -32,21 +47,21 @@ export default function Header() {
         backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)",
         borderBottom: "1px solid rgba(255,255,255,0.04)",
       }}>
-        <div style={{
+        <div className="header-inner" style={{
           maxWidth: 1200, margin: "0 auto", padding: "0 20px",
-          height: 64, display: "flex", alignItems: "center", justifyContent: "space-between",
+          height: 80, display: "flex", alignItems: "center", justifyContent: "space-between",
         }}>
-          <Link href="/" className="header-brand" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-            <Image src="/logo.png" alt="Gates Enterprises" width={140} height={42} className="header-logo" style={{ height: 42, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
-            <span className="header-text" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap" }}>GATES ENTERPRISES LLC</span>
+          <Link href="/" className="header-brand" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
+            <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={160} height={48} className="header-logo" style={{ height: 48, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
+            <span className="header-text" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: WHITE, lineHeight: 1, whiteSpace: "nowrap" }}>GATES ENTERPRISES LLC</span>
           </Link>
-          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
+          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 32 }}>
             {links.map(item => (
-              <Link key={item.l} href={item.h} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
+              <Link key={item.l} href={item.h} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
             ))}
-            <div style={{ width: 1, height: 20, background: "rgba(255,255,255,0.12)" }} />
-            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: WHITE, textDecoration: "none" }}>(720) 766-3377</a>
-            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "11px 24px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)" }}>Free Estimate</Link>
+            <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.12)" }} />
+            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none" }}>(720) 766-3377</a>
+            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "13px 28px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)" }}>Free Estimate</Link>
           </nav>
           <div className="mobile-nav" style={{ display: "none", alignItems: "center", gap: 10 }}>
             <a href="tel:7207663377" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "8px 14px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
@@ -83,6 +98,7 @@ export default function Header() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-nav { display: flex !important; }
+          .header-inner { height: 64px !important; }
           .header-brand { flex: 1; justify-content: center; }
           .header-logo { height: 34px !important; }
           .header-text { font-size: 14px !important; }

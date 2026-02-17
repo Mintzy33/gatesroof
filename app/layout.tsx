@@ -4,6 +4,7 @@ import { DM_Sans, Playfair_Display } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
 import Analytics from "./components/Analytics";
 import StickyBottomCTA from "./components/StickyBottomCTA";
+import LoadingScreen from "./components/LoadingScreen";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXDXPXB9" height="0" width="0" style={{ display: "none", visibility: "hidden" }} title="GTM" /></noscript>
         {/* Meta Pixel noscript fallback */}
         <noscript><img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1621445598880955&ev=PageView&noscript=1" alt="" /></noscript>
+        <LoadingScreen />
         <SmoothScroll>{children}</SmoothScroll>
         <Analytics />
         <StickyBottomCTA />
