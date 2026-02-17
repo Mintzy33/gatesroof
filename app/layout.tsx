@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import SmoothScroll from "./components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Gates Enterprises | Colorado's #1 Roofing Contractor | 7,200+ Roofs",
@@ -87,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXDXPXB9" height="0" width="0" style={{ display: "none", visibility: "hidden" }} /></noscript>
                 {/* Meta Pixel noscript fallback */}
         <noscript><img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1621445598880955&ev=PageView&noscript=1" alt="" /></noscript>
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
