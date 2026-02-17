@@ -127,10 +127,10 @@ export default function Home() {
 
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", minHeight: "100vh", background: NAVY, display: "flex", alignItems: "center", overflow: "hidden" }}>
-        <video ref={videoRef} autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.35 }}>
+        <video ref={videoRef} autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.5 }}>
           <source src={VIDEO_URL} type="video/mp4" />
         </video>
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(13,33,55,0.85) 0%, rgba(13,33,55,0.55) 40%, rgba(13,33,55,0.75) 100%)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(13,33,55,0.7) 0%, rgba(13,33,55,0.35) 40%, rgba(13,33,55,0.55) 100%)" }} />
         <div className="hero-wrap" style={{ maxWidth: 1200, margin: "0 auto", padding: "140px 20px 80px", position: "relative", zIndex: 1, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}>
           <div>
             <FadeIn delay={0.1}>
