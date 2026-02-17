@@ -63,14 +63,14 @@ export default function LoadingScreen() {
         <Image
           src="/logo.png"
           alt="Gates Enterprises"
-          width={200}
-          height={64}
-          style={{ height: 64, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)", marginBottom: 16 }}
+          width={500}
+          height={160}
+          style={{ height: 160, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)", marginBottom: 20 }}
           priority
         />
         <div style={{
           fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-          fontSize: 22,
+          fontSize: 28,
           fontWeight: 700,
           color: "#FFFFFF",
           letterSpacing: "0.04em",
