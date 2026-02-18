@@ -10,7 +10,6 @@ export default function LoadingScreen() {
   const overlayRef = useRef<HTMLDivElement>(null);
   const cloudRef = useRef<HTMLDivElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
-  const flashRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (sessionStorage.getItem("gates-loaded")) return;
@@ -19,19 +18,20 @@ export default function LoadingScreen() {
   }, []);
 
   useEffect(() => {
-    if (!show || !overlayRef.current || !cloudRef.current || !glowRef.current || !flashRef.current) return;
+    if (!show || !overlayRef.current || !cloudRef.current || !glowRef.current) return;
 
     document.body.style.overflow = "hidden";
 
     const overlay = overlayRef.current;
     const cloud = cloudRef.current;
     const glow = glowRef.current;
-    const flash = flashRef.current;
 
     const tl = gsap.timeline({
       onComplete: () => {
-        // Force invisible immediately, then unmount next frame
-        if (overlay) overlay.style.display = "none";
+        if (overlay) {
+          overlay.style.visibility = "hidden";
+          overlay.style.pointerEvents = "none";
+        }
         document.body.style.overflow = "";
         requestAnimationFrame(() => setShow(false));
       },
@@ -45,7 +45,7 @@ export default function LoadingScreen() {
         duration: 0.4,
         ease: "power2.out",
       })
-      // 2. Cloud scales up from small with blur (like materializing)
+      // 2. Cloud scales up with blur
       .from(cloud, {
         opacity: 0,
         scale: 0.5,
@@ -71,21 +71,12 @@ export default function LoadingScreen() {
         duration: 0.2,
         ease: "sine.inOut",
       })
-      // 5. White flash
-      .to(flash, {
-        opacity: 1,
-        duration: 0.08,
-        ease: "power4.in",
-      })
-      .to(flash, {
-        opacity: 0,
-        duration: 0.2,
-        ease: "power2.out",
-      })
-      // 6. Overlay fades out smoothly (no wipe, no flicker)
+      // 5. Pause briefly so it doesn't feel rushed
+      .to({}, { duration: 0.15 })
+      // 6. Everything fades out together — clean, no flash
       .to(overlay, {
         opacity: 0,
-        duration: 0.4,
+        duration: 0.5,
         ease: "power2.inOut",
       });
   }, [show]);
@@ -119,7 +110,7 @@ export default function LoadingScreen() {
         }}
       />
 
-      {/* Cloud logo — massive */}
+      {/* Cloud logo */}
       <div ref={cloudRef} style={{ position: "relative", zIndex: 2 }}>
         <Image
           src="/logo.png"
@@ -135,19 +126,6 @@ export default function LoadingScreen() {
           priority
         />
       </div>
-
-      {/* White flash overlay */}
-      <div
-        ref={flashRef}
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "#FFFFFF",
-          opacity: 0,
-          pointerEvents: "none",
-          zIndex: 10,
-        }}
-      />
     </div>
   );
 }

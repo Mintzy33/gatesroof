@@ -11,9 +11,7 @@ const TEXT_LIGHT = "#64748B";
 const WHITE = "#FFFFFF";
 
 const CHAR_LIMIT = 220;
-const CARD_WIDTH = 380;   // px per card
-const CARD_GAP = 24;      // gap between cards
-const SPEED = 50;         // pixels per second — smooth and readable
+const SPEED = 50; // pixels per second
 
 const GoogleG = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +34,7 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
   const displayText = !isLong || expanded ? r.text : r.text.slice(0, CHAR_LIMIT).trimEnd() + "...";
 
   return (
-    <div style={{
+    <div className="rc-card" style={{
       background: WHITE,
       borderRadius: 16,
       padding: "28px 24px",
@@ -46,7 +44,8 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
       flexDirection: "column" as const,
       height: "100%",
       position: "relative",
-      width: CARD_WIDTH,
+      width: 380,
+      minWidth: 380,
       flexShrink: 0,
     }}>
       <div style={{ position: "absolute", top: 20, right: 20 }}>
@@ -130,34 +129,52 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
 export default function ReviewCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
+  const [ready, setReady] = useState(false);
 
-  // Duplicate the reviews so we have two identical sets side by side
+  // Duplicate reviews for seamless loop
   const doubled = [...reviews, ...reviews];
 
-  // Width of one full set of cards
-  const setWidth = reviews.length * (CARD_WIDTH + CARD_GAP);
-
-  // Duration for one full set to scroll past
-  const duration = setWidth / SPEED;
+  // Wait for mount, then measure and animate
+  useEffect(() => {
+    // Small delay to ensure DOM is painted
+    const raf = requestAnimationFrame(() => setReady(true));
+    return () => cancelAnimationFrame(raf);
+  }, []);
 
   useEffect(() => {
+    if (!ready) return;
     const track = trackRef.current;
     if (!track) return;
 
-    // Start at 0, scroll left to -setWidth, then seamlessly reset
+    // Measure the actual width of one set of cards
+    const cards = track.querySelectorAll(".rc-card");
+    const halfCount = cards.length / 2;
+    let oneSetWidth = 0;
+    for (let i = 0; i < halfCount; i++) {
+      const card = cards[i] as HTMLElement;
+      oneSetWidth += card.offsetWidth;
+      if (i < halfCount - 1) oneSetWidth += 24; // gap
+    }
+    oneSetWidth += 24; // trailing gap before second set starts
+
+    const dur = oneSetWidth / SPEED;
+
     gsap.set(track, { x: 0 });
 
     tweenRef.current = gsap.to(track, {
-      x: -setWidth,
-      duration: duration,
+      x: -oneSetWidth,
+      duration: dur,
       ease: "none",
-      repeat: -1,       // infinite
+      repeat: -1,
     });
 
     return () => {
-      if (tweenRef.current) tweenRef.current.kill();
+      if (tweenRef.current) {
+        tweenRef.current.kill();
+        tweenRef.current = null;
+      }
     };
-  }, [setWidth, duration]);
+  }, [ready]);
 
   const handleMouseEnter = () => {
     if (tweenRef.current) {
@@ -178,16 +195,15 @@ export default function ReviewCarousel() {
       style={{
         overflow: "hidden",
         position: "relative",
-        /* Soft fade edges */
-        maskImage: "linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%)",
-        WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%)",
+        maskImage: "linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%)",
+        WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%)",
       }}
     >
       <div
         ref={trackRef}
         style={{
           display: "flex",
-          gap: CARD_GAP,
+          gap: 24,
           willChange: "transform",
         }}
       >
@@ -195,6 +211,15 @@ export default function ReviewCarousel() {
           <ReviewCard key={i} r={r} />
         ))}
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .rc-card {
+            width: 300px !important;
+            min-width: 300px !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
