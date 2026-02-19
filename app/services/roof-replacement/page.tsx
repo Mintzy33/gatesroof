@@ -3,8 +3,8 @@ import Script from "next/script";
 import RoofReplacementContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roof Replacement Denver & Lakewood CO | Gates Roofing",
-  description: "Need a new roof? Gates Enterprises offers expert roof replacement with GAF, CertainTeed & Malarkey shingles. Warranties up to 50 years. Free estimate. Call (720) 766-3377.",
+  title: "Roof Replacement Colorado | Gates Enterprises LLC",
+  description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
 };
 
 const serviceSchema = {
@@ -33,7 +33,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How long does a roof replacement take?", "acceptedAnswer": {"@type": "Answer", "text": "Most residential roof replacements are completed in a single day. Larger or more complex roofs may take two days. We'll give you a specific timeline before we start."}},
-    {"@type": "Question", "name": "How much does a roof replacement cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "A typical roof replacement in the Denver metro area ranges from $8,000 to $20,000 depending on size, pitch, material choice, and complexity. If insurance is covering the claim, your out of pocket cost is usually just your deductible."}},
+    {"@type": "Question", "name": "What does a roof replacement cost?", "acceptedAnswer": {"@type": "Answer", "text": "Every roof is different. The final cost depends on the size of your home, the condition of the decking, the materials you choose, and what we find once the old shingles come off. A full replacement can range from $10,000 to $100,000. That is exactly why we specialize in working with your homeowner's insurance."}},
     {"@type": "Question", "name": "Can I stay home during the roof replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We ask that you move vehicles out of the driveway and let us know about any pets. Otherwise, go about your day. We handle the rest."}},
     {"@type": "Question", "name": "What's the difference between a 25 year and 50 year warranty?", "acceptedAnswer": {"@type": "Answer", "text": "The standard GAF System Plus warranty covers materials for 50 years and workmanship for 10. The Golden Pledge upgrades workmanship coverage to 25 years and is backed directly by GAF. We recommend Golden Pledge for every customer."}},
     {"@type": "Question", "name": "Do you offer financing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer flexible financing options so you can get the roof you need without waiting. Ask us for details during your estimate."}}

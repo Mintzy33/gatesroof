@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import GalleryContent from "./content";
 export const metadata: Metadata = {
-  title: "Roofing Project Gallery | Gates Enterprises | Before & After",
-  description: "See completed roofing, siding & gutter projects by Gates Enterprises. Before & after photos from homes across Colorado. 7,200+ roofs and counting.",
+  title: "Project Gallery | Gates Enterprises LLC",
+  description: "See our work. Before and after photos of roof replacements, siding, gutters, and more across Colorado's Front Range.",
 };
 export default function Page() { return <GalleryContent />; }

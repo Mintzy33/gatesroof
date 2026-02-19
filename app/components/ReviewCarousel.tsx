@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import gsap from "gsap";
-import reviews from "../data/reviews.json";
+import { homepageReviews } from "../data/reviews";
+import { ReviewAvatar } from "./ReviewAvatar";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -28,7 +28,14 @@ const StarIcon = () => (
   </svg>
 );
 
-function ReviewCard({ r }: { r: typeof reviews[0] }) {
+interface ReviewCardReview {
+  name: string;
+  city: string;
+  text: string;
+  rating: number;
+}
+
+function ReviewCard({ r }: { r: ReviewCardReview }) {
   const [expanded, setExpanded] = useState(false);
   const isLong = r.text.length > CHAR_LIMIT;
   const displayText = !isLong || expanded ? r.text : r.text.slice(0, CHAR_LIMIT).trimEnd() + "...";
@@ -48,10 +55,6 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
       minWidth: 380,
       flexShrink: 0,
     }}>
-      <div style={{ position: "absolute", top: 20, right: 20 }}>
-        <GoogleG />
-      </div>
-
       <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
         {Array.from({ length: r.rating }).map((_, j) => (
           <StarIcon key={j} />
@@ -88,27 +91,14 @@ function ReviewCard({ r }: { r: typeof reviews[0] }) {
       </p>
 
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: "auto" }}>
-        <div style={{
-          width: 38,
-          height: 38,
-          borderRadius: "50%",
-          background: `linear-gradient(135deg, ${NAVY}, #1a3a5c)`,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: WHITE,
-          fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-          fontSize: 15,
-          fontWeight: 700,
-          flexShrink: 0,
-        }}>
-          {r.name[0]}
-        </div>
+        <ReviewAvatar name={r.name} size={38} fontSize={14} />
         <div>
-          <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>{r.name}</div>
-          {r.date && (
-            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{r.date}</div>
-          )}
+          <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: NAVY }}>
+            {r.name}, {r.city}
+          </div>
+        </div>
+        <div style={{ marginLeft: "auto" }}>
+          <GoogleG />
         </div>
       </div>
 
@@ -132,40 +122,45 @@ export default function ReviewCarousel() {
   const [ready, setReady] = useState(false);
 
   // Duplicate reviews for seamless loop
-  const doubled = [...reviews, ...reviews];
+  const doubled = [...homepageReviews, ...homepageReviews];
 
   // Wait for mount, then measure and animate
   useEffect(() => {
-    // Small delay to ensure DOM is painted
     const raf = requestAnimationFrame(() => setReady(true));
     return () => cancelAnimationFrame(raf);
   }, []);
+
+  const gsapRef = useRef<typeof import("gsap").default | null>(null);
 
   useEffect(() => {
     if (!ready) return;
     const track = trackRef.current;
     if (!track) return;
 
-    // Measure the actual width of one set of cards
-    const cards = track.querySelectorAll(".rc-card");
-    const halfCount = cards.length / 2;
-    let oneSetWidth = 0;
-    for (let i = 0; i < halfCount; i++) {
-      const card = cards[i] as HTMLElement;
-      oneSetWidth += card.offsetWidth;
-      if (i < halfCount - 1) oneSetWidth += 24; // gap
-    }
-    oneSetWidth += 24; // trailing gap before second set starts
+    import("gsap").then(({ default: gsap }) => {
+      gsapRef.current = gsap;
 
-    const dur = oneSetWidth / SPEED;
+      // Measure the actual width of one set of cards
+      const cards = track.querySelectorAll(".rc-card");
+      const halfCount = cards.length / 2;
+      let oneSetWidth = 0;
+      for (let i = 0; i < halfCount; i++) {
+        const card = cards[i] as HTMLElement;
+        oneSetWidth += card.offsetWidth;
+        if (i < halfCount - 1) oneSetWidth += 24; // gap
+      }
+      oneSetWidth += 24; // trailing gap before second set starts
 
-    gsap.set(track, { x: 0 });
+      const dur = oneSetWidth / SPEED;
 
-    tweenRef.current = gsap.to(track, {
-      x: -oneSetWidth,
-      duration: dur,
-      ease: "none",
-      repeat: -1,
+      gsap.set(track, { x: 0 });
+
+      tweenRef.current = gsap.to(track, {
+        x: -oneSetWidth,
+        duration: dur,
+        ease: "none",
+        repeat: -1,
+      });
     });
 
     return () => {
@@ -177,14 +172,14 @@ export default function ReviewCarousel() {
   }, [ready]);
 
   const handleMouseEnter = () => {
-    if (tweenRef.current) {
-      gsap.to(tweenRef.current, { timeScale: 0, duration: 0.6, ease: "power2.out" });
+    if (tweenRef.current && gsapRef.current) {
+      gsapRef.current.to(tweenRef.current, { timeScale: 0, duration: 0.6, ease: "power2.out" });
     }
   };
 
   const handleMouseLeave = () => {
-    if (tweenRef.current) {
-      gsap.to(tweenRef.current, { timeScale: 1, duration: 0.6, ease: "power2.in" });
+    if (tweenRef.current && gsapRef.current) {
+      gsapRef.current.to(tweenRef.current, { timeScale: 1, duration: 0.6, ease: "power2.in" });
     }
   };
 

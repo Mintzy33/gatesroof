@@ -1,8 +1,8 @@
 "use client";
 import { useState, useRef, useCallback, useEffect } from "react";
+import Image from "next/image";
 
 const NAVY = "#0D2137";
-const TEXT_LIGHT = "#64748B";
 
 export default function BeforeAfterSlider() {
   const [pos, setPos] = useState(50);
@@ -16,34 +16,49 @@ export default function BeforeAfterSlider() {
     setPos(Math.max(2, Math.min(98, pct)));
   }, []);
 
-  const onPointerDown = useCallback((e: React.PointerEvent) => {
-    dragging.current = true;
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
-    updatePos(e.clientX);
-  }, [updatePos]);
-
-  const onPointerMove = useCallback((e: React.PointerEvent) => {
-    if (!dragging.current) return;
-    updatePos(e.clientX);
-  }, [updatePos]);
-
-  const onPointerUp = useCallback(() => {
-    dragging.current = false;
-  }, []);
-
-  // Prevent text selection while dragging
   useEffect(() => {
-    const prevent = (e: Event) => { if (dragging.current) e.preventDefault(); };
-    document.addEventListener("selectstart", prevent);
-    return () => document.removeEventListener("selectstart", prevent);
-  }, []);
+    const el = containerRef.current;
+    if (!el) return;
+
+    const onDown = (e: PointerEvent) => {
+      e.preventDefault();
+      dragging.current = true;
+      el.setPointerCapture(e.pointerId);
+      updatePos(e.clientX);
+    };
+
+    const onMove = (e: PointerEvent) => {
+      if (!dragging.current) return;
+      e.preventDefault();
+      updatePos(e.clientX);
+    };
+
+    const onUp = () => {
+      dragging.current = false;
+    };
+
+    const onSelect = (e: Event) => {
+      if (dragging.current) e.preventDefault();
+    };
+
+    el.addEventListener("pointerdown", onDown);
+    el.addEventListener("pointermove", onMove);
+    el.addEventListener("pointerup", onUp);
+    el.addEventListener("pointercancel", onUp);
+    document.addEventListener("selectstart", onSelect);
+
+    return () => {
+      el.removeEventListener("pointerdown", onDown);
+      el.removeEventListener("pointermove", onMove);
+      el.removeEventListener("pointerup", onUp);
+      el.removeEventListener("pointercancel", onUp);
+      document.removeEventListener("selectstart", onSelect);
+    };
+  }, [updatePos]);
 
   return (
     <div
       ref={containerRef}
-      onPointerDown={onPointerDown}
-      onPointerMove={onPointerMove}
-      onPointerUp={onPointerUp}
       style={{
         position: "relative",
         width: "100%",
@@ -55,38 +70,45 @@ export default function BeforeAfterSlider() {
         cursor: "ew-resize",
         userSelect: "none",
         touchAction: "pan-y",
+        background: "#1a1a1a",
       }}
     >
       {/* BEFORE image (full background) */}
-      <div style={{
-        position: "absolute",
-        inset: 0,
-        background: "#94a3b8",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}>
-        <span style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: 24, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>Before Photo</span>
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+        <Image
+          src="/images/before.jpg"
+          alt="Roof before replacement with aged shake shingles"
+          fill
+          sizes="(max-width: 900px) 100vw, 900px"
+          style={{ objectFit: "cover" }}
+          priority
+          draggable={false}
+        />
       </div>
 
       {/* AFTER image (clipped from the left at divider position) */}
       <div style={{
         position: "absolute",
         inset: 0,
-        background: "#475569",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         clipPath: `inset(0 0 0 ${pos}%)`,
+        pointerEvents: "none",
       }}>
-        <span style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: 24, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>After Photo</span>
+        <Image
+          src="/images/after.jpg"
+          alt="Roof after replacement with new DaVinci synthetic slate"
+          fill
+          sizes="(max-width: 900px) 100vw, 900px"
+          style={{ objectFit: "cover" }}
+          priority
+          draggable={false}
+        />
       </div>
 
       {/* BEFORE / AFTER labels */}
-      <div style={{ position: "absolute", top: 16, left: 16, background: "rgba(0,0,0,0.55)", borderRadius: 6, padding: "4px 12px", pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: 16, left: 16, background: "rgba(0,0,0,0.55)", backdropFilter: "blur(6px)", borderRadius: 6, padding: "4px 12px", pointerEvents: "none" }}>
         <span style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: 12, fontWeight: 600, color: "#fff", letterSpacing: 1, textTransform: "uppercase" }}>Before</span>
       </div>
-      <div style={{ position: "absolute", top: 16, right: 16, background: "rgba(0,0,0,0.55)", borderRadius: 6, padding: "4px 12px", pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: 16, right: 16, background: "rgba(0,0,0,0.55)", backdropFilter: "blur(6px)", borderRadius: 6, padding: "4px 12px", pointerEvents: "none" }}>
         <span style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: 12, fontWeight: 600, color: "#fff", letterSpacing: 1, textTransform: "uppercase" }}>After</span>
       </div>
 
@@ -124,6 +146,14 @@ export default function BeforeAfterSlider() {
           <path d="M14 10L18 10M18 10L15.5 7.5M18 10L15.5 12.5" stroke={NAVY} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
+
+      {/* Invisible interaction layer on top of everything */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        zIndex: 10,
+        cursor: "ew-resize",
+      }} />
     </div>
   );
 }

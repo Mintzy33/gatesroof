@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import gsap from "gsap";
 
 const NAVY = "#06263f";
 
@@ -26,59 +25,55 @@ export default function LoadingScreen() {
     const cloud = cloudRef.current;
     const glow = glowRef.current;
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        if (overlay) {
-          overlay.style.visibility = "hidden";
-          overlay.style.pointerEvents = "none";
-        }
-        document.body.style.overflow = "";
-        requestAnimationFrame(() => setShow(false));
-      },
-    });
-
-    tl
-      // 1. Glow pulses in behind logo
-      .from(glow, {
-        opacity: 0,
-        scale: 0.3,
-        duration: 0.4,
-        ease: "power2.out",
-      })
-      // 2. Cloud scales up with blur
-      .from(cloud, {
-        opacity: 0,
-        scale: 0.5,
-        filter: "blur(12px)",
-        duration: 0.5,
-        ease: "back.out(1.4)",
-      }, "<0.1")
-      // 3. Glow breathes bigger
-      .to(glow, {
-        scale: 1.3,
-        opacity: 0.8,
-        duration: 0.4,
-        ease: "sine.inOut",
-      }, "<0.2")
-      // 4. Brief hold — cloud floats slightly
-      .to(cloud, {
-        y: -8,
-        duration: 0.3,
-        ease: "sine.inOut",
-      })
-      .to(cloud, {
-        y: 0,
-        duration: 0.2,
-        ease: "sine.inOut",
-      })
-      // 5. Pause briefly so it doesn't feel rushed
-      .to({}, { duration: 0.15 })
-      // 6. Everything fades out together — clean, no flash
-      .to(overlay, {
-        opacity: 0,
-        duration: 0.5,
-        ease: "power2.inOut",
+    import("gsap").then(({ default: gsap }) => {
+      const tl = gsap.timeline({
+        onComplete: () => {
+          if (overlay) {
+            overlay.style.visibility = "hidden";
+            overlay.style.pointerEvents = "none";
+          }
+          document.body.style.overflow = "";
+          requestAnimationFrame(() => setShow(false));
+        },
       });
+
+      tl
+        .from(glow, {
+          opacity: 0,
+          scale: 0.3,
+          duration: 0.4,
+          ease: "power2.out",
+        })
+        .from(cloud, {
+          opacity: 0,
+          scale: 0.5,
+          filter: "blur(12px)",
+          duration: 0.5,
+          ease: "back.out(1.4)",
+        }, "<0.1")
+        .to(glow, {
+          scale: 1.3,
+          opacity: 0.8,
+          duration: 0.4,
+          ease: "sine.inOut",
+        }, "<0.2")
+        .to(cloud, {
+          y: -8,
+          duration: 0.3,
+          ease: "sine.inOut",
+        })
+        .to(cloud, {
+          y: 0,
+          duration: 0.2,
+          ease: "sine.inOut",
+        })
+        .to({}, { duration: 0.15 })
+        .to(overlay, {
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.inOut",
+        });
+    });
   }, [show]);
 
   if (!show) return null;
