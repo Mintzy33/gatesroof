@@ -3,8 +3,8 @@ import Script from "next/script";
 import GuttersContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Gutter Installation Denver | Seamless Gutters",
-  description: "Seamless gutter installation and gutter guard systems in Colorado. Protect your home from water damage. Free estimates from Gates Enterprises. Call (720) 766-3377.",
+  title: "Gutter Installation Colorado | Gates Enterprises LLC",
+  description: "Seamless gutter installation and gutter guards in Colorado. Protect your home from water damage. Free estimates.",
 };
 
 const serviceSchema = {
@@ -26,7 +26,7 @@ const faqSchema = {
     {"@type": "Question", "name": "How often should gutters be cleaned?", "acceptedAnswer": {"@type": "Answer", "text": "Without guards, twice a year minimum. Spring and fall. With guards installed, every 2 to 3 years is usually sufficient. Homes with heavy tree coverage may need more frequent attention."}},
     {"@type": "Question", "name": "Can gutters be installed in winter?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We install gutters year round. Aluminum is easy to work with in cold weather, and there's no sealant or adhesive that needs warm temperatures to cure."}},
     {"@type": "Question", "name": "What color options are available?", "acceptedAnswer": {"@type": "Answer", "text": "Over 25 standard colors to match virtually any home exterior. We bring a color chart so you can match your trim, fascia, or siding."}},
-    {"@type": "Question", "name": "Are damaged gutters covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "If the damage was caused by hail or wind, yes. We include gutter damage in storm damage claims and document it for your insurance company."}}
+    {"@type": "Question", "name": "Are damaged gutters covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "If the damage was caused by hail or wind, yes. We include gutter damage in storm damage restorations and document it for your insurance company."}}
   ]
 };
 

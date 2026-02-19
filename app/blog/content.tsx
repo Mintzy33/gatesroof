@@ -17,7 +17,7 @@ function formatDate(iso: string) {
 }
 
 const categoryColors: Record<string, string> = {
-  "Insurance Claims": "#DC2626",
+  "Insurance Restoration": "#DC2626",
   "Homeowner Tips": "#059669",
   "Roofing Materials": "#7C3AED",
   "Storm Prep": "#D97706",
@@ -36,7 +36,7 @@ export default function BlogContent() {
       <section style={{ padding: "140px 24px 64px", background: `linear-gradient(170deg, ${NAVY} 0%, #0F2A42 100%)`, textAlign: "center" as const }}>
         <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>BLOG</span>
         <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "14px 0" }}>Roofing Tips & News</h1>
-        <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.7)", maxWidth: 600, margin: "0 auto", lineHeight: 1.75 }}>Expert advice on Colorado roofing, insurance claims, storm prep, and choosing the right materials for your home.</p>
+        <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.7)", maxWidth: 600, margin: "0 auto", lineHeight: 1.75 }}>Expert advice on Colorado roofing, insurance restoration, storm prep, and choosing the right materials for your home.</p>
       </section>
 
       {/* Featured Post */}

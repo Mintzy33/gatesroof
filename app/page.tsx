@@ -3,8 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
 import { ScrollReveal, StaggerCards, CounterGSAP, PhoneLink } from "./components/GSAPAnimations";
-import BeforeAfterSlider from "./components/BeforeAfterSlider";
-import ReviewCarousel from "./components/ReviewCarousel";
+import ReviewCarousel from "./components/LazyReviewCarousel";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -42,10 +41,10 @@ export default function Home() {
               <h1 className="hero-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 4.5vw, 62px)", fontWeight: 800, color: WHITE, lineHeight: 1.06, margin: "0 0 20px" }}>
                 Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
               </h1>
-              <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>7,200+ roofs completed across the Denver metro. From hail damage claims to full exterior restoration.</p>
+              <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>7,200+ roofs completed across the Denver metro. From hail damage restoration to full exterior solutions.</p>
             <ScrollReveal delay={0.2}>
               <div className="hero-btns">
-                <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Free Inspection →</Link>
+                <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Request a Free Inspection & Estimate →</Link>
                 <PhoneLink style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</PhoneLink>
               </div>
             </ScrollReveal>
@@ -65,8 +64,8 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                {[{ t: "4x Certified", d: "GAF · Owens Corning · Malarkey · CertainTeed" }, { t: "Insurance Experts", d: "Inspection to payment, we handle it all" }].map((c, i) => (
-                  <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)" }}>
+                {[{ t: "4x Manufacturer Certified", d: "GAF Master Elite · Owens Corning Preferred · Malarkey Emerald Pro · CertainTeed Shingle Master Pro" }, { t: "Insurance Restoration Experts", d: "Inspection to completion, we help navigate it all" }].map((c, i) => (
+                  <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)", display: "flex", flexDirection: "column" as const, alignItems: "center", justifyContent: "center", textAlign: "center" as const }}>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE, marginBottom: 4 }}>{c.t}</div>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.5 }}>{c.d}</div>
                   </div>
@@ -78,10 +77,10 @@ export default function Home() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="trust-bar" style={{ background: WHITE, padding: "20px 16px", borderBottom: "1px solid rgba(13,33,55,0.04)", overflow: "hidden" }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "nowrap" as const, whiteSpace: "nowrap" as const }}>
-          {["GAF MASTER ELITE", "OWENS CORNING PLATINUM PREFERRED", "MALARKEY EMERALD PRO", "CERTAINTEED SHINGLE MASTER", "BBB A+"].map((b) => (
-            <span key={b} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", opacity: 0.65, flexShrink: 0 }}>{b}</span>
+      <section className="trust-bar" style={{ background: WHITE, padding: "20px 16px", borderBottom: "1px solid rgba(13,33,55,0.04)" }}>
+        <div className="trust-badges" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap" as const }}>
+          {["GAF MASTER ELITE", "OWENS CORNING PREFERRED", "MALARKEY EMERALD PRO", "CERTAINTEED SHINGLE MASTER PRO", "BBB A+"].map((b) => (
+            <span key={b} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", opacity: 0.65 }}>{b}</span>
           ))}
         </div>
       </section>
@@ -98,12 +97,12 @@ export default function Home() {
           </ScrollReveal>
           <StaggerCards className="services-grid" stagger={0.1} distance={40}>
             {[
-              { icon: Icons.home(), t: "Roof Replacement", d: "Full tear-off with Class 4 shingles. GAF Golden Pledge warranty.", h: "/services/roof-replacement" },
-              { icon: Icons.storm(), t: "Storm & Hail Damage", d: "Insurance claim experts. Inspection to final payment.", h: "/services/storm-hail-damage" },
+              { icon: Icons.home(), t: "Roof Replacement", d: "Full tear off with Class 4 shingles. GAF Golden Pledge warranty.", h: "/services/roof-replacement" },
+              { icon: Icons.storm(), t: "Storm & Hail Damage", d: "Insurance restoration experts. Inspection to final payment.", h: "/services/storm-hail-damage" },
               { icon: Icons.wrench(), t: "Roof Repair", d: "Leak repair, flashing, emergency tarping. Fast response.", h: "/services/roof-repair" },
               { icon: Icons.siding(), t: "Siding & Exterior", d: "James Hardie, vinyl, and wood siding installation.", h: "/services/siding-exterior" },
               { icon: Icons.gutter(), t: "Gutters & Guards", d: "Seamless gutters and leaf guard systems.", h: "/services/gutters-guards" },
-              { icon: Icons.clipboard(), t: "Insurance Claims", d: "Supplements, O&P negotiations. We fight for your payout.", h: "/services/insurance-claims" },
+              { icon: Icons.clipboard(), t: "Insurance Restoration", d: "Supplements, O&P negotiations. We work with your insurance company.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none", display: "block", height: "100%" }}>
                 <div className="service-card" style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderTop: `3px solid ${ACCENT}`, borderRight: "1px solid rgba(13,33,55,0.06)", borderBottom: "1px solid rgba(13,33,55,0.06)", borderLeft: "1px solid rgba(13,33,55,0.06)", height: "100%", transition: "all 0.35s cubic-bezier(0.4,0,0.2,1)", cursor: "pointer", boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
@@ -144,7 +143,7 @@ export default function Home() {
               {[
                 { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite. Highest training, best warranties.", c: ACCENT },
                 { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: ACCENT },
-                { n: "03", t: "One-Stop Exterior", d: "Roof, siding, gutters. One company, one warranty.", c: ACCENT },
+                { n: "03", t: "One Stop Exterior", d: "Roof, siding, gutters. One company, one warranty.", c: ACCENT },
                 { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: ACCENT },
               ].map((item, i) => (
                 <div key={i} style={{ background: LIGHT_BG, borderRadius: 18, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)" }}>
@@ -172,20 +171,6 @@ export default function Home() {
             </div>
           </ScrollReveal>
           <ReviewCarousel />
-        </div>
-      </section>
-
-      {/* BEFORE / AFTER */}
-      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
-        <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" as const }}>
-          <ScrollReveal>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>TRANSFORMATIONS</span>
-            <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>See the Difference</h2>
-            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 480, margin: "0 auto 40px", lineHeight: 1.7 }}>Drag the slider to see our roof replacements in action.</p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.15}>
-            <BeforeAfterSlider />
-          </ScrollReveal>
         </div>
       </section>
 
@@ -218,9 +203,9 @@ export default function Home() {
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
               Ready to Protect{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Your Home?</span>
             </h2>
-            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 28px" }}>Free inspections. No-pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 28px" }}>Free inspections. No pressure estimates. Colorado&apos;s most thorough roof evaluation.</p>
             <div className="home-cta-btns">
-              <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Get Free Estimate</Link>
+              <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Request a Free Inspection & Estimate</Link>
               <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.08)", color: WHITE, border: "1px solid rgba(255,255,255,0.15)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, textAlign: "center" }}>(720) 766-3377</a>
             </div>
           </ScrollReveal>
@@ -252,7 +237,7 @@ export default function Home() {
           .hero-sub { font-size: 15px !important; margin-bottom: 28px !important; margin-left: auto !important; margin-right: auto !important; }
           .hero-btns { flex-direction: column !important; align-items: stretch !important; }
           .hero-btns a { text-align: center !important; padding: 16px 28px !important; }
-          .trust-bar > div { justify-content: flex-start !important; overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 0 16px; }
+          .trust-badges { gap: 14px 20px !important; justify-content: center !important; }
           .services-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
           .service-card { padding: 22px 18px !important; }
           .service-card h3 { font-size: 16px !important; }

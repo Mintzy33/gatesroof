@@ -3,8 +3,8 @@ import Script from "next/script";
 import SidingContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Siding Installation Denver | James Hardie & More",
-  description: "Professional siding installation and repair in Colorado. James Hardie, vinyl & wood siding options. Storm damage replacement available. Call (720) 766-3377.",
+  title: "Siding Installation Colorado | Gates Enterprises LLC",
+  description: "Professional siding installation and repair in Colorado. James Hardie, vinyl, and engineered wood. Free estimates from Gates Enterprises.",
 };
 
 const serviceSchema = {
@@ -23,7 +23,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How much does James Hardie siding cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "James Hardie fiber cement siding typically runs $8 to $14 per square foot installed, depending on the product and complexity of your home. A full re-side for an average home ranges from $15,000 to $35,000. We provide exact pricing in your proposal."}},
-    {"@type": "Question", "name": "Is siding damage covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "If the damage is caused by hail or wind, yes. We document siding damage and include it in your storm claim. It's often approved alongside roof replacement."}},
+    {"@type": "Question", "name": "Is siding damage covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "If the damage is caused by hail or wind, yes. We document siding damage and include it in your storm restoration. It's often approved alongside roof replacement."}},
     {"@type": "Question", "name": "How long does a siding installation take?", "acceptedAnswer": {"@type": "Answer", "text": "Most full re-sides take 1 to 2 weeks depending on home size and product selection. Partial repairs are usually completed in 1 to 3 days."}},
     {"@type": "Question", "name": "What's the best siding for Colorado hail?", "acceptedAnswer": {"@type": "Answer", "text": "James Hardie fiber cement is the most hail resistant option for residential siding. It resists cracking and denting far better than vinyl. For areas with extreme hail exposure, it's our top recommendation."}},
     {"@type": "Question", "name": "Do you handle the permit process?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If your municipality requires a permit for siding installation, we handle the application and inspections."}}

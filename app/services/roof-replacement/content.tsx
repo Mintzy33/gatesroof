@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
@@ -19,22 +20,22 @@ const TEXT_LIGHT = "#64748B";
 const PROCESS_STEPS = [
   { Icon: Search, step: "01", title: "Free Inspection", desc: "We climb your roof, check every slope, and document what we find with photos and measurements. No drones, no guesswork." },
   { Icon: FileText, step: "02", title: "Detailed Estimate", desc: "You get a written scope of work with material options, warranty details, and pricing. No surprises." },
-  { Icon: Shield, step: "03", title: "Insurance Coordination", desc: "We file your claim, meet your adjuster, and handle supplement requests so you don\u2019t have to." },
+  { Icon: Shield, step: "03", title: "Insurance Coordination", desc: "We coordinate with your insurance company, meet your adjuster, and handle supplement requests so you don\u2019t have to." },
   { Icon: Palette, step: "04", title: "Material Selection", desc: "Pick your shingle style, color, and manufacturer. We bring samples to your door." },
   { Icon: Hammer, step: "05", title: "Installation", desc: "Full tear off, deck inspection, ice and water shield, synthetic underlayment, and new shingles. Typically completed in one day for most homes." },
   { Icon: CheckCircle, step: "06", title: "Final Walkthrough", desc: "We inspect the finished roof together, answer your questions, and register your warranty." },
 ];
 
 const WHY_GATES = [
-  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Platinum Preferred, Malarkey Certified, and Emerald Premium. No other local contractor holds all four." },
-  { Icon: ShieldCheck, bold: "Up to 50 year warranty.", rest: "Not a marketing gimmick. The GAF Golden Pledge warranty is the real deal, backed by the manufacturer." },
-  { Icon: Shield, bold: "Insurance claim experts.", rest: "We\u2019ve navigated thousands of claims and know how to get your roof fully covered." },
+  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. No other local contractor holds all four." },
+  { Icon: ShieldCheck, bold: "7 year workmanship warranty.", rest: "Most roofing companies offer one or two years. We back our work for seven, because we know it will last. Plus the GAF Golden Pledge extends coverage to 25 years, backed by the manufacturer." },
+  { Icon: Shield, bold: "Insurance restoration experts.", rest: "We\u2019ve completed thousands of restorations and know how to get your roof fully covered." },
   { Icon: MapPin, bold: "Locally owned, 10+ years in Lakewood.", rest: "We live here. Our reputation is everything." },
 ];
 
 const FAQS = [
   { q: "How long does a roof replacement take?", a: "Most residential roof replacements are completed in a single day. Larger or more complex roofs may take two days. We\u2019ll give you a specific timeline before we start." },
-  { q: "How much does a roof replacement cost in Denver?", a: "A typical roof replacement in the Denver metro area ranges from $8,000 to $20,000 depending on size, pitch, material choice, and complexity. If insurance is covering the claim, your out of pocket cost is usually just your deductible." },
+  { q: "What does a roof replacement cost?", a: "Every roof is different. The final cost depends on the size of your home, the condition of the decking underneath, the materials you choose, and what we find once the old shingles come off. A full replacement can range anywhere from $10,000 to $100,000. That\u2019s exactly why we specialize in working with your homeowner\u2019s insurance. Our team handles the entire restoration process so your roof gets replaced the right way, and your insurance covers the cost." },
   { q: "Can I stay home during the roof replacement?", a: "Absolutely. We ask that you move vehicles out of the driveway and let us know about any pets. Otherwise, go about your day. We handle the rest." },
   { q: "What\u2019s the difference between a 25 year and 50 year warranty?", a: "The standard GAF System Plus warranty covers materials for 50 years and workmanship for 10. The Golden Pledge upgrades workmanship coverage to 25 years and is backed directly by GAF. We recommend Golden Pledge for every customer." },
   { q: "Do you offer financing?", a: "Yes. We offer flexible financing options so you can get the roof you need without waiting. Ask us for details during your estimate." },
@@ -61,7 +62,7 @@ export default function RoofReplacementContent() {
             A new roof Colorado homeowners can count on starts with the right contractor. Gates Enterprises has been replacing roofs across the Denver metro and beyond for over a decade, and we do it the right way every single time. Full tear off, proper deck inspection, manufacturer certified installation, and a warranty that actually means something.
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-            Get a Free Estimate &rarr;
+            Request a Free Inspection & Estimate &rarr;
           </Link>
         </div>
       </section>
@@ -83,8 +84,14 @@ export default function RoofReplacementContent() {
                 Our crews install according to manufacturer specifications every time. That matters because it&apos;s the only way to activate the full warranty from GAF, CertainTeed, or Malarkey. Miss one step and your warranty could be void. We don&apos;t miss steps.
               </p>
             </div>
-            <div style={{ background: "rgba(13,33,55,0.06)", borderRadius: 20, aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Photo placeholder</span>
+            <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/3", position: "relative" }}>
+              <Image
+                src="/images/tearoff-mansion.jpg"
+                alt="Gates Enterprises crew performing a full tear off roof replacement on a large home"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </section>
@@ -94,8 +101,14 @@ export default function RoofReplacementContent() {
       <ScrollReveal>
         <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG }}>
           <div className="rr-split rr-split-reverse" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(40px, 6vw, 64px)", alignItems: "center" }}>
-            <div style={{ background: "rgba(13,33,55,0.06)", borderRadius: 20, aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Photo placeholder</span>
+            <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/3", position: "relative" }}>
+              <Image
+                src="/images/hail-on-shingles.jpg"
+                alt="Hailstones sitting on roof shingles after a Colorado hail storm"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div>
               <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>COLORADO TOUGH</span>
@@ -118,15 +131,28 @@ export default function RoofReplacementContent() {
       <ScrollReveal>
         <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: DEEP, position: "relative", overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 30%, rgba(212,168,83,0.06) 0%, transparent 50%)" }} />
-          <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const, position: "relative", zIndex: 1 }}>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>WARRANTY</span>
-            <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.12 }}>
-              The GAF Golden Pledge Warranty
-            </h2>
-            <div style={{ width: 48, height: 3, background: GOLD, borderRadius: 2, margin: "0 auto 32px" }} />
-            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: "rgba(255,255,255,0.8)", maxWidth: 700, margin: "0 auto" }}>
-              As a GAF Master Elite contractor (top 2% in the country), we can offer the GAF Golden Pledge warranty. This is the strongest warranty in residential roofing. It covers materials for 50 years and includes 25 years of workmanship coverage, backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. That&apos;s a level of protection most contractors simply cannot offer.
-            </p>
+          <div style={{ maxWidth: 900, margin: "0 auto", position: "relative", zIndex: 1 }}>
+            <div className="rr-warranty-layout" style={{ display: "flex", alignItems: "center", gap: "clamp(40px, 6vw, 64px)" }}>
+              <div style={{ flexShrink: 0 }}>
+                <Image
+                  src="/images/gaf-master-elite.png"
+                  alt="GAF Master Elite Residential Roofing Contractor certification badge"
+                  width={200}
+                  height={200}
+                  style={{ width: "clamp(140px, 16vw, 200px)", height: "auto", filter: "drop-shadow(0 4px 24px rgba(212,168,83,0.2))" }}
+                />
+              </div>
+              <div style={{ textAlign: "left" as const }}>
+                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>WARRANTY</span>
+                <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.12 }}>
+                  The GAF Golden Pledge Warranty
+                </h2>
+                <div style={{ width: 48, height: 3, background: GOLD, borderRadius: 2, marginBottom: 24 }} />
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: "rgba(255,255,255,0.8)", maxWidth: 700, margin: 0 }}>
+                  As a GAF Master Elite contractor (top 2% in the country), we can offer the GAF Golden Pledge warranty. This is the strongest warranty in residential roofing. It covers materials for 50 years and includes 25 years of workmanship coverage, backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. That&apos;s a level of protection most contractors simply cannot offer.
+                </p>
+              </div>
+            </div>
             <div className="rr-warranty-stats" style={{ display: "flex", justifyContent: "center", gap: 60, marginTop: 48 }}>
               <div>
                 <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 48, fontWeight: 800, color: GOLD }}>
@@ -145,22 +171,28 @@ export default function RoofReplacementContent() {
         </section>
       </ScrollReveal>
 
-      {/* ─── SECTION 4: Insurance Claims — text left, image right ─── */}
+      {/* ─── SECTION 4: Insurance Restoration — text left, image right ─── */}
       <ScrollReveal>
         <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: WHITE }}>
           <div className="rr-split" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(40px, 6vw, 64px)", alignItems: "center" }}>
             <div>
-              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>INSURANCE CLAIMS</span>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>INSURANCE RESTORATION</span>
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 40px)", fontWeight: 800, color: NAVY, margin: "0 0 16px", lineHeight: 1.15 }}>
-                Insurance Claim Support for Your Roof Replacement
+                Insurance Restoration Support for Your Roof Replacement
               </h2>
               <div style={{ width: 48, height: 3, background: ACCENT, borderRadius: 2, marginBottom: 24 }} />
               <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, margin: 0 }}>
-                If your roof replacement is the result of storm or hail damage, we handle the insurance process for you. We document damage with photos and measurements, meet your adjuster on site, and submit supplements when the initial estimate falls short. Our team knows Xactimate line items inside and out, and we fight to make sure your insurance company pays what your roof actually costs. You shouldn&apos;t have to become an insurance expert just to get a new roof.
+                If your roof replacement is the result of storm or hail damage, we work with your insurance company throughout the restoration process. We document damage with photos and measurements, meet your adjuster on site, and submit supplements when the initial estimate falls short. Our team knows Xactimate line items inside and out, and we advocate to make sure your insurance company covers what your roof actually costs. You shouldn&apos;t have to become an insurance expert just to get a new roof.
               </p>
             </div>
-            <div style={{ background: "rgba(13,33,55,0.06)", borderRadius: 20, aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Photo placeholder</span>
+            <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/3", position: "relative" }}>
+              <Image
+                src="/images/insurance-claim-home.jpg"
+                alt="Gates Enterprises roof replacement completed through insurance restoration process"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </section>
@@ -254,7 +286,7 @@ export default function RoofReplacementContent() {
               (720) 766-3377
             </a>
             <Link href="/contact" style={{ background: "rgba(255,255,255,0.15)", color: WHITE, border: "1px solid rgba(255,255,255,0.3)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-              Get Free Estimate &rarr;
+              Request a Free Inspection & Estimate &rarr;
             </Link>
           </div>
         </div>
@@ -307,6 +339,9 @@ export default function RoofReplacementContent() {
           .rr-process-desktop { display: none !important; }
           .rr-process-mobile { display: block !important; }
           .rr-hero { min-height: 65vh !important; }
+          .rr-warranty-layout { flex-direction: column !important; text-align: center !important; }
+          .rr-warranty-layout > div:last-child { text-align: center !important; }
+          .rr-warranty-layout > div:last-child > div { margin: 0 auto 24px !important; }
           .rr-warranty-stats { gap: 40px !important; }
         }
         @media (max-width: 480px) {

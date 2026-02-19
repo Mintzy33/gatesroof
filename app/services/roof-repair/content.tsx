@@ -6,7 +6,7 @@ export default function RepairContent() {
       breadcrumb="Roof Repair"
       h1="Roof Repair in Denver and Lakewood, CO"
       subheadline="Fast response. Honest diagnosis. Repairs that last."
-      heroCopy="Not every roof problem needs a full replacement. Sometimes it's a cracked pipe boot, a blown-off cap shingle, or flashing that's pulled away from a wall. Gates Enterprises handles roof repairs across Denver and Lakewood with the same care and precision we bring to full replacements. We find the real problem, fix it right, and tell you honestly how much life your roof has left."
+      heroCopy="Not every roof problem needs a full replacement. Sometimes it's a cracked pipe boot, a blown off cap shingle, or flashing that's pulled away from a wall. Gates Enterprises handles roof repairs across Denver and Lakewood with the same care and precision we bring to full replacements. We find the real problem, fix it right, and tell you honestly how much life your roof has left."
       sections={[
         {
           title: "Common Roof Repairs We Handle Every Week",
@@ -53,9 +53,8 @@ export default function RepairContent() {
       faqs={[
         { q: "How much does a roof repair cost in Denver?", a: "Simple repairs like pipe boot replacements or a few missing shingles typically run $200 to $600. More complex repairs involving flashing, valleys, or multiple areas can range from $500 to $2,000. We'll give you an exact price before we start." },
         { q: "Can you repair my roof temporarily until I can afford a replacement?", a: "Yes. We can make targeted repairs to stop active leaks and buy you time. We'll be upfront about how long the repair should hold and what a replacement would cost when you're ready." },
-        { q: "Do you repair flat roofs?", a: "We primarily work on residential pitched roofs. For flat or low slope commercial roofs, we can refer you to a trusted specialist." },
-        { q: "Is a roof leak covered by insurance?", a: "It depends on the cause. Storm damage is typically covered. Wear and tear or deferred maintenance is not. We can inspect and help you determine whether a claim makes sense." },
-        { q: "How do I know if I need a repair or a full replacement?", a: "Age, extent of damage, and condition of the surrounding shingles all factor in. If your roof is under 15 years old and the damage is isolated, repair is usually the right call. We'll give you an honest recommendation either way." },
+        { q: "Do you repair flat roofs?", a: "Yes. We handle both pitched and flat roof repairs, including TPO, EPDM, and modified bitumen systems. Whether it's a residential low slope section or a full flat roof, we'll get it sorted." },
+        { q: "Is a roof leak covered by insurance?", a: "It depends on the cause. Storm damage is typically covered. Wear and tear or deferred maintenance is not. We can inspect and help you determine whether it makes sense to file." },
       ]}
       ctaTitle="Got a roof leak?"
       ctaSubtitle="Call Gates Enterprises at (720) 766-3377. We'll get on your roof fast, find the problem, and fix it right. Emergency service available."

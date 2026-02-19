@@ -4,7 +4,7 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
-import { Clipboard, Palette, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Zap } from "lucide-react";
+import { Palette, Hammer, Paintbrush, CheckCircle, ShieldCheck, Sparkles, Home, FileText } from "lucide-react";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -16,27 +16,27 @@ const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 
 const PROCESS_STEPS = [
-  { Icon: Clipboard, step: "01", title: "Free Consultation and Estimate", desc: "We inspect your current siding, discuss your goals, and walk you through all available material options." },
-  { Icon: Palette, step: "02", title: "Material Selection", desc: "Choose from vinyl, fiber cement, engineered wood, and other premium options tailored to Colorado\u2019s climate." },
-  { Icon: Hammer, step: "03", title: "Professional Installation", desc: "Our crews follow manufacturer specifications to the letter, ensuring long lasting performance and warranty coverage." },
-  { Icon: CheckCircle, step: "04", title: "Cleanup and Final Inspection", desc: "We leave your property spotless and walk you through the finished product to make sure every detail is right." },
+  { Icon: Palette, step: "01", title: "Free Color Consultation", desc: "We visit your home, discuss your vision, and provide a detailed estimate with no obligation." },
+  { Icon: Hammer, step: "02", title: "Surface Preparation", desc: "We wash, scrape, sand, patch, caulk, and prime every surface. This is where lasting results begin." },
+  { Icon: Paintbrush, step: "03", title: "Professional Application", desc: "Premium paints applied with even coverage, sharp edges, and a durable finish built to last." },
+  { Icon: CheckCircle, step: "04", title: "Walkthrough and Touch Ups", desc: "We inspect every surface and address any details before the job is complete." },
 ];
 
 const WHY_GATES = [
-  { Icon: Award, bold: "Full exterior contractor.", rest: "Roof, siding, gutters, paint. One crew, one point of contact, one company responsible for everything." },
-  { Icon: ShieldCheck, bold: "Insurance restoration integration.", rest: "If hail damaged your siding, we include it in your storm damage restoration. Many homeowners miss this." },
-  { Icon: MapPin, bold: "10+ years in the Denver market.", rest: "We know which products perform best in our climate." },
-  { Icon: Zap, bold: "Locally owned, community focused.", rest: "We live in Lakewood. Your neighborhood is our neighborhood." },
+  { Icon: ShieldCheck, bold: "Thorough surface preparation.", rest: "We never skip prep. Proper prep is the difference between a paint job that lasts three years and one that lasts eight." },
+  { Icon: Sparkles, bold: "Premium materials only.", rest: "We use low VOC paints from trusted brands formulated for Colorado\u2019s climate." },
+  { Icon: Home, bold: "Full exterior services.", rest: "Painting, siding, roofing, gutters, and windows all under one roof." },
+  { Icon: FileText, bold: "Insurance restoration support.", rest: "If your exterior paint was damaged by hail, we can include it in your storm damage restoration." },
 ];
 
 const FAQS = [
-  { q: "How do I know when my siding needs to be replaced?", a: "Warping, cracking, fading, bubbling, or increased energy bills can all point to siding that\u2019s no longer performing. We offer free inspections to help you decide." },
-  { q: "What siding material is best for Colorado?", a: "Fiber cement and engineered wood are popular choices along the Front Range because they hold up well against hail, UV exposure, and dramatic temperature changes." },
-  { q: "Can you replace siding damaged by a storm?", a: "Absolutely. We handle storm damaged siding repairs and replacements regularly, and we can assist with insurance restoration to help cover the cost." },
-  { q: "How long does siding installation take?", a: "Most homes can be completed in one to two weeks depending on the size of the project and material availability." },
+  { q: "How long does a typical paint job take?", a: "Most interior rooms take 1 to 2 days. Full exterior projects take 3 to 5 days depending on size and condition." },
+  { q: "Do you handle surface repairs before painting?", a: "Yes. We repair cracks, holes, peeling, and other damage during prep. Proper preparation is essential." },
+  { q: "What kind of paint do you use?", a: "Premium, low VOC paints from trusted brands formulated for Colorado\u2019s climate." },
+  { q: "Can you paint my home\u2019s exterior after a hail storm?", a: "Absolutely. We can repair and repaint, and assist with insurance restoration if covered." },
 ];
 
-export default function SidingContent() {
+export default function PaintContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
@@ -44,19 +44,19 @@ export default function SidingContent() {
       <Header />
 
       {/* ─── HERO ─── */}
-      <section className="si-hero" style={{ position: "relative", minHeight: "75vh", display: "flex", alignItems: "center", overflow: "hidden", background: NAVY }}>
+      <section className="pt-hero" style={{ position: "relative", minHeight: "75vh", display: "flex", alignItems: "center", overflow: "hidden", background: NAVY }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(170deg, rgba(6,38,63,0.85) 0%, rgba(13,33,55,0.95) 60%, rgba(13,33,55,0.98) 100%)" }} />
         <div style={{ position: "relative", zIndex: 1, maxWidth: 800, margin: "0 auto", padding: "160px 24px 80px" }}>
           <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
-            Home &rarr; Services &rarr; Siding and Exterior
+            Home &rarr; Services &rarr; Painting
           </Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>
-            Siding Installation and Repair Built to Last
+            Interior and Exterior Painting for Colorado Homes
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Protect your home and boost its curb appeal with premium siding from Colorado&apos;s most trusted exterior specialists.
+            Refresh your home inside and out with professional painting from a team you can trust.
           </p>
-          <div className="si-hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
+          <div className="pt-hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
             <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
               Request a Free Inspection & Estimate &rarr;
             </Link>
@@ -71,12 +71,12 @@ export default function SidingContent() {
       <ScrollReveal>
         <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: WHITE }}>
           <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>SIDING EXPERTS</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em", display: "block", marginBottom: 12 }}>PAINTING EXPERTS</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: DEEP, margin: "0 0 24px", lineHeight: 1.15 }}>
-              More Than Just Curb Appeal
+              More Than Just a Fresh Coat
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: TEXT, maxWidth: 700, margin: "0 auto" }}>
-              Your siding does more than define the look of your home. It serves as one of the most important layers of defense against Colorado&apos;s intense sun, wind, hail, and temperature swings. Gates Enterprises provides expert siding installation and repair across Colorado&apos;s Front Range, using top quality materials and proven techniques that keep your home beautiful and protected for years to come.
+              A quality paint job does more than change a color. It protects your surfaces, increases your home&apos;s value, and transforms the way a space feels. Gates Enterprises provides professional interior and exterior painting across Colorado&apos;s Front Range.
             </p>
           </div>
         </section>
@@ -84,12 +84,12 @@ export default function SidingContent() {
 
       {/* ─── STATS BAR ─── */}
       <section style={{ padding: "clamp(40px, 6vw, 56px) 24px", background: NAVY }}>
-        <div className="si-stats" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" as const }}>
+        <div className="pt-stats" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" as const }}>
           <div>
             <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 44, fontWeight: 800, color: GOLD }}>
               <CounterGSAP end={7204} suffix="+" duration={2.2} />
             </div>
-            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Roofs Completed</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Projects Completed</div>
           </div>
           <div>
             <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 44, fontWeight: 800, color: GOLD }}>
@@ -103,9 +103,9 @@ export default function SidingContent() {
           </div>
           <div>
             <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 44, fontWeight: 800, color: GOLD }}>
-              <CounterGSAP end={30} suffix=" yr" duration={2} delay={0.4} />
+              <CounterGSAP end={293} suffix="+" duration={2} delay={0.4} />
             </div>
-            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Material Warranty</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Five Star Reviews</div>
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function SidingContent() {
         </div>
 
         <StaggerCards
-          className="si-process-desktop"
+          className="pt-process-desktop"
           style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}
           stagger={0.1}
           distance={40}
@@ -138,7 +138,7 @@ export default function SidingContent() {
           ))}
         </StaggerCards>
 
-        <div className="si-process-mobile" style={{ maxWidth: 600, margin: "0 auto" }}>
+        <div className="pt-process-mobile" style={{ maxWidth: 600, margin: "0 auto" }}>
           <StaggerCards style={{ position: "relative", paddingLeft: 48 }} stagger={0.1} distance={40}>
             <div style={{ position: "absolute", left: 20, top: 0, bottom: 0, width: 3, background: `linear-gradient(180deg, ${ACCENT}, #60A5FA)`, borderRadius: 2 }} />
             {PROCESS_STEPS.map((s, i) => (
@@ -163,12 +163,12 @@ export default function SidingContent() {
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: DEEP, margin: 0 }}>Why Gates Enterprises</h2>
           </div>
           <StaggerCards
-            className="si-why-grid"
+            className="pt-why-grid"
             style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}
             stagger={0.1}
           >
             {WHY_GATES.map((item, i) => (
-              <div key={i} className="si-why-card" style={{ background: LIGHT_BG, borderRadius: 20, padding: "32px 24px", border: "2px solid transparent", transition: "border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease", display: "flex", flexDirection: "column" as const, gap: 12, cursor: "default" }}>
+              <div key={i} className="pt-why-card" style={{ background: LIGHT_BG, borderRadius: 20, padding: "32px 24px", border: "2px solid transparent", transition: "border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease", display: "flex", flexDirection: "column" as const, gap: 12, cursor: "default" }}>
                 <div style={{ width: 48, height: 48, borderRadius: 14, background: "rgba(37,99,235,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                   <item.Icon size={24} color={ACCENT} strokeWidth={1.8} />
                 </div>
@@ -181,15 +181,15 @@ export default function SidingContent() {
       </ScrollReveal>
 
       {/* ─── MID CTA ─── */}
-      <section className="si-mid-cta" style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: ACCENT, textAlign: "center" as const }}>
+      <section className="pt-mid-cta" style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: ACCENT, textAlign: "center" as const }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, color: WHITE, margin: "0 0 12px", lineHeight: 1.1 }}>
-            Ready for New Siding?
+            Give Your Home a Fresh Look
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.9)", margin: "0 0 32px", lineHeight: 1.7 }}>
-            Call Gates Enterprises at (720) 766-3377 for a free consultation.
+            Call Gates Enterprises at (720) 766-3377 for a free painting consultation.
           </p>
-          <div className="si-mid-cta-btns" style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" as const }}>
+          <div className="pt-mid-cta-btns" style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" as const }}>
             <a href="tel:7207663377" style={{ background: WHITE, color: ACCENT, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700 }}>
               (720) 766-3377
             </a>
@@ -234,10 +234,10 @@ export default function SidingContent() {
       <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: NAVY, textAlign: "center" as const }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: WHITE, margin: "0 0 16px", lineHeight: 1.1 }}>
-            Ready for New Siding?
+            Give Your Home a Fresh Look
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.7)", margin: "0 0 36px", lineHeight: 1.75 }}>
-            Call (720) 766-3377 or email info@gatesroof.com for a free consultation.
+            Contact Gates Enterprises today for a free painting consultation and estimate. Call (720) 766-3377.
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "18px 40px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700 }}>
             Request a Free Inspection & Estimate &rarr;
@@ -248,25 +248,25 @@ export default function SidingContent() {
       <Footer />
 
       <style>{`
-        .si-process-mobile { display: none; }
-        .si-why-card:hover {
+        .pt-process-mobile { display: none; }
+        .pt-why-card:hover {
           border-color: #2563EB !important;
           transform: translateY(-4px) !important;
           box-shadow: 0 12px 32px rgba(37,99,235,0.12) !important;
         }
         @media (max-width: 768px) {
-          .si-process-desktop { display: none !important; }
-          .si-process-mobile { display: block !important; }
-          .si-hero { min-height: 65vh !important; }
-          .si-stats { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
-          .si-why-grid { grid-template-columns: 1fr !important; }
+          .pt-process-desktop { display: none !important; }
+          .pt-process-mobile { display: block !important; }
+          .pt-hero { min-height: 65vh !important; }
+          .pt-stats { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
+          .pt-why-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
-          .si-mid-cta-btns { flex-direction: column !important; }
-          .si-mid-cta-btns a { text-align: center !important; width: 100% !important; box-sizing: border-box !important; }
-          .si-stats { gap: 20px !important; }
-          .si-hero-btns { flex-direction: column !important; }
-          .si-hero-btns a { text-align: center !important; }
+          .pt-mid-cta-btns { flex-direction: column !important; }
+          .pt-mid-cta-btns a { text-align: center !important; width: 100% !important; box-sizing: border-box !important; }
+          .pt-stats { gap: 20px !important; }
+          .pt-hero-btns { flex-direction: column !important; }
+          .pt-hero-btns a { text-align: center !important; }
         }
       `}</style>
     </div>

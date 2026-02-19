@@ -5,11 +5,6 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { ShieldCheck, Flame, Handshake, MapPin, Shield, Award, Leaf, Star } from "lucide-react";
 import Footer from "../components/Footer";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 const NAVY = "#0D2137";
 const DEEP = "#06263f";
 const ACCENT = "#2563EB";
@@ -22,7 +17,7 @@ const MILESTONES = [
   { y: "2014", t: "Gates Enterprises Founded", d: "One truck. One ladder. One promise: treat every roof like it's your mom's house." },
   { y: "2016", t: "1,000 Roofs Completed", d: "Grew entirely through referrals. No ads, no gimmicks. Just good work." },
   { y: "2018", t: "GAF Master Elite Certified", d: "Joined the top 2% of roofing contractors in North America. Unlocked the Golden Pledge Lifetime Warranty for our customers." },
-  { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Only 1% of contractors hold all four." },
+  { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. Only 1% of contractors hold all four." },
   { y: "2022", t: "5,000 Roofs and Millions Recovered", d: "Surpassed 5,000 completed projects. Recovered millions in insurance supplements that adjusters tried to deny." },
   { y: "2024", t: "Full Exterior Services Launched", d: "Expanded beyond roofing into siding, gutters, windows, and paint. One contractor for everything above your foundation." },
   { y: "2026", t: "7,200+ Roofs and 100 Strong", d: "Grew to over 100 employees with dedicated facilities for every step of the process. Still based in Lakewood. Still answering our own phones." },
@@ -37,162 +32,162 @@ export default function AboutContent() {
   const communityRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Parallax on hero image
-    if (heroImgRef.current) {
-      gsap.to(heroImgRef.current, {
-        y: 80,
-        ease: "none",
-        scrollTrigger: {
-          trigger: heroImgRef.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
-        },
-      });
-    }
+    let mm: gsap.MatchMedia | null = null;
+    let stInstance: typeof import("gsap/ScrollTrigger").ScrollTrigger | null = null;
 
-    const mm = gsap.matchMedia();
+    Promise.all([import("gsap"), import("gsap/ScrollTrigger")]).then(([{ default: gsap }, { ScrollTrigger }]) => {
+      gsap.registerPlugin(ScrollTrigger);
+      stInstance = ScrollTrigger;
 
-    // ── DESKTOP: compact horizontal scroll timeline ──
-    mm.add("(min-width: 769px)", () => {
-      if (!timelineSectionRef.current || !timelineTrackRef.current || !timelineLineRef.current) return;
-
-      const section = timelineSectionRef.current;
-      const track = timelineTrackRef.current;
-      const cards = track.querySelectorAll<HTMLElement>(".tl-card");
-      const dots = track.querySelectorAll<HTMLElement>(".tl-dot");
-      const line = timelineLineRef.current;
-      const count = cards.length;
-      // Total horizontal travel: track width minus one viewport
-      const totalScroll = track.scrollWidth - window.innerWidth;
-      const scrollDistance = window.innerHeight * 2;
-
-      // Set first card to full opacity, rest dimmed
-      gsap.set(cards[0], { opacity: 1 });
-      for (let j = 1; j < count; j++) gsap.set(cards[j], { opacity: 0.25 });
-
-      // Horizontal slide
-      const scrollTween = gsap.to(track, {
-        x: -totalScroll,
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: () => `+=${scrollDistance}`,
-          scrub: 0.5,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        },
-      });
-
-      // Progress line fill
-      gsap.to(line, {
-        scaleX: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: () => `+=${scrollDistance}`,
-          scrub: 0.5,
-        },
-      });
-
-      // Each card: fade in when approaching center, fade out when leaving
-      cards.forEach((card, i) => {
-        const dot = dots[i];
-
-        // Skip first card fade-in (already opacity 1)
-        if (i > 0) {
-          gsap.to(card, {
-            opacity: 1,
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: scrollTween,
-              start: "left 70%",
-              end: "left 52%",
-              scrub: true,
-            },
-          });
-        }
-
-        // Fade out when leaving center (except last card stays bright)
-        if (i < count - 1) {
-          gsap.to(card, {
-            opacity: 0.25,
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: scrollTween,
-              start: "left 40%",
-              end: "left 20%",
-              scrub: true,
-            },
-          });
-        }
-
-        // Dot fill
-        if (dot) {
-          gsap.to(dot, {
-            background: ACCENT,
-            borderColor: ACCENT,
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: scrollTween,
-              start: "left 65%",
-              end: "left 52%",
-              scrub: true,
-            },
-          });
-        }
-      });
-    });
-
-    // ── MOBILE: vertical fade-in timeline ──
-    mm.add("(max-width: 768px)", () => {
-      if (!timelineRef.current) return;
-      const items = timelineRef.current.querySelectorAll(".tl-mob-item");
-      items.forEach((item) => {
-        gsap.from(item, {
-          opacity: 0,
-          y: 40,
-          duration: 0.6,
-          ease: "power3.out",
+      // Parallax on hero image
+      if (heroImgRef.current) {
+        gsap.to(heroImgRef.current, {
+          y: 80,
+          ease: "none",
           scrollTrigger: {
-            trigger: item,
-            start: "top 85%",
-            toggleActions: "play none none none",
+            trigger: heroImgRef.current,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
           },
         });
-      });
-    });
+      }
 
-    // ── COMMUNITY: animated stat counters ──
-    if (communityRef.current) {
-      const counters = communityRef.current.querySelectorAll<HTMLElement>(".stat-count");
-      counters.forEach((el) => {
-        const target = parseFloat(el.dataset.target || "0");
-        const prefix = el.dataset.prefix || "";
-        const suffix = el.dataset.suffix || "";
-        const obj = { val: 0 };
-        gsap.to(obj, {
-          val: target,
-          duration: 1.8,
-          ease: "power2.out",
+      mm = gsap.matchMedia();
+
+      // ── DESKTOP: compact horizontal scroll timeline ──
+      mm.add("(min-width: 769px)", () => {
+        if (!timelineSectionRef.current || !timelineTrackRef.current || !timelineLineRef.current) return;
+
+        const section = timelineSectionRef.current;
+        const track = timelineTrackRef.current;
+        const cards = track.querySelectorAll<HTMLElement>(".tl-card");
+        const dots = track.querySelectorAll<HTMLElement>(".tl-dot");
+        const line = timelineLineRef.current;
+        const count = cards.length;
+        const totalScroll = track.scrollWidth - window.innerWidth;
+        const scrollDistance = window.innerHeight * 2;
+
+        gsap.set(cards[0], { opacity: 1 });
+        for (let j = 1; j < count; j++) gsap.set(cards[j], { opacity: 0.25 });
+
+        const scrollTween = gsap.to(track, {
+          x: -totalScroll,
+          ease: "none",
           scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
-          onUpdate: () => {
-            el.textContent = prefix + Math.round(obj.val).toLocaleString() + suffix;
+            trigger: section,
+            start: "top top",
+            end: () => `+=${scrollDistance}`,
+            scrub: 0.5,
+            pin: true,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
           },
         });
+
+        gsap.to(line, {
+          scaleX: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top top",
+            end: () => `+=${scrollDistance}`,
+            scrub: 0.5,
+          },
+        });
+
+        cards.forEach((card, i) => {
+          const dot = dots[i];
+
+          if (i > 0) {
+            gsap.to(card, {
+              opacity: 1,
+              scrollTrigger: {
+                trigger: card,
+                containerAnimation: scrollTween,
+                start: "left 70%",
+                end: "left 52%",
+                scrub: true,
+              },
+            });
+          }
+
+          if (i < count - 1) {
+            gsap.to(card, {
+              opacity: 0.25,
+              scrollTrigger: {
+                trigger: card,
+                containerAnimation: scrollTween,
+                start: "left 40%",
+                end: "left 20%",
+                scrub: true,
+              },
+            });
+          }
+
+          if (dot) {
+            gsap.to(dot, {
+              background: ACCENT,
+              borderColor: ACCENT,
+              scrollTrigger: {
+                trigger: card,
+                containerAnimation: scrollTween,
+                start: "left 65%",
+                end: "left 52%",
+                scrub: true,
+              },
+            });
+          }
+        });
       });
-    }
+
+      // ── MOBILE: vertical fade-in timeline ──
+      mm.add("(max-width: 768px)", () => {
+        if (!timelineRef.current) return;
+        const items = timelineRef.current.querySelectorAll(".tl-mob-item");
+        items.forEach((item) => {
+          gsap.from(item, {
+            opacity: 0,
+            y: 40,
+            duration: 0.6,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: item,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          });
+        });
+      });
+
+      // ── COMMUNITY: animated stat counters ──
+      if (communityRef.current) {
+        const counters = communityRef.current.querySelectorAll<HTMLElement>(".stat-count");
+        counters.forEach((el) => {
+          const target = parseFloat(el.dataset.target || "0");
+          const prefix = el.dataset.prefix || "";
+          const suffix = el.dataset.suffix || "";
+          const obj = { val: 0 };
+          gsap.to(obj, {
+            val: target,
+            duration: 1.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+            onUpdate: () => {
+              el.textContent = prefix + Math.round(obj.val).toLocaleString() + suffix;
+            },
+          });
+        });
+      }
+    });
 
     return () => {
-      mm.revert();
-      ScrollTrigger.getAll().forEach(t => t.kill());
+      mm?.revert();
+      stInstance?.getAll().forEach(t => t.kill());
     };
   }, []);
 
@@ -241,7 +236,7 @@ export default function AboutContent() {
               I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, fight their insurance company like it was personal, and still be here seven years later when the workmanship warranty kicks in.
             </p>
             <p style={{ marginBottom: 20 }}>
-              That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
+              That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
             </p>
             <p style={{ marginBottom: 20 }}>
               We&apos;ve recovered millions in insurance supplements that adjusters tried to short change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
@@ -289,9 +284,9 @@ export default function AboutContent() {
           <div className="certs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
             {[
               { Icon: Shield, name: "GAF Master Elite", desc: "Top 2% of contractors nationwide. Qualifies homeowners for the Golden Pledge Limited Lifetime Warranty with 25 years of workmanship coverage and 10 years of 100% material defect coverage." },
-              { Icon: Award, name: "Owens Corning Platinum Preferred", desc: "Platinum Protection Limited Lifetime Warranty with up to 25 years of workmanship coverage. Only available through Platinum Preferred contractors." },
+              { Icon: Award, name: "Owens Corning Preferred", desc: "Preferred Protection Limited Lifetime Warranty with up to 25 years of workmanship coverage. Only available through Owens Corning Preferred contractors." },
               { Icon: Leaf, name: "Malarkey Emerald Pro", desc: "Emerald Pro Warranty includes a limited lifetime material warranty plus 25 years of workmanship coverage. Eco-friendly shingles made with upcycled materials." },
-              { Icon: Star, name: "CertainTeed Shingle Master", desc: "5 Star extended warranty with 25 years of workmanship coverage backed directly by CertainTeed. Requires advanced installation training." },
+              { Icon: Star, name: "CertainTeed Shingle Master Pro", desc: "5 Star extended warranty with 25 years of workmanship coverage backed directly by CertainTeed. Requires advanced installation training." },
             ].map((c, i) => (
               <div key={i} className="cert-card" style={{ background: WHITE, borderRadius: 20, padding: "36px 24px", border: `2px solid ${ACCENT}`, boxShadow: "0 2px 12px rgba(13,33,55,0.04)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center", transition: "transform 0.25s ease, box-shadow 0.25s ease", cursor: "default" }}>
                 <div style={{ width: 52, height: 52, borderRadius: 14, background: "rgba(37,99,235,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
@@ -367,7 +362,7 @@ export default function AboutContent() {
               More Than a Roofing Company
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, marginBottom: 20 }}>
-              We believe the communities that trust us with their homes deserve more than just good craftsmanship. From building for the Girl Scouts of America to sponsoring local athletes in Thornton, we show up for Colorado the same way we show up on your roof. Every veteran gets a military discount because service deserves service. And in 2026, we&apos;re committing $100K to help homeowners who&apos;ve been wrongfully denied claims or unknowingly locked into bad policies.
+              We believe the communities that trust us with their homes deserve more than just good craftsmanship. From building for the Girl Scouts of America to sponsoring local athletes in Thornton, we show up for Colorado the same way we show up on your roof. Every veteran gets a military discount because service deserves service. And in 2026, we&apos;re committing $100K to help homeowners who&apos;ve been wrongfully denied coverage or unknowingly locked into bad policies.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, margin: 0 }}>
               When your roofer lives down the street, they care different. We&apos;re proof.
@@ -402,7 +397,7 @@ export default function AboutContent() {
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 17px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px" }}>Free inspections. Honest assessments. Real people who answer the phone.</p>
           <div className="about-cta-btns" style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" as const }}>
-            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Get Free Estimate</Link>
+            <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Request a Free Inspection & Estimate</Link>
             <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.08)", color: WHITE, border: "1px solid rgba(255,255,255,0.15)", borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>(720) 766-3377</a>
           </div>
         </div>

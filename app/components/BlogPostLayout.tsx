@@ -191,7 +191,7 @@ export default function BlogPostLayout({
         </section>
       )}
 
-      <CTA title="Need Expert Roofing Help?" subtitle="Free inspections. Insurance claim support. The most trusted roofing team in Colorado." />
+      <CTA title="Need Expert Roofing Help?" subtitle="Free inspections. Insurance restoration support. The most trusted roofing team in Colorado." />
       <Footer />
 
       <style>{`
