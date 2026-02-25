@@ -5,6 +5,16 @@ import GuttersContent from "./content";
 export const metadata: Metadata = {
   title: "Gutter Installation Colorado | Gates Enterprises LLC",
   description: "Seamless gutter installation and gutter guards in Colorado. Protect your home from water damage. Free estimates.",
+  alternates: { canonical: "https://gatesroof.com/services/gutters-guards" },
+  openGraph: {
+    title: "Gutter Installation Colorado | Gates Enterprises LLC",
+    description: "Seamless gutter installation and gutter guards in Colorado. Protect your home from water damage. Free estimates.",
+    url: "https://gatesroof.com/services/gutters-guards",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {

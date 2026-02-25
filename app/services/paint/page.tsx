@@ -5,6 +5,16 @@ import PaintContent from "./content";
 export const metadata: Metadata = {
   title: "Exterior Painting Colorado | Gates Enterprises LLC",
   description: "Professional interior and exterior painting in Colorado. Boost curb appeal and protect your home. Free estimates from Gates Enterprises.",
+  alternates: { canonical: "https://gatesroof.com/services/paint" },
+  openGraph: {
+    title: "Exterior Painting Colorado | Gates Enterprises LLC",
+    description: "Professional interior and exterior painting in Colorado. Boost curb appeal and protect your home. Free estimates from Gates Enterprises.",
+    url: "https://gatesroof.com/services/paint",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {

@@ -5,6 +5,16 @@ import WindowsContent from "./content";
 export const metadata: Metadata = {
   title: "Window Replacement Colorado | Gates Enterprises LLC",
   description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
+  alternates: { canonical: "https://gatesroof.com/services/windows" },
+  openGraph: {
+    title: "Window Replacement Colorado | Gates Enterprises LLC",
+    description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
+    url: "https://gatesroof.com/services/windows",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {

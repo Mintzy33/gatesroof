@@ -5,6 +5,16 @@ import InsuranceContent from "./content";
 export const metadata: Metadata = {
   title: "Insurance Restoration | Gates Enterprises LLC",
   description: "Full service insurance restoration for storm damage in Colorado. We work with your insurance company from inspection to completion. Call (720) 766-3377.",
+  alternates: { canonical: "https://gatesroof.com/services/insurance-claims" },
+  openGraph: {
+    title: "Insurance Restoration | Gates Enterprises LLC",
+    description: "Full service insurance restoration for storm damage in Colorado. We work with your insurance company from inspection to completion. Call (720) 766-3377.",
+    url: "https://gatesroof.com/services/insurance-claims",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {

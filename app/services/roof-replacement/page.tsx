@@ -5,6 +5,16 @@ import RoofReplacementContent from "./content";
 export const metadata: Metadata = {
   title: "Roof Replacement Colorado | Gates Enterprises LLC",
   description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
+  alternates: { canonical: "https://gatesroof.com/services/roof-replacement" },
+  openGraph: {
+    title: "Roof Replacement Colorado | Gates Enterprises LLC",
+    description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
+    url: "https://gatesroof.com/services/roof-replacement",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {

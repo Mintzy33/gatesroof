@@ -5,6 +5,16 @@ import StormContent from "./content";
 export const metadata: Metadata = {
   title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
   description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
+  alternates: { canonical: "https://gatesroof.com/services/storm-hail-damage" },
+  openGraph: {
+    title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
+    description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
+    url: "https://gatesroof.com/services/storm-hail-damage",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado Roofing Experts" }],
+  },
 };
 
 const serviceSchema = {
