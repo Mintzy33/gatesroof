@@ -31,8 +31,10 @@ const citySchema = {
       "description": "Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Serving Lakewood and Colorado's Front Range since 2017.",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "1445 Holland St",
         "addressLocality": "Lakewood",
         "addressRegion": "CO",
+        "postalCode": "80215",
         "addressCountry": "US"
       },
       "areaServed": [
@@ -68,13 +70,13 @@ const citySchema = {
         "@type": "OfferCatalog",
         "name": "Roofing and Exterior Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://gatesroof.com/storm-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://gatesroof.com/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://gatesroof.com/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://gatesroof.com/siding" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://gatesroof.com/gutters" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://gatesroof.com/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://gatesroof.com/painting" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://gatesroof.com/services/storm-hail-damage" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://gatesroof.com/services/roof-replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://gatesroof.com/services/roof-repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://gatesroof.com/services/siding-exterior" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://gatesroof.com/services/gutters-guards" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://gatesroof.com/services/windows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://gatesroof.com/services/paint" } }
         ]
       },
       "sameAs": [
