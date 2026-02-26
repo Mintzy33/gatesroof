@@ -116,6 +116,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>HOW IT WORKS</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Three Steps to a New Roof</h2>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>From inspection to installation — we make it simple.</p>
+            </div>
+          </ScrollReveal>
+          <StaggerCards className="hiw-grid" stagger={0.15} distance={40}>
+            {[
+              { n: "1", t: "Free Inspection", d: "We come to you. Our certified inspectors document every detail of your roof — no cost, no obligation." },
+              { n: "2", t: "Insurance & Estimate", d: "If storm damage is found, we handle your insurance claim from start to finish. We know what adjusters miss." },
+              { n: "3", t: "Expert Installation", d: "Our crews install your new roof with manufacturer-certified precision. Most jobs completed in one day." },
+            ].map((step, i) => (
+              <div key={i} style={{ textAlign: "center" as const, position: "relative" }}>
+                <div style={{ width: 64, height: 64, borderRadius: "50%", background: ACCENT, color: WHITE, fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 26, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", boxShadow: `0 8px 24px rgba(37,99,235,0.25)` }}>{step.n}</div>
+                {i < 2 && <div className="hiw-connector" style={{ position: "absolute", top: 32, left: "calc(50% + 44px)", width: "calc(100% - 88px)", height: 2, background: `linear-gradient(90deg, ${ACCENT}, rgba(37,99,235,0.2))` }} />}
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: NAVY, marginBottom: 8 }}>{step.t}</h3>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, maxWidth: 300, marginLeft: "auto", marginRight: "auto" }}>{step.d}</p>
+              </div>
+            ))}
+          </StaggerCards>
+        </div>
+      </section>
+
       {/* WHY GATES */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -157,6 +184,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COLORADO HAIL */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
+        <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" as const }}>
+          <ScrollReveal>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>COLORADO&apos;S HAIL PROBLEM</span>
+            <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 16px" }}>Why Colorado Homeowners Need a Roofing Partner</h2>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 680, margin: "0 auto 40px", lineHeight: 1.8 }}>Colorado ranks #1 in the nation for hail damage insurance claims. The Front Range sees damaging hailstorms every spring and summer, with stones regularly exceeding golf ball size. Many homeowners don&apos;t realize their roof has storm damage until leaks appear years later. A proactive inspection after every major storm is the single best way to protect your home&apos;s value — and your insurance covers most repairs at no out-of-pocket cost.</p>
+          </ScrollReveal>
+          <StaggerCards className="hail-stats" stagger={0.1} distance={30}>
+            {[
+              { n: "1st", d: "in Nation for Hail Claims" },
+              { n: "7+", d: "Hailstorms Per Year (Avg)" },
+              { n: "$2.36B", d: "in CO Hail Losses (2023)" },
+            ].map((s, i) => (
+              <div key={i} style={{ padding: "28px 20px", background: LIGHT_BG, borderRadius: 18, border: "1px solid rgba(13,33,55,0.04)" }}>
+                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 4 }}>{s.n}</div>
+                <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT, lineHeight: 1.5 }}>{s.d}</div>
+              </div>
+            ))}
+          </StaggerCards>
+        </div>
+      </section>
+
+      {/* CERTIFICATIONS EXPLAINED */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>CERTIFICATIONS</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>What Our Certifications Actually Mean For You</h2>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 520, margin: "0 auto", lineHeight: 1.7 }}>Not all roofers are created equal. Here&apos;s what sets us apart.</p>
+            </div>
+          </ScrollReveal>
+          <StaggerCards className="cert-grid" stagger={0.1} distance={40}>
+            {[
+              { t: "GAF Master Elite", d: "Top 2% of roofers nationwide. Unlocks the GAF Golden Pledge warranty — 25 years on labor, 50 years on materials. The strongest warranty in roofing." },
+              { t: "Owens Corning Platinum Preferred", d: "Preferred contractor status means access to the Total Protection Roofing System and extended warranties most contractors can't offer." },
+              { t: "Malarkey Emerald Pro", d: "Certified installer of Malarkey's impact-resistant shingles — engineered specifically for Colorado's extreme hail." },
+              { t: "CertainTeed ShingleMaster", d: "Advanced training in CertainTeed's premium product line. SureStart Plus warranty coverage for complete peace of mind." },
+            ].map((c, i) => (
+              <div key={i} style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderTop: `3px solid ${ACCENT}`, border: `1px solid rgba(13,33,55,0.06)`, borderTopWidth: 3, borderTopColor: ACCENT, boxShadow: "0 2px 12px rgba(13,33,55,0.06)" }}>
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 10 }}>{c.t}</h3>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{c.d}</p>
+              </div>
+            ))}
+          </StaggerCards>
+        </div>
+      </section>
+
       {/* REVIEWS */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -195,6 +271,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>FAQ</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Common Questions</h2>
+            </div>
+          </ScrollReveal>
+          <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
+            {[
+              { q: "Does insurance cover hail damage?", a: "Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're only responsible for your deductible. We handle the entire claims process so you don't have to." },
+              { q: "How long does a roof replacement take?", a: "Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins." },
+              { q: "What's the difference between repair and replacement?", a: "Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty." },
+              { q: "Do you offer financing?", a: "Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection." },
+              { q: "How do I know if my roof has hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture — those are signs your roof was likely hit too. The only way to know for sure is a professional inspection." },
+              { q: "What if my insurance claim is denied?", a: "We fight for you. Our team has recovered millions in supplements and overturned denied claims. We know what documentation adjusters need and how to present it." },
+            ].map((faq, i) => (
+              <ScrollReveal key={i} delay={i * 0.05}>
+                <div style={{ padding: "24px 28px", background: LIGHT_BG, borderRadius: 16, border: "1px solid rgba(13,33,55,0.04)" }}>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, marginBottom: 8, margin: "0 0 8px" }}>{faq.q}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{faq.a}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "clamp(56px, 8vw, 80px) 20px", background: NAVY, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)` }} />
@@ -219,6 +324,9 @@ export default function Home() {
         .hero-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 140px 20px 80px; }
         .hero-btns { display: flex; gap: 12px; }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .hiw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+        .hail-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
         .why-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
         .why-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .home-cta-btns { display: flex; gap: 12px; justify-content: center; }
@@ -242,6 +350,10 @@ export default function Home() {
           .service-card { padding: 22px 18px !important; }
           .service-card h3 { font-size: 16px !important; }
           .service-card p { font-size: 13px !important; }
+          .hiw-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .hiw-connector { display: none !important; }
+          .hail-stats { grid-template-columns: 1fr !important; gap: 12px !important; }
+          .cert-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
           .why-grid { grid-template-columns: 1fr !important; gap: 36px !important; text-align: center; }
           .why-cards { grid-template-columns: 1fr 1fr !important; }
 .home-cta-btns { flex-direction: column !important; align-items: stretch !important; }
