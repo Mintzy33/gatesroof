@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
+    headline: post.metaTitle,
     description: post.metaDescription,
     datePublished: post.publishDate,
     dateModified: post.publishDate,
