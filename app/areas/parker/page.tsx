@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor Parker CO | Gates Enterprises",
-  description: "Top-rated roofing contractor in Parker, CO. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, and more. Request a free inspection today.",
+  description: "Parker's trusted roofing contractor. 4x certified, 293+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/parker" },
   openGraph: {
     title: "Roofing Contractor Parker CO | Gates Enterprises",
-    description: "Top-rated roofing contractor in Parker, CO. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, and more. Request a free inspection today.",
+    description: "Parker's trusted roofing contractor. 4x certified, 293+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

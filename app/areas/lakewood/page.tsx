@@ -3,12 +3,12 @@ import Script from "next/script";
 import CityContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor Lakewood CO | Gates Enterprises — Local & Headquartered Here",
-  description: "Lakewood's own roofing contractor. Gates Enterprises LLC is headquartered right here in Lakewood, CO. Quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, windows, and painting. Your neighbors. Your roofer.",
+  title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
+  description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 293+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/lakewood" },
   openGraph: {
-    title: "Roofing Contractor Lakewood CO | Gates Enterprises — Local & Headquartered Here",
-    description: "Lakewood's own roofing contractor. Gates Enterprises LLC is headquartered right here in Lakewood, CO. Quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, windows, and painting. Your neighbors. Your roofer.",
+    title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
+    description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 293+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

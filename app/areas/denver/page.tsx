@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor Denver CO | Gates Enterprises",
-  description: "Denver's top-rated roofing contractor. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, windows, and painting. Request a free inspection today.",
+  description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.8★. Storm damage, roof replacement, siding & gutters. Free inspection.",
   alternates: { canonical: "https://gatesroof.com/areas/denver" },
   openGraph: {
     title: "Roofing Contractor Denver CO | Gates Enterprises",
-    description: "Denver's top-rated roofing contractor. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Storm damage restoration, roof replacement, siding, gutters, windows, and painting. Request a free inspection today.",
+    description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.8★. Storm damage, roof replacement, siding & gutters. Free inspection.",
     url: "https://gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
