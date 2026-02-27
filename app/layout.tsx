@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 293+ reviews. Free inspections. Call (720) 766-3377.",
+  description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.9★ from 293+ reviews. Free inspections. Call (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://gatesroof.com" },
   openGraph: {
     title: "Lakewood Roofing Contractor | Gates Enterprises LLC",
-    description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 293+ reviews. Free inspections. Call (720) 766-3377.",
+    description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.9★ from 293+ reviews. Free inspections. Call (720) 766-3377.",
     url: "https://gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -52,7 +52,7 @@ const localBusinessSchema = {
   "url": "https://gatesroof.com",
   "logo": "https://gatesroof.com/images/gates-enterprises-logo.png",
   "image": "https://gatesroof.com/images/gates-enterprises-og.jpg",
-  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. 7,200+ roofs completed, 4.8 star rating, 293+ Google reviews.",
+  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. 7,200+ roofs completed, 4.9 star rating, 293+ Google reviews.",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
@@ -99,7 +99,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Pro"}
   ],
-  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"293","bestRating":"5"},
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"293","bestRating":"5"},
   "openingHoursSpecification": [
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"00:00","closes":"00:00","description":"By appointment"}

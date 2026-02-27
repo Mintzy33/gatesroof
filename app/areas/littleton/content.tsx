@@ -57,7 +57,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Douglas County and Arapahoe County permit coordination",
               "7,200+ roofs completed across the Denver metro",
-              "4.8 star Google rating from 293+ verified reviews",
+              "4.9 star Google rating from 293+ verified reviews",
               "Experience with 1970s through 1990s housing stock",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

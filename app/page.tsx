@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
                   {[{ n: 7204, s: "+", l: "Roofs" }, { n: 10, s: "+", l: "Years" }, { n: 0, s: "", l: "Rating", star: true }].map((s, i) => (
                     <div key={i} style={{ textAlign: "center" as const }}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.star ? <span style={{ color: GOLD }}>4.8★</span> : <CounterGSAP end={s.n} suffix={s.s} duration={2.2} delay={0.8} />}</div>
+                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: WHITE, lineHeight: 1 }}>{s.star ? <span style={{ color: GOLD }}>4.9★</span> : <CounterGSAP end={s.n} suffix={s.s} duration={2.2} delay={0.8} />}</div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.6)", marginTop: 6, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
                   ))}
@@ -158,7 +158,7 @@ export default function Home() {
                   {[{ n: 7204, s: "+", l: "Roofs", dur: 2.2 }, { n: 10, s: "+", l: "Years", dur: 2.2 }, { n: 0, s: "", l: "Rating", dur: 0, star: true }].map((s, i) => (
                     <div key={i}>
                       <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 3vw, 34px)", fontWeight: 800, color: NAVY }}>
-                        {s.star ? <><span style={{ color: GOLD }}>4.8</span><span style={{ color: GOLD }}>★</span></> : <CounterGSAP end={s.n} suffix={s.s} duration={s.dur} />}
+                        {s.star ? <><span style={{ color: GOLD }}>4.9</span><span style={{ color: GOLD }}>★</span></> : <CounterGSAP end={s.n} suffix={s.s} duration={s.dur} />}
                       </div>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: TEXT_LIGHT, marginTop: 2, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>{s.l}</div>
                     </div>
@@ -242,7 +242,7 @@ export default function Home() {
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 10px" }}>What Homeowners Say</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
                 <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star()}</span>)}</div>
-                <a href="https://www.google.com/maps/place/Gates+Enterprises" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", borderBottom: "1px solid rgba(100,116,139,0.3)", transition: "color 0.2s" }}>4.8 stars from 293+ Google Reviews</a>
+                <a href="https://www.google.com/maps/place/Gates+Enterprises" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", borderBottom: "1px solid rgba(100,116,139,0.3)", transition: "color 0.2s" }}>4.9 stars from 293+ Google Reviews</a>
               </div>
             </div>
           </ScrollReveal>

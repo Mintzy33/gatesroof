@@ -57,7 +57,7 @@ export default function CityContent() {
               "Respectful approach to mid century home architecture",
               "Full insurance restoration support on hail and storm claims",
               "7,200+ roofs completed across the Denver metro",
-              "4.8 star Google rating from 293+ verified reviews",
+              "4.9 star Google rating from 293+ verified reviews",
               "Jefferson County permit and inspection coordination",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

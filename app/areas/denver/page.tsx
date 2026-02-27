@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor Denver CO | Gates Enterprises",
-  description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.8★. Storm damage, roof replacement, siding & gutters. Free inspection.",
+  description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.9★. Storm damage, roof replacement, siding & gutters. Free inspection.",
   alternates: { canonical: "https://gatesroof.com/areas/denver" },
   openGraph: {
     title: "Roofing Contractor Denver CO | Gates Enterprises",
-    description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.8★. Storm damage, roof replacement, siding & gutters. Free inspection.",
+    description: "Denver's top-rated roofing contractor. 4x manufacturer certified, 293+ reviews, 4.9★. Storm damage, roof replacement, siding & gutters. Free inspection.",
     url: "https://gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -28,7 +28,7 @@ const citySchema = {
       "url": "https://gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Denver, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 294+ Google reviews, 4.8 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Denver, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 294+ Google reviews, 4.9 stars.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lakewood",
@@ -60,7 +60,7 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
+        "ratingValue": "4.9",
         "reviewCount": "294",
         "bestRating": "5"
       },

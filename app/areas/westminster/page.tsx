@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor in Westminster, CO | Gates Enterprises",
-  description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated. Free inspection. Call (720) 766-3377.",
+  description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.9★ rated. Free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/westminster" },
   openGraph: {
     title: "Roofing Contractor in Westminster, CO | Gates Enterprises",
-    description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated. Free inspection. Call (720) 766-3377.",
+    description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.9★ rated. Free inspection. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/westminster",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -34,7 +34,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8367, "longitude": -105.0372 },
   "areaServed": { "@type": "City", "name": "Westminster", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "293", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "293", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

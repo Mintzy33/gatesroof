@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
       "They show up at your door unsolicited right after a storm. They have out of state license plates. Their \"local office\" is a hotel room or a temporary rental. They pressure you to sign a contract on the spot. They offer to pay your deductible (which is insurance fraud, by the way). Their online reviews are thin or nonexistent in your area.",
       "A legitimate local contractor will not pressure you. They will give you time to do your research, provide references you can actually call, and be available long after the job is done.",
       "Check Reviews (But Read Them Critically)",
-      "Online reviews are a useful tool, but you need to read them with some discernment. A company with 4.8 stars and 500 reviews is generally trustworthy. A company with 5.0 stars and 12 reviews might have asked their friends and family to post.",
+      "Online reviews are a useful tool, but you need to read them with some discernment. A company with 4.9 stars and 500 reviews is generally trustworthy. A company with 5.0 stars and 12 reviews might have asked their friends and family to post.",
       "Look for patterns in the reviews. Do multiple people mention the same strengths or weaknesses? Are the reviews recent? Do they mention specific crew members or project details (which suggests they are real)?",
       "Also check Google, the Better Business Bureau, and sites like the GAF and CertainTeed contractor directories. These manufacturer directories only list contractors who maintain their certification, so they are a good secondary filter.",
       "Ask About Warranty Coverage",
