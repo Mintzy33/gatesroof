@@ -57,7 +57,7 @@ export default function CityContent() {
               "High slope crew training and steep pitch safety equipment",
               "Gutter guard systems designed for year round pine needle accumulation",
               "7,200+ roofs completed across the Denver metro and foothills",
-              "4.9 star Google rating from 293+ verified reviews",
+              "4.8 star Google rating from 294+ verified reviews",
               "Jefferson County permit and inspection coordination",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

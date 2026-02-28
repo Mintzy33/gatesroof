@@ -57,7 +57,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Arapahoe County permit and inspection coordination",
               "7,200+ roofs completed across the Denver metro",
-              "4.9 star Google rating from 293+ verified reviews",
+              "4.8 star Google rating from 294+ verified reviews",
               "Owens Corning Preferred and CertainTeed Shingle Master Pro certified",
               "Free inspections with documented photo evidence",
             ].map((item, i) => (

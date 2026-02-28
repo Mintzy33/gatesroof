@@ -57,7 +57,7 @@ export default function CityContent() {
               "GAF Master Elite certified — top 2% of contractors nationwide",
               "Jefferson County permit and inspection coordination",
               "7,200+ roofs completed across the Denver metro",
-              "4.9 star Google rating from 293+ verified reviews",
+              "4.8 star Google rating from 294+ verified reviews",
               "Class 4 impact resistant materials for Colorado hail protection",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

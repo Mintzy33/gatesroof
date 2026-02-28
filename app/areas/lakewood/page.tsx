@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
-  description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.9★ from 293+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
+  description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 294+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/lakewood" },
   openGraph: {
     title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
-    description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.9★ from 293+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
+    description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 294+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -28,7 +28,7 @@ const citySchema = {
       "url": "https://gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.9 stars. Serving Lakewood and Colorado's Front Range since 2017.",
+      "description": "Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with 294+ Google reviews and 4.8 stars. Serving Lakewood and Colorado's Front Range since 2017.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1445 Holland St",
@@ -62,7 +62,7 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
+        "ratingValue": "4.8",
         "reviewCount": "294",
         "bestRating": "5"
       },

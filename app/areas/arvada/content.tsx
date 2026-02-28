@@ -57,7 +57,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and wind claims",
               "Jefferson County permit and inspection coordination",
               "7,200+ roofs completed across the Denver metro",
-              "4.9 star Google rating from 293+ verified reviews",
+              "4.8 star Google rating from 294+ verified reviews",
               "Malarkey Emerald Pro and Owens Corning Preferred certified",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (
