@@ -25,6 +25,11 @@ const areas = [
   "edgewater",
   "federal-heights",
   "northglenn",
+  "brighton",
+  "superior",
+  "lone-tree",
+  "morrison",
+  "evergreen",
 ];
 
 // All service pages
