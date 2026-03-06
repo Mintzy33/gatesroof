@@ -126,6 +126,25 @@ const organizationSchema = {
   "sameAs": ["https://www.facebook.com/gatesenterprises","https://www.instagram.com/gatesenterprises","https://www.google.com/maps/place/Gates+Enterprises"]
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://gatesroof.com/#website",
+  "name": "Gates Enterprises LLC",
+  "url": "https://gatesroof.com",
+  "description": "Quadruple manufacturer certified roofing contractor serving Colorado's Front Range. Roof replacement, storm damage, insurance restoration.",
+  "publisher": { "@id": "https://gatesroof.com/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gatesroof.com/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": "en-US"
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -148,6 +167,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <Script id="local-business-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
         <Script id="organization-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <Script id="website-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </head>
       <body style={{ margin: 0, padding: 0, paddingBottom: 70 }}>

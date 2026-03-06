@@ -47,6 +47,18 @@ const nextConfig: NextConfig = {
       // Old routes
       { source: "/regions", destination: "/areas/lakewood", permanent: true },
       { source: "/st-paul-minneapolis", destination: "/", permanent: true },
+      // Old pages from previous site (Rebolt/legacy)
+      { source: "/careers", destination: "/about", permanent: true },
+      { source: "/residential-services", destination: "/services/roof-replacement", permanent: true },
+      { source: "/commercial-services", destination: "/services/roof-replacement", permanent: true },
+      // Old FAQ format
+      { source: "/roof-faq/roofblog/:path*", destination: "/blog", permanent: true },
+      { source: "/roof-faq/:id", destination: "/", permanent: true },
+      // Old blog posts that were indexed but no longer exist
+      { source: "/blog/rooftop-revolution-exploring-the-cutting-edge-innovations-transforming-home-with-solar-roofing", destination: "/blog", permanent: true },
+      { source: "/blog/pros-and-cons-of-different-roofing-styles-in-colorado-which-suits-you", destination: "/blog", permanent: true },
+      { source: "/blog/more-essential-tips-for-finding-a-reliable-roofer-in-denver", destination: "/blog", permanent: true },
+      { source: "/blog/red-flags-common-roofing-scams-targeting-colorado-residents", destination: "/blog", permanent: true },
     ];
   },
 };
