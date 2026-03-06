@@ -57,7 +57,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Honest assessments — we recommend what you actually need",
               "7,200+ roofs completed across the Denver metro",
-              "4.8 star Google rating from 294+ verified reviews",
+              "4.8 star Google rating from 300+ verified reviews",
               "Arapahoe County permit and inspection coordination",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

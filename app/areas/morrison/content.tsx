@@ -57,7 +57,7 @@ export default function CityContent() {
               "Experienced with steep access and mountain terrain roofing",
               "High wind rated systems for foothills canyon conditions",
               "7,200+ roofs completed across the Denver metro",
-              "4.8 star Google rating from 294+ verified reviews",
+              "4.8 star Google rating from 300+ verified reviews",
               "Jefferson County permit and inspection coordination",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

@@ -57,7 +57,7 @@ export default function CityContent() {
               "Heavy snow load and ice dam prevention expertise",
               "Jefferson County permit and inspection coordination",
               "7,200+ roofs completed across the Denver metro",
-              "4.8 star Google rating from 294+ verified reviews",
+              "4.8 star Google rating from 300+ verified reviews",
               "30 minutes from our Lakewood headquarters",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

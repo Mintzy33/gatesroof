@@ -1599,7 +1599,7 @@ export const blogPosts: BlogPost[] = [
       "What About Storm Chasers Knocking on Your Door",
       "After major hailstorms, out of state contractors descend on Colorado neighborhoods offering free inspections and immediate service. While some are legitimate, many are not. They may do poor quality work, use inferior materials, refuse to file proper supplements, or disappear entirely when warranty issues arise.",
       "Protect yourself by choosing a contractor that has been in Colorado for years (not weeks), holds manufacturer certifications, has verifiable Google reviews, carries proper licensing and insurance, and will provide references from your own neighborhood.",
-      "Gates Enterprises has been serving the Colorado Front Range since 2014. We are the only quadruple certified roofing contractor in the state, with certifications from GAF, Owens Corning, CertainTeed, and Malarkey. Our 294 Google reviews and 4.8 star rating speak for themselves.",
+      "Gates Enterprises has been serving the Colorado Front Range since 2014. We are the only quadruple certified roofing contractor in the state, with certifications from GAF, Owens Corning, CertainTeed, and Malarkey. Our 300 Google reviews and 4.8 star rating speak for themselves.",
       "Schedule Your Free Hail Damage Inspection",
       "Think your roof might have hail damage? Do not guess. Schedule a free inspection with Gates Enterprises and get a clear answer backed by professional documentation. Call (720) 766-3377 or book online today.",
     ],

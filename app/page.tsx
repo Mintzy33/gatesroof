@@ -242,7 +242,7 @@ export default function Home() {
               <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 10px" }}>What Homeowners Say</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
                 <div style={{ display: "flex", gap: 2 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star()}</span>)}</div>
-                <a href="https://www.google.com/maps/place/Gates+Enterprises" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", borderBottom: "1px solid rgba(100,116,139,0.3)", transition: "color 0.2s" }}>4.8 stars from 294+ Google Reviews</a>
+                <a href="https://www.google.com/maps/place/Gates+Enterprises" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, textDecoration: "none", borderBottom: "1px solid rgba(100,116,139,0.3)", transition: "color 0.2s" }}>4.8 stars from 300+ Google Reviews</a>
               </div>
             </div>
           </ScrollReveal>

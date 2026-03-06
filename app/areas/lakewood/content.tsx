@@ -197,10 +197,10 @@ export default function CityContent() {
             Roofing Contractor in Lakewood, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Locally Headquartered. Quadruple Manufacturer Certified. 294+ Five Star Reviews. Your Neighbors. Your Roofer.
+            Locally Headquartered. Quadruple Manufacturer Certified. 300+ Five Star Reviews. Your Neighbors. Your Roofer.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2017, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With 294+ Google reviews and a 4.8 star rating, Lakewood homeowners trust us because they know us.
+            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2017, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With 300+ Google reviews and a 4.8 star rating, Lakewood homeowners trust us because they know us.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -235,7 +235,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>294+ Google Reviews. 4.8 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.8 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reviews are not from strangers across the country. They are from your Lakewood neighbors, from families in Green Mountain, Belmar, Applewood, and every corner of our city. We have earned a 4.8 star rating one project at a time by showing up, doing quality work, and treating every home like it is our own.
             </p>
@@ -373,18 +373,18 @@ export default function CityContent() {
             What Your Lakewood Neighbors Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            We have earned 294+ Google reviews and a 4.8 star rating, and many of those reviews come from right here in Lakewood. When your neighbors trust us with their homes, that is the highest compliment we can receive. Here is what they have to say.
+            We have earned 300+ Google reviews and a 4.8 star rating, and many of those reviews come from right here in Lakewood. When your neighbors trust us with their homes, that is the highest compliment we can receive. Here is what they have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(294+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 294+ Reviews on Google &rarr;
+            Read All 300+ Reviews on Google &rarr;
           </a>
         </div>
       </section>

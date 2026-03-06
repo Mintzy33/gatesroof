@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor Parker CO | Gates Enterprises",
-  description: "Parker's trusted roofing contractor. 4x certified, 294+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
+  description: "Parker's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/parker" },
   openGraph: {
     title: "Roofing Contractor Parker CO | Gates Enterprises",
-    description: "Parker's trusted roofing contractor. 4x certified, 294+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
+    description: "Parker's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -28,7 +28,7 @@ const citySchema = {
       "url": "https://gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 294+ Google reviews, 4.8 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.8 stars.",
       "areaServed": [
         {
           "@type": "City",
@@ -55,7 +55,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "294",
+        "reviewCount": "300",
         "bestRating": "5"
       },
       "hasOfferCatalog": {
