@@ -4,11 +4,11 @@ import CityContent from "./content";
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
-  description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 294+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
+  description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 300+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
   alternates: { canonical: "https://gatesroof.com/areas/lakewood" },
   openGraph: {
     title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
-    description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 294+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
+    description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 300+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
     url: "https://gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
