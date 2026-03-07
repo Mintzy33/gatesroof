@@ -541,7 +541,7 @@ export default function GalleryContent() {
         <p className="gal-subtitle">
           Browse completed projects across Colorado. From luxury estates to commercial buildings, every project receives the same attention to detail.
         </p>
-        <p className="gal-count">{GALLERY_IMAGES.length} Projects and Counting</p>
+        <p className="gal-count">7,200+ Roofs Completed  ·  {GALLERY_IMAGES.length} Featured Projects</p>
       </section>
 
       {/* Filter Bar */}
