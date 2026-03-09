@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Thornton, CO | Gates Enterprises",
   description: "Thornton roofing contractor. Expert roof replacement, storm damage repair & insurance restoration. Certified & insured. Call (720) 766-3377 for a free estimate.",
-  alternates: { canonical: "https://gatesroof.com/areas/thornton" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
     title: "Roofing Contractor in Thornton, CO | Gates Enterprises",
     description: "Thornton roofing contractor. Expert roof replacement, storm damage repair & insurance restoration. Certified & insured. Call (720) 766-3377 for a free estimate.",
-    url: "https://gatesroof.com/areas/thornton",
+    url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/thornton",
+  "url": "https://www.gatesroof.com/areas/thornton",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

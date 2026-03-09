@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
   description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 300+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/lakewood" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
     title: "Lakewood Roofing Company | Gates Enterprises — Headquartered in Lakewood, CO",
     description: "Lakewood's own roofing company. 4x certified, 7,200+ roofs, 4.8★ from 300+ reviews. Roof replacement, hail damage repair & insurance claims. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/lakewood",
+    url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -22,10 +22,10 @@ const citySchema = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://gatesroof.com/#organization",
+      "@id": "https://www.gatesroof.com/#organization",
       "name": "Gates Enterprises LLC",
-      "image": "https://gatesroof.com/images/gates-enterprises-logo.png",
-      "url": "https://gatesroof.com",
+      "image": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
+      "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
       "description": "Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with 300+ Google reviews and 4.8 stars. Serving Lakewood and Colorado's Front Range since 2017.",
@@ -70,13 +70,13 @@ const citySchema = {
         "@type": "OfferCatalog",
         "name": "Roofing and Exterior Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://gatesroof.com/services/storm-hail-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://gatesroof.com/services/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://gatesroof.com/services/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://gatesroof.com/services/siding-exterior" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://gatesroof.com/services/gutters-guards" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://gatesroof.com/services/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://gatesroof.com/services/paint" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://www.gatesroof.com/services/storm-hail-damage" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://www.gatesroof.com/services/roof-replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://www.gatesroof.com/services/roof-repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://www.gatesroof.com/services/siding-exterior" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://www.gatesroof.com/services/gutters-guards" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://www.gatesroof.com/services/windows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://www.gatesroof.com/services/paint" } }
         ]
       },
       "sameAs": [

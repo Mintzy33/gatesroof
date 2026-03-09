@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
   description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 300+ reviews. Free inspections. Call (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
-  alternates: { canonical: "https://gatesroof.com" },
+  alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
     title: "Lakewood Roofing Contractor | Gates Enterprises LLC",
     description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 300+ reviews. Free inspections. Call (720) 766-3377.",
-    url: "https://gatesroof.com",
+    url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -46,12 +46,12 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
-  "@id": "https://gatesroof.com/#organization",
+  "@id": "https://www.gatesroof.com/#organization",
   "name": "Gates Enterprises LLC",
   "alternateName": "Gates Enterprises",
-  "url": "https://gatesroof.com",
-  "logo": "https://gatesroof.com/images/gates-enterprises-logo.png",
-  "image": "https://gatesroof.com/images/gates-enterprises-og.jpg",
+  "url": "https://www.gatesroof.com",
+  "logo": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
+  "image": "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
   "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. 7,200+ roofs completed, 4.8 star rating, 300+ Google reviews.",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
@@ -83,13 +83,13 @@ const localBusinessSchema = {
     "@type": "OfferCatalog",
     "name": "Roofing & Exterior Services",
     "itemListElement": [
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Replacement","url":"https://gatesroof.com/services/roof-replacement"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm & Hail Damage Repair","url":"https://gatesroof.com/services/storm-hail-damage"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Siding Installation","url":"https://gatesroof.com/services/siding-exterior"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gutter Installation","url":"https://gatesroof.com/services/gutters-guards"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Repair","url":"https://gatesroof.com/services/roof-repair"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Insurance Restoration","url":"https://gatesroof.com/services/insurance-claims"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Exterior Painting","url":"https://gatesroof.com/services"}}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Replacement","url":"https://www.gatesroof.com/services/roof-replacement"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm & Hail Damage Repair","url":"https://www.gatesroof.com/services/storm-hail-damage"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Siding Installation","url":"https://www.gatesroof.com/services/siding-exterior"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gutter Installation","url":"https://www.gatesroof.com/services/gutters-guards"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Repair","url":"https://www.gatesroof.com/services/roof-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Insurance Restoration","url":"https://www.gatesroof.com/services/insurance-claims"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Exterior Painting","url":"https://www.gatesroof.com/services"}}
     ]
   },
   "knowsAbout": ["GAF roofing systems","CertainTeed roofing","Malarkey shingles","Owens Corning roofing","Class 4 impact-resistant shingles","Colorado hail damage","Insurance restoration"],
@@ -99,7 +99,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Pro"}
   ],
-  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"293","bestRating":"5"},
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"300","bestRating":"5"},
   "openingHoursSpecification": [
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"00:00","closes":"00:00","description":"By appointment"}
@@ -111,10 +111,10 @@ const localBusinessSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://gatesroof.com/#org",
+  "@id": "https://www.gatesroof.com/#org",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com",
-  "logo": "https://gatesroof.com/images/gates-enterprises-logo.png",
+  "url": "https://www.gatesroof.com",
+  "logo": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+17207663377",
@@ -129,16 +129,16 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://gatesroof.com/#website",
+  "@id": "https://www.gatesroof.com/#website",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com",
+  "url": "https://www.gatesroof.com",
   "description": "Quadruple manufacturer certified roofing contractor serving Colorado's Front Range. Roof replacement, storm damage, insurance restoration.",
-  "publisher": { "@id": "https://gatesroof.com/#organization" },
+  "publisher": { "@id": "https://www.gatesroof.com/#organization" },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://gatesroof.com/blog?q={search_term_string}"
+      "urlTemplate": "https://www.gatesroof.com/blog?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   },

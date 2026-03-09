@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Broomfield, CO | Gates Enterprises",
   description: "Broomfield roofing services. Expert roof replacement, storm damage repair & siding installation. Certified Colorado roofer. Free inspection. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/broomfield" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/broomfield" },
   openGraph: {
     title: "Roofing Contractor in Broomfield, CO | Gates Enterprises",
     description: "Broomfield roofing services. Expert roof replacement, storm damage repair & siding installation. Certified Colorado roofer. Free inspection. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/broomfield",
+    url: "https://www.gatesroof.com/areas/broomfield",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/broomfield",
+  "url": "https://www.gatesroof.com/areas/broomfield",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

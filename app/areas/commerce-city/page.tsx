@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Commerce City, CO | Gates Enterprises",
   description: "Commerce City roofing services. Roof replacement, storm damage repair & insurance help. Certified & insured. Call Gates Enterprises at (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/commerce-city" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/commerce-city" },
   openGraph: {
     title: "Roofing Contractor in Commerce City, CO | Gates Enterprises",
     description: "Commerce City roofing services. Roof replacement, storm damage repair & insurance help. Certified & insured. Call Gates Enterprises at (720) 766-3377.",
-    url: "https://gatesroof.com/areas/commerce-city",
+    url: "https://www.gatesroof.com/areas/commerce-city",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/commerce-city",
+  "url": "https://www.gatesroof.com/areas/commerce-city",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

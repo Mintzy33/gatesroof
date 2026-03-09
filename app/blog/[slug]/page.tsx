@@ -62,15 +62,15 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Organization",
       name: "Gates Enterprises LLC",
-      url: "https://gatesroof.com",
+      url: "https://www.gatesroof.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Gates Enterprises LLC",
-      url: "https://gatesroof.com",
+      url: "https://www.gatesroof.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://gatesroof.com/images/gates-enterprises-logo.png",
+        url: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
       },
     },
     mainEntityOfPage: {

@@ -5,11 +5,11 @@ import WindowsContent from "./content";
 export const metadata: Metadata = {
   title: "Window Replacement Colorado | Gates Enterprises LLC",
   description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
-  alternates: { canonical: "https://gatesroof.com/services/windows" },
+  alternates: { canonical: "https://www.gatesroof.com/services/windows" },
   openGraph: {
     title: "Window Replacement Colorado | Gates Enterprises LLC",
     description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
-    url: "https://gatesroof.com/services/windows",
+    url: "https://www.gatesroof.com/services/windows",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Window Replacement",
   "name": "Window Replacement in Colorado",
   "description": "Professional window replacement across Colorado's Front Range. Energy efficient vinyl, fiberglass, and wood options backed by manufacturer warranties.",
-  "url": "https://gatesroof.com/services/windows",
-  "provider": { "@id": "https://gatesroof.com/#organization" },
+  "url": "https://www.gatesroof.com/services/windows",
+  "provider": { "@id": "https://www.gatesroof.com/#organization" },
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
@@ -43,9 +43,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services" },
-    { "@type": "ListItem", "position": 3, "name": "Windows", "item": "https://gatesroof.com/services/windows" },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services" },
+    { "@type": "ListItem", "position": 3, "name": "Windows", "item": "https://www.gatesroof.com/services/windows" },
   ],
 };
 

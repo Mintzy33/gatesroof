@@ -5,11 +5,11 @@ import PaintContent from "./content";
 export const metadata: Metadata = {
   title: "Exterior Painting Colorado | Gates Enterprises LLC",
   description: "Professional interior and exterior painting in Colorado. Boost curb appeal and protect your home. Free estimates from Gates Enterprises.",
-  alternates: { canonical: "https://gatesroof.com/services/paint" },
+  alternates: { canonical: "https://www.gatesroof.com/services/paint" },
   openGraph: {
     title: "Exterior Painting Colorado | Gates Enterprises LLC",
     description: "Professional interior and exterior painting in Colorado. Boost curb appeal and protect your home. Free estimates from Gates Enterprises.",
-    url: "https://gatesroof.com/services/paint",
+    url: "https://www.gatesroof.com/services/paint",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Interior and Exterior Painting",
   "name": "Interior and Exterior Painting in Colorado",
   "description": "Professional interior and exterior painting across Colorado's Front Range. Surface preparation, premium paints, and lasting results.",
-  "url": "https://gatesroof.com/services/paint",
-  "provider": { "@id": "https://gatesroof.com/#organization" },
+  "url": "https://www.gatesroof.com/services/paint",
+  "provider": { "@id": "https://www.gatesroof.com/#organization" },
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
@@ -43,9 +43,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services" },
-    { "@type": "ListItem", "position": 3, "name": "Painting", "item": "https://gatesroof.com/services/paint" },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services" },
+    { "@type": "ListItem", "position": 3, "name": "Painting", "item": "https://www.gatesroof.com/services/paint" },
   ],
 };
 

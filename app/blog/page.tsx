@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Roofing Tips & News | Gates Enterprises Blog",
     description:
       "Expert roofing tips, Colorado hail season updates, insurance restoration advice & shingle comparisons from Gates Enterprises.",
-    url: "https://gatesroof.com/blog",
+    url: "https://www.gatesroof.com/blog",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://gatesroof.com/blog",
+    canonical: "https://www.gatesroof.com/blog",
   },
 };
 

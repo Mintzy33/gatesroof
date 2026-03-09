@@ -5,11 +5,11 @@ import RoofReplacementContent from "./content";
 export const metadata: Metadata = {
   title: "Roof Replacement Colorado | Gates Enterprises LLC",
   description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
-  alternates: { canonical: "https://gatesroof.com/services/roof-replacement" },
+  alternates: { canonical: "https://www.gatesroof.com/services/roof-replacement" },
   openGraph: {
     title: "Roof Replacement Colorado | Gates Enterprises LLC",
     description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
-    url: "https://gatesroof.com/services/roof-replacement",
+    url: "https://www.gatesroof.com/services/roof-replacement",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Roof Replacement",
   "name": "Roof Replacement in Colorado",
   "description": "Complete roof replacement services using GAF, CertainTeed, and Malarkey shingle systems. Backed by manufacturer warranties up to 50 years.",
-  "url": "https://gatesroof.com/services/roof-replacement",
-  "provider": {"@id": "https://gatesroof.com/#organization"},
+  "url": "https://www.gatesroof.com/services/roof-replacement",
+  "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"},
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -54,9 +54,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services"},
-    {"@type": "ListItem", "position": 3, "name": "Roof Replacement", "item": "https://gatesroof.com/services/roof-replacement"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services"},
+    {"@type": "ListItem", "position": 3, "name": "Roof Replacement", "item": "https://www.gatesroof.com/services/roof-replacement"}
   ]
 };
 

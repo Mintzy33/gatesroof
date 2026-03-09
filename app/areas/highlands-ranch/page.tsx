@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Highlands Ranch, CO | Gates Enterprises",
   description: "Highlands Ranch roofing company. Roof replacement, hail damage repair, HOA-compliant installations. GAF Master Elite certified. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/highlands-ranch" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
     title: "Roofing Contractor in Highlands Ranch, CO | Gates Enterprises",
     description: "Highlands Ranch roofing company. Roof replacement, hail damage repair, HOA-compliant installations. GAF Master Elite certified. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/highlands-ranch",
+    url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/highlands-ranch",
+  "url": "https://www.gatesroof.com/areas/highlands-ranch",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

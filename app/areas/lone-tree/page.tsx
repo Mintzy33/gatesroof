@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Lone Tree, CO | Gates Enterprises",
   description: "Lone Tree roofing experts. Roof replacement, hail damage repair, siding & gutters. 4x manufacturer certified. Free inspection. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/lone-tree" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/lone-tree" },
   openGraph: {
     title: "Roofing Contractor in Lone Tree, CO | Gates Enterprises",
     description: "Lone Tree roofing experts. Roof replacement, hail damage repair, siding & gutters. 4x manufacturer certified. Free inspection. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/lone-tree",
+    url: "https://www.gatesroof.com/areas/lone-tree",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/lone-tree",
+  "url": "https://www.gatesroof.com/areas/lone-tree",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": { "@type": "PostalAddress", "streetAddress": "1445 Holland St", "addressLocality": "Lakewood", "addressRegion": "CO", "postalCode": "80215", "addressCountry": "US" },

@@ -5,11 +5,11 @@ import InsuranceContent from "./content";
 export const metadata: Metadata = {
   title: "Insurance Restoration | Gates Enterprises LLC",
   description: "Full service insurance restoration for storm damage in Colorado. We work with your insurance company from inspection to completion. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/services/insurance-claims" },
+  alternates: { canonical: "https://www.gatesroof.com/services/insurance-claims" },
   openGraph: {
     title: "Insurance Restoration | Gates Enterprises LLC",
     description: "Full service insurance restoration for storm damage in Colorado. We work with your insurance company from inspection to completion. Call (720) 766-3377.",
-    url: "https://gatesroof.com/services/insurance-claims",
+    url: "https://www.gatesroof.com/services/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Insurance Restoration",
   "name": "Roofing Insurance Restoration in Colorado",
   "description": "Full insurance restoration support from free inspection through adjuster meetings and project completion. We advocate for homeowners to get the coverage they deserve.",
-  "url": "https://gatesroof.com/services/insurance-claims",
-  "provider": {"@id": "https://gatesroof.com/#organization"},
+  "url": "https://www.gatesroof.com/services/insurance-claims",
+  "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
@@ -44,9 +44,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services"},
-    {"@type": "ListItem", "position": 3, "name": "Insurance Restoration", "item": "https://gatesroof.com/services/insurance-claims"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services"},
+    {"@type": "ListItem", "position": 3, "name": "Insurance Restoration", "item": "https://www.gatesroof.com/services/insurance-claims"}
   ]
 };
 

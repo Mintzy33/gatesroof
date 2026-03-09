@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "./blog/posts";
 
-const BASE = "https://gatesroof.com";
+const BASE = "https://www.gatesroof.com";
 
 // All area pages (add new cities here and they auto-appear in sitemap)
 const areas = [

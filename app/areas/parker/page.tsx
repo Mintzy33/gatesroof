@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor Parker CO | Gates Enterprises",
   description: "Parker's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/parker" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
     title: "Roofing Contractor Parker CO | Gates Enterprises",
     description: "Parker's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/parker",
+    url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -22,10 +22,10 @@ const citySchema = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://gatesroof.com/#organization",
+      "@id": "https://www.gatesroof.com/#organization",
       "name": "Gates Enterprises LLC",
-      "image": "https://gatesroof.com/images/gates-enterprises-logo.png",
-      "url": "https://gatesroof.com",
+      "image": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
+      "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
       "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.8 stars.",
@@ -62,13 +62,13 @@ const citySchema = {
         "@type": "OfferCatalog",
         "name": "Roofing and Exterior Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://gatesroof.com/storm-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://gatesroof.com/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://gatesroof.com/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://gatesroof.com/siding" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://gatesroof.com/gutters" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://gatesroof.com/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://gatesroof.com/painting" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://www.gatesroof.com/storm-damage" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://www.gatesroof.com/roof-replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://www.gatesroof.com/roof-repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://www.gatesroof.com/siding" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://www.gatesroof.com/gutters" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://www.gatesroof.com/windows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://www.gatesroof.com/painting" } }
         ]
       },
       "sameAs": [

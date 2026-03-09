@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Federal Heights, CO | Gates Enterprises",
   description: "Federal Heights roofing services. Roof replacement, storm damage repair & insurance restoration. 4.8★ rated Colorado roofer. Free estimate. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/federal-heights" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/federal-heights" },
   openGraph: {
     title: "Roofing Contractor in Federal Heights, CO | Gates Enterprises",
     description: "Federal Heights roofing services. Roof replacement, storm damage repair & insurance restoration. 4.8★ rated Colorado roofer. Free estimate. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/federal-heights",
+    url: "https://www.gatesroof.com/areas/federal-heights",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/federal-heights",
+  "url": "https://www.gatesroof.com/areas/federal-heights",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

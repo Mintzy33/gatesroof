@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Conifer, CO | Gates Enterprises",
   description: "Conifer roofing contractor. Mountain-ready roof replacement, storm damage repair & siding. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/conifer" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/conifer" },
   openGraph: {
     title: "Roofing Contractor in Conifer, CO | Gates Enterprises",
     description: "Conifer roofing contractor. Mountain-ready roof replacement, storm damage repair & siding. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/conifer",
+    url: "https://www.gatesroof.com/areas/conifer",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/conifer",
+  "url": "https://www.gatesroof.com/areas/conifer",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

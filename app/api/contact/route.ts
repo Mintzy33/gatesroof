@@ -126,7 +126,7 @@ export async function POST(req: Request) {
                   <strong>Gates Enterprises LLC</strong><br>
                   Colorado's Front Range Roofing Experts<br>
                   <a href="tel:7207663377" style="color: #2563EB; text-decoration: none;">(720) 766-3377</a> |
-                  <a href="https://gatesroof.com" style="color: #2563EB; text-decoration: none;">gatesroof.com</a>
+                  <a href="https://www.gatesroof.com" style="color: #2563EB; text-decoration: none;">gatesroof.com</a>
                 </p>
               </div>
             </div>

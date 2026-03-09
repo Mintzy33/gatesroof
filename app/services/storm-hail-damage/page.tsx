@@ -5,11 +5,11 @@ import StormContent from "./content";
 export const metadata: Metadata = {
   title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
   description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/services/storm-hail-damage" },
+  alternates: { canonical: "https://www.gatesroof.com/services/storm-hail-damage" },
   openGraph: {
     title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
     description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
-    url: "https://gatesroof.com/services/storm-hail-damage",
+    url: "https://www.gatesroof.com/services/storm-hail-damage",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Storm & Hail Damage Repair",
   "name": "Storm & Hail Damage Roof Repair in Colorado",
   "description": "Expert hail and storm damage assessment, repair, and full replacement. We work directly with your insurance company to maximize your coverage.",
-  "url": "https://gatesroof.com/services/storm-hail-damage",
-  "provider": { "@id": "https://gatesroof.com/#organization" },
+  "url": "https://www.gatesroof.com/services/storm-hail-damage",
+  "provider": { "@id": "https://www.gatesroof.com/#organization" },
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
@@ -47,9 +47,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services" },
-    { "@type": "ListItem", "position": 3, "name": "Storm & Hail Damage", "item": "https://gatesroof.com/services/storm-hail-damage" },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services" },
+    { "@type": "ListItem", "position": 3, "name": "Storm & Hail Damage", "item": "https://www.gatesroof.com/services/storm-hail-damage" },
   ],
 };
 

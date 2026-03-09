@@ -5,11 +5,11 @@ import RepairContent from "./content";
 export const metadata: Metadata = {
   title: "Roof Repair Colorado | Gates Enterprises LLC",
   description: "Fast, reliable roof repairs for leaks, missing shingles, and wind damage. Same week scheduling. Certified Colorado roofers. Free inspections.",
-  alternates: { canonical: "https://gatesroof.com/services/roof-repair" },
+  alternates: { canonical: "https://www.gatesroof.com/services/roof-repair" },
   openGraph: {
     title: "Roof Repair Colorado | Gates Enterprises LLC",
     description: "Fast, reliable roof repairs for leaks, missing shingles, and wind damage. Same week scheduling. Certified Colorado roofers. Free inspections.",
-    url: "https://gatesroof.com/services/roof-repair",
+    url: "https://www.gatesroof.com/services/roof-repair",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Roof Repair",
   "name": "Roof Repair Services in Colorado",
   "description": "Fast, reliable roof repairs for leaks, missing shingles, flashing damage, and wind damage. Same-week scheduling available.",
-  "url": "https://gatesroof.com/services/roof-repair",
-  "provider": {"@id": "https://gatesroof.com/#organization"},
+  "url": "https://www.gatesroof.com/services/roof-repair",
+  "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
@@ -44,9 +44,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services"},
-    {"@type": "ListItem", "position": 3, "name": "Roof Repair", "item": "https://gatesroof.com/services/roof-repair"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services"},
+    {"@type": "ListItem", "position": 3, "name": "Roof Repair", "item": "https://www.gatesroof.com/services/roof-repair"}
   ]
 };
 

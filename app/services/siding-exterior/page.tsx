@@ -5,11 +5,11 @@ import SidingContent from "./content";
 export const metadata: Metadata = {
   title: "Siding Installation Colorado | Gates Enterprises LLC",
   description: "Professional siding installation and repair in Colorado. James Hardie, vinyl, and engineered wood. Free estimates from Gates Enterprises.",
-  alternates: { canonical: "https://gatesroof.com/services/siding-exterior" },
+  alternates: { canonical: "https://www.gatesroof.com/services/siding-exterior" },
   openGraph: {
     title: "Siding Installation Colorado | Gates Enterprises LLC",
     description: "Professional siding installation and repair in Colorado. James Hardie, vinyl, and engineered wood. Free estimates from Gates Enterprises.",
-    url: "https://gatesroof.com/services/siding-exterior",
+    url: "https://www.gatesroof.com/services/siding-exterior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Siding Installation & Repair",
   "name": "Siding & Exterior Services in Colorado",
   "description": "Professional siding installation and repair including James Hardie fiber cement, vinyl, and wood siding. Storm damage siding replacement available.",
-  "url": "https://gatesroof.com/services/siding-exterior",
-  "provider": {"@id": "https://gatesroof.com/#organization"},
+  "url": "https://www.gatesroof.com/services/siding-exterior",
+  "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
@@ -44,9 +44,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services"},
-    {"@type": "ListItem", "position": 3, "name": "Siding & Exterior", "item": "https://gatesroof.com/services/siding-exterior"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services"},
+    {"@type": "ListItem", "position": 3, "name": "Siding & Exterior", "item": "https://www.gatesroof.com/services/siding-exterior"}
   ]
 };
 

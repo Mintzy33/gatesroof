@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Arvada, CO | Gates Enterprises",
   description: "Arvada's trusted roofer. Roof replacement, storm damage repair, siding & gutters. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/arvada" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/arvada" },
   openGraph: {
     title: "Roofing Contractor in Arvada, CO | Gates Enterprises",
     description: "Arvada's trusted roofer. Roof replacement, storm damage repair, siding & gutters. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/arvada",
+    url: "https://www.gatesroof.com/areas/arvada",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/arvada",
+  "url": "https://www.gatesroof.com/areas/arvada",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

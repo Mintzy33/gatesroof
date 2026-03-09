@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Evergreen, CO | Gates Enterprises",
   description: "Evergreen roofing experts. Roof replacement, hail damage repair, siding & gutters. 4x manufacturer certified. Free inspection. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/evergreen" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/evergreen" },
   openGraph: {
     title: "Roofing Contractor in Evergreen, CO | Gates Enterprises",
     description: "Evergreen roofing experts. Roof replacement, hail damage repair, siding & gutters. 4x manufacturer certified. Free inspection. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/evergreen",
+    url: "https://www.gatesroof.com/areas/evergreen",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/evergreen",
+  "url": "https://www.gatesroof.com/areas/evergreen",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": { "@type": "PostalAddress", "streetAddress": "1445 Holland St", "addressLocality": "Lakewood", "addressRegion": "CO", "postalCode": "80215", "addressCountry": "US" },

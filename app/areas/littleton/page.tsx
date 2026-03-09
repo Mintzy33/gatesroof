@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Littleton, CO | Gates Enterprises",
   description: "Littleton roofing services. Roof replacement, storm damage repair & insurance restoration assistance. 7,200+ roofs completed. Free estimate. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/littleton" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
     title: "Roofing Contractor in Littleton, CO | Gates Enterprises",
     description: "Littleton roofing services. Roof replacement, storm damage repair & insurance restoration assistance. 7,200+ roofs completed. Free estimate. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/littleton",
+    url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/littleton",
+  "url": "https://www.gatesroof.com/areas/littleton",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

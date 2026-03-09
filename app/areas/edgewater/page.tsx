@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Edgewater, CO | Gates Enterprises",
   description: "Edgewater roofing company. Expert roof replacement, hail damage repair & gutter installation. Locally trusted. Free inspection. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/edgewater" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/edgewater" },
   openGraph: {
     title: "Roofing Contractor in Edgewater, CO | Gates Enterprises",
     description: "Edgewater roofing company. Expert roof replacement, hail damage repair & gutter installation. Locally trusted. Free inspection. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/edgewater",
+    url: "https://www.gatesroof.com/areas/edgewater",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/edgewater",
+  "url": "https://www.gatesroof.com/areas/edgewater",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {

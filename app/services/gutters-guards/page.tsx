@@ -5,11 +5,11 @@ import GuttersContent from "./content";
 export const metadata: Metadata = {
   title: "Gutter Installation Colorado | Gates Enterprises LLC",
   description: "Seamless gutter installation and gutter guards in Colorado. Protect your home from water damage. Free estimates.",
-  alternates: { canonical: "https://gatesroof.com/services/gutters-guards" },
+  alternates: { canonical: "https://www.gatesroof.com/services/gutters-guards" },
   openGraph: {
     title: "Gutter Installation Colorado | Gates Enterprises LLC",
     description: "Seamless gutter installation and gutter guards in Colorado. Protect your home from water damage. Free estimates.",
-    url: "https://gatesroof.com/services/gutters-guards",
+    url: "https://www.gatesroof.com/services/gutters-guards",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -23,8 +23,8 @@ const serviceSchema = {
   "serviceType": "Gutter Installation & Guards",
   "name": "Gutter & Gutter Guard Installation in Colorado",
   "description": "Seamless gutter installation, gutter guard systems, and gutter repair. Protect your home from water damage with properly functioning gutters.",
-  "url": "https://gatesroof.com/services/gutters-guards",
-  "provider": {"@id": "https://gatesroof.com/#organization"},
+  "url": "https://www.gatesroof.com/services/gutters-guards",
+  "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
@@ -44,9 +44,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gatesroof.com"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gatesroof.com/services"},
-    {"@type": "ListItem", "position": 3, "name": "Gutters & Guards", "item": "https://gatesroof.com/services/gutters-guards"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gatesroof.com"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.gatesroof.com/services"},
+    {"@type": "ListItem", "position": 3, "name": "Gutters & Guards", "item": "https://www.gatesroof.com/services/gutters-guards"}
   ]
 };
 

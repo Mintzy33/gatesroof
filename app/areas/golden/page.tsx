@@ -5,11 +5,11 @@ import CityContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Contractor in Golden, CO | Gates Enterprises",
   description: "Golden roofing experts. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated with 7,200+ roofs. Free estimate. Call (720) 766-3377.",
-  alternates: { canonical: "https://gatesroof.com/areas/golden" },
+  alternates: { canonical: "https://www.gatesroof.com/areas/golden" },
   openGraph: {
     title: "Roofing Contractor in Golden, CO | Gates Enterprises",
     description: "Golden roofing experts. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated with 7,200+ roofs. Free estimate. Call (720) 766-3377.",
-    url: "https://gatesroof.com/areas/golden",
+    url: "https://www.gatesroof.com/areas/golden",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
@@ -21,7 +21,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
   "name": "Gates Enterprises LLC",
-  "url": "https://gatesroof.com/areas/golden",
+  "url": "https://www.gatesroof.com/areas/golden",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
