@@ -52,6 +52,7 @@ const nextConfig: NextConfig = {
       { source: "/residential-services", destination: "/services/roof-replacement", permanent: true },
       { source: "/commercial-services", destination: "/services/roof-replacement", permanent: true },
       // Old FAQ format
+      { source: "/roof-faq", destination: "/", permanent: true },
       { source: "/roof-faq/roofblog/:path*", destination: "/blog", permanent: true },
       { source: "/roof-faq/:id", destination: "/", permanent: true },
       // Old blog posts that were indexed but no longer exist
