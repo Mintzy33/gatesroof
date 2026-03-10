@@ -40,9 +40,9 @@ export default function Footer() {
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Contact</h3>
-            <a href="tel:7207663377" style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>(720) 766-3377</a>
-            <a href="mailto:info@gatesroof.com" style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>info@gatesroof.com</a>
-            <Link href="/contact" style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:ACCENT, textDecoration:"none", marginBottom:12, fontWeight:600 }}>Request a Free Inspection & Estimate →</Link>
+            <p style={{ margin:"0 0 16px 0" }}><a href="tel:7207663377" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none" }}>(720) 766-3377</a></p>
+            <p style={{ margin:"0 0 16px 0" }}><a href="mailto:info@gatesroof.com" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none" }}>info@gatesroof.com</a></p>
+            <p style={{ margin:"0 0 16px 0" }}><Link href="/contact" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:ACCENT, textDecoration:"none", fontWeight:600 }}>Request a Free Inspection & Estimate →</Link></p>
           </div>
         </div>
         <div className="footer-bottom" style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
