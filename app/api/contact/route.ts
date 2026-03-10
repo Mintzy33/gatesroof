@@ -1,7 +1,9 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 interface ContactForm {
   name: string;
@@ -53,7 +55,7 @@ export async function POST(req: Request) {
     });
 
     // Send notification email to the business
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "Gates Enterprises <noreply@gatesroof.com>",
       to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
       subject: `New Lead: ${name.trim()} — ${serviceLabel}`,
@@ -105,7 +107,7 @@ export async function POST(req: Request) {
 
     // Send confirmation email to the customer (only if they provided an email)
     if (email) {
-      await resend.emails.send({
+      await getResend().emails.send({
         from: "Gates Enterprises <noreply@gatesroof.com>",
         to: [email],
         subject: "We received your request — Gates Enterprises",
