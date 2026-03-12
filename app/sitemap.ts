@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "./blog/posts";
+import { cities as allCities, services as allServices } from "../lib/service-areas-data";
 
 const BASE = "https://www.gatesroof.com";
 
@@ -92,5 +93,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...home, ...servicePages, ...areaPages, ...utility, ...blog];
+  // Service × City programmatic pages (400+)
+  const serviceCityPages: MetadataRoute.Sitemap = allServices.flatMap((svc) =>
+    allCities.map((city) => ({
+      url: `${BASE}/services/${svc.slug}/${city.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))
+  );
+
+  return [...home, ...servicePages, ...areaPages, ...utility, ...blog, ...serviceCityPages];
 }
