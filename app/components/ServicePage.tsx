@@ -22,10 +22,12 @@ interface ServicePageProps {
   faqs: { q: string; a: string }[];
   ctaTitle: string;
   ctaSubtitle: string;
+  serviceAreasSlug?: string;
+  serviceAreasLabel?: string;
 }
 
 export default function ServicePageLayout({
-  breadcrumb, h1, subheadline, heroCopy, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle
+  breadcrumb, h1, subheadline, heroCopy, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle, serviceAreasSlug, serviceAreasLabel
 }: ServicePageProps) {
   return (
     <div style={{ background: WHITE }}>
@@ -108,6 +110,26 @@ export default function ServicePageLayout({
           ))}
         </div>
       </section>
+
+      {serviceAreasSlug && (
+        <section style={{ padding: "64px 24px", background: WHITE }}>
+          <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>SERVICE AREAS</span>
+            <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>{serviceAreasLabel || breadcrumb} Service Areas</h2>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>We provide {(serviceAreasLabel || breadcrumb).toLowerCase()} across the Colorado Front Range.</p>
+            <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
+              {[
+                { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" },
+                { n: "Parker", s: "parker" }, { n: "Centennial", s: "centennial" }, { n: "Arvada", s: "arvada" },
+                { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
+                { n: "Littleton", s: "littleton" },
+              ].map((c) => (
+                <Link key={c.s} href={`/services/${serviceAreasSlug}/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTA title={ctaTitle} subtitle={ctaSubtitle} />
       <Footer />

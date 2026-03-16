@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 300+ reviews. Free inspections. Call (720) 766-3377.",
+  description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. 7,200+ roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
     title: "Lakewood Roofing Contractor | Gates Enterprises LLC",
-    description: "Lakewood's #1 roofing contractor. 4x manufacturer certified, 7,200+ roofs, 4.8★ from 300+ reviews. Free inspections. Call (720) 766-3377.",
+    description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. 7,200+ roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -56,6 +56,8 @@ export default function RepairContent() {
         { q: "Do you repair flat roofs?", a: "Yes. We handle both pitched and flat roof repairs, including TPO, EPDM, and modified bitumen systems. Whether it's a residential low slope section or a full flat roof, we'll get it sorted." },
         { q: "Is a roof leak covered by insurance?", a: "It depends on the cause. Storm damage is typically covered. Wear and tear or deferred maintenance is not. We can inspect and help you determine whether it makes sense to file." },
       ]}
+      serviceAreasSlug="roof-repair"
+      serviceAreasLabel="Roof Repair"
       ctaTitle="Got a roof leak?"
       ctaSubtitle="Call Gates Enterprises at (720) 766-3377. We'll get on your roof fast, find the problem, and fix it right. Emergency service available."
     />

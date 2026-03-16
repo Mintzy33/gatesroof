@@ -70,6 +70,32 @@ export default function CityContent() {
         </div>
       </section>
       <CTA title="Need a roofer in Centennial?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We offer the premium warranties and HOA expertise that Centennial homeowners expect." />
+
+      {/* ─── SERVICES IN CENTENNIAL ─── */}
+      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR SERVICES</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Services in Centennial, CO</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Gates Enterprises provides a full range of roofing and exterior services in Centennial.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            {[
+              { n: "Roof Replacement", s: "roof-replacement" },
+              { n: "Storm & Hail Damage Repair", s: "storm-hail-damage" },
+              { n: "Roof Repair", s: "roof-repair" },
+              { n: "Siding Installation", s: "siding" },
+              { n: "Gutter Installation", s: "gutters" },
+              { n: "Roof Inspection", s: "roof-inspection" },
+              { n: "Insurance Claims", s: "insurance-claims" },
+              { n: "Metal Roofing", s: "metal-roofing" },
+            ].map((svc) => (
+              <Link key={svc.s} href={`/services/${svc.s}/centennial`} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><polyline points="9 18 15 12 9 6" /></svg>
+                {svc.n}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );

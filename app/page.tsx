@@ -271,6 +271,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COLORADO SERVICE AREAS HUB */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 48px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>COLORADO SERVICE AREAS</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Roofing Services Across the Front Range</h2>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 520, margin: "0 auto", lineHeight: 1.7 }}>65+ cities served. Find your city and explore our services.</p>
+            </div>
+          </ScrollReveal>
+          <div className="csa-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
+            {[
+              { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" }, { n: "Arvada", s: "arvada" },
+              { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Centennial", s: "centennial" }, { n: "Parker", s: "parker" },
+              { n: "Littleton", s: "littleton" }, { n: "Broomfield", s: "broomfield" }, { n: "Golden", s: "golden" }, { n: "Highlands Ranch", s: "highlands-ranch" },
+              { n: "Englewood", s: "englewood" }, { n: "Castle Rock", s: "castle-rock" }, { n: "Commerce City", s: "commerce-city" }, { n: "Northglenn", s: "northglenn" },
+              { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Federal Heights", s: "federal-heights" }, { n: "Edgewater", s: "edgewater" }, { n: "Conifer", s: "conifer" },
+            ].map((c) => (
+              <div key={c.s} style={{ background: WHITE, borderRadius: 16, padding: "20px 18px", border: "1px solid rgba(13,33,55,0.06)", boxShadow: "0 2px 8px rgba(13,33,55,0.04)" }}>
+                <Link href={`/areas/${c.s}`} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, textDecoration: "none", display: "block", marginBottom: 10 }}>{c.n}</Link>
+                <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 4 }}>
+                  {[
+                    { l: "Roof Replacement", sl: "roof-replacement" },
+                    { l: "Storm Damage", sl: "storm-hail-damage" },
+                    { l: "Roof Repair", sl: "roof-repair" },
+                    { l: "Siding", sl: "siding" },
+                    { l: "Gutters", sl: "gutters" },
+                  ].map((svc) => (
+                    <Link key={svc.sl} href={`/services/${svc.sl}/${c.s}`} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, color: ACCENT, textDecoration: "none", padding: "3px 8px", borderRadius: 6, background: "rgba(37,99,235,0.06)", fontWeight: 500 }}>{svc.l}</Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
@@ -336,7 +373,9 @@ export default function Home() {
         .service-card:hover p { color: rgba(255,255,255,0.7) !important; }
         .service-card:hover .service-icon { background: rgba(255,255,255,0.1) !important; }
         .service-card:hover .service-icon svg { stroke: #FFFFFF !important; }
+        .csa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
         @media (max-width: 768px) {
+          .csa-grid { grid-template-columns: 1fr 1fr !important; }
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }
           .hero-badge { margin-left: auto; margin-right: auto; margin-bottom: 18px !important; }
@@ -360,6 +399,7 @@ export default function Home() {
           .home-cta-btns a { text-align: center !important; }
         }
         @media (max-width: 400px) {
+          .csa-grid { grid-template-columns: 1fr !important; }
           .hero-wrap { padding: 90px 16px 24px !important; }
           .hero-h1 { font-size: 30px !important; }
           .services-grid { grid-template-columns: 1fr !important; }
