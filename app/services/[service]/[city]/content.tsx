@@ -10,6 +10,7 @@ import {
   getNearbyCities,
 } from "../../../../lib/service-areas-data";
 import type { CityData, ServiceData } from "../../../../lib/service-areas-data";
+import LocalSEOInfo from "../../../components/LocalSEOInfo";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -543,6 +544,8 @@ export default function ServiceCityContent({
           </div>
         </div>
       </section>
+
+      <LocalSEOInfo citySlug={city.slug} cityName={city.city} />
 
       <CTA
         title={`Need ${service.service.toLowerCase()} in ${city.city}?`}

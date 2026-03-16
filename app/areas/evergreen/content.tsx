@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import ReviewCarousel from "../../components/ReviewCarousel";
 
+import LocalSEOInfo from "../../components/LocalSEOInfo";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -443,6 +444,8 @@ export default function CityContent() {
           </div>
         </div>
       </section>
+      <LocalSEOInfo citySlug="evergreen" cityName="Evergreen" showMapsLink />
+
       <Footer />
 
       {/* ─── RESPONSIVE STYLES ─── */}

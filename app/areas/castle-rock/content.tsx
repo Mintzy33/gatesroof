@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
+import LocalSEOInfo from "../../components/LocalSEOInfo";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";
@@ -96,6 +97,8 @@ export default function CityContent() {
           </div>
         </div>
       </section>
+      <LocalSEOInfo citySlug="castle-rock" cityName="Castle Rock" showMapsLink />
+
       <Footer />
     </div>
   );

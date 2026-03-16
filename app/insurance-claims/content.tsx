@@ -393,7 +393,7 @@ export default function InsuranceClaimsContent() {
       <section style={{ padding: "32px 24px", background: WHITE, borderTop: "1px solid rgba(13,33,55,0.06)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const }}>
-            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We work with your insurance company on your behalf but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
+            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We advocate on your behalf but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
           </p>
         </div>
       </section>
