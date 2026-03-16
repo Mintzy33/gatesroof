@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
       { source: "/blog/pros-and-cons-of-different-roofing-styles-in-colorado-which-suits-you", destination: "/blog", permanent: true },
       { source: "/blog/more-essential-tips-for-finding-a-reliable-roofer-in-denver", destination: "/blog", permanent: true },
       { source: "/blog/red-flags-common-roofing-scams-targeting-colorado-residents", destination: "/blog", permanent: true },
-      { source: "/blog/roof-claims-on-your-homeowners-insurance:path*", destination: "/blog", permanent: true },
+      { source: "/blog/roof-claims-on-your-homeowners-insurance/:path*", destination: "/blog", permanent: true },
       // Old service URLs → correct service pages
       { source: "/services/roofing", destination: "/services/roof-replacement", permanent: true },
       { source: "/services/gutters", destination: "/services/gutters/lakewood", permanent: true },
