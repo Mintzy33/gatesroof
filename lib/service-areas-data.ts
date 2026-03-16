@@ -11,6 +11,8 @@ export interface CityData {
   population?: number;
   hailRisk: "high" | "moderate" | "low";
   neighborhoods?: string[];
+  zipCodes?: string[];
+  landmarks?: string[];
 }
 
 export interface ServiceData {
@@ -37,6 +39,8 @@ export const cities: CityData[] = [
     population: 715522,
     hailRisk: "moderate",
     neighborhoods: ["Capitol Hill", "Highland", "Park Hill", "Washington Park", "Cherry Creek", "RiNo", "Stapleton", "Green Valley Ranch", "Montbello", "Baker"],
+    zipCodes: ["80202", "80203", "80204", "80205", "80206", "80209", "80210", "80211", "80212", "80218", "80220"],
+    landmarks: ["Coors Field", "Denver Art Museum", "City Park"],
   },
   {
     city: "Aurora",
@@ -48,6 +52,8 @@ export const cities: CityData[] = [
     population: 386261,
     hailRisk: "high",
     neighborhoods: ["Southlands", "Tallyn's Reach", "Murphy Creek", "Saddle Rock", "Quincy Reservoir", "Original Aurora", "Del Mar Parkway", "Fitzsimons"],
+    zipCodes: ["80010", "80011", "80012", "80013", "80014", "80015", "80016", "80017"],
+    landmarks: ["Aurora Reservoir", "Stanley Marketplace", "Cherry Creek State Park"],
   },
   {
     city: "Lakewood",
@@ -59,6 +65,8 @@ export const cities: CityData[] = [
     population: 155984,
     hailRisk: "moderate",
     neighborhoods: ["Green Mountain", "Belmar", "Union Square", "Bear Creek", "Alameda Gateway", "Eiber", "Morse Park"],
+    zipCodes: ["80214", "80215", "80226", "80227", "80228", "80232"],
+    landmarks: ["Red Rocks Amphitheatre", "Colorado Mills Mall", "Bear Creek Lake Park"],
   },
   {
     city: "Arvada",
@@ -70,6 +78,8 @@ export const cities: CityData[] = [
     population: 124402,
     hailRisk: "moderate",
     neighborhoods: ["Olde Town", "Ralston Valley", "West Woods", "Leyden Rock", "Candelas", "Arvada Plaza"],
+    zipCodes: ["80002", "80003", "80004", "80005"],
+    landmarks: ["Olde Town Arvada", "Ralston Creek Trail", "Apex Center"],
   },
   {
     city: "Westminster",
@@ -81,6 +91,8 @@ export const cities: CityData[] = [
     population: 116317,
     hailRisk: "moderate",
     neighborhoods: ["Bradburn Village", "Countryside", "Shaw Heights", "Church Ranch", "Hyland Village", "Sheridan Green"],
+    zipCodes: ["80003", "80020", "80021", "80030", "80031", "80234"],
+    landmarks: ["Butterfly Pavilion", "Westminster Promenade", "Standley Lake"],
   },
   {
     city: "Thornton",
@@ -92,6 +104,8 @@ export const cities: CityData[] = [
     population: 141867,
     hailRisk: "high",
     neighborhoods: ["Todd Creek", "Thorncreek", "Eastlake", "Hunters Glen", "Trail Creek", "North Creek"],
+    zipCodes: ["80229", "80233", "80241", "80260", "80602"],
+    landmarks: ["Carpenter Park", "Margaret W. Carpenter Recreation Center", "Thornton Town Center"],
   },
   {
     city: "Broomfield",
@@ -103,6 +117,8 @@ export const cities: CityData[] = [
     population: 74112,
     hailRisk: "moderate",
     neighborhoods: ["Anthem", "Broadlands", "McKay Landing", "Interlocken", "Wildgrass"],
+    zipCodes: ["80020", "80021", "80023"],
+    landmarks: ["Flatirons Crossing Mall", "Broomfield Bay Aquatic Park", "Paul Derda Recreation Center"],
   },
   {
     city: "Northglenn",
@@ -114,6 +130,8 @@ export const cities: CityData[] = [
     population: 39286,
     hailRisk: "moderate",
     neighborhoods: ["Northglenn Marketplace", "Malley Heights", "Croke Reservoir", "Huron Park"],
+    zipCodes: ["80233", "80234", "80241"],
+    landmarks: ["Northglenn Marketplace", "E.B. Rains Jr. Memorial Park", "D.L. Parsons Theatre"],
   },
   {
     city: "Federal Heights",
@@ -125,6 +143,8 @@ export const cities: CityData[] = [
     population: 14382,
     hailRisk: "moderate",
     neighborhoods: ["Federal Center", "South Federal Heights", "North Federal Heights"],
+    zipCodes: ["80260"],
+    landmarks: ["Water World", "Federal Heights Recreation Center"],
   },
   {
     city: "Commerce City",
@@ -136,6 +156,8 @@ export const cities: CityData[] = [
     population: 62539,
     hailRisk: "high",
     neighborhoods: ["Reunion", "Buffalo Run", "Tower Road", "Derby", "Rose Hill"],
+    zipCodes: ["80022", "80037", "80640"],
+    landmarks: ["Dick's Sporting Goods Park", "Rocky Mountain Arsenal Wildlife Refuge"],
   },
   {
     city: "Brighton",
@@ -147,6 +169,8 @@ export const cities: CityData[] = [
     population: 41218,
     hailRisk: "high",
     neighborhoods: ["Bromley Park", "Prairie Center", "Brighton Crossings", "Longs Peak"],
+    zipCodes: ["80601", "80602", "80603"],
+    landmarks: ["Barr Lake State Park", "Brighton Oasis Family Aquatic Park"],
   },
   {
     city: "Henderson",
@@ -158,6 +182,8 @@ export const cities: CityData[] = [
     population: 12000,
     hailRisk: "high",
     neighborhoods: ["Riverdale", "Henderson Farms", "E-470 Corridor"],
+    zipCodes: ["80640"],
+    landmarks: ["Mile High Greyhound Park", "E-470 Corridor"],
   },
   {
     city: "Littleton",
@@ -169,6 +195,8 @@ export const cities: CityData[] = [
     population: 46208,
     hailRisk: "moderate",
     neighborhoods: ["Downtown Littleton", "Ketring Park", "Southbridge", "Heritage Village", "Progress Park"],
+    zipCodes: ["80120", "80121", "80123", "80125", "80126", "80127", "80128"],
+    landmarks: ["Historic Downtown Littleton", "Hudson Gardens", "Chatfield State Park"],
   },
   {
     city: "Englewood",
@@ -180,6 +208,8 @@ export const cities: CityData[] = [
     population: 35515,
     hailRisk: "moderate",
     neighborhoods: ["Baker", "Bates-Logan", "Cinderella City", "Fort Logan"],
+    zipCodes: ["80110", "80111", "80112", "80113"],
+    landmarks: ["CityCenter Englewood", "Pirates Cove Water Park", "Belleview Park"],
   },
   {
     city: "Sheridan",
@@ -191,6 +221,8 @@ export const cities: CityData[] = [
     population: 6358,
     hailRisk: "moderate",
     neighborhoods: ["Fort Logan", "Sheridan Estates"],
+    zipCodes: ["80110", "80236"],
+    landmarks: ["Sheridan Recreation Center", "Fort Logan National Cemetery"],
   },
   {
     city: "Centennial",
@@ -202,6 +234,8 @@ export const cities: CityData[] = [
     population: 108418,
     hailRisk: "high",
     neighborhoods: ["Smoky Hill", "Piney Creek", "Walnut Hills", "Southglenn", "The Streets at SouthGlenn", "Cherry Knolls"],
+    zipCodes: ["80015", "80016", "80111", "80112", "80121", "80122"],
+    landmarks: ["Park Meadows Mall", "Centennial Center Park", "Streets at SouthGlenn"],
   },
   {
     city: "Highlands Ranch",
@@ -213,6 +247,8 @@ export const cities: CityData[] = [
     population: 105026,
     hailRisk: "high",
     neighborhoods: ["Backcountry", "Westridge", "Eastridge", "Northridge", "Highlands Point", "Town Center"],
+    zipCodes: ["80126", "80129", "80130", "80163"],
+    landmarks: ["Highlands Ranch Mansion", "Civic Green Park", "Wildcat Mountain"],
   },
   {
     city: "Parker",
@@ -224,6 +260,8 @@ export const cities: CityData[] = [
     population: 57706,
     hailRisk: "high",
     neighborhoods: ["Stonegate", "Stroh Ranch", "Idyllwilde", "Canterberry", "Pine Creek", "Motsenbocker"],
+    zipCodes: ["80134", "80138"],
+    landmarks: ["Parker Arts", "Mainstreet Center", "Salisbury Equestrian Park"],
   },
   {
     city: "Castle Rock",
@@ -235,6 +273,8 @@ export const cities: CityData[] = [
     population: 73158,
     hailRisk: "high",
     neighborhoods: ["The Meadows", "Castle Oaks", "Crystal Valley", "Founders Village", "Plum Creek"],
+    zipCodes: ["80104", "80108", "80109"],
+    landmarks: ["Castle Rock Outlets", "Philip S. Miller Park", "Festival Park"],
   },
   {
     city: "Castle Pines",

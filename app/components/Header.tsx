@@ -60,6 +60,7 @@ export default function Header() {
     { l: "Gallery", h: "/gallery" },
     { l: "Reviews", h: "/reviews" },
     { l: "Blog", h: "/blog" },
+    { l: "FAQ", h: "/faq" },
     { l: "Contact", h: "/contact" },
   ];
 
