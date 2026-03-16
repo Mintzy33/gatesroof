@@ -45,6 +45,9 @@ const services = [
   "paint",
 ];
 
+// Standalone landing pages
+const landingPages = ["insurance-claims", "impact-resistant-shingles"];
+
 // Static utility pages
 const utilityPages = ["about", "blog", "contact", "gallery", "reviews"];
 
@@ -77,6 +80,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: ["lakewood", "denver", "aurora", "arvada"].includes(a) ? 0.8 : 0.7,
   }));
 
+  // Landing pages
+  const landing: MetadataRoute.Sitemap = landingPages.map((p) => ({
+    url: `${BASE}/${p}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
   // Utility pages
   const utility: MetadataRoute.Sitemap = utilityPages.map((p) => ({
     url: `${BASE}/${p}`,
@@ -103,5 +114,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...home, ...servicePages, ...areaPages, ...utility, ...blog, ...serviceCityPages];
+  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...blog, ...serviceCityPages];
 }
