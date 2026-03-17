@@ -36,8 +36,12 @@ const nextConfig: NextConfig = {
       { source: "/service-areas/wheat-ridge-co", destination: "/areas/wheat-ridge", permanent: true },
       // Out-of-state pages that were indexed (redirect to homepage)
       { source: "/service-areas/las-vegas-nv", destination: "/", permanent: true },
+      { source: "/service-areas/henderson-nv", destination: "/", permanent: true },
       { source: "/service-areas/enterprise-nv", destination: "/", permanent: true },
       { source: "/service-areas/saint-paul-mn", destination: "/", permanent: true },
+      { source: "/service-areas/minneapolis-mn", destination: "/", permanent: true },
+      // Old about page
+      { source: "/about-us", destination: "/about", permanent: true },
       // Catch-all for any other old service-areas URLs
       { source: "/service-areas/:slug", destination: "/areas/:slug", permanent: true },
       // Old service index pages
