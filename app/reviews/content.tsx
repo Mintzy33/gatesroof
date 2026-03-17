@@ -244,7 +244,7 @@ export default function ReviewsContent() {
             What Homeowners Say
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.7)", maxWidth: 550, margin: "0 auto 28px", lineHeight: 1.75 }}>
-            293+ five star reviews across Colorado&apos;s Front Range
+            300+ five star reviews across Colorado&apos;s Front Range
           </p>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 8 }}>
             <div style={{ display: "flex", gap: 4 }}>
@@ -316,7 +316,7 @@ export default function ReviewsContent() {
       <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: NAVY }}>
         <div className="rv-stats" style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" as const }}>
           {[
-            { end: 293, suffix: "+", label: "Five Star Reviews" },
+            { end: 301, suffix: "+", label: "Five Star Reviews" },
             { end: 0, suffix: "", label: "Average Rating", static: "4.8" },
             { end: 10, suffix: "+", label: "Years Serving Colorado" },
             { end: 7204, suffix: "+", label: "Roofs Completed" },
@@ -339,7 +339,7 @@ export default function ReviewsContent() {
       <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG, textAlign: "center" as const }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "0 0 16px", lineHeight: 1.1 }}>
-            Ready to Join 293+ Happy Homeowners?
+            Ready to Join 300+ Happy Homeowners?
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: TEXT_LIGHT, margin: "0 0 36px", lineHeight: 1.75 }}>
             Schedule your free roof inspection today. No strings attached.
@@ -372,10 +372,10 @@ export default function ReviewsContent() {
               "@type": "AggregateRating",
               ratingValue: "4.8",
               bestRating: "5",
-              ratingCount: "293",
-              reviewCount: "293",
+              ratingCount: "301",
+              reviewCount: "301",
             },
-            url: "https://gatesroof.vercel.app/reviews",
+            url: "https://www.gatesroof.com/reviews",
           }),
         }}
       />
