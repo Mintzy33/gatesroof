@@ -547,6 +547,45 @@ export default function ServiceCityContent({
 
       <LocalSEOInfo citySlug={city.slug} cityName={city.city} />
 
+      {/* ── Other Services in This City ── */}
+      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>ALL SERVICES</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>
+            Other Services in {city.city}, CO
+          </h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>
+            Gates Enterprises provides a full range of roofing and exterior services in {city.city}.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            {services.filter((s) => s.slug !== service.slug).map((svc) => (
+              <Link
+                key={svc.slug}
+                href={`/services/${svc.slug}/${city.slug}`}
+                style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><polyline points="9 18 15 12 9 6" /></svg>
+                {svc.service} in {city.city}
+              </Link>
+            ))}
+          </div>
+          <div style={{ marginTop: 24, display: "flex", gap: 16, flexWrap: "wrap" }}>
+            <Link
+              href={`/services/${service.parentSlug}`}
+              style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}
+            >
+              ← All {service.service} Locations
+            </Link>
+            <Link
+              href={`/areas/${city.slug}`}
+              style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}
+            >
+              ← {city.city} Main Page
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTA
         title={`Need ${service.service.toLowerCase()} in ${city.city}?`}
         subtitle={`Call Gates Enterprises at (720) 766-3377 for a free inspection and estimate. Quadruple manufacturer certified. 301 Google reviews, 4.8 stars. Serving ${city.city} and all of ${city.county} County.`}
