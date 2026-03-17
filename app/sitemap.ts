@@ -33,16 +33,14 @@ const areas = [
   "evergreen",
 ];
 
-// All service pages
-const services = [
+// Service parent pages (the main /services/X pages)
+const serviceParents = [
   "roof-replacement",
   "storm-hail-damage",
   "roof-repair",
   "siding-exterior",
   "gutters-guards",
   "insurance-claims",
-  "windows",
-  "paint",
 ];
 
 // Standalone landing pages
@@ -64,8 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Service pages
-  const servicePages: MetadataRoute.Sitemap = services.map((s) => ({
+  // Service parent pages
+  const servicePages: MetadataRoute.Sitemap = serviceParents.map((s) => ({
     url: `${BASE}/services/${s}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
