@@ -20,4 +20,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://gatesroof.com/sitemap.xml
+Sitemap: https://www.gatesroof.com/sitemap.xml
