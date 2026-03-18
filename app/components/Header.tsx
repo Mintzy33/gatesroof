@@ -15,6 +15,7 @@ const SERVICE_LINKS = [
   { l: "Windows", h: "/services/windows" },
   { l: "Paint", h: "/services/paint" },
   { l: "Insurance Restoration", h: "/services/insurance-claims" },
+  { l: "Free Tools", h: "/tools" },
 ];
 
 export default function Header() {
