@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import CityContent from "./content";
+import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor in Highlands Ranch, CO | Gates Enterprises",
@@ -34,16 +35,22 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.5500, "longitude": -104.9697 },
   "areaServed": { "@type": "City", "name": "Highlands Ranch", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "300", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "301", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]
 };
 
+
+const areaBreadcrumbs = cityBreadcrumb("Highlands Ranch", "highlands-ranch");
+const areaFaqs = faqSchema(cityFaqItems("Highlands Ranch"));
+
 export default function Page() {
   return (
     <>
       <Script id="city-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+            <Script id="highlands-ranch-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
+      <Script id="highlands-ranch-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqs) }} />
       <CityContent />
     </>
   );

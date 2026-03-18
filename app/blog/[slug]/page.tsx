@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { blogPosts } from "../posts";
 import BlogPostLayout from "../../components/BlogPostLayout";
+import { blogPostingSchema, breadcrumbSchema } from "../../../lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,14 +25,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `https://gatesroof.com/blog/${post.slug}`,
+      url: `https://www.gatesroof.com/blog/${post.slug}`,
       siteName: "Gates Enterprises LLC",
       locale: "en_US",
       type: "article",
       publishedTime: post.publishDate,
+      ...(post.coverImage ? { images: [{ url: `https://www.gatesroof.com${post.coverImage.src}`, width: post.coverImage.width, height: post.coverImage.height, alt: post.coverImage.alt }] } : {}),
     },
     alternates: {
-      canonical: `https://gatesroof.com/blog/${post.slug}`,
+      canonical: `https://www.gatesroof.com/blog/${post.slug}`,
     },
   };
 }
@@ -52,41 +54,32 @@ export default async function BlogPostPage({ params }: Props) {
     .slice(0, 4)
     .map((p) => ({ slug: p.slug, title: p.title, category: p.category, readTime: p.readTime }));
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.metaTitle,
+  const blogSchema = blogPostingSchema({
+    title: post.metaTitle,
     description: post.metaDescription,
-    datePublished: post.publishDate,
-    dateModified: post.publishDate,
-    author: {
-      "@type": "Organization",
-      name: "Gates Enterprises LLC",
-      url: "https://www.gatesroof.com",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Gates Enterprises LLC",
-      url: "https://www.gatesroof.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://gatesroof.com/blog/${post.slug}`,
-    },
-    keywords: post.targetKeyword,
-    articleSection: post.category,
-  };
+    slug: post.slug,
+    publishDate: post.publishDate,
+    category: post.category,
+    keyword: post.targetKeyword,
+  });
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.gatesroof.com" },
+    { name: "Blog", url: "https://www.gatesroof.com/blog" },
+    { name: post.title, url: `https://www.gatesroof.com/blog/${post.slug}` },
+  ]);
 
   return (
     <>
       <Script
-        id={`article-schema-${post.slug}`}
+        id={`blog-schema-${post.slug}`}
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <Script
+        id={`breadcrumb-schema-${post.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <BlogPostLayout
         title={post.title}
@@ -97,6 +90,7 @@ export default async function BlogPostPage({ params }: Props) {
         internalLinks={post.internalLinks}
         slug={post.slug}
         relatedPosts={related}
+        coverImage={post.coverImage}
       />
     </>
   );
