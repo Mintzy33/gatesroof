@@ -11,6 +11,7 @@ import {
 } from "../../../../lib/service-areas-data";
 import type { CityData, ServiceData } from "../../../../lib/service-areas-data";
 import LocalSEOInfo from "../../../components/LocalSEOInfo";
+import HailScoreCard from "../../../components/HailScoreCard";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -544,6 +545,13 @@ export default function ServiceCityContent({
           </div>
         </div>
       </section>
+
+      <HailScoreCard
+        citySlug={city.slug}
+        cityName={city.city}
+        serviceSlug={service.slug}
+        serviceName={service.service}
+      />
 
       <LocalSEOInfo citySlug={city.slug} cityName={city.city} />
 

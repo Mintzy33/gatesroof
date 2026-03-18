@@ -31,6 +31,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min read",
     category: "Roofing Materials",
     excerpt: "Colorado homeowners pay some of the highest hail-related insurance premiums in the country. Class 4 impact resistant shingles cost 10 to 20 percent more than standard shingles, but the insurance savings and hail protection often make them the smarter long-term investment.",
+    coverImage: { src: "/images/blog/gaf-timberline-hdz-shingles-installation.webp", alt: "GAF Timberline HDZ shingles loaded for installation by Gates Enterprises in Colorado", width: 1200, height: 899 },
     content: [
       "If you are getting a new roof in Colorado, someone has probably mentioned Class 4 impact resistant shingles. Maybe your insurance agent brought them up. Maybe your contractor suggested the upgrade. Maybe you saw the price difference on an estimate and wondered if it was worth paying more.",
       "The short answer: for most Colorado homeowners, yes. The longer answer involves some math, some insurance policy details, and a closer look at what these shingles actually do when hailstones start falling. This guide breaks down everything you need to know so you can make the right call for your home and your budget.",
@@ -55,6 +56,7 @@ export const blogPosts: BlogPost[] = [
       "To get the discount, you typically need to provide your insurance company with documentation showing that Class 4 rated shingles were installed. Your contractor should provide a certificate of completion or a manufacturer's warranty document that confirms the impact rating. Keep copies of everything [LINK: insurance-claims].",
 
       "Best Class 4 Shingle Brands for Colorado",
+      "[IMAGE: /images/blog/gaf-master-elite-certification-training.webp | Gates Enterprises team at GAF Master Elite certification training in Colorado | 1600 | 1200]",
       "Not all Class 4 shingles are created equal. Each major manufacturer takes a different approach to achieving impact resistance, and the differences matter for Colorado homeowners.",
       "GAF Timberline HDZ is one of the most popular choices in Colorado. GAF uses a proprietary StrikeGuard layer, a flexible polymer-modified asphalt that absorbs impact energy without cracking. The HDZ line carries a Class 4 rating and comes with LayerLock technology for wind resistance up to 130 mph. It is widely available, competitively priced, and backed by GAF's strong warranty program.",
       "Owens Corning Duration FLEX is built with SureNail technology and a flexible asphalt formulation designed specifically for impact resistance. The FLEX designation means the shingle bends under impact rather than cracking. Owens Corning backs this product with their platinum-level limited lifetime warranty. It is an excellent option for homeowners who want proven performance and a well-known brand behind it.",
@@ -120,6 +122,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Storm Damage",
     excerpt: "Colorado hail season runs from April through September, with the most destructive storms hitting between May and August. If you own a home along the Front Range, now is the time to prepare. This guide covers everything from storm timing to insurance strategy.",
+    coverImage: { src: "/images/blog/hail-damage-test-square-roof-replacement.webp", alt: "Hail damage test square showing impact warranting full roof replacement in Colorado", width: 1200, height: 899 },
     content: [
       "Colorado hail season runs from April through September, with the most destructive storms hitting between May and August. If you own a home along the Front Range, now is the time to prepare. Not after the first storm rolls through. Not after you spot cracked shingles in the gutter. Right now, in early spring, while you still have time to get ahead of it.",
       "This guide covers everything Colorado homeowners need to know heading into the 2026 hail season. When the storms come, which areas are most at risk, how to prepare your roof and your insurance policy, and exactly what to do when hail hits your neighborhood.",
@@ -138,6 +141,7 @@ export const blogPosts: BlogPost[] = [
       "If your home is anywhere along the Front Range, hail is not a question of if. It is a question of when.",
 
       "What Different Hail Sizes Do to Your Roof",
+      "[IMAGE: /images/blog/metal-roof-hail-damage-example.webp | Metal roof showing hail damage in Colorado, inspected by Gates Enterprises | 1600 | 1198]",
       "Understanding hail size helps you gauge the potential damage after a storm. Here is what different sizes typically mean for asphalt shingle roofs.",
       "Pea-sized hail (0.25 inch) rarely causes functional damage to shingles in good condition. It can accelerate granule loss on older roofs, but newer shingles typically shrug it off.",
       "Marble-sized hail (0.50 inch) starts to cause real granule displacement, especially on shingles that are more than 10 years old. You may notice dark spots where the asphalt layer is exposed.",
@@ -209,6 +213,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Storm Damage",
     excerpt: "After a Colorado hailstorm, your roof may look fine from the driveway. But hail damage is not always obvious. Knowing what to look for can save you thousands in repairs and make the difference between a successful insurance claim and a denied one.",
+    coverImage: { src: "/images/blog/metal-roof-hail-damage-example.webp", alt: "Hail damage on a metal roof in Colorado inspected by Gates Enterprises", width: 1600, height: 1198 },
     content: [
       "After a Colorado hailstorm, your roof may look fine from the driveway. But hail damage is not always obvious. In fact, some of the most serious damage is nearly invisible from the ground. Knowing what hail damage actually looks like on a roof can save you thousands in repairs and make the difference between a successful insurance claim and a denied one.",
       "If you just experienced a hailstorm and you are trying to figure out whether your roof took a hit, this guide will walk you through exactly what to look for, what it means, and what to do next.",
@@ -228,6 +233,7 @@ export const blogPosts: BlogPost[] = [
       "In severe cases, the hail impact is forceful enough to knock away both the granules and the underlying asphalt, exposing the white or light-colored fiberglass mat beneath. This is unmistakable damage. If you can see bright white spots on your shingles, those are exposed mat areas, and they represent significant compromise to the shingle's weatherproofing ability.",
       "Exposed fiberglass mat means the shingle has zero UV protection in that area. It will degrade rapidly, sometimes within months rather than years.",
       "Hail Damage on Metal Components",
+      "[IMAGE: /images/blog/hail-damage-test-square-roof-replacement.webp | Hail damage test square showing impact damage that warrants full roof replacement by Gates Enterprises | 1200 | 899]",
       "Your roof is more than just shingles. Metal components are often the clearest indicators that a hailstorm caused real damage to your property.",
       "Gutters and Downspouts",
       "Aluminum gutters dent easily. After a hailstorm, walk the perimeter of your home and examine your gutters at eye level. Look for dimples, dings, and dents along the top edge and the face of the gutter. A pattern of small dents across the length of your gutters is a reliable sign that hail hit your property with enough force to damage roofing materials too.",
@@ -286,6 +292,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min read",
     category: "Roofing Materials",
     excerpt: "Colorado weather is relentless. Hailstorms, heavy snow, intense UV exposure at elevation, and wild temperature swings all take a toll on your roof. Choosing between a flat roof and a pitched roof is one of the biggest decisions a Colorado property owner can make.",
+    coverImage: { src: "/images/services/large-scale-roof-project-colorado.webp", alt: "Large scale roof replacement project in Colorado by Gates Enterprises", width: 1600, height: 1200 },
     content: [
       "Colorado weather is relentless. Hailstorms, heavy snow, intense UV exposure at elevation, and wild temperature swings all take a toll on your roof. Choosing between a flat roof and a pitched roof is one of the biggest decisions a Colorado property owner can make, and the answer is not always obvious.",
       "Both roof types have real advantages and real drawbacks in the Colorado climate. The right choice depends on your building type, budget, long-term plans, and how much maintenance you are willing to take on. This guide breaks it all down so you can make an informed decision.",

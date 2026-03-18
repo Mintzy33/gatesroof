@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
 import CTA from "./CTA";
@@ -20,6 +21,7 @@ interface BlogPostLayoutProps {
   internalLinks: { placeholder: string; href: string; text: string }[];
   slug: string;
   relatedPosts: { slug: string; title: string; category: string; readTime: string }[];
+  coverImage?: { src: string; alt: string; width: number; height: number };
 }
 
 function formatDate(iso: string) {
@@ -31,6 +33,26 @@ function renderParagraph(
   links: { placeholder: string; href: string; text: string }[],
   idx: number
 ) {
+  // Check for inline image: [IMAGE: /path/to/image.webp | alt text | width | height]
+  const imageMatch = text.match(/^\[IMAGE:\s*([^|]+)\s*\|\s*([^|]+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\]$/);
+  if (imageMatch) {
+    return (
+      <figure key={idx} style={{ margin: "32px 0", textAlign: "center" as const }}>
+        <Image
+          src={imageMatch[1].trim()}
+          alt={imageMatch[2].trim()}
+          width={parseInt(imageMatch[3])}
+          height={parseInt(imageMatch[4])}
+          style={{ borderRadius: 12, maxWidth: "100%", height: "auto" }}
+        />
+        <figcaption style={{
+          fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+          fontSize: 13, color: TEXT_LIGHT, marginTop: 8, fontStyle: "italic",
+        }}>{imageMatch[2].trim()}</figcaption>
+      </figure>
+    );
+  }
+
   // Check if this is a heading-style paragraph (short, no period at end, or starts a section)
   const isHeading = text.length < 100 && !text.endsWith(".") && !text.endsWith(")") && !text.endsWith("?") && !text.includes(". ");
   const isSubHeading = isHeading && text.length < 60;
@@ -96,7 +118,7 @@ function renderParagraph(
 }
 
 export default function BlogPostLayout({
-  title, category, publishDate, readTime, content, internalLinks, slug, relatedPosts,
+  title, category, publishDate, readTime, content, internalLinks, slug, relatedPosts, coverImage,
 }: BlogPostLayoutProps) {
   return (
     <div style={{ background: WHITE, minHeight: "100vh" }}>
@@ -126,6 +148,20 @@ export default function BlogPostLayout({
           }}>{title}</h1>
         </div>
       </section>
+
+      {/* Cover Image */}
+      {coverImage && (
+        <div style={{ maxWidth: 760, margin: "-20px auto 0", padding: "0 24px" }}>
+          <Image
+            src={coverImage.src}
+            alt={coverImage.alt}
+            width={coverImage.width}
+            height={coverImage.height}
+            priority
+            style={{ borderRadius: 16, width: "100%", height: "auto", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}
+          />
+        </div>
+      )}
 
       {/* Article Body */}
       <article style={{ padding: "56px 24px 80px" }}>

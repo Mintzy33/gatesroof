@@ -1,4 +1,5 @@
 import type { CityData, ServiceData } from "./service-areas-data";
+import { getHailScore } from "./hail-data";
 
 type HailRisk = CityData["hailRisk"];
 
@@ -87,10 +88,15 @@ export function getMetaTitle(service: ServiceData, city: CityData): string {
 }
 
 export function getMetaDescription(service: ServiceData, city: CityData): string {
+  const hailData = getHailScore(city.slug);
+  const hailPrefix = hailData
+    ? `${city.city} has a HailScore of ${hailData.hailScore}/100. `
+    : "";
+
   const serviceDescs = descriptionMap[service.slug];
   if (serviceDescs) {
     const fn = serviceDescs[city.hailRisk];
-    if (fn) return fn(city.city);
+    if (fn) return `${hailPrefix}${fn(city.city)}`;
   }
-  return `${service.service} in ${city.city}, Colorado. 4x manufacturer certified. 301 reviews, 4.8 stars. Free estimates.`;
+  return `${hailPrefix}${service.service} in ${city.city}, Colorado. 4x manufacturer certified. 301 reviews, 4.8 stars. Free estimates.`;
 }

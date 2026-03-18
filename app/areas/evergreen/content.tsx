@@ -7,6 +7,7 @@ import CTA from "../../components/CTA";
 import ReviewCarousel from "../../components/ReviewCarousel";
 
 import LocalSEOInfo from "../../components/LocalSEOInfo";
+import HailScoreCard from "../../components/HailScoreCard";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -444,6 +445,8 @@ export default function CityContent() {
           </div>
         </div>
       </section>
+      <HailScoreCard citySlug="evergreen" cityName="Evergreen" />
+
       <LocalSEOInfo citySlug="evergreen" cityName="Evergreen" showMapsLink />
 
       <Footer />

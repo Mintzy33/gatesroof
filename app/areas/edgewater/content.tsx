@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import LocalSEOInfo from "../../components/LocalSEOInfo";
+import HailScoreCard from "../../components/HailScoreCard";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";
@@ -97,6 +98,8 @@ export default function CityContent() {
           </div>
         </div>
       </section>
+      <HailScoreCard citySlug="edgewater" cityName="Edgewater" />
+
       <LocalSEOInfo citySlug="edgewater" cityName="Edgewater" showMapsLink />
 
       <Footer />
