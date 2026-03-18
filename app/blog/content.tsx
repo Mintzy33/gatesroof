@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
@@ -45,9 +46,23 @@ export default function BlogContent() {
           <Link href={`/blog/${featured.slug}`} className="featured-card" style={{
             display: "block", textDecoration: "none",
             background: LIGHT_BG, borderRadius: 20,
-            padding: "40px 36px", border: "1px solid rgba(13,33,55,0.06)",
-            transition: "box-shadow 0.3s",
+            padding: "0", border: "1px solid rgba(13,33,55,0.06)",
+            transition: "box-shadow 0.3s", overflow: "hidden",
           }}>
+            {featured.coverImage && (
+              <div style={{ position: "relative", width: "100%", aspectRatio: "21/9", overflow: "hidden" }}>
+                <Image
+                  src={featured.coverImage.src}
+                  alt={featured.coverImage.alt}
+                  width={featured.coverImage.width}
+                  height={featured.coverImage.height}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 1100px"
+                  priority
+                />
+              </div>
+            )}
+            <div style={{ padding: "40px 36px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
               <span style={{
                 fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
@@ -73,6 +88,7 @@ export default function BlogContent() {
               <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>{featured.readTime}</span>
               <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT }}>Read article →</span>
             </div>
+            </div>
           </Link>
         </div>
       </section>
@@ -84,10 +100,23 @@ export default function BlogContent() {
             {rest.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card" style={{
                 textDecoration: "none", background: WHITE, borderRadius: 16,
-                padding: "28px 24px", border: "1px solid rgba(13,33,55,0.08)",
+                padding: "0", border: "1px solid rgba(13,33,55,0.08)",
                 transition: "box-shadow 0.3s, transform 0.3s",
-                display: "flex", flexDirection: "column",
+                display: "flex", flexDirection: "column", overflow: "hidden",
               }}>
+                {post.coverImage && (
+                  <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", overflow: "hidden" }}>
+                    <Image
+                      src={post.coverImage.src}
+                      alt={post.coverImage.alt}
+                      width={post.coverImage.width}
+                      height={post.coverImage.height}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw"
+                    />
+                  </div>
+                )}
+                <div style={{ padding: "28px 24px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                   <span style={{
                     fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
@@ -107,13 +136,14 @@ export default function BlogContent() {
                 <p style={{
                   fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
                   fontSize: 14, lineHeight: 1.65, color: TEXT_LIGHT,
-                  margin: "0 0 16px", flex: 1,
+                  margin: "0 0 16px", flex: 1 as const,
                   display: "-webkit-box", WebkitLineClamp: 3,
                   WebkitBoxOrient: "vertical" as const, overflow: "hidden",
                 }}>{post.excerpt}</p>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>{formatDate(post.publishDate)}</span>
                   <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT }}>Read →</span>
+                </div>
                 </div>
               </Link>
             ))}
