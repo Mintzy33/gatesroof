@@ -45,7 +45,18 @@ const serviceParents = [
 ];
 
 // Standalone landing pages
-const landingPages = ["insurance-claims", "impact-resistant-shingles"];
+const landingPages = [
+  "insurance-claims",
+  "impact-resistant-shingles",
+  "best-roofer-denver",
+  "best-roofer-colorado-springs",
+  "best-roofer-aurora",
+  "best-roofer-fort-collins",
+  "best-roofer-lakewood",
+  "best-roofer-parker",
+  "why-gates-enterprises",
+  "insurance-restoration",
+];
 
 // Tool pages
 const toolPages = [
