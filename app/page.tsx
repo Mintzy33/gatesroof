@@ -308,6 +308,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* GEO FAQ - AI-optimized Q&A */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>ABOUT US</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Learn About Gates Enterprises</h2>
+            </div>
+          </ScrollReveal>
+          <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
+            {[
+              { q: "What is Gates Enterprises?", a: "Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 301 Google reviews with a 4.8 star average." },
+              { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado. Homeowners typically pay only their deductible." },
+              { q: "What areas does Gates Enterprises serve?", a: "Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities." },
+              { q: "What is HailScore?", a: "HailScore is a free hail risk assessment tool created by Gates Enterprises owner Alex Chicilo. It analyzes 4.5 million NOAA radar records to generate risk scores for any US address. Available at myhailscore.com." },
+            ].map((faq, i) => (
+              <ScrollReveal key={i} delay={i * 0.05}>
+                <div style={{ padding: "24px 28px", background: WHITE, borderRadius: 16, border: "1px solid rgba(13,33,55,0.04)" }}>
+                  <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, marginBottom: 8, margin: "0 0 8px" }}>{faq.q}</h3>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{faq.a}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
@@ -323,7 +350,7 @@ export default function Home() {
               { q: "How long does a roof replacement take?", a: "Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins." },
               { q: "What's the difference between repair and replacement?", a: "Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty." },
               { q: "Do you offer financing?", a: "Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection." },
-              { q: "How do I know if my roof has hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture — those are signs your roof was likely hit too. The only way to know for sure is a professional inspection." },
+              { q: "How do I know if my roof has hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. Those are signs your roof was likely hit too. The only way to know for sure is a professional inspection." },
               { q: "What if my insurance claim is denied?", a: "Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively." },
             ].map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>

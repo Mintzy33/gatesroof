@@ -29,17 +29,23 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. Thousands of roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
+  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
-    title: "Lakewood Roofing Contractor | Gates Enterprises LLC",
-    description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. Thousands of roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
+    title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
     images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado's Most Trusted Roofing Team" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars.",
+    images: ["https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov"],
   },
 };
 
@@ -145,10 +151,29 @@ const websiteSchema = {
   "inLanguage": "en-US"
 };
 
+const siteNavigationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  "name": ["Home", "Services", "About", "Blog", "Reviews", "Contact", "Gallery"],
+  "url": [
+    "https://www.gatesroof.com",
+    "https://www.gatesroof.com/services",
+    "https://www.gatesroof.com/about",
+    "https://www.gatesroof.com/blog",
+    "https://www.gatesroof.com/reviews",
+    "https://www.gatesroof.com/contact",
+    "https://www.gatesroof.com/gallery"
+  ]
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 301 Google reviews with a 4.8 star average."}},
+    {"@type":"Question","name":"Does Gates Enterprises help with insurance claims?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado. Homeowners typically pay only their deductible."}},
+    {"@type":"Question","name":"What areas does Gates Enterprises serve?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities."}},
+    {"@type":"Question","name":"What is HailScore?","acceptedAnswer":{"@type":"Answer","text":"HailScore is a free hail risk assessment tool created by Gates Enterprises owner Alex Chicilo. It analyzes 4.5 million NOAA radar records to generate risk scores for any US address. Available at myhailscore.com."}},
     {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're responsible for your deductible. We help document damage and work with your adjuster throughout the claims process."}},
     {"@type":"Question","name":"How long does a roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins."}},
     {"@type":"Question","name":"What's the difference between repair and replacement?","acceptedAnswer":{"@type":"Answer","text":"Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty."}},
@@ -173,6 +198,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="organization-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <Script id="website-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <Script id="site-navigation-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }} />
       </head>
       <body style={{ margin: 0, padding: 0, paddingBottom: 70 }}>
         {/* GTM noscript fallback */}
