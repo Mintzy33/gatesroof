@@ -15,6 +15,7 @@ import {
 } from "../../../../../lib/neighborhoods";
 import HailScoreCard from "../../../../components/HailScoreCard";
 import FAQAccordion from "../../../../components/FAQAccordion";
+import { getRelatedBlogPosts } from "../../../../../lib/blog-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -88,6 +89,7 @@ export default function NeighborhoodContent({
   const allCityNeighborhoods = getNeighborhoodsByCity(citySlug);
   const otherServices = services.filter((s) => s.slug !== service.slug);
   const whyChooseItems = getNeighborhoodWhyChoose(neighborhood.name, city.city, neighborhood.housingAge);
+  const relatedBlogPosts = getRelatedBlogPosts(serviceSlug, citySlug, 4);
 
   return (
     <div style={{ background: WHITE }}>
@@ -475,6 +477,74 @@ export default function NeighborhoodContent({
               </Link>
             ))}
           </div>
+
+          {/* ── Related Blog Articles ── */}
+          {relatedBlogPosts.length > 0 && (
+            <>
+              <h2
+                style={{
+                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+                  fontSize: 30,
+                  fontWeight: 800,
+                  color: NAVY,
+                  marginBottom: 20,
+                }}
+              >
+                Helpful Resources for {neighborhood.name} Homeowners
+              </h2>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: 12,
+                  marginBottom: 32,
+                }}
+              >
+                {relatedBlogPosts.map((post, i) => (
+                  <Link
+                    key={i}
+                    href={`/blog/${post.slug}`}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 12,
+                      textDecoration: "none",
+                      background: LIGHT_BG,
+                      borderRadius: 12,
+                      padding: "16px 20px",
+                      border: "1px solid rgba(13,33,55,0.06)",
+                    }}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><path d="M4 19.5A2.5 2.5 0 016.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" /></svg>
+                    <div>
+                      <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: ACCENT, letterSpacing: "0.12em", textTransform: "uppercase" as const }}>{post.category}</span>
+                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, lineHeight: 1.4 }}>{post.title}</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 48 }}>
+                <Link
+                  href={`/areas/${city.slug}`}
+                  style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none", background: "rgba(37,99,235,0.06)", padding: "8px 16px", borderRadius: 8 }}
+                >
+                  Roofing in {city.city} →
+                </Link>
+                <Link
+                  href={`/services/${service.parentSlug}`}
+                  style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none", background: "rgba(37,99,235,0.06)", padding: "8px 16px", borderRadius: 8 }}
+                >
+                  All {service.service} Locations →
+                </Link>
+                <Link
+                  href="/blog"
+                  style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none", background: "rgba(37,99,235,0.06)", padding: "8px 16px", borderRadius: 8 }}
+                >
+                  Read Our Blog →
+                </Link>
+              </div>
+            </>
+          )}
 
           {/* Related Neighborhoods */}
           {relatedNeighborhoods.length > 0 && (

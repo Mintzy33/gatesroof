@@ -283,11 +283,14 @@ export default function Home() {
           </ScrollReveal>
           <div className="csa-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
             {[
-              { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" }, { n: "Arvada", s: "arvada" },
+              { n: "Denver", s: "denver" }, { n: "Aurora", s: "aurora" }, { n: "Lakewood", s: "lakewood" }, { n: "Arvada", s: "arvada" },
               { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Centennial", s: "centennial" }, { n: "Parker", s: "parker" },
-              { n: "Littleton", s: "littleton" }, { n: "Broomfield", s: "broomfield" }, { n: "Golden", s: "golden" }, { n: "Highlands Ranch", s: "highlands-ranch" },
-              { n: "Englewood", s: "englewood" }, { n: "Castle Rock", s: "castle-rock" }, { n: "Commerce City", s: "commerce-city" }, { n: "Northglenn", s: "northglenn" },
-              { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Federal Heights", s: "federal-heights" }, { n: "Edgewater", s: "edgewater" }, { n: "Conifer", s: "conifer" },
+              { n: "Castle Rock", s: "castle-rock" }, { n: "Broomfield", s: "broomfield" }, { n: "Golden", s: "golden" }, { n: "Highlands Ranch", s: "highlands-ranch" },
+              { n: "Littleton", s: "littleton" }, { n: "Englewood", s: "englewood" }, { n: "Commerce City", s: "commerce-city" }, { n: "Northglenn", s: "northglenn" },
+              { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Federal Heights", s: "federal-heights" }, { n: "Brighton", s: "brighton" }, { n: "Lone Tree", s: "lone-tree" },
+              { n: "Greenwood Village", s: "greenwood-village" }, { n: "Castle Pines", s: "castle-pines" }, { n: "Superior", s: "superior" }, { n: "Louisville", s: "louisville" },
+              { n: "Lafayette", s: "lafayette" }, { n: "Erie", s: "erie" }, { n: "Longmont", s: "longmont" }, { n: "Boulder", s: "boulder" },
+              { n: "Fort Collins", s: "fort-collins" }, { n: "Loveland", s: "loveland" }, { n: "Colorado Springs", s: "colorado-springs" }, { n: "Conifer", s: "conifer" },
             ].map((c) => (
               <div key={c.s} style={{ background: WHITE, borderRadius: 16, padding: "20px 18px", border: "1px solid rgba(13,33,55,0.06)", boxShadow: "0 2px 8px rgba(13,33,55,0.04)" }}>
                 <Link href={`/areas/${c.s}`} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, textDecoration: "none", display: "block", marginBottom: 10 }}>{c.n}</Link>
@@ -305,6 +308,57 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LATEST BLOG POSTS */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 48px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>FROM THE BLOG</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Expert Roofing Guides for Colorado Homeowners</h2>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 520, margin: "0 auto", lineHeight: 1.7 }}>In-depth articles on roofing materials, insurance claims, storm damage, and more.</p>
+            </div>
+          </ScrollReveal>
+          <StaggerCards className="blog-grid" stagger={0.1} distance={40}>
+            {[
+              { t: "Class 4 Impact Resistant Shingles: Are They Worth It?", c: "Roofing Materials", h: "/blog/class-4-impact-resistant-shingles-colorado" },
+              { t: "Colorado Hail Season 2026: Complete Homeowner's Guide", c: "Storm Damage", h: "/blog/colorado-hail-season-2026-homeowners-guide" },
+              { t: "What Does Hail Damage Look Like on a Roof?", c: "Storm Damage", h: "/blog/what-does-hail-damage-look-like-on-roof" },
+              { t: "Colorado Roof Insurance Claims: Complete Guide", c: "Insurance", h: "/blog/colorado-roof-insurance-claims-guide" },
+              { t: "How to Choose a Roofing Contractor in Denver", c: "Hiring Tips", h: "/blog/how-to-choose-roofing-contractor-denver" },
+              { t: "Roof Replacement Cost in Denver (2026)", c: "Cost Guides", h: "/blog/roof-replacement-cost-denver" },
+            ].map((post, i) => (
+              <Link key={i} href={post.h} style={{ textDecoration: "none", display: "block" }}>
+                <div style={{ background: LIGHT_BG, borderRadius: 16, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.06)", height: "100%", transition: "box-shadow 0.3s, transform 0.3s" }}>
+                  <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: ACCENT, letterSpacing: "0.12em", textTransform: "uppercase" as const }}>{post.c}</span>
+                  <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, color: NAVY, margin: "8px 0 0", lineHeight: 1.4 }}>{post.t}</h3>
+                </div>
+              </Link>
+            ))}
+          </StaggerCards>
+          <div style={{ textAlign: "center" as const, marginTop: 32 }}>
+            <Link href="/blog" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>View All Articles →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* QUICK LINKS */}
+      <section style={{ padding: "40px 20px 0", background: WHITE }}>
+        <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", flexWrap: "wrap" as const, gap: 12, justifyContent: "center" }}>
+          {[
+            { l: "Free Roofing Tools", h: "/tools" },
+            { l: "About Alex Chicilo", h: "/about/alex-chicilo" },
+            { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
+            { l: "Insurance Coverage Estimator", h: "/tools/insurance-coverage-estimator" },
+            { l: "Roof Age Calculator", h: "/tools/roof-age-calculator" },
+            { l: "Hail Risk Check", h: "/tools/hail-risk-check" },
+            { l: "Impact Resistant Shingles", h: "/impact-resistant-shingles" },
+            { l: "Insurance Claims", h: "/insurance-claims" },
+          ].map((lk) => (
+            <Link key={lk.l} href={lk.h} style={{ display: "inline-block", padding: "8px 16px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.08)", background: "transparent", color: TEXT, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{lk.l}</Link>
+          ))}
         </div>
       </section>
 
@@ -400,8 +454,10 @@ export default function Home() {
         .service-card:hover p { color: rgba(255,255,255,0.7) !important; }
         .service-card:hover .service-icon { background: rgba(255,255,255,0.1) !important; }
         .service-card:hover .service-icon svg { stroke: #FFFFFF !important; }
+        .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .csa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
         @media (max-width: 768px) {
+          .blog-grid { grid-template-columns: 1fr 1fr !important; }
           .csa-grid { grid-template-columns: 1fr 1fr !important; }
           .hero-wrap { grid-template-columns: 1fr !important; gap: 0 !important; padding: 110px 24px 32px !important; text-align: center; }
           .hero-right { display: none !important; }

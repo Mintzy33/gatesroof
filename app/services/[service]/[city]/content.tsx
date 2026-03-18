@@ -14,6 +14,7 @@ import LocalSEOInfo from "../../../components/LocalSEOInfo";
 import FAQAccordion from "../../../components/FAQAccordion";
 import { getServiceCityFAQItems } from "../../../../lib/faq-data";
 import HailScoreCard from "../../../components/HailScoreCard";
+import { getRelatedBlogPosts } from "../../../../lib/blog-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -136,6 +137,7 @@ export default function ServiceCityContent({
   const otherServices = services.filter((s) => s.slug !== service.slug);
   const whyChooseItems = getWhyChoose(city, service);
   const faqItems = getServiceCityFAQItems(citySlug, serviceSlug);
+  const relatedBlogPosts = getRelatedBlogPosts(service.slug, city.slug, 5);
 
   return (
     <div style={{ background: WHITE }}>
@@ -441,6 +443,99 @@ export default function ServiceCityContent({
               </Link>
             ))}
           </div>
+
+          {/* ── Related Articles ── */}
+          {relatedBlogPosts.length > 0 && (
+            <>
+              <h2
+                style={{
+                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+                  fontSize: 30,
+                  fontWeight: 800,
+                  color: NAVY,
+                  marginBottom: 20,
+                }}
+              >
+                {service.service} Resources for {city.city} Homeowners
+              </h2>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 16,
+                  lineHeight: 1.85,
+                  color: TEXT_LIGHT,
+                  marginBottom: 20,
+                }}
+              >
+                Learn more about {service.service.toLowerCase()} in Colorado with these guides from the Gates Enterprises blog:
+              </p>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: 12,
+                  marginBottom: 48,
+                }}
+              >
+                {relatedBlogPosts.map((post, i) => (
+                  <Link
+                    key={i}
+                    href={`/blog/${post.slug}`}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 12,
+                      textDecoration: "none",
+                      background: LIGHT_BG,
+                      borderRadius: 12,
+                      padding: "16px 20px",
+                      border: "1px solid rgba(13,33,55,0.06)",
+                    }}
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke={ACCENT}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{ flexShrink: 0 }}
+                    >
+                      <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                    </svg>
+                    <div>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                          fontSize: 10,
+                          fontWeight: 700,
+                          color: ACCENT,
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase" as const,
+                        }}
+                      >
+                        {post.category}
+                      </span>
+                      <div
+                        style={{
+                          fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                          fontSize: 15,
+                          fontWeight: 600,
+                          color: NAVY,
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {post.title}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
 
           {/* ── Nearby Cities ── */}
           {nearbyCities.length > 0 && (

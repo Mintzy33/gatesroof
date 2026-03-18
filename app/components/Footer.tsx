@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer style={{ padding: "56px 20px 32px", background: "#F8F9FA", borderTop: "1px solid rgba(13,33,55,0.06)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48, marginBottom: 48 }}>
+        <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ marginBottom: 20 }}>
               <Link href="/"><Image src="/logo.png" alt="Gates Enterprises" width={180} height={54} style={{ height: 40, width: "auto", objectFit: "contain" }} /></Link>
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Company</h3>
-            {[{l:"About Us",h:"/about"},{l:"Gallery",h:"/gallery"},{l:"Reviews",h:"/reviews"},{l:"Free Tools",h:"/tools"},{l:"Blog",h:"/blog"},{l:"FAQ",h:"/faq"},{l:"Contact",h:"/contact"}].map(lk=>(
+            {[{l:"About Us",h:"/about"},{l:"Alex Chicilo",h:"/about/alex-chicilo"},{l:"Gallery",h:"/gallery"},{l:"Reviews",h:"/reviews"},{l:"Free Tools",h:"/tools"},{l:"Blog",h:"/blog"},{l:"FAQ",h:"/faq"},{l:"Contact",h:"/contact"}].map(lk=>(
               <Link key={lk.l} href={lk.h} style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{lk.l}</Link>
             ))}
           </div>
@@ -43,6 +43,12 @@ export default function Footer() {
             <p style={{ margin:"0 0 16px 0" }}><a href="tel:7207663377" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none" }}>(720) 766-3377</a></p>
             <p style={{ margin:"0 0 16px 0" }}><a href="mailto:info@gatesroof.com" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none" }}>info@gatesroof.com</a></p>
             <p style={{ margin:"0 0 16px 0" }}><Link href="/contact" style={{ fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:ACCENT, textDecoration:"none", fontWeight:600 }}>Request a Free Inspection & Estimate →</Link></p>
+          </div>
+          <div>
+            <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Service Areas</h3>
+            {[{l:"Denver",s:"denver"},{l:"Aurora",s:"aurora"},{l:"Lakewood",s:"lakewood"},{l:"Arvada",s:"arvada"},{l:"Westminster",s:"westminster"},{l:"Thornton",s:"thornton"},{l:"Centennial",s:"centennial"},{l:"Parker",s:"parker"},{l:"Littleton",s:"littleton"},{l:"Highlands Ranch",s:"highlands-ranch"},{l:"Broomfield",s:"broomfield"},{l:"Golden",s:"golden"},{l:"Castle Rock",s:"castle-rock"},{l:"Commerce City",s:"commerce-city"},{l:"Englewood",s:"englewood"}].map(c=>(
+              <Link key={c.l} href={`/areas/${c.s}`} style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{c.l}</Link>
+            ))}
           </div>
         </div>
         <div className="footer-bottom" style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -54,7 +60,7 @@ export default function Footer() {
         .footer-social-link { color: #64748B; transition: color 0.2s ease, transform 0.2s ease; display: flex; align-items: center; }
         .footer-social-link:hover { color: #2563EB; transform: translateY(-2px); }
         @media (max-width: 768px) {
-          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
+          .footer-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 28px !important; }
           .footer-bottom { flex-direction: column !important; gap: 12px !important; align-items: center !important; }
         }
         @media (max-width: 480px) {

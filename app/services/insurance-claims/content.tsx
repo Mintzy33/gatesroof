@@ -274,10 +274,17 @@ export default function InsuranceContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>We assist homeowners with insurance claims across the Colorado Front Range.</p>
           <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
             {[
-              { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" },
-              { n: "Parker", s: "parker" }, { n: "Centennial", s: "centennial" }, { n: "Arvada", s: "arvada" },
-              { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
-              { n: "Littleton", s: "littleton" },
+              { n: "Denver", s: "denver" }, { n: "Aurora", s: "aurora" }, { n: "Lakewood", s: "lakewood" },
+              { n: "Arvada", s: "arvada" }, { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" },
+              { n: "Broomfield", s: "broomfield" }, { n: "Northglenn", s: "northglenn" }, { n: "Federal Heights", s: "federal-heights" },
+              { n: "Commerce City", s: "commerce-city" }, { n: "Brighton", s: "brighton" }, { n: "Littleton", s: "littleton" },
+              { n: "Englewood", s: "englewood" }, { n: "Centennial", s: "centennial" }, { n: "Highlands Ranch", s: "highlands-ranch" },
+              { n: "Parker", s: "parker" }, { n: "Castle Rock", s: "castle-rock" }, { n: "Lone Tree", s: "lone-tree" },
+              { n: "Greenwood Village", s: "greenwood-village" }, { n: "Golden", s: "golden" }, { n: "Wheat Ridge", s: "wheat-ridge" },
+              { n: "Edgewater", s: "edgewater" }, { n: "Superior", s: "superior" }, { n: "Louisville", s: "louisville" },
+              { n: "Lafayette", s: "lafayette" }, { n: "Erie", s: "erie" }, { n: "Longmont", s: "longmont" },
+              { n: "Loveland", s: "loveland" }, { n: "Fort Collins", s: "fort-collins" }, { n: "Conifer", s: "conifer" },
+              { n: "Evergreen", s: "evergreen" }, { n: "Colorado Springs", s: "colorado-springs" }, { n: "Boulder", s: "boulder" },
             ].map((c) => (
               <Link key={c.s} href={`/services/insurance-claims/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}

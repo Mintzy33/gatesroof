@@ -325,6 +325,34 @@ export default function RoofReplacementContent() {
       {/* ─── BOTTOM CTA ─── */}
       <CTA title="Ready for a new roof?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free roof inspection. We'll tell you exactly what you need, what it costs, and how to get it covered." />
 
+      {/* ─── RELATED ARTICLES ─── */}
+      <section style={{ padding: "64px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>FROM THE BLOG</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Roof Replacement Guides and Resources</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Expert guides on roof replacement costs, materials, and what to expect from the process.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            {[
+              { t: "Roof Replacement Cost in Denver (2026)", h: "/blog/roof-replacement-cost-denver" },
+              { t: "Roof Replacement Cost in Colorado (2026)", h: "/blog/roof-replacement-cost-colorado-2026" },
+              { t: "Class 4 Impact Resistant Shingles: Worth It?", h: "/blog/class-4-impact-resistant-shingles-colorado" },
+              { t: "Best Time for Roof Replacement in Colorado", h: "/blog/best-time-roof-replacement-colorado" },
+              { t: "How Long Does a Roof Last in Colorado?", h: "/blog/how-long-does-a-roof-last-colorado" },
+              { t: "Signs You Need a New Roof", h: "/blog/signs-you-need-new-roof" },
+              { t: "GAF vs Malarkey vs CertainTeed Shingles", h: "/blog/gaf-vs-malarkey-vs-certainteed-shingles" },
+              { t: "Metal Roof vs Shingles in Colorado", h: "/blog/metal-roof-vs-shingles-colorado" },
+              { t: "How to Read a Roofing Estimate", h: "/blog/how-to-read-roofing-estimate" },
+              { t: "GAF Golden Pledge Warranty Explained", h: "/blog/gaf-golden-pledge-warranty-explained" },
+            ].map((p) => (
+              <Link key={p.h} href={p.h} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><polyline points="9 18 15 12 9 6" /></svg>
+                {p.t}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── SERVICE AREAS ─── */}
       <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
@@ -333,16 +361,23 @@ export default function RoofReplacementContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>We provide roof replacement across the Colorado Front Range.</p>
           <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
             {[
-              { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" },
-              { n: "Parker", s: "parker" }, { n: "Centennial", s: "centennial" }, { n: "Arvada", s: "arvada" },
-              { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
-              { n: "Littleton", s: "littleton" }, { n: "Broomfield", s: "broomfield" }, { n: "Castle Rock", s: "castle-rock" },
-              { n: "Highlands Ranch", s: "highlands-ranch" }, { n: "Golden", s: "golden" }, { n: "Englewood", s: "englewood" },
-              { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Commerce City", s: "commerce-city" }, { n: "Northglenn", s: "northglenn" },
-              { n: "Federal Heights", s: "federal-heights" }, { n: "Brighton", s: "brighton" }, { n: "Superior", s: "superior" },
-              { n: "Lone Tree", s: "lone-tree" }, { n: "Morrison", s: "morrison" }, { n: "Evergreen", s: "evergreen" },
-              { n: "Conifer", s: "conifer" }, { n: "Edgewater", s: "edgewater" }, { n: "Colorado Springs", s: "colorado-springs" },
-              { n: "Pueblo", s: "pueblo" }, { n: "Fort Collins", s: "fort-collins" }, { n: "Loveland", s: "loveland" },
+              { n: "Denver", s: "denver" }, { n: "Aurora", s: "aurora" }, { n: "Lakewood", s: "lakewood" },
+              { n: "Arvada", s: "arvada" }, { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" },
+              { n: "Broomfield", s: "broomfield" }, { n: "Northglenn", s: "northglenn" }, { n: "Federal Heights", s: "federal-heights" },
+              { n: "Commerce City", s: "commerce-city" }, { n: "Brighton", s: "brighton" }, { n: "Henderson", s: "henderson" },
+              { n: "Littleton", s: "littleton" }, { n: "Englewood", s: "englewood" }, { n: "Sheridan", s: "sheridan" },
+              { n: "Centennial", s: "centennial" }, { n: "Highlands Ranch", s: "highlands-ranch" }, { n: "Parker", s: "parker" },
+              { n: "Castle Rock", s: "castle-rock" }, { n: "Castle Pines", s: "castle-pines" }, { n: "Lone Tree", s: "lone-tree" },
+              { n: "Greenwood Village", s: "greenwood-village" }, { n: "Cherry Hills Village", s: "cherry-hills-village" },
+              { n: "Columbine", s: "columbine" }, { n: "Ken Caryl", s: "ken-caryl" }, { n: "Morrison", s: "morrison" },
+              { n: "Golden", s: "golden" }, { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Edgewater", s: "edgewater" },
+              { n: "Mountain View", s: "mountain-view" }, { n: "Superior", s: "superior" }, { n: "Louisville", s: "louisville" },
+              { n: "Lafayette", s: "lafayette" }, { n: "Erie", s: "erie" }, { n: "Longmont", s: "longmont" },
+              { n: "Loveland", s: "loveland" }, { n: "Fort Collins", s: "fort-collins" }, { n: "Windsor", s: "windsor" },
+              { n: "Greeley", s: "greeley" }, { n: "Firestone", s: "firestone" }, { n: "Frederick", s: "frederick" },
+              { n: "Conifer", s: "conifer" }, { n: "Evergreen", s: "evergreen" }, { n: "Bailey", s: "bailey" },
+              { n: "Monument", s: "monument" }, { n: "Palmer Lake", s: "palmer-lake" }, { n: "Fountain", s: "fountain" },
+              { n: "Colorado Springs", s: "colorado-springs" }, { n: "Pueblo", s: "pueblo" }, { n: "Boulder", s: "boulder" },
             ].map((c) => (
               <Link key={c.s} href={`/services/roof-replacement/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}

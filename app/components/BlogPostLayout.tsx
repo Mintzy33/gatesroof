@@ -194,6 +194,65 @@ export default function BlogPostLayout({
         </div>
       </section>
 
+      {/* Explore Our Services - Adds internal links from every blog post */}
+      <section style={{ padding: "0 24px 64px" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <h3 style={{
+            fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+            fontSize: 22, fontWeight: 700, color: NAVY, margin: "0 0 20px",
+          }}>Explore Our Roofing Services</h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+            {[
+              { l: "Roof Replacement", h: "/services/roof-replacement" },
+              { l: "Storm and Hail Damage Repair", h: "/services/storm-hail-damage" },
+              { l: "Roof Repair", h: "/services/roof-repair" },
+              { l: "Siding and Exterior", h: "/services/siding-exterior" },
+              { l: "Gutters and Guards", h: "/services/gutters-guards" },
+              { l: "Insurance Claims Help", h: "/services/insurance-claims" },
+              { l: "Windows", h: "/services/windows" },
+              { l: "Paint", h: "/services/paint" },
+            ].map(s => (
+              <Link key={s.h} href={s.h} style={{
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 14, fontWeight: 500, color: ACCENT, textDecoration: "none",
+                display: "flex", alignItems: "center", gap: 6, padding: "6px 0",
+              }}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                {s.l}
+              </Link>
+            ))}
+          </div>
+          <h4 style={{
+            fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+            fontSize: 13, fontWeight: 700, color: NAVY, margin: "20px 0 12px",
+            letterSpacing: "0.08em", textTransform: "uppercase" as const,
+          }}>Service Areas</h4>
+          <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 6 }}>
+            {[
+              { n: "Denver", s: "denver" }, { n: "Aurora", s: "aurora" }, { n: "Lakewood", s: "lakewood" },
+              { n: "Arvada", s: "arvada" }, { n: "Westminster", s: "westminster" }, { n: "Parker", s: "parker" },
+              { n: "Castle Rock", s: "castle-rock" }, { n: "Centennial", s: "centennial" },
+              { n: "Highlands Ranch", s: "highlands-ranch" }, { n: "Thornton", s: "thornton" },
+              { n: "Littleton", s: "littleton" }, { n: "Broomfield", s: "broomfield" },
+              { n: "Golden", s: "golden" }, { n: "Boulder", s: "boulder" },
+              { n: "Fort Collins", s: "fort-collins" }, { n: "Colorado Springs", s: "colorado-springs" },
+            ].map(c => (
+              <Link key={c.s} href={`/services/roof-replacement/${c.s}`} style={{
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 12, fontWeight: 500, color: NAVY, textDecoration: "none",
+                padding: "5px 12px", borderRadius: 100, border: "1px solid rgba(13,33,55,0.1)",
+                background: "transparent",
+              }}>{c.n}</Link>
+            ))}
+          </div>
+          <div style={{ marginTop: 16, display: "flex", gap: 16, flexWrap: "wrap" }}>
+            <Link href="/tools" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>Free Roofing Tools →</Link>
+            <Link href="/about/alex-chicilo" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>About Alex Chicilo →</Link>
+            <Link href="/reviews" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>Read Reviews →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
         <section style={{ padding: "0 24px 72px" }}>

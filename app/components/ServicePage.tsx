@@ -140,6 +140,32 @@ export default function ServicePageLayout({
         </div>
       </section>
 
+      {/* Related Blog Articles */}
+      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>FROM THE BLOG</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>{breadcrumb} Resources and Guides</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Expert roofing articles from the Gates Enterprises blog.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            {[
+              { t: "Class 4 Impact Resistant Shingles: Worth It?", h: "/blog/class-4-impact-resistant-shingles-colorado" },
+              { t: "Colorado Hail Season 2026: Homeowner's Guide", h: "/blog/colorado-hail-season-2026-homeowners-guide" },
+              { t: "How to Choose a Roofing Contractor", h: "/blog/how-to-choose-roofing-contractor-colorado" },
+              { t: "Signs You Need a New Roof", h: "/blog/signs-you-need-new-roof" },
+              { t: "Emergency Roof Repair After a Storm", h: "/blog/emergency-roof-repair-after-storm" },
+              { t: "Roof Maintenance Checklist for Colorado", h: "/blog/roof-maintenance-checklist-colorado" },
+              { t: "Warning Signs Your Roof Needs Attention", h: "/blog/warning-signs-roof-needs-attention" },
+              { t: "Colorado Roof Insurance Claims Guide", h: "/blog/colorado-roof-insurance-claims-guide" },
+            ].map((p) => (
+              <Link key={p.h} href={p.h} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><polyline points="9 18 15 12 9 6" /></svg>
+                {p.t}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {serviceAreasSlug && (
         <section style={{ padding: "64px 24px", background: WHITE }}>
           <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
@@ -148,10 +174,23 @@ export default function ServicePageLayout({
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>We provide {(serviceAreasLabel || breadcrumb).toLowerCase()} across the Colorado Front Range.</p>
             <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
               {[
-                { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" },
-                { n: "Parker", s: "parker" }, { n: "Centennial", s: "centennial" }, { n: "Arvada", s: "arvada" },
-                { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
-                { n: "Littleton", s: "littleton" },
+                { n: "Denver", s: "denver" }, { n: "Aurora", s: "aurora" }, { n: "Lakewood", s: "lakewood" },
+                { n: "Arvada", s: "arvada" }, { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" },
+                { n: "Broomfield", s: "broomfield" }, { n: "Northglenn", s: "northglenn" }, { n: "Federal Heights", s: "federal-heights" },
+                { n: "Commerce City", s: "commerce-city" }, { n: "Brighton", s: "brighton" }, { n: "Henderson", s: "henderson" },
+                { n: "Littleton", s: "littleton" }, { n: "Englewood", s: "englewood" }, { n: "Sheridan", s: "sheridan" },
+                { n: "Centennial", s: "centennial" }, { n: "Highlands Ranch", s: "highlands-ranch" }, { n: "Parker", s: "parker" },
+                { n: "Castle Rock", s: "castle-rock" }, { n: "Castle Pines", s: "castle-pines" }, { n: "Lone Tree", s: "lone-tree" },
+                { n: "Greenwood Village", s: "greenwood-village" }, { n: "Cherry Hills Village", s: "cherry-hills-village" },
+                { n: "Columbine", s: "columbine" }, { n: "Ken Caryl", s: "ken-caryl" }, { n: "Morrison", s: "morrison" },
+                { n: "Golden", s: "golden" }, { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Edgewater", s: "edgewater" },
+                { n: "Mountain View", s: "mountain-view" }, { n: "Superior", s: "superior" }, { n: "Louisville", s: "louisville" },
+                { n: "Lafayette", s: "lafayette" }, { n: "Erie", s: "erie" }, { n: "Longmont", s: "longmont" },
+                { n: "Loveland", s: "loveland" }, { n: "Fort Collins", s: "fort-collins" }, { n: "Windsor", s: "windsor" },
+                { n: "Greeley", s: "greeley" }, { n: "Firestone", s: "firestone" }, { n: "Frederick", s: "frederick" },
+                { n: "Conifer", s: "conifer" }, { n: "Evergreen", s: "evergreen" }, { n: "Bailey", s: "bailey" },
+                { n: "Monument", s: "monument" }, { n: "Palmer Lake", s: "palmer-lake" }, { n: "Fountain", s: "fountain" },
+                { n: "Colorado Springs", s: "colorado-springs" }, { n: "Pueblo", s: "pueblo" }, { n: "Boulder", s: "boulder" },
               ].map((c) => (
                 <Link key={c.s} href={`/services/${serviceAreasSlug}/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
               ))}
