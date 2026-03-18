@@ -3,8 +3,8 @@ import Script from "next/script";
 import ToolsContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Free Roofing Tools | Roof Age Calculator, Cost Estimator & Hail Risk Check | Gates Enterprises",
-  description: "Free roofing tools for Colorado homeowners. Calculate your roof's age and remaining life, estimate repair and replacement costs, and check your home's hail risk score. No signup required.",
+  title: "Free Roofing Tools | Roof Age Calculator, Insurance Coverage Estimator & Hail Risk Check | Gates Enterprises",
+  description: "Free roofing tools for Colorado homeowners. Calculate your roof's age and remaining life, estimate insurance coverage value, and check your home's hail risk score. No signup required.",
   alternates: { canonical: "https://www.gatesroof.com/tools" },
   openGraph: {
     title: "Free Roofing Tools | Gates Enterprises LLC",

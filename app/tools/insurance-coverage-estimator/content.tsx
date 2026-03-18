@@ -9,6 +9,8 @@ const ACCENT = "#2563EB";
 const WHITE = "#FFFFFF";
 const LIGHT_BG = "#FAFBFD";
 const TEXT_LIGHT = "#64748B";
+const GREEN = "#16A34A";
+const GREEN_BG = "rgba(22,163,74,0.08)";
 
 const SERVICE_TYPES = [
   { label: "Minor Repair", baseLow: 300, baseHigh: 1500, usesMaterial: false, usesSize: false },
@@ -46,29 +48,24 @@ const STORIES = [
   { label: "3+ Stories", factor: 1.1 },
 ];
 
-interface CostResult {
+interface CoverageResult {
   low: number;
   high: number;
   serviceLabel: string;
   factors: string[];
 }
 
-function formatCurrency(n: number): string {
-  if (n >= 1000) return "$" + (Math.round(n / 100) * 100).toLocaleString();
-  return "$" + Math.round(n).toLocaleString();
-}
-
 function roundToNearest(n: number, nearest: number): number {
   return Math.round(n / nearest) * nearest;
 }
 
-export default function CostEstimatorContent() {
+export default function InsuranceCoverageEstimatorContent() {
   const [serviceIdx, setServiceIdx] = useState("");
   const [sizeIdx, setSizeIdx] = useState("");
   const [pitchIdx, setPitchIdx] = useState("");
   const [materialIdx, setMaterialIdx] = useState("");
   const [storiesIdx, setStoriesIdx] = useState("");
-  const [result, setResult] = useState<CostResult | null>(null);
+  const [result, setResult] = useState<CoverageResult | null>(null);
   const [showResult, setShowResult] = useState(false);
 
   function calculate() {
@@ -94,14 +91,14 @@ export default function CostEstimatorContent() {
       low = size.baseLow * mat.factor * pitch.factor * stories.factor;
       high = size.baseHigh * mat.factor * pitch.factor * stories.factor;
 
-      factors.push(`Base cost for ${size.label.toLowerCase()} home: $${size.baseLow.toLocaleString()} - $${size.baseHigh.toLocaleString()}`);
+      factors.push(`Base value for ${size.label.toLowerCase()} home: $${size.baseLow.toLocaleString()} - $${size.baseHigh.toLocaleString()}`);
       if (mat.factor !== 1.0) factors.push(`${mat.label} material: ${mat.factor > 1 ? "+" : ""}${Math.round((mat.factor - 1) * 100)}% adjustment`);
       if (pitch.factor > 1.0) factors.push(`${pitch.label} pitch: +${Math.round((pitch.factor - 1) * 100)}% (more labor intensive)`);
       if (stories.factor > 1.0) factors.push(`${stories.label}: +${Math.round((stories.factor - 1) * 100)}% (additional safety and logistics)`);
     } else {
       low = svc.baseLow;
       high = svc.baseHigh;
-      factors.push(`Typical range for ${svc.label.toLowerCase()} in Colorado`);
+      factors.push(`Typical value for ${svc.label.toLowerCase()} in Colorado`);
     }
 
     low = roundToNearest(low, 100);
@@ -155,7 +152,7 @@ export default function CostEstimatorContent() {
             <span style={{ margin: "0 8px" }}>/</span>
             <Link href="/tools" style={{ color: TEXT_LIGHT, textDecoration: "none" }}>Free Tools</Link>
             <span style={{ margin: "0 8px" }}>/</span>
-            <span style={{ color: NAVY }}>Repair Cost Estimator</span>
+            <span style={{ color: NAVY }}>Insurance Coverage Estimator</span>
           </nav>
         </div>
 
@@ -169,7 +166,7 @@ export default function CostEstimatorContent() {
             marginBottom: 12,
             lineHeight: 1.2,
           }}>
-            Roof Repair Cost Estimator
+            What's My Roof Replacement Worth?
           </h1>
           <p style={{
             fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
@@ -177,7 +174,7 @@ export default function CostEstimatorContent() {
             color: TEXT_LIGHT,
             lineHeight: 1.7,
           }}>
-            Get a ballpark cost for your roofing project based on real Colorado 2026 pricing.
+            Find out how much insurance could cover for your roofing project. Most Colorado homeowners pay only their deductible.
           </p>
         </section>
 
@@ -264,7 +261,7 @@ export default function CostEstimatorContent() {
               onMouseDown={(e) => { if (canCalc) e.currentTarget.style.transform = "scale(0.98)"; }}
               onMouseUp={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
             >
-              Estimate Cost
+              See My Coverage Value
             </button>
           </div>
 
@@ -281,8 +278,8 @@ export default function CostEstimatorContent() {
               transform: showResult ? "translateY(0)" : "translateY(12px)",
               transition: "opacity 0.5s ease, transform 0.5s ease",
             }}>
-              {/* Price Range */}
-              <div style={{ textAlign: "center", marginBottom: 24 }}>
+              {/* Insurance Coverage Value */}
+              <div style={{ textAlign: "center", marginBottom: 20 }}>
                 <div style={{
                   fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
                   fontSize: 13,
@@ -291,7 +288,7 @@ export default function CostEstimatorContent() {
                   textTransform: "uppercase" as const,
                   letterSpacing: "0.06em",
                 }}>
-                  Estimated Cost Range
+                  Your Roof Replacement Could Be Covered For
                 </div>
                 <div style={{
                   fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
@@ -301,6 +298,114 @@ export default function CostEstimatorContent() {
                   lineHeight: 1.2,
                 }}>
                   ${result.low.toLocaleString()} - ${result.high.toLocaleString()}
+                </div>
+                <div style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 13,
+                  color: TEXT_LIGHT,
+                  marginTop: 6,
+                }}>
+                  Insurance typically covers this when damage is storm-related
+                </div>
+              </div>
+
+              {/* What You Pay Badge */}
+              <div style={{
+                background: GREEN_BG,
+                border: `2px solid ${GREEN}`,
+                borderRadius: 16,
+                padding: "20px 24px",
+                textAlign: "center",
+                marginBottom: 20,
+              }}>
+                <div style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: GREEN,
+                  textTransform: "uppercase" as const,
+                  letterSpacing: "0.06em",
+                  marginBottom: 6,
+                }}>
+                  What Most Colorado Homeowners Actually Pay
+                </div>
+                <div style={{
+                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+                  fontSize: "clamp(28px, 5vw, 36px)",
+                  fontWeight: 700,
+                  color: GREEN,
+                  lineHeight: 1.2,
+                }}>
+                  $1,000 - $2,500
+                </div>
+                <div style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 14,
+                  color: NAVY,
+                  marginTop: 6,
+                }}>
+                  Your deductible. That's it.
+                </div>
+              </div>
+
+              {/* Visual Comparison Bar */}
+              <div style={{
+                display: "flex",
+                borderRadius: 12,
+                overflow: "hidden",
+                marginBottom: 24,
+                border: "1px solid rgba(13,33,55,0.1)",
+              }}>
+                <div style={{
+                  flex: 3,
+                  background: "rgba(37,99,235,0.08)",
+                  padding: "16px 20px",
+                  textAlign: "center",
+                }}>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 11,
+                    color: TEXT_LIGHT,
+                    textTransform: "uppercase" as const,
+                    letterSpacing: "0.06em",
+                    marginBottom: 4,
+                  }}>
+                    Insurance Covers
+                  </div>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 18,
+                    fontWeight: 700,
+                    color: ACCENT,
+                  }}>
+                    ${Math.max(result.low - 2500, 0).toLocaleString()}+
+                  </div>
+                </div>
+                <div style={{
+                  flex: 1,
+                  background: GREEN_BG,
+                  padding: "16px 20px",
+                  textAlign: "center",
+                  borderLeft: `2px solid ${GREEN}`,
+                }}>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 11,
+                    color: TEXT_LIGHT,
+                    textTransform: "uppercase" as const,
+                    letterSpacing: "0.06em",
+                    marginBottom: 4,
+                  }}>
+                    You Pay
+                  </div>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 18,
+                    fontWeight: 700,
+                    color: GREEN,
+                  }}>
+                    ~$1,500
+                  </div>
                 </div>
               </div>
 
@@ -320,7 +425,7 @@ export default function CostEstimatorContent() {
                   textTransform: "uppercase" as const,
                   letterSpacing: "0.04em",
                 }}>
-                  What affects your cost
+                  What Determines Your Coverage Value
                 </div>
                 {result.factors.map((f, i) => (
                   <div key={i} style={{
@@ -337,18 +442,6 @@ export default function CostEstimatorContent() {
                   </div>
                 ))}
               </div>
-
-              {/* Colorado note */}
-              <p style={{
-                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                fontSize: 14,
-                color: NAVY,
-                lineHeight: 1.6,
-                marginBottom: 12,
-                padding: "0 4px",
-              }}>
-                Most homeowners in Colorado pay between <strong>${result.low.toLocaleString()}</strong> and <strong>${result.high.toLocaleString()}</strong> for this type of work.
-              </p>
 
               {/* Insurance note */}
               <div style={{
@@ -370,7 +463,7 @@ export default function CostEstimatorContent() {
                   lineHeight: 1.5,
                   margin: 0,
                 }}>
-                  Insurance may cover some or all of this cost if damage was storm-related. <Link href="/services/insurance-claims" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Learn about insurance claims</Link>.
+                  Coverage depends on your specific policy and the type of damage. Storm-related damage is most commonly covered. <Link href="/services/insurance-claims" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Learn about insurance claims</Link>.
                 </p>
               </div>
 
@@ -390,13 +483,90 @@ export default function CostEstimatorContent() {
                   fontWeight: 600,
                 }}
               >
-                Get an Exact Quote - Free Inspection
+                Find Out If Your Roof Qualifies for Insurance Coverage
               </Link>
             </div>
           )}
         </section>
 
-        {/* Info */}
+        {/* How It Works */}
+        <section style={{ background: WHITE, padding: "60px 20px" }}>
+          <div style={{ maxWidth: 700, margin: "0 auto" }}>
+            <h2 style={{
+              fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+              fontSize: 28,
+              fontWeight: 700,
+              color: NAVY,
+              marginBottom: 12,
+              textAlign: "center",
+            }}>
+              How the Insurance Process Works
+            </h2>
+            <p style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 15,
+              color: TEXT_LIGHT,
+              lineHeight: 1.7,
+              textAlign: "center",
+              marginBottom: 32,
+            }}>
+              Gates Enterprises has helped hundreds of Colorado homeowners get their roofs replaced through insurance with zero out-of-pocket cost beyond their deductible.
+            </p>
+
+            {[
+              { num: "1", title: "Free Roof Inspection", desc: "We inspect your roof at no cost and identify all storm damage." },
+              { num: "2", title: "Detailed Documentation", desc: "We photograph and document every issue so nothing gets missed." },
+              { num: "3", title: "Insurance Claim Filing", desc: "We help you file your claim and communicate with your adjuster." },
+              { num: "4", title: "Insurance Covers Replacement", desc: "Your insurance company approves the work and covers the cost." },
+              { num: "5", title: "You Pay Only Your Deductible", desc: "Most homeowners pay $1,000 to $2,500. That's it." },
+            ].map((step) => (
+              <div key={step.num} style={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: 20,
+                marginBottom: 24,
+              }}>
+                <div style={{
+                  width: 44,
+                  height: 44,
+                  borderRadius: "50%",
+                  background: "rgba(37,99,235,0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 18,
+                  fontWeight: 700,
+                  color: ACCENT,
+                }}>
+                  {step.num}
+                </div>
+                <div>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 16,
+                    fontWeight: 700,
+                    color: NAVY,
+                    marginBottom: 4,
+                  }}>
+                    {step.title}
+                  </div>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 14,
+                    color: TEXT_LIGHT,
+                    lineHeight: 1.6,
+                  }}>
+                    {step.desc}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Info Section */}
         <section style={{ background: LIGHT_BG, padding: "60px 20px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2 style={{
@@ -407,16 +577,22 @@ export default function CostEstimatorContent() {
               marginBottom: 16,
               textAlign: "center",
             }}>
-              What Determines Roofing Costs in Colorado?
+              What Colorado Homeowners Should Know About Insurance Claims
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              Colorado roofing costs are influenced by material choice, roof complexity (pitch, valleys, dormers), home height, and local labor rates. Hail-prone areas like Denver, Lakewood, and Aurora see higher demand after storm season, which can affect scheduling.
+              Most storm damage in Colorado is covered by your homeowner's insurance policy. Hail, wind, and severe weather events are the most common causes of roof damage in the Denver metro area, and insurance companies expect to pay these claims.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              Class 4 impact-resistant shingles cost slightly more upfront but qualify for insurance premium discounts of 15-28% in Colorado. Over the life of your roof, they often pay for themselves. <Link href="/impact-resistant-shingles" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Learn about impact-resistant shingles</Link>.
+              Colorado law protects your right to choose your own contractor. You are not required to use the company your insurance recommends. You can select a contractor you trust, and your insurance company must work with them.
+            </p>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
+              There are time limits on filing insurance claims. In Colorado, most policies require you to file within one year of the damage occurring. Waiting too long could mean losing your coverage for that event, so it's important to get your roof inspected promptly after a storm.
+            </p>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
+              Gates Enterprises handles the entire claims process from inspection to completion. We meet with your adjuster on-site, ensure all damage is properly documented, and advocate for the full scope of repairs your roof needs.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7 }}>
-              This estimator provides ballpark figures based on typical Colorado pricing. For an exact quote, <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>schedule a free inspection</Link> with Gates Enterprises. We'll measure your roof, assess its condition, and provide a detailed written estimate at no cost.
+              As a quadruple manufacturer certified contractor (Owens Corning Platinum, GAF Master Elite, CertainTeed SELECT, Atlas Pro+), our documentation carries weight with insurance companies. Adjusters trust our assessments because we are held to the highest standards in the industry. <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Schedule your free inspection today</Link>.
             </p>
           </div>
         </section>
