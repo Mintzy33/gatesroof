@@ -1,3 +1,10 @@
+export interface BlogImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 export interface BlogPost {
   slug: string;
   metaTitle: string;
@@ -8,6 +15,7 @@ export interface BlogPost {
   readTime: string;
   category: string;
   excerpt: string;
+  coverImage?: BlogImage;
   content: string[];
   internalLinks: { placeholder: string; href: string; text: string }[];
 }
@@ -2867,6 +2875,265 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "hardie-siding", href: "/blog/james-hardie-siding-colorado", text: "James Hardie siding guide" },
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance restoration support" },
       { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
+    ],
+  },
+  {
+    slug: "what-to-do-after-hailstorm-hits-neighborhood",
+    metaTitle: "What to Do After a Hailstorm Hits Your Neighborhood | Gates Enterprises",
+    metaDescription: "Hailstorm just hit your Colorado neighborhood? Here's exactly what to do step by step: safety, documentation, insurance filing, and getting the right roof inspection.",
+    targetKeyword: "what to do after hailstorm",
+    title: "What to Do After a Hailstorm Hits Your Neighborhood",
+    publishDate: "2026-03-18",
+    readTime: "10 min read",
+    category: "Storm Prep",
+    excerpt: "The sirens have stopped, the hail has moved on, and your neighborhood looks like it just went through a war zone. Dented cars in the driveway, leaves shredded off the trees, and that sinking feeling that your roof just took a serious beating.",
+    content: [
+      "The sirens have stopped, the hail has moved on, and your neighborhood looks like it just went through a war zone. Dented cars in the driveway, leaves shredded off the trees, and that sinking feeling that your roof just took a serious beating.",
+      "If you live anywhere along Colorado's Front Range, this scenario is not unusual. It is basically an annual event. The question is not whether your neighborhood will get hit by hail. The question is what you do in the hours and days after it happens. The steps you take right now can save you thousands of dollars, protect your insurance claim, and make the difference between a smooth restoration and a nightmare that drags on for months.",
+      "Here is exactly what to do, in order, after a hailstorm hits your neighborhood.",
+
+      "Step 1: Stay Inside Until the Storm Has Fully Passed",
+
+      "This one sounds obvious, but you would be amazed how many people rush outside the second the hail lets up. Colorado hailstorms are unpredictable. They can stall, circle back, or produce a second round of severe weather within minutes. Lightning is often still active in the area even after the hail stops falling.",
+      "Wait at least 15 to 20 minutes after the last hailstone falls before going outside. Use that time to check inside your home for any immediate problems. Walk through every room and look at the ceilings for water spots, drips, or bulging drywall. Check the attic if you can safely access it. Look for daylight coming through the roof deck or any sign of moisture on the underside of the decking.",
+      "If you see active water intrusion, put buckets under the drips and move furniture, electronics, and anything valuable away from the wet areas. If a section of ceiling is bulging with trapped water, carefully poke a small hole in the center with a screwdriver to let it drain into a bucket. This prevents the entire ceiling from collapsing under the weight.",
+
+      "Step 2: Document Everything Before You Touch Anything",
+
+      "Once it is safe to go outside, grab your phone and start documenting. This is arguably the most important step in the entire process, and most homeowners do not do it thoroughly enough.",
+      "Photograph and video everything. Walk slowly around your entire property and capture damage from multiple angles. Here is what to focus on:",
+      "Hail on the ground. If there are still hailstones lying around, photograph them with a coin, ruler, or your hand next to them for scale. Hailstones melt fast in Colorado's sun, so get these photos immediately. Your car. If any vehicles were outside during the storm, photograph every dent. Car damage is some of the strongest evidence of hail size and intensity. Gutters and downspouts. Look for dents, dings, and dislodged sections. Metal gutters show hail impact clearly. Your AC unit. The aluminum fins on your condenser are soft and show hail damage easily. Photograph any denting. Window screens. Hailstones punch holes in screens and leave impact marks that document the event. Siding, trim, and paint. Look for chipped paint, cracked vinyl, or dented aluminum. Fencing, mailbox, and garage door. Any soft metal surface that was exposed during the storm will show evidence. Deck surfaces and patio furniture. Wood decking takes distinctive round impact marks from hail.",
+      "Take wide shots that show the overall property and close ups that show specific damage details. Make sure your phone's date and time stamp is enabled. This creates a chronological record tied to the storm event.",
+      "Do not forget to document the roof from the ground. Use your phone's zoom to capture any visible shingle damage, missing pieces, or debris on the roof surface. Do NOT get on the roof yourself. A wet, damaged roof is incredibly dangerous, and you do not need to be up there for documentation purposes.",
+
+      "Step 3: Contact Your Insurance Company (Sooner, Not Later)",
+
+      "Call your insurance company and file a claim as soon as you have your initial documentation. Most major insurers have 24 hour storm hotlines that are staffed up after severe weather events in Colorado.",
+      "When you call, have your policy number ready and be prepared to describe what you observed. Stick to the facts. Tell them when the storm hit, what you saw, and what damage you have documented. Do not speculate about the extent of damage or the cost of repairs. That is what the adjuster and your contractor are for.",
+      "Here is why timing matters. Most Colorado homeowner's insurance policies give you one year from the date of the storm to file a claim. That sounds like plenty of time, but waiting creates problems. Evidence degrades. Hailstones melt. Damaged shingles continue to deteriorate. And after major storms, adjusters and contractors get backed up for weeks or months. The earlier you file, the sooner an adjuster gets assigned to your claim, and the sooner the process moves forward.",
+      "One important note: check your policy for a separate hail and wind deductible. Many Colorado policies now use percentage based deductibles for storm damage (typically 1% to 2% of your home's insured value). On a $500,000 home, that could mean a $5,000 to $10,000 deductible. Knowing this number helps you make informed decisions about whether to file. [LINK: insurance-claims]",
+
+      "Step 4: Get a Professional Roof Inspection",
+
+      "This is where a lot of homeowners go wrong. They either skip the inspection entirely, try to inspect the roof themselves, or wait for the insurance adjuster to tell them what is going on.",
+      "You need an independent professional roof inspection from a contractor you trust, and you need it before the insurance adjuster comes out.",
+      "Why? Because hail damage on a roof is not always obvious, even to trained eyes. The visible stuff, like missing shingles or cracked vents, is easy to spot. But the real damage from hail is often subtle. It shows up as soft spots in the shingle mat where the impact bruised the asphalt without breaking through. It shows up as granule displacement that exposes the underlying fiberglass to UV degradation. It shows up as hairline fractures in flashing and boot seals that will eventually leak.",
+      "A qualified inspector knows exactly what to look for, how to document it in a format that supports your insurance claim, and what the full scope of necessary repairs actually includes.",
+      "At Gates Enterprises, we provide free post storm roof inspections across the entire Front Range. Our inspectors have thousands of hail damage assessments under their belts, and they document everything with detailed photos and measurements that adjusters understand. [LINK: free-inspection]",
+      "Equally important: your contractor should be present when the insurance adjuster inspects your roof. Having a professional there to point out damage, discuss scope, and ensure nothing gets missed dramatically improves the outcome of most claims.",
+
+      "Step 5: Understanding the Insurance Claims Process",
+
+      "Once you have filed and the adjuster has visited, the insurance company will produce an estimate. This estimate details what they are willing to pay for. Here is what you need to know about it.",
+      "The first estimate is often incomplete. Common items that get missed or underpriced include drip edge, pipe boots, ice and water shield, starter strips, ridge cap, haul away and disposal, and proper ventilation components. These are not optional extras. They are required parts of a proper roof installation. If they are missing from the estimate, the estimate needs to be supplemented.",
+      "Supplementing is standard practice. Your contractor reviews the insurance estimate, identifies what is missing or underpriced, and submits documentation requesting additional funds. Insurance companies process supplements routinely. It is not adversarial. It is just part of the process.",
+      "If you have an RCV (Replacement Cost Value) policy, the initial payment will be the ACV (Actual Cash Value), which is the replacement cost minus depreciation. Once you complete the work, you submit documentation and the insurance company releases the recoverable depreciation. This is money you are owed, but you have to complete the project and request it.",
+
+      "Step 6: Temporary Repairs vs. Permanent Fixes",
+
+      "Your insurance policy requires you to mitigate further damage. That means if your roof is actively leaking, you need to take reasonable steps to stop the damage from getting worse. Emergency tarping, placing buckets under leaks, and moving belongings away from water are all appropriate mitigation steps.",
+      "However, do not make permanent repairs before the adjuster has inspected and documented the damage. If you replace shingles or patch sections before the insurance company has seen the original damage, you may complicate your claim. They need to see the damage to approve coverage for it.",
+      "If your roof needs emergency tarping, call a professional. Most reputable roofing companies, including Gates Enterprises, offer emergency tarp services and can respond quickly after storms. [LINK: storm-hail-damage]",
+
+      "Step 7: Choosing the Right Contractor (This Is Where It Counts)",
+
+      "After every major hailstorm in Colorado, the storm chasers arrive. Out of state contractors flood into the area with door knocking crews, temporary offices, and promises to handle everything. Some of them are legitimate. Many are not.",
+      "Here is what to watch out for. Any contractor who pressures you to sign a contract on the spot is a red flag. Anyone who offers to pay or waive your insurance deductible is committing insurance fraud under Colorado law. Any company that cannot provide a verifiable local address, a history of work in the area, and proof of Colorado licensing and insurance should not be on your roof.",
+      "What you should look for: manufacturer certifications. The top shingle manufacturers (GAF, Owens Corning, CertainTeed, Malarkey) all have certification programs that require contractors to meet strict standards for training, installation quality, and business practices. These certifications unlock the best warranty packages and are only given to contractors who earn them.",
+      "Gates Enterprises is quadruple certified: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Less than 1% of roofing contractors in the country carry all four. That means no matter which shingle brand is right for your roof, we can install it to the manufacturer's highest standards with the best warranty available. [LINK: about]",
+
+      "Step 8: How Fast Should You Act?",
+
+      "The short answer: fast, but not panicked. Here is a realistic timeline for what should happen after a hailstorm hits your neighborhood.",
+      "Day 1: Document everything, check for interior damage, file with your insurance company. Days 1 to 3: Schedule a professional roof inspection. Week 1 to 2: Have your contractor inspect the roof and provide their assessment. Week 2 to 4: Insurance adjuster visits (your contractor should be present). Week 4 to 8: Estimate reviewed, supplements filed if needed, scope finalized. Week 6 to 12: Roof replacement or repair completed.",
+      "The biggest mistake homeowners make is waiting too long to start the process. Every week you delay pushes your project further back in the queue, and in a heavy storm year, the best contractors are booked out months in advance.",
+
+      "Get Your Free Post Storm Inspection from Gates Enterprises",
+
+      "If a hailstorm just hit your neighborhood, or if you suspect your roof has damage from a recent storm, do not wait. Call Gates Enterprises at (720) 766-3377 for a free, no obligation roof inspection. We will document the damage, walk you through your options, and support your insurance claim from start to finish.",
+      "With over 7,200 roofs completed across the Colorado Front Range and the only quadruple manufacturer certification in the state, we bring a level of expertise and accountability that protects your home and your investment. [LINK: reviews]",
+      "Call (720) 766-3377 or [LINK: contact] to schedule your free inspection today.",
+    ],
+    internalLinks: [
+      { placeholder: "insurance-claims", href: "/services/storm-hail-damage", text: "storm and hail damage services" },
+      { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
+      { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage", text: "storm and hail damage repair" },
+      { placeholder: "about", href: "/about", text: "about Gates Enterprises" },
+      { placeholder: "reviews", href: "/reviews", text: "see our reviews" },
+      { placeholder: "contact", href: "/contact", text: "contact us" },
+    ],
+  },
+  {
+    slug: "hail-damage-roof-repair-cost-colorado",
+    metaTitle: "How Much Does Hail Damage Roof Repair Cost in Colorado (2026) | Gates Enterprises",
+    metaDescription: "What does hail damage roof repair cost in Colorado in 2026? Real price ranges from $500 to $25,000+, what insurance covers, and how to avoid storm chaser scams.",
+    targetKeyword: "hail damage roof repair cost",
+    title: "How Much Does Hail Damage Roof Repair Cost in Colorado (2026)",
+    publishDate: "2026-03-18",
+    readTime: "11 min read",
+    category: "Cost Guide",
+    excerpt: "Your roof just got hammered by hail, and the first question on your mind is probably: how much is this going to cost me? The honest answer is that it depends on a lot of factors. But we can give you real numbers based on thousands of hail damage projects across the Colorado Front Range.",
+    content: [
+      "Your roof just got hammered by hail, and the first question on your mind is probably: how much is this going to cost me? The honest answer is that it depends on a lot of factors. But we can give you real numbers based on thousands of hail damage projects across the Colorado Front Range.",
+      "After more than a decade of repairing and replacing hail damaged roofs in Colorado, we have seen every scenario. From a handful of cracked shingles to total roof system failure from softball sized hail. The cost range is wide, but understanding where your situation falls and what insurance typically covers makes the whole process much less stressful.",
+
+      "Typical Cost Ranges for Hail Damage Roof Repair in Colorado",
+
+      "Let us break this down into three tiers based on damage severity.",
+      "Minor damage typically costs between $500 and $1,500. This covers situations where hail damaged a small, isolated area of the roof. Maybe a few shingles cracked, a vent boot took a hit, or some flashing was displaced. The repair involves replacing the affected shingles and components without touching the rest of the roof. Minor repairs are common after smaller hailstorms with stones under one inch in diameter.",
+      "Moderate damage typically runs $1,500 to $5,000. This is where hail caused noticeable damage across multiple sections of the roof but not enough to justify a full replacement. You might need a significant section of shingles replaced, several damaged vents and boots swapped out, and some flashing work. Moderate repairs are common after storms with hail in the one to one and a half inch range that impacted part but not all of the roof surface. [LINK: roof-repair]",
+      "Major damage and full replacement typically costs between $8,000 and $25,000 or more. When hail damage is widespread across the entire roof surface, repair is no longer practical or cost effective. A full tear off and replacement is the right call. This is the most common outcome after significant Front Range hailstorms with stones over one and a half inches, which is unfortunately most of the major storms that hit the Denver metro every summer. The exact cost depends on roof size, pitch, material choice, and complexity. [LINK: roof-replacement]",
+
+      "Factors That Affect Your Specific Cost",
+
+      "Roof size is the biggest variable. Roofing is measured in squares, with one square equaling 100 square feet of roof surface. A typical Colorado home has between 20 and 35 squares of roofing. Larger homes with more complex roof lines have more material and labor, which means higher costs.",
+      "Roof pitch matters more than most homeowners realize. A steep roof (anything over 8/12 pitch) requires additional safety equipment, slower installation, and more labor hours. Steep roofs can add 15% to 25% to the total project cost compared to a standard pitch roof.",
+      "Material choice has a significant impact. Standard architectural shingles are the baseline. Class 4 impact resistant shingles cost 10% to 20% more but offer better hail protection and often qualify for insurance premium discounts of 20% to 30%. Premium designer shingles, metal roofing, or tile add even more to the price.",
+      "Damage extent determines whether you are looking at a targeted repair or a full replacement. A certified inspector can assess this accurately and help you and your insurance company determine the right scope of work.",
+      "Accessibility affects labor costs. Homes with limited access, landscaping close to the foundation, multiple stories, or complex roof geometry take longer to work on and cost more as a result.",
+      "Decking condition is a hidden cost that surprises some homeowners. When the old shingles come off, the plywood decking underneath is exposed. If water has been getting through damaged shingles, some of that decking may be rotted or soft and need replacement. Decking replacement typically adds $75 to $150 per sheet, and most insurance policies cover it when the damage is storm related.",
+
+      "Asphalt Shingles vs. Metal vs. Tile: Repair Cost Comparison",
+
+      "The vast majority of Colorado homes have asphalt shingle roofs, and that is where most of our pricing discussion applies. But if you have a metal or tile roof, the cost picture is different.",
+      "Metal roof repair after hail is tricky. Dented metal panels are difficult to repair in place. Individual panels can sometimes be replaced, but matching the color and finish of weathered metal is challenging. Full metal roof replacement is significantly more expensive than asphalt, typically $15,000 to $40,000+ depending on the metal type and roof size.",
+      "Tile roofs (concrete or clay) are common in some Colorado neighborhoods, especially in areas with Spanish or Mediterranean style architecture. Cracked tiles can be replaced individually, but finding matching tiles for older roofs can be difficult and expensive. Full tile roof replacement runs $20,000 to $50,000+ depending on the tile type.",
+      "For most Colorado homeowners, asphalt shingles remain the best balance of performance, cost, and repairability. And with Class 4 impact resistant options available from every major manufacturer, you can get excellent hail protection without the premium price of metal or tile.",
+
+      "What Insurance Typically Covers",
+
+      "Here is the good news. If your roof damage was caused by a hailstorm, your homeowner's insurance policy almost certainly covers the repair or replacement (minus your deductible).",
+      "A standard homeowner's policy covers the cost to restore your roof to its pre storm condition. That includes shingle removal and replacement, underlayment, flashing, drip edge, boots and vents, ridge cap, starter strips, ice and water shield in valleys and at eaves, and haul away and disposal of old materials.",
+      "If you have an RCV (Replacement Cost Value) policy, the insurance company pays the full cost to replace your roof with new materials at current prices, minus your deductible. If you have an ACV (Actual Cash Value) policy, they pay the depreciated value of your roof, which can be significantly less on an older roof.",
+      "The initial insurance estimate is often lower than the actual cost of a proper installation. This is where your contractor's experience with the insurance process matters. A good contractor will review the estimate, identify missing or underpriced items, and submit supplements with documentation to get the scope and pricing corrected. [LINK: storm-hail-damage]",
+
+      "Understanding Your Deductible",
+
+      "Your deductible is the amount you pay out of pocket before insurance covers the rest. In Colorado, many homeowners have been surprised to learn that their hail and wind deductible is much higher than their standard deductible.",
+      "Many Colorado policies now use percentage based deductibles for hail and wind damage. A 1% deductible on a home insured for $400,000 means you pay $4,000 out of pocket. A 2% deductible means $8,000. These percentage deductibles became common after Colorado's insurance companies faced billions in hail claims over the past decade.",
+      "Check your policy declarations page for a separate wind and hail deductible before filing a claim. If the estimated repair cost is close to your deductible, it may not be worth filing. But for most significant hail events in Colorado, the damage far exceeds the deductible, and filing makes clear financial sense.",
+
+      "Why 'Free Roof' Scams Are Dangerous",
+
+      "After every major hailstorm, storm chasers descend on Colorado neighborhoods with a pitch that sounds too good to be true: we will get you a free roof, and you will not pay anything out of pocket.",
+      "Here is the reality. If a contractor offers to pay your deductible, waive your out of pocket costs, or inflate the claim to cover your deductible, that is insurance fraud in Colorado. It is illegal for both the contractor and the homeowner. Beyond the legal issues, storm chasers who operate this way cut corners everywhere else too. They use cheaper materials, rush installations, skip proper flashing and ventilation, and are gone before the first warranty claim comes in.",
+      "Your deductible exists for a reason. It is the homeowner's share of the cost. A legitimate contractor will never offer to cover it for you. If someone knocks on your door after a storm and makes that promise, close the door.",
+      "The other version of this scam is the contractor who tells you they will \"supplement everything\" and make the insurance company pay for upgrades that are not storm related. This creates an inflated claim that can result in claim denial, policy cancellation, or even legal consequences for the homeowner.",
+      "Work with a local, certified contractor who handles the insurance process honestly and transparently. It protects you legally and ensures the work is done right. [LINK: about]",
+
+      "Getting Multiple Estimates (But Certifications Matter More Than Price)",
+
+      "It is smart to get more than one opinion on your roof. But when you are comparing estimates, price should not be the only factor. In fact, it should not even be the primary factor.",
+      "Here is why. A low estimate from an uncertified contractor might look attractive, but it often means they are cutting corners on materials, skipping components that a proper installation requires, or using less experienced crews. The cheapest roof replacement is not the one that costs the least on day one. It is the one that performs well for 20+ years without problems.",
+      "What matters more than price: manufacturer certifications (which unlock the best warranties), local reputation and track record, experience with insurance restoration projects, crew quality and training, and the warranty that actually comes with the installation.",
+      "Gates Enterprises is quadruple certified by GAF, Owens Corning, Malarkey, and CertainTeed. That means we can offer the highest tier warranty from every major manufacturer, which is protection that cheaper, uncertified contractors simply cannot match. [LINK: reviews]",
+
+      "Impact Resistant Upgrades: Invest Now, Save Later",
+
+      "If you are replacing your roof after hail damage, this is the perfect time to consider upgrading to Class 4 impact resistant shingles. Here is the math that makes it compelling.",
+      "Class 4 shingles cost roughly 10% to 20% more than standard architectural shingles. On a $15,000 roof replacement, that is an extra $1,500 to $3,000. In return, most Colorado insurance companies offer a premium discount of 20% to 30% for Class 4 rated roofs. If your annual premium is $3,000, a 25% discount saves you $750 per year. Over the life of the roof, that is $15,000 or more in premium savings, far exceeding the upfront cost.",
+      "Beyond the financial math, Class 4 shingles simply hold up better. They are built with modified asphalt or heavier construction that absorbs hail impact rather than cracking. In our experience replacing thousands of roofs across the Front Range, homes with Class 4 shingles are dramatically less likely to need replacement after the next storm.",
+
+      "Get Your Free Hail Damage Assessment from Gates Enterprises",
+
+      "If your roof took hail damage, the first step is understanding exactly what you are dealing with. At Gates Enterprises, we provide free, no obligation damage assessments across the entire Colorado Front Range. We inspect the roof, document every hit, review your insurance situation, and give you a clear picture of your options and costs.",
+      "With over 7,200 roofs completed and quadruple manufacturer certification, we have the experience and the credentials to handle your hail damage project from the first phone call to the final inspection. We do not cut corners, we do not play games with insurance, and we do not disappear after the job is done.",
+      "Call us at (720) 766-3377 or [LINK: contact] to schedule your free assessment today.",
+    ],
+    internalLinks: [
+      { placeholder: "roof-repair", href: "/services/roof-repair", text: "roof repair services" },
+      { placeholder: "roof-replacement", href: "/services/roof-replacement", text: "roof replacement" },
+      { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage", text: "storm and hail damage services" },
+      { placeholder: "about", href: "/about", text: "about Gates Enterprises" },
+      { placeholder: "reviews", href: "/reviews", text: "see our reviews" },
+      { placeholder: "contact", href: "/contact", text: "contact us" },
+    ],
+  },
+  {
+    slug: "signs-of-hail-damage-from-ground",
+    metaTitle: "Signs of Hail Damage You Can See From the Ground | Gates Enterprises",
+    metaDescription: "How to spot hail damage on your Colorado home without climbing on the roof. Learn the ground-level signs that mean your roof needs a professional inspection.",
+    targetKeyword: "signs of hail damage",
+    title: "Signs of Hail Damage You Can See From the Ground",
+    publishDate: "2026-03-18",
+    readTime: "10 min read",
+    category: "Homeowner Tips",
+    excerpt: "You do not need to climb on your roof to know it took a beating. After a Colorado hailstorm, the evidence is often hiding in plain sight all around your property. You just need to know where to look.",
+    content: [
+      "You do not need to climb on your roof to know it took a beating. After a Colorado hailstorm, the evidence is often hiding in plain sight all around your property. You just need to know where to look.",
+      "Every year, we inspect thousands of roofs across the Colorado Front Range after hailstorms. And every year, we meet homeowners who had no idea their roof was damaged because they never looked beyond the shingles. The truth is that hail does not just hit your roof. It hits everything. And the damage on the things you can see from the ground often tells you exactly what happened to the things you cannot see up on the roof.",
+      "Here is a ground level inspection guide that any Colorado homeowner can use after a hailstorm. No ladder required.",
+
+      "Why a Ground Level Inspection Matters",
+
+      "First, the practical reason: safety. Climbing on a wet, potentially damaged roof is dangerous. Professional roofers have the training, equipment, and insurance to do it safely. Homeowners generally do not. Falls from residential roofs are among the most common serious home improvement injuries in the country. There is no reason to take that risk when you can learn so much from the ground.",
+      "Second, the strategic reason: documentation. Your ground level photos and observations become part of your insurance claim file. The more thoroughly you document damage around your property, the stronger your case when the adjuster arrives. Everything you find on the ground supports what the professional inspector finds on the roof.",
+
+      "Check Your Gutters and Downspouts",
+
+      "Your gutters are one of the most reliable ground level indicators of hail severity. Walk along the edge of your house and look up at the gutters from below. Hail leaves distinctive round dents in aluminum gutters. Small hail (under three quarters of an inch) might leave subtle dimples. Large hail (over one inch) leaves obvious, deep dents that are visible from 10 feet away.",
+      "Look at your downspouts too. Dented downspouts confirm that the hail was hitting surfaces at the level of your roofline, which means your shingles, flashing, and vents were exposed to the same impacts.",
+      "One more gutter check: look inside the gutters or at the ground below the downspout discharge point. A heavy accumulation of dark, sand like granules is a sign that the hail knocked the protective coating off your shingles. Some granule loss is normal over time, but a sudden large deposit after a storm is a strong indicator of hail damage on the roof surface. [LINK: roof-repair]",
+
+      "Look at Your Siding and Window Trim",
+
+      "Hail does not discriminate. If it hit your roof, it hit the sides of your house too. Walk around the entire perimeter of your home and look at the siding from different angles.",
+      "On vinyl siding, hail damage shows up as cracks, holes, or dents depending on the hail size and the temperature at the time of the storm. Cold vinyl is more brittle and cracks on impact. Warm vinyl is more flexible and tends to dent.",
+      "On wood siding or trim, look for round impact marks or chipped paint in a pattern that corresponds to hail hitting from the direction of the storm.",
+      "On fiber cement (like James Hardie), hail damage is less common because the material is harder, but large hailstones can chip or crack it.",
+      "Window trim and frames are especially telling. Soft vinyl window frames and aluminum trim dent easily, and those dents confirm the hail event at your specific property.",
+      "Also check your window screens. Hailstones punch right through screens, leaving holes that are unmistakable evidence of hail size. A screen with multiple holes from one inch hailstones tells a clear story.",
+
+      "Inspect Your AC Unit and Outdoor Equipment",
+
+      "Your air conditioning condenser is one of the best hail damage indicators on your entire property. The aluminum fins on the condenser coil are soft and thin. Even moderate hail flattens them on contact, and the damage is obvious from a few feet away.",
+      "Walk over to your AC unit and look at the top and the side that was exposed to the storm direction. Bent, crushed, or flattened fins confirm that your property took significant hail. Insurance adjusters specifically look at AC units during their inspections because the damage is so clear and measurable.",
+      "Check any other outdoor equipment too: satellite dishes, security cameras, exterior light fixtures, garden tools or equipment that was left outside. Anything made of soft metal, plastic, or thin material will show evidence of the hail event.",
+
+      "Your Car Is a Hail Damage Report Card",
+
+      "If any vehicles were parked outside during the storm, they are quite possibly your best evidence. Car bodies are made of thin sheet metal that dents easily from hail, and those dents are impossible to ignore.",
+      "Photograph every dent on every vehicle. The size and distribution of car dents directly correlate to the hail size that hit your property. If your car looks like a golf ball, your roof almost certainly has damage too. Insurance companies and adjusters understand this correlation.",
+      "Even if your car was in the garage, check any neighbors' vehicles that were parked outside. The hail that hit their car hit your roof at the same time.",
+
+      "Visible Shingle Damage You Can Spot From the Ground",
+
+      "You might not be able to see individual hail hits on shingles from the ground, but there are some things you can spot without a ladder.",
+      "Missing shingles are obvious. If pieces of shingle material are lying in your yard or you can see bare spots on the roof surface, that is storm damage. Curling or lifted shingles along the edges or at the ridge line are visible from the driveway at the right angle. Dark spots or patches on the roof surface that were not there before the storm can indicate areas where granules were knocked off, exposing the darker asphalt mat underneath.",
+      "Use your phone's camera zoom to get a closer look at the roof surface from the ground. You will not be able to diagnose hail damage this way, but you can identify areas that look different from the rest of the roof and point them out to your inspector.",
+
+      "The Soft Metals Test: Mailbox, Garage Door, and Fence",
+
+      "This is one of the most useful ground level checks you can do, and insurance adjusters use it themselves. Walk around your property and examine every soft metal surface that was exposed during the storm.",
+      "Your mailbox is a perfect indicator. A standard metal mailbox sitting at the curb takes the same hail your roof did. Round dents on the top and the storm facing side confirm hail size and intensity.",
+      "Your garage door, if it is metal, will show dents from significant hail. Look at it from an angle rather than straight on, because the light will catch the dents and make them more visible.",
+      "Metal fence posts, gates, and chain link components all show hail damage clearly. Even painted wood fence boards will show round impact marks where the hail struck.",
+      "Collectively, these soft metal indicators paint a comprehensive picture of what the hail event looked like at your specific property. They are compelling evidence because they cannot be faked or explained away as normal wear and tear. [LINK: storm-hail-damage]",
+
+      "What You CAN'T See From the Ground",
+
+      "Here is the honest reality. A ground level inspection tells you a lot about whether your property took significant hail, but it cannot tell you the full story about your roof.",
+      "The most consequential hail damage on a roof is often invisible from the ground. Hail impacts bruise the shingle mat without breaking through the surface. You can only detect this damage by pressing on the shingle and feeling for soft spots, which requires being on the roof. Granule displacement from hail impacts exposes the asphalt to accelerated UV degradation, but from the ground, it can look like normal granule loss. Cracked or displaced flashing around chimneys, skylights, and vents is almost impossible to evaluate from ground level. Damage to ridge cap shingles at the peak of the roof is not visible from most ground level vantage points.",
+      "This is why a professional roof inspection is not optional after a significant hailstorm. Your ground level observations help you decide whether to call for an inspection and give the inspector valuable context. But only a trained inspector on the roof can give you the full picture. [LINK: free-inspection]",
+
+      "Photo Documentation Tips",
+
+      "When you are walking your property and documenting damage, a few techniques will make your photos much more useful for your insurance claim.",
+      "Always include a reference object for scale. A coin, a ruler, or even your finger next to a dent or hole gives the viewer a clear sense of the damage size. Take both wide angle and close up shots of every damaged area. The wide shot shows location and context. The close up shows damage detail. Make sure your phone's location services and date stamp are enabled so every photo is automatically tagged with where and when it was taken. Take photos in good light. Midday sun with clear skies is ideal. Photos taken in shadow or at dawn and dusk can obscure damage details. Walk your entire property perimeter, not just the side facing the storm. Hail can hit from multiple angles, especially if wind shifts during the storm. If you take video, narrate what you are seeing as you walk. Your verbal description adds context that photos alone do not capture.",
+
+      "Get Your Free Professional Roof Inspection",
+
+      "Your ground level inspection is the first step. The next step is getting a certified professional on your roof to assess the full extent of the damage.",
+      "Gates Enterprises provides free post storm roof inspections across the entire Colorado Front Range. Our inspectors have assessed thousands of hail damaged roofs, and they know exactly what to look for. We document everything in detail, review the findings with you, and support your insurance claim from start to finish.",
+      "We are quadruple certified by GAF, Owens Corning, Malarkey, and CertainTeed. Less than 1% of roofers carry all four certifications. That means we can install any major shingle brand to the highest manufacturer standards with the best warranty available. [LINK: about]",
+      "Call Gates Enterprises at (720) 766-3377 or [LINK: contact] to schedule your free roof inspection today. Do not wait for a small problem to become a big one.",
+    ],
+    internalLinks: [
+      { placeholder: "roof-repair", href: "/services/roof-repair", text: "roof repair services" },
+      { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage", text: "storm and hail damage services" },
+      { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
+      { placeholder: "about", href: "/about", text: "about Gates Enterprises" },
+      { placeholder: "contact", href: "/contact", text: "contact us" },
     ],
   },
 ];
