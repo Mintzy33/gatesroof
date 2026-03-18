@@ -50,8 +50,8 @@ export default function HailScoreCard({
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 8,
-            marginBottom: 8,
+            gap: 12,
+            marginBottom: 12,
           }}
         >
           <span
@@ -59,23 +59,24 @@ export default function HailScoreCard({
               fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
               fontSize: 11,
               fontWeight: 700,
-              color: ACCENT,
-              letterSpacing: "0.2em",
+              color: TEXT_LIGHT,
+              letterSpacing: "0.1em",
               textTransform: "uppercase",
             }}
           >
-            HAILSCORE DATA
+            POWERED BY
           </span>
-          <span
-            style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 11,
-              color: TEXT_LIGHT,
-              letterSpacing: "0.1em",
-            }}
+          <a
+            href="https://myhailscore.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            POWERED BY MYHAILSCORE.COM
-          </span>
+            <img
+              src="/hailscore-wordmark.png"
+              alt="HailScore - Hail Risk Data"
+              style={{ height: 28 }}
+            />
+          </a>
         </div>
         <h2
           style={{
