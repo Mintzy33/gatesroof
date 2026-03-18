@@ -265,7 +265,13 @@ export default function StormContent() {
               { n: "Denver", s: "denver" }, { n: "Lakewood", s: "lakewood" }, { n: "Aurora", s: "aurora" },
               { n: "Parker", s: "parker" }, { n: "Centennial", s: "centennial" }, { n: "Arvada", s: "arvada" },
               { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
-              { n: "Littleton", s: "littleton" },
+              { n: "Littleton", s: "littleton" }, { n: "Broomfield", s: "broomfield" }, { n: "Castle Rock", s: "castle-rock" },
+              { n: "Highlands Ranch", s: "highlands-ranch" }, { n: "Golden", s: "golden" }, { n: "Englewood", s: "englewood" },
+              { n: "Wheat Ridge", s: "wheat-ridge" }, { n: "Commerce City", s: "commerce-city" }, { n: "Northglenn", s: "northglenn" },
+              { n: "Federal Heights", s: "federal-heights" }, { n: "Brighton", s: "brighton" }, { n: "Superior", s: "superior" },
+              { n: "Lone Tree", s: "lone-tree" }, { n: "Morrison", s: "morrison" }, { n: "Evergreen", s: "evergreen" },
+              { n: "Conifer", s: "conifer" }, { n: "Edgewater", s: "edgewater" }, { n: "Colorado Springs", s: "colorado-springs" },
+              { n: "Pueblo", s: "pueblo" }, { n: "Fort Collins", s: "fort-collins" }, { n: "Loveland", s: "loveland" },
             ].map((c) => (
               <Link key={c.s} href={`/services/storm-hail-damage/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}
