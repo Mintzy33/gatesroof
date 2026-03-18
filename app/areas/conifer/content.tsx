@@ -4,6 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import LocalSEOInfo from "../../components/LocalSEOInfo";
+import FAQAccordion from "../../components/FAQAccordion";
+import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -12,6 +14,7 @@ const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 export default function CityContent() {
+  const faqItems = getCityFAQItems("conifer");
   return (
     <div style={{ background: WHITE }}>
       <Header />
@@ -71,7 +74,12 @@ export default function CityContent() {
           </div>
         </div>
       </section>
-      <CTA title="Need a roofer in Conifer?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We bring mountain roofing expertise, Class 4 shingles, and proper gutter guard systems to every Conifer project." />
+            <FAQAccordion
+        items={faqItems}
+        title="Frequently Asked Questions: Roofing in Conifer, CO"
+      />
+
+<CTA title="Need a roofer in Conifer?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We bring mountain roofing expertise, Class 4 shingles, and proper gutter guard systems to every Conifer project." />
 
       {/* ─── SERVICES IN CONIFER ─── */}
       <section style={{ padding: "64px 24px", background: LIGHT_BG }}>

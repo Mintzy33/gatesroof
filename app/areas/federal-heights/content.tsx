@@ -4,6 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import LocalSEOInfo from "../../components/LocalSEOInfo";
+import FAQAccordion from "../../components/FAQAccordion";
+import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -12,6 +14,7 @@ const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 export default function CityContent() {
+  const faqItems = getCityFAQItems("federal-heights");
   return (
     <div style={{ background: WHITE }}>
       <Header />
@@ -71,7 +74,12 @@ export default function CityContent() {
           </div>
         </div>
       </section>
-      <CTA title="Need a roofer in Federal Heights?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We bring certified installation and full warranty options to Federal Heights homeowners — no shortcuts, no pressure." />
+            <FAQAccordion
+        items={faqItems}
+        title="Frequently Asked Questions: Roofing in Federal Heights, CO"
+      />
+
+<CTA title="Need a roofer in Federal Heights?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We bring certified installation and full warranty options to Federal Heights homeowners — no shortcuts, no pressure." />
 
       {/* ─── SERVICES IN FEDERAL HEIGHTS ─── */}
       <section style={{ padding: "64px 24px", background: LIGHT_BG }}>

@@ -11,6 +11,8 @@ import {
 } from "../../../../lib/service-areas-data";
 import type { CityData, ServiceData } from "../../../../lib/service-areas-data";
 import LocalSEOInfo from "../../../components/LocalSEOInfo";
+import FAQAccordion from "../../../components/FAQAccordion";
+import { getServiceCityFAQItems } from "../../../../lib/faq-data";
 import HailScoreCard from "../../../components/HailScoreCard";
 
 const NAVY = "#0D2137";
@@ -133,6 +135,7 @@ export default function ServiceCityContent({
   const nearbyCities = getNearbyCities(citySlug, 30, 8);
   const otherServices = services.filter((s) => s.slug !== service.slug);
   const whyChooseItems = getWhyChoose(city, service);
+  const faqItems = getServiceCityFAQItems(citySlug, serviceSlug);
 
   return (
     <div style={{ background: WHITE }}>
@@ -496,53 +499,7 @@ export default function ServiceCityContent({
             </>
           )}
 
-          {/* ── FAQs ── */}
-          <h2
-            style={{
-              fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-              fontSize: 30,
-              fontWeight: 800,
-              color: NAVY,
-              marginBottom: 20,
-            }}
-          >
-            {service.service} FAQs
-          </h2>
-          <div style={{ marginBottom: 24 }}>
-            {service.faqs.map((faq, i) => (
-              <div
-                key={i}
-                style={{
-                  borderBottom: "1px solid rgba(13,33,55,0.06)",
-                  padding: "20px 0",
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                    fontSize: 16,
-                    fontWeight: 600,
-                    color: NAVY,
-                    marginBottom: 8,
-                    marginTop: 0,
-                  }}
-                >
-                  {faq.q}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                    fontSize: 15,
-                    lineHeight: 1.75,
-                    color: TEXT_LIGHT,
-                    margin: 0,
-                  }}
-                >
-                  {faq.a}
-                </p>
-              </div>
-            ))}
-          </div>
+          {/* FAQs moved to FAQAccordion below */}
         </div>
       </section>
 
@@ -551,6 +508,11 @@ export default function ServiceCityContent({
         cityName={city.city}
         serviceSlug={service.slug}
         serviceName={service.service}
+      />
+
+      <FAQAccordion
+        items={faqItems}
+        title={`${service.service} in ${city.city}: Frequently Asked Questions`}
       />
 
       <LocalSEOInfo citySlug={city.slug} cityName={city.city} />
