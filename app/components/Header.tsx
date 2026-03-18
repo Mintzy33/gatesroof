@@ -59,6 +59,7 @@ export default function Header() {
     { l: "About", h: "/about" },
     { l: "Gallery", h: "/gallery" },
     { l: "Reviews", h: "/reviews" },
+    { l: "Free Tools", h: "/tools" },
     { l: "Blog", h: "/blog" },
     { l: "FAQ", h: "/faq" },
     { l: "Contact", h: "/contact" },

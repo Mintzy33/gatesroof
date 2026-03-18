@@ -46,6 +46,14 @@ const serviceParents = [
 // Standalone landing pages
 const landingPages = ["insurance-claims", "impact-resistant-shingles"];
 
+// Tool pages
+const toolPages = [
+  "tools",
+  "tools/roof-age-calculator",
+  "tools/repair-cost-estimator",
+  "tools/hail-risk-check",
+];
+
 // Static utility pages
 const utilityPages = ["about", "blog", "contact", "gallery", "reviews"];
 
@@ -112,5 +120,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...blog, ...serviceCityPages];
+  // Tool pages
+  const tools: MetadataRoute.Sitemap = toolPages.map((p) => ({
+    url: `${BASE}/${p}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: p === "tools" ? 0.8 : 0.7,
+  }));
+
+  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...tools, ...blog, ...serviceCityPages];
 }

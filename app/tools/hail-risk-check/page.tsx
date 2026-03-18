@@ -1,0 +1,53 @@
+import type { Metadata } from "next";
+import Script from "next/script";
+import HailRiskContent from "./content";
+
+export const metadata: Metadata = {
+  title: "Hail Risk Check | Check Your Home's Hail Score | Gates Enterprises",
+  description: "Look up your home's hail risk score powered by HailScore, a Gates Enterprises company. 4.5 million+ hail records, 10 years of data, all 50 states. Free instant results.",
+  alternates: { canonical: "https://www.gatesroof.com/tools/hail-risk-check" },
+  openGraph: {
+    title: "Hail Risk Check | Check Your Home's Hail Score | Gates Enterprises",
+    description: "Look up your home's hail risk score. 4.5M+ hail records, 10 years of data. Free instant results.",
+    url: "https://www.gatesroof.com/tools/hail-risk-check",
+    siteName: "Gates Enterprises LLC",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+const webAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hail Risk Check",
+  "description": "Check your home's hail risk score based on 4.5 million+ NOAA radar hail records. Powered by HailScore.",
+  "url": "https://www.gatesroof.com/tools/hail-risk-check",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "provider": {
+    "@type": "RoofingContractor",
+    "name": "Gates Enterprises LLC",
+    "url": "https://www.gatesroof.com",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.gatesroof.com" },
+    { "@type": "ListItem", position: 2, name: "Free Tools", item: "https://www.gatesroof.com/tools" },
+    { "@type": "ListItem", position: 3, name: "Hail Risk Check", item: "https://www.gatesroof.com/tools/hail-risk-check" },
+  ],
+};
+
+export default function Page() {
+  return (
+    <>
+      <Script id="webapp-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
+      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <HailRiskContent />
+    </>
+  );
+}
