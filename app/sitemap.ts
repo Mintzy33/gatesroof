@@ -56,7 +56,7 @@ const toolPages = [
 ];
 
 // Static utility pages
-const utilityPages = ["about", "blog", "contact", "gallery", "reviews"];
+const utilityPages = ["about", "about/alex-chicilo", "about/gates-enterprises", "blog", "contact", "gallery", "reviews"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString().split("T")[0];

@@ -184,10 +184,11 @@ export default function BlogPostLayout({
               display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
               fontSize: 20, fontWeight: 800, color: WHITE,
-            }}>GE</div>
+            }}>AC</div>
             <div>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY }}>Gates Enterprises</div>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Colorado&apos;s #1 Roofing Contractor &middot; Thousands of Roofs Completed</div>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: TEXT_LIGHT, marginBottom: 2 }}>Written by</div>
+              <Link href="/about/alex-chicilo" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY, textDecoration: "none" }}>Alex Chicilo</Link>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Owner, Gates Enterprises &middot; Quadruple Manufacturer Certified</div>
             </div>
           </div>
         </div>

@@ -74,8 +74,10 @@ export function blogPostingSchema(post: {
     dateModified: post.publishDate,
     author: {
       "@type": "Person",
+      "@id": "https://www.gatesroof.com/about/alex-chicilo#person",
       name: "Alex Chicilo",
-      url: "https://www.gatesroof.com/about",
+      url: "https://www.gatesroof.com/about/alex-chicilo",
+      jobTitle: "Owner",
       worksFor: {
         "@type": "Organization",
         name: BUSINESS_INFO.name,
