@@ -370,7 +370,7 @@ export default function InsuranceCoverageEstimatorContent() {
                     letterSpacing: "0.06em",
                     marginBottom: 4,
                   }}>
-                    Insurance Covers
+                    Insurance May Cover
                   </div>
                   <div style={{
                     fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
@@ -510,14 +510,14 @@ export default function InsuranceCoverageEstimatorContent() {
               textAlign: "center",
               marginBottom: 32,
             }}>
-              Gates Enterprises has helped hundreds of Colorado homeowners get their roofs replaced through insurance with zero out-of-pocket cost beyond their deductible.
+              Gates Enterprises has helped hundreds of Colorado homeowners navigate the insurance claims process. Most homeowners pay only their deductible when storm damage is approved by their insurance company.
             </p>
 
             {[
-              { num: "1", title: "Free Roof Inspection", desc: "We inspect your roof at no cost and identify all storm damage." },
+              { num: "1", title: "Free Roof Inspection", desc: "We inspect your roof at no charge and document any storm damage." },
               { num: "2", title: "Detailed Documentation", desc: "We photograph and document every issue so nothing gets missed." },
               { num: "3", title: "Insurance Claim Filing", desc: "We help you file your claim and communicate with your adjuster." },
-              { num: "4", title: "Insurance Covers Replacement", desc: "Your insurance company approves the work and covers the cost." },
+              { num: "4", title: "Insurance May Cover Replacement", desc: "If approved, your insurance company covers the cost per your policy terms." },
               { num: "5", title: "You Pay Only Your Deductible", desc: "Most homeowners pay $1,000 to $2,500. That's it." },
             ].map((step) => (
               <div key={step.num} style={{
@@ -580,7 +580,7 @@ export default function InsuranceCoverageEstimatorContent() {
               What Colorado Homeowners Should Know About Insurance Claims
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              Most storm damage in Colorado is covered by your homeowner's insurance policy. Hail, wind, and severe weather events are the most common causes of roof damage in the Denver metro area, and insurance companies expect to pay these claims.
+              Most storm damage in Colorado may be covered by your homeowner's insurance policy. Hail, wind, and severe weather events are the most common causes of roof damage in the Denver metro area.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
               Colorado law protects your right to choose your own contractor. You are not required to use the company your insurance recommends. You can select a contractor you trust, and your insurance company must work with them.
@@ -589,12 +589,19 @@ export default function InsuranceCoverageEstimatorContent() {
               There are time limits on filing insurance claims. In Colorado, most policies require you to file within one year of the damage occurring. Waiting too long could mean losing your coverage for that event, so it's important to get your roof inspected promptly after a storm.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              Gates Enterprises handles the entire claims process from inspection to completion. We meet with your adjuster on-site, ensure all damage is properly documented, and advocate for the full scope of repairs your roof needs.
+              Gates Enterprises helps document damage and works with your insurance adjuster from inspection to completion. We meet with your adjuster on-site, ensure all damage is properly documented, and provide thorough documentation to support the full scope of repairs your roof needs.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7 }}>
               As a quadruple manufacturer certified contractor (Owens Corning Platinum, GAF Master Elite, CertainTeed SELECT, Atlas Pro+), our documentation carries weight with insurance companies. Adjusters trust our assessments because we are held to the highest standards in the industry. <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Schedule your free inspection today</Link>.
             </p>
           </div>
+        </section>
+
+        {/* ─── DISCLAIMER ─── */}
+        <section style={{ maxWidth: 900, margin: "0 auto", padding: "24px 24px 48px" }}>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, lineHeight: 1.7, fontStyle: "italic" }}>
+            Estimates are for informational purposes only and do not constitute a quote or guarantee of insurance coverage. Actual costs and coverage depend on your specific situation, policy, and damage assessment. Contact us for a free professional evaluation.
+          </p>
         </section>
       </main>
       <Footer />

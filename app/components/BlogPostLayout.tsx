@@ -187,7 +187,7 @@ export default function BlogPostLayout({
             }}>GE</div>
             <div>
               <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY }}>Gates Enterprises</div>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Colorado&apos;s #1 Roofing Contractor &middot; 7,200+ Roofs Completed</div>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Colorado&apos;s #1 Roofing Contractor &middot; Thousands of Roofs Completed</div>
             </div>
           </div>
         </div>

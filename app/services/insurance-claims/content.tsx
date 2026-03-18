@@ -27,15 +27,15 @@ const PROCESS_STEPS = [
 const WHY_GATES = [
   { Icon: Award, bold: "Thousands of restorations completed.", rest: "We know the insurance restoration process in Colorado better than most. Our experience is your advantage." },
   { Icon: FileText, bold: "Xactimate proficient.", rest: "We write estimates in the same software your insurance company uses. That means faster approvals and fewer disputes." },
-  { Icon: ShieldCheck, bold: "O&P recovery specialists.", rest: "We don\u2019t leave money on the table. If your project qualifies for overhead and profit, we fight for every dollar." },
+  { Icon: ShieldCheck, bold: "O&P recovery specialists.", rest: "We don\u2019t leave money on the table. If your project qualifies for overhead and profit, we document and submit for every dollar your policy provides." },
   { Icon: Clock, bold: "Transparent communication.", rest: "You\u2019ll get updates throughout the process. No radio silence, no surprises. We treat your project like it matters, because it does." },
   { Icon: MapPin, bold: "Locally owned, 10+ years.", rest: "We live and work on Colorado\u2019s Front Range. Our reputation is built on doing right by our neighbors." },
   { Icon: Shield, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro." },
 ];
 
 const FAQS = [
-  { q: "Do I have to pay anything out of pocket?", a: "You\u2019re typically responsible for your deductible. Beyond that, most storm damage repairs are covered by your homeowner\u2019s insurance." },
-  { q: "Will you work with my insurance company?", a: "We coordinate directly with your insurance company, meet with your adjuster, provide documentation, and advocate on your behalf throughout the entire restoration process." },
+  { q: "Do I have to pay anything out of pocket?", a: "You\u2019re typically responsible for your deductible. Beyond that, most storm damage repairs may be covered by your homeowner\u2019s insurance, depending on your specific policy and the extent of damage." },
+  { q: "Will you work with my insurance company?", a: "We coordinate with your insurance adjuster, attend inspections, provide thorough documentation, and support you throughout the entire restoration process." },
   { q: "What if my insurance estimate seems too low?", a: "We\u2019ll review the estimate and submit additional documentation if needed. Our certifications and thorough documentation often help resolve discrepancies in your favor." },
   { q: "Is there a deadline after a storm?", a: "Most policies have a time limit, often one year from the date of the storm. Schedule an inspection as soon as possible to protect your eligibility." },
 ];
@@ -289,7 +289,7 @@ export default function InsuranceContent() {
       <section style={{ padding: "32px 24px", background: WHITE, borderTop: "1px solid rgba(13,33,55,0.06)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const }}>
-            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We advocate on your behalf but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
+            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We provide documentation to support your claim but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
           </p>
         </div>
       </section>

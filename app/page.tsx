@@ -41,7 +41,7 @@ export default function Home() {
               <h1 className="hero-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 4.5vw, 62px)", fontWeight: 800, color: WHITE, lineHeight: 1.06, margin: "0 0 20px" }}>
                 Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
               </h1>
-              <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>7,200+ roofs completed across the Denver metro. From hail damage restoration to full exterior solutions.</p>
+              <p className="hero-sub" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.8)", margin: "0 0 32px", maxWidth: 460 }}>Thousands of roofs completed across the Denver metro. From hail damage restoration to full exterior solutions.</p>
             <ScrollReveal delay={0.2}>
               <div className="hero-btns">
                 <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, textAlign: "center" }}>Request a Free Inspection & Estimate →</Link>
@@ -129,7 +129,7 @@ export default function Home() {
           <StaggerCards className="hiw-grid" stagger={0.15} distance={40}>
             {[
               { n: "1", t: "Free Inspection", d: "We come to you. Our certified inspectors document every detail of your roof — no cost, no obligation." },
-              { n: "2", t: "Insurance & Estimate", d: "If storm damage is found, we handle your insurance claim from start to finish. We know what adjusters miss." },
+              { n: "2", t: "Insurance & Estimate", d: "If storm damage is found, we help document damage and work with your insurance adjuster. We know what gets missed." },
               { n: "3", t: "Expert Installation", d: "Our crews install your new roof with manufacturer-certified precision. Most jobs completed in one day." },
             ].map((step, i) => (
               <div key={i} style={{ textAlign: "center" as const, position: "relative" }}>
@@ -190,7 +190,7 @@ export default function Home() {
           <ScrollReveal>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>COLORADO&apos;S HAIL PROBLEM</span>
             <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 16px" }}>Why Colorado Homeowners Need a Roofing Partner</h2>
-            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 680, margin: "0 auto 40px", lineHeight: 1.8 }}>Colorado ranks #1 in the nation for hail damage insurance claims. The Front Range sees damaging hailstorms every spring and summer, with stones regularly exceeding golf ball size. Many homeowners don&apos;t realize their roof has storm damage until leaks appear years later. A proactive inspection after every major storm is the single best way to protect your home&apos;s value — and your insurance covers most repairs at no out-of-pocket cost.</p>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 680, margin: "0 auto 40px", lineHeight: 1.8 }}>Colorado ranks #1 in the nation for hail damage insurance claims. The Front Range sees damaging hailstorms every spring and summer, with stones regularly exceeding golf ball size. Many homeowners don&apos;t realize their roof has storm damage until leaks appear years later. A proactive inspection after every major storm is the single best way to protect your home&apos;s value — and insurance may cover most repairs, with homeowners typically paying only their deductible.</p>
           </ScrollReveal>
           <StaggerCards className="hail-stats" stagger={0.1} distance={30}>
             {[
@@ -319,12 +319,12 @@ export default function Home() {
           </ScrollReveal>
           <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
             {[
-              { q: "Does insurance cover hail damage?", a: "Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're only responsible for your deductible. We handle the entire claims process so you don't have to." },
+              { q: "Does insurance cover hail damage?", a: "Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're responsible for your deductible. We help document damage and work with your adjuster throughout the claims process." },
               { q: "How long does a roof replacement take?", a: "Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins." },
               { q: "What's the difference between repair and replacement?", a: "Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty." },
               { q: "Do you offer financing?", a: "Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection." },
               { q: "How do I know if my roof has hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture — those are signs your roof was likely hit too. The only way to know for sure is a professional inspection." },
-              { q: "What if my insurance claim is denied?", a: "We fight for you. Our team has recovered millions in supplements and overturned denied claims. We know what documentation adjusters need and how to present it." },
+              { q: "What if my insurance claim is denied?", a: "Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively." },
             ].map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div style={{ padding: "24px 28px", background: LIGHT_BG, borderRadius: 16, border: "1px solid rgba(13,33,55,0.04)" }}>

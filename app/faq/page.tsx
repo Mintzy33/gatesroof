@@ -26,7 +26,7 @@ const faqData = [
       },
       {
         q: "Will I pay anything beyond my insurance deductible?",
-        a: "In most insurance roof replacement projects, your deductible is the only out-of-pocket cost. Your homeowners insurance policy covers the approved scope of work minus your deductible. If the adjuster's initial estimate falls short, we file supplements to recover the full cost of proper installation. Gates Enterprises has recovered millions in supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate — we fight for the full scope your roof needs.",
+        a: "In most insurance roof replacement projects, your deductible is your primary out-of-pocket cost. Your homeowners insurance policy typically covers the approved scope of work minus your deductible. If the adjuster's initial estimate falls short, we file supplements with additional documentation to support the full cost of proper installation. Gates Enterprises has recovered millions in supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate. We document thoroughly to support the full scope your roof needs.",
       },
       {
         q: "Does Gates offer financing?",
@@ -97,7 +97,7 @@ const faqData = [
       },
       {
         q: "How big does hail need to be to damage a roof?",
-        a: "Hail as small as 1 inch in diameter (about quarter-sized) can damage standard asphalt shingles. At 1.5 inches (golf ball size), damage is almost guaranteed on most residential roofing materials. Colorado regularly sees hailstones exceeding 2 inches, which can crack shingles, dent metal flashing, and damage gutters. Impact-resistant Class 4 shingles are engineered to withstand hail up to 2 inches without functional damage, which is why we recommend them for every Colorado roof. Many insurance companies offer premium discounts of 15-28% for Class 4 shingles, making them a smart investment.",
+        a: "Hail as small as 1 inch in diameter (about quarter-sized) can damage standard asphalt shingles. At 1.5 inches (golf ball size), damage is highly likely on most residential roofing materials. Colorado regularly sees hailstones exceeding 2 inches, which can crack shingles, dent metal flashing, and damage gutters. Impact-resistant Class 4 shingles are engineered to withstand hail up to 2 inches without functional damage, which is why we recommend them for every Colorado roof. Many insurance companies offer premium discounts of 15-28% for Class 4 shingles, making them a smart investment.",
       },
       {
         q: "Can I wait to file my hail damage claim?",
@@ -126,7 +126,7 @@ const faqData = [
       },
       {
         q: "What are impact-resistant shingles and do I need them?",
-        a: "Impact-resistant (IR) shingles carry a Class 4 rating — the highest impact resistance grade for roofing materials. They're engineered with a reinforced mat or polymer-modified asphalt that absorbs hail impact without cracking or losing granules. In Colorado, where hailstorms are a yearly guarantee, Class 4 shingles are the smartest investment you can make. Most insurance companies offer premium discounts of 15-28% for verified Class 4 installations, which often pays for the upgrade within a few years. Malarkey and GAF both offer excellent Class 4 options that we install regularly.",
+        a: "Impact-resistant (IR) shingles carry a Class 4 rating — the highest impact resistance grade for roofing materials. They're engineered with a reinforced mat or polymer-modified asphalt that absorbs hail impact without cracking or losing granules. In Colorado, where hailstorms are a yearly occurrence, Class 4 shingles are the smartest investment you can make. Most insurance companies offer premium discounts of 15-28% for verified Class 4 installations, which often pays for the upgrade within a few years. Malarkey and GAF both offer excellent Class 4 options that we install regularly.",
       },
     ],
   },
@@ -135,11 +135,11 @@ const faqData = [
     items: [
       {
         q: "What areas does Gates Enterprises serve?",
-        a: "Gates Enterprises is headquartered in Lakewood, Colorado and serves the entire Denver metro area and Front Range. Our primary service area includes Denver, Aurora, Arvada, Westminster, Thornton, Centennial, Littleton, Englewood, Broomfield, Golden, Highlands Ranch, Parker, Castle Rock, Commerce City, Northglenn, Wheat Ridge, Federal Heights, Edgewater, Conifer, and dozens more communities. We also serve Colorado Springs, Fort Collins, and surrounding areas for larger projects. With over 7,200 roofs completed across the Front Range, chances are we've already worked on a home in your neighborhood.",
+        a: "Gates Enterprises is headquartered in Lakewood, Colorado and serves the entire Denver metro area and Front Range. Our primary service area includes Denver, Aurora, Arvada, Westminster, Thornton, Centennial, Littleton, Englewood, Broomfield, Golden, Highlands Ranch, Parker, Castle Rock, Commerce City, Northglenn, Wheat Ridge, Federal Heights, Edgewater, Conifer, and dozens more communities. We also serve Colorado Springs, Fort Collins, and surrounding areas for larger projects. With thousands of roofs completed across the Front Range, chances are we've already worked on a home in your neighborhood.",
       },
       {
         q: "Why choose a local Colorado roofer over a storm chaser?",
-        a: "Storm chasers flood into Colorado after every major hailstorm, install roofs quickly, and leave town before warranty issues surface. When something goes wrong — and it often does — there's no one to call. Gates Enterprises has been based in Lakewood since 2014. We have a permanent office, a local crew of over 100 employees, and a reputation built on 7,200+ completed roofs. Our manufacturer certifications require ongoing local operations, which means we'll be here for the full life of your warranty. We answer our own phones, and your project manager lives in the same community you do.",
+        a: "Storm chasers flood into Colorado after every major hailstorm, install roofs quickly, and leave town before warranty issues surface. When something goes wrong — and it often does — there's no one to call. Gates Enterprises has been based in Lakewood since 2014. We have a permanent office, a local crew of over 100 employees, and a reputation built on thousands of completed roofs. Our manufacturer certifications require ongoing local operations, which means we'll be here for the full life of your warranty. We answer our own phones, and your project manager lives in the same community you do.",
       },
       {
         q: "Does Gates work in my city?",

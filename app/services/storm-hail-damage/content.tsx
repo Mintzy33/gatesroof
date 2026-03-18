@@ -26,7 +26,7 @@ const PROCESS_STEPS = [
 
 const WHY_GATES = [
   { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. Fewer than 1% of contractors in the nation hold all four." },
-  { Icon: ShieldCheck, bold: "7,200+ roofs completed.", rest: "We\u2019ve seen every type of storm damage Colorado can throw at a roof and delivered lasting results every time." },
+  { Icon: ShieldCheck, bold: "thousands of roofs completed.", rest: "We\u2019ve seen every type of storm damage Colorado can throw at a roof and delivered lasting results every time." },
   { Icon: Clock, bold: "10+ years on Colorado\u2019s Front Range.", rest: "We live and work here. Our reputation is everything, and we\u2019ve built it one roof at a time." },
   { Icon: Shield, bold: "Warranties up to 50 years.", rest: "With the GAF Golden Pledge warranty, your materials and workmanship are covered for decades, backed by the manufacturer." },
   { Icon: MapPin, bold: "Locally owned, community focused.", rest: "Gates Enterprises is a Colorado company serving Colorado homeowners. We\u2019re not a franchise or a storm chaser." },
@@ -39,7 +39,7 @@ const FAQS = [
   { q: "How quickly can you respond after a storm?", a: "Storm response is our top priority. With over 100 team members across Colorado's Front Range, we have the capacity to mobilize immediately after a storm hits. While other companies are booking out weeks, we're already on roofs getting inspections done." },
   { q: "Will my insurance cover the full cost of repairs?", a: "Most homeowner policies cover storm damage minus your deductible. We document every detail thoroughly with photos, measurements, and manufacturer specifications to support a complete and fair resolution. If your adjuster's initial estimate comes in short, we'll supplement the estimate with additional documentation. We've done this over 7,204 times." },
   { q: "What should I do immediately after a hailstorm?", a: "Don't get on your roof. Document what you can see from the ground, take photos of any damage to gutters, siding, or windows, and call us for a free inspection. The sooner you get a professional assessment, the stronger your case will be. Colorado has a one year deadline to file with most carriers, but earlier is always better." },
-  { q: "Do I need to pay anything out of pocket?", a: "Your only out of pocket cost is typically your insurance deductible. The rest is covered by your policy. We work directly with your insurance company to make sure the scope of work and pricing align so there are no surprises." },
+  { q: "Do I need to pay anything out of pocket?", a: "Your primary out of pocket cost is typically your insurance deductible. The rest may be covered by your policy, depending on your specific coverage. We work with your insurance adjuster to help ensure the scope of work and pricing align so there are no surprises." },
   { q: "Can I choose my own contractor or does insurance pick one?", a: "You always have the right to choose your own contractor in Colorado. Your insurance company may suggest preferred vendors, but you are not required to use them. Choosing a quadruple manufacturer certified contractor like Gates Enterprises ensures your roof is installed to the highest standards with warranties that preferred vendor programs often can't match." },
   { q: "What if my insurance restoration gets denied?", a: "It happens, but it's not always the final answer. We can help you understand why coverage was denied and whether a re inspection or supplement is worth pursuing. In many cases, having a certified contractor present during the adjuster's inspection makes a significant difference in the outcome." },
 ];
@@ -62,7 +62,7 @@ export default function StormContent() {
             Colorado Storm Damage and Hail Repair You Can Trust
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Fast response, expert craftsmanship, and full insurance support from a team that&apos;s repaired over 7,200 roofs across the Front Range.
+            Fast response, expert craftsmanship, and full insurance support from a team that&apos;s repaired thousands of roofs across the Front Range.
           </p>
           <div className="sd-hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
             <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -84,7 +84,7 @@ export default function StormContent() {
               When the Storm Hits, We&apos;re Here
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: TEXT, maxWidth: 700, margin: "0 auto" }}>
-              Colorado&apos;s Front Range sees some of the most severe hailstorms in the country. When a storm hits, you need a roofing partner who responds quickly, assesses damage honestly, and delivers lasting repairs. Gates Enterprises has been helping homeowners recover from storm damage for over 10 years. We handle everything from the initial inspection to the final walkthrough, so you can focus on your family while we take care of your home.
+              Colorado&apos;s Front Range sees some of the most severe hailstorms in the country. When a storm hits, you need a roofing partner who responds quickly, assesses damage honestly, and delivers lasting repairs. Gates Enterprises has been helping homeowners recover from storm damage for over 10 years. We support you through every step from the initial inspection to the final walkthrough, so you can focus on your family while we take care of your home.
             </p>
           </div>
         </section>

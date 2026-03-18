@@ -325,6 +325,13 @@ export default function HailRiskContent() {
             Get a Free Roof Inspection from Gates Enterprises
           </Link>
         </section>
+
+        {/* ─── DISCLAIMER ─── */}
+        <section style={{ maxWidth: 900, margin: "0 auto", padding: "24px 24px 48px" }}>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, lineHeight: 1.7, fontStyle: "italic" }}>
+            HailScore data is based on historical NOAA radar records and does not guarantee future hail activity or predict specific damage to any property.
+          </p>
+        </section>
       </main>
       <Footer />
     </>

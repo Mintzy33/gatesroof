@@ -272,7 +272,7 @@ export default function ImpactResistantContent() {
               <Link href="/insurance-claims" style={{ background: WHITE, borderRadius: 16, padding: "28px 20px", textDecoration: "none", border: "1px solid rgba(13,33,55,0.06)", transition: "all 0.25s ease" }}>
                 <ShieldCheck size={28} color={ACCENT} strokeWidth={1.8} style={{ marginBottom: 12 }} />
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: DEEP, marginBottom: 8 }}>Insurance Claims</h3>
-                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: 0 }}>We advocate on your behalf through the entire insurance claim process.</p>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: TEXT_LIGHT, margin: 0 }}>We help document damage and support you through the entire insurance claim process.</p>
               </Link>
               <Link href="/services/storm-hail-damage" style={{ background: WHITE, borderRadius: 16, padding: "28px 20px", textDecoration: "none", border: "1px solid rgba(13,33,55,0.06)", transition: "all 0.25s ease" }}>
                 <Shield size={28} color={ACCENT} strokeWidth={1.8} style={{ marginBottom: 12 }} />

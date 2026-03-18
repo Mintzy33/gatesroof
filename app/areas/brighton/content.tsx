@@ -240,7 +240,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Specialists.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              When a hailstorm damages your roof, the restoration process can feel overwhelming. Gates Enterprises LLC is an insurance restoration expert, guiding Brighton homeowners through the restoration process from initial inspection through final installation. We document damage thoroughly and work directly with your insurance company on your behalf.
+              When a hailstorm damages your roof, the restoration process can feel overwhelming. Gates Enterprises LLC is an insurance restoration expert, guiding Brighton homeowners through the restoration process from initial inspection through final installation. We document damage thoroughly and work with your insurance adjuster to support your claim.
             </p>
           </div>
 

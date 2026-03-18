@@ -409,7 +409,7 @@ export default function CityContent() {
       {/* ─── 9. ADDITIONAL CTA SECTION ─── */}
       <CTA
         title="Your Local Lakewood Roofer. Ready When You Need Us."
-        subtitle="Gates Enterprises LLC was born in Lakewood, built in Lakewood, and serves Lakewood homeowners every single day. When the next hailstorm rolls off the mountains and hits our neighborhoods, we will be here. We are not a company that chases storms across the country. We are your neighbors, and we are staying right here. If your roof needs attention, whether from recent storm damage, age, or just peace of mind, reach out today. The inspection is free. The conversation is honest. And the work is guaranteed."
+        subtitle="Gates Enterprises LLC was born in Lakewood, built in Lakewood, and serves Lakewood homeowners every single day. When the next hailstorm rolls off the mountains and hits our neighborhoods, we will be here. We are not a company that chases storms across the country. We are your neighbors, and we are staying right here. If your roof needs attention, whether from recent storm damage, age, or just peace of mind, reach out today. The inspection is free. The conversation is honest. And the work is backed by manufacturer warranties."
       />
 
       {/* ─── 10. INTERNAL LINKS SECTION ─── */}

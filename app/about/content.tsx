@@ -20,7 +20,7 @@ const MILESTONES = [
   { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. Only 1% of contractors hold all four." },
   { y: "2022", t: "5,000 Roofs and Millions Recovered", d: "Surpassed 5,000 completed projects. Recovered millions in insurance supplements that adjusters tried to deny." },
   { y: "2024", t: "Full Exterior Services Launched", d: "Expanded beyond roofing into siding, gutters, windows, and paint. One contractor for everything above your foundation." },
-  { y: "2026", t: "7,200+ Roofs and 100 Strong", d: "Grew to over 100 employees with dedicated facilities for every step of the process. Still based in Lakewood. Still answering our own phones." },
+  { y: "2026", t: "Thousands of Roofs and 100 Strong", d: "Grew to over 100 employees with dedicated facilities for every step of the process. Still based in Lakewood. Still answering our own phones." },
 ];
 
 export default function AboutContent() {
@@ -233,7 +233,7 @@ export default function AboutContent() {
           </div>
           <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.9, color: TEXT }}>
             <p style={{ marginTop: 0, marginBottom: 20 }}>
-              I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, fight their insurance company like it was personal, and still be here seven years later when the workmanship warranty kicks in.
+              I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, document their damage like it was personal, and still be here seven years later when the workmanship warranty kicks in.
             </p>
             <p style={{ marginBottom: 20 }}>
               That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
@@ -260,7 +260,7 @@ export default function AboutContent() {
             {[
               { Icon: ShieldCheck, t: "Integrity First", d: "We tell you what your roof needs, not what makes us the most money. Honest assessments, always." },
               { Icon: Flame, t: "Relentless Work Ethic", d: "First ones on site, last ones to leave. Every project gets our full attention until the final nail." },
-              { Icon: Handshake, t: "Fight For the Homeowner", d: "Insurance companies have adjusters. You have us. We negotiate, supplement, and recover what you're owed." },
+              { Icon: Handshake, t: "Advocate For the Homeowner", d: "Insurance companies have adjusters. You have us. We document thoroughly, submit supplements, and help you receive the coverage your policy provides." },
               { Icon: MapPin, t: "Local Roots", d: "We live in Lakewood. Our kids go to school here. When a hailstorm hits, it hits our neighborhood too." },
             ].map((v, i) => (
               <div key={i} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "36px 24px", backdropFilter: "blur(8px)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center" }}>

@@ -172,7 +172,7 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `Does Gates Enterprises serve ${n.name} in ${c.city}?`,
-      a: `Yes. Gates Enterprises provides ${s.service.toLowerCase()} throughout ${n.name} and all of ${c.city}. With over 7,200 completed projects across Colorado's Front Range and a 4.8-star rating from 301 Google reviews, we bring certified quality to every ${n.name} project. Call (720) 766-3377 or visit our contact page to schedule a free estimate.`,
+      a: `Yes. Gates Enterprises provides ${s.service.toLowerCase()} throughout ${n.name} and all of ${c.city}. With thousands of completed projects across Colorado's Front Range and a 4.8-star rating from 301 Google reviews, we bring certified quality to every ${n.name} project. Call (720) 766-3377 or visit our contact page to schedule a free estimate.`,
     },
     {
       q: `How long does ${s.service.toLowerCase()} take in ${n.name}?`,
@@ -184,11 +184,11 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `Do you handle insurance claims for ${n.name} homeowners?`,
-      a: `Absolutely. Gates Enterprises manages the entire insurance claim process for ${n.name} homeowners, from initial inspection and damage documentation through adjuster meetings and supplemental approvals. With ${c.city}'s ${riskWord} hail exposure, many ${n.name} residents qualify for full roof restoration through their homeowners insurance. We handle the paperwork so you don't have to.`,
+      a: `Absolutely. Gates Enterprises manages the entire insurance claim process for ${n.name} homeowners, from initial inspection and damage documentation through adjuster meetings and supplemental approvals. With ${c.city}'s ${riskWord} hail exposure, many ${n.name} residents qualify for full roof restoration through their homeowners insurance. We help with the documentation so you can focus on everything else.`,
     },
     {
       q: `What makes Gates Enterprises different from other roofers in ${n.name}?`,
-      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. With 301 Google reviews (4.8 stars) and 7,200+ completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
+      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. With 301 Google reviews (4.8 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
     },
   ];
 

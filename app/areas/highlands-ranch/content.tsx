@@ -45,7 +45,7 @@ export default function CityContent() {
               { t: "Roof Repair", d: "Fast leak repair, emergency tarping, and honest assessments.", h: "/services/roof-repair" },
               { t: "Siding and Exterior", d: "James Hardie, vinyl, and wood siding installation and repair.", h: "/services/siding-exterior" },
               { t: "Gutters and Guards", d: "Seamless gutter fabrication and gutter guard systems.", h: "/services/gutters-guards" },
-              { t: "Insurance Restoration", d: "We work directly with your insurance company. Xactimate certified.", h: "/services/insurance-claims" },
+              { t: "Insurance Restoration", d: "We help document damage and work with your adjuster. Xactimate certified.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none" }}>
                 <div style={{ background: LIGHT_BG, borderRadius: 16, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)", height: "100%" }}>
@@ -62,7 +62,7 @@ export default function CityContent() {
               "HRCA approved materials knowledge and HOA submission experience",
               "Full insurance restoration support on hail and storm claims",
               "Douglas County permit and inspection coordination",
-              "7,200+ roofs completed across the Denver metro",
+              "thousands of roofs completed across the Denver metro",
               "4.8 star Google rating from 300+ verified reviews",
               "Experienced with large complex rooflines in master planned communities",
               "Free inspections with no obligation and no pressure",

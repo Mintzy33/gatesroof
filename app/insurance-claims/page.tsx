@@ -38,7 +38,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How much does a roof insurance claim cost me out of pocket?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, your only out of pocket cost is your insurance deductible. Gates Enterprises assists with the entire insurance process and works directly with your insurance company to advocate for the coverage your policy provides. Homeowners are responsible for their deductible as required by Colorado law."}},
+    {"@type": "Question", "name": "How much does a roof insurance claim cost me out of pocket?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, your primary out of pocket cost is your insurance deductible. Gates Enterprises helps document damage and works with your insurance adjuster to support the coverage your policy provides. Homeowners are responsible for their deductible as required by Colorado law."}},
     {"@type": "Question", "name": "What is Gates Enterprises' insurance claim approval rate?", "acceptedAnswer": {"@type": "Answer", "text": "When Gates Enterprises recommends filing a claim, our approval rate is over 99%. We only recommend filing when we are confident the damage warrants a claim, and we document everything thoroughly to support approval."}},
     {"@type": "Question", "name": "What are supplements and why do they matter?", "acceptedAnswer": {"@type": "Answer", "text": "Supplements are additional documentation submitted to your insurance company when the initial estimate does not cover the full scope of work. Most homeowners do not know supplements exist. Gates Enterprises handles the entire supplement process, often recovering thousands of additional dollars for your project."}},
     {"@type": "Question", "name": "Does Gates Enterprises meet with my insurance adjuster?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and ensure nothing is missed or undervalued."}},
@@ -72,7 +72,7 @@ const reviewSchema = {
       "@type": "Review",
       "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
       "author": {"@type": "Person", "name": "Colorado Homeowner"},
-      "reviewBody": "We thought we'd have to pay thousands out of pocket. Gates handled everything and we only paid our deductible."
+      "reviewBody": "We thought we'd have to pay thousands out of pocket. Gates documented everything and worked with our adjuster. We only paid our deductible."
     }
   ]
 };

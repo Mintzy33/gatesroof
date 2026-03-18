@@ -29,13 +29,13 @@ const WHY_GATES = [
   { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. Your warranty is backed by the manufacturer, not just the contractor." },
   { Icon: FileText, bold: "Xactimate proficient.", rest: "We write estimates in the same software your insurance company uses. That means faster approvals and fewer disputes." },
   { Icon: ShieldCheck, bold: "Supplement specialists.", rest: "Most homeowners don\u2019t know supplements exist. We prepare additional documentation when the initial estimate doesn\u2019t reflect the full scope of work." },
-  { Icon: DollarSign, bold: "We advocate for fair coverage.", rest: "We work with your insurance company on your behalf to help ensure your claim reflects the actual cost of a proper roof replacement." },
+  { Icon: DollarSign, bold: "We advocate for fair coverage.", rest: "We provide thorough documentation to help ensure your claim reflects the actual cost of a proper roof replacement." },
   { Icon: Clock, bold: "Transparent communication.", rest: "You get updates at every stage. No radio silence, no surprises. We treat your project like it matters, because it does." },
   { Icon: MapPin, bold: "Locally owned, 10+ years.", rest: "We live and work on Colorado\u2019s Front Range. Our reputation is built on doing right by our neighbors." },
 ];
 
 const TESTIMONIALS = [
-  { quote: "We thought we\u2019d have to pay thousands out of pocket. Gates handled the entire insurance process and our only cost was our deductible.", attribution: "Lakewood homeowner" },
+  { quote: "We thought we\u2019d have to pay thousands out of pocket. Gates documented everything and worked with our adjuster through the entire process. Our only cost was our deductible.", attribution: "Lakewood homeowner" },
   { quote: "They found damage we didn\u2019t even know about, attended the adjuster meeting, and got the scope right. Professional from start to finish.", attribution: "Arvada homeowner" },
   { quote: "Our first estimate from the insurance company was way too low. Gates submitted a supplement and the difference was significant. We\u2019re glad we didn\u2019t settle.", attribution: "Denver homeowner" },
 ];
@@ -43,7 +43,7 @@ const TESTIMONIALS = [
 const FAQS = [
   { q: "How much will I pay out of pocket?", a: "In most cases, your only out of pocket cost is your insurance deductible. Your homeowner\u2019s insurance typically covers the full replacement cost minus the deductible. As required by Colorado law, homeowners are responsible for paying their deductible." },
   { q: "What is your claim success rate?", a: "When Gates Enterprises recommends filing a claim, our success rate is over 99%. We only recommend filing when we\u2019re confident the damage warrants it. We never pressure homeowners to file unnecessary claims." },
-  { q: "What are supplements?", a: "Supplements are additional documentation submitted to your insurance company when the initial estimate doesn\u2019t cover the full scope of work. Most homeowners don\u2019t know they exist. We handle the entire supplement process, which often results in thousands of additional dollars toward your project." },
+  { q: "What are supplements?", a: "Supplements are additional documentation submitted to your insurance company when the initial estimate doesn\u2019t cover the full scope of work. Most homeowners don\u2019t know they exist. We prepare and submit supplement documentation, which often results in thousands of additional dollars toward your project." },
   { q: "Do you meet with my adjuster?", a: "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and advocate for a fair and accurate estimate." },
   { q: "Does my insurance really cover a full roof replacement?", a: "Most Colorado homeowner\u2019s insurance policies cover the full replacement cost of a storm damaged roof, minus your deductible. Many homeowners don\u2019t realize this. We help you understand your coverage and work with your insurance company to pursue the coverage your policy provides." },
   { q: "How long does the process take?", a: "From initial inspection to completed installation, most projects take 4 to 8 weeks. The timeline depends on insurance company response times, supplement reviews, and weather. We keep the process moving and communicate with you at every step." },
@@ -65,10 +65,10 @@ export default function InsuranceClaimsContent() {
             Home &rarr; Insurance Claims
           </Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>
-            Your Roof Insurance Claim, Handled From Start to Finish
+            Your Roof Insurance Claim, Supported From Start to Finish
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 12, maxWidth: 700 }}>
-            Most Colorado homeowners don&apos;t realize their insurance covers the full replacement cost of a storm damaged roof, minus the deductible. Many roofers don&apos;t fight for you. We do.
+            Most Colorado homeowners don&apos;t realize their insurance may cover the full replacement cost of a storm damaged roof, minus the deductible. Many roofers don&apos;t document thoroughly. We do.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: GOLD, lineHeight: 1.6, marginBottom: 32, maxWidth: 700, fontWeight: 600 }}>
             In most cases, your only cost is your insurance deductible.
@@ -147,9 +147,9 @@ export default function InsuranceClaimsContent() {
                 <div style={{ width: 48, height: 48, borderRadius: 14, background: "rgba(37,99,235,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
                   <DollarSign size={24} color={ACCENT} strokeWidth={1.8} />
                 </div>
-                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: DEEP, marginBottom: 8 }}>Your Insurance Covers More Than You Think</h3>
+                <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: DEEP, marginBottom: 8 }}>Your Insurance May Cover More Than You Think</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>
-                  Most Colorado homeowner&apos;s insurance policies cover the full replacement cost of a storm damaged roof. Your only responsibility is typically your deductible. Many homeowners assume they&apos;ll owe thousands more. In most cases, they don&apos;t.
+                  Most Colorado homeowner&apos;s insurance policies may cover the full replacement cost of a storm damaged roof. Your responsibility typically includes your deductible. Coverage depends on your specific policy, but many homeowners are surprised by how much is covered.
                 </p>
               </div>
               <div className="icl-info-card" style={{ background: WHITE, borderRadius: 20, padding: "32px 28px", border: "2px solid transparent", transition: "border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease" }}>
@@ -393,7 +393,7 @@ export default function InsuranceClaimsContent() {
       <section style={{ padding: "32px 24px", background: WHITE, borderTop: "1px solid rgba(13,33,55,0.06)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0, textAlign: "center" as const }}>
-            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We advocate on your behalf but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
+            Results vary based on your insurance policy and the extent of damage. Gates Enterprises does not guarantee insurance claim outcomes. We provide documentation to support your claim but cannot guarantee approval. Homeowners are responsible for their insurance deductible as required by Colorado law.
           </p>
         </div>
       </section>

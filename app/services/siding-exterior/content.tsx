@@ -33,7 +33,7 @@ const WHY_GATES = [
 const FAQS = [
   { q: "How do I know when my siding needs to be replaced?", a: "Warping, cracking, fading, bubbling, or increased energy bills can all point to siding that\u2019s no longer performing. We offer free inspections to help you decide." },
   { q: "What siding material is best for Colorado?", a: "Fiber cement and engineered wood are popular choices along the Front Range because they hold up well against hail, UV exposure, and dramatic temperature changes." },
-  { q: "Can you replace siding damaged by a storm?", a: "Absolutely. We handle storm damaged siding repairs and replacements regularly, and we can assist with insurance restoration to help cover the cost." },
+  { q: "Can you replace siding damaged by a storm?", a: "Absolutely. We repair and replace storm damaged siding regularly, and we can assist with the insurance restoration process to help support your claim." },
   { q: "How long does siding installation take?", a: "Most homes can be completed in one to two weeks depending on the size of the project and material availability." },
 ];
 

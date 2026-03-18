@@ -34,7 +34,7 @@ function getHeroIntro(city: CityData, service: ServiceData): string {
     low: `While ${city.city}'s mountain location in ${city.county} County provides some shelter from Front Range hail, homes here face unique challenges including heavy snow loads, extreme UV at altitude, and wind-driven ice.`,
   };
 
-  return `${hailIntros[city.hailRisk]} Gates Enterprises brings quadruple manufacturer certification and over 7,200 completed projects to every ${service.service.toLowerCase()} job in ${city.city}. ${city.description}`;
+  return `${hailIntros[city.hailRisk]} Gates Enterprises brings quadruple manufacturer certification and thousands of completed projects to every ${service.service.toLowerCase()} job in ${city.city}. ${city.description}`;
 }
 
 function getWhySection(city: CityData, service: ServiceData): string {
@@ -92,7 +92,7 @@ function getWhyChoose(city: CityData, service: ServiceData): string[] {
   const base = [
     `GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certified`,
     `301 Google reviews with a 4.8-star rating from Colorado homeowners`,
-    `Over 7,200 roofing projects completed across the Front Range`,
+    `Over thousands of roofing projects completed across the Front Range`,
     `Free inspections with no obligation and no pressure`,
     `${city.county} County permit and inspection coordination included`,
     `Full manufacturer warranty options on every certified installation`,

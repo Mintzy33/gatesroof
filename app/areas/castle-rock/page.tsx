@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Roofing Contractor in Castle Rock, CO | Gates Enterprises",
-  description: "Castle Rock roofing experts. Roof replacement, hail damage repair, siding & gutters. 7,200+ roofs completed in Colorado. Free inspection. Call (720) 766-3377.",
+  description: "Castle Rock roofing experts. Roof replacement, hail damage repair, siding & gutters. Thousands of roofs completed in Colorado. Free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/castle-rock" },
   openGraph: {
     title: "Roofing Contractor in Castle Rock, CO | Gates Enterprises",
-    description: "Castle Rock roofing experts. Roof replacement, hail damage repair, siding & gutters. 7,200+ roofs completed in Colorado. Free inspection. Call (720) 766-3377.",
+    description: "Castle Rock roofing experts. Roof replacement, hail damage repair, siding & gutters. Thousands of roofs completed in Colorado. Free inspection. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/castle-rock",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

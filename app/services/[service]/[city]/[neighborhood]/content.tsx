@@ -35,7 +35,7 @@ function getNeighborhoodHeroIntro(
   housingAge: string,
   commonRoofTypes: string,
 ): string {
-  return `${neighborhoodDesc} Homes built during the ${housingAge} era in ${neighborhoodName} typically feature ${commonRoofTypes.toLowerCase()}, each requiring specific expertise for proper ${serviceName.toLowerCase()}. Gates Enterprises brings quadruple manufacturer certification and over 7,200 completed projects to every job in ${neighborhoodName}, ${cityName}.`;
+  return `${neighborhoodDesc} Homes built during the ${housingAge} era in ${neighborhoodName} typically feature ${commonRoofTypes.toLowerCase()}, each requiring specific expertise for proper ${serviceName.toLowerCase()}. Gates Enterprises brings quadruple manufacturer certification and thousands of completed projects to every job in ${neighborhoodName}, ${cityName}.`;
 }
 
 function getNeighborhoodWhySection(
@@ -54,7 +54,7 @@ function getNeighborhoodWhyChoose(neighborhoodName: string, cityName: string, ho
   return [
     "GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certified",
     "301 Google reviews with a 4.8-star rating from Colorado homeowners",
-    "Over 7,200 roofing projects completed across the Front Range",
+    "Over thousands of roofing projects completed across the Front Range",
     "Free inspections with no obligation and no pressure",
     `Experience with ${housingAge} homes common in ${neighborhoodName}`,
     `Local knowledge of ${cityName} permitting and inspection requirements`,

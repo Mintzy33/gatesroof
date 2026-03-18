@@ -23,7 +23,7 @@ export default function CityContent() {
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home → Service Areas → Northglenn</Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>Roofing Contractor in Northglenn, CO</h1>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>Adams County · 1960s and 1970s Homes · GAF Master Elite Certified · 7,200+ Roofs</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>Adams County · 1960s and 1970s Homes · GAF Master Elite Certified · Thousands of Roofs</p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>Northglenn's dense residential neighborhoods were built primarily in the 1960s and 1970s, and many of the original roofing systems in these homes are still in place or were last replaced decades ago. Gates Enterprises works with Northglenn's family focused community to assess aging roof systems honestly and deliver modern, warranted replacements when the time comes.</p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Request a Free Inspection and Estimate →</Link>
@@ -45,7 +45,7 @@ export default function CityContent() {
               { t: "Roof Repair", d: "Fast leak repair, emergency tarping, and honest assessments.", h: "/services/roof-repair" },
               { t: "Siding and Exterior", d: "James Hardie, vinyl, and wood siding installation and repair.", h: "/services/siding-exterior" },
               { t: "Gutters and Guards", d: "Seamless gutter fabrication and gutter guard systems.", h: "/services/gutters-guards" },
-              { t: "Insurance Restoration", d: "We work directly with your insurance company. Xactimate certified.", h: "/services/insurance-claims" },
+              { t: "Insurance Restoration", d: "We help document damage and work with your adjuster. Xactimate certified.", h: "/services/insurance-claims" },
             ].map((s, i) => (
               <Link key={i} href={s.h} style={{ textDecoration: "none" }}>
                 <div style={{ background: LIGHT_BG, borderRadius: 16, padding: "24px 20px", border: "1px solid rgba(13,33,55,0.04)", height: "100%" }}>
@@ -62,7 +62,7 @@ export default function CityContent() {
               "Experienced with 1960s and 1970s ranch home roof systems",
               "Full insurance restoration support on hail and storm claims",
               "Adams County permit and inspection coordination",
-              "7,200+ roofs completed across the Denver metro",
+              "thousands of roofs completed across the Denver metro",
               "4.8 star Google rating from 300+ verified reviews",
               "Referral driven reputation in Northglenn's family neighborhoods",
               "Free inspections with no obligation and no pressure",

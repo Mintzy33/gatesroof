@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. 7,200+ roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
+  description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. Thousands of roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
     title: "Lakewood Roofing Contractor | Gates Enterprises LLC",
-    description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. 7,200+ roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
+    description: "Colorado's only quadruple certified roofer: GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro & CertainTeed Shingle Master. Thousands of roofs, 300+ reviews, 65+ cities served. Free inspections. (720) 766-3377.",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -52,7 +52,7 @@ const localBusinessSchema = {
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
   "image": "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
-  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. 7,200+ roofs completed, 4.8 star rating, 300+ Google reviews.",
+  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.8 star rating, 300+ Google reviews.",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
@@ -149,12 +149,12 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're only responsible for your deductible. We handle the entire claims process so you don't have to."}},
+    {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're responsible for your deductible. We help document damage and work with your adjuster throughout the claims process."}},
     {"@type":"Question","name":"How long does a roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins."}},
     {"@type":"Question","name":"What's the difference between repair and replacement?","acceptedAnswer":{"@type":"Answer","text":"Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty."}},
     {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection."}},
     {"@type":"Question","name":"How do I know if my roof has hail damage?","acceptedAnswer":{"@type":"Answer","text":"Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture — those are signs your roof was likely hit too. The only way to know for sure is a professional inspection."}},
-    {"@type":"Question","name":"What if my insurance claim is denied?","acceptedAnswer":{"@type":"Answer","text":"We fight for you. Our team has recovered millions in supplements and overturned denied claims. We know what documentation adjusters need and how to present it."}}
+    {"@type":"Question","name":"What if my insurance claim is denied?","acceptedAnswer":{"@type":"Answer","text":"Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively."}}
   ]
 };
 
