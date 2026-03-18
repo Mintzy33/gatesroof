@@ -26,13 +26,12 @@ const SIZES = [
 ];
 
 const MATERIALS = [
-  { label: "Asphalt 3-Tab", factor: 0.8 },
   { label: "Architectural Asphalt", factor: 1.0 },
   { label: "Metal", factor: 1.8 },
   { label: "Tile", factor: 2.0 },
   { label: "Wood Shake", factor: 1.4 },
   { label: "Slate", factor: 2.5 },
-  { label: "Flat/TPO", factor: 1.1 },
+  { label: "Flat/TPO", factor: 2.0 },
 ];
 
 const PITCHES = [

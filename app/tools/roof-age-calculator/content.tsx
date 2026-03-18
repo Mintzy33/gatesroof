@@ -11,7 +11,6 @@ const LIGHT_BG = "#FAFBFD";
 const TEXT_LIGHT = "#64748B";
 
 const MATERIALS: { label: string; minLife: number; maxLife: number }[] = [
-  { label: "Asphalt 3-Tab", minLife: 15, maxLife: 20 },
   { label: "Architectural Asphalt", minLife: 25, maxLife: 30 },
   { label: "Metal", minLife: 40, maxLife: 70 },
   { label: "Tile", minLife: 50, maxLife: 100 },
