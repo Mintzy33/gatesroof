@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
 import CTA from "./CTA";
@@ -11,11 +12,19 @@ const WHITE = "#FFFFFF";
 const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 
+interface ServiceImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 interface ServicePageProps {
   breadcrumb: string;
   h1: string;
   subheadline?: string;
   heroCopy: string;
+  images?: ServiceImage[];
   sections: { title: string; content: string[] }[];
   process: { step: string; title: string; desc: string }[];
   whyGates: { bold: string; rest: string }[];
@@ -27,7 +36,7 @@ interface ServicePageProps {
 }
 
 export default function ServicePageLayout({
-  breadcrumb, h1, subheadline, heroCopy, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle, serviceAreasSlug, serviceAreasLabel
+  breadcrumb, h1, subheadline, heroCopy, images, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle, serviceAreasSlug, serviceAreasLabel
 }: ServicePageProps) {
   return (
     <div style={{ background: WHITE }}>
@@ -48,6 +57,26 @@ export default function ServicePageLayout({
           </div>
         </div>
       </section>
+
+      {/* Service Images */}
+      {images && images.length > 0 && (
+        <section style={{ padding: "64px 24px 0", background: WHITE }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: images.length >= 3 ? "1fr 1fr 1fr" : images.length === 2 ? "1fr 1fr" : "1fr", gap: 20 }}>
+            {images.map((img, i) => (
+              <div key={i} style={{ borderRadius: 16, overflow: "hidden", position: "relative", aspectRatio: "4/3" }}>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={img.width}
+                  height={img.height}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Content Sections */}
       <section style={{ padding: "80px 24px", background: WHITE }}>

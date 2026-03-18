@@ -7,6 +7,11 @@ export default function RepairContent() {
       h1="Roof Repair in Denver and Lakewood, CO"
       subheadline="Fast response. Honest diagnosis. Repairs that last."
       heroCopy="Not every roof problem needs a full replacement. Sometimes it's a cracked pipe boot, a blown off cap shingle, or flashing that's pulled away from a wall. Gates Enterprises handles roof repairs across Denver and Lakewood with the same care and precision we bring to full replacements. We find the real problem, fix it right, and tell you honestly how much life your roof has left."
+      images={[
+        { src: "/images/services/roof-inspection-colorado-gates-enterprises.webp", alt: "Professional roof inspection and repair by Gates Enterprises in Colorado", width: 1600, height: 1200 },
+        { src: "/images/services/residential-roof-replacement-colorado.webp", alt: "Residential roof repair in progress by Gates Enterprises in Colorado", width: 1600, height: 1200 },
+        { src: "/images/services/roof-replacement-berthoud-colorado.webp", alt: "Roof repair and restoration project in Berthoud, Colorado by Gates Enterprises", width: 1600, height: 1200 },
+      ]}
       sections={[
         {
           title: "Common Roof Repairs We Handle Every Week",

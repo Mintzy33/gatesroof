@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
@@ -86,6 +87,26 @@ export default function StormContent() {
               Colorado&apos;s Front Range sees some of the most severe hailstorms in the country. When a storm hits, you need a roofing partner who responds quickly, assesses damage honestly, and delivers lasting repairs. Gates Enterprises has been helping homeowners recover from storm damage for over 10 years. We handle everything from the initial inspection to the final walkthrough, so you can focus on your family while we take care of your home.
             </p>
           </div>
+        </section>
+      </ScrollReveal>
+
+      {/* ─── STORM DAMAGE GALLERY ─── */}
+      <ScrollReveal>
+        <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: LIGHT_BG }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+            <div className="sd-gallery" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, borderRadius: 20, overflow: "hidden" }}>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/blog/hail-damage-test-square-roof-replacement.webp" alt="Hail damage test square showing storm impact on Colorado roof by Gates Enterprises" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+              </div>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/blog/metal-roof-hail-damage-example.webp" alt="Metal roof hail damage inspection by Gates Enterprises in Colorado" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+              </div>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/projects/roof-replacement-project-colorado-1.webp" alt="Storm damage roof replacement project in Colorado by Gates Enterprises" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+              </div>
+            </div>
+          </div>
+          <style>{`@media (max-width: 640px) { .sd-gallery { grid-template-columns: 1fr !important; } }`}</style>
         </section>
       </ScrollReveal>
 

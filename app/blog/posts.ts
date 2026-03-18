@@ -350,6 +350,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "11 min read",
     category: "Insurance Restoration",
     excerpt: "Filing a roof insurance claim in Colorado sounds straightforward until you are actually in the middle of it. Adjusters, supplements, depreciation holdbacks, ACV vs RCV. Every homeowner who has been through this process knows it is more complicated than the TV commercials suggest.",
+    coverImage: { src: "/images/blog/completed-roof-replacement-gates-enterprises.webp", alt: "Completed roof replacement by Gates Enterprises in Colorado", width: 1200, height: 899 },
     content: [
       "Filing a roof insurance claim in Colorado sounds straightforward until you are actually in the middle of it. Adjusters, supplements, depreciation holdbacks, ACV vs RCV. Every homeowner who has been through this process knows it is more complicated than the TV commercials suggest.",
       "The good news: this process is completely navigable if you understand how it works. The bad news: insurance companies are very good at minimizing payouts to homeowners who do not know what to ask for.",
@@ -420,6 +421,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min read",
     category: "Homeowner Tips",
     excerpt: "Denver's roofing market is one of the most competitive and unpredictable in the country. Every hailstorm brings a wave of contractors from out of state, and even local companies vary wildly in quality. Knowing how to separate the legitimate contractors from the ones that will disappear after cashing your check is critical.",
+    coverImage: { src: "/images/blog/gaf-master-elite-certification-training.webp", alt: "GAF Master Elite certification training for Gates Enterprises roofing team in Colorado", width: 1600, height: 1200 },
     content: [
       "Denver's roofing market is one of the most competitive and unpredictable in the country. Every hailstorm brings a wave of contractors from out of state, and even local companies vary wildly in quality. Knowing how to separate the legitimate contractors from the ones that will disappear after cashing your check is critical.",
       "We are Gates Enterprises, and we have been roofing homes across the Denver metro area and the broader Front Range for over a decade. We have seen what good contractor relationships look like, and we have seen the aftermath when homeowners chose the wrong company. This guide is our honest take on how to make a smart decision.",
@@ -485,6 +487,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Storm Damage",
     excerpt: "A hailstorm just rolled through your neighborhood. The skies have cleared, but the damage is done. What you do in the next 24 to 72 hours can have a major impact on the outcome of your insurance claim and the long-term health of your roof.",
+    coverImage: { src: "/images/blog/hail-damage-test-square-roof-replacement.webp", alt: "Hail damage test square on Colorado roof inspected by Gates Enterprises", width: 1200, height: 899 },
     content: [
       "A hailstorm just rolled through your neighborhood. The skies have cleared, but the damage is done. What you do in the next 24 to 72 hours can have a major impact on the outcome of your insurance claim and the long-term health of your roof.",
       "Colorado sits in one of the most hail-prone regions on the planet. The Front Range alone sees dozens of significant hail events every year, with some storms producing stones larger than baseballs. We have helped thousands of homeowners navigate the aftermath, and the ones who follow a clear process consistently come out ahead.",
@@ -542,6 +545,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min read",
     category: "Homeowner Tips",
     excerpt: "When you hire a roofing contractor, you are trusting them with the most critical protective system on your home. Most homeowners compare quotes and check a few reviews. Very few think to ask about manufacturer certifications. That is a mistake worth correcting.",
+    coverImage: { src: "/images/blog/gaf-master-elite-certification-training.webp", alt: "Gates Enterprises GAF Master Elite certification training in Colorado", width: 1600, height: 1200 },
     content: [
       "When you hire a roofing contractor, you are trusting them with the most critical protective system on your home. Most homeowners compare quotes and check a few reviews. Very few think to ask about manufacturer certifications. That is a mistake worth correcting.",
       "Manufacturer certifications exist because roofing manufacturers have a vested interest in ensuring their products are installed correctly. When a shingle fails because it was installed improperly, the manufacturer faces warranty claims and reputational damage. So they created rigorous certification programs that only the most qualified contractors can earn.",
@@ -603,6 +607,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     category: "Insurance Restoration",
     excerpt: "If you live along the Colorado Front Range, you already know the drill. A nasty storm rolls through, hailstones the size of golf balls pummel your roof for fifteen minutes, and then the sun comes back",
+    coverImage: { src: "/images/blog/happy-customer-roof-replacement-colorado.webp", alt: "Happy customer after roof replacement by Gates Enterprises in Colorado", width: 1200, height: 1600 },
     content: [
       "If you live along the Colorado Front Range, you already know the drill. A nasty storm rolls through, hailstones the size of golf balls pummel your roof for fifteen minutes, and then the sun comes back out like nothing happened. But something did happen. Your roof just took a beating, and now you need to figure out how to get your insurance company to pay for the damage.",
       "Navigating hail damage insurance in Colorado sounds straightforward, but the reality is a lot messier than most homeowners expect. Insurance companies are businesses, and they are very good at minimizing payouts. That does not mean they are trying to scam you. It just means the process rewards homeowners who are prepared, organized, and know exactly what to do.",
@@ -637,6 +642,7 @@ export const blogPosts: BlogPost[] = [
       "Your deductible is what you pay out of pocket. In Colorado, most homeowner policies have a deductible between 1% and 2% of the home's insured value. On a home insured for $500,000, that means a deductible of $5,000 to $10,000. This is your responsibility, and any contractor who offers to \"cover\" or \"waive\" your deductible is breaking the law.",
       "Recoverable depreciation is the portion of your payout that the insurance company holds back initially. They will pay the \"actual cash value\" of your roof upfront, minus your deductible. Once the work is completed, you submit the final invoice and they release the remaining depreciation. Do not forget this step. It can be thousands of dollars.",
       "Step 8: Choose the Right Contractor and Get the Work Done",
+      "[IMAGE: /images/projects/roof-replacement-project-colorado-1.webp | Roof replacement project in progress by Gates Enterprises in Colorado | 1200 | 900]",
       "Once your coverage is approved, it is time to get the roof replaced. This is where choosing the right contractor matters enormously [LINK: choosing-a-contractor].",
       "Look for a company with manufacturer certifications, proper licensing and insurance, a strong local reputation, and experience working with insurance companies. Not every roofer knows how to navigate the insurance restoration process, and hiring one who does not can leave you stuck with out of pocket costs that should have been covered.",
       "Gates Enterprises is the only quadruple certified roofing company in Colorado, holding GAF Master Elite, CertainTeed Shingle Master Pro, Malarkey, and Emerald Premium certifications [LINK: certifications]. That means we can install virtually any premium roofing product with the highest level of manufacturer warranty backing.",
@@ -875,6 +881,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     category: "Cost Guide",
     excerpt: "If you are searching for the cost of a roof replacement in Denver, you have probably noticed that getting a straight answer is surprisingly difficult. Every website gives a different range. Every cont",
+    coverImage: { src: "/images/blog/completed-roof-replacement-gates-enterprises.webp", alt: "Completed roof replacement project in Denver by Gates Enterprises", width: 1200, height: 899 },
     content: [
       "If you are searching for the cost of a roof replacement in Denver, you have probably noticed that getting a straight answer is surprisingly difficult. Every website gives a different range. Every contractor has a different price. And nobody seems willing to just tell you what it actually costs.",
       "We are going to fix that. While we cannot give you an exact price without inspecting your specific roof (there are too many variables), we can give you realistic ranges based on what we are seeing across the Denver metro area in 2026. We have replaced over 7,200 roofs across the Colorado Front Range, so we have a pretty solid dataset to work with.",
@@ -898,6 +905,7 @@ export const blogPosts: BlogPost[] = [
       "Metal roofing: $800 to $1,500+ per square. Standing seam metal roofs have become increasingly popular in Colorado for their durability and longevity (50+ years). The upfront cost is higher, but the lifecycle cost can be lower than shingles.",
       "Tile and slate: $1,200 to $2,500+ per square. These are the highest end options and are less common in the Denver metro but popular in certain neighborhoods and custom homes.",
       "Tear Off and Disposal",
+      "[IMAGE: /images/projects/roof-replacement-project-colorado-3.webp | Active roof tear off and replacement project in Colorado by Gates Enterprises | 1200 | 900]",
       "Most roof replacements require removing the existing shingles before installing the new roof. This \"tear off\" adds labor and disposal costs. If your home has multiple layers of old shingles (some older homes have two or even three layers), the tear off will cost more.",
       "In Denver, disposal costs have increased as landfill fees have gone up. Budget an additional $1,000 to $2,500 for tear off and disposal on a typical home.",
       "Decking Repairs",

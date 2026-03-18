@@ -7,6 +7,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import FAQAccordion from "../../components/FAQAccordion";
 import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
+import CityGallery from "../../components/CityGallery";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";

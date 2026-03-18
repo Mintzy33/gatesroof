@@ -145,6 +145,18 @@ const GALLERY_IMAGES: GalleryImage[] = [
     category: ["Residential", "In Progress"],
     location: "Denver, CO",
   },
+  {
+    src: "/images/gallery/_dsc3614.jpg",
+    alt: "Completed roof replacement project in Colorado by Gates Enterprises",
+    category: ["Residential"],
+    location: "Colorado",
+  },
+  {
+    src: "/images/gallery/gutter-page-edited.jpg",
+    alt: "Gutter installation and repair by Gates Enterprises in Colorado",
+    category: ["Residential"],
+    location: "Colorado",
+  },
 ];
 
 const CATEGORIES: Category[] = ["All", "Residential", "Tile and Specialty", "Commercial", "In Progress"];

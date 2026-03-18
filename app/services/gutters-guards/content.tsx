@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
@@ -81,6 +82,15 @@ export default function GuttersContent() {
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: TEXT, maxWidth: 700, margin: "0 auto" }}>
               Gutters and downspouts might not be the first thing you think about, but they play a critical role in protecting your roof, siding, foundation, and landscaping. When gutters fail, water damage follows. Gates Enterprises installs, repairs, and replaces gutter systems across Colorado&apos;s Front Range.
             </p>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      {/* ─── GUTTER PROJECT PHOTO ─── */}
+      <ScrollReveal>
+        <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: "#FAFBFD" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto", borderRadius: 20, overflow: "hidden" }}>
+            <Image src="/images/services/gutter-installation-colorado-gates-enterprises.webp" alt="Professional gutter installation by Gates Enterprises in Colorado" width={1600} height={1200} style={{ width: "100%", height: "auto" }} />
           </div>
         </section>
       </ScrollReveal>

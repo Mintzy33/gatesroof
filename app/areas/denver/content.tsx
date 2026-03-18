@@ -8,6 +8,7 @@ import ReviewCarousel from "../../components/ReviewCarousel";
 
 import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
+import CityGallery from "../../components/CityGallery";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -217,6 +218,9 @@ export default function CityContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── PROJECT PHOTOS ─── */}
+      <CityGallery city="Denver" />
 
       {/* ─── 2. WHY DENVER HOMEOWNERS CHOOSE GATES ─── */}
       <section style={{ padding: "80px 24px", background: WHITE }}>

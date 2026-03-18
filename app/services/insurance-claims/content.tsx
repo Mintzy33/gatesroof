@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
@@ -82,6 +83,23 @@ export default function InsuranceContent() {
               Dealing with insurance after storm damage can feel overwhelming. Between adjuster meetings, paperwork, timelines, and unfamiliar terminology, it&apos;s easy to feel lost. Gates Enterprises has helped thousands of homeowners across Colorado&apos;s Front Range navigate the insurance restoration process with clarity and confidence.
             </p>
           </div>
+        </section>
+      </ScrollReveal>
+
+      {/* ─── INSURANCE CLAIMS GALLERY ─── */}
+      <ScrollReveal>
+        <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: "#FAFBFD" }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+            <div className="ic-gallery" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, borderRadius: 20, overflow: "hidden" }}>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/services/roof-inspection-colorado-gates-enterprises.webp" alt="Roof inspection for insurance claim by Gates Enterprises in Colorado" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/blog/completed-roof-replacement-gates-enterprises.webp" alt="Completed insurance restoration roof replacement by Gates Enterprises in Colorado" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+            </div>
+          </div>
+          <style>{`@media (max-width: 640px) { .ic-gallery { grid-template-columns: 1fr !important; } }`}</style>
         </section>
       </ScrollReveal>
 

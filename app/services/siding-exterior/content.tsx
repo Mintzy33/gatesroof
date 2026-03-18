@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
@@ -79,6 +80,23 @@ export default function SidingContent() {
               Your siding does more than define the look of your home. It serves as one of the most important layers of defense against Colorado&apos;s intense sun, wind, hail, and temperature swings. Gates Enterprises provides expert siding installation and repair across Colorado&apos;s Front Range, using top quality materials and proven techniques that keep your home beautiful and protected for years to come.
             </p>
           </div>
+        </section>
+      </ScrollReveal>
+
+      {/* ─── SIDING PROJECT PHOTOS ─── */}
+      <ScrollReveal>
+        <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: "#FAFBFD" }}>
+          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+            <div className="si-gallery" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, borderRadius: 20, overflow: "hidden" }}>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/services/residential-roof-replacement-colorado.webp" alt="Residential siding and roof replacement by Gates Enterprises in Colorado" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div style={{ position: "relative", aspectRatio: "4/3" }}>
+                <Image src="/images/services/carriage-house-roof-colorado.webp" alt="Carriage house exterior restoration by Gates Enterprises in Colorado" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+            </div>
+          </div>
+          <style>{`@media (max-width: 640px) { .si-gallery { grid-template-columns: 1fr !important; } }`}</style>
         </section>
       </ScrollReveal>
 

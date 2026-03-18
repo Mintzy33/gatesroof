@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
@@ -66,6 +67,21 @@ export default function WindowsContent() {
             <a href="tel:7207663377" style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>
               (720) 766-3377
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── SERVICE PHOTOS ─── */}
+      <section style={{ padding: "64px 24px 0", background: WHITE }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
+          <div style={{ borderRadius: 16, overflow: "hidden", position: "relative", aspectRatio: "4/3" }}>
+            <Image src="/images/services/large-home-roof-replacement-colorado.webp" alt="Large home window and exterior replacement by Gates Enterprises in Colorado" width={1600} height={1200} style={{ width: "100%", height: "100%", objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+          </div>
+          <div style={{ borderRadius: 16, overflow: "hidden", position: "relative", aspectRatio: "4/3" }}>
+            <Image src="/images/services/roof-replacement-evergreen-colorado.webp" alt="Home exterior and window replacement in Evergreen, Colorado by Gates Enterprises" width={1600} height={1200} style={{ width: "100%", height: "100%", objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+          </div>
+          <div style={{ borderRadius: 16, overflow: "hidden", position: "relative", aspectRatio: "4/3" }}>
+            <Image src="/images/services/roof-replacement-warren-colorado.webp" alt="Complete exterior restoration including windows in Colorado by Gates Enterprises" width={1600} height={1200} style={{ width: "100%", height: "100%", objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
         </div>
       </section>
