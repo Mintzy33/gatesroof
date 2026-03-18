@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../../components/Header";
@@ -12,17 +11,6 @@ const LIGHT_BG = "#FAFBFD";
 const TEXT_LIGHT = "#64748B";
 
 export default function HailRiskContent() {
-  const [address, setAddress] = useState("");
-
-  function handleSearch() {
-    if (!address.trim()) return;
-    const encoded = encodeURIComponent(address.trim());
-    window.open(`https://myhailscore.com/?address=${encoded}`, "_blank", "noopener,noreferrer");
-  }
-
-  function handleKeyDown(e: React.KeyboardEvent) {
-    if (e.key === "Enter") handleSearch();
-  }
 
   return (
     <>
@@ -72,193 +60,105 @@ export default function HailRiskContent() {
           </div>
         </section>
 
-        {/* Search */}
-        <section style={{ maxWidth: 560, margin: "0 auto", padding: "0 20px 40px" }}>
+        {/* HailScore CTA Card */}
+        <section style={{ maxWidth: 600, margin: "0 auto", padding: "0 20px 48px" }}>
           <div style={{
-            background: WHITE,
-            borderRadius: 20,
-            padding: "32px 28px",
-            border: "1px solid rgba(13,33,55,0.08)",
-            boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
+            background: "linear-gradient(135deg, #f0f7ff 0%, #ffffff 50%, #f0f4ff 100%)",
+            borderRadius: 24,
+            padding: "40px 32px",
+            textAlign: "center",
+            border: "1px solid rgba(37,99,235,0.1)",
+            boxShadow: "0 8px 32px rgba(37,99,235,0.06)",
           }}>
-            <label style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 14,
-              fontWeight: 600,
-              color: NAVY,
-              marginBottom: 8,
-              display: "block",
+            <Image
+              src="/hailscore-wordmark.png"
+              alt="HailScore"
+              width={220}
+              height={52}
+              style={{ height: 44, width: "auto", objectFit: "contain", marginBottom: 20 }}
+            />
+
+            {/* Stats */}
+            <div style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "clamp(20px, 4vw, 40px)",
+              flexWrap: "wrap" as const,
+              marginBottom: 28,
             }}>
-              Enter your address
-            </label>
-            <div style={{ display: "flex", gap: 10 }}>
-              <input
-                type="text"
-                placeholder="123 Main St, Denver, CO 80202"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-                onKeyDown={handleKeyDown}
-                style={{
-                  flex: 1,
-                  padding: "14px 16px",
-                  borderRadius: 12,
-                  border: "1px solid rgba(13,33,55,0.15)",
-                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                  fontSize: 15,
-                  color: NAVY,
-                  background: WHITE,
-                  outline: "none",
-                }}
-              />
-              <button
-                onClick={handleSearch}
-                disabled={!address.trim()}
-                style={{
-                  padding: "14px 24px",
-                  borderRadius: 12,
-                  border: "none",
-                  background: !address.trim() ? "rgba(37,99,235,0.4)" : ACCENT,
-                  color: WHITE,
-                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                  fontSize: 15,
-                  fontWeight: 600,
-                  cursor: !address.trim() ? "not-allowed" : "pointer",
-                  whiteSpace: "nowrap" as const,
-                  transition: "background 0.2s",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 6,
-                }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-                Search
-              </button>
+              {[
+                { value: "4.5M+", label: "Hail Records" },
+                { value: "10 Years", label: "of Data" },
+                { value: "All 50", label: "States" },
+              ].map((stat) => (
+                <div key={stat.label} style={{ textAlign: "center" }}>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    color: NAVY,
+                    lineHeight: 1.2,
+                  }}>
+                    {stat.value}
+                  </div>
+                  <div style={{
+                    fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                    fontSize: 13,
+                    color: TEXT_LIGHT,
+                  }}>
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
             </div>
+
+            <p style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 15,
+              color: TEXT_LIGHT,
+              lineHeight: 1.7,
+              marginBottom: 24,
+              maxWidth: 420,
+              margin: "0 auto 24px",
+            }}>
+              Enter your address on HailScore to get a free, instant hail risk report based on real NOAA radar data.
+            </p>
+
+            <a
+              href="https://myhailscore.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                background: ACCENT,
+                color: WHITE,
+                borderRadius: 100,
+                padding: "16px 36px",
+                textDecoration: "none",
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 16,
+                fontWeight: 600,
+                boxShadow: "0 4px 14px rgba(37,99,235,0.25)",
+                transition: "transform 0.2s, box-shadow 0.2s",
+              }}
+            >
+              Check Your Hail Risk Score
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
+            </a>
+
             <p style={{
               fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
               fontSize: 12,
               color: TEXT_LIGHT,
-              marginTop: 10,
+              marginTop: 14,
+              opacity: 0.7,
             }}>
-              Opens myhailscore.com with your address for a full hail risk report.
+              100% free. No signup required.
             </p>
-          </div>
-        </section>
-
-        {/* Sample Score Card */}
-        <section style={{ maxWidth: 560, margin: "0 auto", padding: "0 20px 40px" }}>
-          <div style={{
-            background: "linear-gradient(135deg, #0D2137 0%, #1a3a5c 100%)",
-            borderRadius: 20,
-            padding: "32px 28px",
-            textAlign: "center",
-            position: "relative",
-            overflow: "hidden",
-          }}>
-            {/* Decorative circles */}
-            <div style={{ position: "absolute", top: -40, right: -40, width: 120, height: 120, borderRadius: "50%", background: "rgba(255,255,255,0.03)" }} />
-            <div style={{ position: "absolute", bottom: -20, left: -20, width: 80, height: 80, borderRadius: "50%", background: "rgba(255,255,255,0.03)" }} />
-
-            <div style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 12,
-              fontWeight: 600,
-              color: "rgba(255,255,255,0.5)",
-              textTransform: "uppercase" as const,
-              letterSpacing: "0.1em",
-              marginBottom: 8,
-            }}>
-              Sample Score
-            </div>
-            <div style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 14,
-              color: "rgba(255,255,255,0.7)",
-              marginBottom: 16,
-            }}>
-              Denver, Colorado
-            </div>
-            <div style={{
-              width: 120,
-              height: 120,
-              borderRadius: "50%",
-              background: "rgba(249,115,22,0.2)",
-              border: "3px solid #F97316",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              margin: "0 auto 16px",
-            }}>
-              <div>
-                <div style={{
-                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-                  fontSize: 44,
-                  fontWeight: 700,
-                  color: WHITE,
-                  lineHeight: 1,
-                }}>
-                  82
-                </div>
-                <div style={{
-                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "rgba(255,255,255,0.5)",
-                }}>
-                  / 100
-                </div>
-              </div>
-            </div>
-            <div style={{
-              display: "inline-block",
-              padding: "5px 14px",
-              borderRadius: 100,
-              background: "rgba(249,115,22,0.2)",
-              color: "#F97316",
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 13,
-              fontWeight: 700,
-            }}>
-              High Risk
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Bar */}
-        <section style={{ padding: "0 20px 48px" }}>
-          <div style={{
-            maxWidth: 700,
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "center",
-            gap: "clamp(24px, 5vw, 48px)",
-            flexWrap: "wrap" as const,
-          }}>
-            {[
-              { value: "4.5M+", label: "Hail Records" },
-              { value: "10 Years", label: "of Data" },
-              { value: "All 50", label: "States" },
-            ].map((stat) => (
-              <div key={stat.label} style={{ textAlign: "center" }}>
-                <div style={{
-                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
-                  fontSize: 28,
-                  fontWeight: 700,
-                  color: NAVY,
-                }}>
-                  {stat.value}
-                </div>
-                <div style={{
-                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                  fontSize: 14,
-                  color: TEXT_LIGHT,
-                }}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 

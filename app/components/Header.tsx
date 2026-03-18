@@ -59,9 +59,7 @@ export default function Header() {
     { l: "About", h: "/about" },
     { l: "Gallery", h: "/gallery" },
     { l: "Reviews", h: "/reviews" },
-    { l: "Free Tools", h: "/tools" },
     { l: "Blog", h: "/blog" },
-    { l: "FAQ", h: "/faq" },
     { l: "Contact", h: "/contact" },
   ];
 
@@ -81,7 +79,7 @@ export default function Header() {
             <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={200} height={58} className="header-logo" style={{ height: 58, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
             <span className="header-text" style={{ fontFamily: "var(--font-raleway), 'Raleway', sans-serif", fontSize: 19, fontWeight: 300, color: WHITE, lineHeight: 1, whiteSpace: "nowrap", letterSpacing: "0.08em" }}>GATES ENTERPRISES</span>
           </Link>
-          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 32 }}>
+          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {/* Services dropdown */}
             <div
               onMouseEnter={handleServicesEnter}
@@ -161,7 +159,7 @@ export default function Header() {
               <Link key={item.l} href={item.h} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
             ))}
             <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.12)" }} />
-            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none" }}>(720) 766-3377</a>
+            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none", whiteSpace: "nowrap" as const }}>(720) 766-3377</a>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "10px 22px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)", position: "relative", zIndex: 10, whiteSpace: "nowrap" as const }}>Free Inspection</Link>
           </nav>
           <div className="mobile-nav" style={{ display: "none", alignItems: "center", gap: 10 }}>
