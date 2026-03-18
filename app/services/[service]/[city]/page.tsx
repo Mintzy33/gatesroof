@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { cities, services, getCityBySlug, getServiceBySlug } from "../../../../lib/service-areas-data";
+import { getMetaTitle, getMetaDescription } from "../../../../lib/service-meta";
 import ServiceCityContent from "./content";
 
 interface Props {
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!city || !service) return {};
 
-  const title = `${service.service} in ${city.city}, CO | Gates Enterprises`;
-  const description = `${service.service} in ${city.city}, Colorado. Quadruple manufacturer certified. 301 reviews, 4.8★. Free estimates. Call (720) 766-3377.`;
+  const title = getMetaTitle(service, city);
+  const description = getMetaDescription(service, city);
   const url = `https://www.gatesroof.com/services/${service.slug}/${city.slug}`;
 
   return {
