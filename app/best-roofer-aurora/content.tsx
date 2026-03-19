@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
+    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
   },
   {
     q: "How often does Aurora get hail damage?",
@@ -120,7 +120,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. No other roofer in Colorado can say the same.
+              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. No other roofer in Colorado can say the same.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export default function BestRooferAuroraContent() {
           <div className="best-roofer-aurora-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of roofing contractors in North America. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
-              { name: "Owens Corning Platinum Preferred", desc: "Highest tier in Owens Corning's contractor network. Enhanced warranty programs and premium product access." },
+              { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's contractor network. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Pro", desc: "Certified expertise in Malarkey's NEX Polymer Modified asphalt technology for superior Colorado durability." },
               { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level training in advanced shingle application. Access to CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (

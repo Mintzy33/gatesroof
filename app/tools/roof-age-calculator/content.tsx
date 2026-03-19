@@ -399,7 +399,7 @@ export default function RoofAgeContent() {
               Your roof's actual lifespan depends on several factors beyond material type: installation quality, attic ventilation, Colorado's intense UV exposure, and of course, hail damage. A roof that's been hit by hail may have hidden damage that shortens its life by years.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              Gates Enterprises has replaced thousands of roofs across Colorado's Front Range. As the state's only quadruple manufacturer certified roofer (GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Pro, CertainTeed Shingle Master), we know exactly what to look for during an inspection.
+              Gates Enterprises has replaced thousands of roofs across Colorado's Front Range. As the state's only quadruple manufacturer certified roofer (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master), we know exactly what to look for during an inspection.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7 }}>
               If your roof is aging or you've had a recent hailstorm, a professional inspection can save you thousands by catching problems early. <Link href="/services/roof-repair" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Learn about our repair services</Link> or <Link href="/services/storm-hail-damage" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>check if you have storm damage</Link>.

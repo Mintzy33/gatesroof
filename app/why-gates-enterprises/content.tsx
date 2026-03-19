@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews, a 4.8 star rating, proprietary HailScore technology, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews, a 4.8 star rating, proprietary HailScore technology, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
@@ -114,9 +114,9 @@ export default function WhyGatesContent() {
                 desc: "GAF is the largest roofing manufacturer in North America. Their Master Elite program is the highest contractor tier, reserved for roofers who demonstrate exceptional installation quality and customer satisfaction. Gates Enterprises' Master Elite status unlocks GAF's Golden Pledge Limited Warranty, which includes 25 years of workmanship coverage. Only Master Elite contractors can offer this warranty."
               },
               {
-                name: "Owens Corning Platinum Preferred",
+                name: "Owens Corning Preferred",
                 detail: "Highest tier in Owens Corning's network",
-                desc: "Owens Corning's Platinum Preferred designation recognizes contractors who meet the most stringent standards for professionalism, reliability, and installation quality. This certification gives Gates Enterprises' customers access to Owens Corning's enhanced warranty programs and their full premium product line, including the popular Duration and TruDefinition series."
+                desc: "Owens Corning's Preferred designation recognizes contractors who meet the most stringent standards for professionalism, reliability, and installation quality. This certification gives Gates Enterprises' customers access to Owens Corning's enhanced warranty programs and their full premium product line, including the popular Duration and TruDefinition series."
               },
               {
                 name: "Malarkey Emerald Pro",

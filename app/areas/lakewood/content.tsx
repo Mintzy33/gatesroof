@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: "What warranties are available through Gates Enterprises?",
-    a: "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge\u00AE with 25 year workmanship coverage, Owens Corning's Platinum Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS\u2122 coverage. We walk you through every option so you can make an informed decision."
+    a: "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge\u00AE with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS\u2122 coverage. We walk you through every option so you can make an informed decision."
   },
   {
     q: "Does Gates Enterprises offer free inspections and estimates?",

@@ -72,7 +72,7 @@ const faqData = [
       },
       {
         q: "What does quadruple manufacturer certified mean?",
-        a: "Gates Enterprises holds the highest certification from all four major shingle manufacturers: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed ShingleMaster. Fewer than 1% of roofing contractors in the country hold all four. This means we're factory-trained to install every major shingle brand to manufacturer specifications, giving you access to the best warranties available from whichever brand you choose. It also means we're not locked into selling one brand — we recommend what's genuinely best for your roof and budget.",
+        a: "Gates Enterprises holds the highest certification from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed ShingleMaster. Fewer than 1% of roofing contractors in the country hold all four. This means we're factory-trained to install every major shingle brand to manufacturer specifications, giving you access to the best warranties available from whichever brand you choose. It also means we're not locked into selling one brand — we recommend what's genuinely best for your roof and budget.",
       },
       {
         q: "What warranty do I get with a Gates roof?",

@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Fort Collins?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their quality speaks for itself."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their quality speaks for itself."
   },
   {
     q: "Does Fort Collins get a lot of hail?",
@@ -120,7 +120,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Premium Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro.
+              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export default function BestRooferFortCollinsContent() {
           <div className="best-roofer-ftc-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
-              { name: "Owens Corning Platinum Preferred", desc: "Highest tier in Owens Corning's network. Enhanced warranties and premium product lines." },
+              { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's network. Enhanced warranties and premium product lines." },
               { name: "Malarkey Emerald Pro", desc: "Certified in Malarkey's NEX Polymer Modified asphalt technology for superior Northern Colorado durability." },
               { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level shingle application training. CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (

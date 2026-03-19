@@ -188,7 +188,7 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `What makes Gates Enterprises different from other roofers in ${n.name}?`,
-      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. With 301 Google reviews (4.8 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
+      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. With 301 Google reviews (4.8 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
     },
   ];
 

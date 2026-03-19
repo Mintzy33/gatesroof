@@ -592,7 +592,7 @@ export default function InsuranceCoverageEstimatorContent() {
               Gates Enterprises helps document damage and works with your insurance adjuster from inspection to completion. We meet with your adjuster on-site, ensure all damage is properly documented, and provide thorough documentation to support the full scope of repairs your roof needs.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7 }}>
-              As a quadruple manufacturer certified contractor (Owens Corning Platinum, GAF Master Elite, CertainTeed SELECT, Atlas Pro+), our documentation carries weight with insurance companies. Adjusters trust our assessments because we are held to the highest standards in the industry. <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Schedule your free inspection today</Link>.
+              As a quadruple manufacturer certified contractor (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master), our documentation carries weight with insurance companies. Adjusters trust our assessments because we are held to the highest standards in the industry. <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Schedule your free inspection today</Link>.
             </p>
           </div>
         </section>

@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Parker, Colorado?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker. They are the only contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Parker homeowners trust the quality."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker. They are the only contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Parker homeowners trust the quality."
   },
   {
     q: "Why is Parker especially vulnerable to hail damage?",
@@ -123,7 +123,7 @@ export default function BestRooferParkerContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Four Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. For Parker homeowners, this means access to the best products and strongest warranties from every major brand. You are not limited to one manufacturer's product line. You can choose the best option for your specific roof, budget, and aesthetic preferences.
+              Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. For Parker homeowners, this means access to the best products and strongest warranties from every major brand. You are not limited to one manufacturer's product line. You can choose the best option for your specific roof, budget, and aesthetic preferences.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export default function BestRooferParkerContent() {
           <div className="best-roofer-parker-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Golden Pledge Limited Warranty with 25 year workmanship coverage." },
-              { name: "Owens Corning Platinum Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product lines." },
+              { name: "Owens Corning Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product lines." },
               { name: "Malarkey Emerald Pro", desc: "Certified in Malarkey's NEX Polymer Modified asphalt, ideal for Palmer Divide weather extremes." },
               { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level installation training. CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (

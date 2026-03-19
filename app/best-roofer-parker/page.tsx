@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Parker, Colorado?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker and the surrounding communities. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Parker homeowners can trust the quality."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker and the surrounding communities. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Parker homeowners can trust the quality."
   },
   {
     q: "Why is Parker especially vulnerable to hail damage?",

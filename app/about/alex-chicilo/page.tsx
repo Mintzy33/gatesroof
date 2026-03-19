@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
   description:
-    "Alex Chicilo is the owner of Gates Enterprises, Colorado's only quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certified. Creator of HailScore.",
+    "Alex Chicilo is the owner of Gates Enterprises, Colorado's only quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certified. Creator of HailScore.",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
     title: "Alex Chicilo | Owner, Gates Enterprises",
@@ -79,7 +79,7 @@ const personSchema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "Manufacturer Certification",
-      name: "Owens Corning Platinum Preferred Contractor",
+      name: "Owens Corning Preferred Contractor",
     },
     {
       "@type": "EducationalOccupationalCredential",
@@ -118,7 +118,7 @@ const certifications = [
       "Reserved for the top 2% of roofing contractors in North America. Unlocks the GAF Golden Pledge Lifetime Warranty, the strongest manufacturer warranty available.",
   },
   {
-    name: "Owens Corning Platinum Preferred",
+    name: "Owens Corning Preferred",
     description:
       "The highest tier in the Owens Corning contractor network. Requires ongoing training, proven installation quality, and strong customer satisfaction scores.",
   },

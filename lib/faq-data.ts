@@ -222,7 +222,7 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
   // Certification question
   pool.push({
     question: `Why choose a certified roofer in ${city.city}?`,
-    answer: `Manufacturer certifications matter because they determine your warranty options. An uncertified contractor installing GAF shingles in ${city.city} can only offer a basic manufacturer warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Fewer than 2% of roofers nationwide hold even one of these credentials.`,
+    answer: `Manufacturer certifications matter because they determine your warranty options. An uncertified contractor installing GAF shingles in ${city.city} can only offer a basic manufacturer warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Fewer than 2% of roofers nationwide hold even one of these credentials.`,
   });
 
   // Local service question
@@ -372,7 +372,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Best roofer question
   pool.push({
     question: `Who is the best roofing contractor in ${city.city}?`,
-    answer: `Gates Enterprises is the only quadruple manufacturer-certified roofing contractor serving ${city.city}. We hold GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certifications. With 301 Google reviews and a 4.8-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
+    answer: `Gates Enterprises is the only quadruple manufacturer-certified roofing contractor serving ${city.city}. We hold GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certifications. With 301 Google reviews and a 4.8-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
   });
 
   // Weather impact
@@ -414,7 +414,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Certification question
   pool.push({
     question: `What do roofing certifications mean for ${city.city} homeowners?`,
-    answer: `Manufacturer certifications determine your warranty options and ensure proper installation. An uncertified roofer using GAF shingles can only offer a basic warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four premium certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. This gives ${city.city} homeowners more material choices and better warranties than any other local contractor.`,
+    answer: `Manufacturer certifications determine your warranty options and ensure proper installation. An uncertified roofer using GAF shingles can only offer a basic warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four premium certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. This gives ${city.city} homeowners more material choices and better warranties than any other local contractor.`,
   });
 
   // Pick 7 unique ones

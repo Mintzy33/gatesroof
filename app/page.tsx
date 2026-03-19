@@ -220,7 +220,7 @@ export default function Home() {
           <StaggerCards className="cert-grid" stagger={0.1} distance={40}>
             {[
               { t: "GAF Master Elite", d: "Top 2% of roofers nationwide. Unlocks the GAF Golden Pledge warranty — 25 years on labor, 50 years on materials. The strongest warranty in roofing." },
-              { t: "Owens Corning Platinum Preferred", d: "Preferred contractor status means access to the Total Protection Roofing System and extended warranties most contractors can't offer." },
+              { t: "Owens Corning Preferred", d: "Preferred contractor status means access to the Total Protection Roofing System and extended warranties most contractors can't offer." },
               { t: "Malarkey Emerald Pro", d: "Certified installer of Malarkey's impact-resistant shingles — engineered specifically for Colorado's extreme hail." },
               { t: "CertainTeed ShingleMaster", d: "Advanced training in CertainTeed's premium product line. SureStart Plus warranty coverage for complete peace of mind." },
             ].map((c, i) => (
