@@ -47,6 +47,11 @@ const nextConfig: NextConfig = {
       { source: "/service-areas/enterprise-nv", destination: "/", permanent: true },
       { source: "/service-areas/saint-paul-mn", destination: "/", permanent: true },
       { source: "/service-areas/minneapolis-mn", destination: "/", permanent: true },
+      { source: "/service-areas/spring-valley-nv", destination: "/", permanent: true },
+      { source: "/service-areas/lockwood-mt", destination: "/", permanent: true },
+      { source: "/service-areas/laurel-mt", destination: "/", permanent: true },
+      { source: "/service-areas/worden-mt", destination: "/", permanent: true },
+      { source: "/service-areas/park-city-mt", destination: "/", permanent: true },
       // Old about page
       { source: "/about-us", destination: "/about", permanent: true },
       // Catch-all for any other old service-areas URLs
@@ -55,17 +60,19 @@ const nextConfig: NextConfig = {
       { source: "/service-areas", destination: "/areas/lakewood", permanent: true },
       { source: "/services/residential-roofing", destination: "/services/roof-replacement", permanent: true },
       { source: "/services/general-contractor", destination: "/services/roof-replacement", permanent: true },
+      { source: "/services/commercial-roofing", destination: "/services", permanent: true },
+      { source: "/services/insurance-claim-specialists", destination: "/services", permanent: true },
       // Old routes
       { source: "/regions", destination: "/areas/lakewood", permanent: true },
       { source: "/st-paul-minneapolis", destination: "/", permanent: true },
       // Old pages from previous site (Rebolt/legacy)
       { source: "/careers", destination: "/about", permanent: true },
-      { source: "/residential-services", destination: "/services/roof-replacement", permanent: true },
+      { source: "/residential-services", destination: "/services", permanent: true },
       { source: "/commercial-services", destination: "/services/roof-replacement", permanent: true },
       // Old FAQ format
       { source: "/roof-faq", destination: "/", permanent: true },
       { source: "/roof-faq/roofblog/:path*", destination: "/blog", permanent: true },
-      { source: "/roof-faq/:id", destination: "/", permanent: true },
+      { source: "/roof-faq/:id", destination: "/services", permanent: true },
       // Old blog posts that were indexed but no longer exist
       { source: "/blog/rooftop-revolution-exploring-the-cutting-edge-innovations-transforming-home-with-solar-roofing", destination: "/blog", permanent: true },
       { source: "/blog/pros-and-cons-of-different-roofing-styles-in-colorado-which-suits-you", destination: "/blog", permanent: true },
@@ -73,14 +80,20 @@ const nextConfig: NextConfig = {
       { source: "/blog/red-flags-common-roofing-scams-targeting-colorado-residents", destination: "/blog", permanent: true },
       { source: "/blog/roof-claims-on-your-homeowners-insurance/:path*", destination: "/blog", permanent: true },
       // Old service URLs → correct service pages
-      { source: "/services/roofing", destination: "/services/roof-replacement", permanent: true },
+      { source: "/services/roofing", destination: "/services", permanent: true },
       { source: "/services/gutters", destination: "/services/gutters/lakewood", permanent: true },
-      { source: "/services/siding", destination: "/services/siding/lakewood", permanent: true },
-      // Old pages → homepage
-      { source: "/financing", destination: "/", permanent: true },
-      { source: "/contact-us", destination: "/", permanent: true },
-      // Old project pages
-      { source: "/projects/:path*", destination: "/", permanent: true },
+      { source: "/services/siding", destination: "/services", permanent: true },
+      // Old pages → correct pages
+      { source: "/get-a-quote", destination: "/contact", permanent: true },
+      { source: "/financing", destination: "/contact", permanent: true },
+      { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/mission-statement", destination: "/about", permanent: true },
+      { source: "/billings", destination: "/", permanent: true },
+      { source: "/denver", destination: "/areas/denver", permanent: true },
+      // Old project pages (specific before catch-all)
+      { source: "/projects/transforming-homes-with-quality-siding-services", destination: "/services", permanent: true },
+      { source: "/projects/transformative-home-painting-in-nevada", destination: "/services", permanent: true },
+      { source: "/projects/:slug", destination: "/gallery", permanent: true },
     ];
   },
 };
