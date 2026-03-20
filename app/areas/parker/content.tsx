@@ -25,32 +25,40 @@ const StarIcon = () => (
 
 const FAQS = [
   {
+    q: "How much does a new roof cost in Parker CO?",
+    a: "A new roof in Parker typically costs between $8,000 and $25,000+ depending on the size of your home, the roofing materials selected, and the complexity of the roof. Many Parker homeowners pay little to nothing out of pocket when their roof replacement is covered by a legitimate insurance claim for storm damage. Gates Enterprises offers free inspections and detailed estimates so you know exactly what to expect before any work begins."
+  },
+  {
+    q: "Does insurance cover hail damage in Parker?",
+    a: "In most cases, yes. Standard homeowners insurance policies in Colorado typically cover hail damage to your roof. Parker sits along the Palmer Divide, one of the most active hail corridors in the country, so insurers in this area are familiar with storm damage claims. Gates Enterprises documents all damage thoroughly and works directly with your insurance company to support your claim."
+  },
+  {
     q: "How do I know if my Parker home has hail damage?",
-    a: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Parker homeowners."
+    a: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. Soft metal damage on AC units, mailboxes, and window trim can also indicate roof damage. The most reliable way to know is to schedule a professional inspection. Gates Enterprises offers free roof inspections for Parker homeowners."
   },
   {
     q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and work directly with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
+    a: "Yes. Gates Enterprises is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports with photo evidence, and work directly with your insurance company throughout the restoration process to ensure nothing is missed."
   },
   {
     q: "Why does Parker get so much hail?",
-    a: "Parker sits along the Palmer Divide, a ridge of higher elevation terrain between Denver and Colorado Springs. This geography creates strong updrafts during storm season that produce frequent and often severe hailstorms. Douglas County consistently ranks among the most hail prone counties in Colorado."
+    a: "Parker sits along the Palmer Divide, a ridge of higher elevation terrain between Denver and Colorado Springs. This geography creates strong updrafts during storm season that produce frequent and often severe hailstorms. Douglas County consistently ranks among the most hail prone counties in Colorado, with 3 to 5 significant hail events in a typical year."
   },
   {
-    q: "What roofing materials do you recommend for Parker homes?",
-    a: "Given Parker's severe weather exposure, we recommend impact resistant shingles rated Class 3 or Class 4. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
+    q: "What roofing materials are best for Parker's hail corridor?",
+    a: "Given Parker's position along the Palmer Divide hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. These shingles are designed to withstand hail impact and may qualify you for insurance premium discounts. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
   },
   {
     q: "How long does a roof replacement take in Parker?",
-    a: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
+    a: "Most residential roof replacements in Parker are completed in one to two days, depending on the size and complexity of the roof. Larger or more complex projects may take an additional day. Gates Enterprises coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
   },
   {
-    q: "Is Gates Enterprises LLC licensed and insured in Douglas County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Douglas County, the Town of Parker, and throughout Colorado's Front Range."
+    q: "Is Gates Enterprises licensed and insured in Douglas County?",
+    a: "Yes. Gates Enterprises is fully licensed and insured to perform roofing and exterior work in Douglas County, the Town of Parker, and throughout Colorado's Front Range."
   },
   {
     q: "How soon should I get an inspection after a hailstorm?",
-    a: "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. However, hidden damage can worsen over time if left unaddressed. We recommend scheduling a free inspection within a few weeks of any significant storm."
+    a: "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. However, hidden damage can worsen over time if left unaddressed, potentially leading to leaks, mold, or structural issues. We recommend scheduling a free inspection within a few weeks of any significant storm."
   }
 ];
 
@@ -58,56 +66,67 @@ const NEIGHBORHOODS = [
   "Stonegate", "Pradera", "Stroh Ranch", "Idyllwilde", "Lincoln Creek",
   "Canterberry Crossing", "Clarke Farms", "Cottonwood", "The Pinery", "Woodlands",
   "Motsenbocker", "Bar CCC Ranch", "Heirloom", "Iron Horse", "Pine Lane Estates",
-  "Meridian Village", "Reata North", "Timbers at the Pinery", "Challenger Park",
-  "Parker Hilltop", "Homestead at Crystal Valley"
+  "Meridian Village", "Meridian", "Reata North", "Timbers at the Pinery", "Challenger Park",
+  "Parker Hilltop", "Homestead at Crystal Valley", "Parker North", "Castle Pines Village"
 ];
 
 const HAIL_EVENTS = [
   { date: "May 8, 2017", desc: "A severe hailstorm produced golf ball sized hail across southern Douglas County, causing widespread roof and vehicle damage throughout Parker neighborhoods including Stonegate and Stroh Ranch." },
-  { date: "June 18, 2018", desc: "Multiple supercell thunderstorms tracked across the Palmer Divide, dropping 1.75 inch hail on Parker and the Pinery area." },
+  { date: "June 18, 2018", desc: "Multiple supercell thunderstorms tracked across the Palmer Divide, dropping 1.75 inch hail on Parker and the Pinery area. Thousands of homes sustained roof damage." },
   { date: "June 2019", desc: "Back to back storms throughout June brought repeated rounds of damaging hail to Parker, with some neighborhoods sustaining damage from two separate events in the same week." },
-  { date: "July 2023", desc: "A late season hailstorm produced up to 2 inch hail in parts of southern Douglas County, resulting in thousands of roof damage claims across Parker." }
+  { date: "July 2023", desc: "A late season hailstorm produced up to 2 inch hail in parts of southern Douglas County, resulting in thousands of roof damage claims across Parker and surrounding communities." },
+  { date: "Ongoing Risk", desc: "Parker averages 3 to 5 significant hail events per year due to its position along the Palmer Divide. Many Parker homes built between 2000 and 2015 are now reaching the age where storm damage compounds existing wear." }
 ];
 
 const SERVICES = [
   {
-    title: "Storm Damage Restoration",
-    desc: "When hail or wind damages your Parker home, Gates Enterprises LLC responds quickly with thorough inspections and expert restoration. We document all damage and guide you through the insurance restoration process so your home is restored to its full protective condition.",
+    title: "Storm and Hail Damage Restoration",
+    desc: "When hail or wind damages your Parker home, Gates Enterprises responds quickly with thorough inspections and expert restoration. We document all damage and guide you through the insurance restoration process so your home is restored to its full protective condition.",
     href: "/services/storm-hail-damage"
   },
   {
     title: "Roof Replacement",
-    desc: "Whether your roof has reached the end of its lifespan or sustained irreparable storm damage, Gates Enterprises LLC delivers premium roof replacements using materials from GAF, Owens Corning, Malarkey, and CertainTeed. Our quadruple certification means you get access to the best extended warranty options in the industry.",
+    desc: "Whether your roof has reached the end of its lifespan or sustained irreparable storm damage, Gates Enterprises delivers premium roof replacements using materials from GAF, Owens Corning, Malarkey, and CertainTeed. Our quadruple certification means you get access to the best extended warranty options in the industry.",
     href: "/services/roof-replacement"
   },
   {
     title: "Roof Repair",
-    desc: "Not every issue requires a full replacement. From missing shingles to minor leaks, our team handles roof repairs of all sizes for Parker homeowners. We diagnose the problem accurately and fix it right the first time.",
+    desc: "Not every issue requires a full replacement. From missing shingles to minor leaks, our team provides roof repairs of all sizes for Parker homeowners. We diagnose the problem accurately and fix it right the first time.",
     href: "/services/roof-repair"
   },
   {
-    title: "Siding Installation and Repair",
-    desc: "Hail and wind don't just damage roofs. Your siding takes a hit too. Gates Enterprises LLC installs and repairs siding to protect your home's exterior and boost curb appeal.",
-    href: "/services/siding-exterior"
+    title: "Free Roof Inspections",
+    desc: "Not sure if your Parker home has storm damage? Gates Enterprises provides free, no obligation roof inspections. Our certified inspectors evaluate your roof's condition and provide a detailed report you can use for insurance claims or future planning.",
+    href: "/contact"
   },
   {
-    title: "Gutters",
+    title: "Emergency Roof Repair",
+    desc: "When storm damage requires immediate attention, Gates Enterprises is available for emergency tarping and temporary repairs to prevent further damage to your Parker home. Protecting your interior from water intrusion is our top priority after a severe weather event.",
+    href: "/services/roof-repair"
+  },
+  {
+    title: "Gutter Installation",
     desc: "Properly functioning gutters are essential for protecting your Parker home's foundation, landscaping, and exterior. We install and repair gutter systems designed to handle Colorado's intense spring runoff and summer storms.",
     href: "/services/gutters-guards"
   },
   {
+    title: "Siding Installation and Repair",
+    desc: "Hail and wind don't just damage roofs. Your siding takes a hit too. Gates Enterprises installs and repairs siding to protect your home's exterior and boost curb appeal.",
+    href: "/services/siding-exterior"
+  },
+  {
     title: "Windows",
-    desc: "Damaged or outdated windows cost you energy and comfort. Gates Enterprises LLC installs high performance replacement windows that improve insulation and add value to your Parker home.",
+    desc: "Damaged or outdated windows cost you energy and comfort. Gates Enterprises installs high performance replacement windows that improve insulation and add value to your Parker home.",
     href: "/services/windows"
   },
   {
     title: "Painting",
-    desc: "Complete your home's exterior transformation with professional painting services from Gates Enterprises LLC. We prep surfaces properly, use quality materials, and deliver results that last through Colorado's demanding climate.",
+    desc: "Complete your home's exterior transformation with professional painting services. We prep surfaces properly, use quality materials, and deliver results that last through Colorado's demanding climate.",
     href: "/services/paint"
   },
   {
     title: "Insurance Restoration",
-    desc: "Gates Enterprises LLC is an insurance restoration expert serving Parker and all of Douglas County. We manage the restoration process from the initial damage assessment through project completion, ensuring nothing falls through the cracks.",
+    desc: "Gates Enterprises is an insurance restoration expert serving Parker and all of Douglas County. We guide Parker homeowners through the restoration process from the initial damage assessment through project completion, ensuring nothing falls through the cracks.",
     href: "/services/insurance-claims"
   }
 ];
@@ -132,14 +151,24 @@ const CERTIFICATIONS = [
 ];
 
 const INTERNAL_LINKS = [
-  { label: "Storm Damage Restoration", href: "/services/storm-hail-damage" },
+  { label: "Storm and Hail Damage Restoration", href: "/services/storm-hail-damage" },
   { label: "Roof Replacement", href: "/services/roof-replacement" },
+  { label: "Roof Repair", href: "/services/roof-repair" },
+  { label: "Insurance Claims", href: "/services/insurance-claims" },
   { label: "Siding", href: "/services/siding-exterior" },
   { label: "Gutters", href: "/services/gutters-guards" },
   { label: "Windows", href: "/services/windows" },
   { label: "Painting", href: "/services/paint" },
+  { label: "Roofing Contractor Castle Rock CO", href: "/areas/castle-rock" },
+  { label: "Roofing Contractor Lone Tree CO", href: "/areas/lone-tree" },
+  { label: "Roofing Contractor Centennial CO", href: "/areas/centennial" },
+  { label: "Roofing Contractor Aurora CO", href: "/areas/aurora" },
+  { label: "Roofing Contractor Highlands Ranch CO", href: "/areas/highlands-ranch" },
   { label: "Roofing Contractor Denver CO", href: "/areas/denver" },
-  { label: "Roofing Contractor Lakewood CO", href: "/areas/lakewood" },
+  { label: "What Does Hail Damage Look Like on a Roof?", href: "/blog/what-does-hail-damage-look-like-on-roof" },
+  { label: "Colorado Hail Season 2026 Guide", href: "/blog/colorado-hail-season-2026-homeowners-guide" },
+  { label: "How to Navigate Hail Damage Insurance in CO", href: "/blog/hail-damage-insurance-claim-colorado" },
+  { label: "Class 4 Impact Resistant Shingles", href: "/blog/class-4-impact-resistant-shingles-colorado" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -184,23 +213,23 @@ export default function CityContent() {
     <div style={{ background: WHITE }}>
       <Header />
 
-      {/* ─── 1. HERO SECTION ─── */}
+      {/* 1. HERO SECTION */}
       <section className="parker-hero" style={{ padding: "160px 24px 80px", background: `linear-gradient(170deg, ${NAVY} 0%, #0F2A42 100%)`, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 70% 30%, rgba(37,99,235,0.06) 0%, transparent 50%)" }} />
         <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home &rarr; Service Areas &rarr; Parker</Link>
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>
-            Roofing Contractor in Parker, CO | Gates Enterprises
+            Parker, Colorado's Most Trusted Roofing Company
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted by Parker Families for 8+ Years.
+            Quadruple Manufacturer Certified &middot; 301 Five Star Reviews &middot; 7,200+ Completed Projects
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Parker homeowners deserve a roofing contractor who understands the unique challenges of living along the Palmer Divide. From sudden summer hailstorms to heavy spring snow loads, your roof takes a beating year after year. Gates Enterprises LLC has been protecting homes across Parker and Douglas County since 2017. We bring quadruple manufacturer certifications, a 4.8 star reputation across 300+ Google reviews, and a commitment to honest, quality work on every project.
+            Parker homeowners deserve a roofing contractor who understands the unique challenges of living along the Palmer Divide. From sudden summer hailstorms to heavy spring snow loads, your roof takes a beating year after year. Gates Enterprises has been protecting homes across Parker and Douglas County for over a decade. We bring quadruple manufacturer certifications, a 4.8 star reputation across 301 Google reviews, and a commitment to honest, quality work on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-              Request a Free Inspection &amp; Estimate &rarr;
+              Get a Free Roof Inspection in Parker &rarr;
             </Link>
             <a href="tel:7207663377" style={{ background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>
               Call (720) 766-3377
@@ -208,67 +237,103 @@ export default function CityContent() {
           </div>
         </div>
       </section>
-      {/* ─── PROJECT PHOTOS ─── */}
+
+      {/* PROJECT PHOTOS */}
       <CityGallery city="Parker" />
 
-      {/* ─── 2. WHY PARKER HOMEOWNERS CHOOSE GATES ─── */}
+      {/* 2. TRUST SIGNALS BAR */}
+      <section style={{ padding: "48px 24px", background: WHITE, borderBottom: "1px solid rgba(13,33,55,0.06)" }}>
+        <div className="parker-trust-grid" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 32, textAlign: "center" }}>
+          <div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>301</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Google Reviews</div>
+            <div style={{ display: "flex", justifyContent: "center", gap: 2, marginTop: 4 }}>
+              {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
+            </div>
+          </div>
+          <div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>4.8</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Star Rating</div>
+          </div>
+          <div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>7,200+</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Completed Projects</div>
+          </div>
+          <div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>4x</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Manufacturer Certified</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. WHY PARKER HOMEOWNERS CHOOSE GATES */}
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 40, lineHeight: 1.2 }}>
-            Why Parker Homeowners Trust Gates Enterprises LLC
+            Why Parker Homeowners Trust Gates Enterprises
           </h2>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. That means Parker homeowners get access to the best warranty options and highest quality materials available.
+              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: <Link href="/blog/manufacturer-certified-roofer-colorado" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro</Link>. That means Parker homeowners get access to the best warranty options and highest quality materials available.
             </p>
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.8 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>301 Google Reviews. 4.8 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reputation speaks for itself. Parker families consistently rate Gates Enterprises among the top roofing contractors on Colorado's Front Range. We earn every review through transparent communication, quality craftsmanship, and respect for your home and property.
             </p>
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>8+ Years Serving Colorado's Front Range.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>7,200+ Completed Projects Across Colorado</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Founded in May 2017, Gates Enterprises LLC has completed thousands of roofing and exterior projects across Douglas County and the greater Denver metro. We know Parker. We know the weather patterns. We know the building codes. And we know how to get the job done right.
+              With over 7,200 completed roofing and exterior projects across Douglas County and the greater Denver metro, Gates Enterprises has the experience Parker homeowners can count on. We know Parker. We know the weather patterns. We know the building codes. And we know how to get the job done right.
             </p>
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Specialists.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Specialists</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              When a hailstorm damages your roof, the restoration process can feel overwhelming. Gates Enterprises LLC is an insurance restoration expert, guiding Parker homeowners through the restoration process from initial inspection through final installation. We document damage thoroughly and work with your insurance adjuster to support your claim.
+              When a hailstorm damages your roof, the restoration process can feel overwhelming. Gates Enterprises is an <Link href="/services/insurance-claims" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>insurance restoration expert</Link>, guiding Parker homeowners through the restoration process from initial inspection through final installation. We document damage thoroughly and work with your insurance adjuster to support your claim.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 36 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Douglas County Building Code Experts</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              The Town of Parker and Douglas County have specific building codes and permitting requirements for roofing projects. Gates Enterprises pulls all required permits and ensures every installation meets or exceeds local code requirements. You should never have to worry about whether your new roof was installed to code.
             </p>
           </div>
 
           <div>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Local and Accessible.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Local and Accessible</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC is headquartered right here on Colorado's Front Range. When you call, you reach our team directly. No call centers. No runaround.
+              Gates Enterprises is headquartered right here on Colorado's Front Range. When you call, you reach our team directly. No call centers. No runaround.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ─── 3. PARKER HAIL AND STORM HISTORY ─── */}
+      {/* 4. PARKER HAIL AND STORM HISTORY */}
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
-            Parker, CO: One of Colorado's Most Hail Prone Areas
+            Parker, CO: One of Colorado's Most Active Hail Corridors
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            Parker sits along the Palmer Divide, a geographic ridge that runs east to west between Denver and Colorado Springs. This elevated terrain creates unique atmospheric conditions that produce some of the most frequent and damaging hailstorms anywhere in the United States.
+            Parker sits along the Palmer Divide, a geographic ridge that runs east to west between Denver and Colorado Springs. This elevated terrain creates unique atmospheric conditions that produce some of the most frequent and damaging hailstorms anywhere in the United States. Parker typically experiences 3 to 5 significant hail events per year, making it one of the most hail prone communities in all of Colorado.
+          </p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
+            Many Parker homes were built between 2000 and 2015, meaning roofs in neighborhoods like Stonegate, Idyllwilde, Pradera, Lincoln Creek, and Castle Pines Village are now 10 to 25 years old. At this age, accumulated storm damage can significantly reduce the remaining lifespan of your roof, even if no single event caused obvious failure.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 28 }}>
-            Douglas County regularly ranks among the top counties in Colorado for hail damage insurance claims. The National Oceanic and Atmospheric Administration (NOAA) data confirms that Colorado's Front Range averages more damaging hail events per year than nearly any other region in the country.
+            Douglas County regularly ranks among the top counties in Colorado for hail damage insurance claims. The National Oceanic and Atmospheric Administration (NOAA) data confirms that Colorado's Front Range averages more damaging hail events per year than nearly any other region in the country. Learn more about <Link href="/blog/what-does-hail-damage-look-like-on-roof" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>what hail damage looks like on a roof</Link> and <Link href="/blog/colorado-hail-season-2026-homeowners-guide" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>how to prepare for Colorado hail season</Link>.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, color: NAVY, marginBottom: 20 }}>
-            Notable hail events affecting Parker and Douglas County include:
+            Notable hail events affecting Parker and Douglas County:
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
             {HAIL_EVENTS.map((event, i) => (
@@ -279,20 +344,23 @@ export default function CityContent() {
             ))}
           </div>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Hail season in Parker typically runs from April through September, with peak activity in May, June, and July. If your home has been through any recent storm season without an inspection, there could be hidden damage affecting the lifespan of your roof.
+            Hail season in Parker typically runs from April through September, with peak activity in May, June, and July. If your home has been through any recent storm season without an inspection, there could be hidden damage affecting the lifespan of your roof. Consider upgrading to <Link href="/blog/class-4-impact-resistant-shingles-colorado" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Class 4 impact resistant shingles</Link> for better protection.
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-            Request a Free Inspection &amp; Estimate &rarr;
+            Get a Free Roof Inspection in Parker &rarr;
           </Link>
         </div>
       </section>
 
-      {/* ─── 4. FULL SERVICES LIST ─── */}
+      {/* 5. FULL SERVICES LIST */}
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 40, lineHeight: 1.2 }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
             Roofing and Exterior Services in Parker, CO
           </h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>
+            Gates Enterprises provides complete roofing and exterior services for Parker homeowners, from storm damage restoration and roof replacement to siding, gutters, windows, and painting.
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
             {SERVICES.map((s, i) => (
               <div key={i}>
@@ -307,14 +375,14 @@ export default function CityContent() {
         </div>
       </section>
 
-      {/* ─── 5. CERTIFICATIONS SECTION ─── */}
+      {/* 6. CERTIFICATIONS SECTION */}
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
             Quadruple Manufacturer Certified: What That Means for Parker Homeowners
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>
-            Fewer than 2% of roofing contractors in the United States hold even one top tier manufacturer certification. Gates Enterprises LLC holds four. This is not a marketing gimmick. These certifications are earned through rigorous vetting, ongoing training, and demonstrated excellence in installation quality.
+            Fewer than 2% of roofing contractors in the United States hold even one top tier manufacturer certification. Gates Enterprises holds four. This is not a marketing gimmick. These certifications are earned through rigorous vetting, ongoing training, and demonstrated excellence in installation quality. For Parker homeowners, this means access to the longest warranties, highest quality materials, and the confidence that your roof was installed by a contractor the manufacturers themselves trust.
           </p>
           <div className="parker-certs-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
             {CERTIFICATIONS.map((cert, i) => (
@@ -327,20 +395,20 @@ export default function CityContent() {
           </div>
           <div style={{ textAlign: "center", marginTop: 40 }}>
             <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-              Request a Free Inspection &amp; Estimate &rarr;
+              Get a Free Roof Inspection in Parker &rarr;
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ─── 6. NEIGHBORHOODS SERVED ─── */}
+      {/* 7. NEIGHBORHOODS SERVED */}
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            Neighborhoods We Serve in Parker, CO
+            Parker Neighborhoods We Serve
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Gates Enterprises LLC proudly serves homeowners in every Parker neighborhood. Whether you live in a newer development or an established community, our team knows the area and delivers the same quality service across every project.
+            Gates Enterprises proudly serves homeowners in every Parker neighborhood. Whether you live in a newer development or an established community, our team knows the area and delivers the same quality service across every project.
           </p>
           <div className="parker-neighborhoods-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px 24px", marginBottom: 32 }}>
             {NEIGHBORHOODS.map((n, i) => (
@@ -350,12 +418,12 @@ export default function CityContent() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            If your neighborhood is not listed, we still serve you. Gates Enterprises LLC works throughout Parker and all of Douglas County.
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>
+            If your neighborhood is not listed, we still serve you. Gates Enterprises works throughout Parker and all of Douglas County. We also serve nearby communities including <Link href="/areas/castle-rock" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Castle Rock</Link>, <Link href="/areas/lone-tree" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Lone Tree</Link>, <Link href="/areas/highlands-ranch" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Highlands Ranch</Link>, <Link href="/areas/centennial" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Centennial</Link>, and <Link href="/areas/aurora" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Aurora</Link>.
           </p>
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 32 }}>
             <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-              Request a Free Inspection &amp; Estimate &rarr;
+              Get a Free Roof Inspection in Parker &rarr;
             </Link>
             <a href="tel:7207663377" style={{ display: "inline-flex", alignItems: "center", background: "transparent", color: NAVY, border: "1px solid rgba(13,33,55,0.15)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>
               Call (720) 766-3377
@@ -364,30 +432,30 @@ export default function CityContent() {
         </div>
       </section>
 
-      {/* ─── 7. GOOGLE REVIEWS SECTION ─── */}
+      {/* 8. GOOGLE REVIEWS SECTION */}
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto", marginBottom: 40 }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
             What Parker Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 300+ Google reviews and a 4.8 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Parker neighbors have to say.
+            With 301 Google reviews and a 4.8 star rating, Gates Enterprises is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Parker neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(301 reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 300+ Reviews on Google &rarr;
+            Read All 301 Reviews on Google &rarr;
           </a>
         </div>
       </section>
 
-      {/* ─── 8. FAQ SECTION ─── */}
+      {/* 9. FAQ SECTION */}
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 32, lineHeight: 1.2 }}>
@@ -399,38 +467,18 @@ export default function CityContent() {
         </div>
       </section>
 
-      {/* ─── 9. ADDITIONAL CTA SECTION ─── */}
+      {/* 10. ADDITIONAL CTA SECTION */}
       <CTA
-        title="Protect Your Parker Home Today"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises LLC is ready to help. With 8+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
+        title="Get a Free Roof Inspection in Parker"
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 301 five star reviews, you can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
       />
 
-      {/* ─── 10. INTERNAL LINKS SECTION ─── */}
-      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
-            Explore More from Gates Enterprises
-          </h2>
-          <div className="parker-internal-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
-            {INTERNAL_LINKS.map((link, i) => (
-              <Link key={i} href={link.href} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-      {/* ─── SERVICES IN PARKER ─── */}
+      {/* 11. SERVICES IN PARKER */}
       <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>OUR SERVICES</span>
-          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Services in Parker, CO</h2>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Gates Enterprises provides a full range of roofing and exterior services in Parker.</p>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Roofing Services in Parker, CO</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Gates Enterprises provides a full range of roofing and exterior services in Parker, Colorado.</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             {[
               { n: "Roof Replacement", s: "roof-replacement" },
@@ -450,22 +498,43 @@ export default function CityContent() {
           </div>
         </div>
       </section>
-      <HailScoreCard citySlug="parker" cityName="Parker" />
 
+      {/* 12. INTERNAL LINKS */}
+      <section style={{ padding: "64px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3.5vw, 30px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
+            Explore More from Gates Enterprises
+          </h2>
+          <div className="parker-internal-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
+            {INTERNAL_LINKS.map((link, i) => (
+              <Link key={i} href={link.href} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 0" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <HailScoreCard citySlug="parker" cityName="Parker" />
       <LocalSEOInfo citySlug="parker" cityName="Parker" showMapsLink />
 
       <Footer />
 
-      {/* ─── RESPONSIVE STYLES ─── */}
+      {/* RESPONSIVE STYLES */}
       <style>{`
         @media (max-width: 768px) {
           .parker-hero { padding: 120px 20px 60px !important; }
+          .parker-trust-grid { grid-template-columns: 1fr 1fr !important; }
           .parker-certs-grid { grid-template-columns: 1fr !important; }
           .parker-neighborhoods-grid { grid-template-columns: 1fr 1fr !important; }
           .parker-internal-links { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
           .parker-hero { padding: 110px 16px 48px !important; }
+          .parker-trust-grid { grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
           .parker-neighborhoods-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
