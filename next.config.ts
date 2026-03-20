@@ -13,6 +13,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Consolidate all traffic to https://www.gatesroof.com (SEO canonical)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "gatesroof.com" }],
+        destination: "https://www.gatesroof.com/:path*",
+        permanent: true,
+      },
       // Service area redirects (old /service-areas/{city}-co → /areas/{city})
       { source: "/service-areas/lakewood-co", destination: "/areas/lakewood", permanent: true },
       { source: "/service-areas/parker-co", destination: "/areas/parker", permanent: true },
