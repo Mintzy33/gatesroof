@@ -352,7 +352,7 @@ export default function Home() {
             { l: "About Alex Chicilo", h: "/about/alex-chicilo" },
             { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
             { l: "Insurance Coverage Estimator", h: "/tools/insurance-coverage-estimator" },
-            { l: "Roof Age Calculator", h: "/tools/roof-age-calculator" },
+            { l: "Roof Replacement Cost Estimator", h: "/tools/roof-age-calculator" },
             { l: "Hail Risk Check", h: "/tools/hail-risk-check" },
             { l: "Impact Resistant Shingles", h: "/impact-resistant-shingles" },
             { l: "Insurance Claims", h: "/insurance-claims" },

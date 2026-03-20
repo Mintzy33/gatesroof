@@ -11,13 +11,13 @@ const TEXT_LIGHT = "#64748B";
 
 const tools = [
   {
-    title: "Roof Age Calculator",
-    desc: "Enter your home's build year and roof material to find out how much life your roof has left. Get a personalized risk assessment and recommendation.",
+    title: "Roof Replacement Cost Estimator",
+    desc: "Get an instant cost estimate for your Colorado roof replacement. Select your material, home size, and area for a realistic price range based on 2025/2026 rates.",
     href: "/tools/roof-age-calculator",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <polyline points="12 6 12 12 16 14" />
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
       </svg>
     ),
   },
