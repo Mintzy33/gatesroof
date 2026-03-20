@@ -46,7 +46,7 @@ export default function HailRiskContent() {
             lineHeight: 1.7,
             marginBottom: 16,
           }}>
-            Powered by HailScore, a Gates Enterprises company
+            Powered by HailScore
           </p>
           {/* HailScore wordmark */}
           <div style={{ marginBottom: 32 }}>
