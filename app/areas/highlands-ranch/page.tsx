@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Highlands Ranch, CO | Gates Enterprises",
-  description: "Highlands Ranch roofing company. Roof replacement, hail damage repair, HOA-compliant installations. GAF Master Elite certified. Call (720) 766-3377.",
+  title: "Highlands Ranch Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+  description: "Highlands Ranch's top-rated roofer. 301 Google reviews, 4.8 stars, 4x certified. Free storm damage inspections. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
-    title: "Roofing Contractor in Highlands Ranch, CO | Gates Enterprises",
-    description: "Highlands Ranch roofing company. Roof replacement, hail damage repair, HOA-compliant installations. GAF Master Elite certified. Call (720) 766-3377.",
+    title: "Highlands Ranch Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+    description: "Highlands Ranch's top-rated roofer. 301 Google reviews, 4.8 stars, 4x certified. Free storm damage inspections. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

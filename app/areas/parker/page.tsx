@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Parker CO Roofing | #1 Rated Roofer | Free Inspection",
-  description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
+  title: "Parker Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+  description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Parker CO Roofing | #1 Rated Roofer | Free Inspection",
-    description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
+    title: "Parker Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+    description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",

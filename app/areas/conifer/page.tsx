@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Conifer, CO | Gates Enterprises",
-  description: "Conifer roofing contractor. Mountain-ready roof replacement, storm damage repair & siding. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
+  title: "Trusted Conifer Roofing Company | Storm Damage Experts | Gates Enterprises",
+  description: "Conifer's trusted mountain roofer. 301 reviews, 4.8 stars, quadruple certified. Free inspections for hail and storm damage. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/conifer" },
   openGraph: {
-    title: "Roofing Contractor in Conifer, CO | Gates Enterprises",
-    description: "Conifer roofing contractor. Mountain-ready roof replacement, storm damage repair & siding. GAF Master Elite certified. Free estimate. Call (720) 766-3377.",
+    title: "Trusted Conifer Roofing Company | Storm Damage Experts | Gates Enterprises",
+    description: "Conifer's trusted mountain roofer. 301 reviews, 4.8 stars, quadruple certified. Free inspections for hail and storm damage. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/conifer",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

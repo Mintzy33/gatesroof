@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Englewood, CO | Gates Enterprises",
-  description: "Englewood roofing company. Expert roof replacement, hail damage repair & siding services. GAF Master Elite certified. Call (720) 766-3377.",
+  title: "Trusted Englewood Roofing Company | Storm Damage Experts | Gates Enterprises",
+  description: "Englewood homeowners trust Gates Enterprises. 301 reviews, 4.8 stars, quadruple certified. Free roof inspections. Call (720) 766-3377 today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/englewood" },
   openGraph: {
-    title: "Roofing Contractor in Englewood, CO | Gates Enterprises",
-    description: "Englewood roofing company. Expert roof replacement, hail damage repair & siding services. GAF Master Elite certified. Call (720) 766-3377.",
+    title: "Trusted Englewood Roofing Company | Storm Damage Experts | Gates Enterprises",
+    description: "Englewood homeowners trust Gates Enterprises. 301 reviews, 4.8 stars, quadruple certified. Free roof inspections. Call (720) 766-3377 today.",
     url: "https://www.gatesroof.com/areas/englewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

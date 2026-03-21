@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Wheat Ridge, CO | Gates Enterprises",
-  description: "Wheat Ridge roofing contractor. Roof replacement, storm repair, gutters & siding. Locally trusted, manufacturer certified. Free inspection. Call (720) 766-3377.",
+  title: "Trusted Wheat Ridge Roofing Company | Storm Damage Experts | Gates Enterprises",
+  description: "Wheat Ridge homeowners trust Gates Enterprises. 301 reviews, 4.8 stars, 4x certified. Free roof inspections. Call (720) 766-3377 today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/wheat-ridge" },
   openGraph: {
-    title: "Roofing Contractor in Wheat Ridge, CO | Gates Enterprises",
-    description: "Wheat Ridge roofing contractor. Roof replacement, storm repair, gutters & siding. Locally trusted, manufacturer certified. Free inspection. Call (720) 766-3377.",
+    title: "Trusted Wheat Ridge Roofing Company | Storm Damage Experts | Gates Enterprises",
+    description: "Wheat Ridge homeowners trust Gates Enterprises. 301 reviews, 4.8 stars, 4x certified. Free roof inspections. Call (720) 766-3377 today.",
     url: "https://www.gatesroof.com/areas/wheat-ridge",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

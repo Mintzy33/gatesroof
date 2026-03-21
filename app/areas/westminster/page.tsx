@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Westminster, CO | Gates Enterprises",
-  description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated. Free inspection. Call (720) 766-3377.",
+  title: "Westminster Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+  description: "Westminster's top-rated roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/westminster" },
   openGraph: {
-    title: "Roofing Contractor in Westminster, CO | Gates Enterprises",
-    description: "Westminster roofing services from Gates Enterprises. Roof replacement, hail damage repair & insurance restoration. 4.8★ rated. Free inspection. Call (720) 766-3377.",
+    title: "Westminster Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+    description: "Westminster's top-rated roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/westminster",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

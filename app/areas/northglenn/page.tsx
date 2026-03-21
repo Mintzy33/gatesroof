@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor in Northglenn, CO | Gates Enterprises",
-  description: "Northglenn roofing experts. Roof replacement, hail damage repair, siding & gutters. CertainTeed & GAF certified. Free inspection. Call (720) 766-3377.",
+  title: "Northglenn Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+  description: "Northglenn's top-rated roofer. 301 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/northglenn" },
   openGraph: {
-    title: "Roofing Contractor in Northglenn, CO | Gates Enterprises",
-    description: "Northglenn roofing experts. Roof replacement, hail damage repair, siding & gutters. CertainTeed & GAF certified. Free inspection. Call (720) 766-3377.",
+    title: "Northglenn Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
+    description: "Northglenn's top-rated roofer. 301 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/northglenn",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

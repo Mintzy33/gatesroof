@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor Morrison CO | Gates Enterprises",
-  description: "Morrison's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
+  title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
+  description: "Morrison trusts Gates Enterprises for roofing. 301 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/morrison" },
   openGraph: {
-    title: "Roofing Contractor Morrison CO | Gates Enterprises",
-    description: "Morrison's trusted roofing contractor. 4x certified, 300+ reviews, 4.8★. Roof replacement, hail damage repair & insurance claims. Free inspection. Call (720) 766-3377.",
+    title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
+    description: "Morrison trusts Gates Enterprises for roofing. 301 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/morrison",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
