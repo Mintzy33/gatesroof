@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Service Areas</h3>
-            {[{l:"Denver",s:"denver"},{l:"Aurora",s:"aurora"},{l:"Lakewood",s:"lakewood"},{l:"Arvada",s:"arvada"},{l:"Westminster",s:"westminster"},{l:"Thornton",s:"thornton"},{l:"Centennial",s:"centennial"},{l:"Parker",s:"parker"},{l:"Littleton",s:"littleton"},{l:"Highlands Ranch",s:"highlands-ranch"},{l:"Broomfield",s:"broomfield"},{l:"Golden",s:"golden"},{l:"Castle Rock",s:"castle-rock"},{l:"Commerce City",s:"commerce-city"},{l:"Englewood",s:"englewood"}].map(c=>(
+            {[{l:"Denver",s:"denver"},{l:"Aurora",s:"aurora"},{l:"Lakewood",s:"lakewood"},{l:"Arvada",s:"arvada"},{l:"Westminster",s:"westminster"},{l:"Thornton",s:"thornton"},{l:"Centennial",s:"centennial"},{l:"Parker",s:"parker"},{l:"Littleton",s:"littleton"},{l:"Highlands Ranch",s:"highlands-ranch"},{l:"Broomfield",s:"broomfield"},{l:"Golden",s:"golden"},{l:"Castle Rock",s:"castle-rock"},{l:"Commerce City",s:"commerce-city"},{l:"Brighton",s:"brighton"},{l:"Superior",s:"superior"},{l:"Lone Tree",s:"lone-tree"},{l:"Morrison",s:"morrison"},{l:"Evergreen",s:"evergreen"},{l:"Englewood",s:"englewood"}].map(c=>(
               <Link key={c.l} href={`/areas/${c.s}`} style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{c.l}</Link>
             ))}
           </div>
