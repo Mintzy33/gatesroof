@@ -88,7 +88,6 @@ const nextConfig: NextConfig = {
       { source: "/services/siding", destination: "/services", permanent: true },
       // Old pages → correct pages
       { source: "/get-a-quote", destination: "/contact", permanent: true },
-      { source: "/financing", destination: "/contact", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/mission-statement", destination: "/about", permanent: true },
       { source: "/billings", destination: "/", permanent: true },
