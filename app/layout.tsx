@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
     type: "website",
-    images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado's Most Trusted Roofing Team" }],
+    images: [{ url: "https://www.gatesroof.com/og-image.jpg", width: 1200, height: 630, alt: "Gates Enterprises LLC - Colorado's Most Trusted Roofing Team" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
     description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars.",
-    images: ["https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov"],
+    images: ["https://www.gatesroof.com/og-image.jpg"],
   },
 };
 
