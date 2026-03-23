@@ -93,7 +93,7 @@ function renderParagraph(
         }}
       >
         {parts.map((p, i) =>
-          typeof p === "string" ? p : <Link key={i} href={p.href} style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3 }}>{p.text}</Link>
+          typeof p === "string" ? p : p.href.startsWith("http") ? <a key={i} href={p.href} target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3 }}>{p.text}</a> : <Link key={i} href={p.href} style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3 }}>{p.text}</Link>
         )}
       </h2>
     );
@@ -111,7 +111,7 @@ function renderParagraph(
       }}
     >
       {parts.map((p, i) =>
-        typeof p === "string" ? p : <Link key={i} href={p.href} style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3, fontWeight: 500 }}>{p.text}</Link>
+        typeof p === "string" ? p : p.href.startsWith("http") ? <a key={i} href={p.href} target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3, fontWeight: 500 }}>{p.text}</a> : <Link key={i} href={p.href} style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: 3, fontWeight: 500 }}>{p.text}</Link>
       )}
     </p>
   );

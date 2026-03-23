@@ -110,6 +110,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage", text: "storm and hail damage repair" },
       { placeholder: "free-inspection", href: "/contact", text: "free roof inspection" },
       { placeholder: "how-long-roof-lasts", href: "/blog/how-long-does-roof-last-colorado", text: "how long a roof lasts in Colorado" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your home's hail history" },
     ],
   },
   {
@@ -138,7 +139,7 @@ export const blogPosts: BlogPost[] = [
       "The stretch of I-25 from Brighton through Thornton, Westminster, and Broomfield is sometimes called Hail Alley for good reason. Major hail events have pounded these suburbs repeatedly over the past decade. The northeastern suburbs of Denver, including Aurora, Commerce City, and Green Valley Ranch, are also frequent targets.",
       "Colorado Springs and the communities along its northern edge (Monument, Black Forest, Falcon) sit in another high-risk zone. The combination of elevation and proximity to the Palmer Divide makes this area a reliable hail magnet.",
       "Boulder, Longmont, and Loveland round out the list. These northern Front Range cities catch storms that develop over the foothills and track eastward across the plains.",
-      "If your home is anywhere along the Front Range, hail is not a question of if. It is a question of when. You can look up your address on <a href=\"https://www.myhailscore.com\" target=\"_blank\" rel=\"noopener\">HailScore</a> to see detailed hail history for your area, including how many storms have hit near your home and how large the hailstones were.",
+      "If your home is anywhere along the Front Range, hail is not a question of if. It is a question of when. You can [LINK: hailscore] to see how many storms have hit near your home and how large the hailstones were.",
 
       "What Different Hail Sizes Do to Your Roof",
       "[IMAGE: /images/blog/metal-roof-hail-damage-example.webp | Metal roof showing hail damage in Colorado, inspected by Gates Enterprises | 1600 | 1198]",
@@ -244,7 +245,7 @@ export const blogPosts: BlogPost[] = [
       "The Soft Metal Test",
       "Insurance adjusters and roofing inspectors use a simple method called the soft metal test to gauge hail severity. They examine exposed soft metals around your property, including aluminum window trim, garage door panels, mailbox tops, AC unit fins, and painted wood surfaces like deck rails and fence tops.",
       "The logic is straightforward. If soft metals around your property show a clear pattern of hail dents, the hailstones were large enough and fell with enough force to damage roofing materials too. This contextual evidence strengthens an insurance claim significantly [LINK: insurance-claims].",
-      "Walk around your property after a storm and photograph every piece of dented soft metal you can find. It all helps build the case. You can also check <a href=\"https://www.myhailscore.com\" target=\"_blank\" rel=\"noopener\">HailScore</a> to see if recent hail events were recorded near your address — it uses NOAA radar data to show exactly how many storms have hit your area and how large the hailstones were.",
+      "Walk around your property after a storm and photograph every piece of dented soft metal you can find. It all helps build the case. You can also [LINK: hailscore] to see if recent hail events were recorded near your address, including how many storms have hit your area and how large the hailstones were.",
       "What You Can See from the Ground vs. Up Close",
       "From the Ground",
       "You can get a rough sense of damage without climbing a ladder. Look for dark spots or splotchy discoloration on shingles (granule loss), dented gutters and downspouts, pieces of shingle or granule debris in your yard, damaged siding or window screens, and cracked or missing shingles visible against the skyline.",
@@ -280,6 +281,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "storm-damage", href: "/services/storm-hail-damage", text: "storm and hail damage services" },
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claims assistance" },
       { placeholder: "insurance-claim-blog", href: "/blog/how-to-file-hail-damage-insurance-claim-colorado", text: "how to file a hail damage insurance claim in Colorado" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your home's hail history for free" },
     ],
   },
   {
@@ -498,7 +500,7 @@ export const blogPosts: BlogPost[] = [
       "Before you call anyone, grab your phone and start documenting. This is the most important thing you can do in the immediate aftermath.",
       "Walk around the entire exterior of your home. Photograph your roof from every angle you can safely access from the ground. Get close-up shots of gutters, downspouts, window screens, siding, your air conditioning unit, deck boards, fencing, and any vehicles that were outside during the storm.",
       "Hail damage creates a pattern. The same storm that hit your roof also hit everything else in your yard. Dents in your gutters, holes in window screens, and dings on your AC unit are all evidence of storm severity that insurance adjusters use to validate claims. The more you document immediately after the storm, the stronger your position.",
-      "Write down the date and time of the storm. Save any weather alerts or news coverage you can find online. The National Weather Service publishes storm reports that can support your claim. Want to check your home's hail risk? Use the free <a href=\"https://www.myhailscore.com\" target=\"_blank\" rel=\"noopener\">HailScore</a> tool to see your property's storm damage history and verify that hail was reported in your area.",
+      "Write down the date and time of the storm. Save any weather alerts or news coverage you can find online. The National Weather Service publishes storm reports that can support your claim. You can also [LINK: hailscore] to verify that hail was reported in your area and see your property's storm history.",
       "Step 3: Make Emergency Repairs If There Is Active Leaking",
       "If your roof is actively leaking and water is entering your home, take reasonable steps to limit the damage. Place buckets under leaks. Move belongings out of the way. If you can safely access the area, cover the damaged section with a tarp.",
       "Do not attempt to climb on your roof if you are not trained and equipped to do so safely. Wet roofs after a storm are extremely slippery and dangerous.",
@@ -857,7 +859,7 @@ export const blogPosts: BlogPost[] = [
       "Random dents or dark spots on shingles. Missing or displaced granules exposing the asphalt underneath. Cracked or split shingles. Dents in metal flashing around vents, chimneys, and skylights.",
       "Around Your Property",
       "Dented gutters and downspouts. Dings on siding, especially aluminum or vinyl. Cracked window screens or frames. Dents on your mailbox, outdoor AC unit, or car.",
-      "If you see damage on the soft metals around your home (gutters, downspouts, vents), your roof almost certainly sustained damage too. These soft metals dent at lower impact thresholds than shingles, so they serve as good indicators. Tools like <a href=\"https://www.myhailscore.com\" target=\"_blank\" rel=\"noopener\">HailScore</a> use NOAA radar data to show exactly how many hail events have hit near your address, which can help confirm storm activity in your area and support your insurance claim.",
+      "If you see damage on the soft metals around your home (gutters, downspouts, vents), your roof almost certainly sustained damage too. These soft metals dent at lower impact thresholds than shingles, so they serve as good indicators. You can [LINK: hailscore] to confirm storm activity in your area and support your insurance claim.",
       "The Storm Chaser Warning (Again)",
       "We cannot stress this enough. Within hours of a major hailstorm, out of state roofing companies will descend on Colorado neighborhoods like clockwork. They will knock on your door, hand you a card, and offer to handle everything for you.",
       "Be cautious. Many storm chasers do adequate work, but many do not. And almost none of them will be around two years from now when you have a warranty issue. Choose a local contractor with an established presence, manufacturer certifications, and a track record you can verify [LINK: why-gates].",
@@ -1292,6 +1294,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
       { placeholder: "certifications", href: "/about", text: "our certifications" },
       { placeholder: "contact", href: "/contact", text: "contact us" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your free hail damage report" },
     ],
   },
 
@@ -1599,6 +1602,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance restoration support" },
       { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "see your home's hail history" },
     ],
   },
   {
@@ -2356,7 +2360,7 @@ export const blogPosts: BlogPost[] = [
       "The most important thing to understand is that hail damage is often invisible from the ground. Granule loss, bruising, and micro-fractures in shingle surfaces do not look dramatic, but they compromise your roof's ability to shed water. Left unaddressed, this hidden damage leads to leaks, wood rot, and premature roof failure.",
       "How to Check Your Home's Hail History",
       "Most homeowners have no idea how many hail events have passed near their property. That data exists. NOAA maintains a database of verified hail events recorded by radar and storm spotters going back decades.",
-      "Tools like HailScore (myhailscore.com) let you check your specific address against 4.5 million verified NOAA radar hail records. You get a risk score from 0 to 100 based on storm frequency, hail size, proximity, and recency. It is free and takes about 30 seconds.",
+      "You can [LINK: hailscore] against 4.5 million verified NOAA radar hail records. You get a risk score from 0 to 100 based on storm frequency, hail size, proximity, and recency. It is free and takes about 30 seconds.",
       "Knowing your hail history is the first step in understanding whether your roof may have accumulated damage you cannot see.",
       "What to Do Before Hail Season 2026",
       "Get a professional inspection now. Not after the first storm. Now. Here is why that matters.",
@@ -2372,7 +2376,7 @@ export const blogPosts: BlogPost[] = [
       "When is Colorado hail season? Colorado hail season runs from April through September, with the most intense storms occurring between May and July.",
       "What Colorado cities get the most hail? Parker, Castle Rock, Aurora, Highlands Ranch, Centennial, Lakewood, Arvada, and Westminster consistently see the most hail events based on NOAA radar data.",
       "Does 1 inch hail damage a roof? Yes. Hail around 1 inch in diameter can damage standard asphalt shingles, especially on older roofs. The damage may not be visible from the ground.",
-      "How do I check if my area has been hit by hail? You can check your specific address against NOAA hail records using free tools like HailScore (myhailscore.com) to see how many verified hail events have occurred near your property.",
+      "How do I check if my area has been hit by hail? You can [LINK: hailscore] to see how many verified hail events have occurred near your property.",
       "Should I get my roof inspected before hail season? Absolutely. Pre season inspections catch existing damage, give you time to file claims before deadlines expire, and avoid the rush that follows every major storm.",
       "Does insurance cover hail damage in Colorado? Yes. Most homeowners insurance policies in Colorado cover wind and hail damage. Colorado is a right to repair state, meaning insurance companies must pay for damage caused by covered events.",
       "Schedule Your Free Pre Season Inspection",
@@ -2383,6 +2387,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { placeholder: "class-4-shingles", href: "/blog/class-4-impact-resistant-shingles", text: "Class 4 impact resistant shingles" },
       { placeholder: "contact-us", href: "/contact", text: "schedule your free inspection" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your home's hail risk score" },
     ],
   },
   {
@@ -4472,7 +4477,7 @@ export const blogPosts: BlogPost[] = [
       "Parker sits at roughly 5,900 feet of elevation. That altitude means thinner atmosphere and more intense UV radiation hitting your shingles every day. UV exposure is one of the leading causes of premature shingle aging, and Colorado roofs degrade faster than identical roofs at lower elevations because of it.",
       "Then there is the hail. Parker sits squarely in the Front Range hail corridor. The town has been hit by multiple significant hailstorms in recent years, with stone sizes ranging from quarter to baseball. After each storm, dozens of roofing companies flood into Parker, knock on doors, and offer inspections. Some are legitimate. Many are not.",
       "Wind is the third factor. Parker regularly experiences sustained winds of 40 to 60 mph during spring and fall wind events. These gusts can lift shingle edges, break seals, and create entry points for water. A roof that was not installed with proper wind resistance techniques will suffer disproportionate damage in these events.",
-      "Parker homeowners who want to check their property's historical hail exposure can use the free HailScore tool at myhailscore.com. It pulls radar verified hail data for your specific address and gives you a clear picture of what your roof has been through.",
+      "Parker homeowners who want to check their property's historical hail exposure can [LINK: hailscore]. It pulls radar verified hail data for your specific address and gives you a clear picture of what your roof has been through.",
 
       "What to Look for in a Parker Roofing Company",
       "The best roofing companies in Parker share several characteristics that set them apart from the competition.",
@@ -4516,6 +4521,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "roof-replacement", href: "/services/roof-replacement/parker", text: "Parker roof replacement" },
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage/parker", text: "Parker storm damage services" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "get a free hail damage report for their address" },
     ],
   },
   {
@@ -4561,7 +4567,7 @@ export const blogPosts: BlogPost[] = [
       "A contractor experienced with insurance claims will review the adjuster's scope line by line and, if necessary, submit a supplement request to the insurance company for any missed items. This process is standard in the industry and is not adversarial. It simply ensures the claim reflects the actual work needed [LINK: storm-hail-damage].",
 
       "How to Check Your Roof's Hail History",
-      "If you are a Highlands Ranch homeowner wondering whether past storms have affected your roof, you can check your address through HailScore at myhailscore.com. The tool uses radar verified hail data to show you the storms that have passed over your property, including hail sizes and dates. It is a free tool and a useful starting point before scheduling a professional inspection.",
+      "If you are a Highlands Ranch homeowner wondering whether past storms have affected your roof, you can [LINK: hailscore]. It uses radar verified hail data to show you the storms that have passed over your property, including hail sizes and dates. It is a useful starting point before scheduling a professional inspection.",
 
       "What a Roof Replacement Costs in Highlands Ranch",
       "Roof replacement costs in Highlands Ranch typically range from $15,000 to $30,000 depending on the size of the home, the shingle selected, the roof's complexity (valleys, slopes, penetrations), and whether the project is insurance funded or out of pocket. Larger custom homes with steep pitches and complex rooflines will fall toward the higher end.",
@@ -4576,6 +4582,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage/highlands-ranch", text: "Highlands Ranch storm damage services" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your home's hail history for free" },
     ],
   },
   {
@@ -4596,7 +4603,7 @@ export const blogPosts: BlogPost[] = [
       "Castle Rock's elevation of approximately 6,200 feet puts it higher than most Front Range cities, which means more UV radiation and greater temperature extremes. But the bigger factor is Castle Rock's position at the base of the Palmer Divide, a geographic ridge that runs east from the mountains and acts as a storm generator.",
       "The Palmer Divide forces air masses upward as they move across the plains, triggering convective storms that produce hail with remarkable frequency. Castle Rock, Franktown, Elizabeth, and surrounding areas experience more hail events per year than almost any other region in Colorado. These are not just small-stone events. The Palmer Divide regularly produces severe thunderstorms with golf ball sized hail and larger.",
       "Wind is the other major factor. Castle Rock regularly experiences downslope winds that accelerate as they descend from the mountains. These winds can exceed 70 mph during peak events, strong enough to tear shingles from a poorly installed roof. The wind is not seasonal, it occurs throughout the year, though spring and fall tend to be the worst.",
-      "Castle Rock homeowners can check their property's historical hail exposure at myhailscore.com. The HailScore tool pulls radar verified data for your specific address and shows exactly what storms have passed over your home.",
+      "Castle Rock homeowners can [LINK: hailscore] to see exactly what storms have passed over their home, with radar verified data for their specific address.",
 
       "Best Roofing Materials for Castle Rock",
       "Given Castle Rock's weather profile, material selection matters enormously. The right shingle choice can mean the difference between a roof that survives a hailstorm and one that needs full replacement.",
@@ -4630,6 +4637,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage/castle-rock", text: "Castle Rock storm damage services" },
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check their property's hail history for free" },
     ],
   },
   {
@@ -4675,7 +4683,7 @@ export const blogPosts: BlogPost[] = [
       "One Aurora-specific note: because the city spans three counties (Adams, Arapahoe, and Douglas), building permit requirements and processes vary depending on which part of Aurora your home is in. Your contractor should know which jurisdiction applies to your address and handle the permitting accordingly.",
 
       "Check Your Aurora Roof's Hail History",
-      "Aurora homeowners can check their address at myhailscore.com to see what storms have passed over their property. HailScore uses radar verified data to show hail sizes and dates for your specific location. It is a free tool and a smart first step before calling for a professional inspection.",
+      "Aurora homeowners can [LINK: hailscore] to see what storms have passed over their property, with radar verified data showing hail sizes and dates. It is a smart first step before calling for a professional inspection.",
 
       "Gates Enterprises in Aurora",
       "Gates Enterprises serves Aurora from the older neighborhoods near Colfax to the newest developments east of E-470. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master) means Aurora homeowners get the full range of material options with top-tier warranty coverage. With over 301 Google reviews at 4.8 stars, we deliver consistent quality across every Aurora neighborhood.",
@@ -4686,6 +4694,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "roof-replacement", href: "/services/roof-replacement/aurora", text: "Aurora roof replacement" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check their home's hail history for free" },
     ],
   },
   {
@@ -4789,7 +4798,7 @@ export const blogPosts: BlogPost[] = [
       "Supplementing is common and expected. The initial adjuster estimate often does not capture the full scope of work. Items like ice and water shield at eaves, upgraded ventilation components, and code-required upgrades may need to be supplemented. This is a standard part of the process, not a confrontation [LINK: storm-hail-damage].",
 
       "Check Your Fort Collins Hail History",
-      "Fort Collins homeowners can check their property's hail exposure history at myhailscore.com. The free HailScore tool shows radar verified hail events for your specific address, including dates and stone sizes.",
+      "Fort Collins homeowners can [LINK: hailscore] to see radar verified hail events for their specific address, including dates and stone sizes.",
 
       "Gates Enterprises in Fort Collins",
       "Gates Enterprises serves Fort Collins and Northern Colorado with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. With over 301 Google reviews at 4.8 stars, we bring the same quality and expertise to Fort Collins that we deliver across the entire Front Range.",
@@ -4800,6 +4809,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage/fort-collins", text: "Fort Collins storm damage services" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check their property's hail history for free" },
     ],
   },
   {
@@ -4844,7 +4854,7 @@ export const blogPosts: BlogPost[] = [
       "Colorado Springs Insurance Claims",
       "After a hailstorm, the insurance claim process in Colorado Springs follows the standard Front Range pattern. File a claim, get an adjuster inspection, have your contractor review the scope, supplement if needed, complete the work, and collect depreciation holdback.",
       "One Springs-specific note: because the city is so spread out (over 190 square miles), hailstorms often affect some neighborhoods severely while leaving others untouched. Just because your neighbor filed a claim does not mean your roof was damaged, and vice versa. A professional inspection for your specific property is the only way to know.",
-      "Colorado Springs homeowners can check their property's hail history at myhailscore.com. The free HailScore tool provides radar verified hail data for your specific address [LINK: storm-hail-damage].",
+      "Colorado Springs homeowners can [LINK: hailscore] to see radar verified hail data for their specific address [LINK: storm-hail-damage].",
 
       "Colorado Springs HOA Considerations",
       "Many Colorado Springs neighborhoods, particularly in the newer developments on the north and east sides, have HOAs with architectural guidelines. Communities like Flying Horse, Cordera, and Northgate have specific requirements for roofing materials. Check with your HOA before selecting materials and submit any required approval requests.",
@@ -4858,6 +4868,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "storm-hail-damage", href: "/services/storm-hail-damage/colorado-springs", text: "Colorado Springs storm damage services" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check their property's hail history" },
     ],
   },
   {
@@ -4878,7 +4889,7 @@ export const blogPosts: BlogPost[] = [
       "Arvada sits at the transition between the foothills and the plains, a geography that channels weather systems through the area with notable intensity. Storms that develop over the mountains or along the foothills funnel through gaps in the terrain and intensify as they cross into the metro area. Arvada often catches these storms at full strength before they spread and weaken over the eastern plains.",
       "Hail is the primary roof threat. Arvada has been hit by multiple significant hailstorms, with several events producing 1.5 to 2.5 inch stones that damaged roofs across entire neighborhoods. The western neighborhoods near the foothills can experience particularly intense but localized storms.",
       "Downslope winds are a significant factor for Arvada's western neighborhoods. Chinook winds that descend from the mountains can reach 70 to 90 mph, strong enough to cause immediate roof damage even without a thunderstorm. These events occur multiple times each year, predominantly during fall and winter.",
-      "Arvada homeowners can check their property's specific hail exposure history at myhailscore.com. The free HailScore tool shows radar verified data for your address.",
+      "Arvada homeowners can [LINK: hailscore] to see radar verified hail exposure data for their specific address.",
 
       "Arvada Neighborhoods and Roofing Needs",
       "Arvada's diverse housing stock means roofing needs vary significantly across the city.",
@@ -4906,6 +4917,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "roof-replacement", href: "/services/roof-replacement/arvada", text: "Arvada roof replacement" },
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check their property's hail history for free" },
     ],
   },
   {
@@ -5242,7 +5254,7 @@ export const blogPosts: BlogPost[] = [
       "When is Colorado Hail Season?",
       "Colorado hail season generally runs from April through September, with the highest frequency and severity concentrated in May, June, and July. During these peak months, the combination of mountain-generated storms, afternoon heating, and moisture from the Gulf of Mexico creates ideal conditions for hail-producing supercells.",
       "The Front Range corridor from Fort Collins to Colorado Springs is the most active hail zone. Cities like Denver, Aurora, Lakewood, Arvada, Thornton, Parker, Highlands Ranch, and Castle Rock sit directly in the path of these storms.",
-      "To see your property's historical hail exposure, check your address at myhailscore.com. The free HailScore tool shows radar verified hail data for your specific location, including past storm dates and hail sizes.",
+      "To see your property's historical hail exposure, [LINK: hailscore]. It shows radar verified hail data for your specific location, including past storm dates and hail sizes.",
 
       "Pre-Season Roof Inspection",
       "The single most important step you can take before hail season is a professional roof inspection. A pre-season inspection accomplishes two critical things.",
@@ -5285,6 +5297,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claim assistance" },
       { placeholder: "roof-replacement", href: "/services/roof-replacement", text: "roof replacement services" },
       { placeholder: "contact", href: "/contact", text: "contact us online" },
+      { placeholder: "hailscore", href: "https://www.myhailscore.com", text: "check your home's hail risk score for free" },
     ],
   },
   {
