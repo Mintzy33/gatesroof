@@ -14,7 +14,7 @@ export default function HeroVideo() {
       {/* Next.js Image as poster — loads instantly with priority for fast LCP, fades out once video plays */}
       <Image
         src={VIDEO_POSTER}
-        alt=""
+        alt="Gates Enterprises roofing crew working on a residential roof in Colorado"
         fill
         priority
         sizes="100vw"
