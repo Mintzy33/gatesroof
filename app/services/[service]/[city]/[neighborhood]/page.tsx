@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { services, getCityBySlug, getServiceBySlug } from "../../../../../lib/service-areas-data";
 import { neighborhoods, getNeighborhoodBySlug, getNeighborhoodsByCity } from "../../../../../lib/neighborhoods";
 import { getHailScore } from "../../../../../lib/hail-data";
+import { shouldIndexNeighborhood } from "../../../../../lib/seo-config";
 import { getCityData, getHousingEra, getValueTier, getHailLevel, formatDollars, formatPopulation } from "../../../../data/location-data";
 import type { CityData } from "../../../../data/location-data";
 import NeighborhoodContent from "./content";
@@ -34,9 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = `${service.service} in ${neighborhood.name}, ${city.city}, Colorado. ${neighborhood.housingAge} homes with ${neighborhood.commonRoofTypes.toLowerCase()}. 4x manufacturer certified, 4.8 stars, 301 reviews. Free estimates.`;
   const url = `https://www.gatesroof.com/services/${service.slug}/${city.slug}/${neighborhood.slug}`;
 
+  const indexed = shouldIndexNeighborhood();
+
   return {
     title,
     description,
+    ...(indexed ? {} : { robots: { index: false, follow: true } }),
     alternates: { canonical: url },
     openGraph: {
       title,

@@ -3,6 +3,7 @@ import Script from "next/script";
 import { notFound } from "next/navigation";
 import { cities, services, getCityBySlug, getServiceBySlug } from "../../../../lib/service-areas-data";
 import { getMetaTitle, getMetaDescription } from "../../../../lib/service-meta";
+import { shouldIndexServiceCity } from "../../../../lib/seo-config";
 import ServiceCityContent from "./content";
 
 interface Props {
@@ -29,9 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = getMetaDescription(service, city);
   const url = `https://www.gatesroof.com/services/${service.slug}/${city.slug}`;
 
+  const indexed = shouldIndexServiceCity(service.slug, city.slug);
+
   return {
     title,
     description,
+    ...(indexed ? {} : { robots: { index: false, follow: true } }),
     alternates: { canonical: url },
     openGraph: {
       title,

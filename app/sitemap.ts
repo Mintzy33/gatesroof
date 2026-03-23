@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "./blog/posts";
 import { cities as allCities, services as allServices } from "../lib/service-areas-data";
 import { neighborhoods as allNeighborhoods } from "../lib/neighborhoods";
+import { shouldIndexServiceCity } from "../lib/seo-config";
 
 const BASE = "https://www.gatesroof.com";
 
@@ -122,14 +123,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Service × City programmatic pages (400+)
+  // Service × City programmatic pages (only indexed combos)
   const serviceCityPages: MetadataRoute.Sitemap = allServices.flatMap((svc) =>
-    allCities.map((city) => ({
-      url: `${BASE}/services/${svc.slug}/${city.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    }))
+    allCities
+      .filter((city) => shouldIndexServiceCity(svc.slug, city.slug))
+      .map((city) => ({
+        url: `${BASE}/services/${svc.slug}/${city.slug}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      }))
   );
 
   // Tool pages
@@ -140,15 +143,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p === "tools" ? 0.8 : 0.7,
   }));
 
-  // Service x Neighborhood programmatic pages (888+)
-  const serviceNeighborhoodPages: MetadataRoute.Sitemap = allServices.flatMap((svc) =>
-    allNeighborhoods.map((n) => ({
-      url: `${BASE}/services/${svc.slug}/${n.parentCity}/${n.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }))
-  );
+  // Neighborhood pages are noindexed — excluded from sitemap
+  // They still exist and pass link equity via follow directive
 
-  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...tools, ...blog, ...serviceCityPages, ...serviceNeighborhoodPages];
+  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...tools, ...blog, ...serviceCityPages];
 }
