@@ -1,0 +1,3691 @@
+{
+  "80002": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 486600,
+    "ownerOccupied": 4671,
+    "renterOccupied": 4745,
+    "population": 20589
+  },
+  "80003": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 450500,
+    "ownerOccupied": 9858,
+    "renterOccupied": 4396,
+    "population": 36233
+  },
+  "80004": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 549300,
+    "ownerOccupied": 10539,
+    "renterOccupied": 4280,
+    "population": 35349
+  },
+  "80005": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 589500,
+    "ownerOccupied": 10031,
+    "renterOccupied": 1310,
+    "population": 29155
+  },
+  "80007": {
+    "medianYearBuilt": 2011,
+    "medianHomeValue": 745300,
+    "ownerOccupied": 5888,
+    "renterOccupied": 350,
+    "population": 17641
+  },
+  "80010": {
+    "medianYearBuilt": 1963,
+    "medianHomeValue": 360800,
+    "ownerOccupied": 5904,
+    "renterOccupied": 8325,
+    "population": 42892
+  },
+  "80011": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 333900,
+    "ownerOccupied": 9621,
+    "renterOccupied": 8592,
+    "population": 52633
+  },
+  "80012": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 372300,
+    "ownerOccupied": 9537,
+    "renterOccupied": 9623,
+    "population": 52741
+  },
+  "80013": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 422600,
+    "ownerOccupied": 19787,
+    "renterOccupied": 5904,
+    "population": 73870
+  },
+  "80014": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 365800,
+    "ownerOccupied": 11049,
+    "renterOccupied": 7564,
+    "population": 39024
+  },
+  "80015": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 495000,
+    "ownerOccupied": 19959,
+    "renterOccupied": 4522,
+    "population": 72841
+  },
+  "80016": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 666900,
+    "ownerOccupied": 18185,
+    "renterOccupied": 4352,
+    "population": 64842
+  },
+  "80017": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 351500,
+    "ownerOccupied": 8691,
+    "renterOccupied": 5359,
+    "population": 40299
+  },
+  "80018": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 488400,
+    "ownerOccupied": 4537,
+    "renterOccupied": 650,
+    "population": 15569
+  },
+  "80019": {
+    "medianYearBuilt": 2008,
+    "medianHomeValue": 463700,
+    "ownerOccupied": 1334,
+    "renterOccupied": 164,
+    "population": 4809
+  },
+  "80020": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 495700,
+    "ownerOccupied": 14240,
+    "renterOccupied": 6555,
+    "population": 53475
+  },
+  "80021": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 482500,
+    "ownerOccupied": 8406,
+    "renterOccupied": 7578,
+    "population": 35128
+  },
+  "80022": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 421500,
+    "ownerOccupied": 13578,
+    "renterOccupied": 4855,
+    "population": 58681
+  },
+  "80023": {
+    "medianYearBuilt": 2008,
+    "medianHomeValue": 747800,
+    "ownerOccupied": 7531,
+    "renterOccupied": 2134,
+    "population": 25988
+  },
+  "80024": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 29,
+    "renterOccupied": 14,
+    "population": 83
+  },
+  "80025": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 14,
+    "renterOccupied": 0,
+    "population": 45
+  },
+  "80026": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 629000,
+    "ownerOccupied": 9434,
+    "renterOccupied": 4205,
+    "population": 32675
+  },
+  "80027": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 767800,
+    "ownerOccupied": 8348,
+    "renterOccupied": 4262,
+    "population": 34161
+  },
+  "80030": {
+    "medianYearBuilt": 1964,
+    "medianHomeValue": 375100,
+    "ownerOccupied": 3759,
+    "renterOccupied": 2767,
+    "population": 16891
+  },
+  "80031": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 482200,
+    "ownerOccupied": 10214,
+    "renterOccupied": 4046,
+    "population": 36274
+  },
+  "80033": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": 524200,
+    "ownerOccupied": 6158,
+    "renterOccupied": 6354,
+    "population": 27384
+  },
+  "80045": {
+    "medianYearBuilt": 2009,
+    "medianHomeValue": null,
+    "ownerOccupied": 11,
+    "renterOccupied": 785,
+    "population": 1627
+  },
+  "80101": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 407400,
+    "ownerOccupied": 127,
+    "renterOccupied": 50,
+    "population": 354
+  },
+  "80102": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 472400,
+    "ownerOccupied": 1824,
+    "renterOccupied": 298,
+    "population": 6375
+  },
+  "80103": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 455300,
+    "ownerOccupied": 796,
+    "renterOccupied": 156,
+    "population": 3184
+  },
+  "80104": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 518500,
+    "ownerOccupied": 10222,
+    "renterOccupied": 2771,
+    "population": 35084
+  },
+  "80105": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 359100,
+    "ownerOccupied": 648,
+    "renterOccupied": 68,
+    "population": 1823
+  },
+  "80106": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 654200,
+    "ownerOccupied": 1809,
+    "renterOccupied": 117,
+    "population": 4823
+  },
+  "80107": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 627900,
+    "ownerOccupied": 4826,
+    "renterOccupied": 239,
+    "population": 14467
+  },
+  "80108": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 752100,
+    "ownerOccupied": 9715,
+    "renterOccupied": 1776,
+    "population": 33259
+  },
+  "80109": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 615200,
+    "ownerOccupied": 7546,
+    "renterOccupied": 1703,
+    "population": 27852
+  },
+  "80110": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 424700,
+    "ownerOccupied": 5650,
+    "renterOccupied": 4258,
+    "population": 24190
+  },
+  "80111": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 845100,
+    "ownerOccupied": 8107,
+    "renterOccupied": 4715,
+    "population": 32116
+  },
+  "80112": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 571000,
+    "ownerOccupied": 8602,
+    "renterOccupied": 7325,
+    "population": 36058
+  },
+  "80113": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 677000,
+    "ownerOccupied": 5432,
+    "renterOccupied": 5124,
+    "population": 22784
+  },
+  "80116": {
+    "medianYearBuilt": 1987,
+    "medianHomeValue": 836400,
+    "ownerOccupied": 1659,
+    "renterOccupied": 77,
+    "population": 4884
+  },
+  "80117": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 567200,
+    "ownerOccupied": 819,
+    "renterOccupied": 101,
+    "population": 2430
+  },
+  "80118": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 787600,
+    "ownerOccupied": 2139,
+    "renterOccupied": 97,
+    "population": 5940
+  },
+  "80120": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 549300,
+    "ownerOccupied": 8117,
+    "renterOccupied": 5638,
+    "population": 30421
+  },
+  "80121": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 646000,
+    "ownerOccupied": 6248,
+    "renterOccupied": 895,
+    "population": 18049
+  },
+  "80122": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 573400,
+    "ownerOccupied": 10799,
+    "renterOccupied": 1916,
+    "population": 31650
+  },
+  "80123": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 517500,
+    "ownerOccupied": 14102,
+    "renterOccupied": 4982,
+    "population": 45388
+  },
+  "80124": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 692600,
+    "ownerOccupied": 5404,
+    "renterOccupied": 4433,
+    "population": 22567
+  },
+  "80125": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": 656500,
+    "ownerOccupied": 4369,
+    "renterOccupied": 308,
+    "population": 13048
+  },
+  "80126": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 666800,
+    "ownerOccupied": 13256,
+    "renterOccupied": 2386,
+    "population": 43691
+  },
+  "80127": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 610600,
+    "ownerOccupied": 14686,
+    "renterOccupied": 2311,
+    "population": 44235
+  },
+  "80128": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 513200,
+    "ownerOccupied": 11946,
+    "renterOccupied": 2373,
+    "population": 37061
+  },
+  "80129": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 619600,
+    "ownerOccupied": 8665,
+    "renterOccupied": 3417,
+    "population": 29974
+  },
+  "80130": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 618300,
+    "ownerOccupied": 7087,
+    "renterOccupied": 2148,
+    "population": 25551
+  },
+  "80131": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 376300,
+    "ownerOccupied": 99,
+    "renterOccupied": 18,
+    "population": 250
+  },
+  "80132": {
+    "medianYearBuilt": 1999,
+    "medianHomeValue": 632400,
+    "ownerOccupied": 8514,
+    "renterOccupied": 1182,
+    "population": 28159
+  },
+  "80133": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 391600,
+    "ownerOccupied": 959,
+    "renterOccupied": 87,
+    "population": 2527
+  },
+  "80134": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 603000,
+    "ownerOccupied": 21807,
+    "renterOccupied": 5255,
+    "population": 75383
+  },
+  "80135": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 808400,
+    "ownerOccupied": 1358,
+    "renterOccupied": 162,
+    "population": 4061
+  },
+  "80136": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": 486300,
+    "ownerOccupied": 1748,
+    "renterOccupied": 164,
+    "population": 6104
+  },
+  "80137": {
+    "medianYearBuilt": 2000,
+    "medianHomeValue": 608000,
+    "ownerOccupied": 512,
+    "renterOccupied": 13,
+    "population": 1944
+  },
+  "80138": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 637900,
+    "ownerOccupied": 9713,
+    "renterOccupied": 2299,
+    "population": 36113
+  },
+  "80202": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 682500,
+    "ownerOccupied": 2684,
+    "renterOccupied": 8765,
+    "population": 18180
+  },
+  "80203": {
+    "medianYearBuilt": 1964,
+    "medianHomeValue": 461800,
+    "ownerOccupied": 3186,
+    "renterOccupied": 12141,
+    "population": 21650
+  },
+  "80204": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 515600,
+    "ownerOccupied": 6354,
+    "renterOccupied": 9895,
+    "population": 34534
+  },
+  "80205": {
+    "medianYearBuilt": 1960,
+    "medianHomeValue": 600400,
+    "ownerOccupied": 6484,
+    "renterOccupied": 10334,
+    "population": 34289
+  },
+  "80206": {
+    "medianYearBuilt": 1964,
+    "medianHomeValue": 815600,
+    "ownerOccupied": 6359,
+    "renterOccupied": 7679,
+    "population": 24903
+  },
+  "80207": {
+    "medianYearBuilt": 1950,
+    "medianHomeValue": 623100,
+    "ownerOccupied": 6693,
+    "renterOccupied": 2251,
+    "population": 22313
+  },
+  "80209": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": 875500,
+    "ownerOccupied": 6607,
+    "renterOccupied": 7492,
+    "population": 25180
+  },
+  "80210": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 812600,
+    "ownerOccupied": 9539,
+    "renterOccupied": 7264,
+    "population": 37792
+  },
+  "80211": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 692700,
+    "ownerOccupied": 9310,
+    "renterOccupied": 9640,
+    "population": 36187
+  },
+  "80212": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 661700,
+    "ownerOccupied": 6777,
+    "renterOccupied": 3170,
+    "population": 20418
+  },
+  "80214": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": 472700,
+    "ownerOccupied": 4420,
+    "renterOccupied": 7507,
+    "population": 26634
+  },
+  "80215": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 585000,
+    "ownerOccupied": 5081,
+    "renterOccupied": 3512,
+    "population": 19143
+  },
+  "80216": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 369900,
+    "ownerOccupied": 1862,
+    "renterOccupied": 4325,
+    "population": 16564
+  },
+  "80218": {
+    "medianYearBuilt": 1958,
+    "medianHomeValue": 565300,
+    "ownerOccupied": 4108,
+    "renterOccupied": 7677,
+    "population": 18679
+  },
+  "80219": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 392500,
+    "ownerOccupied": 12490,
+    "renterOccupied": 9755,
+    "population": 64696
+  },
+  "80220": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 690300,
+    "ownerOccupied": 9542,
+    "renterOccupied": 7018,
+    "population": 36236
+  },
+  "80221": {
+    "medianYearBuilt": 1965,
+    "medianHomeValue": 405300,
+    "ownerOccupied": 9517,
+    "renterOccupied": 4674,
+    "population": 40140
+  },
+  "80222": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": 563500,
+    "ownerOccupied": 4810,
+    "renterOccupied": 6221,
+    "population": 23619
+  },
+  "80223": {
+    "medianYearBuilt": 1958,
+    "medianHomeValue": 459100,
+    "ownerOccupied": 3856,
+    "renterOccupied": 4593,
+    "population": 19848
+  },
+  "80224": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 532200,
+    "ownerOccupied": 4820,
+    "renterOccupied": 3439,
+    "population": 18613
+  },
+  "80226": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 478000,
+    "ownerOccupied": 7095,
+    "renterOccupied": 6377,
+    "population": 32063
+  },
+  "80227": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 480000,
+    "ownerOccupied": 10200,
+    "renterOccupied": 5300,
+    "population": 35187
+  },
+  "80228": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 574900,
+    "ownerOccupied": 10194,
+    "renterOccupied": 4620,
+    "population": 34813
+  },
+  "80229": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 349600,
+    "ownerOccupied": 12848,
+    "renterOccupied": 6514,
+    "population": 55929
+  },
+  "80230": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 780000,
+    "ownerOccupied": 2477,
+    "renterOccupied": 2721,
+    "population": 10512
+  },
+  "80231": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 448900,
+    "ownerOccupied": 6536,
+    "renterOccupied": 9381,
+    "population": 34484
+  },
+  "80232": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 449600,
+    "ownerOccupied": 6551,
+    "renterOccupied": 2754,
+    "population": 22707
+  },
+  "80233": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 405900,
+    "ownerOccupied": 10727,
+    "renterOccupied": 6765,
+    "population": 48694
+  },
+  "80234": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 464100,
+    "ownerOccupied": 7024,
+    "renterOccupied": 4865,
+    "population": 28796
+  },
+  "80235": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 509800,
+    "ownerOccupied": 2117,
+    "renterOccupied": 1946,
+    "population": 8593
+  },
+  "80236": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 460100,
+    "ownerOccupied": 3838,
+    "renterOccupied": 2360,
+    "population": 16183
+  },
+  "80237": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 564300,
+    "ownerOccupied": 5044,
+    "renterOccupied": 6419,
+    "population": 22393
+  },
+  "80238": {
+    "medianYearBuilt": 2011,
+    "medianHomeValue": 748500,
+    "ownerOccupied": 7706,
+    "renterOccupied": 3115,
+    "population": 29391
+  },
+  "80239": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 366100,
+    "ownerOccupied": 8091,
+    "renterOccupied": 5662,
+    "population": 46450
+  },
+  "80241": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 462300,
+    "ownerOccupied": 9350,
+    "renterOccupied": 2521,
+    "population": 33656
+  },
+  "80246": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 598800,
+    "ownerOccupied": 1602,
+    "renterOccupied": 5912,
+    "population": 13067
+  },
+  "80247": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 280200,
+    "ownerOccupied": 5559,
+    "renterOccupied": 9159,
+    "population": 28580
+  },
+  "80249": {
+    "medianYearBuilt": 2005,
+    "medianHomeValue": 426800,
+    "ownerOccupied": 10020,
+    "renterOccupied": 2491,
+    "population": 39685
+  },
+  "80260": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 202400,
+    "ownerOccupied": 7468,
+    "renterOccupied": 4881,
+    "population": 35309
+  },
+  "80264": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80266": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80290": {
+    "medianYearBuilt": 2011,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 263,
+    "population": 349
+  },
+  "80293": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80294": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80301": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 695200,
+    "ownerOccupied": 6335,
+    "renterOccupied": 5523,
+    "population": 24593
+  },
+  "80302": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 1065500,
+    "ownerOccupied": 4994,
+    "renterOccupied": 7618,
+    "population": 30569
+  },
+  "80303": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 891000,
+    "ownerOccupied": 5288,
+    "renterOccupied": 6307,
+    "population": 24865
+  },
+  "80304": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 1059900,
+    "ownerOccupied": 7649,
+    "renterOccupied": 3452,
+    "population": 25617
+  },
+  "80305": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 924200,
+    "ownerOccupied": 4187,
+    "renterOccupied": 2666,
+    "population": 16280
+  },
+  "80310": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 7597
+  },
+  "80401": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 691000,
+    "ownerOccupied": 11067,
+    "renterOccupied": 5798,
+    "population": 42777
+  },
+  "80403": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 742000,
+    "ownerOccupied": 7337,
+    "renterOccupied": 1086,
+    "population": 20809
+  },
+  "80419": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80420": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 430800,
+    "ownerOccupied": 284,
+    "renterOccupied": 139,
+    "population": 819
+  },
+  "80421": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 488700,
+    "ownerOccupied": 3417,
+    "renterOccupied": 235,
+    "population": 9065
+  },
+  "80422": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 472100,
+    "ownerOccupied": 1695,
+    "renterOccupied": 411,
+    "population": 4347
+  },
+  "80423": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 490700,
+    "ownerOccupied": 75,
+    "renterOccupied": 0,
+    "population": 160
+  },
+  "80424": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 853900,
+    "ownerOccupied": 2870,
+    "renterOccupied": 1119,
+    "population": 10811
+  },
+  "80425": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 528300,
+    "ownerOccupied": 94,
+    "renterOccupied": 33,
+    "population": 329
+  },
+  "80426": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": null,
+    "ownerOccupied": 25,
+    "renterOccupied": 0,
+    "population": 46
+  },
+  "80427": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 358200,
+    "ownerOccupied": 199,
+    "renterOccupied": 176,
+    "population": 686
+  },
+  "80428": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 677300,
+    "ownerOccupied": 154,
+    "renterOccupied": 33,
+    "population": 512
+  },
+  "80430": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 326700,
+    "ownerOccupied": 48,
+    "renterOccupied": 3,
+    "population": 145
+  },
+  "80432": {
+    "medianYearBuilt": 1997,
+    "medianHomeValue": 415300,
+    "ownerOccupied": 149,
+    "renterOccupied": 0,
+    "population": 208
+  },
+  "80433": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 650100,
+    "ownerOccupied": 3295,
+    "renterOccupied": 214,
+    "population": 8386
+  },
+  "80434": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 14,
+    "renterOccupied": 11,
+    "population": 46
+  },
+  "80435": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 768100,
+    "ownerOccupied": 1598,
+    "renterOccupied": 1060,
+    "population": 8336
+  },
+  "80436": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 316300,
+    "ownerOccupied": 205,
+    "renterOccupied": 0,
+    "population": 423
+  },
+  "80438": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 297900,
+    "ownerOccupied": 225,
+    "renterOccupied": 165,
+    "population": 649
+  },
+  "80439": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 755000,
+    "ownerOccupied": 9081,
+    "renterOccupied": 1062,
+    "population": 24764
+  },
+  "80440": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 417500,
+    "ownerOccupied": 836,
+    "renterOccupied": 328,
+    "population": 2574
+  },
+  "80442": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 495900,
+    "ownerOccupied": 457,
+    "renterOccupied": 379,
+    "population": 2315
+  },
+  "80443": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 733200,
+    "ownerOccupied": 1093,
+    "renterOccupied": 679,
+    "population": 4118
+  },
+  "80444": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 426900,
+    "ownerOccupied": 370,
+    "renterOccupied": 207,
+    "population": 1104
+  },
+  "80446": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 470500,
+    "ownerOccupied": 1105,
+    "renterOccupied": 463,
+    "population": 3477
+  },
+  "80447": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 483800,
+    "ownerOccupied": 709,
+    "renterOccupied": 345,
+    "population": 2183
+  },
+  "80448": {
+    "medianYearBuilt": 1987,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80449": {
+    "medianYearBuilt": 2000,
+    "medianHomeValue": 394500,
+    "ownerOccupied": 544,
+    "renterOccupied": 0,
+    "population": 1190
+  },
+  "80451": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 347500,
+    "ownerOccupied": 277,
+    "renterOccupied": 48,
+    "population": 1001
+  },
+  "80452": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 396900,
+    "ownerOccupied": 1163,
+    "renterOccupied": 423,
+    "population": 3316
+  },
+  "80453": {
+    "medianYearBuilt": 1955,
+    "medianHomeValue": 448000,
+    "ownerOccupied": 107,
+    "renterOccupied": 27,
+    "population": 329
+  },
+  "80454": {
+    "medianYearBuilt": 1962,
+    "medianHomeValue": 695100,
+    "ownerOccupied": 581,
+    "renterOccupied": 23,
+    "population": 1430
+  },
+  "80455": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 377300,
+    "ownerOccupied": 185,
+    "renterOccupied": 23,
+    "population": 402
+  },
+  "80456": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 453000,
+    "ownerOccupied": 199,
+    "renterOccupied": 13,
+    "population": 399
+  },
+  "80457": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 448800,
+    "ownerOccupied": 205,
+    "renterOccupied": 26,
+    "population": 430
+  },
+  "80459": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 331800,
+    "ownerOccupied": 660,
+    "renterOccupied": 190,
+    "population": 2561
+  },
+  "80461": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 320400,
+    "ownerOccupied": 1979,
+    "renterOccupied": 633,
+    "population": 7052
+  },
+  "80463": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 776800,
+    "ownerOccupied": 45,
+    "renterOccupied": 0,
+    "population": 92
+  },
+  "80465": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 574400,
+    "ownerOccupied": 5423,
+    "renterOccupied": 620,
+    "population": 15783
+  },
+  "80466": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 680200,
+    "ownerOccupied": 1101,
+    "renterOccupied": 517,
+    "population": 3442
+  },
+  "80467": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 613400,
+    "ownerOccupied": 859,
+    "renterOccupied": 198,
+    "population": 2512
+  },
+  "80468": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": null,
+    "ownerOccupied": 40,
+    "renterOccupied": 106,
+    "population": 411
+  },
+  "80469": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 295700,
+    "ownerOccupied": 130,
+    "renterOccupied": 29,
+    "population": 356
+  },
+  "80470": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 561200,
+    "ownerOccupied": 1586,
+    "renterOccupied": 55,
+    "population": 3898
+  },
+  "80471": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80473": {
+    "medianYearBuilt": 2011,
+    "medianHomeValue": null,
+    "ownerOccupied": 8,
+    "renterOccupied": 32,
+    "population": 53
+  },
+  "80474": {
+    "medianYearBuilt": 1997,
+    "medianHomeValue": 476000,
+    "ownerOccupied": 121,
+    "renterOccupied": 0,
+    "population": 189
+  },
+  "80475": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": null,
+    "ownerOccupied": 9,
+    "renterOccupied": 0,
+    "population": 9
+  },
+  "80476": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 568200,
+    "ownerOccupied": 88,
+    "renterOccupied": 31,
+    "population": 231
+  },
+  "80478": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 803800,
+    "ownerOccupied": 549,
+    "renterOccupied": 45,
+    "population": 1766
+  },
+  "80479": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 12,
+    "renterOccupied": 0,
+    "population": 12
+  },
+  "80480": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 208000,
+    "ownerOccupied": 426,
+    "renterOccupied": 103,
+    "population": 1196
+  },
+  "80481": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 480100,
+    "ownerOccupied": 199,
+    "renterOccupied": 15,
+    "population": 532
+  },
+  "80482": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": null,
+    "ownerOccupied": 513,
+    "renterOccupied": 118,
+    "population": 1207
+  },
+  "80483": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 294400,
+    "ownerOccupied": 188,
+    "renterOccupied": 39,
+    "population": 504
+  },
+  "80487": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 800500,
+    "ownerOccupied": 5643,
+    "renterOccupied": 1917,
+    "population": 18383
+  },
+  "80498": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 675800,
+    "ownerOccupied": 2837,
+    "renterOccupied": 701,
+    "population": 8426
+  },
+  "80501": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 432500,
+    "ownerOccupied": 10157,
+    "renterOccupied": 7575,
+    "population": 43222
+  },
+  "80503": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 663200,
+    "ownerOccupied": 10136,
+    "renterOccupied": 4771,
+    "population": 36235
+  },
+  "80504": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": 493200,
+    "ownerOccupied": 17981,
+    "renterOccupied": 4041,
+    "population": 60527
+  },
+  "80510": {
+    "medianYearBuilt": 1950,
+    "medianHomeValue": 545500,
+    "ownerOccupied": 158,
+    "renterOccupied": 45,
+    "population": 522
+  },
+  "80512": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 571900,
+    "ownerOccupied": 708,
+    "renterOccupied": 46,
+    "population": 1619
+  },
+  "80513": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 496600,
+    "ownerOccupied": 5439,
+    "renterOccupied": 644,
+    "population": 16184
+  },
+  "80514": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 421100,
+    "ownerOccupied": 1617,
+    "renterOccupied": 516,
+    "population": 6275
+  },
+  "80515": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 443800,
+    "ownerOccupied": 363,
+    "renterOccupied": 22,
+    "population": 849
+  },
+  "80516": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 645100,
+    "ownerOccupied": 10587,
+    "renterOccupied": 1584,
+    "population": 34998
+  },
+  "80517": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 626100,
+    "ownerOccupied": 3696,
+    "renterOccupied": 1261,
+    "population": 10407
+  },
+  "80520": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 389600,
+    "ownerOccupied": 582,
+    "renterOccupied": 90,
+    "population": 1736
+  },
+  "80521": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 494700,
+    "ownerOccupied": 5492,
+    "renterOccupied": 9055,
+    "population": 38200
+  },
+  "80524": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 482900,
+    "ownerOccupied": 10577,
+    "renterOccupied": 5461,
+    "population": 38711
+  },
+  "80525": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 519800,
+    "ownerOccupied": 14234,
+    "renterOccupied": 9755,
+    "population": 55315
+  },
+  "80526": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 475500,
+    "ownerOccupied": 10545,
+    "renterOccupied": 8563,
+    "population": 44478
+  },
+  "80528": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 615900,
+    "ownerOccupied": 5804,
+    "renterOccupied": 2686,
+    "population": 24032
+  },
+  "80530": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 424400,
+    "ownerOccupied": 1820,
+    "renterOccupied": 221,
+    "population": 5774
+  },
+  "80532": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 363500,
+    "ownerOccupied": 99,
+    "renterOccupied": 0,
+    "population": 193
+  },
+  "80534": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 472200,
+    "ownerOccupied": 5435,
+    "renterOccupied": 1574,
+    "population": 19368
+  },
+  "80535": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 387200,
+    "ownerOccupied": 810,
+    "renterOccupied": 336,
+    "population": 2462
+  },
+  "80536": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 537100,
+    "ownerOccupied": 955,
+    "renterOccupied": 29,
+    "population": 2437
+  },
+  "80537": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 431500,
+    "ownerOccupied": 12283,
+    "renterOccupied": 6711,
+    "population": 43620
+  },
+  "80538": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 448800,
+    "ownerOccupied": 14395,
+    "renterOccupied": 6077,
+    "population": 48929
+  },
+  "80540": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 728300,
+    "ownerOccupied": 1681,
+    "renterOccupied": 311,
+    "population": 4637
+  },
+  "80542": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 502900,
+    "ownerOccupied": 1541,
+    "renterOccupied": 54,
+    "population": 5179
+  },
+  "80543": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 392900,
+    "ownerOccupied": 2870,
+    "renterOccupied": 380,
+    "population": 9109
+  },
+  "80544": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80545": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 380100,
+    "ownerOccupied": 511,
+    "renterOccupied": 6,
+    "population": 968
+  },
+  "80546": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 370500,
+    "ownerOccupied": 55,
+    "renterOccupied": 29,
+    "population": 234
+  },
+  "80547": {
+    "medianYearBuilt": 2015,
+    "medianHomeValue": 678100,
+    "ownerOccupied": 2218,
+    "renterOccupied": 175,
+    "population": 7122
+  },
+  "80549": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 428800,
+    "ownerOccupied": 4280,
+    "renterOccupied": 817,
+    "population": 13862
+  },
+  "80550": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 494400,
+    "ownerOccupied": 12586,
+    "renterOccupied": 2998,
+    "population": 41428
+  },
+  "80601": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 430700,
+    "ownerOccupied": 9304,
+    "renterOccupied": 4139,
+    "population": 41062
+  },
+  "80602": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 603900,
+    "ownerOccupied": 12101,
+    "renterOccupied": 1095,
+    "population": 40886
+  },
+  "80603": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 406100,
+    "ownerOccupied": 4906,
+    "renterOccupied": 539,
+    "population": 15617
+  },
+  "80610": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 388700,
+    "ownerOccupied": 962,
+    "renterOccupied": 297,
+    "population": 3172
+  },
+  "80611": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 425600,
+    "ownerOccupied": 206,
+    "renterOccupied": 42,
+    "population": 809
+  },
+  "80612": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 516500,
+    "ownerOccupied": 127,
+    "renterOccupied": 11,
+    "population": 309
+  },
+  "80615": {
+    "medianYearBuilt": 2000,
+    "medianHomeValue": 454400,
+    "ownerOccupied": 3159,
+    "renterOccupied": 297,
+    "population": 8840
+  },
+  "80620": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": 295100,
+    "ownerOccupied": 4364,
+    "renterOccupied": 1923,
+    "population": 21048
+  },
+  "80621": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 388300,
+    "ownerOccupied": 3567,
+    "renterOccupied": 1208,
+    "population": 13863
+  },
+  "80622": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 67,
+    "renterOccupied": 0,
+    "population": 202
+  },
+  "80623": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 267200,
+    "ownerOccupied": 261,
+    "renterOccupied": 43,
+    "population": 1082
+  },
+  "80624": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 454500,
+    "ownerOccupied": 180,
+    "renterOccupied": 59,
+    "population": 681
+  },
+  "80631": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 285400,
+    "ownerOccupied": 8278,
+    "renterOccupied": 9325,
+    "population": 54346
+  },
+  "80634": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 376300,
+    "ownerOccupied": 17277,
+    "renterOccupied": 6412,
+    "population": 62001
+  },
+  "80640": {
+    "medianYearBuilt": 2005,
+    "medianHomeValue": 437400,
+    "ownerOccupied": 3890,
+    "renterOccupied": 780,
+    "population": 13599
+  },
+  "80642": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 501900,
+    "ownerOccupied": 1338,
+    "renterOccupied": 282,
+    "population": 5146
+  },
+  "80643": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 435900,
+    "ownerOccupied": 1006,
+    "renterOccupied": 388,
+    "population": 3989
+  },
+  "80644": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 378900,
+    "ownerOccupied": 716,
+    "renterOccupied": 233,
+    "population": 2604
+  },
+  "80645": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 361500,
+    "ownerOccupied": 1390,
+    "renterOccupied": 254,
+    "population": 4810
+  },
+  "80646": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80648": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 369900,
+    "ownerOccupied": 448,
+    "renterOccupied": 18,
+    "population": 1296
+  },
+  "80649": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 544500,
+    "ownerOccupied": 120,
+    "renterOccupied": 40,
+    "population": 347
+  },
+  "80650": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 319500,
+    "ownerOccupied": 614,
+    "renterOccupied": 52,
+    "population": 1896
+  },
+  "80651": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 395500,
+    "ownerOccupied": 1348,
+    "renterOccupied": 222,
+    "population": 4441
+  },
+  "80652": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 454100,
+    "ownerOccupied": 136,
+    "renterOccupied": 0,
+    "population": 342
+  },
+  "80653": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 354700,
+    "ownerOccupied": 263,
+    "renterOccupied": 87,
+    "population": 877
+  },
+  "80654": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 384900,
+    "ownerOccupied": 628,
+    "renterOccupied": 309,
+    "population": 2857
+  },
+  "80701": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 284800,
+    "ownerOccupied": 4022,
+    "renterOccupied": 2430,
+    "population": 17085
+  },
+  "80705": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 154400,
+    "ownerOccupied": 189,
+    "renterOccupied": 127,
+    "population": 882
+  },
+  "80720": {
+    "medianYearBuilt": 1961,
+    "medianHomeValue": 204000,
+    "ownerOccupied": 717,
+    "renterOccupied": 290,
+    "population": 2305
+  },
+  "80721": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 318800,
+    "ownerOccupied": 53,
+    "renterOccupied": 26,
+    "population": 304
+  },
+  "80722": {
+    "medianYearBuilt": 1948,
+    "medianHomeValue": 197400,
+    "ownerOccupied": 127,
+    "renterOccupied": 19,
+    "population": 414
+  },
+  "80723": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 255300,
+    "ownerOccupied": 1694,
+    "renterOccupied": 839,
+    "population": 6727
+  },
+  "80726": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 219400,
+    "ownerOccupied": 116,
+    "renterOccupied": 83,
+    "population": 393
+  },
+  "80727": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 115300,
+    "ownerOccupied": 183,
+    "renterOccupied": 44,
+    "population": 506
+  },
+  "80728": {
+    "medianYearBuilt": 1959,
+    "medianHomeValue": 192900,
+    "ownerOccupied": 344,
+    "renterOccupied": 94,
+    "population": 1151
+  },
+  "80729": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 221200,
+    "ownerOccupied": 123,
+    "renterOccupied": 56,
+    "population": 403
+  },
+  "80731": {
+    "medianYearBuilt": 1962,
+    "medianHomeValue": 215600,
+    "ownerOccupied": 486,
+    "renterOccupied": 132,
+    "population": 1397
+  },
+  "80732": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 12,
+    "renterOccupied": 0,
+    "population": 24
+  },
+  "80733": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 224300,
+    "ownerOccupied": 149,
+    "renterOccupied": 59,
+    "population": 565
+  },
+  "80734": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 264100,
+    "ownerOccupied": 837,
+    "renterOccupied": 323,
+    "population": 3057
+  },
+  "80735": {
+    "medianYearBuilt": 1958,
+    "medianHomeValue": 219600,
+    "ownerOccupied": 79,
+    "renterOccupied": 60,
+    "population": 323
+  },
+  "80736": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 139800,
+    "ownerOccupied": 192,
+    "renterOccupied": 38,
+    "population": 553
+  },
+  "80737": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 146400,
+    "ownerOccupied": 461,
+    "renterOccupied": 268,
+    "population": 1651
+  },
+  "80740": {
+    "medianYearBuilt": 1947,
+    "medianHomeValue": 218800,
+    "ownerOccupied": 27,
+    "renterOccupied": 21,
+    "population": 119
+  },
+  "80741": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 311300,
+    "ownerOccupied": 296,
+    "renterOccupied": 94,
+    "population": 1011
+  },
+  "80742": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 91,
+    "renterOccupied": 29,
+    "population": 224
+  },
+  "80743": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 205000,
+    "ownerOccupied": 356,
+    "renterOccupied": 147,
+    "population": 1259
+  },
+  "80744": {
+    "medianYearBuilt": 1944,
+    "medianHomeValue": 86800,
+    "ownerOccupied": 151,
+    "renterOccupied": 38,
+    "population": 449
+  },
+  "80745": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 221400,
+    "ownerOccupied": 24,
+    "renterOccupied": 15,
+    "population": 68
+  },
+  "80746": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 179200,
+    "ownerOccupied": 12,
+    "renterOccupied": 17,
+    "population": 61
+  },
+  "80747": {
+    "medianYearBuilt": 1951,
+    "medianHomeValue": 203000,
+    "ownerOccupied": 167,
+    "renterOccupied": 28,
+    "population": 468
+  },
+  "80749": {
+    "medianYearBuilt": 1941,
+    "medianHomeValue": 143300,
+    "ownerOccupied": 102,
+    "renterOccupied": 26,
+    "population": 285
+  },
+  "80750": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": null,
+    "ownerOccupied": 76,
+    "renterOccupied": 14,
+    "population": 201
+  },
+  "80751": {
+    "medianYearBuilt": 1961,
+    "medianHomeValue": 204200,
+    "ownerOccupied": 4474,
+    "renterOccupied": 1901,
+    "population": 17263
+  },
+  "80754": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 214600,
+    "ownerOccupied": 43,
+    "renterOccupied": 16,
+    "population": 138
+  },
+  "80755": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 48,
+    "renterOccupied": 0,
+    "population": 127
+  },
+  "80757": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 152500,
+    "ownerOccupied": 45,
+    "renterOccupied": 52,
+    "population": 176
+  },
+  "80758": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 217300,
+    "ownerOccupied": 1038,
+    "renterOccupied": 362,
+    "population": 3535
+  },
+  "80759": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 198600,
+    "ownerOccupied": 1257,
+    "renterOccupied": 529,
+    "population": 4657
+  },
+  "80801": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 170000,
+    "ownerOccupied": 44,
+    "renterOccupied": 6,
+    "population": 91
+  },
+  "80802": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": null,
+    "ownerOccupied": 25,
+    "renterOccupied": 23,
+    "population": 173
+  },
+  "80804": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 147400,
+    "ownerOccupied": 100,
+    "renterOccupied": 54,
+    "population": 297
+  },
+  "80805": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 187500,
+    "ownerOccupied": 132,
+    "renterOccupied": 23,
+    "population": 400
+  },
+  "80807": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 180000,
+    "ownerOccupied": 1188,
+    "renterOccupied": 637,
+    "population": 4267
+  },
+  "80808": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 333200,
+    "ownerOccupied": 1976,
+    "renterOccupied": 511,
+    "population": 6511
+  },
+  "80809": {
+    "medianYearBuilt": 1959,
+    "medianHomeValue": 450000,
+    "ownerOccupied": 371,
+    "renterOccupied": 62,
+    "population": 966
+  },
+  "80810": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 167700,
+    "ownerOccupied": 406,
+    "renterOccupied": 103,
+    "population": 1170
+  },
+  "80812": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 158000,
+    "ownerOccupied": 79,
+    "renterOccupied": 40,
+    "population": 306
+  },
+  "80813": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 278900,
+    "ownerOccupied": 457,
+    "renterOccupied": 378,
+    "population": 1747
+  },
+  "80814": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 371500,
+    "ownerOccupied": 1512,
+    "renterOccupied": 403,
+    "population": 3485
+  },
+  "80815": {
+    "medianYearBuilt": 1962,
+    "medianHomeValue": 188200,
+    "ownerOccupied": 242,
+    "renterOccupied": 162,
+    "population": 852
+  },
+  "80816": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 349600,
+    "ownerOccupied": 2913,
+    "renterOccupied": 146,
+    "population": 6796
+  },
+  "80817": {
+    "medianYearBuilt": 2000,
+    "medianHomeValue": 339200,
+    "ownerOccupied": 7920,
+    "renterOccupied": 2936,
+    "population": 31132
+  },
+  "80818": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 175000,
+    "ownerOccupied": 128,
+    "renterOccupied": 40,
+    "population": 389
+  },
+  "80819": {
+    "medianYearBuilt": 1951,
+    "medianHomeValue": 433300,
+    "ownerOccupied": 252,
+    "renterOccupied": 102,
+    "population": 701
+  },
+  "80820": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 408800,
+    "ownerOccupied": 250,
+    "renterOccupied": 26,
+    "population": 512
+  },
+  "80821": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 230400,
+    "ownerOccupied": 397,
+    "renterOccupied": 133,
+    "population": 1319
+  },
+  "80822": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 137500,
+    "ownerOccupied": 88,
+    "renterOccupied": 45,
+    "population": 283
+  },
+  "80823": {
+    "medianYearBuilt": 1962,
+    "medianHomeValue": 177200,
+    "ownerOccupied": 63,
+    "renterOccupied": 25,
+    "population": 211
+  },
+  "80824": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 255000,
+    "ownerOccupied": 111,
+    "renterOccupied": 59,
+    "population": 379
+  },
+  "80825": {
+    "medianYearBuilt": 1966,
+    "medianHomeValue": 164300,
+    "ownerOccupied": 126,
+    "renterOccupied": 30,
+    "population": 346
+  },
+  "80826": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 1190
+  },
+  "80827": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 287100,
+    "ownerOccupied": 374,
+    "renterOccupied": 38,
+    "population": 762
+  },
+  "80828": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 287000,
+    "ownerOccupied": 672,
+    "renterOccupied": 279,
+    "population": 2291
+  },
+  "80829": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 533400,
+    "ownerOccupied": 1524,
+    "renterOccupied": 1082,
+    "population": 5576
+  },
+  "80830": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 334600,
+    "ownerOccupied": 67,
+    "renterOccupied": 7,
+    "population": 171
+  },
+  "80831": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 444100,
+    "ownerOccupied": 9207,
+    "renterOccupied": 763,
+    "population": 31824
+  },
+  "80832": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 417400,
+    "ownerOccupied": 321,
+    "renterOccupied": 39,
+    "population": 975
+  },
+  "80833": {
+    "medianYearBuilt": 2010,
+    "medianHomeValue": 168400,
+    "ownerOccupied": 395,
+    "renterOccupied": 46,
+    "population": 942
+  },
+  "80834": {
+    "medianYearBuilt": 1951,
+    "medianHomeValue": null,
+    "ownerOccupied": 118,
+    "renterOccupied": 31,
+    "population": 320
+  },
+  "80835": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 247300,
+    "ownerOccupied": 206,
+    "renterOccupied": 116,
+    "population": 766
+  },
+  "80836": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 174500,
+    "ownerOccupied": 255,
+    "renterOccupied": 117,
+    "population": 1028
+  },
+  "80840": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 660,
+    "population": 6665
+  },
+  "80860": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 169600,
+    "ownerOccupied": 159,
+    "renterOccupied": 130,
+    "population": 515
+  },
+  "80861": {
+    "medianYearBuilt": 1953,
+    "medianHomeValue": 232700,
+    "ownerOccupied": 87,
+    "renterOccupied": 21,
+    "population": 265
+  },
+  "80862": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 197900,
+    "ownerOccupied": 25,
+    "renterOccupied": 0,
+    "population": 35
+  },
+  "80863": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 463000,
+    "ownerOccupied": 4018,
+    "renterOccupied": 1171,
+    "population": 12922
+  },
+  "80864": {
+    "medianYearBuilt": 1997,
+    "medianHomeValue": 300000,
+    "ownerOccupied": 484,
+    "renterOccupied": 68,
+    "population": 1304
+  },
+  "80902": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 3423,
+    "population": 11875
+  },
+  "80903": {
+    "medianYearBuilt": 1941,
+    "medianHomeValue": 372900,
+    "ownerOccupied": 3113,
+    "renterOccupied": 4338,
+    "population": 17046
+  },
+  "80904": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 380400,
+    "ownerOccupied": 6182,
+    "renterOccupied": 4649,
+    "population": 21555
+  },
+  "80905": {
+    "medianYearBuilt": 1963,
+    "medianHomeValue": 320600,
+    "ownerOccupied": 4096,
+    "renterOccupied": 4103,
+    "population": 17238
+  },
+  "80906": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 505500,
+    "ownerOccupied": 9932,
+    "renterOccupied": 5513,
+    "population": 38732
+  },
+  "80907": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 334300,
+    "ownerOccupied": 6984,
+    "renterOccupied": 5609,
+    "population": 27628
+  },
+  "80908": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 642900,
+    "ownerOccupied": 6932,
+    "renterOccupied": 716,
+    "population": 22049
+  },
+  "80909": {
+    "medianYearBuilt": 1965,
+    "medianHomeValue": 319500,
+    "ownerOccupied": 8799,
+    "renterOccupied": 7449,
+    "population": 37113
+  },
+  "80910": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 250400,
+    "ownerOccupied": 5959,
+    "renterOccupied": 6940,
+    "population": 32038
+  },
+  "80911": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 313800,
+    "ownerOccupied": 9795,
+    "renterOccupied": 2293,
+    "population": 35001
+  },
+  "80913": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 6697
+  },
+  "80914": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 468
+  },
+  "80915": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 309700,
+    "ownerOccupied": 6363,
+    "renterOccupied": 2409,
+    "population": 23031
+  },
+  "80916": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 259300,
+    "ownerOccupied": 7459,
+    "renterOccupied": 6856,
+    "population": 39795
+  },
+  "80917": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 322600,
+    "ownerOccupied": 8115,
+    "renterOccupied": 5246,
+    "population": 32069
+  },
+  "80918": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 381100,
+    "ownerOccupied": 12286,
+    "renterOccupied": 7040,
+    "population": 49218
+  },
+  "80919": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": 511000,
+    "ownerOccupied": 8641,
+    "renterOccupied": 3000,
+    "population": 28624
+  },
+  "80920": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 450300,
+    "ownerOccupied": 9803,
+    "renterOccupied": 4398,
+    "population": 38727
+  },
+  "80921": {
+    "medianYearBuilt": 2004,
+    "medianHomeValue": 603500,
+    "ownerOccupied": 7265,
+    "renterOccupied": 2163,
+    "population": 23767
+  },
+  "80922": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 362300,
+    "ownerOccupied": 7995,
+    "renterOccupied": 2904,
+    "population": 29750
+  },
+  "80923": {
+    "medianYearBuilt": 2005,
+    "medianHomeValue": 403300,
+    "ownerOccupied": 8563,
+    "renterOccupied": 3378,
+    "population": 31593
+  },
+  "80924": {
+    "medianYearBuilt": 2012,
+    "medianHomeValue": 606500,
+    "ownerOccupied": 3538,
+    "renterOccupied": 1580,
+    "population": 15187
+  },
+  "80925": {
+    "medianYearBuilt": 2010,
+    "medianHomeValue": 377900,
+    "ownerOccupied": 4206,
+    "renterOccupied": 635,
+    "population": 15500
+  },
+  "80926": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 534000,
+    "ownerOccupied": 622,
+    "renterOccupied": 82,
+    "population": 1838
+  },
+  "80927": {
+    "medianYearBuilt": null,
+    "medianHomeValue": 487500,
+    "ownerOccupied": 1832,
+    "renterOccupied": 150,
+    "population": 6002
+  },
+  "80928": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 247900,
+    "ownerOccupied": 189,
+    "renterOccupied": 50,
+    "population": 698
+  },
+  "80929": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 277300,
+    "ownerOccupied": 48,
+    "renterOccupied": 0,
+    "population": 122
+  },
+  "80930": {
+    "medianYearBuilt": 2007,
+    "medianHomeValue": 279200,
+    "ownerOccupied": 199,
+    "renterOccupied": 397,
+    "population": 1857
+  },
+  "80938": {
+    "medianYearBuilt": 2016,
+    "medianHomeValue": 454800,
+    "ownerOccupied": 270,
+    "renterOccupied": 17,
+    "population": 847
+  },
+  "80939": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "80951": {
+    "medianYearBuilt": 2006,
+    "medianHomeValue": 354800,
+    "ownerOccupied": 1134,
+    "renterOccupied": 386,
+    "population": 4603
+  },
+  "81001": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 177500,
+    "ownerOccupied": 6509,
+    "renterOccupied": 6140,
+    "population": 31160
+  },
+  "81003": {
+    "medianYearBuilt": 1955,
+    "medianHomeValue": 151900,
+    "ownerOccupied": 2779,
+    "renterOccupied": 2911,
+    "population": 14875
+  },
+  "81004": {
+    "medianYearBuilt": 1947,
+    "medianHomeValue": 158700,
+    "ownerOccupied": 6078,
+    "renterOccupied": 5028,
+    "population": 26261
+  },
+  "81005": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 245400,
+    "ownerOccupied": 9846,
+    "renterOccupied": 3136,
+    "population": 31499
+  },
+  "81006": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 290700,
+    "ownerOccupied": 3655,
+    "renterOccupied": 899,
+    "population": 11503
+  },
+  "81007": {
+    "medianYearBuilt": 1999,
+    "medianHomeValue": 330000,
+    "ownerOccupied": 10412,
+    "renterOccupied": 1696,
+    "population": 34337
+  },
+  "81008": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 246100,
+    "ownerOccupied": 3070,
+    "renterOccupied": 1815,
+    "population": 11146
+  },
+  "81019": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 194000,
+    "ownerOccupied": 476,
+    "renterOccupied": 229,
+    "population": 1548
+  },
+  "81020": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 109100,
+    "ownerOccupied": 359,
+    "renterOccupied": 99,
+    "population": 823
+  },
+  "81021": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 5,
+    "renterOccupied": 4,
+    "population": 12
+  },
+  "81022": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 208700,
+    "ownerOccupied": 477,
+    "renterOccupied": 109,
+    "population": 1594
+  },
+  "81023": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 284800,
+    "ownerOccupied": 538,
+    "renterOccupied": 83,
+    "population": 1350
+  },
+  "81024": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 296200,
+    "ownerOccupied": 128,
+    "renterOccupied": 0,
+    "population": 233
+  },
+  "81025": {
+    "medianYearBuilt": 1955,
+    "medianHomeValue": 108800,
+    "ownerOccupied": 297,
+    "renterOccupied": 51,
+    "population": 716
+  },
+  "81027": {
+    "medianYearBuilt": 1943,
+    "medianHomeValue": 53100,
+    "ownerOccupied": 41,
+    "renterOccupied": 28,
+    "population": 123
+  },
+  "81029": {
+    "medianYearBuilt": 1955,
+    "medianHomeValue": 81300,
+    "ownerOccupied": 96,
+    "renterOccupied": 21,
+    "population": 309
+  },
+  "81030": {
+    "medianYearBuilt": 1949,
+    "medianHomeValue": 95000,
+    "ownerOccupied": 62,
+    "renterOccupied": 21,
+    "population": 143
+  },
+  "81033": {
+    "medianYearBuilt": 1946,
+    "medianHomeValue": 71200,
+    "ownerOccupied": 39,
+    "renterOccupied": 17,
+    "population": 195
+  },
+  "81036": {
+    "medianYearBuilt": 1959,
+    "medianHomeValue": 132800,
+    "ownerOccupied": 328,
+    "renterOccupied": 102,
+    "population": 1007
+  },
+  "81039": {
+    "medianYearBuilt": 1954,
+    "medianHomeValue": 142900,
+    "ownerOccupied": 464,
+    "renterOccupied": 272,
+    "population": 1517
+  },
+  "81040": {
+    "medianYearBuilt": 1958,
+    "medianHomeValue": 343800,
+    "ownerOccupied": 127,
+    "renterOccupied": 19,
+    "population": 263
+  },
+  "81041": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 84000,
+    "ownerOccupied": 184,
+    "renterOccupied": 68,
+    "population": 579
+  },
+  "81043": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 14,
+    "renterOccupied": 2,
+    "population": 38
+  },
+  "81044": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 93000,
+    "ownerOccupied": 63,
+    "renterOccupied": 8,
+    "population": 146
+  },
+  "81045": {
+    "medianYearBuilt": 1948,
+    "medianHomeValue": 78000,
+    "ownerOccupied": 24,
+    "renterOccupied": 7,
+    "population": 84
+  },
+  "81046": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 2,
+    "renterOccupied": 0,
+    "population": 3
+  },
+  "81047": {
+    "medianYearBuilt": 1965,
+    "medianHomeValue": 117900,
+    "ownerOccupied": 459,
+    "renterOccupied": 180,
+    "population": 1588
+  },
+  "81049": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 117400,
+    "ownerOccupied": 53,
+    "renterOccupied": 26,
+    "population": 131
+  },
+  "81050": {
+    "medianYearBuilt": 1961,
+    "medianHomeValue": 150900,
+    "ownerOccupied": 2901,
+    "renterOccupied": 1296,
+    "population": 9601
+  },
+  "81052": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 121800,
+    "ownerOccupied": 2401,
+    "renterOccupied": 996,
+    "population": 9143
+  },
+  "81054": {
+    "medianYearBuilt": 1957,
+    "medianHomeValue": 95000,
+    "ownerOccupied": 800,
+    "renterOccupied": 630,
+    "population": 4731
+  },
+  "81055": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 321600,
+    "ownerOccupied": 632,
+    "renterOccupied": 119,
+    "population": 1572
+  },
+  "81057": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 193800,
+    "ownerOccupied": 133,
+    "renterOccupied": 30,
+    "population": 414
+  },
+  "81058": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 116000,
+    "ownerOccupied": 355,
+    "renterOccupied": 71,
+    "population": 1124
+  },
+  "81059": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": null,
+    "ownerOccupied": 26,
+    "renterOccupied": 0,
+    "population": 52
+  },
+  "81062": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 97100,
+    "ownerOccupied": 237,
+    "renterOccupied": 98,
+    "population": 1701
+  },
+  "81063": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 102500,
+    "ownerOccupied": 497,
+    "renterOccupied": 259,
+    "population": 3111
+  },
+  "81064": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 73700,
+    "ownerOccupied": 111,
+    "renterOccupied": 24,
+    "population": 296
+  },
+  "81067": {
+    "medianYearBuilt": 1956,
+    "medianHomeValue": 113400,
+    "ownerOccupied": 1242,
+    "renterOccupied": 657,
+    "population": 5605
+  },
+  "81069": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 333700,
+    "ownerOccupied": 827,
+    "renterOccupied": 126,
+    "population": 2510
+  },
+  "81071": {
+    "medianYearBuilt": 1959,
+    "medianHomeValue": null,
+    "ownerOccupied": 54,
+    "renterOccupied": 35,
+    "population": 252
+  },
+  "81073": {
+    "medianYearBuilt": 1967,
+    "medianHomeValue": 146200,
+    "ownerOccupied": 527,
+    "renterOccupied": 235,
+    "population": 1751
+  },
+  "81076": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": 61400,
+    "ownerOccupied": 160,
+    "renterOccupied": 28,
+    "population": 764
+  },
+  "81077": {
+    "medianYearBuilt": 1963,
+    "medianHomeValue": 135600,
+    "ownerOccupied": 324,
+    "renterOccupied": 27,
+    "population": 842
+  },
+  "81081": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": null,
+    "ownerOccupied": 30,
+    "renterOccupied": 44,
+    "population": 99
+  },
+  "81082": {
+    "medianYearBuilt": 1959,
+    "medianHomeValue": 195700,
+    "ownerOccupied": 3735,
+    "renterOccupied": 1611,
+    "population": 11894
+  },
+  "81084": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 97500,
+    "ownerOccupied": 19,
+    "renterOccupied": 10,
+    "population": 51
+  },
+  "81087": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 66700,
+    "ownerOccupied": 40,
+    "renterOccupied": 25,
+    "population": 141
+  },
+  "81089": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 170800,
+    "ownerOccupied": 1364,
+    "renterOccupied": 511,
+    "population": 4761
+  },
+  "81090": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 121600,
+    "ownerOccupied": 379,
+    "renterOccupied": 103,
+    "population": 957
+  },
+  "81091": {
+    "medianYearBuilt": 1987,
+    "medianHomeValue": 266800,
+    "ownerOccupied": 305,
+    "renterOccupied": 131,
+    "population": 1036
+  },
+  "81092": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 236800,
+    "ownerOccupied": 242,
+    "renterOccupied": 71,
+    "population": 841
+  },
+  "81101": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 197800,
+    "ownerOccupied": 3420,
+    "renterOccupied": 2623,
+    "population": 15245
+  },
+  "81120": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 124400,
+    "ownerOccupied": 770,
+    "renterOccupied": 264,
+    "population": 2043
+  },
+  "81121": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 218200,
+    "ownerOccupied": 114,
+    "renterOccupied": 12,
+    "population": 357
+  },
+  "81122": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 404500,
+    "ownerOccupied": 2860,
+    "renterOccupied": 762,
+    "population": 9125
+  },
+  "81123": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 107800,
+    "ownerOccupied": 261,
+    "renterOccupied": 71,
+    "population": 729
+  },
+  "81124": {
+    "medianYearBuilt": 1965,
+    "medianHomeValue": null,
+    "ownerOccupied": 76,
+    "renterOccupied": 0,
+    "population": 356
+  },
+  "81125": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 129600,
+    "ownerOccupied": 922,
+    "renterOccupied": 663,
+    "population": 3562
+  },
+  "81126": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 154500,
+    "ownerOccupied": 83,
+    "renterOccupied": 5,
+    "population": 371
+  },
+  "81128": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": null,
+    "ownerOccupied": 13,
+    "renterOccupied": 0,
+    "population": 16
+  },
+  "81129": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "81130": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 378300,
+    "ownerOccupied": 300,
+    "renterOccupied": 107,
+    "population": 762
+  },
+  "81131": {
+    "medianYearBuilt": 1997,
+    "medianHomeValue": 287500,
+    "ownerOccupied": 457,
+    "renterOccupied": 137,
+    "population": 998
+  },
+  "81132": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 156100,
+    "ownerOccupied": 1210,
+    "renterOccupied": 262,
+    "population": 3278
+  },
+  "81133": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 222900,
+    "ownerOccupied": 363,
+    "renterOccupied": 97,
+    "population": 1109
+  },
+  "81136": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 192700,
+    "ownerOccupied": 69,
+    "renterOccupied": 90,
+    "population": 440
+  },
+  "81137": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 298500,
+    "ownerOccupied": 1587,
+    "renterOccupied": 567,
+    "population": 5495
+  },
+  "81138": {
+    "medianYearBuilt": 1938,
+    "medianHomeValue": null,
+    "ownerOccupied": 18,
+    "renterOccupied": 16,
+    "population": 39
+  },
+  "81140": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 199600,
+    "ownerOccupied": 605,
+    "renterOccupied": 145,
+    "population": 2032
+  },
+  "81141": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 154000,
+    "ownerOccupied": 344,
+    "renterOccupied": 76,
+    "population": 1012
+  },
+  "81143": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 133300,
+    "ownerOccupied": 286,
+    "renterOccupied": 79,
+    "population": 766
+  },
+  "81144": {
+    "medianYearBuilt": 1968,
+    "medianHomeValue": 214200,
+    "ownerOccupied": 1814,
+    "renterOccupied": 752,
+    "population": 6766
+  },
+  "81146": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 206300,
+    "ownerOccupied": 220,
+    "renterOccupied": 58,
+    "population": 820
+  },
+  "81147": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 438000,
+    "ownerOccupied": 4094,
+    "renterOccupied": 1362,
+    "population": 12879
+  },
+  "81148": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": 105200,
+    "ownerOccupied": 127,
+    "renterOccupied": 33,
+    "population": 365
+  },
+  "81149": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 135400,
+    "ownerOccupied": 372,
+    "renterOccupied": 106,
+    "population": 1019
+  },
+  "81151": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 152400,
+    "ownerOccupied": 557,
+    "renterOccupied": 131,
+    "population": 1708
+  },
+  "81152": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 129300,
+    "ownerOccupied": 363,
+    "renterOccupied": 174,
+    "population": 1187
+  },
+  "81154": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 308800,
+    "ownerOccupied": 409,
+    "renterOccupied": 89,
+    "population": 1203
+  },
+  "81155": {
+    "medianYearBuilt": 2000,
+    "medianHomeValue": 420300,
+    "ownerOccupied": 123,
+    "renterOccupied": 34,
+    "population": 260
+  },
+  "81201": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 542600,
+    "ownerOccupied": 3065,
+    "renterOccupied": 1349,
+    "population": 8922
+  },
+  "81210": {
+    "medianYearBuilt": 1995,
+    "medianHomeValue": 629800,
+    "ownerOccupied": 156,
+    "renterOccupied": 27,
+    "population": 301
+  },
+  "81211": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 485900,
+    "ownerOccupied": 2130,
+    "renterOccupied": 1235,
+    "population": 8007
+  },
+  "81212": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 269800,
+    "ownerOccupied": 8383,
+    "renterOccupied": 3244,
+    "population": 32146
+  },
+  "81220": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 325000,
+    "ownerOccupied": 48,
+    "renterOccupied": 7,
+    "population": 132
+  },
+  "81221": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 190600,
+    "ownerOccupied": 150,
+    "renterOccupied": 22,
+    "population": 452
+  },
+  "81222": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 275000,
+    "ownerOccupied": 148,
+    "renterOccupied": 0,
+    "population": 379
+  },
+  "81223": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 261200,
+    "ownerOccupied": 929,
+    "renterOccupied": 78,
+    "population": 2023
+  },
+  "81224": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 853400,
+    "ownerOccupied": 1107,
+    "renterOccupied": 554,
+    "population": 3431
+  },
+  "81225": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 663500,
+    "ownerOccupied": 353,
+    "renterOccupied": 138,
+    "population": 1028
+  },
+  "81226": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 221900,
+    "ownerOccupied": 1726,
+    "renterOccupied": 657,
+    "population": 8221
+  },
+  "81227": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "81228": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "81230": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 458200,
+    "ownerOccupied": 2624,
+    "renterOccupied": 2087,
+    "population": 10694
+  },
+  "81232": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 17,
+    "renterOccupied": 0,
+    "population": 32
+  },
+  "81233": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 372900,
+    "ownerOccupied": 417,
+    "renterOccupied": 103,
+    "population": 1019
+  },
+  "81235": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 386100,
+    "ownerOccupied": 337,
+    "renterOccupied": 102,
+    "population": 829
+  },
+  "81236": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 624100,
+    "ownerOccupied": 703,
+    "renterOccupied": 95,
+    "population": 1738
+  },
+  "81237": {
+    "medianYearBuilt": 1969,
+    "medianHomeValue": 471800,
+    "ownerOccupied": 56,
+    "renterOccupied": 0,
+    "population": 143
+  },
+  "81239": {
+    "medianYearBuilt": 2001,
+    "medianHomeValue": 882500,
+    "ownerOccupied": 79,
+    "renterOccupied": 0,
+    "population": 134
+  },
+  "81240": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 285800,
+    "ownerOccupied": 1379,
+    "renterOccupied": 238,
+    "population": 4386
+  },
+  "81241": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 404700,
+    "ownerOccupied": 90,
+    "renterOccupied": 3,
+    "population": 178
+  },
+  "81242": {
+    "medianYearBuilt": 1999,
+    "medianHomeValue": 396800,
+    "ownerOccupied": 419,
+    "renterOccupied": 78,
+    "population": 913
+  },
+  "81243": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 467900,
+    "ownerOccupied": 37,
+    "renterOccupied": 18,
+    "population": 118
+  },
+  "81244": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 165300,
+    "ownerOccupied": 213,
+    "renterOccupied": 9,
+    "population": 553
+  },
+  "81248": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": null,
+    "ownerOccupied": 68,
+    "renterOccupied": 0,
+    "population": 197
+  },
+  "81251": {
+    "medianYearBuilt": 1976,
+    "medianHomeValue": 434800,
+    "ownerOccupied": 217,
+    "renterOccupied": 8,
+    "population": 351
+  },
+  "81252": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 311200,
+    "ownerOccupied": 1612,
+    "renterOccupied": 256,
+    "population": 4060
+  },
+  "81253": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": null,
+    "ownerOccupied": 181,
+    "renterOccupied": 18,
+    "population": 457
+  },
+  "81301": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 584700,
+    "ownerOccupied": 8301,
+    "renterOccupied": 4383,
+    "population": 29894
+  },
+  "81303": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 470100,
+    "ownerOccupied": 2602,
+    "renterOccupied": 837,
+    "population": 9440
+  },
+  "81320": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 195700,
+    "ownerOccupied": 246,
+    "renterOccupied": 0,
+    "population": 485
+  },
+  "81321": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 248100,
+    "ownerOccupied": 4064,
+    "renterOccupied": 1598,
+    "population": 14649
+  },
+  "81323": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 318400,
+    "ownerOccupied": 1656,
+    "renterOccupied": 621,
+    "population": 5070
+  },
+  "81324": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 150200,
+    "ownerOccupied": 633,
+    "renterOccupied": 119,
+    "population": 1508
+  },
+  "81325": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 275000,
+    "ownerOccupied": 43,
+    "renterOccupied": 0,
+    "population": 73
+  },
+  "81326": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 483300,
+    "ownerOccupied": 935,
+    "renterOccupied": 121,
+    "population": 2611
+  },
+  "81327": {
+    "medianYearBuilt": 1987,
+    "medianHomeValue": 367600,
+    "ownerOccupied": 152,
+    "renterOccupied": 4,
+    "population": 330
+  },
+  "81328": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 363900,
+    "ownerOccupied": 1512,
+    "renterOccupied": 256,
+    "population": 3983
+  },
+  "81330": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 72,
+    "population": 132
+  },
+  "81331": {
+    "medianYearBuilt": 2005,
+    "medianHomeValue": null,
+    "ownerOccupied": 114,
+    "renterOccupied": 0,
+    "population": 208
+  },
+  "81332": {
+    "medianYearBuilt": 1970,
+    "medianHomeValue": 471400,
+    "ownerOccupied": 192,
+    "renterOccupied": 46,
+    "population": 445
+  },
+  "81334": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": null,
+    "ownerOccupied": 228,
+    "renterOccupied": 233,
+    "population": 1691
+  },
+  "81335": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 32,
+    "renterOccupied": 0,
+    "population": 54
+  },
+  "81401": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 298800,
+    "ownerOccupied": 6922,
+    "renterOccupied": 2662,
+    "population": 23665
+  },
+  "81403": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 428300,
+    "ownerOccupied": 3828,
+    "renterOccupied": 908,
+    "population": 11384
+  },
+  "81410": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 326000,
+    "ownerOccupied": 699,
+    "renterOccupied": 111,
+    "population": 1768
+  },
+  "81411": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 2,
+    "population": 2
+  },
+  "81413": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 293500,
+    "ownerOccupied": 1795,
+    "renterOccupied": 507,
+    "population": 5736
+  },
+  "81415": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 353200,
+    "ownerOccupied": 693,
+    "renterOccupied": 108,
+    "population": 2137
+  },
+  "81416": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 261700,
+    "ownerOccupied": 3399,
+    "renterOccupied": 1580,
+    "population": 13812
+  },
+  "81418": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 233700,
+    "ownerOccupied": 467,
+    "renterOccupied": 101,
+    "population": 1498
+  },
+  "81419": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 324400,
+    "ownerOccupied": 1088,
+    "renterOccupied": 220,
+    "population": 3044
+  },
+  "81422": {
+    "medianYearBuilt": 1974,
+    "medianHomeValue": 155400,
+    "ownerOccupied": 174,
+    "renterOccupied": 48,
+    "population": 479
+  },
+  "81423": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 355300,
+    "ownerOccupied": 552,
+    "renterOccupied": 187,
+    "population": 1590
+  },
+  "81424": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 182500,
+    "ownerOccupied": 406,
+    "renterOccupied": 111,
+    "population": 1098
+  },
+  "81425": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 272200,
+    "ownerOccupied": 1511,
+    "renterOccupied": 338,
+    "population": 5559
+  },
+  "81426": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 772100,
+    "ownerOccupied": 53,
+    "renterOccupied": 13,
+    "population": 180
+  },
+  "81427": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 506500,
+    "ownerOccupied": 420,
+    "renterOccupied": 139,
+    "population": 1227
+  },
+  "81428": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 334200,
+    "ownerOccupied": 1327,
+    "renterOccupied": 364,
+    "population": 3679
+  },
+  "81429": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 212500,
+    "ownerOccupied": 31,
+    "renterOccupied": 0,
+    "population": 106
+  },
+  "81430": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 857100,
+    "ownerOccupied": 286,
+    "renterOccupied": 58,
+    "population": 745
+  },
+  "81431": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 272000,
+    "ownerOccupied": 171,
+    "renterOccupied": 13,
+    "population": 555
+  },
+  "81432": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 685500,
+    "ownerOccupied": 1159,
+    "renterOccupied": 375,
+    "population": 3075
+  },
+  "81433": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 332800,
+    "ownerOccupied": 155,
+    "renterOccupied": 152,
+    "population": 627
+  },
+  "81434": {
+    "medianYearBuilt": 1979,
+    "medianHomeValue": null,
+    "ownerOccupied": 66,
+    "renterOccupied": 13,
+    "population": 158
+  },
+  "81435": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 632200,
+    "ownerOccupied": 1480,
+    "renterOccupied": 1241,
+    "population": 5602
+  },
+  "81501": {
+    "medianYearBuilt": 1971,
+    "medianHomeValue": 257700,
+    "ownerOccupied": 4997,
+    "renterOccupied": 5709,
+    "population": 23998
+  },
+  "81503": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 279700,
+    "ownerOccupied": 4761,
+    "renterOccupied": 1389,
+    "population": 16152
+  },
+  "81504": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 264900,
+    "ownerOccupied": 9486,
+    "renterOccupied": 2680,
+    "population": 31380
+  },
+  "81505": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 393700,
+    "ownerOccupied": 3532,
+    "renterOccupied": 1524,
+    "population": 11629
+  },
+  "81506": {
+    "medianYearBuilt": 1985,
+    "medianHomeValue": 389900,
+    "ownerOccupied": 3297,
+    "renterOccupied": 1828,
+    "population": 11879
+  },
+  "81507": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 447600,
+    "ownerOccupied": 6058,
+    "renterOccupied": 584,
+    "population": 16162
+  },
+  "81520": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 198500,
+    "ownerOccupied": 3465,
+    "renterOccupied": 1822,
+    "population": 13682
+  },
+  "81521": {
+    "medianYearBuilt": 1997,
+    "medianHomeValue": 360800,
+    "ownerOccupied": 4850,
+    "renterOccupied": 1187,
+    "population": 16431
+  },
+  "81522": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": null,
+    "ownerOccupied": 54,
+    "renterOccupied": 0,
+    "population": 107
+  },
+  "81523": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 705400,
+    "ownerOccupied": 345,
+    "renterOccupied": 75,
+    "population": 669
+  },
+  "81524": {
+    "medianYearBuilt": 2002,
+    "medianHomeValue": 631700,
+    "ownerOccupied": 765,
+    "renterOccupied": 105,
+    "population": 2670
+  },
+  "81525": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 314700,
+    "ownerOccupied": 349,
+    "renterOccupied": 146,
+    "population": 1490
+  },
+  "81526": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 384000,
+    "ownerOccupied": 1738,
+    "renterOccupied": 459,
+    "population": 5110
+  },
+  "81527": {
+    "medianYearBuilt": 1992,
+    "medianHomeValue": 402000,
+    "ownerOccupied": 551,
+    "renterOccupied": 101,
+    "population": 1497
+  },
+  "81601": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 654900,
+    "ownerOccupied": 3853,
+    "renterOccupied": 2231,
+    "population": 16547
+  },
+  "81610": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": null,
+    "ownerOccupied": 111,
+    "renterOccupied": 21,
+    "population": 600
+  },
+  "81611": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 736700,
+    "ownerOccupied": 2788,
+    "renterOccupied": 1915,
+    "population": 9599
+  },
+  "81612": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 35,
+    "population": 87
+  },
+  "81615": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": null,
+    "ownerOccupied": 1037,
+    "renterOccupied": 455,
+    "population": 3076
+  },
+  "81620": {
+    "medianYearBuilt": 1990,
+    "medianHomeValue": 790900,
+    "ownerOccupied": 2284,
+    "renterOccupied": 1879,
+    "population": 11468
+  },
+  "81621": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 1106700,
+    "ownerOccupied": 1665,
+    "renterOccupied": 731,
+    "population": 5869
+  },
+  "81623": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 733900,
+    "ownerOccupied": 4464,
+    "renterOccupied": 2098,
+    "population": 17109
+  },
+  "81624": {
+    "medianYearBuilt": 1981,
+    "medianHomeValue": 468500,
+    "ownerOccupied": 459,
+    "renterOccupied": 71,
+    "population": 1610
+  },
+  "81625": {
+    "medianYearBuilt": 1977,
+    "medianHomeValue": 250500,
+    "ownerOccupied": 3313,
+    "renterOccupied": 1655,
+    "population": 12449
+  },
+  "81630": {
+    "medianYearBuilt": 1986,
+    "medianHomeValue": 257400,
+    "ownerOccupied": 344,
+    "renterOccupied": 80,
+    "population": 1119
+  },
+  "81631": {
+    "medianYearBuilt": 1999,
+    "medianHomeValue": 688600,
+    "ownerOccupied": 1963,
+    "renterOccupied": 785,
+    "population": 8335
+  },
+  "81632": {
+    "medianYearBuilt": 1996,
+    "medianHomeValue": 726000,
+    "ownerOccupied": 2693,
+    "renterOccupied": 1182,
+    "population": 10819
+  },
+  "81633": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "81635": {
+    "medianYearBuilt": 1991,
+    "medianHomeValue": 225400,
+    "ownerOccupied": 1857,
+    "renterOccupied": 761,
+    "population": 7000
+  },
+  "81637": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 478700,
+    "ownerOccupied": 2189,
+    "renterOccupied": 660,
+    "population": 9733
+  },
+  "81638": {
+    "medianYearBuilt": 1975,
+    "medianHomeValue": 895800,
+    "ownerOccupied": 24,
+    "renterOccupied": 6,
+    "population": 65
+  },
+  "81639": {
+    "medianYearBuilt": 1984,
+    "medianHomeValue": 362000,
+    "ownerOccupied": 835,
+    "renterOccupied": 194,
+    "population": 2560
+  },
+  "81640": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": null,
+    "ownerOccupied": 18,
+    "renterOccupied": 30,
+    "population": 120
+  },
+  "81641": {
+    "medianYearBuilt": 1978,
+    "medianHomeValue": 264500,
+    "ownerOccupied": 1206,
+    "renterOccupied": 354,
+    "population": 3819
+  },
+  "81642": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 12,
+    "population": 12
+  },
+  "81643": {
+    "medianYearBuilt": 1993,
+    "medianHomeValue": 489100,
+    "ownerOccupied": 223,
+    "renterOccupied": 16,
+    "population": 468
+  },
+  "81645": {
+    "medianYearBuilt": 1972,
+    "medianHomeValue": 915500,
+    "ownerOccupied": 280,
+    "renterOccupied": 128,
+    "population": 1000
+  },
+  "81646": {
+    "medianYearBuilt": 1982,
+    "medianHomeValue": 436500,
+    "ownerOccupied": 91,
+    "renterOccupied": 13,
+    "population": 258
+  },
+  "81647": {
+    "medianYearBuilt": 1998,
+    "medianHomeValue": 438200,
+    "ownerOccupied": 1940,
+    "renterOccupied": 593,
+    "population": 6528
+  },
+  "81648": {
+    "medianYearBuilt": 1980,
+    "medianHomeValue": 198600,
+    "ownerOccupied": 771,
+    "renterOccupied": 169,
+    "population": 2620
+  },
+  "81649": {
+    "medianYearBuilt": 1973,
+    "medianHomeValue": 669900,
+    "ownerOccupied": 89,
+    "renterOccupied": 32,
+    "population": 292
+  },
+  "81650": {
+    "medianYearBuilt": 1988,
+    "medianHomeValue": 328300,
+    "ownerOccupied": 3527,
+    "renterOccupied": 1172,
+    "population": 14130
+  },
+  "81652": {
+    "medianYearBuilt": 1994,
+    "medianHomeValue": 460500,
+    "ownerOccupied": 1630,
+    "renterOccupied": 384,
+    "population": 6059
+  },
+  "81653": {
+    "medianYearBuilt": null,
+    "medianHomeValue": null,
+    "ownerOccupied": 0,
+    "renterOccupied": 0,
+    "population": 0
+  },
+  "81654": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": null,
+    "ownerOccupied": 558,
+    "renterOccupied": 109,
+    "population": 1631
+  },
+  "81655": {
+    "medianYearBuilt": 2003,
+    "medianHomeValue": 2000001,
+    "ownerOccupied": 86,
+    "renterOccupied": 0,
+    "population": 181
+  },
+  "81656": {
+    "medianYearBuilt": 1989,
+    "medianHomeValue": null,
+    "ownerOccupied": 294,
+    "renterOccupied": 0,
+    "population": 605
+  },
+  "81657": {
+    "medianYearBuilt": 1983,
+    "medianHomeValue": 849200,
+    "ownerOccupied": 1670,
+    "renterOccupied": 751,
+    "population": 5051
+  }
+}

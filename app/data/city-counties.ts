@@ -1,0 +1,33 @@
+// Maps city slugs (from neighborhoods.ts parentCity) to their primary county
+// Used for FEMA hail risk lookups
+
+export const cityCountyMap: Record<string, string> = {
+  "denver": "Denver",
+  "aurora": "Arapahoe",
+  "lakewood": "Jefferson",
+  "parker": "Douglas",
+  "arvada": "Jefferson",
+  "castle-rock": "Douglas",
+  "colorado-springs": "El Paso",
+  "fort-collins": "Larimer",
+  "highlands-ranch": "Douglas",
+  "thornton": "Adams",
+  "westminster": "Adams",
+  "broomfield": "Broomfield",
+  "littleton": "Arapahoe",
+  "boulder": "Boulder",
+  "centennial": "Arapahoe",
+  "golden": "Jefferson",
+  "longmont": "Boulder",
+  "loveland": "Larimer",
+  "brighton": "Adams",
+  "commerce-city": "Adams",
+  "northglenn": "Adams",
+  "federal-heights": "Adams",
+  "wheat-ridge": "Jefferson",
+  "edgewater": "Jefferson",
+  "englewood": "Arapahoe",
+  "sheridan": "Arapahoe",
+  "greenwood-village": "Arapahoe",
+  "cherry-hills-village": "Arapahoe",
+};

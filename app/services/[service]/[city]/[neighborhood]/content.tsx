@@ -16,6 +16,7 @@ import {
 import HailScoreCard from "../../../../components/HailScoreCard";
 import FAQAccordion from "../../../../components/FAQAccordion";
 import { getRelatedBlogPosts } from "../../../../../lib/blog-links";
+import type { CityData } from "../../../../data/location-data";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -64,6 +65,38 @@ function getNeighborhoodWhyChoose(neighborhoodName: string, cityName: string, ho
   ];
 }
 
+// Housing-era-specific roofing paragraph
+type HousingEra = "historic" | "established" | "modern" | "new";
+
+function getHousingEra(yearBuilt: number | null): HousingEra {
+  if (!yearBuilt || yearBuilt < 1960) return "historic";
+  if (yearBuilt < 1990) return "established";
+  if (yearBuilt < 2010) return "modern";
+  return "new";
+}
+
+function getEraRoofingInsight(era: HousingEra, neighborhoodName: string, yearBuilt: number | null, serviceName: string): string {
+  const year = yearBuilt ? String(yearBuilt) : "the early 1900s";
+  switch (era) {
+    case "historic":
+      return `With homes in ${neighborhoodName} dating back to around ${year}, many properties still have aging roof materials that predate modern building standards. Original slate, clay tile, and early asphalt products require specialized removal and disposal. When replacing these systems, Gates Enterprises ensures your new roof meets current Colorado building codes while preserving the architectural character that makes ${neighborhoodName} special. Proper ventilation upgrades are often critical on these older structures to prevent moisture damage in the attic.`;
+    case "established":
+      return `Most homes in ${neighborhoodName} were built around ${year}, during an era when 3-tab asphalt shingles were the standard. Many of these original roofs have been replaced at least once, but some are still running on outdated materials with poor wind and impact ratings. Upgrading to modern architectural shingles with Class 4 impact resistance dramatically improves protection. Gates Enterprises also evaluates and upgrades ventilation systems on ${neighborhoodName} homes, which were often under-ventilated by today's standards.`;
+    case "modern":
+      return `Homes in ${neighborhoodName} were typically built around ${year} with builder-grade roofing materials. While these roofs were adequate at installation, many are now approaching or past their 20 to 25 year warranty window. Builder-grade materials often underperform compared to contractor-grade products from GAF, Owens Corning, Malarkey, and CertainTeed. Replacing with a manufacturer-certified installation from Gates Enterprises can extend your warranty coverage to 50 years or more, a significant upgrade over the original builder warranty.`;
+    case "new":
+      return `${neighborhoodName}'s newer construction (built around ${year}) means most roofs are relatively young. However, Colorado's severe hail season can damage even brand-new roofing systems in their first year. The key for newer homes is prompt storm damage documentation and insurance claims filed before minor issues become major problems. Gates Enterprises helps ${neighborhoodName} homeowners maintain their manufacturer warranty by ensuring any repairs or replacements follow certified installation standards.`;
+  }
+}
+
+function formatDollars(value: number): string {
+  return "$" + value.toLocaleString("en-US");
+}
+
+function formatPopulation(pop: number): string {
+  return pop.toLocaleString("en-US");
+}
+
 // ---------------------------------------------------------------------------
 // COMPONENT
 // ---------------------------------------------------------------------------
@@ -73,11 +106,13 @@ export default function NeighborhoodContent({
   citySlug,
   neighborhoodSlug,
   faqItems,
+  cityData,
 }: {
   serviceSlug: string;
   citySlug: string;
   neighborhoodSlug: string;
   faqItems: { q: string; a: string }[];
+  cityData: CityData;
 }) {
   const city = getCityBySlug(citySlug);
   const service = getServiceBySlug(serviceSlug);
@@ -90,6 +125,13 @@ export default function NeighborhoodContent({
   const otherServices = services.filter((s) => s.slug !== service.slug);
   const whyChooseItems = getNeighborhoodWhyChoose(neighborhood.name, city.city, neighborhood.housingAge);
   const relatedBlogPosts = getRelatedBlogPosts(serviceSlug, citySlug, 4);
+
+  // Census + FEMA derived data
+  const era = getHousingEra(cityData.medianYearBuilt);
+  const eraInsight = getEraRoofingInsight(era, neighborhood.name, cityData.medianYearBuilt, service.service);
+  const hasCensusData = cityData.medianYearBuilt !== null || cityData.medianHomeValue !== null;
+  const hailRating = cityData.hailRiskRating ?? "elevated";
+  const inspectionWord = hailRating.toLowerCase().includes("very high") ? "essential" : hailRating.toLowerCase().includes("high") ? "strongly recommended" : "advisable";
 
   return (
     <div style={{ background: WHITE }}>
@@ -246,13 +288,13 @@ export default function NeighborhoodContent({
             )}
           </p>
 
-          {/* Neighborhood Details Card */}
+          {/* Neighborhood Details Card - Enhanced with Census + FEMA data */}
           <div
             style={{
               background: LIGHT_BG,
               borderRadius: 16,
               padding: "28px 24px",
-              marginBottom: 48,
+              marginBottom: 32,
               border: "1px solid rgba(13,33,55,0.06)",
             }}
           >
@@ -271,9 +313,11 @@ export default function NeighborhoodContent({
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 24px" }}>
               {[
                 { label: "Housing Era", value: neighborhood.housingAge },
-                { label: "Population", value: neighborhood.population },
-                { label: "Average Home Value", value: neighborhood.avgHomeValue },
+                { label: "Population", value: cityData.population > 0 ? formatPopulation(cityData.population) : neighborhood.population },
+                { label: "Median Home Value", value: cityData.medianHomeValue ? formatDollars(cityData.medianHomeValue) : neighborhood.avgHomeValue },
                 { label: "Common Roof Types", value: neighborhood.commonRoofTypes },
+                ...(cityData.medianYearBuilt ? [{ label: "Median Year Built", value: String(cityData.medianYearBuilt) }] : []),
+                ...(cityData.hailRiskRating ? [{ label: "FEMA Hail Risk", value: `${cityData.hailRiskRating} (${cityData.county} County)` }] : []),
               ].map((item, i) => (
                 <div key={i}>
                   <span
@@ -302,7 +346,89 @@ export default function NeighborhoodContent({
                 </div>
               ))}
             </div>
+            {hasCensusData && (
+              <p style={{
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 11,
+                color: TEXT_LIGHT,
+                margin: "16px 0 0",
+                lineHeight: 1.5,
+              }}>
+                Source: U.S. Census Bureau American Community Survey, FEMA National Risk Index
+              </p>
+            )}
           </div>
+
+          {/* Your Neighborhood by the Numbers */}
+          {hasCensusData && (
+            <div
+              style={{
+                background: `linear-gradient(135deg, ${NAVY} 0%, #0F2A42 100%)`,
+                borderRadius: 16,
+                padding: "32px 28px",
+                marginBottom: 48,
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+                  fontSize: 22,
+                  fontWeight: 700,
+                  color: WHITE,
+                  marginBottom: 16,
+                  marginTop: 0,
+                }}
+              >
+                {neighborhood.name} by the Numbers
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 16,
+                  lineHeight: 1.85,
+                  color: "rgba(255,255,255,0.8)",
+                  margin: 0,
+                }}
+              >
+                {cityData.medianYearBuilt
+                  ? `According to U.S. Census data, homes in ${neighborhood.name} were typically built around ${cityData.medianYearBuilt}. `
+                  : ""}
+                {cityData.medianHomeValue
+                  ? `With a median home value of ${formatDollars(cityData.medianHomeValue)}, protecting your roof investment is critical. `
+                  : ""}
+                {cityData.hailRiskRating && cityData.county
+                  ? `${cityData.county} County is rated "${cityData.hailRiskRating}" risk for hail damage by FEMA's National Risk Index${cityData.hailRiskScore ? ` (score: ${cityData.hailRiskScore})` : ""}, meaning regular roof inspections are ${inspectionWord}. `
+                  : ""}
+                {cityData.ownerOccupied > 0
+                  ? `Of the ${formatPopulation(cityData.ownerOccupied + cityData.renterOccupied)} occupied housing units in the area, ${formatPopulation(cityData.ownerOccupied)} are owner-occupied, each one a roof that needs protection from Colorado's severe weather.`
+                  : ""}
+              </p>
+            </div>
+          )}
+
+          {/* Housing Era Roofing Insight */}
+          <h2
+            style={{
+              fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+              fontSize: 30,
+              fontWeight: 800,
+              color: NAVY,
+              marginBottom: 20,
+            }}
+          >
+            Roofing Considerations for {neighborhood.name} Homes
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 16,
+              lineHeight: 1.85,
+              color: TEXT_LIGHT,
+              marginBottom: 48,
+            }}
+          >
+            {eraInsight}
+          </p>
 
           {/* Process */}
           <h2

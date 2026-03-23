@@ -1,0 +1,42 @@
+{
+  "Adams": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 45.2
+  },
+  "Arapahoe": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 42.8
+  },
+  "Boulder": {
+    "hailRiskRating": "Relatively High",
+    "hailRiskScore": 28.5
+  },
+  "Broomfield": {
+    "hailRiskRating": "Relatively High",
+    "hailRiskScore": 22.1
+  },
+  "Denver": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 48.7
+  },
+  "Douglas": {
+    "hailRiskRating": "Relatively High",
+    "hailRiskScore": 35.4
+  },
+  "El Paso": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 52.1
+  },
+  "Jefferson": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 39.6
+  },
+  "Larimer": {
+    "hailRiskRating": "Relatively High",
+    "hailRiskScore": 31.2
+  },
+  "Weld": {
+    "hailRiskRating": "Very High",
+    "hailRiskScore": 55.3
+  }
+}
