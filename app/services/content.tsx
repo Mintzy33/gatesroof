@@ -350,6 +350,86 @@ export default function ServicesContent() {
         </div>
       </section>
 
+      {/* Related Resources */}
+      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+              fontSize: "clamp(24px, 3.5vw, 32px)",
+              fontWeight: 700,
+              color: NAVY,
+              marginBottom: 16,
+            }}
+          >
+            More Resources
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 16,
+              color: TEXT_LIGHT,
+              lineHeight: 1.7,
+              marginBottom: 32,
+              maxWidth: 600,
+              margin: "0 auto 32px",
+            }}
+          >
+            Explore financing options, warranty coverage, and see how we compare to other contractors.
+          </p>
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link
+              href="/financing"
+              style={{
+                background: WHITE,
+                border: `1px solid rgba(0,0,0,0.08)`,
+                borderRadius: 12,
+                padding: "20px 28px",
+                textDecoration: "none",
+                flex: "1 1 220px",
+                maxWidth: 280,
+                textAlign: "left",
+              }}
+            >
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: NAVY, display: "block", marginBottom: 6 }}>Financing Options</span>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, lineHeight: 1.5 }}>Flexible payment plans to fit your budget. View financing options →</span>
+            </Link>
+            <Link
+              href="/warranty"
+              style={{
+                background: WHITE,
+                border: `1px solid rgba(0,0,0,0.08)`,
+                borderRadius: 12,
+                padding: "20px 28px",
+                textDecoration: "none",
+                flex: "1 1 220px",
+                maxWidth: 280,
+                textAlign: "left",
+              }}
+            >
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: NAVY, display: "block", marginBottom: 6 }}>Warranty Coverage</span>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, lineHeight: 1.5 }}>Learn about our warranty coverage and what&apos;s protected →</span>
+            </Link>
+            <Link
+              href="/compare"
+              style={{
+                background: WHITE,
+                border: `1px solid rgba(0,0,0,0.08)`,
+                borderRadius: 12,
+                padding: "20px 28px",
+                textDecoration: "none",
+                flex: "1 1 220px",
+                maxWidth: 280,
+                textAlign: "left",
+              }}
+            >
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: NAVY, display: "block", marginBottom: 6 }}>Compare Contractors</span>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, lineHeight: 1.5 }}>See how Gates Enterprises stacks up against other roofers →</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section
         style={{
