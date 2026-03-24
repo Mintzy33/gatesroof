@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 301 Google reviews, 4.8 stars. 7,200+ completed projects.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 301 Google reviews, 4.8 stars. 7,200+ completed projects.",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",

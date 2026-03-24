@@ -64,7 +64,7 @@ export default function CityContent() {
               "Jefferson County permit and inspection coordination",
               "thousands of roofs completed across the Denver metro",
               "4.8 star Google rating from 300+ verified reviews",
-              "Malarkey Emerald Pro and Owens Corning Preferred certified",
+              "Malarkey Emerald Premium and Owens Corning Preferred certified",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>

@@ -26,7 +26,7 @@ const PROCESS_STEPS = [
 ];
 
 const WHY_GATES = [
-  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. Your warranty is backed by the manufacturer, not just the contractor." },
+  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium. Your warranty is backed by the manufacturer, not just the contractor." },
   { Icon: FileText, bold: "Xactimate proficient.", rest: "We write estimates in the same software your insurance company uses. That means faster approvals and fewer disputes." },
   { Icon: ShieldCheck, bold: "Supplement specialists.", rest: "Most homeowners don\u2019t know supplements exist. We prepare additional documentation when the initial estimate doesn\u2019t reflect the full scope of work." },
   { Icon: DollarSign, bold: "We advocate for fair coverage.", rest: "We provide thorough documentation to help ensure your claim reflects the actual cost of a proper roof replacement." },

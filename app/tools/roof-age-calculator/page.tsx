@@ -91,7 +91,7 @@ const faqSchema = {
       name: "Why choose Gates Enterprises for roof replacement?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Gates Enterprises is Colorado's only quadruple manufacturer certified roofer, holding GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certifications. This means access to the best warranty options and installation standards from every major manufacturer.",
+        text: "Gates Enterprises is Colorado's only quadruple manufacturer certified roofer, holding GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certifications. This means access to the best warranty options and installation standards from every major manufacturer.",
       },
     },
   ],

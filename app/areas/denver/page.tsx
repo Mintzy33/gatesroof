@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Denver, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.8 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Denver, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.8 stars.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lakewood",

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Denver?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Denver. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Denver. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a roofer have?",

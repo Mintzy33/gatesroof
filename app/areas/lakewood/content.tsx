@@ -123,8 +123,8 @@ const CERTIFICATIONS = [
     desc: "Owens Corning Preferred Contractors meet strict requirements for professionalism, customer satisfaction, and installation quality. Lakewood homeowners benefit from Owens Corning's enhanced warranty programs and a verified, trustworthy contractor."
   },
   {
-    name: "Malarkey Emerald Pro",
-    desc: "Malarkey is known for innovation and sustainability in roofing materials. As an Emerald Pro contractor, Gates Enterprises is trained to install Malarkey's advanced product lines, including their NEX\u00AE Polymer Modified asphalt shingles, which deliver exceptional durability in Colorado's harsh climate."
+    name: "Malarkey Emerald Premium",
+    desc: "Malarkey is known for innovation and sustainability in roofing materials. As an Emerald Premium contractor, Gates Enterprises is trained to install Malarkey's advanced product lines, including their NEX\u00AE Polymer Modified asphalt shingles, which deliver exceptional durability in Colorado's harsh climate."
   },
   {
     name: "CertainTeed Shingle Master Pro\u2122",
@@ -235,7 +235,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
+              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
             </p>
           </div>
 

@@ -91,7 +91,7 @@ function getWhySection(city: CityData, service: ServiceData): string {
 
 function getWhyChoose(city: CityData, service: ServiceData): string[] {
   const base = [
-    `GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master certified`,
+    `GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certified`,
     `301 Google reviews with a 4.8-star rating from Colorado homeowners`,
     `Over thousands of roofing projects completed across the Front Range`,
     `Free inspections with no obligation and no pressure`,

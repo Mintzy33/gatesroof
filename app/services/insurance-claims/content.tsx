@@ -30,7 +30,7 @@ const WHY_GATES = [
   { Icon: ShieldCheck, bold: "O&P recovery specialists.", rest: "We don\u2019t leave money on the table. If your project qualifies for overhead and profit, we document and submit for every dollar your policy provides." },
   { Icon: Clock, bold: "Transparent communication.", rest: "You\u2019ll get updates throughout the process. No radio silence, no surprises. We treat your project like it matters, because it does." },
   { Icon: MapPin, bold: "Locally owned, 10+ years.", rest: "We live and work on Colorado\u2019s Front Range. Our reputation is built on doing right by our neighbors." },
-  { Icon: Shield, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro." },
+  { Icon: Shield, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium." },
 ];
 
 const FAQS = [

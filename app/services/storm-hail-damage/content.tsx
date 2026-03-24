@@ -25,7 +25,7 @@ const PROCESS_STEPS = [
 ];
 
 const WHY_GATES = [
-  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. Fewer than 1% of contractors in the nation hold all four." },
+  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium. Fewer than 1% of contractors in the nation hold all four." },
   { Icon: ShieldCheck, bold: "thousands of roofs completed.", rest: "We\u2019ve seen every type of storm damage Colorado can throw at a roof and delivered lasting results every time." },
   { Icon: Clock, bold: "10+ years on Colorado\u2019s Front Range.", rest: "We live and work here. Our reputation is everything, and we\u2019ve built it one roof at a time." },
   { Icon: Shield, bold: "Warranties up to 50 years.", rest: "With the GAF Golden Pledge warranty, your materials and workmanship are covered for decades, backed by the manufacturer." },

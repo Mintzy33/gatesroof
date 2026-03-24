@@ -132,8 +132,8 @@ const CERTIFICATIONS = [
     desc: "Owens Corning Preferred Contractors meet strict standards for professionalism, reliability, and quality workmanship. Denver homeowners who choose Gates Enterprises gain access to Owens Corning's enhanced warranty programs and premium product lines."
   },
   {
-    name: "Malarkey Emerald Pro",
-    desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Pro contractor, Gates Enterprises is specially trained to install Malarkey's advanced shingle lines, including their NEX\u00AE Polymer Modified asphalt technology for superior durability."
+    name: "Malarkey Emerald Premium",
+    desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Premium contractor, Gates Enterprises is specially trained to install Malarkey's advanced shingle lines, including their NEX\u00AE Polymer Modified asphalt technology for superior durability."
   },
   {
     name: "CertainTeed Shingle Master Pro\u2122",
@@ -232,7 +232,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
+              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
             </p>
           </div>
 

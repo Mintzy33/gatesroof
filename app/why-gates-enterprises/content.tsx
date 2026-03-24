@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews, a 4.8 star rating, proprietary HailScore technology, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 301+ Google reviews, a 4.8 star rating, proprietary HailScore technology, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
@@ -119,9 +119,9 @@ export default function WhyGatesContent() {
                 desc: "Owens Corning's Preferred designation recognizes contractors who meet the most stringent standards for professionalism, reliability, and installation quality. This certification gives Gates Enterprises' customers access to Owens Corning's enhanced warranty programs and their full premium product line, including the popular Duration and TruDefinition series."
               },
               {
-                name: "Malarkey Emerald Pro",
+                name: "Malarkey Emerald Premium",
                 detail: "Advanced polymer modified technology specialists",
-                desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Pro contractor, Gates Enterprises is specially trained to install Malarkey's advanced NEX Polymer Modified asphalt shingles, which deliver superior flexibility, adhesion, and durability in Colorado's extreme weather conditions."
+                desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Premium contractor, Gates Enterprises is specially trained to install Malarkey's advanced NEX Polymer Modified asphalt shingles, which deliver superior flexibility, adhesion, and durability in Colorado's extreme weather conditions."
               },
               {
                 name: "CertainTeed Shingle Master Pro\u2122",

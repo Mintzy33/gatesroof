@@ -27,7 +27,7 @@ const PROCESS_STEPS = [
 ];
 
 const WHY_GATES = [
-  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Pro. No other local contractor holds all four." },
+  { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium. No other local contractor holds all four." },
   { Icon: ShieldCheck, bold: "7 year workmanship warranty.", rest: "Most roofing companies offer one or two years. We back our work for seven, because we know it will last. Plus the GAF Golden Pledge extends coverage to 25 years, backed by the manufacturer." },
   { Icon: Shield, bold: "Insurance restoration experts.", rest: "We\u2019ve completed thousands of restorations and know how to get your roof fully covered." },
   { Icon: MapPin, bold: "Locally owned, 10+ years in Lakewood.", rest: "We live here. Our reputation is everything." },

@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
     title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 301+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master. 301+ reviews, 4.8 stars.",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 301+ reviews, 4.8 stars.",
     images: ["https://www.gatesroof.com/og-image.jpg"],
   },
 };
@@ -103,7 +103,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"GAF Master Elite Contractor"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"CertainTeed Shingle Master Pro"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Pro"}
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
   "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"301","bestRating":"5"},
   "openingHoursSpecification": [

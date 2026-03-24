@@ -56,7 +56,7 @@ const localBusinessSchema = {
   logo: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
   image: "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
   description:
-    "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Thousands of roofs completed since 2014.",
+    "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. Thousands of roofs completed since 2014.",
   telephone: "+17207663377",
   email: "info@gatesroof.com",
   foundingDate: "2014",
@@ -178,7 +178,7 @@ const localBusinessSchema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "Manufacturer Certification",
-      name: "Malarkey Emerald Pro Contractor",
+      name: "Malarkey Emerald Premium Contractor",
     },
     {
       "@type": "EducationalOccupationalCredential",
@@ -516,7 +516,7 @@ export default function GatesEnterprisesPage() {
               },
               {
                 icon: <Award size={32} color={ACCENT} />,
-                title: "Malarkey Emerald Pro",
+                title: "Malarkey Emerald Premium",
                 desc: "Malarkey Roofing Products' premier contractor credential. Demonstrates expertise across Malarkey's entire product line, including their industry-leading Vista AR impact-resistant shingles with rubberized SBS polymer technology.",
               },
               {

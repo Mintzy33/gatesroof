@@ -58,7 +58,7 @@ const MANUFACTURERS = [
     description: "The Preferred Protection Warranty from Owens Corning provides comprehensive coverage on both materials and workmanship. This enhanced warranty is only available when your roof is installed by a Preferred contractor. It goes well beyond the standard limited warranty that any roofer can offer, giving you additional peace of mind at no extra cost.",
   },
   {
-    name: "Malarkey Emerald Pro",
+    name: "Malarkey Emerald Premium",
     color: "#2D7D46",
     warranty: "Enhanced Warranty Coverage",
     details: [
@@ -66,9 +66,9 @@ const MANUFACTURERS = [
       "Workmanship protection included",
       "Covers Malarkey's full product line",
       "Extended coverage period beyond standard warranty",
-      "Only through Emerald Pro certified installers",
+      "Only through Emerald Premium certified installers",
     ],
-    description: "Malarkey Roofing Products offers enhanced warranty coverage exclusively through their Emerald Pro certified contractors. This certification means Gates Enterprises has met Malarkey's strict standards for installation quality and business practices. The result is stronger, longer warranty protection for every Malarkey roof we install.",
+    description: "Malarkey Roofing Products offers enhanced warranty coverage exclusively through their Emerald Premium certified contractors. This certification means Gates Enterprises has met Malarkey's strict standards for installation quality and business practices. The result is stronger, longer warranty protection for every Malarkey roof we install.",
   },
   {
     name: "CertainTeed Shingle Master",

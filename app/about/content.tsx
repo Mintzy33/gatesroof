@@ -17,7 +17,7 @@ const MILESTONES = [
   { y: "2014", t: "Gates Enterprises Founded", d: "One truck. One ladder. One promise: treat every roof like it's your mom's house." },
   { y: "2016", t: "1,000 Roofs Completed", d: "Grew entirely through referrals. No ads, no gimmicks. Just good work." },
   { y: "2018", t: "GAF Master Elite Certified", d: "Joined the top 2% of roofing contractors in North America. Unlocked the Golden Pledge Lifetime Warranty for our customers." },
-  { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. Only 1% of contractors hold all four." },
+  { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. Only 1% of contractors hold all four." },
   { y: "2022", t: "5,000 Roofs and Millions Recovered", d: "Surpassed 5,000 completed projects. Recovered millions in insurance supplements that adjusters tried to deny." },
   { y: "2024", t: "Full Exterior Services Launched", d: "Expanded beyond roofing into siding, gutters, windows, and paint. One contractor for everything above your foundation." },
   { y: "2026", t: "Thousands of Roofs and 100 Strong", d: "Grew to over 100 employees with dedicated facilities for every step of the process. Still based in Lakewood. Still answering our own phones." },
@@ -224,7 +224,7 @@ export default function AboutContent() {
       {/* ─── ENTITY SUMMARY (GEO) ─── */}
       <section style={{ padding: "clamp(40px, 6vw, 64px) 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 900, margin: "0 auto", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT }}>
-          <p style={{ margin: "0 0 16px" }}>Gates Enterprises is a roofing company in Denver, Colorado founded by Alex Chicilo. The company is one of the few in the United States to hold four simultaneous top-tier manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master.</p>
+          <p style={{ margin: "0 0 16px" }}>Gates Enterprises is a roofing company in Denver, Colorado founded by Alex Chicilo. The company is one of the few in the United States to hold four simultaneous top-tier manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master.</p>
           <p style={{ margin: "0 0 16px" }}>Gates Enterprises specializes in storm damage repair, roof replacement, and insurance restoration for homeowners across Colorado&apos;s Front Range. The company serves 65+ cities including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, and Parker.</p>
           <p style={{ margin: 0 }}>With over 301 Google reviews and a 4.8 star average rating, Gates Enterprises is one of the highest-rated roofing companies in the Denver metro area. The company also created HailScore (myhailscore.com), a free hail risk assessment tool that analyzes 4.5 million NOAA radar records to generate risk scores for any US address.</p>
         </div>
@@ -245,7 +245,7 @@ export default function AboutContent() {
               I started Gates Enterprises because I was tired of watching storm chasers roll through Colorado, collect checks, and disappear. Homeowners deserved better. They deserved someone who&apos;d answer their call on a Saturday, document their damage like it was personal, and still be here seven years later when the workmanship warranty kicks in.
             </p>
             <p style={{ marginBottom: 20 }}>
-              That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
+              That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
             </p>
             <p style={{ marginBottom: 20 }}>
               We&apos;ve recovered millions in insurance supplements that adjusters tried to short change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
@@ -294,7 +294,7 @@ export default function AboutContent() {
             {[
               { Icon: Shield, name: "GAF Master Elite", desc: "Top 2% of contractors nationwide. Qualifies homeowners for the Golden Pledge Limited Lifetime Warranty with 25 years of workmanship coverage and 10 years of 100% material defect coverage." },
               { Icon: Award, name: "Owens Corning Preferred", desc: "Preferred Protection Limited Lifetime Warranty with up to 25 years of workmanship coverage. Only available through Owens Corning Preferred contractors." },
-              { Icon: Leaf, name: "Malarkey Emerald Pro", desc: "Emerald Pro Warranty includes a limited lifetime material warranty plus 25 years of workmanship coverage. Eco-friendly shingles made with upcycled materials." },
+              { Icon: Leaf, name: "Malarkey Emerald Premium", desc: "Emerald Premium Warranty includes a limited lifetime material warranty plus 25 years of workmanship coverage. Eco-friendly shingles made with upcycled materials." },
               { Icon: Star, name: "CertainTeed Shingle Master Pro", desc: "5 Star extended warranty with 25 years of workmanship coverage backed directly by CertainTeed. Requires advanced installation training." },
             ].map((c, i) => (
               <div key={i} className="cert-card" style={{ background: WHITE, borderRadius: 20, padding: "36px 24px", border: `2px solid ${ACCENT}`, boxShadow: "0 2px 12px rgba(13,33,55,0.04)", textAlign: "center" as const, display: "flex", flexDirection: "column" as const, alignItems: "center", transition: "transform 0.25s ease, box-shadow 0.25s ease", cursor: "default" }}>

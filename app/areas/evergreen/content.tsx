@@ -120,8 +120,8 @@ const CERTIFICATIONS = [
     desc: "Owens Corning Preferred Contractors meet strict standards for professionalism, customer satisfaction, and installation quality. This certification gives Evergreen homeowners access to Owens Corning's enhanced warranty programs."
   },
   {
-    name: "Malarkey Emerald Pro",
-    desc: "Malarkey Roofing Products are known for sustainability and durability. Emerald Pro contractors are specially trained to install Malarkey's premium shingle lines, including their industry leading NEX\u00AE Polymer Modified asphalt shingles."
+    name: "Malarkey Emerald Premium",
+    desc: "Malarkey Roofing Products are known for sustainability and durability. Emerald Premium contractors are specially trained to install Malarkey's premium shingle lines, including their industry leading NEX\u00AE Polymer Modified asphalt shingles."
   },
   {
     name: "CertainTeed Shingle Master Pro\u2122",
@@ -219,7 +219,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. That means Evergreen homeowners get access to the best warranty options and highest quality materials available.
+              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. That means Evergreen homeowners get access to the best warranty options and highest quality materials available.
             </p>
           </div>
 

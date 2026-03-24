@@ -31,7 +31,7 @@ const BRANDS = [
   },
   {
     name: "Malarkey Vista AR",
-    cert: "Emerald Pro",
+    cert: "Emerald Premium",
     desc: "Rubberized SBS polymer modified asphalt for superior impact and flexibility. NEX polymer modified technology, Scotchgard protector, and upcycled materials in every shingle.",
     highlight: "Sustainable manufacturing",
   },

@@ -11,7 +11,7 @@ export const BUSINESS_INFO = {
   logo: "https://www.gatesroof.com/logo.png",
   image: "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
   description:
-    "Colorado's only quadruple manufacturer certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master.",
+    "Colorado's only quadruple manufacturer certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master.",
   address: {
     locality: "Denver",
     region: "CO",

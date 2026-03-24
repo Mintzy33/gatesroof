@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Lakewood, Colorado?",
-    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, they are a proven choice."
+    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, they are a proven choice."
   },
   {
     q: "Why choose a Lakewood based roofing company?",
@@ -120,7 +120,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Four Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. Fewer than 2% of roofers in the country hold even one of these. No other Colorado roofer holds all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
+              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. Fewer than 2% of roofers in the country hold even one of these. No other Colorado roofer holds all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export default function BestRooferLakewoodContent() {
             {[
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product access." },
-              { name: "Malarkey Emerald Pro", desc: "Certified in Malarkey's advanced NEX Polymer Modified technology for Colorado's demanding climate." },
+              { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's advanced NEX Polymer Modified technology for Colorado's demanding climate." },
               { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level installation training. CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>

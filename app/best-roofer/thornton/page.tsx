@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Thornton?",
-    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their track record speaks for itself."
+    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Thornton roofer have?",
