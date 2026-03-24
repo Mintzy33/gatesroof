@@ -165,6 +165,9 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Aurora CO", href: "/areas/aurora" },
   { label: "Roofing Contractor Highlands Ranch CO", href: "/areas/highlands-ranch" },
   { label: "Roofing Contractor Denver CO", href: "/areas/denver" },
+  { label: "Parker Colorado Hail Damage Guide", href: "/blog/parker-colorado-hail-damage-homeowner-guide" },
+  { label: "Best Roofing Companies in Parker", href: "/blog/best-roofing-companies-parker-colorado" },
+  { label: "The Palmer Divide Hail Corridor", href: "/blog/palmer-divide-colorado-hail-corridor" },
   { label: "What Does Hail Damage Look Like on a Roof?", href: "/blog/what-does-hail-damage-look-like-on-roof" },
   { label: "Colorado Hail Season 2026 Guide", href: "/blog/colorado-hail-season-2026-homeowners-guide" },
   { label: "How to Navigate Hail Damage Insurance in CO", href: "/blog/hail-damage-insurance-claim-colorado" },
@@ -348,6 +351,102 @@ export default function CityContent() {
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Get a Free Roof Inspection in Parker &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* PARKER ROOF TYPES AND NEIGHBORHOODS */}
+      <section style={{ padding: "80px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
+            Common Roof Types Across Parker Neighborhoods
+          </h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
+            Parker's neighborhoods span several decades of construction, and the roofing materials vary significantly depending on when and where a home was built. Understanding what is on your roof helps you make better decisions about repair, replacement, and insurance coverage.
+          </p>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Stonegate and Stroh Ranch (2000s Construction)</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              Most homes in Stonegate and Stroh Ranch were built between 2000 and 2010 with standard three tab or early architectural asphalt shingles. These roofs are now 15 to 25 years old, which means many are nearing the end of their expected lifespan even without storm damage. Homes in these neighborhoods that have been through multiple hail events often have accumulated hidden damage that reduces the remaining roof life significantly. We recommend a professional inspection for any Stonegate or Stroh Ranch home that has not had one in the past two years.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>The Pinery and Cottonwood (Established Communities)</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              The Pinery is one of Parker's most established communities, with homes dating from the 1980s through the 2000s. Many Pinery homes sit on larger lots with mature pine trees, which creates unique roofing challenges including needle debris accumulation, shade patterns that can trap moisture, and increased vulnerability to fallen limbs during storms. Cottonwood homes face similar conditions. Roofing materials in these neighborhoods range from original wood shake (now rare) to architectural shingles installed during previous replacements.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Lincoln Creek, Canterberry Crossing, and Meridian Village (Newer Builds)</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              Newer Parker developments like Lincoln Creek, Canterberry Crossing, and Meridian Village tend to have builder grade architectural shingles installed during original construction. While these roofs are younger, builder grade materials are often the most basic products available from each manufacturer. They lack the <Link href="/blog/class-4-impact-resistant-shingles-colorado" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Class 4 impact resistance</Link> that is strongly recommended for homes along the Palmer Divide. If your home was built in the last five to ten years, it likely has a functional roof, but upgrading to impact resistant shingles at the next replacement will save you money on insurance and provide significantly better hail protection.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Parker Proper and Hilltop (Historic Parker)</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              Older Parker homes near downtown and the Hilltop area represent some of the most diverse roofing situations in town. You will find everything from original composition roofing to metal accents to more recent replacements. These homes often have steeper roof pitches and unique architectural details that require experienced installation crews. Gates Enterprises has worked on historic and older Parker homes throughout our history and understands the care these projects require.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PARKER BUILDING CODES AND HOA REQUIREMENTS */}
+      <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 24, lineHeight: 1.2 }}>
+            Parker Building Codes, Permits, and HOA Requirements
+          </h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
+            Roofing projects in Parker require compliance with both the Town of Parker building codes and, in most cases, your HOA's architectural guidelines. Understanding these requirements before your project starts prevents delays, fines, and costly rework.
+          </p>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Town of Parker Permits</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              The Town of Parker requires a building permit for roof replacements. This includes a plan review and a final inspection to verify the work meets the adopted International Building Code (IBC) and International Residential Code (IRC). Parker follows Douglas County building codes, which require proper underlayment, flashing, ventilation, and ice and water shield at vulnerable areas. Gates Enterprises handles all permit applications and coordinates inspections so you do not have to navigate the process yourself.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>HOA Architectural Review</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              Most Parker neighborhoods have active HOAs with architectural review requirements. Before any exterior work begins, you typically need to submit a modification request that includes the shingle brand, color, and profile. Communities like Stonegate, The Pinery, Canterberry Crossing, Pradera, and Stroh Ranch each have their own architectural standards and approval timelines. Some HOAs restrict shingle colors to an approved palette. Others require specific product lines. Gates Enterprises has completed projects in nearly every Parker HOA community and can provide the documentation your review committee needs for quick approval.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 32 }}>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Impact Resistant Shingle Requirements</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              While neither the Town of Parker nor Douglas County currently mandates Class 4 impact resistant shingles, the insurance math makes them the smart choice for every Parker home. Most Colorado insurers offer 15 to 35 percent premium discounts for Class 4 roofs. Given Parker's position along the <Link href="/blog/palmer-divide-colorado-hail-corridor" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Palmer Divide hail corridor</Link>, the upgrade typically pays for itself within three to five years through insurance savings alone. Several Parker HOAs now strongly encourage or recommend impact resistant shingles for replacements.
+            </p>
+          </div>
+
+          <div>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Why Quadruple Certification Matters for Parker Homeowners</h3>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT }}>
+              Parker sits in one of the most hail active zones in the entire country. That means your roof is not just protecting your home from rain. It is absorbing repeated impacts from ice stones that can range from marble to softball size. Working with a quadruple certified contractor means your installer has been vetted and trained by all four major shingle manufacturers. You get access to the best warranty programs, the widest selection of premium materials, and the confidence that your roof was installed to the highest standard in the industry. When the next Palmer Divide hailstorm rolls through, that certification is not just a credential. It is your roof's insurance policy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PARKER HAIL DAMAGE BLOG CALLOUT */}
+      <section style={{ padding: "48px 24px", background: WHITE, borderBottom: "1px solid rgba(13,33,55,0.06)" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", background: `linear-gradient(135deg, ${NAVY} 0%, #0F2A42 100%)`, borderRadius: 16, padding: "40px 32px", display: "flex", flexDirection: "column", gap: 16 }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: ACCENT, letterSpacing: "0.15em" }}>PARKER HOMEOWNER GUIDE</span>
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 24, fontWeight: 800, color: WHITE, lineHeight: 1.3, margin: 0 }}>
+            Parker Colorado Hail Damage: What Every Homeowner Needs to Know
+          </h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(255,255,255,0.7)", margin: 0 }}>
+            Living on the Palmer Divide means your roof faces more hail than almost anywhere in the country. Our complete guide covers Parker's hail history, how to spot damage, the insurance claim process, and how to protect your home for the long term.
+          </p>
+          <Link href="/blog/parker-colorado-hail-damage-homeowner-guide" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "14px 28px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, marginTop: 8, alignSelf: "flex-start" }}>
+            Read the Full Guide &rarr;
           </Link>
         </div>
       </section>

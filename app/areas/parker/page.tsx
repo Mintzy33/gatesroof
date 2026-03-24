@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Parker Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
+  title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
+  description: "Top rated roofer in Parker, Colorado. 301 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Parker Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Parker's most trusted roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections in Parker CO. Call (720) 766-3377.",
+    title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
+    description: "Top rated roofer in Parker, Colorado. 301 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 301 Google reviews, 4.8 stars. 7,200+ completed projects.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 301 Google reviews, 4.8 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
