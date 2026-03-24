@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Morrison trusts Gates Enterprises for roofing. 301 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
+  description: "Morrison trusts Gates Enterprises for roofing. 303 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/morrison" },
   openGraph: {
     title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Morrison trusts Gates Enterprises for roofing. 301 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
+    description: "Morrison trusts Gates Enterprises for roofing. 303 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/morrison",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -56,7 +56,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "301",
+        "reviewCount": "303",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

@@ -6,12 +6,12 @@ import { breadcrumbSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "Roofing Services | Gates Enterprises",
   description:
-    "Full-service roofing contractor in Denver. Roof replacement, storm damage repair, siding, gutters, windows, and insurance claims. 301 reviews, 4.8 stars. Free inspections.",
+    "Full-service roofing contractor in Denver. Roof replacement, storm damage repair, siding, gutters, windows, and insurance claims. 303 reviews, 4.8 stars. Free inspections.",
   alternates: { canonical: "https://www.gatesroof.com/services" },
   openGraph: {
     title: "Roofing Services | Gates Enterprises",
     description:
-      "Full-service roofing contractor in Denver. Roof replacement, storm damage repair, siding, gutters, windows, and insurance claims. 301 reviews, 4.8 stars. Free inspections.",
+      "Full-service roofing contractor in Denver. Roof replacement, storm damage repair, siding, gutters, windows, and insurance claims. 303 reviews, 4.8 stars. Free inspections.",
     url: "https://www.gatesroof.com/services",
     siteName: "Gates Enterprises",
     locale: "en_US",

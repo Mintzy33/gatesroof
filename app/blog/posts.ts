@@ -4515,7 +4515,7 @@ export const blogPosts: BlogPost[] = [
 
       "Why Gates Enterprises Serves Parker",
       "Gates Enterprises is one of the few roofing companies serving Parker with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. That means Parker homeowners get access to all four major shingle brands with the highest tier warranty coverage from each.",
-      "With over 301 Google reviews and a 4.8 star rating, our reputation is built on consistent quality across hundreds of Front Range projects. We have worked extensively in Parker neighborhoods and understand the local HOA landscape, the permitting process, and the weather patterns that affect your roof.",
+      "With over 303 Google reviews and a 4.8 star rating, our reputation is built on consistent quality across hundreds of Front Range projects. We have worked extensively in Parker neighborhoods and understand the local HOA landscape, the permitting process, and the weather patterns that affect your roof.",
       "If you are a Parker homeowner who needs a roof inspection, is considering a replacement, or has questions about storm damage, call Gates Enterprises at (720) 766-3377 or [LINK: contact] to schedule a free inspection.",
     ],
     internalLinks: [
@@ -4659,7 +4659,7 @@ export const blogPosts: BlogPost[] = [
       "If the replacement is covered by an insurance claim, your out-of-pocket cost is typically limited to your deductible. The insurance company covers the rest based on the approved scope of work [LINK: roof-replacement].",
 
       "Gates Enterprises in Highlands Ranch",
-      "Gates Enterprises has completed numerous roofing projects throughout Highlands Ranch, working with homeowners, HOAs, and insurance companies to deliver quality results. With quadruple manufacturer certification, over 301 Google reviews at 4.8 stars, and deep experience with HR's specific requirements, we provide Highlands Ranch homeowners with the full range of roofing options and the local knowledge to execute the project smoothly.",
+      "Gates Enterprises has completed numerous roofing projects throughout Highlands Ranch, working with homeowners, HOAs, and insurance companies to deliver quality results. With quadruple manufacturer certification, over 303 Google reviews at 4.8 stars, and deep experience with HR's specific requirements, we provide Highlands Ranch homeowners with the full range of roofing options and the local knowledge to execute the project smoothly.",
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Highlands Ranch home.",
     ],
     internalLinks: [
@@ -4714,7 +4714,7 @@ export const blogPosts: BlogPost[] = [
 
       "Choosing a Roofing Contractor in Castle Rock",
       "Castle Rock attracts storm chasers after every major hail event. These out-of-area contractors show up within days, knock on doors, and disappear once the work is done. Protecting yourself means choosing a contractor with verifiable local presence and history, manufacturer certifications from major brands, strong review volume and rating (300 or more reviews above 4.5 stars), and Colorado licensing and insurance documentation.",
-      "Gates Enterprises serves Castle Rock with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 301 Google reviews at 4.8 stars, our team understands Castle Rock's unique weather challenges and can recommend the right materials and installation approach for your specific home and neighborhood.",
+      "Gates Enterprises serves Castle Rock with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 303 Google reviews at 4.8 stars, our team understands Castle Rock's unique weather challenges and can recommend the right materials and installation approach for your specific home and neighborhood.",
       "Schedule a free roof inspection for your Castle Rock home by calling (720) 766-3377 or visiting [LINK: contact].",
     ],
     internalLinks: [
@@ -4771,7 +4771,7 @@ export const blogPosts: BlogPost[] = [
       "Aurora homeowners can [LINK: hailscore] to see what storms have passed over their property, with radar verified data showing hail sizes and dates. It is a smart first step before calling for a professional inspection.",
 
       "Gates Enterprises in Aurora",
-      "Gates Enterprises serves Aurora from the older neighborhoods near Colfax to the newest developments east of E-470. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master) means Aurora homeowners get the full range of material options with top-tier warranty coverage. With over 301 Google reviews at 4.8 stars, we deliver consistent quality across every Aurora neighborhood.",
+      "Gates Enterprises serves Aurora from the older neighborhoods near Colfax to the newest developments east of E-470. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master) means Aurora homeowners get the full range of material options with top-tier warranty coverage. With over 303 Google reviews at 4.8 stars, we deliver consistent quality across every Aurora neighborhood.",
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Aurora home.",
     ],
     internalLinks: [
@@ -4829,7 +4829,7 @@ export const blogPosts: BlogPost[] = [
 
       "Why Gates Enterprises Serves Lakewood",
       "Gates Enterprises is quadruple manufacturer certified: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. This gives Lakewood homeowners access to all four major shingle brands with the best warranty coverage available from each.",
-      "With over 301 Google reviews at 4.8 stars, our reputation is built on consistent execution across hundreds of projects. We understand Lakewood's diverse housing stock, from mid-century ranches to modern foothills homes, and we tailor our recommendations to each home's specific needs.",
+      "With over 303 Google reviews at 4.8 stars, our reputation is built on consistent execution across hundreds of projects. We understand Lakewood's diverse housing stock, from mid-century ranches to modern foothills homes, and we tailor our recommendations to each home's specific needs.",
       "Call (720) 766-3377 or [LINK: contact] for a free roof inspection on your Lakewood home.",
     ],
     internalLinks: [
@@ -4886,7 +4886,7 @@ export const blogPosts: BlogPost[] = [
       "Fort Collins homeowners can [LINK: hailscore] to see radar verified hail events for their specific address, including dates and stone sizes.",
 
       "Gates Enterprises in Fort Collins",
-      "Gates Enterprises serves Fort Collins and Northern Colorado with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 301 Google reviews at 4.8 stars, we bring the same quality and expertise to Fort Collins that we deliver across the entire Front Range.",
+      "Gates Enterprises serves Fort Collins and Northern Colorado with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 303 Google reviews at 4.8 stars, we bring the same quality and expertise to Fort Collins that we deliver across the entire Front Range.",
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Fort Collins home.",
     ],
     internalLinks: [
@@ -4945,7 +4945,7 @@ export const blogPosts: BlogPost[] = [
       "Many Colorado Springs neighborhoods, particularly in the newer developments on the north and east sides, have HOAs with architectural guidelines. Communities like Flying Horse, Cordera, and Northgate have specific requirements for roofing materials. Check with your HOA before selecting materials and submit any required approval requests.",
 
       "Gates Enterprises in Colorado Springs",
-      "Gates Enterprises serves Colorado Springs with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 301 Google reviews at 4.8 stars, we deliver the same certified quality to Springs homeowners and military families that we provide across the entire Front Range.",
+      "Gates Enterprises serves Colorado Springs with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 303 Google reviews at 4.8 stars, we deliver the same certified quality to Springs homeowners and military families that we provide across the entire Front Range.",
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Colorado Springs home.",
     ],
     internalLinks: [
@@ -4995,7 +4995,7 @@ export const blogPosts: BlogPost[] = [
       "Choosing a Roofing Contractor in Arvada",
       "The same principles apply in Arvada as throughout the Front Range: prioritize manufacturer certifications, review volume and consistency, local presence, and insurance claim experience.",
       "Storm chasers are common in Arvada after major hail events. Protect yourself by verifying credentials, checking reviews, and never signing a contract under pressure on your doorstep [LINK: insurance-claims].",
-      "Gates Enterprises serves Arvada with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 301 Google reviews at 4.8 stars, we understand Arvada's unique geography and its implications for your roof.",
+      "Gates Enterprises serves Arvada with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With over 303 Google reviews at 4.8 stars, we understand Arvada's unique geography and its implications for your roof.",
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Arvada home.",
     ],
     internalLinks: [
@@ -5676,7 +5676,7 @@ export const blogPosts: BlogPost[] = [
 
       "Gates Enterprises: Quadruple Certified",
       "Gates Enterprises is one of the few roofing contractors in Colorado with all four major manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. This means every Colorado homeowner we work with has access to all four product lines with the strongest possible warranty from each manufacturer.",
-      "With over 301 Google reviews at 4.8 stars, our certifications are backed by consistent customer satisfaction across hundreds of projects.",
+      "With over 303 Google reviews at 4.8 stars, our certifications are backed by consistent customer satisfaction across hundreds of projects.",
       "Call (720) 766-3377 or [LINK: contact] to learn how manufacturer certifications protect your investment.",
     ],
     internalLinks: [
@@ -5731,7 +5731,7 @@ export const blogPosts: BlogPost[] = [
 
       "The Bottom Line",
       "When choosing between roofing contractors, GAF certification level is one of the most objective quality indicators available. Master Elite represents the top 2 percent, offers the best warranties, and signals a contractor's commitment to ongoing excellence.",
-      "Gates Enterprises holds GAF Master Elite certification along with top-tier certifications from Owens Corning (Preferred), CertainTeed (Shingle Master), and Malarkey (Emerald Premium). With over 301 Google reviews at 4.8 stars, our certifications are backed by proven customer satisfaction.",
+      "Gates Enterprises holds GAF Master Elite certification along with top-tier certifications from Owens Corning (Preferred), CertainTeed (Shingle Master), and Malarkey (Emerald Premium). With over 303 Google reviews at 4.8 stars, our certifications are backed by proven customer satisfaction.",
       "Call (720) 766-3377 or [LINK: contact] to discuss which GAF product and warranty level is right for your home [LINK: insurance-claims].",
     ],
     internalLinks: [
@@ -5797,7 +5797,7 @@ export const blogPosts: BlogPost[] = [
       "Walk away if you hear any of these. We can waive your deductible (illegal in Colorado). Sign today and we will give you a special price (high-pressure tactic). We do not need a permit for this job (they do). We require full payment before starting work (never agree to this). We will handle your insurance claim for you (this should be a collaborative process, not a takeover) [LINK: storm-hail-damage].",
 
       "Gates Enterprises: Ask Us Anything",
-      "Gates Enterprises welcomes every question on this list. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master), have over 301 Google reviews at 4.8 stars, and have been serving Colorado Front Range homeowners with transparent, quality work.",
+      "Gates Enterprises welcomes every question on this list. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master), have over 303 Google reviews at 4.8 stars, and have been serving Colorado Front Range homeowners with transparent, quality work.",
       "Call (720) 766-3377 or [LINK: contact] to start the conversation.",
     ],
     internalLinks: [
@@ -5858,7 +5858,7 @@ export const blogPosts: BlogPost[] = [
       "If a storm chaser offers to waive your deductible, you can report them to the Colorado Division of Insurance. This practice is illegal under state law and the Division investigates complaints. You can also report deceptive business practices to the Colorado Attorney General's office and the Better Business Bureau [LINK: roof-replacement].",
 
       "Gates Enterprises: A Local Company You Can Verify",
-      "Gates Enterprises is a Colorado-based roofing company with quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master), over 301 Google reviews at 4.8 stars, and a permanent presence serving the Front Range. Every certification is verifiable. Every review is from a real Colorado homeowner.",
+      "Gates Enterprises is a Colorado-based roofing company with quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master), over 303 Google reviews at 4.8 stars, and a permanent presence serving the Front Range. Every certification is verifiable. Every review is from a real Colorado homeowner.",
       "Call (720) 766-3377 or [LINK: contact] for a no-pressure roof inspection from a company that will be here long after the storm chasers have left.",
     ],
     internalLinks: [
@@ -5960,7 +5960,7 @@ export const blogPosts: BlogPost[] = [
 
       "Consider for Replacement: Roofs Over 15 Years Old with Multiple Issues",
       "If your roof is aging and the inspection reveals multiple problems across different areas, a full replacement before hail season may be the smartest financial move. A new roof with Class 4 impact resistant shingles gives you the best possible protection going into storm season, and most Colorado insurance companies offer a 20 to 35 percent premium discount for Class 4 roofs [LINK: roof-replacement].",
-      "As a quadruple certified contractor (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master), Gates Enterprises installs impact resistant products from every major manufacturer. We can give you an honest comparison of the options without being locked into pushing one brand. With 301 plus reviews, a 4.8 star average, and more than 7,200 completed projects across the Front Range, we have the experience to back up every recommendation we make.",
+      "As a quadruple certified contractor (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master), Gates Enterprises installs impact resistant products from every major manufacturer. We can give you an honest comparison of the options without being locked into pushing one brand. With 303 plus reviews, a 4.8 star average, and more than 7,200 completed projects across the Front Range, we have the experience to back up every recommendation we make.",
 
       "Your Complete Spring Roof Maintenance Checklist",
       "Here is everything in one list you can print or save to your phone.",

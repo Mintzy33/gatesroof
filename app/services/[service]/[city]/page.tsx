@@ -88,7 +88,7 @@ export default async function Page({ params }: Props) {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.8",
-        reviewCount: "301",
+        reviewCount: "303",
         bestRating: "5",
       },
     },

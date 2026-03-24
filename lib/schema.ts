@@ -17,7 +17,7 @@ export const BUSINESS_INFO = {
     region: "CO",
     country: "US",
   },
-  rating: { value: "4.8", count: "301", best: "5" },
+  rating: { value: "4.8", count: "303", best: "5" },
   priceRange: "$$",
   sameAs: [
     "https://www.facebook.com/GatesEnterprisesLLC/",

@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofing Company in Aurora, Colorado (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Aurora, CO? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 301+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
+  description: "Looking for the best roofer in Aurora, CO? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-aurora" },
   openGraph: {
     title: "Best Roofing Company in Aurora, Colorado (2026)",
-    description: "Looking for the best roofer in Aurora? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 301+ Google reviews, 4.8 stars.",
+    description: "Looking for the best roofer in Aurora? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars.",
     url: "https://www.gatesroof.com/best-roofer-aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 301+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
+    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 303+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
   },
   {
     q: "How often does Aurora get hail damage?",

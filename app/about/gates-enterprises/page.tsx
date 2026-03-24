@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   title:
     "Gates Enterprises LLC | Colorado's Most Certified Roofing Company",
   description:
-    "Gates Enterprises is Colorado's only quadruple manufacturer-certified roofing company. Founded in 2014, serving 65+ cities across the Front Range. 301+ Google reviews, 4.8 stars. Licensed and insured.",
+    "Gates Enterprises is Colorado's only quadruple manufacturer-certified roofing company. Founded in 2014, serving 65+ cities across the Front Range. 303+ Google reviews, 4.8 stars. Licensed and insured.",
   alternates: {
     canonical: "https://www.gatesroof.com/about/gates-enterprises",
   },
   openGraph: {
     title: "Gates Enterprises LLC | Company Credentials",
     description:
-      "Colorado's only quadruple manufacturer-certified roofing contractor. Founded in 2014. Thousands of roofs completed. 301+ Google reviews.",
+      "Colorado's only quadruple manufacturer-certified roofing contractor. Founded in 2014. Thousands of roofs completed. 303+ Google reviews.",
     url: "https://www.gatesroof.com/about/gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -189,7 +189,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
-    reviewCount: "301",
+    reviewCount: "303",
     bestRating: "5",
   },
   openingHoursSpecification: [

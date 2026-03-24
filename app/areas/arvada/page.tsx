@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Arvada Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Arvada's top-rated roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections for Arvada homeowners. Call (720) 766-3377.",
+  title: "Arvada Roofing Contractor | 303 Reviews, 4.8 Stars | Gates Enterprises",
+  description: "Arvada's top-rated roofer. 303 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections for Arvada homeowners. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/arvada" },
   openGraph: {
-    title: "Arvada Roofing Contractor | 301 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Arvada's top-rated roofer. 301 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections for Arvada homeowners. Call (720) 766-3377.",
+    title: "Arvada Roofing Contractor | 303 Reviews, 4.8 Stars | Gates Enterprises",
+    description: "Arvada's top-rated roofer. 303 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections for Arvada homeowners. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/arvada",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8028, "longitude": -105.0875 },
   "areaServed": { "@type": "City", "name": "Arvada", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "301", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "303", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

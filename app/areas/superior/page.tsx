@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "#1 Rated Superior CO Roofer | Free Inspections | Gates Enterprises",
-  description: "Superior homeowners choose Gates Enterprises. 301 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
+  description: "Superior homeowners choose Gates Enterprises. 303 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/superior" },
   openGraph: {
     title: "#1 Rated Superior CO Roofer | Free Inspections | Gates Enterprises",
-    description: "Superior homeowners choose Gates Enterprises. 301 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
+    description: "Superior homeowners choose Gates Enterprises. 303 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/superior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -56,7 +56,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "301",
+        "reviewCount": "303",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

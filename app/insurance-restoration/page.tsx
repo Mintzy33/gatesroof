@@ -5,7 +5,7 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Colorado's Premier Insurance Restoration Roofer | Gates Enterprises",
-  description: "Gates Enterprises is Colorado's leading insurance restoration roofing contractor. Quadruple certified, 301+ reviews, 4.8 stars. We document damage so your insurance company can process your claim accurately. Free inspections. (720) 766-3377.",
+  description: "Gates Enterprises is Colorado's leading insurance restoration roofing contractor. Quadruple certified, 303+ reviews, 4.8 stars. We document damage so your insurance company can process your claim accurately. Free inspections. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/insurance-restoration" },
   openGraph: {
     title: "Colorado's Premier Insurance Restoration Roofer | Gates Enterprises",

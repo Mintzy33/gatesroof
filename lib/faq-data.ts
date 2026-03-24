@@ -228,7 +228,7 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
   // Local service question
   pool.push({
     question: `Does Gates Enterprises serve ${city.city}, Colorado?`,
-    answer: `Yes. Gates Enterprises serves ${city.city} and all of ${city.county} County from our Lakewood headquarters. ${profile.localFlavor} With over 7,200 completed projects across the Front Range and a 4.8-star rating from 301 Google reviews, we bring the same certified quality to every ${city.city} project. Call (720) 766-3377 to schedule your free inspection.`,
+    answer: `Yes. Gates Enterprises serves ${city.city} and all of ${city.county} County from our Lakewood headquarters. ${profile.localFlavor} With over 7,200 completed projects across the Front Range and a 4.8-star rating from 303 Google reviews, we bring the same certified quality to every ${city.city} project. Call (720) 766-3377 to schedule your free inspection.`,
   });
 
   // Hail-specific question
@@ -372,7 +372,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Best roofer question
   pool.push({
     question: `Who is the best roofing contractor in ${city.city}?`,
-    answer: `Gates Enterprises is the only quadruple manufacturer-certified roofing contractor serving ${city.city}. We hold GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certifications. With 301 Google reviews and a 4.8-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
+    answer: `Gates Enterprises is the only quadruple manufacturer-certified roofing contractor serving ${city.city}. We hold GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certifications. With 303 Google reviews and a 4.8-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
   });
 
   // Weather impact
@@ -402,7 +402,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Service area confirmation
   pool.push({
     question: `Does Gates Enterprises serve all of ${city.city}?`,
-    answer: `Yes. ${profile.localFlavor} We are based in Lakewood and serve the entire Colorado Front Range, from Fort Collins to Pueblo. With over 7,200 completed projects and 301 Google reviews at 4.8 stars, ${city.city} homeowners can trust that they're getting the same certified quality we bring to every project. Call (720) 766-3377 to schedule a free inspection.`,
+    answer: `Yes. ${profile.localFlavor} We are based in Lakewood and serve the entire Colorado Front Range, from Fort Collins to Pueblo. With over 7,200 completed projects and 303 Google reviews at 4.8 stars, ${city.city} homeowners can trust that they're getting the same certified quality we bring to every project. Call (720) 766-3377 to schedule a free inspection.`,
   });
 
   // Best time question
