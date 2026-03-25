@@ -40,6 +40,8 @@ const faqSchema = {
     { "@type": "Question", "name": "Do I need to pay anything out of pocket?", "acceptedAnswer": { "@type": "Answer", "text": "Your primary out of pocket cost is typically your insurance deductible. The rest may be covered by your policy, depending on your specific coverage. We work with your insurance adjuster to help ensure the scope of work and pricing align so there are no surprises." } },
     { "@type": "Question", "name": "Can I choose my own contractor or does insurance pick one?", "acceptedAnswer": { "@type": "Answer", "text": "You always have the right to choose your own contractor in Colorado. Your insurance company may suggest preferred vendors, but you are not required to use them." } },
     { "@type": "Question", "name": "What if my insurance restoration gets denied?", "acceptedAnswer": { "@type": "Answer", "text": "It happens, but it's not always the final answer. We can help you understand why coverage was denied and whether a re inspection or supplement is worth pursuing." } },
+    { "@type": "Question", "name": "How long do I have to file a hail damage claim in Colorado?", "acceptedAnswer": { "@type": "Answer", "text": "Most Colorado homeowners insurance policies give you one year from the date of the storm to file a claim. After that window closes, you may lose your right to coverage entirely." } },
+    { "@type": "Question", "name": "What size hail causes roof damage?", "acceptedAnswer": { "@type": "Answer", "text": "Hail as small as 1 inch in diameter can damage standard asphalt shingles. At 1.5 inches and above, damage becomes significant and widespread. Colorado regularly produces hailstones of 2 inches or larger." } },
   ],
 };
 

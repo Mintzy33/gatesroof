@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Clipboard, Palette, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Zap } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -31,10 +32,16 @@ const WHY_GATES = [
 ];
 
 const FAQS = [
-  { q: "How do I know when my siding needs to be replaced?", a: "Warping, cracking, fading, bubbling, or increased energy bills can all point to siding that\u2019s no longer performing. We offer free inspections to help you decide." },
-  { q: "What siding material is best for Colorado?", a: "Fiber cement and engineered wood are popular choices along the Front Range because they hold up well against hail, UV exposure, and dramatic temperature changes." },
-  { q: "Can you replace siding damaged by a storm?", a: "Absolutely. We repair and replace storm damaged siding regularly, and we can assist with the insurance restoration process to help support your claim." },
-  { q: "How long does siding installation take?", a: "Most homes can be completed in one to two weeks depending on the size of the project and material availability." },
+  { q: "How much does siding replacement cost in Colorado?", a: "Siding replacement in Colorado costs $8,000 to $20,000 depending on material, home size, and complexity. James Hardie fiber cement is the most popular choice and typically runs $10 to $15 per square foot installed. Vinyl siding is less expensive at $5 to $8 per square foot. If your siding was damaged by hail or wind, your homeowners insurance typically covers the replacement cost minus your deductible." },
+  { q: "How do I know when my siding needs to be replaced?", a: "Warping, cracking, fading, bubbling, or increased energy bills can all point to siding that is no longer performing. Other signs include mold or mildew growth, soft or rotting spots when you press on the siding, and paint peeling excessively despite recent painting. We offer free inspections to help you decide whether repair or replacement is the right move." },
+  { q: "What siding material is best for Colorado homes?", a: "James Hardie fiber cement siding is our top recommendation for Colorado. It handles UV radiation, temperature extremes, and hail better than vinyl or wood. It carries a Class A fire rating, which is increasingly important in Colorado. It also holds paint well at altitude where UV degradation is more intense. We also install premium vinyl and engineered wood options for homeowners who prefer a different look or price point." },
+  { q: "Can you replace siding damaged by a storm?", a: "Absolutely. We repair and replace storm-damaged siding regularly, and we handle the insurance restoration process from start to finish. Hail frequently damages siding alongside roofing, and a single claim typically covers both. We document all siding damage as part of our comprehensive exterior inspection." },
+  { q: "How long does siding installation take?", a: "A full siding installation typically takes one to two weeks depending on home size and complexity. Partial repairs and small sections are usually completed in one to two days. We work to minimize disruption to your daily routine throughout the project." },
+  { q: "Can siding and roof replacement be done at the same time?", a: "Yes, and we recommend it when both need attention. Coordinating roof and siding work saves time, reduces disruption, and often reduces total cost because scaffolding and crew mobilization happen once instead of twice. If both were damaged by the same storm, a single insurance claim typically covers everything." },
+  { q: "Does homeowners insurance cover siding replacement?", a: "If your siding was damaged by hail, wind, or another covered event, your homeowners insurance should cover the replacement cost minus your deductible. We include siding in every storm damage inspection because hail frequently damages siding alongside roofing. Gates Enterprises handles the documentation and insurance coordination." },
+  { q: "What is James Hardie fiber cement siding?", a: "James Hardie is the leading manufacturer of fiber cement siding, made from a mix of cement, sand, and cellulose fibers. It resists fire (Class A rated), rot, pests, and hail better than vinyl or wood. It comes in a wide range of colors and styles, including lap siding, board and batten, and shingle panels. The ColorPlus finish is baked on at the factory and carries a 15-year fade warranty." },
+  { q: "How do I maintain my new siding?", a: "Fiber cement siding requires very little maintenance. An annual wash with a garden hose removes dirt and pollen. Inspect caulking around windows and trim every year and touch up any chipped paint. Vinyl siding needs even less, just periodic washing. Avoid pressure washing at high settings, which can force water behind the siding. Regular inspections catch small issues before they become expensive problems." },
+  { q: "Will new siding improve my home's energy efficiency?", a: "Yes. New siding installation includes a layer of house wrap and often insulated sheathing underneath, which significantly reduces air infiltration. Homes with old, damaged, or poorly installed siding often have drafts and high energy bills. Modern siding systems create a tighter building envelope that keeps conditioned air inside and Colorado's extreme temperatures outside." },
 ];
 
 export default function SidingContent() {
@@ -67,6 +74,9 @@ export default function SidingContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Siding replacement in Colorado costs $8,000 to $20,000 depending on material and home size. James Hardie fiber cement is the most popular choice for Colorado homes due to its durability against hail, wind, and UV exposure. Gates Enterprises offers free siding inspections and works with your insurance if storm damage is involved." />
 
       {/* ─── INTRO ─── */}
       <ScrollReveal>

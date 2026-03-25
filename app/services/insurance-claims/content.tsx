@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Search, FileText, Shield, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Clock, Users } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -34,10 +35,16 @@ const WHY_GATES = [
 ];
 
 const FAQS = [
-  { q: "Do I have to pay anything out of pocket?", a: "You\u2019re typically responsible for your deductible. Beyond that, most storm damage repairs may be covered by your homeowner\u2019s insurance, depending on your specific policy and the extent of damage." },
-  { q: "Will you work with my insurance company?", a: "We coordinate with your insurance adjuster, attend inspections, provide thorough documentation, and support you throughout the entire restoration process." },
-  { q: "What if my insurance estimate seems too low?", a: "We\u2019ll review the estimate and submit additional documentation if needed. Our certifications and thorough documentation often help resolve discrepancies in your favor." },
-  { q: "Is there a deadline after a storm?", a: "Most policies have a time limit, often one year from the date of the storm. Schedule an inspection as soon as possible to protect your eligibility." },
+  { q: "Do I have to pay anything out of pocket for an insurance claim?", a: "You are typically responsible for your deductible. Beyond that, most storm damage repairs may be covered by your homeowner's insurance, depending on your specific policy and the extent of damage. Gates Enterprises works to ensure the insurance company covers the full scope of work so there are no surprises." },
+  { q: "Will you work with my insurance company?", a: "Yes. We coordinate with your insurance adjuster, attend on-site inspections, provide thorough documentation with photos and measurements, and support you throughout the entire restoration process. Our team knows Xactimate line items inside and out." },
+  { q: "What if my insurance estimate seems too low?", a: "We review every insurance estimate line by line. If the estimate falls short, we prepare detailed supplements with additional documentation, photos, and manufacturer specifications. Our certifications and thorough documentation often help resolve discrepancies in your favor. We have successfully supplemented thousands of underpaid claims." },
+  { q: "Is there a deadline to file a roof insurance claim in Colorado?", a: "Most policies have a one-year window from the date of the storm to file a claim. After that deadline passes, you may lose your right to coverage entirely. Schedule an inspection as soon as possible after a storm to protect your eligibility and document the damage while it is fresh." },
+  { q: "Can I choose my own contractor for an insurance claim?", a: "Yes. Colorado law gives you the right to choose your own contractor regardless of what your insurance company suggests. Insurance company preferred vendor programs exist to benefit the insurer, not the homeowner. Gates Enterprises works for you, not for the insurance company. We document all damage thoroughly, meet adjusters on site, and fight for the full scope of work your home needs." },
+  { q: "What if my insurance claim gets denied?", a: "A denial is not always the final answer. We help you understand why coverage was denied and whether a re-inspection or supplement is worth pursuing. In many cases, having a certified contractor present during the adjuster's inspection makes a significant difference in the outcome. We have successfully overturned many denied claims with additional documentation." },
+  { q: "How long does the insurance claim process take?", a: "The typical insurance claim process runs four to eight weeks from filing to completed restoration. The largest variable is your insurance company's adjuster scheduling. Gates Enterprises handles all documentation, adjuster meetings, and supplements to keep the process moving as efficiently as possible." },
+  { q: "What does the insurance claims process look like step by step?", a: "First, we perform a free inspection and document all damage with photos and measurements. Next, you file a claim with your insurance company. We then meet your adjuster on site to walk the roof together. Once the claim is approved, we schedule your project. If the initial estimate falls short, we submit supplements. Finally, we complete the restoration and handle the final walkthrough." },
+  { q: "What types of damage does homeowners insurance cover?", a: "Homeowners insurance covers damage from hail, wind, fallen trees, lightning, and other sudden events. The most common claims in Colorado involve hail damage to roofing, siding, gutters, and windows. Normal wear and tear, deferred maintenance, and cosmetic-only damage are typically not covered. A free inspection from Gates Enterprises will determine if your damage is claim-worthy." },
+  { q: "Do I need to get multiple estimates for my insurance claim?", a: "No. Your insurance company cannot require multiple estimates. You have the right to choose a single contractor you trust. Gates Enterprises provides a detailed scope of work that aligns with Xactimate pricing, which is the same software your insurance company uses. This ensures a smooth process without the hassle of shopping around." },
 ];
 
 export default function InsuranceContent() {
@@ -70,6 +77,9 @@ export default function InsuranceContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Filing a roof insurance claim in Colorado starts with a professional inspection to document damage. Gates Enterprises handles the entire claims process, working directly with your adjuster. Most homeowners only pay their deductible." />
 
       {/* ─── INTRO ─── */}
       <ScrollReveal>

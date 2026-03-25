@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Palette, Hammer, Paintbrush, CheckCircle, ShieldCheck, Sparkles, Home, FileText } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -31,10 +32,15 @@ const WHY_GATES = [
 ];
 
 const FAQS = [
-  { q: "How long does a typical paint job take?", a: "Most interior rooms take 1 to 2 days. Full exterior projects take 3 to 5 days depending on size and condition." },
-  { q: "Do you handle surface repairs before painting?", a: "Yes. We repair cracks, holes, peeling, and other damage during prep. Proper preparation is essential." },
-  { q: "What kind of paint do you use?", a: "Premium, low VOC paints from trusted brands formulated for Colorado\u2019s climate." },
-  { q: "Can you paint my home\u2019s exterior after a hail storm?", a: "Absolutely. We can repair and repaint, and assist with insurance restoration if covered." },
+  { q: "How much does exterior painting cost in Colorado?", a: "Exterior painting in Colorado typically costs $3,000 to $8,000 depending on home size, number of stories, surface condition, and paint quality. Homes with extensive prep work needed (scraping, caulking, wood repair) will be on the higher end. We provide detailed estimates with no hidden fees." },
+  { q: "How long does a typical paint job take?", a: "Most interior rooms take 1 to 2 days. A full interior home project takes 3 to 5 days. Full exterior projects take 3 to 7 days depending on size, condition, and weather. We coordinate scheduling around Colorado weather patterns to avoid rain and extreme temperatures during application." },
+  { q: "Do you handle surface repairs before painting?", a: "Yes. Proper prep is the difference between a paint job that lasts 3 years and one that lasts 10. We repair cracks, holes, peeling, rotted wood, and other damage during prep. On exteriors, we scrape, sand, caulk, and prime all surfaces before applying finish coats. This is where most painters cut corners. We don't." },
+  { q: "What kind of paint do you use?", a: "We use premium, low-VOC paints from trusted brands specifically formulated for Colorado's climate. At altitude, UV radiation is 20 to 30% more intense, which breaks down cheaper paints faster. We select products with superior UV resistance, flexibility for temperature swings, and excellent color retention." },
+  { q: "Can you paint my home's exterior after a hail storm?", a: "Absolutely. Hail frequently damages exterior paint on siding, trim, and window frames. We repair the underlying damage and repaint with climate-rated products. If the damage was caused by a covered storm event, your homeowners insurance may cover the cost. We handle the documentation and insurance coordination." },
+  { q: "How often should I repaint my home's exterior in Colorado?", a: "In Colorado's harsh climate, exterior paint typically lasts 5 to 7 years on wood surfaces and 7 to 10 years on fiber cement or vinyl. South and west-facing walls get more UV exposure and may need repainting sooner. Regular inspection helps you catch peeling, cracking, or fading before moisture damage occurs underneath." },
+  { q: "When is the best time to paint exterior in Colorado?", a: "Late spring through early fall (May through September) offers the best conditions for exterior painting in Colorado. Ideal conditions are temperatures between 50 and 85 degrees with low humidity. We avoid painting in direct intense sun, which can cause the paint to dry too quickly and not bond properly. Morning application on sun-facing walls is our typical approach." },
+  { q: "Can you match my existing paint color?", a: "Yes. We use color-matching technology to match any existing color on your home. We can also help you select new colors that complement your roof, landscaping, and neighborhood aesthetic. We bring sample swatches and can apply test patches so you can see the color in different lighting before committing." },
+  { q: "Do you paint both interior and exterior?", a: "Yes. Gates Enterprises handles both interior and exterior painting projects. Interior work includes walls, ceilings, trim, doors, and cabinets. Exterior work includes siding, trim, fascia, soffits, shutters, and front doors. We often bundle painting with siding and trim replacement for a complete exterior transformation." },
 ];
 
 export default function PaintContent() {
@@ -67,6 +73,9 @@ export default function PaintContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Exterior painting in Colorado typically costs $3,000 to $8,000 depending on home size and condition. Interior painting runs $1,500 to $5,000 for most homes. Colorado's intense UV and temperature swings make proper prep and premium paint essential for lasting results. Gates Enterprises uses low-VOC, climate-rated paints." />
 
       {/* ─── SERVICE PHOTOS ─── */}
       <section style={{ padding: "64px 24px 0", background: WHITE }}>

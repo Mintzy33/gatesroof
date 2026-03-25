@@ -32,11 +32,12 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How much does a roof repair cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Simple repairs like pipe boot replacements or a few missing shingles typically run $200 to $600. More complex repairs involving flashing, valleys, or multiple areas can range from $500 to $2,000. We'll give you an exact price before we start."}},
-    {"@type": "Question", "name": "Can you repair my roof temporarily until I can afford a replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can make targeted repairs to stop active leaks and buy you time. We'll be upfront about how long the repair should hold and what a replacement would cost when you're ready."}},
-    {"@type": "Question", "name": "Do you repair flat roofs?", "acceptedAnswer": {"@type": "Answer", "text": "We primarily work on residential pitched roofs. For flat or low slope commercial roofs, we can refer you to a trusted specialist."}},
-    {"@type": "Question", "name": "Is a roof leak covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the cause. Storm damage is typically covered. Wear and tear or deferred maintenance is not. We can inspect and help you determine whether it makes sense to file."}},
-    {"@type": "Question", "name": "How do I know if I need a repair or a full replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Age, extent of damage, and condition of the surrounding shingles all factor in. If your roof is under 15 years old and the damage is isolated, repair is usually the right call. We'll give you an honest recommendation either way."}}
+    {"@type": "Question", "name": "How much does a roof repair cost in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Minor roof repairs in Colorado typically cost $300 to $1,500. Simple repairs like pipe boot replacements run $200 to $600. More complex repairs involving flashing or valleys range from $500 to $2,000."}},
+    {"@type": "Question", "name": "How do I know if my roof needs repair or full replacement?", "acceptedAnswer": {"@type": "Answer", "text": "If your roof is less than 15 years old and the damage is isolated, repair is usually the right call. If approaching 20+ years with widespread damage, replacement is the better investment."}},
+    {"@type": "Question", "name": "What are the most common roof repairs in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Pipe boot seal failures, flashing leaks around chimneys and skylights, wind-lifted shingles, and minor hail damage. Most are straightforward and cost a fraction of a full replacement."}},
+    {"@type": "Question", "name": "Is a roof leak covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "Storm damage from hail, wind, or fallen debris is typically covered. Normal wear and tear or deferred maintenance is not. We can inspect and help determine if the damage is claim-worthy."}},
+    {"@type": "Question", "name": "How quickly can you respond to an emergency roof repair?", "acceptedAnswer": {"@type": "Answer", "text": "Emergency tarping to stop active leaks can often be done same-day or next-day. Our team carries common repair materials on our trucks to minimize return trips."}},
+    {"@type": "Question", "name": "Do you repair flat roofs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We handle both pitched and flat roof repairs, including TPO, EPDM, and modified bitumen systems."}}
   ]
 };
 

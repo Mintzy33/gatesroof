@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Search, Ruler, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Zap, Thermometer } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -33,11 +34,16 @@ const WHY_GATES = [
 ];
 
 const FAQS = [
-  { q: "How do I know if my windows need to be replaced?", a: "Drafts, condensation between panes, difficulty opening or closing, and rising energy bills are common signs. We offer free inspections to help you decide." },
-  { q: "What type of window is best for Colorado?", a: "Double pane vinyl or fiberglass with Low E glass and argon fill. These options offer excellent insulation against Colorado\u2019s temperature extremes." },
-  { q: "How long does window replacement take?", a: "Most homes can be completed in one to two days depending on the number of windows being replaced." },
-  { q: "Are broken windows covered by insurance?", a: "If the damage was caused by hail or wind, yes. We include window damage in storm damage restorations and handle the documentation." },
-  { q: "Do new windows really save on energy costs?", a: "Yes. Modern double pane windows with Low E coating and argon fill can reduce heat loss by up to 50% compared to single pane or older double pane units." },
+  { q: "How much does window replacement cost in Colorado?", a: "Window replacement in Colorado typically costs $400 to $1,200 per window depending on size, style, frame material, and glass options. A full home with 15 to 20 windows usually runs $8,000 to $20,000 depending on specifications. If windows were damaged by hail or wind, your homeowners insurance may cover the replacement cost." },
+  { q: "How do I know if my windows need to be replaced?", a: "Drafts near windows, condensation or fog between panes, difficulty opening or closing, visible rot or damage to frames, and rising energy bills are all common signs your windows are no longer performing. Single-pane windows in Colorado homes should be upgraded to double-pane for both comfort and efficiency. We offer free inspections to help you decide." },
+  { q: "What type of window is best for Colorado homes?", a: "Double-pane vinyl or fiberglass windows with Low-E glass and argon fill are the best choice for Colorado. These options offer excellent insulation against Colorado's temperature extremes, blocking UV radiation while retaining heat in winter. For homes in hail-prone areas, impact-resistant glass options are also available." },
+  { q: "How long does window replacement take?", a: "Most homes can be completed in one to two days depending on the number of windows being replaced. Each window takes approximately 30 to 60 minutes to install. We protect your home's interior throughout the process and clean up completely when finished." },
+  { q: "Are broken windows covered by homeowners insurance?", a: "If the damage was caused by hail, wind, or another covered event, yes. We include window damage in storm damage inspections and handle all documentation for your insurance claim. Windows are frequently damaged alongside roofing and siding during Colorado hail events, and a single claim typically covers all exterior damage." },
+  { q: "Do new windows really save on energy costs?", a: "Yes. Modern double-pane windows with Low-E coating and argon fill can reduce heat loss by up to 50% compared to single-pane or older double-pane units. In Colorado's climate with extreme temperature swings, efficient windows make a noticeable difference in both comfort and utility bills year-round." },
+  { q: "What is Low-E glass and why does it matter in Colorado?", a: "Low-E (low emissivity) glass has a microscopic metallic coating that reflects heat while allowing light to pass through. In Colorado, this means less heat escapes in winter and less solar heat enters in summer. At Colorado's elevation, UV radiation is 20 to 30% more intense than at sea level, making Low-E glass especially important for protecting furniture, flooring, and artwork from fading." },
+  { q: "Can you replace just a few windows or do I need to do all of them?", a: "You can replace as many or as few windows as you need. Many homeowners start with the windows that are performing worst, such as those facing prevailing winds or getting direct sun exposure. If your windows were damaged by a storm, we assess and document every affected window for your insurance claim." },
+  { q: "What is the difference between vinyl and fiberglass windows?", a: "Vinyl windows are the most popular choice for Colorado homes, offering excellent value, low maintenance, and good insulation. Fiberglass windows are stronger, more dimensionally stable in temperature extremes, and can be painted. Fiberglass costs more upfront but performs slightly better in Colorado's harsh climate with extreme temperature swings." },
+  { q: "Do you install impact-resistant windows?", a: "Yes. Impact-resistant windows use laminated glass that holds together when struck, similar to a car windshield. They are an excellent option for Colorado homes in hail-prone areas, providing protection against both storm damage and break-ins. Some insurance companies offer premium discounts for impact-resistant windows." },
 ];
 
 export default function WindowsContent() {
@@ -70,6 +76,9 @@ export default function WindowsContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Window replacement in Colorado typically costs $400 to $1,200 per window depending on size, style, and glass options. Energy-efficient double-pane windows with Low-E glass can reduce heat loss by up to 50%. Gates Enterprises includes window damage in storm damage inspections, and insurance often covers hail-broken windows." />
 
       {/* ─── SERVICE PHOTOS ─── */}
       <section style={{ padding: "64px 24px 0", background: WHITE }}>

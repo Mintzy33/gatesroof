@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Search, FileText, Shield, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Clock, Zap } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -42,6 +43,8 @@ const FAQS = [
   { q: "Do I need to pay anything out of pocket?", a: "Your primary out of pocket cost is typically your insurance deductible. The rest may be covered by your policy, depending on your specific coverage. We work with your insurance adjuster to help ensure the scope of work and pricing align so there are no surprises." },
   { q: "Can I choose my own contractor or does insurance pick one?", a: "You always have the right to choose your own contractor in Colorado. Your insurance company may suggest preferred vendors, but you are not required to use them. Choosing a quadruple manufacturer certified contractor like Gates Enterprises ensures your roof is installed to the highest standards with warranties that preferred vendor programs often can't match." },
   { q: "What if my insurance restoration gets denied?", a: "It happens, but it's not always the final answer. We can help you understand why coverage was denied and whether a re inspection or supplement is worth pursuing. In many cases, having a certified contractor present during the adjuster's inspection makes a significant difference in the outcome." },
+  { q: "How long do I have to file a hail damage claim in Colorado?", a: "Most Colorado homeowners insurance policies give you one year from the date of the storm to file a claim. After that window closes, you may lose your right to coverage entirely. Unrepaired hail damage also allows moisture intrusion that causes secondary damage your insurance may not cover. If your home was in a storm's path within the past year, call (720) 766-3377 for a free inspection before your filing window expires." },
+  { q: "What size hail causes roof damage?", a: "Hail as small as 1 inch in diameter (about the size of a quarter) can damage standard asphalt shingles. At 1.5 inches and above, damage becomes significant and widespread. Colorado regularly produces hailstones of 2 inches or larger, which can destroy even relatively new roofs. Class 4 impact-resistant shingles are tested to withstand 2 inch steel ball impacts and are our top recommendation for Colorado homes." },
 ];
 
 export default function StormContent() {
@@ -74,6 +77,9 @@ export default function StormContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Colorado averages 3 to 4 significant hail events per year. Most hail damage is not visible from the ground and requires a professional inspection to identify. If your home was in a recent hail zone, your homeowner's insurance typically covers the full cost of repair minus your deductible." />
 
       {/* ─── INTRO SECTION ─── */}
       <ScrollReveal>

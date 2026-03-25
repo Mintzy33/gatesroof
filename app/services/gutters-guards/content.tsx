@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Clipboard, Ruler, Hammer, CheckCircle, Wrench, Calculator, Layers, ShieldCheck } from "lucide-react";
+import AnswerCapsule from "../../components/AnswerCapsule";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -37,7 +38,10 @@ const FAQS = [
   { q: "Do you offer gutter guards?", a: "Yes. Gutter guards reduce debris buildup and help your system perform better with less maintenance. They're especially valuable in Colorado where pine needles, leaves, and granule runoff from shingles can clog gutters fast. They won't eliminate cleaning entirely, but they'll cut it down significantly." },
   { q: "Do you replace fascia and soffit too?", a: "Yes. Damaged gutters often mean damaged fascia underneath. We inspect the fascia and soffit during every gutter job and can replace rotted or damaged sections as part of the install. No need to hire a separate contractor." },
   { q: "Can new gutters be installed at the same time as a new roof?", a: "Absolutely, and we recommend it. Installing gutters with your roof replacement saves you a second trip, ensures everything integrates properly, and usually costs less than doing them separately." },
-  { q: "Does insurance cover gutter replacement?", a: "If your gutters were damaged by hail or a storm, your homeowner's insurance may cover replacement. We can inspect the damage and help you determine whether filing makes sense." },
+  { q: "Does insurance cover gutter replacement?", a: "If your gutters were damaged by hail or a storm, your homeowner's insurance may cover replacement. We can inspect the damage and help you determine whether filing makes sense. Gutter damage is commonly included alongside roof and siding claims from the same storm event." },
+  { q: "How much do seamless gutters cost in Colorado?", a: "Seamless gutter installation in Colorado typically costs $1,500 to $4,000 for an average home depending on the home's size, number of stories, and gutter profile selected. We offer 5-inch and 6-inch options. For homes with storm damage, gutter replacement is often included in your insurance claim at no additional out-of-pocket cost beyond your deductible." },
+  { q: "What size gutters does my Colorado home need?", a: "Most Colorado homes use 5-inch seamless gutters with 2x3-inch downspouts. Homes with steep roof pitches, large roof areas, or multiple stories may need 6-inch gutters with 3x4-inch downspouts to handle the volume of water during heavy Colorado thunderstorms. We calculate the correct size based on your specific roof area, pitch, and local rainfall intensity." },
+  { q: "How often should gutters be cleaned in Colorado?", a: "Without gutter guards, Colorado homes typically need gutter cleaning two to three times per year: once in late spring after pollen and seed pods, once in late fall after leaves drop, and once after any significant storm. Homes near pine trees may need more frequent cleaning. Gutter guards significantly reduce cleaning frequency and are a smart long-term investment." },
 ];
 
 export default function GuttersContent() {
@@ -70,6 +74,9 @@ export default function GuttersContent() {
           </div>
         </div>
       </section>
+
+      {/* ─── ANSWER CAPSULE ─── */}
+      <AnswerCapsule text="Seamless gutter installation in Colorado typically costs $1,500 to $4,000 for an average home. Properly functioning gutters prevent foundation damage, ice dams, and landscape erosion. Gates Enterprises fabricates seamless gutters on site and installs them the same day." />
 
       {/* ─── INTRO ─── */}
       <ScrollReveal>
