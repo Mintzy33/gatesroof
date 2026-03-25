@@ -58,7 +58,7 @@ const localBusinessSchema = {
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
   "image": "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
-  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.8 star rating, 300+ Google reviews.",
+  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.8 star rating, 305+ Google reviews.",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
@@ -69,8 +69,9 @@ const localBusinessSchema = {
     "postalCode": "80215",
     "addressCountry": "US"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 39.7047, "longitude": -105.0814 },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.7392, "longitude": -105.0781 },
   "areaServed": [
+    {"@type":"State","name":"Colorado"},
     {"@type":"City","name":"Lakewood","addressRegion":"CO"},{"@type":"City","name":"Denver","addressRegion":"CO"},
     {"@type":"City","name":"Aurora","addressRegion":"CO"},{"@type":"City","name":"Arvada","addressRegion":"CO"},
     {"@type":"City","name":"Westminster","addressRegion":"CO"},{"@type":"City","name":"Thornton","addressRegion":"CO"},
@@ -87,31 +88,35 @@ const localBusinessSchema = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Roofing & Exterior Services",
+    "name": "Roofing Services",
     "itemListElement": [
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Replacement","url":"https://www.gatesroof.com/services/roof-replacement"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm & Hail Damage Repair","url":"https://www.gatesroof.com/services/storm-hail-damage"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm and Hail Damage Repair","url":"https://www.gatesroof.com/services/storm-hail-damage"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Repair","url":"https://www.gatesroof.com/services/roof-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Insurance Claims Assistance","url":"https://www.gatesroof.com/services/insurance-claims"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Siding Installation","url":"https://www.gatesroof.com/services/siding-exterior"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gutter Installation","url":"https://www.gatesroof.com/services/gutters-guards"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Repair","url":"https://www.gatesroof.com/services/roof-repair"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Insurance Restoration","url":"https://www.gatesroof.com/services/insurance-claims"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Exterior Painting","url":"https://www.gatesroof.com/services"}}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Exterior Painting","url":"https://www.gatesroof.com/services/paint"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Window Replacement","url":"https://www.gatesroof.com/services/windows"}}
     ]
   },
   "knowsAbout": ["GAF roofing systems","CertainTeed roofing","Malarkey shingles","Owens Corning roofing","Class 4 impact-resistant shingles","Colorado hail damage","Insurance restoration"],
   "hasCredential": [
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"GAF Master Elite Contractor"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"CertainTeed Shingle Master Pro"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"CertainTeed Shingle Master"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
   "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"305","bestRating":"5"},
-  "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"00:00","closes":"00:00","description":"By appointment"}
-  ],
+  "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"},
   "priceRange": "$$",
-  "sameAs": ["https://www.facebook.com/gatesenterprises","https://www.instagram.com/gatesenterprises","https://www.google.com/maps/place/Gates+Enterprises"]
+  "sameAs": [
+    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
+    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
+    "https://www.instagram.com/gatesroofing",
+    "https://www.google.com/maps/place/Gates+Enterprises+LLC"
+  ]
 };
 
 const organizationSchema = {
@@ -129,7 +134,13 @@ const organizationSchema = {
     "areaServed": "US",
     "availableLanguage": ["English","Spanish"]
   },
-  "sameAs": ["https://www.facebook.com/gatesenterprises","https://www.instagram.com/gatesenterprises","https://www.google.com/maps/place/Gates+Enterprises"]
+  "sameAs": [
+    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
+    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
+    "https://www.instagram.com/gatesroofing",
+    "https://www.google.com/maps/place/Gates+Enterprises+LLC"
+  ]
 };
 
 const websiteSchema = {
@@ -178,7 +189,7 @@ const faqSchema = {
     {"@type":"Question","name":"How long does a roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins."}},
     {"@type":"Question","name":"What's the difference between repair and replacement?","acceptedAnswer":{"@type":"Answer","text":"Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty."}},
     {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection."}},
-    {"@type":"Question","name":"How do I know if my roof has hail damage?","acceptedAnswer":{"@type":"Answer","text":"Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture — those are signs your roof was likely hit too. The only way to know for sure is a professional inspection."}},
+    {"@type":"Question","name":"How do I know if my roof has hail damage?","acceptedAnswer":{"@type":"Answer","text":"Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. Those are signs your roof was likely hit too. The only way to know for sure is a professional inspection."}},
     {"@type":"Question","name":"What if my insurance claim is denied?","acceptedAnswer":{"@type":"Answer","text":"Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively."}}
   ]
 };

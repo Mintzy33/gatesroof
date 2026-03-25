@@ -63,7 +63,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Premium materials including impact resistant Class 4 options",
               "thousands of roofs completed across the Denver metro",
-              "4.8 star Google rating from 300+ verified reviews",
+              "4.8 star Google rating from 305+ verified reviews",
               "CertainTeed Shingle Master Pro and Owens Corning Preferred certified",
               "Free inspections with detailed photo documentation",
             ].map((item, i) => (
@@ -79,6 +79,61 @@ export default function CityContent() {
         items={faqItems}
         title="Frequently Asked Questions: Roofing in Centennial, CO"
       />
+
+      {/* ─── NEIGHBORHOOD GUIDE ─── */}
+      <section style={{ padding: "64px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Roofing by Centennial Neighborhood</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Centennial spans a wide range of neighborhoods, each with different roofing needs depending on the era the homes were built and the HOA requirements in the community.</p>
+          
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12, marginTop: 32 }}>Southglenn and Walnut Hills</h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>Many homes in Southglenn and Walnut Hills were built in the 1970s and 1980s. If the roof has never been replaced, it is well past its useful life. These neighborhoods have seen significant hail events over the past decade, and older three-tab shingles provide minimal impact resistance. We recommend upgrading to architectural shingles with a Class 4 impact rating, which can also qualify for insurance premium discounts.</p>
+
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12, marginTop: 32 }}>Piney Creek and Cherry Knolls</h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>Built primarily in the 1980s and 1990s, homes in Piney Creek and Cherry Knolls typically have architectural shingles that may be on their second or third roof. These established communities often have HOA architectural review requirements. Gates Enterprises handles the full HOA submission process, including material specifications, color samples, and manufacturer documentation.</p>
+
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12, marginTop: 32 }}>Foxfield and Greenwood South</h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>These are some of Centennial's premium neighborhoods with larger lots and higher-end homes. Homeowners here expect top-tier materials and workmanship. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Platinum, Malarkey Emerald Premium, and CertainTeed Shingle Master) means we can offer the highest warranty tiers available from any major manufacturer, including the GAF Golden Pledge 50-year warranty.</p>
+
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12, marginTop: 32 }}>The Knolls</h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>The Knolls features a mix of building eras and roofing materials. Whether you have a 1980s ranch with original three-tab shingles or a newer build with architectural shingles, our inspectors provide a thorough assessment with photo documentation so you know exactly where your roof stands.</p>
+        </div>
+      </section>
+
+      {/* ─── HAIL EXPOSURE + INSURANCE ─── */}
+      <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Centennial Hail Exposure and Insurance Claims</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Centennial sits in the south Denver metro, one of the most hail-active corridors in the United States. Its proximity to the Palmer Divide means severe thunderstorms frequently track through Arapahoe County during spring and summer months. According to NOAA data, the Denver metro area averages 3 to 4 significant hail events per year, with many of them impacting south metro communities like Centennial, <Link href="/areas/highlands-ranch" style={{ color: ACCENT, textDecoration: "none" }}>Highlands Ranch</Link>, and <Link href="/areas/parker" style={{ color: ACCENT, textDecoration: "none" }}>Parker</Link>.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Most hail damage is not visible from the ground. Granule loss, hairline fractures in shingles, and compromised flashing often go undetected until a small leak turns into a major problem. That is why we recommend a professional inspection after every significant storm event in the Centennial area.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Gates Enterprises handles insurance restoration claims every day across Arapahoe County. We document damage with detailed photography, prepare Xactimate estimates that match what your insurance adjuster expects, and work directly with your insurance company throughout the process. Most homeowners only pay their deductible. <Link href="/services/insurance-claims" style={{ color: ACCENT, textDecoration: "none" }}>Learn more about our insurance claims process</Link>.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>For Centennial homeowners looking to reduce future risk, we recommend impact-resistant Class 4 shingles. These products are tested to withstand 2-inch hail impacts and many Colorado insurance providers offer premium discounts of 15% to 30% for homes with Class 4 roofing installed.</p>
+          <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12, marginTop: 32 }}>Arapahoe County Building Permits</h3>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 16 }}>Roof replacements in Centennial require a building permit through Arapahoe County. Gates Enterprises handles the entire permitting process for you, including application, inspection scheduling, and final sign-off. We pull permits on every job because it protects your warranty and your home's resale value.</p>
+          <div style={{ background: WHITE, borderRadius: 16, padding: 24, border: `1px solid rgba(13,33,55,0.06)`, marginTop: 32 }}>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT, lineHeight: 1.7, margin: 0 }}>📖 <strong>Related guide:</strong> <Link href="/blog/centennial-colorado-hail-damage" style={{ color: ACCENT, textDecoration: "none" }}>Centennial Colorado Hail Damage: What South Metro Homeowners Need to Know</Link></p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── NEARBY AREAS ─── */}
+      <section style={{ padding: "48px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 24, fontWeight: 800, color: NAVY, marginBottom: 16 }}>We Also Serve These Nearby Communities</h2>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
+            {[
+              { name: "Parker", slug: "parker" },
+              { name: "Highlands Ranch", slug: "highlands-ranch" },
+              { name: "Littleton", slug: "littleton" },
+              { name: "Aurora", slug: "aurora" },
+              { name: "Denver", slug: "denver" },
+              { name: "Castle Rock", slug: "castle-rock" },
+            ].map((city) => (
+              <Link key={city.slug} href={`/areas/${city.slug}`} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 16px", background: LIGHT_BG, borderRadius: 100, border: `1px solid rgba(37,99,235,0.1)` }}>{city.name}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
 <CTA title="Need a roofer in Centennial?" subtitle="Call Gates Enterprises at (720) 766-3377 for a free inspection. We offer the premium warranties and HOA expertise that Centennial homeowners expect." />
 

@@ -20,37 +20,101 @@ ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 BASE = "https://www.gatesroof.com"
 MAX_SUBMISSIONS = 100
 
-# ── URL Lists ──
+# ── URL Lists (prioritized) ──
 
+# Priority 1: NEW pages not in yesterday's batch
+NEW_PAGES = [
+    "/blog/parker-colorado-hail-damage-homeowner-guide",
+    "/blog/how-to-file-roof-insurance-claim-colorado",
+    "/blog/best-roofing-materials-colorado-weather",
+    "/blog/spring-roof-maintenance-checklist-colorado-hail-season",
+    "/blog/spot-storm-chaser-vs-legitimate-roofing-company",
+    "/blog/questions-ask-before-hiring-roofing-contractor-colorado",
+    "/blog/gaf-master-elite-vs-preferred-difference",
+    "/blog/why-manufacturer-certifications-matter-roofer",
+    "/blog/colorado-freeze-thaw-cycle-roof-damage",
+    "/blog/fall-roof-maintenance-checklist-colorado-homes",
+    "/blog/summer-roofing-colorado-best-time-replace",
+    "/blog/post-storm-roof-inspection-checklist-colorado",
+    "/blog/preparing-roof-colorado-2026-hail-season",
+    "/blog/roof-repair-vs-full-replacement-after-storm",
+    "/blog/does-homeowners-insurance-cover-roof-leaks-colorado",
+    "/blog/supplementing-roof-insurance-claim-guide",
+    "/blog/roof-insurance-claim-timeline-how-long",
+    "/blog/what-to-expect-roof-insurance-inspection",
+    "/blog/arvada-roofing-front-range-storms",
+    "/blog/colorado-springs-roofing-military-community-guide",
+    "/blog/fort-collins-roofing-weather-challenges-solutions",
+    "/blog/lakewood-roofing-companies-how-to-choose",
+    "/blog/aurora-colorado-roofing-homeowner-guide",
+    "/blog/castle-rock-roofing-guide-hail-wind-weather",
+    "/blog/roofing-highlands-ranch-homeowners-guide",
+    "/blog/best-roofing-companies-parker-colorado",
+    # New area pages not in old script
+    "/areas/conifer",
+    "/areas/edgewater",
+    "/areas/englewood",
+    "/areas/evergreen",
+    "/areas/federal-heights",
+    "/areas/lone-tree",
+    "/areas/morrison",
+    "/areas/superior",
+    "/areas/wheat-ridge",
+    # New service pages
+    "/services/gutters-guards",
+    "/services/paint",
+    "/services/siding-exterior",
+    "/services/windows",
+    "/services/insurance-claims",
+    "/insurance-restoration",
+    # New comparison/tool pages
+    "/compare",
+    "/compare/storm-chasers",
+    "/tools",
+    "/tools/hail-risk-check",
+    "/tools/insurance-coverage-estimator",
+    "/tools/repair-cost-estimator",
+    "/tools/roof-age-calculator",
+    # About sub-pages
+    "/about/alex-chicilo",
+    "/about/gates-enterprises",
+    "/why-gates-enterprises",
+    "/warranty",
+    "/faq",
+    # Best roofer nested pages
+    "/best-roofer-parker",
+    "/best-roofer-lakewood",
+    "/best-roofer/arvada",
+    "/best-roofer/broomfield",
+    "/best-roofer/littleton",
+    "/best-roofer/thornton",
+    "/best-roofer/westminster",
+]
+
+# Priority 2: Core pages (always resubmit)
 CORE_PAGES = [
     "",  # homepage
     "/services",
     "/contact",
     "/reviews",
-    "/who-we-are",
     "/about",
     "/blog",
     "/insurance-claims",
     "/impact-resistant-shingles",
     "/financing",
-    "/warranty",
     "/gallery",
 ]
 
+# Priority 3: Best-roofer top-level pages
 BEST_ROOFER_PAGES = [
     "/best-roofer-denver",
     "/best-roofer-colorado-springs",
     "/best-roofer-aurora",
     "/best-roofer-fort-collins",
-    "/best-roofer-arvada",
-    "/best-roofer-thornton",
-    "/best-roofer-westminster",
-    "/best-roofer-broomfield",
-    "/best-roofer-littleton",
 ]
 
-# 26 indexed cities
-INDEXED_CITIES = [
+# Priority 4: Area pages (all 25 cities)
+ALL_CITIES = [
     "denver", "colorado-springs", "aurora", "fort-collins", "lakewood",
     "thornton", "arvada", "westminster", "centennial", "boulder",
     "highlands-ranch", "parker", "castle-rock", "longmont", "broomfield",
@@ -58,32 +122,31 @@ INDEXED_CITIES = [
     "erie", "commerce-city", "northglenn", "castle-pines", "golden",
     "louisville",
 ]
+AREA_PAGES = [f"/areas/{city}" for city in ALL_CITIES]
 
-AREA_PAGES = [f"/areas/{city}" for city in INDEXED_CITIES]
-
-# 4 core services × 26 cities
-INDEXED_SERVICES = ["roof-replacement", "roof-repair", "storm-hail-damage", "insurance-claims"]
-
-SERVICE_CITY_PAGES = [
-    f"/services/{svc}/{city}"
-    for svc in INDEXED_SERVICES
-    for city in INDEXED_CITIES
-]
 
 def build_url_list():
     """Build prioritized URL list, capped at MAX_SUBMISSIONS."""
     urls = []
-    # Priority 1: Core pages (12)
+    # Priority 1: NEW pages first
+    urls.extend([f"{BASE}{p}" for p in NEW_PAGES])
+    # Priority 2: Core pages
     urls.extend([f"{BASE}{p}" for p in CORE_PAGES])
-    # Priority 2: Best-roofer pages (9)
+    # Priority 3: Best-roofer pages
     urls.extend([f"{BASE}{p}" for p in BEST_ROOFER_PAGES])
-    # Priority 3: Area pages (26)
+    # Priority 4: Area pages
     urls.extend([f"{BASE}{p}" for p in AREA_PAGES])
-    # Priority 4: Service×city combos (up to 104)
-    urls.extend([f"{BASE}{p}" for p in SERVICE_CITY_PAGES])
+
+    # Deduplicate while preserving order
+    seen = set()
+    deduped = []
+    for u in urls:
+        if u not in seen:
+            seen.add(u)
+            deduped.append(u)
 
     # Cap at 100
-    return urls[:MAX_SUBMISSIONS]
+    return deduped[:MAX_SUBMISSIONS]
 
 
 def main():
@@ -95,10 +158,10 @@ def main():
 
     urls = build_url_list()
     print(f"Submitting {len(urls)} URLs to Google Indexing API...")
+    print(f"  NEW pages: {len(NEW_PAGES)}")
     print(f"  Core pages: {len(CORE_PAGES)}")
     print(f"  Best-roofer pages: {len(BEST_ROOFER_PAGES)}")
     print(f"  Area pages: {len(AREA_PAGES)}")
-    print(f"  Service×city combos: {len(SERVICE_CITY_PAGES)} (capped to fit 100 total)")
     print()
 
     success = 0

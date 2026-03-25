@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
 import CTA from "./CTA";
+import AnswerCapsule from "./AnswerCapsule";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -33,10 +34,11 @@ interface ServicePageProps {
   ctaSubtitle: string;
   serviceAreasSlug?: string;
   serviceAreasLabel?: string;
+  answerCapsule?: string;
 }
 
 export default function ServicePageLayout({
-  breadcrumb, h1, subheadline, heroCopy, images, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle, serviceAreasSlug, serviceAreasLabel
+  breadcrumb, h1, subheadline, heroCopy, images, sections, process, whyGates, faqs, ctaTitle, ctaSubtitle, serviceAreasSlug, serviceAreasLabel, answerCapsule
 }: ServicePageProps) {
   return (
     <div style={{ background: WHITE }}>
@@ -77,6 +79,9 @@ export default function ServicePageLayout({
           </div>
         </section>
       )}
+
+      {/* Answer Capsule */}
+      {answerCapsule && <AnswerCapsule text={answerCapsule} />}
 
       {/* Content Sections */}
       <section style={{ padding: "80px 24px", background: WHITE }}>

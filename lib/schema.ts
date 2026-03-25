@@ -8,21 +8,25 @@ export const BUSINESS_INFO = {
   telephone: "+17207663377",
   telephoneDisplay: "(720) 766-3377",
   email: "info@gatesroof.com",
-  logo: "https://www.gatesroof.com/logo.png",
+  logo: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
   image: "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
   description:
     "Colorado's only quadruple manufacturer certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master.",
   address: {
-    locality: "Denver",
+    street: "1445 Holland St",
+    locality: "Lakewood",
     region: "CO",
+    postalCode: "80215",
     country: "US",
   },
+  geo: { latitude: 39.7392, longitude: -105.0781 },
   rating: { value: "4.8", count: "305", best: "5" },
   priceRange: "$$",
   sameAs: [
-    "https://www.facebook.com/GatesEnterprisesLLC/",
+    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
+    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
-    "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC",
   ],
 } as const;
@@ -131,6 +135,56 @@ export function reviewPageSchema(
       reviewBody: r.text,
       datePublished: "2025-01-01",
     })),
+  };
+}
+
+// ─── Service Page Schema ────────────────────────────────────────────
+export function servicePageSchema(service: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType?: string;
+  offers?: { name: string }[];
+}): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: service.serviceType || service.name,
+    name: service.name,
+    description: service.description,
+    url: service.url,
+    provider: {
+      "@type": "RoofingContractor",
+      "@id": "https://www.gatesroof.com/#organization",
+      name: BUSINESS_INFO.name,
+      url: BUSINESS_INFO.url,
+      telephone: BUSINESS_INFO.telephone,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: BUSINESS_INFO.address.street,
+        addressLocality: BUSINESS_INFO.address.locality,
+        addressRegion: BUSINESS_INFO.address.region,
+        postalCode: BUSINESS_INFO.address.postalCode,
+        addressCountry: BUSINESS_INFO.address.country,
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: BUSINESS_INFO.rating.value,
+        reviewCount: BUSINESS_INFO.rating.count,
+        bestRating: BUSINESS_INFO.rating.best,
+      },
+    },
+    areaServed: { "@type": "State", name: "Colorado" },
+    ...(service.offers && {
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: `${service.name} Options`,
+        itemListElement: service.offers.map((o) => ({
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: o.name },
+        })),
+      },
+    }),
   };
 }
 
