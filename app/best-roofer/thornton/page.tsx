@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer in Thornton 2026 | Gates Enterprises",
-  description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars, free inspections. (720) 766-3377.",
+  description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, free inspections. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer/thornton" },
   openGraph: {
     title: "Best Roofer in Thornton 2026 | Gates Enterprises",
-    description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars.",
+    description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
     url: "https://www.gatesroof.com/best-roofer/thornton",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Thornton?",
-    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 303+ Google reviews and a 4.8 star rating, their track record speaks for itself."
+    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Thornton roofer have?",

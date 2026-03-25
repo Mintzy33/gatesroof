@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Thornton Roof Repair & Replacement | 4x Certified | Gates Enterprises",
-  description: "Thornton's 4x certified roofing contractor. 303 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377 today.",
+  description: "Thornton's 4x certified roofing contractor. 305 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377 today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
     title: "Thornton Roof Repair & Replacement | 4x Certified | Gates Enterprises",
-    description: "Thornton's 4x certified roofing contractor. 303 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377 today.",
+    description: "Thornton's 4x certified roofing contractor. 305 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377 today.",
     url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8680, "longitude": -104.9719 },
   "areaServed": { "@type": "City", "name": "Thornton", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "303", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "305", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

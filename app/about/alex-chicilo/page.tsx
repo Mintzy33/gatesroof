@@ -338,7 +338,7 @@ export default function AlexChiciloPage() {
               margin: "0 0 0",
             }}
           >
-            With over 303 Google reviews and a 4.8-star average rating,
+            With over 305 Google reviews and a 4.8-star average rating,
             Alex and the Gates Enterprises team have built their
             reputation on honest assessments, quality workmanship, and
             straightforward communication. Whether it is a{" "}
@@ -519,8 +519,8 @@ export default function AlexChiciloPage() {
               },
               {
                 icon: <Star size={28} color={ACCENT} />,
-                title: "303+ Reviews, 4.8 Stars",
-                desc: "Over 303 verified Google reviews with a 4.8-star average. Real homeowners sharing real results.",
+                title: "305+ Reviews, 4.8 Stars",
+                desc: "Over 305 verified Google reviews with a 4.8-star average. Real homeowners sharing real results.",
               },
               {
                 icon: <BarChart3 size={28} color={ACCENT} />,
@@ -600,7 +600,7 @@ export default function AlexChiciloPage() {
                 display: "inline-block",
               }}
             >
-              Read Our 303+ Google Reviews
+              Read Our 305+ Google Reviews
             </a>
           </div>
         </div>

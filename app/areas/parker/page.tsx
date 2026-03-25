@@ -5,11 +5,11 @@ import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-  description: "Top rated roofer in Parker, Colorado. 303 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
+  description: "Top rated roofer in Parker, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
     title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-    description: "Top rated roofer in Parker, Colorado. 303 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
+    description: "Top rated roofer in Parker, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 303 Google reviews, 4.8 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 305 Google reviews, 4.8 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -68,7 +68,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "303",
+        "reviewCount": "305",
         "bestRating": "5"
       },
       "hasOfferCatalog": {
@@ -181,7 +181,7 @@ const citySchema = {
         "containedInPlace": { "@type": "State", "name": "Colorado" }
       },
       "serviceType": "Roofing Contractor",
-      "description": "Complete roofing services for Parker, CO homeowners including roof replacement, storm damage restoration, roof repair, inspections, gutters, siding, windows, and painting. Quadruple manufacturer certified with 303 Google reviews and 4.8 stars.",
+      "description": "Complete roofing services for Parker, CO homeowners including roof replacement, storm damage restoration, roof repair, inspections, gutters, siding, windows, and painting. Quadruple manufacturer certified with 305 Google reviews and 4.8 stars.",
       "offers": {
         "@type": "Offer",
         "description": "Free Roof Inspection in Parker CO",

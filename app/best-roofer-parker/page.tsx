@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofing Company in Parker, Colorado (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Parker, CO? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
+  description: "Looking for the best roofer in Parker, CO? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-parker" },
   openGraph: {
     title: "Best Roofing Company in Parker, Colorado (2026)",
-    description: "Looking for the best roofer in Parker? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars.",
+    description: "Looking for the best roofer in Parker? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
     url: "https://www.gatesroof.com/best-roofer-parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Parker, Colorado?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker and the surrounding communities. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 303+ Google reviews and a 4.8 star rating, Parker homeowners can trust the quality."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker and the surrounding communities. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, Parker homeowners can trust the quality."
   },
   {
     q: "Why is Parker especially vulnerable to hail damage?",

@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "#1 Rated Littleton CO Roofer | Free Inspections | Gates Enterprises",
-  description: "Littleton homeowners choose Gates Enterprises. 303 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
+  description: "Littleton homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
     title: "#1 Rated Littleton CO Roofer | Free Inspections | Gates Enterprises",
-    description: "Littleton homeowners choose Gates Enterprises. 303 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
+    description: "Littleton homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.6136, "longitude": -105.0166 },
   "areaServed": { "@type": "City", "name": "Littleton", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "303", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "305", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

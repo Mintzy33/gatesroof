@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Trusted Lakewood Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Lakewood's own roofing company. 303 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
+  description: "Lakewood's own roofing company. 305 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
     title: "Trusted Lakewood Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Lakewood's own roofing company. 303 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
+    description: "Lakewood's own roofing company. 305 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -64,7 +64,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "303",
+        "reviewCount": "305",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

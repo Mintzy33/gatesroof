@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 303+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com" },
   openGraph: {
     title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 303+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 303+ reviews, 4.8 stars.",
+    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars.",
     images: ["https://www.gatesroof.com/og-image.jpg"],
   },
 };
@@ -105,7 +105,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
-  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"303","bestRating":"5"},
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"305","bestRating":"5"},
   "openingHoursSpecification": [
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"00:00","closes":"00:00","description":"By appointment"}
@@ -170,7 +170,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 303 Google reviews with a 4.8 star average."}},
+    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 305 Google reviews with a 4.8 star average."}},
     {"@type":"Question","name":"Does Gates Enterprises help with insurance claims?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado. Homeowners typically pay only their deductible."}},
     {"@type":"Question","name":"What areas does Gates Enterprises serve?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities."}},
     {"@type":"Question","name":"What is HailScore?","acceptedAnswer":{"@type":"Answer","text":"HailScore is a free hail risk assessment tool created by Gates Enterprises owner Alex Chicilo. It analyzes 4.5 million NOAA radar records to generate risk scores for any US address. Available at myhailscore.com."}},

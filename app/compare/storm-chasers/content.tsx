@@ -40,7 +40,7 @@ const WarningIcon = () => (
 const COMPARISON_ROWS = [
   { label: "Local Colorado business", gates: true, chaser: false },
   { label: "Manufacturer certifications", gates: true, chaser: false },
-  { label: "303+ verified Google reviews", gates: true, chaser: false },
+  { label: "305+ verified Google reviews", gates: true, chaser: false },
   { label: "Warranty backed by manufacturer AND workmanship guarantee", gates: true, chaser: false },
   { label: "Will be here for warranty claims in 5+ years", gates: true, chaser: false },
   { label: "Free inspections with no pressure", gates: true, chaser: false },
@@ -65,7 +65,7 @@ const FAQS = [
   },
   {
     q: "Is Gates Enterprises a local Colorado roofing company?",
-    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2017. They have a permanent local presence, 303+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
+    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2017. They have a permanent local presence, 305+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
   },
 ];
 
@@ -217,7 +217,7 @@ export default function StormChasersContent() {
             {[
               { title: "Local Since 2017", desc: "Gates Enterprises has been roofing along Colorado's Front Range since 2017. A permanent, local team that is here today and will be here when you need them." },
               { title: "Quadruple Certified", desc: "The only roofer in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro." },
-              { title: "303+ Reviews, 4.8 Stars", desc: "Over 303 verified Google reviews from real Colorado homeowners with a 4.8 star average. Years of consistent five-star performance, not a flash in the pan." },
+              { title: "305+ Reviews, 4.8 Stars", desc: "Over 305 verified Google reviews from real Colorado homeowners with a 4.8 star average. Years of consistent five-star performance, not a flash in the pan." },
               { title: "Real Warranty Protection", desc: "Your warranty is backed by both the manufacturer AND a workmanship guarantee from Gates Enterprises. Not a piece of paper from a company that will not exist next year." },
             ].map((item, i) => (
               <div key={i} style={{ background: WHITE, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
@@ -257,7 +257,7 @@ export default function StormChasersContent() {
 
       <CTA
         title="Choose a Roofer Who Will Be Here Tomorrow"
-        subtitle="Free inspections. Quadruple certified quality. 303+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 305+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

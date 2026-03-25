@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Lakewood, Colorado?",
-    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 303+ Google reviews and a 4.8 star rating, they are a proven choice."
+    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, they are a proven choice."
   },
   {
     q: "Why choose a Lakewood based roofing company?",
@@ -52,7 +52,7 @@ const FAQS = [
 const CHECKLIST = [
   { label: "Headquartered right here in Lakewood, CO" },
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "303+ verified Google reviews" },
+  { label: "305+ verified Google reviews" },
   { label: "4.8 star average rating" },
   { label: "8+ years serving Colorado's Front Range" },
   { label: "Proprietary HailScore radar technology" },
@@ -91,7 +91,7 @@ export default function BestRooferLakewoodContent() {
             Best Roofing Company in Lakewood, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Lakewood's Own Quadruple Certified Roofing Contractor. 303+ Reviews. 4.8 Stars.
+            Lakewood's Own Quadruple Certified Roofing Contractor. 305+ Reviews. 4.8 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             When it comes to roofing in Lakewood, you have a distinct advantage: Colorado's most certified roofing company is headquartered right in your city. Gates Enterprises LLC is based in Lakewood and serves the community with a level of expertise, technology, and quality that no other local roofer can match. From the historic homes near Belmar to the newer developments in Green Mountain, Lakewood homes face the same hail, wind, and UV challenges as the rest of the Front Range. Here is why your neighbors keep choosing Gates.
@@ -125,9 +125,9 @@ export default function BestRooferLakewoodContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>303+ Reviews and Counting</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>305+ Reviews and Counting</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              With 303+ Google reviews and a 4.8 star average, Gates Enterprises has one of the strongest reputations of any roofing company in the Denver metro. Many of those reviews come from Lakewood homeowners who have seen the quality of their work firsthand. Consistent, verified reviews over years of service tell a much more reliable story than a handful of perfect ratings.
+              With 305+ Google reviews and a 4.8 star average, Gates Enterprises has one of the strongest reputations of any roofing company in the Denver metro. Many of those reviews come from Lakewood homeowners who have seen the quality of their work firsthand. Consistent, verified reviews over years of service tell a much more reliable story than a handful of perfect ratings.
             </p>
           </div>
 
@@ -203,7 +203,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(303+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(305+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -249,7 +249,7 @@ export default function BestRooferLakewoodContent() {
 
       <CTA
         title="Your Lakewood Neighbor. Colorado's Best Roofer."
-        subtitle="Free inspections from the quadruple certified roofer headquartered right here in Lakewood. 303+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections from the quadruple certified roofer headquartered right here in Lakewood. 305+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

@@ -225,10 +225,10 @@ export default function CityContent() {
             Parker, Colorado's Most Trusted Roofing Company
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified &middot; 303 Five Star Reviews &middot; 7,200+ Completed Projects
+            Quadruple Manufacturer Certified &middot; 305 Five Star Reviews &middot; 7,200+ Completed Projects
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Parker homeowners deserve a roofing contractor who understands the unique challenges of living along the Palmer Divide. From sudden summer hailstorms to heavy spring snow loads, your roof takes a beating year after year. Gates Enterprises has been protecting homes across Parker and Douglas County for over a decade. We bring quadruple manufacturer certifications, a 4.8 star reputation across 303 Google reviews, and a commitment to honest, quality work on every project.
+            Parker homeowners deserve a roofing contractor who understands the unique challenges of living along the Palmer Divide. From sudden summer hailstorms to heavy spring snow loads, your roof takes a beating year after year. Gates Enterprises has been protecting homes across Parker and Douglas County for over a decade. We bring quadruple manufacturer certifications, a 4.8 star reputation across 305 Google reviews, and a commitment to honest, quality work on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -248,7 +248,7 @@ export default function CityContent() {
       <section style={{ padding: "48px 24px", background: WHITE, borderBottom: "1px solid rgba(13,33,55,0.06)" }}>
         <div className="parker-trust-grid" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 32, textAlign: "center" }}>
           <div>
-            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>303</div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>305</div>
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Google Reviews</div>
             <div style={{ display: "flex", justifyContent: "center", gap: 2, marginTop: 4 }}>
               {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
@@ -284,7 +284,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>303 Google Reviews. 4.8 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>305 Google Reviews. 4.8 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reputation speaks for itself. Parker families consistently rate Gates Enterprises among the top roofing contractors on Colorado's Front Range. We earn every review through transparent communication, quality craftsmanship, and respect for your home and property.
             </p>
@@ -538,18 +538,18 @@ export default function CityContent() {
             What Parker Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 303 Google reviews and a 4.8 star rating, Gates Enterprises is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Parker neighbors have to say.
+            With 305 Google reviews and a 4.8 star rating, Gates Enterprises is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Parker neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(303 reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(305 reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 303 Reviews on Google &rarr;
+            Read All 305 Reviews on Google &rarr;
           </a>
         </div>
       </section>
@@ -569,7 +569,7 @@ export default function CityContent() {
       {/* 10. ADDITIONAL CTA SECTION */}
       <CTA
         title="Get a Free Roof Inspection in Parker"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 303 five star reviews, you can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 305 five star reviews, you can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
       />
 
       {/* 11. SERVICES IN PARKER */}

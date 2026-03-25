@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofing Company in Lakewood, Colorado (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Lakewood, CO? Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars. (720) 766-3377.",
+  description: "Looking for the best roofer in Lakewood, CO? Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars. (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lakewood" },
   openGraph: {
     title: "Best Roofing Company in Lakewood, Colorado (2026)",
-    description: "Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 303+ Google reviews, 4.8 stars.",
+    description: "Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
     url: "https://www.gatesroof.com/best-roofer-lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Lakewood, Colorado?",
-    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 303+ Google reviews and a 4.8 star rating, they are a proven choice for Lakewood homeowners."
+    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, they are a proven choice for Lakewood homeowners."
   },
   {
     q: "Why choose a Lakewood based roofing company?",
