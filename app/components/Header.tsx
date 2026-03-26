@@ -57,6 +57,7 @@ export default function Header() {
   };
 
   const links = [
+    { l: "Areas", h: "/areas" },
     { l: "About", h: "/about" },
     { l: "Gallery", h: "/gallery" },
     { l: "Reviews", h: "/reviews" },
