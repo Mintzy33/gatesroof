@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Company</h3>
-            {[{l:"About Us",h:"/about"},{l:"Alex Chicilo",h:"/about/alex-chicilo"},{l:"Gallery",h:"/gallery"},{l:"Reviews",h:"/reviews"},{l:"Free Tools",h:"/tools"},{l:"Blog",h:"/blog"},{l:"FAQ",h:"/faq"},{l:"Financing",h:"/financing"},{l:"Warranty",h:"/warranty"},{l:"Compare",h:"/compare"},{l:"Contact",h:"/contact"}].map(lk=>(
+            {[{l:"About Us",h:"/about"},{l:"Alex Chicilo",h:"/about/alex-chicilo"},{l:"Gallery",h:"/gallery"},{l:"Reviews",h:"/reviews"},{l:"Free Tools",h:"/tools"},{l:"Blog",h:"/blog"},{l:"FAQ",h:"/faq"},{l:"Financing",h:"/financing"},{l:"Warranty",h:"/warranty"},{l:"Compare",h:"/compare"},{l:"Contact",h:"/contact"},{l:"Referral Program",h:"/referral"}].map(lk=>(
               <Link key={lk.l} href={lk.h} style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{lk.l}</Link>
             ))}
           </div>
