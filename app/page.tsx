@@ -471,8 +471,8 @@ export default function Home() {
             <div className="referral-tiers" style={{ display: "flex", justifyContent: "center", gap: 16, marginBottom: 32, flexWrap: "wrap" as const }}>
               {[
                 { amt: "$250", label: "1st Referral" },
-                { amt: "$350", label: "3rd Referral" },
-                { amt: "$500", label: "5th Referral" },
+                { amt: "$350", label: "2nd Referral" },
+                { amt: "$500", label: "3rd Referral" },
               ].map((tier, i) => (
                 <div key={i} style={{ background: WHITE, borderRadius: 16, padding: "20px 28px", border: "1px solid rgba(13,33,55,0.06)", boxShadow: "0 2px 12px rgba(13,33,55,0.06)", minWidth: 140 }}>
                   <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 28, fontWeight: 800, color: NAVY }}>{tier.amt}</div>

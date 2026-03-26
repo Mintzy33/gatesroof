@@ -171,8 +171,8 @@ export default function ReferralPage() {
           <StaggerCards className="referral-tiers-grid" stagger={0.12} distance={40}>
             {[
               { tier: "1st Referral", amount: "$250", desc: "Cash paid within 7 days of insurance approval.", highlight: false },
-              { tier: "3rd Referral", amount: "$350", desc: "Bonus jump — your third approved referral earns you even more.", highlight: false },
-              { tier: "5th Referral", amount: "$500", desc: "Plus Gates MVP status with exclusive perks.", highlight: true },
+              { tier: "2nd Referral", amount: "$350", desc: "Your second approved referral earns you even more.", highlight: false },
+              { tier: "3rd Referral", amount: "$500", desc: "Plus Gates MVP status with exclusive perks.", highlight: true },
             ].map((r, i) => (
               <div key={i} style={{ background: r.highlight ? NAVY : WHITE, borderRadius: 20, padding: "36px 28px", border: r.highlight ? "none" : "1px solid rgba(13,33,55,0.08)", boxShadow: r.highlight ? "0 20px 60px rgba(13,33,55,0.2)" : "0 2px 12px rgba(13,33,55,0.06)", textAlign: "center", position: "relative", overflow: "hidden" }}>
                 {r.highlight && <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 50% 0%, rgba(59,125,216,0.15) 0%, transparent 60%)" }} />}
