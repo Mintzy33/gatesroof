@@ -418,6 +418,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* REFERRAL PROGRAM */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: LIGHT_BG }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
+          <ScrollReveal>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>REFERRAL PROGRAM</span>
+            <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 16px" }}>Know Someone Who Needs a Roof?</h2>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 560, margin: "0 auto 28px", lineHeight: 1.8 }}>Refer a friend or neighbor to Gates Enterprises and earn $250 cash when their job is approved by insurance. No limit on referrals.</p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <div className="referral-tiers" style={{ display: "flex", justifyContent: "center", gap: 16, marginBottom: 32, flexWrap: "wrap" as const }}>
+              {[
+                { amt: "$250", label: "1st Referral" },
+                { amt: "$350", label: "3rd Referral" },
+                { amt: "$500", label: "5th Referral" },
+              ].map((tier, i) => (
+                <div key={i} style={{ background: WHITE, borderRadius: 16, padding: "20px 28px", border: "1px solid rgba(13,33,55,0.06)", boxShadow: "0 2px 12px rgba(13,33,55,0.06)", minWidth: 140 }}>
+                  <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 28, fontWeight: 800, color: NAVY }}>{tier.amt}</div>
+                  <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, marginTop: 4, fontWeight: 500 }}>{tier.label}</div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <Link href="/referral" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Learn More &amp; Refer Now →</Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "clamp(56px, 8vw, 80px) 20px", background: NAVY, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(circle at 30% 50%, rgba(59,125,216,0.08) 0%, transparent 50%)` }} />
