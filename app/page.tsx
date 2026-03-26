@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
@@ -113,6 +114,46 @@ export default function Home() {
               </Link>
             ))}
           </StaggerCards>
+        </div>
+      </section>
+
+      {/* DRONE INSPECTIONS */}
+      <section style={{ padding: "clamp(56px, 10vw, 100px) 20px", background: WHITE }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center" as const, marginBottom: "clamp(32px, 5vw, 56px)" }}>
+              <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>ADVANCED TECHNOLOGY</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(26px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>See Your Roof From Above</h2>
+              <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 580, margin: "0 auto", lineHeight: 1.7 }}>Our FAA-certified drone inspections capture every angle of your roof in HD. No ladders, no risk, no guesswork. Perfect for storm damage assessment and insurance documentation.</p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <div className="drone-photos" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: "clamp(32px, 5vw, 48px)" }}>
+              <div style={{ borderRadius: 18, overflow: "hidden", position: "relative", aspectRatio: "16/10" }}>
+                <Image src="/images/blog/drone-aerial-1.jpg" alt="Aerial drone view of residential roof inspection" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+              <div style={{ borderRadius: 18, overflow: "hidden", position: "relative", aspectRatio: "16/10" }}>
+                <Image src="/images/blog/drone-aerial-2.jpg" alt="HD drone photograph showing roof detail and condition" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              </div>
+            </div>
+          </ScrollReveal>
+          <StaggerCards className="drone-stats" stagger={0.1} distance={30}>
+            {[
+              { n: "15-20 Min", d: "Full roof inspection" },
+              { n: "HD Quality", d: "Every detail captured" },
+              { n: "Insurance Ready", d: "Documentation adjusters accept" },
+            ].map((s, i) => (
+              <div key={i} style={{ padding: "28px 20px", background: LIGHT_BG, borderRadius: 18, border: "1px solid rgba(13,33,55,0.04)", textAlign: "center" as const }}>
+                <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 800, color: NAVY, marginBottom: 4 }}>{s.n}</div>
+                <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT, lineHeight: 1.5 }}>{s.d}</div>
+              </div>
+            ))}
+          </StaggerCards>
+          <ScrollReveal delay={0.2}>
+            <div style={{ textAlign: "center" as const, marginTop: 36 }}>
+              <Link href="/services/drone-inspections" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 14, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>Schedule Free Drone Inspection →</Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -471,6 +512,7 @@ export default function Home() {
         .hero-btns { display: flex; gap: 12px; }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .hiw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+        .drone-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .hail-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
         .why-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
@@ -502,6 +544,8 @@ export default function Home() {
           .service-card p { font-size: 13px !important; }
           .hiw-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .hiw-connector { display: none !important; }
+          .drone-photos { grid-template-columns: 1fr !important; }
+          .drone-stats { grid-template-columns: 1fr !important; gap: 12px !important; }
           .hail-stats { grid-template-columns: 1fr !important; gap: 12px !important; }
           .cert-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
           .why-grid { grid-template-columns: 1fr !important; gap: 36px !important; text-align: center; }
