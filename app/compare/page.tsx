@@ -7,12 +7,12 @@ import CTA from "../components/CTA";
 import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Compare Gates Enterprises | See How We Stack Up",
-  description: "See how Gates Enterprises compares to other roofing options in Colorado. Transparent comparisons to help homeowners make informed decisions about their roof.",
+  title: "Compare Roofers | Gates vs Others ★ 4x Certified",
+  description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 305 reviews, 4.8★. Transparent comparisons to help you choose. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/compare" },
   openGraph: {
-    title: "Compare Gates Enterprises | See How We Stack Up",
-    description: "See how Gates Enterprises compares to other roofing options in Colorado. Transparent comparisons to help homeowners make informed decisions.",
+    title: "Compare Roofers | Gates vs Others ★ 4x Certified",
+    description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 305 reviews, 4.8★. Transparent comparisons to help you choose. (720) 766-3377",
     url: "https://www.gatesroof.com/compare",
     siteName: "Gates Enterprises",
     locale: "en_US",

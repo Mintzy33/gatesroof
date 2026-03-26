@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "#1 Rated Superior CO Roofer | Free Inspections | Gates Enterprises",
-  description: "Superior homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
+  title: "Superior CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Superior's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/superior" },
   openGraph: {
-    title: "#1 Rated Superior CO Roofer | Free Inspections | Gates Enterprises",
-    description: "Superior homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Book your free roof inspection today. (720) 766-3377.",
+    title: "Superior CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Superior's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/superior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -3,12 +3,12 @@ import Script from "next/script";
 import ImpactResistantContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Impact Resistant Shingles Colorado | Class 4 Shingles Denver | Gates Enterprises",
-  description: "Class 4 impact resistant shingles installed by a quadruple certified Colorado roofer. Many homeowners save up to 28% on insurance premiums. GAF, Owens Corning, Malarkey, CertainTeed. Call (720) 766-3377.",
+  title: "Class 4 Impact Resistant Shingles CO | Save 28%",
+  description: "Save up to 28% on insurance with Class 4 impact resistant shingles. Installed by Colorado's 4x certified roofer. 7,200+ roofs. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/impact-resistant-shingles" },
   openGraph: {
-    title: "Impact Resistant Shingles Colorado | Gates Enterprises LLC",
-    description: "Class 4 impact resistant shingles installed by a quadruple certified Colorado roofer. Many homeowners save up to 28% on insurance premiums. Call (720) 766-3377.",
+    title: "Class 4 Impact Resistant Shingles CO | Save 28%",
+    description: "Save up to 28% on insurance with Class 4 impact resistant shingles. Installed by Colorado's 4x certified roofer. 7,200+ roofs. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/impact-resistant-shingles",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

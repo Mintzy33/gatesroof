@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trusted Conifer Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Conifer's trusted mountain roofer. 305 reviews, 4.8 stars, quadruple certified. Free inspections for hail and storm damage. Call (720) 766-3377.",
+  title: "Conifer CO Roofer | 4x Certified ★ Mountain Experts",
+  description: "Conifer's trusted mountain roofing experts. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free storm inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/conifer" },
   openGraph: {
-    title: "Trusted Conifer Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Conifer's trusted mountain roofer. 305 reviews, 4.8 stars, quadruple certified. Free inspections for hail and storm damage. Call (720) 766-3377.",
+    title: "Conifer CO Roofer | 4x Certified ★ Mountain Experts",
+    description: "Conifer's trusted mountain roofing experts. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free storm inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/conifer",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

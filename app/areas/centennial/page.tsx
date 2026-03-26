@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Centennial CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-  description: "Top rated roofer in Centennial, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Centennial homeowners. (720) 766-3377.",
+  title: "Centennial CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Centennial's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free hail damage inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/centennial" },
   openGraph: {
-    title: "Centennial CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-    description: "Top rated roofer in Centennial, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Centennial homeowners. (720) 766-3377.",
+    title: "Centennial CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Centennial's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free hail damage inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/centennial",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

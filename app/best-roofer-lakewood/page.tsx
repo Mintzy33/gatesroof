@@ -4,12 +4,12 @@ import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofing Company in Lakewood, Colorado (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Lakewood, CO? Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars. (720) 766-3377.",
+  title: "Best Roofer Lakewood CO (2026) | Local HQ ★ 4x Certified",
+  description: "Lakewood's best roofer, headquartered here. 4x certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lakewood" },
   openGraph: {
-    title: "Best Roofing Company in Lakewood, Colorado (2026)",
-    description: "Gates Enterprises is headquartered in Lakewood and is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
+    title: "Best Roofer Lakewood CO (2026) | Local HQ ★ 4x Certified",
+    description: "Lakewood's best roofer, headquartered here. 4x certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

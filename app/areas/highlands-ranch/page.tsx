@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Highlands Ranch Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Highlands Ranch's top-rated roofer. 305 Google reviews, 4.8 stars, 4x certified. Free storm damage inspections. Call (720) 766-3377.",
+  title: "Highlands Ranch Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Highlands Ranch's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
-    title: "Highlands Ranch Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Highlands Ranch's top-rated roofer. 305 Google reviews, 4.8 stars, 4x certified. Free storm damage inspections. Call (720) 766-3377.",
+    title: "Highlands Ranch Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Highlands Ranch's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

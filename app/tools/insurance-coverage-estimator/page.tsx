@@ -3,12 +3,12 @@ import Script from "next/script";
 import InsuranceCoverageEstimatorContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Is Your Roof Covered by Insurance? | Free Coverage Estimator | Gates Enterprises",
-  description: "Find out how much your roof replacement could be worth through insurance. Most Colorado homeowners pay only their deductible. Free estimator tool.",
+  title: "Free Roof Insurance Estimator | Gates Enterprises",
+  description: "See what your roof replacement could be worth through insurance. Most CO homeowners pay only their deductible. Free tool, instant results. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/tools/insurance-coverage-estimator" },
   openGraph: {
-    title: "Is Your Roof Covered by Insurance? | Free Coverage Estimator | Gates Enterprises",
-    description: "Find out how much your roof replacement could be worth through insurance. Most Colorado homeowners pay only their deductible.",
+    title: "Free Roof Insurance Estimator | Gates Enterprises",
+    description: "See what your roof replacement could be worth through insurance. Most CO homeowners pay only their deductible. Free tool, instant results. (720) 766-3377",
     url: "https://www.gatesroof.com/tools/insurance-coverage-estimator",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

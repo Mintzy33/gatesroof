@@ -3,12 +3,12 @@ import Script from "next/script";
 import InsuranceClaimsContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roof Insurance Claims Colorado | Gates Enterprises LLC",
-  description: "Gates Enterprises assists with your entire roof insurance claim process. We meet your adjuster, handle supplements, and advocate for fair coverage. Most homeowners pay only their deductible. Call (720) 766-3377.",
+  title: "Roof Insurance Claims CO | We Fight for You ★",
+  description: "We handle your entire roof insurance claim: adjuster meetings, supplements & advocacy. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/insurance-claims" },
   openGraph: {
-    title: "Roof Insurance Claims Colorado | Gates Enterprises LLC",
-    description: "Gates Enterprises assists with your entire roof insurance claim process. We meet your adjuster, handle supplements, and advocate for fair coverage. Call (720) 766-3377.",
+    title: "Roof Insurance Claims CO | We Fight for You ★",
+    description: "We handle your entire roof insurance claim: adjuster meetings, supplements & advocacy. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
     url: "https://www.gatesroof.com/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

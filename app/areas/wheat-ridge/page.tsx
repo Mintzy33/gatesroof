@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trusted Wheat Ridge Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Wheat Ridge homeowners trust Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Free roof inspections. Call (720) 766-3377 today.",
+  title: "Wheat Ridge Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Wheat Ridge's trusted 4x certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Free roof inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/wheat-ridge" },
   openGraph: {
-    title: "Trusted Wheat Ridge Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Wheat Ridge homeowners trust Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Free roof inspections. Call (720) 766-3377 today.",
+    title: "Wheat Ridge Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Wheat Ridge's trusted 4x certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Free roof inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/wheat-ridge",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

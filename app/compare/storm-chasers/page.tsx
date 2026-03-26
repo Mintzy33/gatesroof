@@ -4,12 +4,12 @@ import StormChasersContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Gates Enterprises vs Storm Chasers | Why Local Matters",
-  description: "Learn the difference between Gates Enterprises, a certified local Colorado roofing contractor, and out-of-state storm chasers. Protect your home and your investment.",
+  title: "Local Roofer vs Storm Chasers | Why It Matters",
+  description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 305 reviews. Protect your home with a trusted roofer",
   alternates: { canonical: "https://www.gatesroof.com/compare/storm-chasers" },
   openGraph: {
-    title: "Gates Enterprises vs Storm Chasers | Why Local Matters",
-    description: "Learn the difference between a certified local roofing contractor and out-of-state storm chasers who disappear after the job.",
+    title: "Local Roofer vs Storm Chasers | Why It Matters",
+    description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 305 reviews. Protect your home with a trusted roofer",
     url: "https://www.gatesroof.com/compare/storm-chasers",
     siteName: "Gates Enterprises",
     locale: "en_US",

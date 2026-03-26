@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trusted Lakewood Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Lakewood's own roofing company. 305 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
+  title: "Lakewood Roofer | Local HQ, 4x Certified, 305+ Reviews ★",
+  description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
-    title: "Trusted Lakewood Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Lakewood's own roofing company. 305 Google reviews, 4.8 stars, quadruple certified. Free inspections at our HQ city. Call (720) 766-3377.",
+    title: "Lakewood Roofer | Local HQ, 4x Certified, 305+ Reviews ★",
+    description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

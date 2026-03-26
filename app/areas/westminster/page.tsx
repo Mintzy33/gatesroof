@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Westminster Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Westminster's top-rated roofer. 305 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
+  title: "Westminster CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Westminster's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/westminster" },
   openGraph: {
-    title: "Westminster Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Westminster's top-rated roofer. 305 Google reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
+    title: "Westminster CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Westminster's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/westminster",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

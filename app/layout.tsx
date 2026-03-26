@@ -28,13 +28,13 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Lakewood Roofing Contractor | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+  title: "#1 Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+  description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs completed, 4.8★ from 305 reviews. GAF Master Elite certified. Free inspections. (720) 766-3377",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
-  alternates: { canonical: "https://www.gatesroof.com" },
+  alternates: { canonical: "https://www.gatesroof.com/" },
   openGraph: {
-    title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars. Free inspections. (720) 766-3377.",
+    title: "#1 Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+    description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs completed, 4.8★ from 305 reviews. GAF Master Elite certified. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gates Enterprises | Denver's Quadruple Certified Roofing Company",
-    description: "Gates Enterprises is Denver's quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master. 305+ reviews, 4.8 stars.",
+    title: "#1 Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+    description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs completed, 4.8★ from 305 reviews. Free inspections. (720) 766-3377",
     images: ["https://www.gatesroof.com/og-image.jpg"],
   },
 };

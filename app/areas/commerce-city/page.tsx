@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Commerce City Roof Repair & Replacement | 4x Certified | Gates Enterprises",
-  description: "Commerce City's 4x certified roofing contractor. 305 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377.",
+  title: "Commerce City Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Commerce City's trusted 4x certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Free storm damage inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/commerce-city" },
   openGraph: {
-    title: "Commerce City Roof Repair & Replacement | 4x Certified | Gates Enterprises",
-    description: "Commerce City's 4x certified roofing contractor. 305 Google reviews, 4.8 stars. Free storm damage inspections. Call (720) 766-3377.",
+    title: "Commerce City Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Commerce City's trusted 4x certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Free storm damage inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/commerce-city",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

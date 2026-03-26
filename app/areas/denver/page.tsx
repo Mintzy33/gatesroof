@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Denver Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Denver's top-rated roofing contractor. 305 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections. Call (720) 766-3377.",
+  title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
+  description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
-    title: "Denver Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Denver's top-rated roofing contractor. 305 Google reviews, 4.8 stars, 4x manufacturer certified. Free storm damage inspections. Call (720) 766-3377.",
+    title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
+    description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -4,9 +4,9 @@ import GalleryContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Project Gallery | Gates Enterprises LLC",
+  title: "Roofing Photo Gallery | 7,200+ Projects ★ Gates",
   description:
-    "See our work. Before and after photos of roof replacements, siding, gutters, and more across Colorado's Front Range.",
+    "See 7,200+ completed roofing projects across Colorado. Before & after photos of roof replacements, siding, gutters & more. 4.8★ from 305 reviews",
   alternates: { canonical: "https://www.gatesroof.com/gallery" },
 };
 

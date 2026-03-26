@@ -3,12 +3,12 @@ import Script from "next/script";
 import WindowsContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Window Replacement Colorado | Gates Enterprises LLC",
-  description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
+  title: "Window Replacement CO | Energy Efficient ★ Free Quote",
+  description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.8★ reviews. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/windows" },
   openGraph: {
-    title: "Window Replacement Colorado | Gates Enterprises LLC",
-    description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass, and wood options. Free estimates from Gates Enterprises.",
+    title: "Window Replacement CO | Energy Efficient ★ Free Quote",
+    description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.8★ reviews. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/services/windows",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

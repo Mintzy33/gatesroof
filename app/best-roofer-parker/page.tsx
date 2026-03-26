@@ -4,12 +4,12 @@ import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofing Company in Parker, Colorado (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Parker, CO? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
+  title: "Best Roofer Parker CO (2026) | 4x Certified ★ 305+ Reviews",
+  description: "Parker's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite. Free hail inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-parker" },
   openGraph: {
-    title: "Best Roofing Company in Parker, Colorado (2026)",
-    description: "Looking for the best roofer in Parker? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
+    title: "Best Roofer Parker CO (2026) | 4x Certified ★ 305+ Reviews",
+    description: "Parker's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite. Free hail inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

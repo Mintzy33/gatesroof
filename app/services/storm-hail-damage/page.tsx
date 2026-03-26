@@ -3,12 +3,12 @@ import Script from "next/script";
 import StormContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
-  description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
+  title: "Hail Damage Repair CO | 4x Certified ★ Free Inspection",
+  description: "Colorado hail & storm damage experts. 7,200+ roofs restored, 4.8★ from 305 reviews. Free inspections + insurance claim help. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/services/storm-hail-damage" },
   openGraph: {
-    title: "Storm Damage & Hail Repair Colorado | Gates Enterprises",
-    description: "Colorado storm damage and hail repair from a quadruple certified roofing company. Free inspections, insurance restoration support, and warranties up to 50 years. Call (720) 766-3377.",
+    title: "Hail Damage Repair CO | 4x Certified ★ Free Inspection",
+    description: "Colorado hail & storm damage experts. 7,200+ roofs restored, 4.8★ from 305 reviews. Free inspections + insurance claim help. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/services/storm-hail-damage",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

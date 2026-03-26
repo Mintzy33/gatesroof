@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "#1 Rated Federal Heights CO Roofer | Free Inspections | Gates Enterprises",
-  description: "Federal Heights trusts Gates Enterprises. 305 reviews, 4.8 stars, quadruple certified. Book your free roof inspection today. (720) 766-3377.",
+  title: "Federal Heights Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Federal Heights' most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/federal-heights" },
   openGraph: {
-    title: "#1 Rated Federal Heights CO Roofer | Free Inspections | Gates Enterprises",
-    description: "Federal Heights trusts Gates Enterprises. 305 reviews, 4.8 stars, quadruple certified. Book your free roof inspection today. (720) 766-3377.",
+    title: "Federal Heights Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Federal Heights' most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/federal-heights",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

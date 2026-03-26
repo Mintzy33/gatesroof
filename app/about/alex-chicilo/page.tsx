@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
   description:
-    "Alex Chicilo is the owner of Gates Enterprises, Colorado's only quadruple manufacturer-certified roofing company. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certified. Creator of HailScore.",
+    "Meet Alex Chicilo, owner of Colorado's only 4x certified roofer. 7,200+ roofs, 305 reviews, 4.8★. Creator of HailScore. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
-    title: "Alex Chicilo | Owner, Gates Enterprises",
+    title: "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
     description:
-      "Quadruple manufacturer-certified roofing expert serving Colorado's Front Range. Creator of HailScore, a proprietary hail risk assessment tool.",
+      "Meet Alex Chicilo, owner of Colorado's only 4x certified roofer. 7,200+ roofs, 305 reviews, 4.8★. Creator of HailScore. Call (720) 766-3377",
     url: "https://www.gatesroof.com/about/alex-chicilo",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

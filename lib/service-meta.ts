@@ -16,14 +16,14 @@ function cityHash(citySlug: string): number {
 // TITLES — unique pattern per service, always includes city + brand
 // ---------------------------------------------------------------------------
 const titleMap: Record<string, (city: string) => string> = {
-  "roof-replacement": (c) => `Roof Replacement in ${c}, CO | Gates Enterprises`,
-  "storm-hail-damage": (c) => `Storm Damage Restoration ${c} CO | Gates Enterprises`,
-  "roof-repair": (c) => `${c} Roof Repair Services | Gates Enterprises`,
-  "siding": (c) => `Siding Installation & Repair ${c} | Gates Enterprises`,
-  "gutters": (c) => `Gutter Installation ${c} Colorado | Gates Enterprises`,
-  "roof-inspection": (c) => `Free Roof Inspection ${c}, CO | Gates Enterprises`,
-  "insurance-claims": (c) => `Roof Insurance Claims ${c}, CO | Gates Enterprises`,
-  "metal-roofing": (c) => `Metal Roofing ${c}, Colorado | Gates Enterprises`,
+  "roof-replacement": (c) => `${c} Roof Replacement | 4x Certified ★ Gates`,
+  "storm-hail-damage": (c) => `${c} Hail & Storm Repair | 4x Certified ★ Gates`,
+  "roof-repair": (c) => `${c} Roof Repair | Fast, 4x Certified ★ Gates`,
+  "siding": (c) => `${c} Siding Installation | Certified ★ Gates`,
+  "gutters": (c) => `${c} Gutter Installation | Seamless ★ Gates`,
+  "roof-inspection": (c) => `Free Roof Inspection ${c} CO | 4x Certified ★`,
+  "insurance-claims": (c) => `${c} Roof Insurance Claims | We Handle It All ★`,
+  "metal-roofing": (c) => `${c} Metal Roofing | 50-Year Warranty ★ Gates`,
 };
 
 // ---------------------------------------------------------------------------

@@ -3,12 +3,12 @@ import Script from "next/script";
 import RoofReplacementContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roof Replacement Colorado | Gates Enterprises LLC",
-  description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
+  title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
+  description: "4x certified roof replacement in Colorado. 7,200+ roofs, warranties up to 50 years. GAF, Owens Corning, Malarkey & CertainTeed. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/roof-replacement" },
   openGraph: {
-    title: "Roof Replacement Colorado | Gates Enterprises LLC",
-    description: "Expert roof replacement with GAF, CertainTeed, Owens Corning, and Malarkey shingles. Warranties up to 50 years. Quadruple certified. Free estimates.",
+    title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
+    description: "4x certified roof replacement in Colorado. 7,200+ roofs, warranties up to 50 years. GAF, Owens Corning, Malarkey & CertainTeed. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/services/roof-replacement",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

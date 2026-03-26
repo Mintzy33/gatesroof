@@ -3,12 +3,12 @@ import Script from "next/script";
 import FaqContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roofing FAQ | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-  description: "Answers to common roofing questions. Cost, insurance claims, hail damage, warranties, and more. Quadruple certified Colorado roofer. Free inspections.",
+  title: "Roofing FAQ | 4x Certified Colorado Roofer",
+  description: "Get answers on roofing costs, insurance claims, hail damage & warranties from Colorado's 4x certified roofer. 7,200+ roofs completed. Free inspections",
   alternates: { canonical: "https://www.gatesroof.com/faq" },
   openGraph: {
-    title: "Roofing FAQ | Gates Enterprises LLC | Colorado's Most Certified Roofer",
-    description: "Answers to common roofing questions. Cost, insurance claims, hail damage, warranties, and more. Quadruple certified Colorado roofer. Free inspections.",
+    title: "Roofing FAQ | 4x Certified Colorado Roofer",
+    description: "Get answers on roofing costs, insurance claims, hail damage & warranties from Colorado's 4x certified roofer. 7,200+ roofs completed. Free inspections",
     url: "https://www.gatesroof.com/faq",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

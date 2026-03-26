@@ -3,12 +3,12 @@ import Script from "next/script";
 import SidingContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Siding Installation Colorado | Gates Enterprises LLC",
-  description: "Professional siding installation and repair in Colorado. James Hardie, vinyl, and engineered wood. Free estimates from Gates Enterprises.",
+  title: "Siding Installation CO | Certified ★ Free Estimates",
+  description: "Expert siding installation in Colorado. James Hardie, vinyl & engineered wood. 7,200+ exterior projects, 4.8★ reviews. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/siding-exterior" },
   openGraph: {
-    title: "Siding Installation Colorado | Gates Enterprises LLC",
-    description: "Professional siding installation and repair in Colorado. James Hardie, vinyl, and engineered wood. Free estimates from Gates Enterprises.",
+    title: "Siding Installation CO | Certified ★ Free Estimates",
+    description: "Expert siding installation in Colorado. James Hardie, vinyl & engineered wood. 7,200+ exterior projects, 4.8★ reviews. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/services/siding-exterior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

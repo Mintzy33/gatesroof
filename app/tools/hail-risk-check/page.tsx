@@ -3,12 +3,12 @@ import Script from "next/script";
 import HailRiskContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Hail Risk Check | Check Your Home's Hail Score | Gates Enterprises",
-  description: "Look up your home's hail risk score powered by HailScore, a Gates Enterprises company. 4.5 million+ hail records, 10 years of data, all 50 states. Free instant results.",
+  title: "Free Hail Risk Check | Your Home's Score ★ Gates",
+  description: "Check your home's hail risk score free. 4.5M+ hail records, 10 years of data, all 50 states. Instant results. Powered by HailScore. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/tools/hail-risk-check" },
   openGraph: {
-    title: "Hail Risk Check | Check Your Home's Hail Score | Gates Enterprises",
-    description: "Look up your home's hail risk score. 4.5M+ hail records, 10 years of data. Free instant results.",
+    title: "Free Hail Risk Check | Your Home's Score ★ Gates",
+    description: "Check your home's hail risk score free. 4.5M+ hail records, 10 years of data, all 50 states. Instant results. Powered by HailScore. (720) 766-3377",
     url: "https://www.gatesroof.com/tools/hail-risk-check",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

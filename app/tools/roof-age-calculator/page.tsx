@@ -3,12 +3,12 @@ import Script from "next/script";
 import RoofCostEstimatorContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roof Replacement Cost Estimator | Colorado 2025/2026 Pricing | Gates Enterprises",
-  description: "Estimate your Colorado roof replacement cost instantly. Select your material, home size, and location for a realistic price range. Free tool for Colorado homeowners from Gates Enterprises.",
+  title: "Roof Cost Estimator CO (2026) | Free ★ Gates",
+  description: "Estimate your Colorado roof replacement cost instantly. Select material, home size & location. Free tool with 2026 pricing. 4x certified roofer. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/tools/roof-age-calculator" },
   openGraph: {
-    title: "Roof Replacement Cost Estimator | Colorado Pricing | Gates Enterprises",
-    description: "Get an instant roof replacement cost estimate for your Colorado home. Select your material, home size, and area for a realistic price range.",
+    title: "Roof Cost Estimator CO (2026) | Free ★ Gates",
+    description: "Estimate your Colorado roof replacement cost instantly. Select material, home size & location. Free tool with 2026 pricing. 4x certified roofer. (720) 766-3377",
     url: "https://www.gatesroof.com/tools/roof-age-calculator",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

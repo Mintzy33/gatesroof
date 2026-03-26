@@ -4,12 +4,12 @@ import WhyGatesContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Why Choose Gates Enterprises Over Other Colorado Roofers | Gates Enterprises",
-  description: "What makes Gates Enterprises different? Colorado's only quadruple certified roofing contractor with 305+ Google reviews, 4.8 stars, and proprietary HailScore technology. See how we compare.",
+  title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
+  description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews, plus HailScore technology. See why homeowners choose us",
   alternates: { canonical: "https://www.gatesroof.com/why-gates-enterprises" },
   openGraph: {
-    title: "Why Choose Gates Enterprises Over Other Colorado Roofers",
-    description: "Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, proprietary HailScore technology. See what sets us apart.",
+    title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
+    description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews, plus HailScore technology. See why homeowners choose us",
     url: "https://www.gatesroof.com/why-gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

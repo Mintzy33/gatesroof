@@ -4,12 +4,12 @@ import BestRooferCityContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer in Thornton 2026 | Gates Enterprises",
-  description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, free inspections. (720) 766-3377.",
+  title: "Best Roofer Thornton (2026) | 4x Certified ★ 305+ Reviews",
+  description: "Thornton's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer/thornton" },
   openGraph: {
-    title: "Best Roofer in Thornton 2026 | Gates Enterprises",
-    description: "Looking for the best roofer in Thornton? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
+    title: "Best Roofer Thornton (2026) | 4x Certified ★ 305+ Reviews",
+    description: "Thornton's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/best-roofer/thornton",
     siteName: "Gates Enterprises",
     locale: "en_US",

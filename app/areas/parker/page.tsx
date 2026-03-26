@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-  description: "Top rated roofer in Parker, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
+  title: "Parker CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Parker's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more certs. Free hail inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Parker CO Roofing Contractor | Roof Replacement, Hail Repair | Gates Enterprises",
-    description: "Top rated roofer in Parker, Colorado. 305 Google reviews, 4.8 stars, quadruple certified. Free hail damage inspections for Parker homeowners. (720) 766-3377.",
+    title: "Parker CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Parker's #1 certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more certs. Free hail inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",

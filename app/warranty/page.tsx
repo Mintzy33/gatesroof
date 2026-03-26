@@ -4,14 +4,14 @@ import WarrantyContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Warranty Information | Gates Enterprises",
+  title: "Roof Warranty | Up to 50 Years ★ Gates Enterprises",
   description:
-    "Industry-leading warranty coverage on every roofing project. Manufacturer warranties from GAF, Owens Corning, Malarkey, and CertainTeed plus workmanship guarantees.",
+    "Up to 50-year warranties from GAF, Owens Corning, Malarkey & CertainTeed. 4x certified means better coverage. 7,200+ roofs backed. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/warranty" },
   openGraph: {
-    title: "Roofing Warranty Information | Gates Enterprises",
+    title: "Roof Warranty | Up to 50 Years ★ Gates Enterprises",
     description:
-      "Industry-leading warranty coverage on every roofing project. Manufacturer warranties from GAF, Owens Corning, Malarkey, and CertainTeed plus workmanship guarantees.",
+      "Up to 50-year warranties from GAF, Owens Corning, Malarkey & CertainTeed. 4x certified means better coverage. 7,200+ roofs backed. (720) 766-3377",
     url: "https://www.gatesroof.com/warranty",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roofing Warranty Information | Gates Enterprises",
+    title: "Roof Warranty | Up to 50 Years ★ Gates Enterprises",
     description:
-      "Industry-leading warranty coverage on every roofing project. Manufacturer warranties from GAF, Owens Corning, Malarkey, and CertainTeed plus workmanship guarantees.",
+      "Up to 50-year warranties from GAF, Owens Corning, Malarkey & CertainTeed. 4x certified means better coverage. 7,200+ roofs backed. (720) 766-3377",
     images: [
       "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
     ],

@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Evergreen Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Evergreen's most trusted roofer. 305 Google reviews, 4.8 stars, 4x certified. Free mountain home roof inspections. Call (720) 766-3377.",
+  title: "Evergreen CO Roofer | 4x Certified ★ Mountain Experts",
+  description: "Evergreen's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/evergreen" },
   openGraph: {
-    title: "Evergreen Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Evergreen's most trusted roofer. 305 Google reviews, 4.8 stars, 4x certified. Free mountain home roof inspections. Call (720) 766-3377.",
+    title: "Evergreen CO Roofer | 4x Certified ★ Mountain Experts",
+    description: "Evergreen's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/evergreen",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

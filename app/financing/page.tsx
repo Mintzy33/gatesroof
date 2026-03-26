@@ -4,14 +4,14 @@ import FinancingContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Roofing Financing & Payment Options | Gates Enterprises",
+  title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
   description:
-    "Flexible payment options for your roofing project. Insurance claim assistance, payment plans, and free estimates. Gates Enterprises, Denver's most certified roofer.",
+    "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.8★ from 305 reviews. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/financing" },
   openGraph: {
-    title: "Roofing Financing & Payment Options | Gates Enterprises",
+    title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
     description:
-      "Flexible payment options for your roofing project. Insurance claim assistance, payment plans, and free estimates. Gates Enterprises, Denver's most certified roofer.",
+      "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.8★ from 305 reviews. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/financing",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roofing Financing & Payment Options | Gates Enterprises",
+    title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
     description:
-      "Flexible payment options for your roofing project. Insurance claim assistance, payment plans, and free estimates. Gates Enterprises, Denver's most certified roofer.",
+      "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.8★ from 305 reviews. Free estimates. (720) 766-3377",
     images: [
       "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
     ],

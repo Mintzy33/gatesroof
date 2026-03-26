@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Morrison trusts Gates Enterprises for roofing. 305 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
+  title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
+  description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/morrison" },
   openGraph: {
-    title: "Trusted Morrison Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Morrison trusts Gates Enterprises for roofing. 305 reviews, 4.8 stars, quadruple certified. Free mountain home inspections. Call (720) 766-3377.",
+    title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
+    description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/morrison",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

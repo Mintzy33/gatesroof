@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trusted Broomfield Roofing Company | Storm Damage Experts | Gates Enterprises",
-  description: "Broomfield homeowners trust Gates Enterprises. 305 reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
+  title: "Broomfield CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Broomfield's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/broomfield" },
   openGraph: {
-    title: "Trusted Broomfield Roofing Company | Storm Damage Experts | Gates Enterprises",
-    description: "Broomfield homeowners trust Gates Enterprises. 305 reviews, 4.8 stars, quadruple certified. Free storm damage inspections. Call (720) 766-3377.",
+    title: "Broomfield CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Broomfield's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/broomfield",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

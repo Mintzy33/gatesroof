@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "#1 Rated Littleton CO Roofer | Free Inspections | Gates Enterprises",
-  description: "Littleton homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
+  title: "Littleton CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Littleton's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more certs. Free roof inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
-    title: "#1 Rated Littleton CO Roofer | Free Inspections | Gates Enterprises",
-    description: "Littleton homeowners choose Gates Enterprises. 305 reviews, 4.8 stars, 4x certified. Schedule your free roof inspection. (720) 766-3377.",
+    title: "Littleton CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Littleton's most certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more certs. Free roof inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

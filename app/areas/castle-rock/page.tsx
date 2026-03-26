@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Castle Rock Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-  description: "Castle Rock's most trusted roofer. 305 Google reviews, 4.8 stars, 4x certified. Free roof inspections for storm damage. Call (720) 766-3377 today.",
+  title: "Castle Rock CO Roofer | 4x Certified, 305+ Reviews ★",
+  description: "Castle Rock's top-rated roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free hail damage inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/castle-rock" },
   openGraph: {
-    title: "Castle Rock Roofing Contractor | 305 Reviews, 4.8 Stars | Gates Enterprises",
-    description: "Castle Rock's most trusted roofer. 305 Google reviews, 4.8 stars, 4x certified. Free roof inspections for storm damage. Call (720) 766-3377 today.",
+    title: "Castle Rock CO Roofer | 4x Certified, 305+ Reviews ★",
+    description: "Castle Rock's top-rated roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free hail damage inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/castle-rock",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -4,12 +4,12 @@ import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofing Company in Colorado Springs, CO (2026) | Gates Enterprises",
-  description: "Looking for the best roofer in Colorado Springs? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, HailScore technology. Free inspections. (720) 766-3377.",
+  title: "Best Roofer Colorado Springs (2026) | 4x Certified ★",
+  description: "Colorado Springs' top roofer: 4x certified, 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-colorado-springs" },
   openGraph: {
-    title: "Best Roofing Company in Colorado Springs, CO (2026)",
-    description: "Looking for the best roofer in Colorado Springs? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars.",
+    title: "Best Roofer Colorado Springs (2026) | 4x Certified ★",
+    description: "Colorado Springs' top roofer: 4x certified, 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-colorado-springs",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

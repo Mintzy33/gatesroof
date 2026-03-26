@@ -4,13 +4,13 @@ import AboutContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "About Gates Enterprises | Colorado's Most Certified Roofer",
+  title: "About Gates Enterprises | 4x Certified CO Roofer",
   description:
-    "Meet Gates Enterprises, Colorado's most certified roofing company. Owner Alex Chicilo built the company on quality craftsmanship and manufacturer certifications that less than 1% of roofers hold.",
+    "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/about" },
   openGraph: {
-    title: "About Gates Enterprises | Colorado's Most Certified Roofer",
-    description: "Meet Gates Enterprises, Colorado's most certified roofing company. Owner Alex Chicilo built the company on quality craftsmanship and manufacturer certifications that less than 1% of roofers hold.",
+    title: "About Gates Enterprises | 4x Certified CO Roofer",
+    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
     url: "https://www.gatesroof.com/about",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Gates Enterprises | Colorado's Most Certified Roofer",
-    description: "Meet Gates Enterprises, Colorado's most certified roofing company. Owner Alex Chicilo built the company on quality craftsmanship and manufacturer certifications that less than 1% of roofers hold.",
+    title: "About Gates Enterprises | 4x Certified CO Roofer",
+    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
     images: ["https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov"],
   },
 };
