@@ -24,7 +24,7 @@
     "landing_page": "https://gatesroof.com/services/storm-damage",
     "certifications": [
       "GAF Master Elite Contractor",
-      "Owens Corning Preferred",
+      "Owens Corning Platinum Preferred",
       "Malarkey Emerald Premium",
       "CertainTeed Shingle Master"
     ],
@@ -34,21 +34,66 @@
   },
   "ad_templates": {
     "headlines": [
-      {"text": "Hail Damage in {city}? Free Inspection", "pin": 1},
-      {"text": "Storm Hit {city}? We Can Help", "pin": 2},
-      {"text": "{city} Hail Damage Roof Repair", "pin": null},
-      {"text": "Free Storm Damage Assessment", "pin": null},
-      {"text": "4x Manufacturer Certified Roofer", "pin": null},
-      {"text": "7,200+ Colorado Roofs Completed", "pin": null},
-      {"text": "306 Reviews, 4.8 Stars", "pin": null},
-      {"text": "GAF Master Elite Contractor", "pin": null},
-      {"text": "Owens Corning Preferred", "pin": null},
-      {"text": "Insurance Claim Specialists", "pin": null},
-      {"text": "Same-Week Inspection Available", "pin": null},
-      {"text": "Colorado's Most Trusted Roofer", "pin": null},
-      {"text": "Don't Wait. File Your Claim Now", "pin": null},
-      {"text": "Hail Season? Get Ahead of It", "pin": null},
-      {"text": "Call Gates: (720) 766-3377", "pin": null}
+      {
+        "text": "Hail Damage in {city}?",
+        "pin": 1
+      },
+      {
+        "text": "Storm Hit {city}? We Help",
+        "pin": 2
+      },
+      {
+        "text": "{city} Hail Roof Repair",
+        "pin": null
+      },
+      {
+        "text": "Free Storm Damage Assessment",
+        "pin": null
+      },
+      {
+        "text": "4x Manufacturer Certified",
+        "pin": null
+      },
+      {
+        "text": "7,200+ Roofs Completed in CO",
+        "pin": null
+      },
+      {
+        "text": "306 Reviews, 4.8 Stars",
+        "pin": null
+      },
+      {
+        "text": "GAF Master Elite Contractor",
+        "pin": null
+      },
+      {
+        "text": "Owens Corning Platinum",
+        "pin": null
+      },
+      {
+        "text": "Insurance Claim Specialists",
+        "pin": null
+      },
+      {
+        "text": "Same-Week Inspections",
+        "pin": null
+      },
+      {
+        "text": "Colorado's Trusted Roofer",
+        "pin": null
+      },
+      {
+        "text": "File Your Claim Now",
+        "pin": null
+      },
+      {
+        "text": "Hail Season? Get Ahead",
+        "pin": null
+      },
+      {
+        "text": "Call (720) 766-3377",
+        "pin": null
+      }
     ],
     "descriptions": [
       "{city} was recently hit by hail. Gates Enterprises offers free roof inspections with no obligation. 4x manufacturer certified.",
@@ -92,10 +137,30 @@
       "do it yourself"
     ],
     "sitelinks": [
-      {"text": "Free Inspection", "description1": "No-obligation storm damage assessment", "description2": "Schedule your inspection today", "url": "https://gatesroof.com/services/storm-damage"},
-      {"text": "Our Certifications", "description1": "4x manufacturer certified roofer", "description2": "GAF, Owens Corning, Malarkey, CertainTeed", "url": "https://gatesroof.com/about"},
-      {"text": "Customer Reviews", "description1": "306 reviews with a 4.8-star rating", "description2": "See what Colorado homeowners say", "url": "https://gatesroof.com/reviews"},
-      {"text": "Storm Damage Guide", "description1": "What to do after a hail storm", "description2": "Protect your home and insurance claim", "url": "https://gatesroof.com/blog"}
+      {
+        "text": "Free Inspection",
+        "description1": "No-obligation storm damage assessment",
+        "description2": "Schedule your inspection today",
+        "url": "https://gatesroof.com/services/storm-damage"
+      },
+      {
+        "text": "Our Certifications",
+        "description1": "4x manufacturer certified roofer",
+        "description2": "GAF, Owens Corning, Malarkey, CertainTeed",
+        "url": "https://gatesroof.com/about"
+      },
+      {
+        "text": "Customer Reviews",
+        "description1": "306 reviews with a 4.8-star rating",
+        "description2": "See what Colorado homeowners say",
+        "url": "https://gatesroof.com/reviews"
+      },
+      {
+        "text": "Storm Damage Guide",
+        "description1": "What to do after a hail storm",
+        "description2": "Protect your home and insurance claim",
+        "url": "https://gatesroof.com/blog"
+      }
     ],
     "callouts": [
       "Free Estimates",
@@ -117,36 +182,126 @@
     }
   },
   "colorado_cities": {
-    "Denver": {"geo_id": 1014395, "region": "Metro"},
-    "Aurora": {"geo_id": 1014232, "region": "Metro"},
-    "Lakewood": {"geo_id": 1014545, "region": "Metro"},
-    "Thornton": {"geo_id": 1014744, "region": "Metro"},
-    "Arvada": {"geo_id": 1014228, "region": "Metro"},
-    "Westminster": {"geo_id": 1014789, "region": "Metro"},
-    "Centennial": {"geo_id": 1014305, "region": "Metro"},
-    "Boulder": {"geo_id": 1014267, "region": "Front Range"},
-    "Longmont": {"geo_id": 1014559, "region": "Front Range"},
-    "Loveland": {"geo_id": 1014566, "region": "Front Range"},
-    "Fort Collins": {"geo_id": 1014427, "region": "Front Range"},
-    "Greeley": {"geo_id": 1014462, "region": "Front Range"},
-    "Broomfield": {"geo_id": 1014276, "region": "Metro"},
-    "Castle Rock": {"geo_id": 1014300, "region": "South Metro"},
-    "Parker": {"geo_id": 1014649, "region": "South Metro"},
-    "Highlands Ranch": {"geo_id": 1014484, "region": "South Metro"},
-    "Littleton": {"geo_id": 1014556, "region": "South Metro"},
-    "Englewood": {"geo_id": 1014413, "region": "South Metro"},
-    "Commerce City": {"geo_id": 1014346, "region": "Metro"},
-    "Brighton": {"geo_id": 1014273, "region": "Metro"},
-    "Northglenn": {"geo_id": 1014630, "region": "Metro"},
-    "Federal Heights": {"geo_id": 1014420, "region": "Metro"},
-    "Wheat Ridge": {"geo_id": 1014791, "region": "Metro"},
-    "Golden": {"geo_id": 1014452, "region": "Metro"},
-    "Erie": {"geo_id": 1014416, "region": "Front Range"},
-    "Frederick": {"geo_id": 1014436, "region": "Front Range"},
-    "Firestone": {"geo_id": 1014423, "region": "Front Range"},
-    "Dacono": {"geo_id": 1014370, "region": "Front Range"},
-    "Colorado Springs": {"geo_id": 1014341, "region": "South"},
-    "Pueblo": {"geo_id": 1014669, "region": "South"}
+    "Denver": {
+      "geo_id": 1014395,
+      "region": "Metro"
+    },
+    "Aurora": {
+      "geo_id": 1014232,
+      "region": "Metro"
+    },
+    "Lakewood": {
+      "geo_id": 1014545,
+      "region": "Metro"
+    },
+    "Thornton": {
+      "geo_id": 1014744,
+      "region": "Metro"
+    },
+    "Arvada": {
+      "geo_id": 1014228,
+      "region": "Metro"
+    },
+    "Westminster": {
+      "geo_id": 1014789,
+      "region": "Metro"
+    },
+    "Centennial": {
+      "geo_id": 1014305,
+      "region": "Metro"
+    },
+    "Boulder": {
+      "geo_id": 1014267,
+      "region": "Front Range"
+    },
+    "Longmont": {
+      "geo_id": 1014559,
+      "region": "Front Range"
+    },
+    "Loveland": {
+      "geo_id": 1014566,
+      "region": "Front Range"
+    },
+    "Fort Collins": {
+      "geo_id": 1014427,
+      "region": "Front Range"
+    },
+    "Greeley": {
+      "geo_id": 1014462,
+      "region": "Front Range"
+    },
+    "Broomfield": {
+      "geo_id": 1014276,
+      "region": "Metro"
+    },
+    "Castle Rock": {
+      "geo_id": 1014300,
+      "region": "South Metro"
+    },
+    "Parker": {
+      "geo_id": 1014649,
+      "region": "South Metro"
+    },
+    "Highlands Ranch": {
+      "geo_id": 1014484,
+      "region": "South Metro"
+    },
+    "Littleton": {
+      "geo_id": 1014556,
+      "region": "South Metro"
+    },
+    "Englewood": {
+      "geo_id": 1014413,
+      "region": "South Metro"
+    },
+    "Commerce City": {
+      "geo_id": 1014346,
+      "region": "Metro"
+    },
+    "Brighton": {
+      "geo_id": 1014273,
+      "region": "Metro"
+    },
+    "Northglenn": {
+      "geo_id": 1014630,
+      "region": "Metro"
+    },
+    "Federal Heights": {
+      "geo_id": 1014420,
+      "region": "Metro"
+    },
+    "Wheat Ridge": {
+      "geo_id": 1014791,
+      "region": "Metro"
+    },
+    "Golden": {
+      "geo_id": 1014452,
+      "region": "Metro"
+    },
+    "Erie": {
+      "geo_id": 1014416,
+      "region": "Front Range"
+    },
+    "Frederick": {
+      "geo_id": 1014436,
+      "region": "Front Range"
+    },
+    "Firestone": {
+      "geo_id": 1014423,
+      "region": "Front Range"
+    },
+    "Dacono": {
+      "geo_id": 1014370,
+      "region": "Front Range"
+    },
+    "Colorado Springs": {
+      "geo_id": 1014341,
+      "region": "South"
+    },
+    "Pueblo": {
+      "geo_id": 1014669,
+      "region": "South"
+    }
   },
   "storm_trigger": {
     "min_hail_size_inches": 1.0,
