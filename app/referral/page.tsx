@@ -185,7 +185,6 @@ export default function ReferralPage() {
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: GOLD, marginBottom: 8, letterSpacing: "0.1em" }}>GATES MVP PERKS</div>
                       {[
                         "\"Gates MVP\" yard sign for your home",
-                        "Lifetime 10% discount on all future Gates work",
                         "Free upgrade to premium materials on roof replacements",
                         "Free annual gutter cleaning",
                         "Priority scheduling and dedicated project manager",
