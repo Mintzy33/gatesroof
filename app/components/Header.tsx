@@ -80,7 +80,7 @@ export default function Header() {
             <Image ref={logoRef} src="/logo.png" alt="Gates Enterprises" width={200} height={58} className="header-logo" style={{ height: 58, width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} priority />
             <span className="header-text" style={{ fontFamily: "var(--font-raleway), 'Raleway', sans-serif", fontSize: 19, fontWeight: 300, color: WHITE, lineHeight: 1, whiteSpace: "nowrap", letterSpacing: "0.08em" }}>GATES ENTERPRISES</span>
           </Link>
-          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 28 }}>
+          <nav className="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 24, marginLeft: 32 }}>
             {/* Services dropdown */}
             <div
               onMouseEnter={handleServicesEnter}
@@ -159,8 +159,8 @@ export default function Header() {
             {links.map(item => (
               <Link key={item.l} href={item.h} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500, color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.3s" }}>{item.l}</Link>
             ))}
-            <Link href="/referral" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#4ADE80", textDecoration: "none", transition: "color 0.3s", display: "flex", alignItems: "center", gap: 5 }}>
-              <span style={{ fontSize: 14 }}>💰</span> Refer &amp; Earn
+            <Link href="/referral" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#4ADE80", textDecoration: "none", transition: "color 0.3s" }}>
+              Refer &amp; Earn
             </Link>
             <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.12)" }} />
             <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none", whiteSpace: "nowrap" as const }}>(720) 766-3377</a>
@@ -228,7 +228,7 @@ export default function Header() {
             <Link key={item.l} href={item.h} onClick={() => setMenuOpen(false)} style={{ display: "block", padding: "20px 0", fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 700, color: NAVY, textDecoration: "none", borderBottom: "1px solid rgba(13,33,55,0.06)", opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(20px)", transition: `opacity 0.4s ${0.12 + i * 0.04}s, transform 0.4s ${0.12 + i * 0.04}s` }}>{item.l}</Link>
           ))}
           <Link href="/referral" onClick={() => setMenuOpen(false)} style={{ display: "flex", alignItems: "center", gap: 10, padding: "20px 0", fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 28, fontWeight: 700, color: "#16A34A", textDecoration: "none", opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(20px)", transition: `opacity 0.4s ${0.12 + links.length * 0.04}s, transform 0.4s ${0.12 + links.length * 0.04}s` }}>
-            <span style={{ fontSize: 24 }}>💰</span> Refer &amp; Earn $250
+            Refer &amp; Earn $250
           </Link>
         </div>
         <div style={{ padding: "24px 28px 40px", background: "#FAFBFD" }}>

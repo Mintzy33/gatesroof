@@ -152,14 +152,16 @@ export default function BlogPostLayout({
       {/* Cover Image */}
       {coverImage && (
         <div style={{ maxWidth: 760, margin: "-20px auto 0", padding: "0 24px" }}>
-          <Image
-            src={coverImage.src}
-            alt={coverImage.alt}
-            width={coverImage.width}
-            height={coverImage.height}
-            priority
-            style={{ borderRadius: 16, width: "100%", height: "auto", boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}
-          />
+          <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", overflow: "hidden", borderRadius: 16, boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}>
+            <Image
+              src={coverImage.src}
+              alt={coverImage.alt}
+              width={coverImage.width}
+              height={coverImage.height}
+              priority
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
         </div>
       )}
 
