@@ -181,20 +181,22 @@ export default function ReferralPage() {
                   <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 800, color: r.highlight ? WHITE : NAVY, margin: "8px 0", lineHeight: 1 }}>{r.amount}</div>
                   <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: r.highlight ? "rgba(255,255,255,0.7)" : TEXT_LIGHT, margin: "0 0 0 0" }}>{r.desc}</p>
                   {r.highlight && (
-                    <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(255,255,255,0.06)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.1)" }}>
-                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: GOLD, marginBottom: 8, letterSpacing: "0.1em" }}>GATES MVP PERKS</div>
+                    <div style={{ marginTop: 20, padding: "18px 22px", background: "rgba(255,255,255,0.06)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.1)" }}>
+                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: GOLD, marginBottom: 12, letterSpacing: "0.1em", textAlign: "center" }}>GATES MVP PERKS</div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                       {[
                         "\"Gates MVP\" yard sign for your home",
                         "Free upgrade to premium materials on roof replacements",
                         "Free annual gutter cleaning",
                         "Priority scheduling and dedicated project manager",
                         "First call after every storm in your area",
-                      ].map((perk, j, arr) => (
-                        <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "center", marginBottom: j < arr.length - 1 ? 6 : 0 }}>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.8)" }}>{perk}</span>
+                      ].map((perk, j) => (
+                        <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                          <svg style={{ flexShrink: 0, marginTop: 2 }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.5, color: "rgba(255,255,255,0.85)" }}>{perk}</span>
                         </div>
                       ))}
+                      </div>
                     </div>
                   )}
                 </div>
