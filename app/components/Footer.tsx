@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: NAVY, letterSpacing: "0.14em", textTransform: "uppercase" as const, marginBottom: 18 }}>Services</h3>
-            {[{l:"Roof Replacement",h:"/services/roof-replacement"},{l:"Storm & Hail Damage",h:"/services/storm-hail-damage"},{l:"Roof Repair",h:"/services/roof-repair"},{l:"Siding & Exterior",h:"/services/siding-exterior"},{l:"Gutters & Guards",h:"/services/gutters-guards"},{l:"Windows",h:"/services/windows"},{l:"Paint",h:"/services/paint"},{l:"Insurance Restoration",h:"/services/insurance-claims"}].map(lk=>(
+            {[{l:"Roof Replacement",h:"/services/roof-replacement"},{l:"Storm & Hail Damage",h:"/services/storm-hail-damage"},{l:"Roof Repair",h:"/services/roof-repair"},{l:"Siding & Exterior",h:"/services/siding-exterior"},{l:"Gutters & Guards",h:"/services/gutters-guards"},{l:"Windows",h:"/services/windows"},{l:"Paint",h:"/services/paint"},{l:"Insurance Restoration",h:"/services/insurance-claims"},{l:"Drone Inspections",h:"/services/drone-inspections"}].map(lk=>(
               <Link key={lk.l} href={lk.h} style={{ display:"block", fontFamily:"var(--font-dm-sans), 'DM Sans', sans-serif", fontSize:14, color:TEXT_LIGHT, textDecoration:"none", marginBottom:12 }}>{lk.l}</Link>
             ))}
           </div>
