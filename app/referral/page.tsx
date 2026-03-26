@@ -174,26 +174,49 @@ export default function ReferralPage() {
               { tier: "2nd Referral", amount: "$350", desc: "Your second approved referral earns you even more.", highlight: false },
               { tier: "3rd Referral", amount: "$500", desc: "Plus Gates MVP status with exclusive perks.", highlight: true },
             ].map((r, i) => (
-              <div key={i} style={{ background: r.highlight ? NAVY : WHITE, borderRadius: 20, padding: "36px 28px", border: r.highlight ? "none" : "1px solid rgba(13,33,55,0.08)", boxShadow: r.highlight ? "0 20px 60px rgba(13,33,55,0.2)" : "0 2px 12px rgba(13,33,55,0.06)", textAlign: "center", position: "relative", overflow: "hidden" }}>
+              <div key={i} className={r.highlight ? "" : "referral-tier-card"} style={{ background: r.highlight ? NAVY : WHITE, borderRadius: 20, padding: r.highlight ? "36px 28px" : "44px 32px", border: r.highlight ? "none" : "1px solid rgba(13,33,55,0.10)", boxShadow: r.highlight ? "0 20px 60px rgba(13,33,55,0.2)" : "0 4px 20px rgba(13,33,55,0.08)", textAlign: "center", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center", transition: "box-shadow 0.3s ease, transform 0.3s ease" }}>
                 {r.highlight && <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 50% 0%, rgba(59,125,216,0.15) 0%, transparent 60%)" }} />}
+                {!r.highlight && <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(135deg, rgba(37,99,235,0.03) 0%, rgba(250,251,253,0.5) 100%)" }} />}
                 <div style={{ position: "relative", zIndex: 1 }}>
+                  {/* Gift icon for white cards */}
+                  {!r.highlight && (
+                    <div style={{ margin: "0 auto 20px", width: 48, height: 48, borderRadius: 12, background: "rgba(37,99,235,0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="8" width="18" height="4" rx="1" />
+                        <path d="M12 8v13" />
+                        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+                        <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" />
+                      </svg>
+                    </div>
+                  )}
                   <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: r.highlight ? GOLD : ACCENT, letterSpacing: "0.15em", textTransform: "uppercase" }}>{r.tier}</span>
-                  <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 800, color: r.highlight ? WHITE : NAVY, margin: "8px 0", lineHeight: 1 }}>{r.amount}</div>
-                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: r.highlight ? "rgba(255,255,255,0.7)" : TEXT_LIGHT, margin: "0 0 0 0" }}>{r.desc}</p>
+                  <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 800, color: r.highlight ? WHITE : NAVY, margin: r.highlight ? "8px 0" : "12px 0 16px", lineHeight: 1 }}>{r.amount}</div>
+                  <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: r.highlight ? "rgba(255,255,255,0.7)" : TEXT_LIGHT, margin: 0 }}>{r.desc}</p>
+                  {!r.highlight && (
+                    <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(13,33,55,0.06)" }}>
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                        <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>No limit on referrals</span>
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginTop: 8 }}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                        <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Neighbor gets $100 off</span>
+                      </div>
+                    </div>
+                  )}
                   {r.highlight && (
-                    <div style={{ marginTop: 20, padding: "18px 22px", background: "rgba(255,255,255,0.06)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.1)" }}>
-                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: GOLD, marginBottom: 12, letterSpacing: "0.1em", textAlign: "center" }}>GATES MVP PERKS</div>
-                      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                    <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(255,255,255,0.06)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.1)" }}>
+                      <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: GOLD, marginBottom: 10, letterSpacing: "0.1em", textAlign: "center" }}>GATES MVP PERKS</div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                       {[
                         "\"Gates MVP\" yard sign for your home",
                         "Free upgrade to premium materials on roof replacements",
                         "Free annual gutter cleaning",
                         "Priority scheduling and dedicated project manager",
-                        "First call after every storm in your area",
                       ].map((perk, j) => (
-                        <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                          <svg style={{ flexShrink: 0, marginTop: 2 }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.5, color: "rgba(255,255,255,0.85)" }}>{perk}</span>
+                        <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+                          <svg style={{ flexShrink: 0, marginTop: 2 }} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.5, color: "rgba(255,255,255,0.85)" }}>{perk}</span>
                         </div>
                       ))}
                       </div>
@@ -350,7 +373,8 @@ export default function ReferralPage() {
       <style>{`
         .referral-hiw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
         .referral-why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .referral-tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .referral-tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+        .referral-tier-card:hover { box-shadow: 0 12px 36px rgba(13,33,55,0.14) !important; transform: translateY(-4px) !important; }
         @media (max-width: 768px) {
           .referral-hiw-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .referral-hiw-connector { display: none !important; }
