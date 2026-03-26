@@ -183,8 +183,15 @@ export default function ReferralPage() {
                   {r.highlight && (
                     <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(255,255,255,0.06)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.1)" }}>
                       <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: GOLD, marginBottom: 8, letterSpacing: "0.1em" }}>GATES MVP PERKS</div>
-                      {["Priority scheduling on all future projects", "Dedicated project manager", "Free annual roof inspection"].map((perk, j) => (
-                        <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "center", marginBottom: j < 2 ? 6 : 0 }}>
+                      {[
+                        "\"Gates MVP\" yard sign for your home",
+                        "Lifetime 10% discount on all future Gates work",
+                        "Free upgrade to premium materials on roof replacements",
+                        "Free annual gutter cleaning",
+                        "Priority scheduling and dedicated project manager",
+                        "First call after every storm in your area",
+                      ].map((perk, j, arr) => (
+                        <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "center", marginBottom: j < arr.length - 1 ? 6 : 0 }}>
                           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.8)" }}>{perk}</span>
                         </div>
