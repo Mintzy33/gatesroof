@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
-  description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
+  description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 306 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/morrison" },
   openGraph: {
     title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
-    description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
+    description: "Morrison's trusted mountain roofer. 7,200+ roofs, 4.8★ from 306 reviews. 4x manufacturer certified. Free mountain home inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/morrison",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -56,7 +56,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "305",
+        "reviewCount": "306",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

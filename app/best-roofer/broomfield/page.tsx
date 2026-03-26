@@ -4,12 +4,12 @@ import BestRooferCityContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Broomfield (2026) | 4x Certified ★ 305+ Reviews",
-  description: "Broomfield's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377 today",
+  title: "Best Roofer Broomfield (2026) | 4x Certified ★ 306+ Reviews",
+  description: "Broomfield's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. Free storm inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer/broomfield" },
   openGraph: {
-    title: "Best Roofer Broomfield (2026) | 4x Certified ★ 305+ Reviews",
-    description: "Broomfield's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. Free storm inspections. Call (720) 766-3377 today",
+    title: "Best Roofer Broomfield (2026) | 4x Certified ★ 306+ Reviews",
+    description: "Broomfield's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. Free storm inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/best-roofer/broomfield",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Broomfield?",
-    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Broomfield. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, their track record speaks for itself."
+    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Broomfield. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.8 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Broomfield roofer have?",

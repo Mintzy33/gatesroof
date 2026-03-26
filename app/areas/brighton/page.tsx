@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Brighton CO Roofer | 4x Certified, 305+ Reviews ★",
-  description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 305 reviews. Free storm damage inspections. Call (720) 766-3377 today",
+  title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
+  description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 306 reviews. Free storm damage inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/brighton" },
   openGraph: {
-    title: "Brighton CO Roofer | 4x Certified, 305+ Reviews ★",
-    description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 305 reviews. Free storm damage inspections. Call (720) 766-3377 today",
+    title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
+    description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 306 reviews. Free storm damage inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/brighton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -56,7 +56,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "305",
+        "reviewCount": "306",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

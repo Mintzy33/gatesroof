@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Insurance Restoration Roofer CO | 4x Certified ★",
-  description: "Colorado's top insurance restoration roofer. 4x certified, 7,200+ restorations, 4.8★ from 305 reviews. Free inspections + full claim support. (720) 766-3377",
+  description: "Colorado's top insurance restoration roofer. 4x certified, 7,200+ restorations, 4.8★ from 306 reviews. Free inspections + full claim support. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/insurance-restoration" },
   openGraph: {
     title: "Insurance Restoration Roofer CO | 4x Certified ★",
-    description: "Colorado's top insurance restoration roofer. 4x certified, 7,200+ restorations, 4.8★ from 305 reviews. Free inspections + full claim support. (720) 766-3377",
+    description: "Colorado's top insurance restoration roofer. 4x certified, 7,200+ restorations, 4.8★ from 306 reviews. Free inspections + full claim support. (720) 766-3377",
     url: "https://www.gatesroof.com/insurance-restoration",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

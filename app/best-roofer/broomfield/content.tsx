@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Broomfield?",
-    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Broomfield. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 305+ Google reviews and a 4.8 star rating, their track record speaks for itself."
+    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Broomfield. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.8 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Broomfield roofer have?",
@@ -47,7 +47,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands" },
-  { label: "305+ verified Google reviews" },
+  { label: "306+ verified Google reviews" },
   { label: "4.8 star average rating" },
   { label: "8+ years serving Colorado's Front Range" },
   { label: "Proprietary hail damage technology (HailScore)" },
@@ -87,7 +87,7 @@ export default function BestRooferCityContent() {
             Best Roofer in Broomfield, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 305+ Reviews. 4.8 Stars.
+            Colorado's Only Quadruple Certified Roofing Contractor. 306+ Reviews. 4.8 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Broomfield sits at the crossroads of Boulder and Denver along the US-36 corridor, right in Colorado's most active hail belt. This stretch of the Front Range sees some of the highest concentrations of severe hailstorms in the entire country. Combined with intense high altitude UV exposure and dramatic temperature swings, Broomfield roofs face relentless punishment. The best roofer for Broomfield homeowners is one who knows these conditions inside and out and carries the certifications to prove it.
@@ -123,7 +123,7 @@ export default function BestRooferCityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>2. Verified Customer Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 305+ Google reviews with a 4.8 star average.
+              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 306+ Google reviews with a 4.8 star average.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export default function BestRooferCityContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(305+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -251,7 +251,7 @@ export default function BestRooferCityContent() {
 
       <CTA
         title="Get Broomfield's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 305+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 306+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city || !service || !neighborhood || neighborhood.parentCity !== citySlug) return {};
 
   const title = `${service.service} in ${neighborhood.name}, ${city.city} CO | Gates Enterprises`;
-  const description = `${service.service} in ${neighborhood.name}, ${city.city}, Colorado. ${neighborhood.housingAge} homes with ${neighborhood.commonRoofTypes.toLowerCase()}. 4x manufacturer certified, 4.8 stars, 305 reviews. Free estimates.`;
+  const description = `${service.service} in ${neighborhood.name}, ${city.city}, Colorado. ${neighborhood.housingAge} homes with ${neighborhood.commonRoofTypes.toLowerCase()}. 4x manufacturer certified, 4.8 stars, 306 reviews. Free estimates.`;
   const url = `https://www.gatesroof.com/services/${service.slug}/${city.slug}/${neighborhood.slug}`;
 
   const indexed = shouldIndexNeighborhood();
@@ -97,7 +97,7 @@ export default async function Page({ params }: Props) {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.8",
-        reviewCount: "305",
+        reviewCount: "306",
         bestRating: "5",
       },
     },
@@ -218,7 +218,7 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `Does Gates Enterprises serve ${n.name} in ${c.city}?`,
-      a: `Yes. Gates Enterprises provides ${s.service.toLowerCase()} throughout ${n.name} and all of ${c.city}. With thousands of completed projects across Colorado's Front Range and a 4.8-star rating from 305 Google reviews, we bring certified quality to every ${n.name} project. Call (720) 766-3377 or visit our contact page to schedule a free estimate.`,
+      a: `Yes. Gates Enterprises provides ${s.service.toLowerCase()} throughout ${n.name} and all of ${c.city}. With thousands of completed projects across Colorado's Front Range and a 4.8-star rating from 306 Google reviews, we bring certified quality to every ${n.name} project. Call (720) 766-3377 or visit our contact page to schedule a free estimate.`,
     },
     {
       q: `How long does ${s.service.toLowerCase()} take in ${n.name}?`,
@@ -234,7 +234,7 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `What makes Gates Enterprises different from other roofers in ${n.name}?`,
-      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With 305 Google reviews (4.8 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
+      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. With 306 Google reviews (4.8 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
     },
   ];
 

@@ -55,7 +55,7 @@ function getNeighborhoodWhySection(
 function getNeighborhoodWhyChoose(neighborhoodName: string, cityName: string, housingAge: string): string[] {
   return [
     "GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certified",
-    "305 Google reviews with a 4.8-star rating from Colorado homeowners",
+    "306 Google reviews with a 4.8-star rating from Colorado homeowners",
     "Over thousands of roofing projects completed across the Front Range",
     "Free inspections with no obligation and no pressure",
     `Experience with ${housingAge} homes common in ${neighborhoodName}`,
@@ -849,7 +849,7 @@ export default function NeighborhoodContent({
 
       <CTA
         title={`Need ${service.service.toLowerCase()} in ${neighborhood.name}?`}
-        subtitle={`Call Gates Enterprises at (720) 766-3377 for a free inspection and estimate in ${neighborhood.name}, ${city.city}. Quadruple manufacturer certified. 305 Google reviews, 4.8 stars.`}
+        subtitle={`Call Gates Enterprises at (720) 766-3377 for a free inspection and estimate in ${neighborhood.name}, ${city.city}. Quadruple manufacturer certified. 306 Google reviews, 4.8 stars.`}
       />
 
       <Footer />

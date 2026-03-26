@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-  description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
+  description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
     title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-    description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
+    description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -62,7 +62,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "305",
+        "reviewCount": "306",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

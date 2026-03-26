@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Lakewood Roofer | Local HQ, 4x Certified, 305+ Reviews ★",
-  description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
+  title: "Lakewood Roofer | Local HQ, 4x Certified, 306+ Reviews ★",
+  description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 306 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
-    title: "Lakewood Roofer | Local HQ, 4x Certified, 305+ Reviews ★",
-    description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 305 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
+    title: "Lakewood Roofer | Local HQ, 4x Certified, 306+ Reviews ★",
+    description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.8★ from 306 reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -64,7 +64,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "305",
+        "reviewCount": "306",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

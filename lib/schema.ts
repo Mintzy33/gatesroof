@@ -20,7 +20,7 @@ export const BUSINESS_INFO = {
     country: "US",
   },
   geo: { latitude: 39.7392, longitude: -105.0781 },
-  rating: { value: "4.8", count: "305", best: "5" },
+  rating: { value: "4.8", count: "306", best: "5" },
   priceRange: "$$",
   sameAs: [
     "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
