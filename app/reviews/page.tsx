@@ -5,9 +5,9 @@ import { reviewPageSchema, breadcrumbSchema } from "../../lib/schema";
 import { reviews } from "../data/reviews";
 
 export const metadata: Metadata = {
-  title: "306+ Reviews, 4.8★ | Gates Enterprises LLC",
+  title: "308+ Reviews, 4.8★ | Gates Enterprises LLC",
   description:
-    "Read 306+ five-star reviews from Colorado homeowners. 7,200+ roofs completed. See why Gates Enterprises is the Front Range's most trusted roofer",
+    "Read 308+ five-star reviews from Colorado homeowners. 7,200+ roofs completed. See why Gates Enterprises is the Front Range's most trusted roofer",
   alternates: { canonical: "https://www.gatesroof.com/reviews" },
 };
 

@@ -6,11 +6,11 @@ import { breadcrumbSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "About Gates Enterprises | 4x Certified CO Roofer",
   description:
-    "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 306 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
+    "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 308 Reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/about" },
   openGraph: {
     title: "About Gates Enterprises | 4x Certified CO Roofer",
-    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 306 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
+    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 308 Reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
     url: "https://www.gatesroof.com/about",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Gates Enterprises | 4x Certified CO Roofer",
-    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 306 reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
+    description: "Meet Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 308 Reviews. Certifications less than 1% of roofers hold. (720) 766-3377",
     images: ["https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov"],
   },
 };

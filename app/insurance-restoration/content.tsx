@@ -86,7 +86,7 @@ export default function InsuranceRestorationContent() {
             Colorado's Premier Insurance Restoration Roofer
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified. Data Driven Documentation. 306+ Five Star Reviews.
+            Quadruple Certified. Data Driven Documentation. 308+ Five Star Reviews.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado ranks number one in the nation for insured hail losses. Every year, tens of thousands of homeowners along the Front Range file insurance claims for storm damage to their roofs, siding, and gutters. The insurance restoration process can feel overwhelming, but it does not have to be. Gates Enterprises LLC has guided thousands of Colorado homeowners through the process, providing thorough documentation, clear communication, and quality restoration work backed by four manufacturer certifications.
@@ -197,7 +197,7 @@ export default function InsuranceRestorationContent() {
               "Professional adjuster meetings where a Gates representative walks through every line item",
               "Supplementing expertise to capture damage that initial estimates may miss",
               "Quadruple manufacturer certification ensuring the highest quality installation regardless of which brand you choose",
-              "306+ Google reviews and a 4.8 star rating reflecting years of trusted insurance restoration work",
+              "308+ Google reviews and a 4.8 star rating reflecting years of trusted insurance restoration work",
               "8+ years of experience navigating Colorado's insurance restoration landscape",
               "Clear communication throughout every stage of the process",
             ].map((item, i) => (
@@ -237,7 +237,7 @@ export default function InsuranceRestorationContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />

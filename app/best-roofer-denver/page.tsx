@@ -4,12 +4,12 @@ import BestRooferDenverContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Denver CO (2026) | 4x Certified ★ 306+ Reviews",
-  description: "Denver's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  title: "Best Roofer Denver CO (2026) | 4x Certified ★ 308+ Reviews",
+  description: "Denver's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-denver" },
   openGraph: {
-    title: "Best Roofer Denver CO (2026) | 4x Certified ★ 306+ Reviews",
-    description: "Denver's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    title: "Best Roofer Denver CO (2026) | 4x Certified ★ 308+ Reviews",
+    description: "Denver's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Denver?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Denver. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.8 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Denver. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.8 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a roofer have?",

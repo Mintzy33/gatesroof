@@ -63,7 +63,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Premium materials including impact resistant Class 4 options",
               "thousands of roofs completed across the Denver metro",
-              "4.8 star Google rating from 306+ verified reviews",
+              "4.8 star Google rating from 308+ verified reviews",
               "CertainTeed Shingle Master Pro and Owens Corning Preferred certified",
               "Free inspections with detailed photo documentation",
             ].map((item, i) => (

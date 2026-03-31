@@ -1,0 +1,355 @@
+=== Mon Mar 30 13:21:10 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 13:21:11
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 13:51:13 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 13:51:14
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 14:21:20 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 14:21:20
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 14:51:26 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 14:51:26
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 15:21:29 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 15:21:29
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 15:51:43 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 15:51:44
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 16:21:47 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 16:21:48
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 16:51:51 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 16:51:51
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 17:21:54 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 17:21:55
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 17:51:57 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 17:51:57
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 18:22:00 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 18:22:00
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 18:52:03 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 18:52:04
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 19:22:06 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 19:22:06
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 19:52:09 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 19:52:09
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 20:22:11 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 20:22:12
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 20:52:14 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 20:52:14
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 21:22:20 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 21:22:20
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 21:52:23 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 21:52:23
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 22:22:26 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 22:22:26
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 22:52:28 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 22:52:29
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 23:22:31 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 23:22:31
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Mon Mar 30 23:52:34 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-30 23:52:34
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 00:22:37 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 00:22:37
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 00:52:39 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 00:52:40
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 01:22:43 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 01:22:44
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 01:52:47 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 01:52:47
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 02:22:50 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 02:22:50
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 02:52:53 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 02:52:53
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 03:22:56 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 03:22:57
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 03:52:59 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 03:52:59
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 04:23:02 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 04:23:02
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 04:53:05 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 04:53:05
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 05:23:07 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 05:23:08
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 05:53:10 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 05:53:10
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 06:23:13 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 06:23:13
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 06:53:15 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 06:53:16
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Tue Mar 31 07:23:18 MDT 2026 ===
+🌩️  Storm Trigger — 2026-03-31 07:23:18
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+⚠️  HailScore API error: 500 Server Error: Internal Server Error for url: https://www.myhailscore.com/api/storm-alerts/check
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.

@@ -4,12 +4,12 @@ import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 306+ Reviews",
-  description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
+  title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 308+ Reviews",
+  description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-aurora" },
   openGraph: {
-    title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 306+ Reviews",
-    description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 306 reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
+    title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 308+ Reviews",
+    description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
+    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.8 star rating, their reputation is built on consistent results."
   },
   {
     q: "How often does Aurora get hail damage?",

@@ -121,7 +121,7 @@ export default function WarrantyContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
           </div>
           <div style={{ width: 1, height: 24, background: "rgba(13,33,55,0.12)" }} />
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Colorado's Only Quadruple Certified Roofer</span>
@@ -232,7 +232,7 @@ export default function WarrantyContent() {
             Beyond manufacturer warranties, Gates Enterprises stands behind the quality of every installation we perform. Our workmanship guarantee means that if any issue arises due to installation, we will return to make it right. No questions asked.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            We have built our reputation on doing the job right the first time. With thousands of completed roofing projects across the Front Range, a 4.8 star rating from 306+ reviews, and four manufacturer certifications, our track record speaks for itself.
+            We have built our reputation on doing the job right the first time. With thousands of completed roofing projects across the Front Range, a 4.8 star rating from 308+ reviews, and four manufacturer certifications, our track record speaks for itself.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             When you choose Gates Enterprises, you get the confidence of knowing that your roof is protected by both the manufacturer and the contractor who installed it. That is the kind of double coverage most homeowners never get.
@@ -243,7 +243,7 @@ export default function WarrantyContent() {
               "Every installation backed by our workmanship guarantee",
               "Certified crews trained to manufacturer specifications",
               "Thousands of completed projects across Colorado's Front Range",
-              "4.8 star rating from 306+ verified Google reviews",
+              "4.8 star rating from 308+ verified Google reviews",
               "Responsive service team for any post installation questions",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
