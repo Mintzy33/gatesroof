@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Arvada CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
+  title: "Arvada CO Roofer | 4x Certified, 306+ Reviews ★",
+  description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/arvada" },
   openGraph: {
-    title: "Arvada CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.8★ from 308 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
+    title: "Arvada CO Roofer | 4x Certified, 306+ Reviews ★",
+    description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/arvada",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8028, "longitude": -105.0875 },
   "areaServed": { "@type": "City", "name": "Arvada", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "308", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "306", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

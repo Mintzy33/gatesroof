@@ -63,7 +63,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Residential and commercial roof systems covered",
               "thousands of roofs completed across the Denver metro",
-              "4.8 star Google rating from 300+ verified reviews",
+              "4.9 star Google rating from 300+ verified reviews",
               "CertainTeed Shingle Master Pro and Owens Corning Preferred certified",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

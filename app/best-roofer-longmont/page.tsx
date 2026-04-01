@@ -4,12 +4,12 @@ import BestRooferLongmontContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Longmont CO (2026) | 4x Certified \u2605 308+ Reviews",
-  description: "Longmont's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8\u2605 from 308 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  title: "Best Roofer Longmont CO (2026) | 4x Certified \u2605 306+ Reviews",
+  description: "Longmont's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-longmont" },
   openGraph: {
-    title: "Best Roofer Longmont CO (2026) | 4x Certified \u2605 308+ Reviews",
-    description: "Longmont's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8\u2605 from 308 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    title: "Best Roofer Longmont CO (2026) | 4x Certified \u2605 306+ Reviews",
+    description: "Longmont's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-longmont",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Longmont?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Longmont. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.8 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Longmont. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a Longmont roofer have?",

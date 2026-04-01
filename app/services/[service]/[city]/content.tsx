@@ -92,7 +92,7 @@ function getWhySection(city: CityData, service: ServiceData): string {
 function getWhyChoose(city: CityData, service: ServiceData): string[] {
   const base = [
     `GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certified`,
-    `308 Google reviews with a 4.8-star rating from Colorado homeowners`,
+    `306 Google reviews with a 4.9-star rating from Colorado homeowners`,
     `Over thousands of roofing projects completed across the Front Range`,
     `Free inspections with no obligation and no pressure`,
     `${city.county} County permit and inspection coordination included`,
@@ -192,7 +192,7 @@ export default function ServiceCityContent({
               marginBottom: 20,
             }}
           >
-            {city.county} County · Quadruple Manufacturer Certified · 308 Reviews · 4.8★
+            {city.county} County · Quadruple Manufacturer Certified · 306 Reviews · 4.9★
           </p>
 
           <p
@@ -653,7 +653,7 @@ export default function ServiceCityContent({
 
       <CTA
         title={`Need ${service.service.toLowerCase()} in ${city.city}?`}
-        subtitle={`Call Gates Enterprises at (720) 766-3377 for a free inspection and estimate. Quadruple manufacturer certified. 308 Google reviews, 4.8 stars. Serving ${city.city} and all of ${city.county} County.`}
+        subtitle={`Call Gates Enterprises at (720) 766-3377 for a free inspection and estimate. Quadruple manufacturer certified. 306 Google reviews, 4.9 stars. Serving ${city.city} and all of ${city.county} County.`}
       />
 
       <Footer />

@@ -8,11 +8,11 @@ import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Compare Roofers | Gates vs Others ★ 4x Certified",
-  description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 308 Reviews, 4.8★. Transparent comparisons to help you choose. (720) 766-3377",
+  description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 306 Reviews, 4.9★. Transparent comparisons to help you choose. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/compare" },
   openGraph: {
     title: "Compare Roofers | Gates vs Others ★ 4x Certified",
-    description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 308 Reviews, 4.8★. Transparent comparisons to help you choose. (720) 766-3377",
+    description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 306 Reviews, 4.9★. Transparent comparisons to help you choose. (720) 766-3377",
     url: "https://www.gatesroof.com/compare",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -100,7 +100,7 @@ export default function ComparePage() {
             The roofing industry has a trust problem. Homeowners often feel pressured into decisions without enough information. We publish these comparisons because we believe transparency builds trust, and trust builds lasting relationships.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            As Colorado's only quadruple certified roofing contractor with 308+ Google reviews and a 4.8 star rating, we are confident in where we stand. We would rather you compare the facts and choose us because you are convinced, not because you were pressured.
+            As Colorado's only quadruple certified roofing contractor with 306+ Google reviews and a 4.9 star rating, we are confident in where we stand. We would rather you compare the facts and choose us because you are convinced, not because you were pressured.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT }}>
             Have a question about how Gates Enterprises compares to a specific roofing company or approach? <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Reach out to us</Link> and we will give you an honest answer.
@@ -110,7 +110,7 @@ export default function ComparePage() {
 
       <CTA
         title="Ready to Work with Colorado's Best?"
-        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 306+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

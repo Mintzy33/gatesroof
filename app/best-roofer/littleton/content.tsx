@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Littleton?",
-    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Littleton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.8 star rating, their track record speaks for itself."
+    a: "Gates Enterprises is widely recognized as one of the top roofing companies serving Littleton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Littleton roofer have?",
@@ -47,8 +47,8 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands" },
-  { label: "308+ verified Google reviews" },
-  { label: "4.8 star average rating" },
+  { label: "306+ verified Google reviews" },
+  { label: "4.9 star average rating" },
   { label: "8+ years serving Colorado's Front Range" },
   { label: "Proprietary hail damage technology (HailScore)" },
   { label: "Free inspections with no pressure" },
@@ -87,7 +87,7 @@ export default function BestRooferCityContent() {
             Best Roofer in Littleton, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 308+ Reviews. 4.8 Stars.
+            Colorado's Only Quadruple Certified Roofing Contractor. 306+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Littleton sits along the South Platte River corridor between the foothills and Denver's southern suburbs. From the historic downtown along Main Street to neighborhoods like Columbine, Ken Caryl, and Highlands Ranch adjacent areas, Littleton homes face Colorado's full spectrum of roofing challenges. Hailstorms track through the area regularly, and the combination of altitude UV exposure and dramatic temperature swings means roofs here age faster than the national average. The best roofer for Littleton homeowners is one with deep local experience and the certifications to stand behind their work.
@@ -123,7 +123,7 @@ export default function BestRooferCityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>2. Verified Customer Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 308+ Google reviews with a 4.8 star average.
+              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 306+ Google reviews with a 4.9 star average.
             </p>
           </div>
 
@@ -204,8 +204,8 @@ export default function BestRooferCityContent() {
           </h2>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -251,7 +251,7 @@ export default function BestRooferCityContent() {
 
       <CTA
         title="Get Littleton's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 306+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

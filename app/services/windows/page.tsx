@@ -4,11 +4,11 @@ import WindowsContent from "./content";
 
 export const metadata: Metadata = {
   title: "Window Replacement CO | Energy Efficient ★ Free Quote",
-  description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.8★ reviews. Free estimates. (720) 766-3377",
+  description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.9★ reviews. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/windows" },
   openGraph: {
     title: "Window Replacement CO | Energy Efficient ★ Free Quote",
-    description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.8★ reviews. Free estimates. (720) 766-3377",
+    description: "Energy efficient window replacement in Colorado. Vinyl, fiberglass & wood options. 7,200+ projects, 4.9★ reviews. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/services/windows",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Local Roofer vs Storm Chasers | Why It Matters",
-  description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 308 Reviews. Protect your home with a trusted roofer",
+  description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 306 Reviews. Protect your home with a trusted roofer",
   alternates: { canonical: "https://www.gatesroof.com/compare/storm-chasers" },
   openGraph: {
     title: "Local Roofer vs Storm Chasers | Why It Matters",
-    description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 308 Reviews. Protect your home with a trusted roofer",
+    description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 306 Reviews. Protect your home with a trusted roofer",
     url: "https://www.gatesroof.com/compare/storm-chasers",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "Is Gates Enterprises a local Colorado roofing company?",
-    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2017. They have a permanent local presence, 308+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
+    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2017. They have a permanent local presence, 306+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
   },
 ];
 

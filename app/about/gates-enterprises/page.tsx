@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   title:
     "Gates Enterprises LLC | Colorado's Most Certified Roofing Company",
   description:
-    "Colorado's only 4x manufacturer certified roofer since 2014. 7,200+ roofs, 308 Reviews, 4.8★. Serving 65+ Front Range cities. Free inspections. (720) 766-3377",
+    "Colorado's only 4x manufacturer certified roofer since 2014. 7,200+ roofs, 306 Reviews, 4.9★. Serving 65+ Front Range cities. Free inspections. (720) 766-3377",
   alternates: {
     canonical: "https://www.gatesroof.com/about/gates-enterprises",
   },
   openGraph: {
     title: "Gates Enterprises LLC | Colorado's Most Certified Roofing Company",
     description:
-      "Colorado's only 4x manufacturer certified roofer since 2014. 7,200+ roofs, 308 Reviews, 4.8★. Serving 65+ Front Range cities. Free inspections. (720) 766-3377",
+      "Colorado's only 4x manufacturer certified roofer since 2014. 7,200+ roofs, 306 Reviews, 4.9★. Serving 65+ Front Range cities. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/about/gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -188,8 +188,8 @@ const localBusinessSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "308",
+    ratingValue: "4.9",
+    reviewCount: "306",
     bestRating: "5",
   },
   openingHoursSpecification: [

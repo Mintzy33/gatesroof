@@ -63,7 +63,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Adams County permit and inspection coordination",
               "thousands of roofs completed across the Denver metro",
-              "4.8 star Google rating from 300+ verified reviews",
+              "4.9 star Google rating from 300+ verified reviews",
               "Referral driven reputation in Northglenn's family neighborhoods",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

@@ -50,7 +50,7 @@ export default function FinancingContent() {
             Flexible Payment Options for Your Roof
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified. 308+ Five Star Reviews. 4.8 Star Rating.
+            Quadruple Certified. 306+ Five Star Reviews. 4.9 Star Rating.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             A new roof is one of the most important investments you can make in your home. At Gates Enterprises, we believe cost should never prevent you from protecting your property. That is why we offer multiple payment options and work closely with insurance companies to help make the process as affordable as possible.
@@ -71,8 +71,8 @@ export default function FinancingContent() {
         <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 24, flexWrap: "wrap" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
           </div>
           <div style={{ width: 1, height: 24, background: "rgba(13,33,55,0.12)" }} />
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>GAF Master Elite &bull; Owens Corning Preferred &bull; Malarkey Emerald Premium &bull; CertainTeed Shingle Master</span>

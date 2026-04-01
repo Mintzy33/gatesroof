@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Brighton CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 308 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+  title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
+  description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
   alternates: { canonical: "https://www.gatesroof.com/areas/brighton" },
   openGraph: {
-    title: "Brighton CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.8★ from 308 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+    title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
+    description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
     url: "https://www.gatesroof.com/areas/brighton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Brighton, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.8 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Brighton, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 300+ Google reviews, 4.9 stars.",
       "areaServed": [
         {
           "@type": "City",
@@ -55,8 +55,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "308",
+        "ratingValue": "4.9",
+        "reviewCount": "306",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

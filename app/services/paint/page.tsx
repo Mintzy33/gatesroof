@@ -4,11 +4,11 @@ import PaintContent from "./content";
 
 export const metadata: Metadata = {
   title: "Exterior Painting CO | Certified ★ Free Estimates",
-  description: "Professional exterior painting in Colorado by Gates Enterprises. 7,200+ projects, 4.8★ reviews. Boost curb appeal & protect your home. Free estimates. (720) 766-3377",
+  description: "Professional exterior painting in Colorado by Gates Enterprises. 7,200+ projects, 4.9★ reviews. Boost curb appeal & protect your home. Free estimates. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/paint" },
   openGraph: {
     title: "Exterior Painting CO | Certified ★ Free Estimates",
-    description: "Professional exterior painting in Colorado by Gates Enterprises. 7,200+ projects, 4.8★ reviews. Boost curb appeal & protect your home. Free estimates. (720) 766-3377",
+    description: "Professional exterior painting in Colorado by Gates Enterprises. 7,200+ projects, 4.9★ reviews. Boost curb appeal & protect your home. Free estimates. (720) 766-3377",
     url: "https://www.gatesroof.com/services/paint",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

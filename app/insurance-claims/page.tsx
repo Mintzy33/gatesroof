@@ -63,7 +63,7 @@ const reviewSchema = {
   "brand": {"@type": "Brand", "name": "Gates Enterprises LLC"},
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
+    "ratingValue": "4.9",
     "reviewCount": "293",
     "bestRating": "5"
   },

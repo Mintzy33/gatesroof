@@ -193,7 +193,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted Mountain Roofing Experts for 8+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2017, with quadruple manufacturer certifications, a 4.8 star reputation across 300+ Google reviews, and deep experience with mountain roofing.
+            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2017, with quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and deep experience with mountain roofing.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -223,7 +223,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.8 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reputation speaks for itself. Families across the foothills consistently rate Gates Enterprises among the top roofing contractors on Colorado's Front Range. We earn every review through transparent communication, quality craftsmanship, and respect for your home and property.
             </p>
@@ -368,11 +368,11 @@ export default function CityContent() {
             What Morrison Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 300+ Google reviews and a 4.8 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Morrison neighbors have to say.
+            With 300+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Morrison neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
           </div>
         </div>

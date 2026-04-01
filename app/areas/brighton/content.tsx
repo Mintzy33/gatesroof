@@ -194,7 +194,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted by Brighton Families for 8+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Brighton homeowners deserve a roofing contractor who understands the unique challenges of living on Colorado's open plains. From severe summer hailstorms that sweep across flat terrain with nothing to slow them down, to intense UV exposure and high winds, your roof takes a beating year after year. Gates Enterprises LLC has been protecting homes across Brighton and Adams County since 2017. We bring quadruple manufacturer certifications, a 4.8 star reputation across 300+ Google reviews, and a commitment to honest, quality work on every project.
+            Brighton homeowners deserve a roofing contractor who understands the unique challenges of living on Colorado's open plains. From severe summer hailstorms that sweep across flat terrain with nothing to slow them down, to intense UV exposure and high winds, your roof takes a beating year after year. Gates Enterprises LLC has been protecting homes across Brighton and Adams County since 2017. We bring quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and a commitment to honest, quality work on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -224,7 +224,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.8 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reputation speaks for itself. Brighton families consistently rate Gates Enterprises among the top roofing contractors on Colorado's Front Range. We earn every review through transparent communication, quality craftsmanship, and respect for your home and property.
             </p>
@@ -369,11 +369,11 @@ export default function CityContent() {
             What Brighton Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 300+ Google reviews and a 4.8 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Brighton neighbors have to say.
+            With 300+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Brighton neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
           </div>
         </div>

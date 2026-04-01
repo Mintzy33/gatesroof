@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Colorado Springs?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.8 star rating, their quality is well documented."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, their quality is well documented."
   },
   {
     q: "What certifications should a Colorado Springs roofer have?",
@@ -51,8 +51,8 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "308+ verified Google reviews" },
-  { label: "4.8 star average rating" },
+  { label: "306+ verified Google reviews" },
+  { label: "4.9 star average rating" },
   { label: "8+ years serving Colorado's Front Range" },
   { label: "Proprietary HailScore radar technology" },
   { label: "Free inspections with zero pressure" },
@@ -91,7 +91,7 @@ export default function BestRooferColoradoSpringsContent() {
             Best Roofing Company in Colorado Springs (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 308+ Reviews. 4.8 Stars.
+            Colorado's Only Quadruple Certified Roofing Contractor. 306+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado Springs homeowners know that weather along the Front Range does not play favorites. From the massive hailstorms that sweep down from the Palmer Divide to the high winds that funnel through the Ute Pass corridor, your roof takes a beating. Finding the right roofing company is not about picking the cheapest bid. It is about choosing a contractor with the certifications, reviews, and technology to protect your biggest investment. Here is what to look for and why Gates Enterprises LLC leads the field.
@@ -127,7 +127,7 @@ export default function BestRooferColoradoSpringsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>A Proven Track Record of Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Online reviews are the most transparent indicator of quality. A handful of five star reviews can be misleading, but 308+ Google reviews with a 4.8 star average tells a consistent story. Gates Enterprises has earned that track record across years of work along the Front Range, from Colorado Springs to Denver and everywhere between. The reviews come from real homeowners who have seen the work firsthand.
+              Online reviews are the most transparent indicator of quality. A handful of five star reviews can be misleading, but 306+ Google reviews with a 4.9 star average tells a consistent story. Gates Enterprises has earned that track record across years of work along the Front Range, from Colorado Springs to Denver and everywhere between. The reviews come from real homeowners who have seen the work firsthand.
             </p>
           </div>
 
@@ -208,8 +208,8 @@ export default function BestRooferColoradoSpringsContent() {
           </h2>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -255,7 +255,7 @@ export default function BestRooferColoradoSpringsContent() {
 
       <CTA
         title="Colorado Springs Deserves Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 306+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

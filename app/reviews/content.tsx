@@ -252,7 +252,7 @@ export default function ReviewsContent() {
             </div>
           </div>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 22, fontWeight: 700, color: WHITE, margin: 0 }}>
-            4.8 out of 5 Stars
+            4.9 out of 5 Stars
           </p>
         </div>
       </section>
@@ -316,8 +316,8 @@ export default function ReviewsContent() {
       <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: NAVY }}>
         <div className="rv-stats" style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" as const }}>
           {[
-            { end: 308, suffix: "+", label: "Five Star Reviews" },
-            { end: 0, suffix: "", label: "Average Rating", static: "4.8" },
+            { end: 306, suffix: "+", label: "Five Star Reviews" },
+            { end: 0, suffix: "", label: "Average Rating", static: "4.9" },
             { end: 10, suffix: "+", label: "Years Serving Colorado" },
             { end: 7204, suffix: "+", label: "Roofs Completed" },
           ].map((s, i) => (
@@ -370,10 +370,10 @@ export default function ReviewsContent() {
             },
             aggregateRating: {
               "@type": "AggregateRating",
-              ratingValue: "4.8",
+              ratingValue: "4.9",
               bestRating: "5",
-              ratingCount: "308",
-              reviewCount: "308",
+              ratingCount: "306",
+              reviewCount: "306",
             },
             url: "https://www.gatesroof.com/reviews",
           }),
