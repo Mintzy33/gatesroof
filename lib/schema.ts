@@ -1,5 +1,6 @@
 // Shared JSON-LD schema generators for Gates Enterprises
 // All schema types used across the site
+import { SITE_STATS } from './site-stats';
 
 export const BUSINESS_INFO = {
   name: "Gates Enterprises LLC",
@@ -20,7 +21,7 @@ export const BUSINESS_INFO = {
     country: "US",
   },
   geo: { latitude: 39.7392, longitude: -105.0781 },
-  rating: { value: "4.9", count: "306", best: "5" },
+  rating: { value: String(SITE_STATS.starRating), count: String(SITE_STATS.reviewCount), best: "5" },
   priceRange: "$$",
   sameAs: [
     "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
