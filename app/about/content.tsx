@@ -248,7 +248,7 @@ export default function AboutContent() {
               That&apos;s what we built. We grew from a two man crew in a basement to a team of over 100 employees with buildings dedicated to each step of the process. We earned four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro), not because they look good on a website, but because they give our customers the strongest warranties in the industry.
             </p>
             <p style={{ marginBottom: 20 }}>
-              We&apos;ve recovered millions in insurance supplements that adjusters tried to short change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
+              We&apos;ve helped homeowners secure insurance supplements that adjusters tried to short change. We&apos;ve replaced roofs on houses where grandma was told her damage &ldquo;wasn&apos;t enough.&rdquo; We show up, we do the work, and we don&apos;t leave until it&apos;s right.
             </p>
             <p style={{ marginBottom: 0, fontWeight: 600, color: NAVY }}>
               — Andrew Gates, Founder

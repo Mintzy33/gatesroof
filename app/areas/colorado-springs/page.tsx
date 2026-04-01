@@ -100,7 +100,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with insurance companies on storm damage in Colorado Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and work directly with your insurance company throughout the restoration process. After major events like the June 2023 storm that caused $1.4 billion in damage, our team helped hundreds of homeowners navigate their claims."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. After major events like the June 2023 storm that caused $1.4 billion in damage, our team helped hundreds of homeowners navigate their claims."
           }
         },
         {

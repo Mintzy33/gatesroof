@@ -81,7 +81,7 @@ const PROCESS_STEPS = [
     Icon: Hammer,
     step: "04",
     title: "Insurance Claim Filing Support",
-    desc: "We prepare and submit all documentation to your insurance company and work directly with your adjuster to help ensure the full scope of damage is covered.",
+    desc: "We prepare and submit all documentation to your insurance company and coordinate documentation with your adjuster to help ensure the full scope of damage is covered.",
   },
   {
     Icon: CheckCircle,
@@ -110,7 +110,7 @@ const WHY_GATES = [
   {
     Icon: Shield,
     bold: "Insurance claims assistance.",
-    rest: "We have guided thousands of homeowners through the insurance restoration process. We document, file, and advocate so you can focus on your family.",
+    rest: "We have guided thousands of homeowners through the insurance restoration process. We document and file so you can focus on your family.",
   },
   {
     Icon: Clock,
@@ -135,7 +135,7 @@ const FAQS = [
   },
   {
     q: "Does insurance cover emergency roof repairs?",
-    a: "Most homeowner insurance policies cover emergency repairs caused by sudden events like storms, fallen trees, or hail. Your policy typically covers temporary protective measures like tarping as well as permanent repairs, minus your deductible. We document everything and work directly with your insurance company to support your claim.",
+    a: "Most homeowner insurance policies cover emergency repairs caused by sudden events like storms, fallen trees, or hail. Your policy typically covers temporary protective measures like tarping as well as permanent repairs, minus your deductible. We document everything and coordinate documentation with your insurance company to support your claim.",
   },
   {
     q: "What happens during an emergency roof tarping?",
@@ -801,7 +801,7 @@ export default function EmergencyContent() {
               Filing an insurance claim after a roofing emergency can feel
               overwhelming. Our team has guided thousands of Colorado homeowners
               through the process. We handle the documentation, communicate with
-              your adjuster, and advocate for the full scope of repairs your
+              your adjuster, and support the full scope of repairs your
               home needs.
             </p>
             <div

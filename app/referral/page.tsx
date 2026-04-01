@@ -146,7 +146,7 @@ export default function ReferralPage() {
               { n: "7,200+", t: "Roofs Completed", d: "More experience than virtually any roofer in Colorado." },
               { n: "306", t: "Five-Star Reviews", d: "4.9 stars on Google. Our reputation speaks for itself." },
               { n: "4x", t: "Manufacturer Certified", d: "The only company in Colorado with all four major certifications." },
-              { n: "100%", t: "Free Inspections", d: "No cost, no obligation. We handle the insurance process start to finish." },
+              { n: "100%", t: "Free Inspections", d: "No cost, no obligation. We assist you through the insurance process." },
             ].map((item, i) => (
               <div key={i} style={{ background: WHITE, borderRadius: 18, padding: "28px 24px", borderTop: `3px solid ${ACCENT}`, border: "1px solid rgba(13,33,55,0.06)", borderTopWidth: 3, borderTopColor: ACCENT, boxShadow: "0 2px 12px rgba(13,33,55,0.06)", textAlign: "center" }}>
                 <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY, marginBottom: 4 }}>{item.n}</div>

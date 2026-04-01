@@ -22,7 +22,7 @@ const serviceSchema = {
   "@type": "Service",
   "serviceType": "Insurance Restoration",
   "name": "Roofing Insurance Restoration in Colorado",
-  "description": "Full insurance restoration support from free inspection through adjuster meetings and project completion. We advocate for homeowners to get the coverage they deserve.",
+  "description": "Full insurance restoration support from free inspection through adjuster meetings and project completion. We support homeowners to get the coverage they deserve.",
   "url": "https://www.gatesroof.com/services/insurance-claims",
   "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}

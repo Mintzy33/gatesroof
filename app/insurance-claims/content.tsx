@@ -20,7 +20,7 @@ const PROCESS_STEPS = [
   { Icon: Search, step: "01", title: "Free Roof Inspection", desc: "We climb your roof and document every area of damage with photos and measurements. Thorough, honest, no pressure." },
   { Icon: FileText, step: "02", title: "File Your Claim", desc: "If we find legitimate storm damage, we help you understand what to expect and support you through filing your claim with your insurance company." },
   { Icon: Users, step: "03", title: "Adjuster Meeting", desc: "We attend the adjuster meeting on site, walk the damage together, and make sure nothing is overlooked or undervalued." },
-  { Icon: AlertTriangle, step: "04", title: "Supplements if Needed", desc: "If the initial estimate falls short of the actual scope, we prepare and submit supplemental documentation to advocate for fair coverage." },
+  { Icon: AlertTriangle, step: "04", title: "Supplements if Needed", desc: "If the initial estimate falls short of the actual scope, we prepare and submit supplemental documentation to support fair coverage." },
   { Icon: Hammer, step: "05", title: "Certified Installation", desc: "Full tear off, deck inspection, and manufacturer certified installation. Typically completed in one day for most homes." },
   { Icon: CheckCircle, step: "06", title: "Final Inspection & Warranty", desc: "We walk the finished roof with you, register your manufacturer warranty, and help you collect any recoverable depreciation." },
 ];
@@ -29,7 +29,7 @@ const WHY_GATES = [
   { Icon: Award, bold: "Quadruple manufacturer certified.", rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium. Your warranty is backed by the manufacturer, not just the contractor." },
   { Icon: FileText, bold: "Xactimate proficient.", rest: "We write estimates in the same software your insurance company uses. That means faster approvals and fewer disputes." },
   { Icon: ShieldCheck, bold: "Supplement specialists.", rest: "Most homeowners don\u2019t know supplements exist. We prepare additional documentation when the initial estimate doesn\u2019t reflect the full scope of work." },
-  { Icon: DollarSign, bold: "We advocate for fair coverage.", rest: "We provide thorough documentation to help ensure your claim reflects the actual cost of a proper roof replacement." },
+  { Icon: DollarSign, bold: "We support fair coverage.", rest: "We provide thorough documentation to help ensure your claim reflects the actual cost of a proper roof replacement." },
   { Icon: Clock, bold: "Transparent communication.", rest: "You get updates at every stage. No radio silence, no surprises. We treat your project like it matters, because it does." },
   { Icon: MapPin, bold: "Locally owned, 10+ years.", rest: "We live and work on Colorado\u2019s Front Range. Our reputation is built on doing right by our neighbors." },
 ];
@@ -44,7 +44,7 @@ const FAQS = [
   { q: "How much will I pay out of pocket?", a: "In most cases, your only out of pocket cost is your insurance deductible. Your homeowner\u2019s insurance typically covers the full replacement cost minus the deductible. As required by Colorado law, homeowners are responsible for paying their deductible." },
   { q: "What is your claim success rate?", a: "When Gates Enterprises recommends filing a claim, our success rate is over 99%. We only recommend filing when we\u2019re confident the damage warrants it. We never pressure homeowners to file unnecessary claims." },
   { q: "What are supplements?", a: "Supplements are additional documentation submitted to your insurance company when the initial estimate doesn\u2019t cover the full scope of work. Most homeowners don\u2019t know they exist. We prepare and submit supplement documentation, which often results in thousands of additional dollars toward your project." },
-  { q: "Do you meet with my adjuster?", a: "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and advocate for a fair and accurate estimate." },
+  { q: "Do you meet with my adjuster?", a: "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and support a fair and accurate estimate." },
   { q: "Does my insurance really cover a full roof replacement?", a: "Most Colorado homeowner\u2019s insurance policies cover the full replacement cost of a storm damaged roof, minus your deductible. Many homeowners don\u2019t realize this. We help you understand your coverage and work with your insurance company to pursue the coverage your policy provides." },
   { q: "How long does the process take?", a: "From initial inspection to completed installation, most projects take 4 to 8 weeks. The timeline depends on insurance company response times, supplement reviews, and weather. We keep the process moving and communicate with you at every step." },
   { q: "Is there a deadline to file a claim?", a: "Most policies have a time limit, often one year from the date of the storm. Schedule an inspection as soon as possible to protect your eligibility." },
@@ -96,7 +96,7 @@ export default function InsuranceClaimsContent() {
               After a hailstorm, your insurance company sends an adjuster who writes an estimate. That initial estimate often falls short. Missing line items, undervalued materials, overlooked damage. Most homeowners accept it because they don&apos;t know any better.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: TEXT, maxWidth: 700, margin: "0 auto" }}>
-              That&apos;s where Gates Enterprises comes in. We know Xactimate line items inside and out. We know what your roof actually costs to replace properly. And we advocate with your insurance company to pursue the coverage your policy provides.
+              That&apos;s where Gates Enterprises comes in. We know Xactimate line items inside and out. We know what your roof actually costs to replace properly. And we work with your insurance company to pursue the coverage your policy provides.
             </p>
           </div>
         </section>

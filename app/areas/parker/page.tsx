@@ -123,7 +123,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with my insurance company?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports with photo evidence, and work directly with your insurance company throughout the restoration process to ensure nothing is missed."
+            "text": "Yes. Gates Enterprises is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports with photo evidence, and coordinate documentation with your insurance company throughout the restoration process to ensure nothing is missed."
           }
         },
         {

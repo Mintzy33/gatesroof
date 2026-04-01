@@ -188,7 +188,7 @@ export default function RoofReplacementContent() {
               </h2>
               <div style={{ width: 48, height: 3, background: ACCENT, borderRadius: 2, marginBottom: 24 }} />
               <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT, margin: 0 }}>
-                If your roof replacement is the result of storm or hail damage, we work with your insurance company throughout the restoration process. We document damage with photos and measurements, meet your adjuster on site, and submit supplements when the initial estimate falls short. Our team knows Xactimate line items inside and out, and we advocate to make sure your insurance company covers what your roof actually costs. You shouldn&apos;t have to become an insurance expert just to get a new roof.
+                If your roof replacement is the result of storm or hail damage, we work with your insurance company throughout the restoration process. We document damage with photos and measurements, meet your adjuster on site, and submit supplements when the initial estimate falls short. Our team knows Xactimate line items inside and out, and we ensure your insurance company covers what your roof actually costs. You shouldn&apos;t have to become an insurance expert just to get a new roof.
               </p>
             </div>
             <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/3", position: "relative" }}>

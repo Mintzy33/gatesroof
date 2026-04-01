@@ -58,7 +58,7 @@ const SERVICES = [
     title: "Insurance Claims",
     href: "/services/insurance-claims",
     icon: FileText,
-    desc: "We handle the entire claims process. Adjuster meetings, supplements, documentation. Millions recovered for Colorado homeowners.",
+    desc: "We assist you through the claims process. Adjuster meetings, supplements, documentation. Helping Colorado homeowners navigate insurance claims.",
   },
 ];
 

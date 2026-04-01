@@ -82,7 +82,7 @@ const faqSchema = {
       name: "Does insurance cover emergency roof repairs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most homeowner insurance policies cover emergency repairs caused by sudden events like storms, fallen trees, or hail. Your policy typically covers temporary protective measures like tarping as well as permanent repairs, minus your deductible. We document everything and work directly with your insurance company to support your claim.",
+        text: "Most homeowner insurance policies cover emergency repairs caused by sudden events like storms, fallen trees, or hail. Your policy typically covers temporary protective measures like tarping as well as permanent repairs, minus your deductible. We document everything and coordinate documentation with your insurance company to support your claim.",
       },
     },
     {

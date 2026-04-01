@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all damage with detailed photos and measurements, provide comprehensive reports, and work directly with your insurance company throughout the entire restoration process."
+    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all damage with detailed photos and measurements, provide comprehensive reports, and coordinate documentation with your insurance company throughout the entire restoration process."
   },
   {
     q: "What roofing materials work best for Lakewood homes?",

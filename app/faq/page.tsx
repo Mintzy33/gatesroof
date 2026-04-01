@@ -26,7 +26,7 @@ const faqData = [
       },
       {
         q: "Will I pay anything beyond my insurance deductible?",
-        a: "In most insurance roof replacement projects, your deductible is your primary out-of-pocket cost. Your homeowners insurance policy typically covers the approved scope of work minus your deductible. If the adjuster's initial estimate falls short, we file supplements with additional documentation to support the full cost of proper installation. Gates Enterprises has recovered millions in supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate. We document thoroughly to support the full scope your roof needs.",
+        a: "In most insurance roof replacement projects, your deductible is your primary out-of-pocket cost. Your homeowners insurance policy typically covers the approved scope of work minus your deductible. If the adjuster's initial estimate falls short, we file supplements with additional documentation to support the full cost of proper installation. Gates Enterprises has helped homeowners secure supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate. We document thoroughly to support the full scope your roof needs.",
       },
       {
         q: "Does Gates offer financing?",
@@ -43,11 +43,11 @@ const faqData = [
     items: [
       {
         q: "How do I file a hail damage insurance claim?",
-        a: "Start by calling your insurance company to report potential storm damage — you don't need proof yet, just the date of the storm. Then schedule a free roof inspection with Gates Enterprises. We'll document every point of damage with photos and measurements so you have a professional report before the adjuster arrives. We'll meet with your adjuster on-site to make sure nothing is missed. Our insurance restoration team handles the entire process from claim filing through final payment, so you can focus on your life instead of paperwork.",
+        a: "Start by calling your insurance company to report potential storm damage — you don't need proof yet, just the date of the storm. Then schedule a free roof inspection with Gates Enterprises. We'll document every point of damage with photos and measurements so you have a professional report before the adjuster arrives. We'll meet with your adjuster on-site to make sure nothing is missed. Our insurance restoration team assists you through the process from claim filing through final payment, so you can focus on your life instead of paperwork.",
       },
       {
         q: "What if my insurance denies my claim?",
-        a: "A denied claim doesn't mean the damage isn't real. Insurance companies deny claims for many reasons — insufficient documentation, missed filing deadlines, or adjuster oversight. Gates Enterprises has overturned hundreds of denied claims by providing thorough re-inspections, detailed photo documentation, and professional damage reports. We can request a re-inspection with a different adjuster or help you escalate through your carrier's appeals process. In some cases, a public adjuster or attorney may be the right next step, and we can point you in the right direction.",
+        a: "A denied claim doesn't mean the damage isn't real. Insurance companies deny claims for many reasons — insufficient documentation, missed filing deadlines, or adjuster oversight. Gates Enterprises has helped homeowners appeal denied claims by providing thorough re-inspections, detailed photo documentation, and professional damage reports. We can request a re-inspection with a different adjuster or help you escalate through your carrier's appeals process. In some cases, a public adjuster or attorney may be the right next step, and we can point you in the right direction.",
       },
       {
         q: "What is depreciation vs replacement cost value (RCV)?",
@@ -55,7 +55,7 @@ const faqData = [
       },
       {
         q: "What is the supplement process?",
-        a: "A supplement is a request for additional funds when the insurance adjuster's initial estimate doesn't cover the full scope of work required. This happens frequently — adjusters often miss items like drip edge, ice and water shield, pipe boots, or proper ventilation. Our insurance restoration team reviews every line of your estimate and files supplements for anything that was underpaid or overlooked. Gates Enterprises has recovered millions in supplement approvals for Colorado homeowners. The process typically takes 2-4 weeks and requires no additional effort from you.",
+        a: "A supplement is a request for additional funds when the insurance adjuster's initial estimate doesn't cover the full scope of work required. This happens frequently — adjusters often miss items like drip edge, ice and water shield, pipe boots, or proper ventilation. Our insurance restoration team reviews every line of your estimate and files supplements for anything that was underpaid or overlooked. Gates Enterprises has helped homeowners secure supplement approvals for Colorado homeowners. The process typically takes 2-4 weeks and requires no additional effort from you.",
       },
       {
         q: "How long does an insurance roof replacement take?",

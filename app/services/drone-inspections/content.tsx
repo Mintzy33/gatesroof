@@ -225,7 +225,7 @@ export default function DroneContent() {
             <Link href="/services/insurance-claims" style={{ textDecoration: "none" }}>
               <div style={{ background: WHITE, borderRadius: 16, padding: "28px 24px", border: "1px solid rgba(13,33,55,0.06)", borderTop: `3px solid ${ACCENT}`, transition: "box-shadow 0.2s", cursor: "pointer" }}>
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: NAVY, marginBottom: 8 }}>Insurance Restoration</h3>
-                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>We handle the entire insurance process so you don&apos;t have to. 7,200+ claims navigated.</p>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>We assist you through the insurance process so you don&apos;t have to. 7,200+ claims navigated.</p>
               </div>
             </Link>
           </StaggerCards>

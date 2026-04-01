@@ -100,7 +100,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with insurance companies on storm damage in Fort Collins?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and work directly with your insurance company throughout the restoration process. Fort Collins homeowners deal with frequent hail claims, and we handle the process from start to finish."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Fort Collins homeowners deal with frequent hail claims, and we handle the process from start to finish."
           }
         },
         {

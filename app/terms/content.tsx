@@ -105,7 +105,7 @@ export default function TermsContent() {
         <Section title="Insurance Claims">
           <p>
             Gates Enterprises LLC assists homeowners and property owners with the insurance claim process for
-            storm damage, hail damage, and other covered losses. We work directly with insurance adjusters,
+            storm damage, hail damage, and other covered losses. We coordinate with insurance adjusters,
             prepare documentation, and file supplements on your behalf when applicable.
           </p>
           <p>

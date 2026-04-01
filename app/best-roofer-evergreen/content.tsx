@@ -148,7 +148,7 @@ export default function BestRooferEvergreenContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>5. Insurance Claims Assistance</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              In Evergreen, a significant percentage of roof replacements involve insurance claims from hail and wind damage. The best roofers understand the insurance restoration process inside and out. They document damage thoroughly, communicate clearly with adjusters, and advocate for complete restoration of your property. Gates Enterprises has guided thousands of Colorado homeowners through the claims process.
+              In Evergreen, a significant percentage of roof replacements involve insurance claims from hail and wind damage. The best roofers understand the insurance restoration process inside and out. They document damage thoroughly, communicate clearly with adjusters, and support complete restoration of your property. Gates Enterprises has guided thousands of Colorado homeowners through the claims process.
             </p>
           </div>
 

@@ -20,7 +20,7 @@ const TEXT_LIGHT = "#64748B";
 const PROCESS_STEPS = [
   { Icon: Search, step: "01", title: "Free Damage Inspection", desc: "Thorough, documented inspection of your roof, siding, gutters, windows, and paint. We photograph and catalog every area of damage." },
   { Icon: FileText, step: "02", title: "Documentation & Support", desc: "We prepare all documentation, photograph every detail, and provide the evidence needed to support your restoration project." },
-  { Icon: Users, step: "03", title: "Adjuster Meeting Coordination", desc: "We meet with your adjuster on site to walk the damage together and advocate to make sure nothing is missed or undervalued." },
+  { Icon: Users, step: "03", title: "Adjuster Meeting Coordination", desc: "We meet with your adjuster on site to walk the damage together and ensure nothing is missed or undervalued." },
   { Icon: Hammer, step: "04", title: "Project Completion", desc: "We complete all repairs and replacements using certified installation methods and premium materials backed by manufacturer warranties." },
   { Icon: CheckCircle, step: "05", title: "Final Documentation", desc: "Complete records of all work performed for your files, plus assistance collecting any remaining recoverable depreciation." },
 ];
@@ -79,7 +79,7 @@ export default function InsuranceContent() {
       </section>
 
       {/* ─── ANSWER CAPSULE ─── */}
-      <AnswerCapsule text="Filing a roof insurance claim in Colorado starts with a professional inspection to document damage. Gates Enterprises handles the entire claims process, working directly with your adjuster. Most homeowners only pay their deductible." />
+      <AnswerCapsule text="Filing a roof insurance claim in Colorado starts with a professional inspection to document damage. Gates Enterprises assists you through the claims process, coordinating documentation with your adjuster. Most homeowners only pay their deductible." />
 
       {/* ─── INTRO ─── */}
       <ScrollReveal>
@@ -268,7 +268,7 @@ export default function InsuranceContent() {
             Don&apos;t Navigate Insurance Restoration Alone
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.7)", margin: "0 0 36px", lineHeight: 1.75 }}>
-            Call Gates Enterprises at (720) 766-3377 or email info@gatesroof.com. We&apos;ll review your situation, tell you exactly where you stand, and work with your insurance company to advocate for the restoration your home deserves.
+            Call Gates Enterprises at (720) 766-3377 or email info@gatesroof.com. We&apos;ll review your situation, tell you exactly where you stand, and work with your insurance company to support the restoration your home deserves.
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "18px 40px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700 }}>
             Request a Free Inspection & Estimate &rarr;

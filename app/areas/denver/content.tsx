@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: "Does Gates Enterprises work with insurance companies on storm damage?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and work directly with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored."
+    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored."
   },
   {
     q: "Can you work on older Denver homes with unique roof designs?",

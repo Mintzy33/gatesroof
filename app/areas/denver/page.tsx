@@ -4,11 +4,11 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
+  title: "Top Rated Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
   description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
-    title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
+    title: "Top Rated Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
     description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
@@ -100,7 +100,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with insurance companies on storm damage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and work directly with your insurance company throughout the restoration process."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process."
           }
         },
         {

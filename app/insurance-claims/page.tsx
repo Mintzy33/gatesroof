@@ -4,11 +4,11 @@ import InsuranceClaimsContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Insurance Claims CO | We Fight for You ★",
-  description: "We handle your entire roof insurance claim: adjuster meetings, supplements & advocacy. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
+  description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/insurance-claims" },
   openGraph: {
     title: "Roof Insurance Claims CO | We Fight for You ★",
-    description: "We handle your entire roof insurance claim: adjuster meetings, supplements & advocacy. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
+    description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
     url: "https://www.gatesroof.com/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -40,7 +40,7 @@ const faqSchema = {
   "mainEntity": [
     {"@type": "Question", "name": "How much does a roof insurance claim cost me out of pocket?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, your primary out of pocket cost is your insurance deductible. Gates Enterprises helps document damage and works with your insurance adjuster to support the coverage your policy provides. Homeowners are responsible for their deductible as required by Colorado law."}},
     {"@type": "Question", "name": "What is Gates Enterprises' insurance claim approval rate?", "acceptedAnswer": {"@type": "Answer", "text": "When Gates Enterprises recommends filing a claim, our approval rate is over 99%. We only recommend filing when we are confident the damage warrants a claim, and we document everything thoroughly to support approval."}},
-    {"@type": "Question", "name": "What are supplements and why do they matter?", "acceptedAnswer": {"@type": "Answer", "text": "Supplements are additional documentation submitted to your insurance company when the initial estimate does not cover the full scope of work. Most homeowners do not know supplements exist. Gates Enterprises handles the entire supplement process, often recovering thousands of additional dollars for your project."}},
+    {"@type": "Question", "name": "What are supplements and why do they matter?", "acceptedAnswer": {"@type": "Answer", "text": "Supplements are additional documentation submitted to your insurance company when the initial estimate does not cover the full scope of work. Most homeowners do not know supplements exist. Gates Enterprises manages the supplement process, often recovering thousands of additional dollars for your project."}},
     {"@type": "Question", "name": "Does Gates Enterprises meet with my insurance adjuster?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and ensure nothing is missed or undervalued."}},
     {"@type": "Question", "name": "Does my insurance cover the full cost of a roof replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Most Colorado homeowner insurance policies cover the full replacement cost of your roof minus your deductible. Many homeowners do not realize this. Gates Enterprises works with your insurance company to pursue the coverage your policy provides."}},
     {"@type": "Question", "name": "How long does the insurance roof replacement process take?", "acceptedAnswer": {"@type": "Answer", "text": "From initial inspection to completed installation, most projects take 4 to 8 weeks. The timeline depends on insurance company response times and weather. We keep the process moving and communicate with you every step of the way."}}

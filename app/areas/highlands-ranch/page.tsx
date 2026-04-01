@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Highlands Ranch Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Highlands Ranch's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
+  description: "Highlands Ranch's top certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
     title: "Highlands Ranch Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Highlands Ranch's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
+    description: "Highlands Ranch's top certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free inspections. Call (720) 766-3377",
     url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

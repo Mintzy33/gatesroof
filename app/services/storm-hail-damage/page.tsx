@@ -22,7 +22,7 @@ const serviceSchema = {
   "@type": "Service",
   "serviceType": "Storm & Hail Damage Repair",
   "name": "Storm & Hail Damage Roof Repair in Colorado",
-  "description": "Expert hail and storm damage assessment, repair, and full replacement. We work directly with your insurance company to maximize your coverage.",
+  "description": "Expert hail and storm damage assessment, repair, and full replacement. We coordinate documentation with your insurance company to maximize your coverage.",
   "url": "https://www.gatesroof.com/services/storm-hail-damage",
   "provider": { "@id": "https://www.gatesroof.com/#organization" },
   "areaServed": { "@type": "State", "name": "Colorado" },
