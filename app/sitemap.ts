@@ -57,6 +57,7 @@ const landingPages = [
   "best-roofer-parker",
   "why-gates-enterprises",
   "insurance-restoration",
+  "emergency-roofing",
 ];
 
 // Tool pages
