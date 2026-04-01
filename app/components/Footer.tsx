@@ -53,6 +53,10 @@ export default function Footer() {
         </div>
         <div className="footer-bottom" style={{ borderTop: "1px solid rgba(13,33,55,0.06)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>© 2026 Gates Enterprises LLC</span>
+          <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
+            <Link href="/privacy" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, textDecoration: "none" }}>Privacy Policy</Link>
+            <Link href="/terms" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT, textDecoration: "none" }}>Terms of Service</Link>
+          </div>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>Lakewood, Colorado</span>
         </div>
       </div>
