@@ -1,0 +1,383 @@
+{
+  "meta_ads": {
+    "pixel_id": "1621445598880955",
+    "page_id": "101985538291719",
+    "ad_account_id": "act_234623390500744",
+    "access_token": "EAA0JSj5oZB24BRBLab5SqJAx9oyKZB9Q4nkeUqAVN35eyPacLo5s7GDRQws3nuj2RYvqeZAWLJDLH2Slhli2MJoF3kHVkM1jaEvSjEeYcqZClMVwYCEZBMTYdA1lPNAuBRwbmpZBJU4pqgn8Y40SINQyUY4kxdZAa5mLIA397QuJiRe8QHngboZAcqmssQZDZD",
+    "api_version": "v19.0",
+    "base_url": "https://graph.facebook.com"
+  },
+  "campaign_defaults": {
+    "daily_budget_cents": 3000,
+    "daily_budget_dollars": 30,
+    "lifetime_budget": null,
+    "optimization_goal": "LEAD_GENERATION",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "initial_status": "PAUSED",
+    "campaign_name_prefix": "Storm Response - Meta",
+    "ad_set_name_prefix": "Storm - ",
+    "placements": [
+      "facebook_feed",
+      "instagram_feed",
+      "facebook_stories",
+      "instagram_stories"
+    ],
+    "landing_page": "https://www.gatesroof.com/services/storm-damage",
+    "phone": "(720) 766-3377"
+  },
+  "gates_info": {
+    "business_name": "Gates Enterprises",
+    "phone": "(720) 766-3377",
+    "website": "gatesroof.com",
+    "website_url": "https://www.gatesroof.com",
+    "landing_page": "https://www.gatesroof.com/services/storm-damage",
+    "certifications": [
+      "GAF Master Elite Contractor",
+      "Owens Corning Preferred",
+      "Malarkey Emerald Premium",
+      "CertainTeed Shingle Master"
+    ],
+    "roofs_completed": "7,200+",
+    "reviews_count": "308",
+    "review_rating": "4.8"
+  },
+  "colorado_cities": {
+    "Denver": {
+      "zip_codes": [
+        "80201",
+        "80202",
+        "80203",
+        "80204",
+        "80205",
+        "80206",
+        "80207",
+        "80209",
+        "80210",
+        "80211",
+        "80212",
+        "80216",
+        "80218",
+        "80219",
+        "80220",
+        "80221",
+        "80222",
+        "80223",
+        "80224",
+        "80230",
+        "80231",
+        "80236",
+        "80237",
+        "80238",
+        "80239",
+        "80246",
+        "80247",
+        "80249",
+        "80264"
+      ],
+      "region": "Metro"
+    },
+    "Aurora": {
+      "zip_codes": [
+        "80010",
+        "80011",
+        "80012",
+        "80013",
+        "80014",
+        "80015",
+        "80016",
+        "80017",
+        "80018",
+        "80019",
+        "80040",
+        "80041",
+        "80042",
+        "80044",
+        "80045",
+        "80046",
+        "80047"
+      ],
+      "region": "Metro"
+    },
+    "Lakewood": {
+      "zip_codes": [
+        "80214",
+        "80215",
+        "80226",
+        "80227",
+        "80228",
+        "80232",
+        "80235"
+      ],
+      "region": "Metro"
+    },
+    "Thornton": {
+      "zip_codes": [
+        "80229",
+        "80233",
+        "80241",
+        "80260",
+        "80602"
+      ],
+      "region": "Metro"
+    },
+    "Arvada": {
+      "zip_codes": [
+        "80002",
+        "80003",
+        "80004",
+        "80005",
+        "80006",
+        "80007"
+      ],
+      "region": "Metro"
+    },
+    "Westminster": {
+      "zip_codes": [
+        "80021",
+        "80030",
+        "80031",
+        "80234",
+        "80035",
+        "80036"
+      ],
+      "region": "Metro"
+    },
+    "Centennial": {
+      "zip_codes": [
+        "80015",
+        "80016",
+        "80111",
+        "80112",
+        "80122"
+      ],
+      "region": "Metro"
+    },
+    "Boulder": {
+      "zip_codes": [
+        "80301",
+        "80302",
+        "80303",
+        "80304",
+        "80305",
+        "80306",
+        "80309",
+        "80310"
+      ],
+      "region": "Front Range"
+    },
+    "Longmont": {
+      "zip_codes": [
+        "80501",
+        "80502",
+        "80503",
+        "80504"
+      ],
+      "region": "Front Range"
+    },
+    "Loveland": {
+      "zip_codes": [
+        "80537",
+        "80538",
+        "80539"
+      ],
+      "region": "Front Range"
+    },
+    "Fort Collins": {
+      "zip_codes": [
+        "80521",
+        "80524",
+        "80525",
+        "80526",
+        "80528"
+      ],
+      "region": "Front Range"
+    },
+    "Greeley": {
+      "zip_codes": [
+        "80631",
+        "80632",
+        "80633",
+        "80634"
+      ],
+      "region": "Front Range"
+    },
+    "Broomfield": {
+      "zip_codes": [
+        "80020",
+        "80021",
+        "80023",
+        "80038"
+      ],
+      "region": "Metro"
+    },
+    "Castle Rock": {
+      "zip_codes": [
+        "80104",
+        "80108",
+        "80109"
+      ],
+      "region": "South Metro"
+    },
+    "Parker": {
+      "zip_codes": [
+        "80134",
+        "80138"
+      ],
+      "region": "South Metro"
+    },
+    "Highlands Ranch": {
+      "zip_codes": [
+        "80126",
+        "80129",
+        "80130",
+        "80163"
+      ],
+      "region": "South Metro"
+    },
+    "Littleton": {
+      "zip_codes": [
+        "80120",
+        "80121",
+        "80123",
+        "80125",
+        "80127",
+        "80128"
+      ],
+      "region": "South Metro"
+    },
+    "Englewood": {
+      "zip_codes": [
+        "80110",
+        "80111",
+        "80112",
+        "80113"
+      ],
+      "region": "South Metro"
+    },
+    "Commerce City": {
+      "zip_codes": [
+        "80022",
+        "80037",
+        "80602"
+      ],
+      "region": "Metro"
+    },
+    "Brighton": {
+      "zip_codes": [
+        "80601",
+        "80602",
+        "80603"
+      ],
+      "region": "Metro"
+    },
+    "Northglenn": {
+      "zip_codes": [
+        "80233",
+        "80234",
+        "80241",
+        "80260"
+      ],
+      "region": "Metro"
+    },
+    "Federal Heights": {
+      "zip_codes": [
+        "80221",
+        "80260"
+      ],
+      "region": "Metro"
+    },
+    "Wheat Ridge": {
+      "zip_codes": [
+        "80033",
+        "80212",
+        "80214",
+        "80215"
+      ],
+      "region": "Metro"
+    },
+    "Golden": {
+      "zip_codes": [
+        "80401",
+        "80402",
+        "80403"
+      ],
+      "region": "Metro"
+    },
+    "Erie": {
+      "zip_codes": [
+        "80516"
+      ],
+      "region": "Front Range"
+    },
+    "Frederick": {
+      "zip_codes": [
+        "80504",
+        "80530"
+      ],
+      "region": "Front Range"
+    },
+    "Firestone": {
+      "zip_codes": [
+        "80504",
+        "80520"
+      ],
+      "region": "Front Range"
+    },
+    "Dacono": {
+      "zip_codes": [
+        "80514"
+      ],
+      "region": "Front Range"
+    },
+    "Colorado Springs": {
+      "zip_codes": [
+        "80901",
+        "80902",
+        "80903",
+        "80904",
+        "80905",
+        "80906",
+        "80907",
+        "80908",
+        "80909",
+        "80910",
+        "80911",
+        "80915",
+        "80916",
+        "80917",
+        "80918",
+        "80919",
+        "80920",
+        "80921",
+        "80922",
+        "80923",
+        "80924",
+        "80925",
+        "80927",
+        "80938",
+        "80951"
+      ],
+      "region": "South"
+    },
+    "Pueblo": {
+      "zip_codes": [
+        "81001",
+        "81003",
+        "81004",
+        "81005",
+        "81006",
+        "81007",
+        "81008"
+      ],
+      "region": "South"
+    }
+  },
+  "storm_trigger": {
+    "min_hail_size_inches": 1.0,
+    "nws_api_base": "https://api.weather.gov",
+    "hailscore_api": "https://www.myhailscore.com/api/storm-alerts/check",
+    "hailscore_cron_secret": "8DEC3890-6091-433B-9E23-64BEE5793347",
+    "check_interval_minutes": 30
+  }
+}

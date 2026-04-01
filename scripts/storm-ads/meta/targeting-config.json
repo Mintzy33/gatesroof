@@ -1,0 +1,201 @@
+{
+  "audiences": {
+    "storm_response": {
+      "name": "Storm Response - {CITY}",
+      "description": "Primary audience for immediate storm response ads. Homeowners in affected area.",
+      "targeting": {
+        "age_min": 28,
+        "age_max": 65,
+        "genders": [0],
+        "geo_targeting": {
+          "type": "zip_codes",
+          "zip_codes": "{CITY_ZIP_CODES}",
+          "radius_miles": 15,
+          "location_types": ["home"]
+        },
+        "interests": [
+          {
+            "id": "6003384912356",
+            "name": "Home improvement"
+          },
+          {
+            "id": "6003012621072",
+            "name": "Homeowner"
+          },
+          {
+            "id": "6003349442586",
+            "name": "Insurance"
+          },
+          {
+            "id": "6003476182657",
+            "name": "Roofing"
+          },
+          {
+            "id": "6003397425735",
+            "name": "Home insurance"
+          },
+          {
+            "id": "6003246828498",
+            "name": "Real estate"
+          }
+        ],
+        "behaviors": [
+          {
+            "id": "6002714895372",
+            "name": "Homeowners"
+          },
+          {
+            "id": "6015559470583",
+            "name": "Likely to move (homeowners)"
+          }
+        ],
+        "demographics": [
+          {
+            "id": "6015559470583",
+            "name": "Homeowners",
+            "type": "home_ownership"
+          }
+        ],
+        "exclusions": {
+          "age_under": 25,
+          "demographics": [
+            {
+              "id": "6023439682583",
+              "name": "Renters",
+              "type": "home_ownership"
+            }
+          ]
+        }
+      },
+      "estimated_reach": "50,000 - 200,000 per city (varies by city size)"
+    },
+
+    "retargeting_storm_visitors": {
+      "name": "Retargeting - Storm Page Visitors",
+      "description": "Website visitors who viewed storm damage or city area pages but didn't convert. Runs after initial storm ads.",
+      "targeting": {
+        "custom_audience": {
+          "type": "website_visitors",
+          "pixel_id": "1621445598880955",
+          "retention_days": 30,
+          "url_rules": [
+            {
+              "type": "url_contains",
+              "value": "/services/storm-damage"
+            },
+            {
+              "type": "url_contains",
+              "value": "/areas/"
+            }
+          ],
+          "exclusion_rules": [
+            {
+              "type": "url_contains",
+              "value": "/thank-you"
+            },
+            {
+              "type": "event",
+              "value": "Lead"
+            }
+          ]
+        },
+        "age_min": 25,
+        "age_max": 65,
+        "geo_targeting": {
+          "type": "state",
+          "state": "Colorado",
+          "radius_miles": null
+        }
+      },
+      "budget_recommendation": "$15/day across all storm cities",
+      "duration": "Run for 14 days after storm campaign pauses"
+    },
+
+    "lookalike_past_customers": {
+      "name": "Lookalike - Past Customers",
+      "description": "Lookalike audience based on past Gates customers. For future use once customer list is uploaded.",
+      "status": "NOT_YET_CREATED",
+      "setup_required": [
+        "Export customer list from Master Customer Database (Google Sheet 1Catvr4UB6BNR6b6UedmlSZ_irSrSx94o9wjdn534mgE)",
+        "Filter to Status Category = '✅ Completed' only",
+        "Include: first name, last name, email, phone, city, state, zip",
+        "Upload as Custom Audience in Meta Business Suite",
+        "Create 1% Lookalike Audience from it"
+      ],
+      "targeting": {
+        "custom_audience": {
+          "type": "lookalike",
+          "source": "past_customers_custom_audience",
+          "percentage": 1,
+          "country": "US",
+          "state": "Colorado"
+        },
+        "age_min": 28,
+        "age_max": 65
+      }
+    }
+  },
+
+  "interest_categories": {
+    "core_interests": [
+      "Home improvement",
+      "Homeowner",
+      "Roofing",
+      "Insurance",
+      "Home insurance"
+    ],
+    "expanded_interests": [
+      "Home repair",
+      "Real estate",
+      "Property management",
+      "Home renovation",
+      "Interior design",
+      "DIY home improvement"
+    ],
+    "storm_specific": [
+      "Weather",
+      "Severe weather",
+      "Home insurance",
+      "Property damage"
+    ]
+  },
+
+  "placement_config": {
+    "automatic": {
+      "description": "Let Meta optimize placements. Recommended for most campaigns.",
+      "enabled": true
+    },
+    "manual": {
+      "description": "Manual placement selection for testing.",
+      "facebook": ["feed", "right_column", "stories", "in_stream_video", "marketplace"],
+      "instagram": ["feed", "stories", "explore", "reels"],
+      "audience_network": false,
+      "messenger": false
+    }
+  },
+
+  "budget_allocation": {
+    "storm_day_1": {
+      "storm_response_audience": "$20/day",
+      "templates": ["A_storm_alert"],
+      "notes": "Lead with urgency. Single template, max budget to storm audience."
+    },
+    "storm_days_2_3": {
+      "storm_response_audience": "$20/day",
+      "retargeting": "$10/day",
+      "templates": ["A_storm_alert", "B_social_proof"],
+      "notes": "Add social proof variant. Start retargeting visitors."
+    },
+    "storm_days_4_7": {
+      "storm_response_audience": "$15/day",
+      "retargeting": "$10/day",
+      "templates": ["B_social_proof", "C_insurance_focus"],
+      "notes": "Shift to insurance messaging. Storm alert fatigue sets in."
+    },
+    "storm_days_8_14": {
+      "retargeting_only": "$15/day",
+      "templates": ["D_urgency_deadline"],
+      "notes": "Pause cold targeting. Retarget with deadline urgency."
+    }
+  }
+}

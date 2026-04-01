@@ -1,0 +1,105 @@
+{
+  "templates": {
+    "A_storm_alert": {
+      "name": "Storm Alert",
+      "priority": "primary",
+      "use_case": "First ad to fire after a storm. Direct response, urgency-driven.",
+      "creative": {
+        "headline": "Hail Damage in {CITY}? Free Roof Inspection",
+        "primary_text": "{CITY} was just hit by {HAIL_SIZE} inch hail. If you're in {ZIP_CODES}, your roof likely took damage you can't see from the ground.\n\nGates Enterprises has completed 7,200+ roofs across the Front Range. We handle the entire insurance claim process for you.\n\n4x manufacturer certified. 306 Google reviews. 4.9 stars.\n\nBook your free inspection today.",
+        "description": "Free storm damage inspections. We handle insurance claims.",
+        "link_description": "Free Roof Inspection",
+        "cta": "BOOK_NOW",
+        "cta_fallback": "LEARN_MORE",
+        "display_link": "gatesroof.com/services/storm-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=storm_alert"
+      },
+      "format": "single_image",
+      "recommended_image": "Storm damage close-up or hail on roof. Real Gates project photo preferred.",
+      "placements": ["facebook_feed", "instagram_feed", "facebook_stories", "instagram_stories"]
+    },
+    "B_social_proof": {
+      "name": "Social Proof",
+      "priority": "secondary",
+      "use_case": "Builds trust. Run alongside Template A for broader reach.",
+      "creative": {
+        "headline": "306 Reviews. 7,200+ Roofs. Storm Season Is Here.",
+        "primary_text": "Your neighbors in {CITY} trust Gates Enterprises for storm damage repair. We're the only roofer in Colorado with all four major manufacturer certifications.\n\nFree inspections. No obligation. We handle the entire insurance claim process.\n\nDon't wait until the damage gets worse.",
+        "description": "Trusted by Colorado homeowners. 4x manufacturer certified.",
+        "link_description": "See Our Reviews",
+        "cta": "GET_QUOTE",
+        "display_link": "gatesroof.com/services/storm-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=social_proof"
+      },
+      "format": "single_image",
+      "recommended_image": "Team photo, completed roof, or before/after. Shows professionalism.",
+      "placements": ["facebook_feed", "instagram_feed"]
+    },
+    "C_insurance_focus": {
+      "name": "Insurance Focus",
+      "priority": "secondary",
+      "use_case": "Targets homeowners worried about insurance. Run days 2-5 after storm.",
+      "creative": {
+        "headline": "Storm Damage? We Handle Your Insurance Claim",
+        "primary_text": "After the recent hail in {CITY}, your roof may have hidden damage that could lead to leaks and costly repairs.\n\nGates Enterprises handles the entire insurance claim process. From inspection to installation, we make it simple.\n\n7,200+ roofs completed. 306 reviews. 4.9 stars.",
+        "description": "Insurance claim assistance. From inspection to installation.",
+        "link_description": "Learn About Our Process",
+        "cta": "LEARN_MORE",
+        "display_link": "gatesroof.com/services/storm-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=insurance_focus"
+      },
+      "format": "single_image",
+      "recommended_image": "Inspector on roof or insurance paperwork with Gates branding.",
+      "placements": ["facebook_feed", "instagram_feed", "facebook_stories", "instagram_stories"]
+    },
+    "D_urgency_deadline": {
+      "name": "Urgency/Deadline",
+      "priority": "tertiary",
+      "use_case": "Late-stage urgency. Run days 5-10 to capture procrastinators.",
+      "creative": {
+        "headline": "Insurance Claims Have Deadlines. Don't Wait.",
+        "primary_text": "If your roof was damaged in the recent {CITY} hail storm, you have a limited window to file an insurance claim.\n\nGates Enterprises offers free storm damage inspections and handles the entire claim process. We've done this 7,200+ times.\n\nSchedule your free inspection before the deadline passes.",
+        "description": "Limited time to file insurance claims. Free inspections available.",
+        "link_description": "Schedule Your Free Inspection",
+        "cta": "BOOK_NOW",
+        "display_link": "gatesroof.com/services/storm-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=urgency_deadline"
+      },
+      "format": "single_image",
+      "recommended_image": "Damaged roof with visible hail impact. Conveys urgency.",
+      "placements": ["facebook_feed", "instagram_feed"]
+    }
+  },
+  "placeholders": {
+    "{CITY}": "City name (e.g., Denver)",
+    "{CITY_SLUG}": "URL-safe city name (e.g., denver, castle-rock)",
+    "{HAIL_SIZE}": "Hail diameter in inches (e.g., 1.5)",
+    "{ZIP_CODES}": "Comma-separated zip codes for the city (e.g., 80201, 80202, 80203)"
+  },
+  "creative_guidelines": {
+    "image_specs": {
+      "feed": "1080x1080px (1:1) or 1200x628px (1.91:1)",
+      "stories": "1080x1920px (9:16)",
+      "max_file_size": "30MB",
+      "formats": ["jpg", "png"]
+    },
+    "video_specs": {
+      "feed": "1:1 or 4:5 aspect ratio, 15-60 seconds",
+      "stories": "9:16 aspect ratio, 15 seconds max",
+      "max_file_size": "4GB",
+      "formats": ["mp4", "mov"]
+    },
+    "text_limits": {
+      "primary_text": "125 chars visible before 'See More' (full text up to 2200)",
+      "headline": "40 chars recommended (max 255)",
+      "description": "30 chars recommended (max 255)"
+    },
+    "best_practices": [
+      "Use real Gates project photos, not stock",
+      "Show actual storm damage for authenticity",
+      "Include Gates logo in image when possible",
+      "Before/after photos perform best for engagement",
+      "Video of inspection process gets highest conversion if available"
+    ]
+  }
+}

@@ -183,6 +183,12 @@ const nextConfig: NextConfig = {
       { source: "/services/:service/fort-collins/fossil-creek", destination: "/services/:service/fort-collins", permanent: true },
       { source: "/services/:service/fort-collins/front-range-village", destination: "/services/:service/fort-collins", permanent: true },
       { source: "/services/:service/fort-collins/mountain-vista", destination: "/services/:service/fort-collins", permanent: true },
+      // Duplicate best-roofer paths → canonical flat URLs
+      { source: "/best-roofer/arvada", destination: "/best-roofer-arvada", permanent: true },
+      { source: "/best-roofer/broomfield", destination: "/best-roofer-broomfield", permanent: true },
+      { source: "/best-roofer/littleton", destination: "/best-roofer-littleton", permanent: true },
+      { source: "/best-roofer/thornton", destination: "/best-roofer-thornton", permanent: true },
+      { source: "/best-roofer/westminster", destination: "/best-roofer-westminster", permanent: true },
     ];
   },
 };
