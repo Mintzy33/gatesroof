@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Local Roofer vs Storm Chasers | Why It Matters",
-  description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 306 Reviews. Protect your home with a trusted roofer",
+  description: "How to spot storm chasers vs. trusted local roofers. Learn the red flags and why locally operated contractors with real warranties matter.",
   alternates: { canonical: "https://www.gatesroof.com/compare/storm-chasers" },
   openGraph: {
     title: "Local Roofer vs Storm Chasers | Why It Matters",
-    description: "Storm chasers disappear after the job. Gates Enterprises is local, 4x certified, 7,200+ roofs, 306 Reviews. Protect your home with a trusted roofer",
+    description: "How to spot storm chasers vs. trusted local roofers. Learn the red flags and why locally operated contractors with real warranties matter.",
     url: "https://www.gatesroof.com/compare/storm-chasers",
     siteName: "Gates Enterprises",
     locale: "en_US",

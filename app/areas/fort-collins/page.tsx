@@ -5,11 +5,11 @@ import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Fort Collins CO Roofer | 4x Certified, 306+ Reviews",
-  description: "Fort Collins roofing contractor with 10+ years serving Northern Colorado. Storm damage repair, insurance claims assistance, and warranties up to 50 years. Free estimate.",
+  description: "Fort Collins roofing with 7,200+ completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/fort-collins" },
   openGraph: {
     title: "Fort Collins CO Roofer | 4x Certified, 306+ Reviews",
-    description: "Fort Collins roofing contractor with 10+ years serving Northern Colorado. Storm damage repair, insurance claims assistance, and warranties up to 50 years. Free estimate.",
+    description: "Fort Collins roofing with 7,200+ completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.",
     url: "https://www.gatesroof.com/areas/fort-collins",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -4,11 +4,11 @@ import InsuranceCoverageEstimatorContent from "./content";
 
 export const metadata: Metadata = {
   title: "Free Roof Insurance Estimator | Gates Enterprises",
-  description: "See what your roof replacement could be worth through insurance. Most CO homeowners pay only their deductible. Free tool, instant results. (720) 766-3377",
+  description: "Estimate your roof insurance coverage in seconds. Most Colorado homeowners pay only their deductible for a full replacement. Free tool, no signup.",
   alternates: { canonical: "https://www.gatesroof.com/tools/insurance-coverage-estimator" },
   openGraph: {
     title: "Free Roof Insurance Estimator | Gates Enterprises",
-    description: "See what your roof replacement could be worth through insurance. Most CO homeowners pay only their deductible. Free tool, instant results. (720) 766-3377",
+    description: "Estimate your roof insurance coverage in seconds. Most Colorado homeowners pay only their deductible for a full replacement. Free tool, no signup.",
     url: "https://www.gatesroof.com/tools/insurance-coverage-estimator",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -5,12 +5,12 @@ import EmergencyContent from "./content";
 export const metadata: Metadata = {
   title: "Emergency Roof Repair Colorado | 24/7 Response | (720) 766-3377",
   description:
-    "Emergency roof repair in Denver and across Colorado. 24/7 rapid response for storm damage, active leaks, and urgent repairs. 7,200+ roofs, 4.9 stars, 306 reviews. Call (720) 766-3377 now.",
+    "Emergency roof repair across Colorado. Rapid response for active leaks, storm damage, and tarping. 4x certified, locally operated. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/emergency-roofing" },
   openGraph: {
     title: "Emergency Roof Repair Colorado | 24/7 Response | Gates Enterprises",
     description:
-      "24/7 emergency roof repair across Colorado. Rapid response for active leaks, storm damage, and urgent roofing needs. Call (720) 766-3377.",
+      "Emergency roof repair across Colorado. Rapid response for active leaks, storm damage, and tarping. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/emergency-roofing",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Superior CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Superior's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377 today",
+  description: "Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. 7,200+ projects completed. Free estimate.",
   alternates: { canonical: "https://www.gatesroof.com/areas/superior" },
   openGraph: {
     title: "Superior CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Superior's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free roof inspections. Call (720) 766-3377 today",
+    description: "Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. 7,200+ projects completed. Free estimate.",
     url: "https://www.gatesroof.com/areas/superior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

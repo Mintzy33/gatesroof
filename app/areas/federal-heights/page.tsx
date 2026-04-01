@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Federal Heights Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Federal Heights' most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377",
+  description: "Federal Heights roofer rated 4.9 stars from 306+ Google reviews. Hail repair, full replacements, and premium warranty options. Free inspection available.",
   alternates: { canonical: "https://www.gatesroof.com/areas/federal-heights" },
   openGraph: {
     title: "Federal Heights Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Federal Heights' most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377",
+    description: "Federal Heights roofer rated 4.9 stars from 306+ Google reviews. Hail repair, full replacements, and premium warranty options. Free inspection available.",
     url: "https://www.gatesroof.com/areas/federal-heights",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

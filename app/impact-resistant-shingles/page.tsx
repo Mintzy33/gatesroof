@@ -4,11 +4,11 @@ import ImpactResistantContent from "./content";
 
 export const metadata: Metadata = {
   title: "Class 4 Impact Resistant Shingles CO | Save 28%",
-  description: "Save up to 28% on insurance with Class 4 impact resistant shingles. Installed by Colorado's 4x certified roofer. 7,200+ roofs. Free estimates. (720) 766-3377",
+  description: "Class 4 impact resistant shingles may save you up to 28% on insurance premiums. Installed by a 4x certified Colorado roofer. Free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/impact-resistant-shingles" },
   openGraph: {
     title: "Class 4 Impact Resistant Shingles CO | Save 28%",
-    description: "Save up to 28% on insurance with Class 4 impact resistant shingles. Installed by Colorado's 4x certified roofer. 7,200+ roofs. Free estimates. (720) 766-3377",
+    description: "Class 4 impact resistant shingles may save you up to 28% on insurance premiums. Installed by a 4x certified Colorado roofer. Free estimate today.",
     url: "https://www.gatesroof.com/impact-resistant-shingles",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

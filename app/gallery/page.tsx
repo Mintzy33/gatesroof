@@ -6,7 +6,7 @@ import { breadcrumbSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "Roofing Photo Gallery | 7,200+ Projects ★ Gates",
   description:
-    "See 7,200+ completed roofing projects across Colorado. Before & after photos of roof replacements, siding, gutters & more. 4.9★ from 306 Reviews",
+    "Browse before and after photos from 7,200+ roofing, siding, and gutter projects across Colorado. See the quality behind our 4.9 star rating.",
   alternates: { canonical: "https://www.gatesroof.com/gallery" },
 };
 

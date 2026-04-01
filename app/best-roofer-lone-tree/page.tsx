@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Lone Tree CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Lone Tree's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. 7,200+ roofs. Free estimate. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lone-tree" },
   openGraph: {
     title: "Best Roofer Lone Tree CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Lone Tree's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. 7,200+ roofs. Free estimate. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-lone-tree",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

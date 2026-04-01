@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-  description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews, plus HailScore technology. See why homeowners choose us",
+  description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, HailScore technology, and warranties others cannot offer.",
   alternates: { canonical: "https://www.gatesroof.com/why-gates-enterprises" },
   openGraph: {
     title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-    description: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews, plus HailScore technology. See why homeowners choose us",
+    description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, HailScore technology, and warranties others cannot offer.",
     url: "https://www.gatesroof.com/why-gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -4,11 +4,11 @@ import ToolsContent from "./content";
 
 export const metadata: Metadata = {
   title: "Free Roofing Tools | Cost & Hail Risk ★ Gates",
-  description: "Free roofing tools: estimate costs, check hail risk & insurance coverage. No signup required. Built by Colorado's 4x certified roofer. (720) 766-3377",
+  description: "Free roofing tools for Colorado homeowners. Estimate costs, check your hail risk score, and explore insurance coverage. No signup required.",
   alternates: { canonical: "https://www.gatesroof.com/tools" },
   openGraph: {
     title: "Free Roofing Tools | Cost & Hail Risk ★ Gates",
-    description: "Free roofing tools: estimate costs, check hail risk & insurance coverage. No signup required. Built by Colorado's 4x certified roofer. (720) 766-3377",
+    description: "Free roofing tools for Colorado homeowners. Estimate costs, check your hail risk score, and explore insurance coverage. No signup required.",
     url: "https://www.gatesroof.com/tools",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

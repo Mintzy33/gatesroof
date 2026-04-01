@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Lafayette CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Lafayette's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Lafayette's top rated roofer. Locally operated, GAF Master Elite certified, and 7,200+ completed roofs. Free storm damage inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lafayette" },
   openGraph: {
     title: "Best Roofer Lafayette CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Lafayette's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Lafayette's top rated roofer. Locally operated, GAF Master Elite certified, and 7,200+ completed roofs. Free storm damage inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-lafayette",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

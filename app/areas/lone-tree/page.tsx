@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Lone Tree CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Lone Tree's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+  description: "Lone Tree CO roofing by a top rated contractor. Insurance claims assistance, premium shingles, and warranties up to 50 years. Schedule your free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/lone-tree" },
   openGraph: {
     title: "Lone Tree CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Lone Tree's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+    description: "Lone Tree CO roofing by a top rated contractor. Insurance claims assistance, premium shingles, and warranties up to 50 years. Schedule your free inspection.",
     url: "https://www.gatesroof.com/areas/lone-tree",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

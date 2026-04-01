@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 306+ Reviews",
-  description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
+  description: "Aurora's top rated roofing company. 306+ five-star reviews, 10+ years local, and insurance claims assistance. Free hail inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-aurora" },
   openGraph: {
     title: "Best Roofer Aurora CO (2026) | 4x Certified ★ 306+ Reviews",
-    description: "Aurora's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite. Free storm inspections. Call (720) 766-3377",
+    description: "Aurora's top rated roofing company. 306+ five-star reviews, 10+ years local, and insurance claims assistance. Free hail inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

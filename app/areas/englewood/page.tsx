@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Englewood CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Englewood's top certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free roof inspections. Call (720) 766-3377 today",
+  description: "Englewood CO roofing contractor rated 4.9 stars. Roof replacements, hail repair, and siding. Warranties up to 50 years. Get your free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/englewood" },
   openGraph: {
     title: "Englewood CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Englewood's top certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free roof inspections. Call (720) 766-3377 today",
+    description: "Englewood CO roofing contractor rated 4.9 stars. Roof replacements, hail repair, and siding. Warranties up to 50 years. Get your free estimate today.",
     url: "https://www.gatesroof.com/areas/englewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

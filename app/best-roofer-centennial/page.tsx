@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Centennial's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 306 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-centennial" },
   openGraph: {
     title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Centennial's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 306 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-centennial",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

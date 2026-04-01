@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
   description:
-    "Meet Alex Chicilo, owner of Colorado's only 4x certified roofer. 7,200+ roofs, 306 Reviews, 4.9★. Creator of HailScore. Call (720) 766-3377",
+    "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 306 reviews, and 4x manufacturer certified.",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
     title: "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
     description:
-      "Meet Alex Chicilo, owner of Colorado's only 4x certified roofer. 7,200+ roofs, 306 Reviews, 4.9★. Creator of HailScore. Call (720) 766-3377",
+      "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 306 reviews, and 4x manufacturer certified.",
     url: "https://www.gatesroof.com/about/alex-chicilo",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

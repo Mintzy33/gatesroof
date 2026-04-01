@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Louisville CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Louisville's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Louisville's top rated roofer. Storm and hail damage experts with 7,200+ completed projects. Locally operated since 2014. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-louisville" },
   openGraph: {
     title: "Best Roofer Louisville CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Louisville's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Louisville's top rated roofer. Storm and hail damage experts with 7,200+ completed projects. Locally operated since 2014. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-louisville",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

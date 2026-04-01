@@ -6,7 +6,7 @@ import { breadcrumbSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "Contact Us | Free Roof Inspection ★ (720) 766-3377",
   description:
-    "Schedule your free roof inspection with Colorado's only 4x certified roofer. 7,200+ roofs, 306 Reviews, 4.9★. Call (720) 766-3377 or book online",
+    "Contact Gates Enterprises for a free roof inspection. Call (720) 766-3377, email, or book online. Serving 65+ Colorado Front Range cities.",
   alternates: { canonical: "https://www.gatesroof.com/contact" },
 };
 

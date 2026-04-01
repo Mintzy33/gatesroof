@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Northglenn CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Northglenn's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Northglenn's top rated roofing company. 4.9 stars from 306 reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-northglenn" },
   openGraph: {
     title: "Best Roofer Northglenn CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Northglenn's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Northglenn's top rated roofing company. 4.9 stars from 306 reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-northglenn",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

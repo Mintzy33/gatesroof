@@ -5,12 +5,12 @@ import AreasContent from "./areas-content";
 export const metadata: Metadata = {
   title: "Service Areas | Gates Enterprises LLC — Colorado Front Range Roofer",
   description:
-    "Gates Enterprises serves 30+ cities across Colorado's Front Range. From Fort Collins to Castle Rock, find your city and explore our roofing, siding, gutter, and storm damage services.",
+    "Find your city. Gates Enterprises serves 30+ Front Range communities from Fort Collins to Castle Rock. Roofing, siding, gutters, and storm repair.",
   alternates: { canonical: "https://www.gatesroof.com/areas" },
   openGraph: {
     title: "Service Areas | Gates Enterprises LLC — Colorado Front Range Roofer",
     description:
-      "Gates Enterprises serves 30+ cities across Colorado's Front Range. From Fort Collins to Castle Rock, find your city and explore our roofing, siding, gutter, and storm damage services.",
+      "Find your city. Gates Enterprises serves 30+ Front Range communities from Fort Collins to Castle Rock. Roofing, siding, gutters, and storm repair.",
     url: "https://www.gatesroof.com/areas",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Evergreen CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Evergreen's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Evergreen's top rated mountain roofer. Built for altitude and Colorado storms. GAF Master Elite certified, 306 reviews. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-evergreen" },
   openGraph: {
     title: "Best Roofer Evergreen CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Evergreen's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Evergreen's top rated mountain roofer. Built for altitude and Colorado storms. GAF Master Elite certified, 306 reviews. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-evergreen",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

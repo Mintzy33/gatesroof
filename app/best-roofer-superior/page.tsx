@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Superior CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Superior's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Superior's top rated roofer with 10+ years of Front Range experience. 4x certified, 306 reviews, and premium warranty options. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-superior" },
   openGraph: {
     title: "Best Roofer Superior CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Superior's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Superior's top rated roofer with 10+ years of Front Range experience. 4x certified, 306 reviews, and premium warranty options. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-superior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

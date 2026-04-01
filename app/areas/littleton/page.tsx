@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Littleton CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Littleton's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free roof inspections. (720) 766-3377",
+  description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
     title: "Littleton CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Littleton's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free roof inspections. (720) 766-3377",
+    description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

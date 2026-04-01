@@ -8,11 +8,11 @@ import { breadcrumbSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Compare Roofers | Gates vs Others ★ 4x Certified",
-  description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 306 Reviews, 4.9★. Transparent comparisons to help you choose. (720) 766-3377",
+  description: "Compare Gates Enterprises to other Colorado roofers. See how certifications, reviews, and warranties stack up. Make an informed roofing decision.",
   alternates: { canonical: "https://www.gatesroof.com/compare" },
   openGraph: {
     title: "Compare Roofers | Gates vs Others ★ 4x Certified",
-    description: "See how Colorado's only 4x certified roofer compares. 7,200+ roofs, 306 Reviews, 4.9★. Transparent comparisons to help you choose. (720) 766-3377",
+    description: "Compare Gates Enterprises to other Colorado roofers. See how certifications, reviews, and warranties stack up. Make an informed roofing decision.",
     url: "https://www.gatesroof.com/compare",
     siteName: "Gates Enterprises",
     locale: "en_US",

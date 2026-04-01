@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Lakewood CO (2026) | Local HQ ★ 4x Certified",
-  description: "Lakewood's best roofer, headquartered here. 4x certified, 7,200+ roofs, 4.9★ from 306 Reviews. Free storm inspections. Call (720) 766-3377",
+  description: "Lakewood's top rated roofer, headquartered right here. 4x certified, 306 Google reviews, and up to 50-year warranties. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lakewood" },
   openGraph: {
     title: "Best Roofer Lakewood CO (2026) | Local HQ ★ 4x Certified",
-    description: "Lakewood's best roofer, headquartered here. 4x certified, 7,200+ roofs, 4.9★ from 306 Reviews. Free storm inspections. Call (720) 766-3377",
+    description: "Lakewood's top rated roofer, headquartered right here. 4x certified, 306 Google reviews, and up to 50-year warranties. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

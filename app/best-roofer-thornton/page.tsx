@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Thornton CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Thornton's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Thornton's top rated roofer. North Metro hail and storm repair specialists. 7,200+ completed projects, 4.9 stars. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-thornton" },
   openGraph: {
     title: "Best Roofer Thornton CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Thornton's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Thornton's top rated roofer. North Metro hail and storm repair specialists. 7,200+ completed projects, 4.9 stars. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

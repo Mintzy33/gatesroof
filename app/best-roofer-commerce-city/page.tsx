@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Commerce City CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Commerce City's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Commerce City's top rated roofer. Locally operated, 4.9 star rated, and backed by four manufacturer certifications. Free storm inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-commerce-city" },
   openGraph: {
     title: "Best Roofer Commerce City CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Commerce City's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Commerce City's top rated roofer. Locally operated, 4.9 star rated, and backed by four manufacturer certifications. Free storm inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-commerce-city",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

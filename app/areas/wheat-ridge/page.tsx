@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Wheat Ridge Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Wheat Ridge's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free roof inspections. Call (720) 766-3377 today",
+  description: "Wheat Ridge roofer with 306+ five-star Google reviews. Hail damage repair, roof replacement, and gutter installs. Locally operated. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/wheat-ridge" },
   openGraph: {
     title: "Wheat Ridge Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Wheat Ridge's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free roof inspections. Call (720) 766-3377 today",
+    description: "Wheat Ridge roofer with 306+ five-star Google reviews. Hail damage repair, roof replacement, and gutter installs. Locally operated. Free inspection.",
     url: "https://www.gatesroof.com/areas/wheat-ridge",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

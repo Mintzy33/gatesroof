@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Edgewater CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Edgewater's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections and restoration. Call (720) 766-3377",
+  description: "Edgewater CO roofing and storm restoration. Locally operated with 10+ years experience and 7,200+ completed projects. Get a free roof inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/edgewater" },
   openGraph: {
     title: "Edgewater CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Edgewater's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections and restoration. Call (720) 766-3377",
+    description: "Edgewater CO roofing and storm restoration. Locally operated with 10+ years experience and 7,200+ completed projects. Get a free roof inspection today.",
     url: "https://www.gatesroof.com/areas/edgewater",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

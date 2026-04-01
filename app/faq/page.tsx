@@ -4,11 +4,11 @@ import FaqContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roofing FAQ | 4x Certified Colorado Roofer",
-  description: "Get answers on roofing costs, insurance claims, hail damage & warranties from Colorado's 4x certified roofer. 7,200+ roofs completed. Free inspections",
+  description: "Answers to common roofing questions about costs, insurance claims, hail damage, and warranties. Written by Colorado's 4x certified roofing team.",
   alternates: { canonical: "https://www.gatesroof.com/faq" },
   openGraph: {
     title: "Roofing FAQ | 4x Certified Colorado Roofer",
-    description: "Get answers on roofing costs, insurance claims, hail damage & warranties from Colorado's 4x certified roofer. 7,200+ roofs completed. Free inspections",
+    description: "Answers to common roofing questions about costs, insurance claims, hail damage, and warranties. Written by Colorado's 4x certified roofing team.",
     url: "https://www.gatesroof.com/faq",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

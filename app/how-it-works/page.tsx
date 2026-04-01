@@ -6,12 +6,12 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "How It Works | Roofing Process | Gates Enterprises",
   description:
-    "See exactly what to expect from your roof replacement. Free inspection, honest assessment, insurance claims assistance, material selection, and professional installation. 7,200+ roofs completed. (720) 766-3377",
+    "Your roof replacement in 5 simple steps. Free inspection, material selection, insurance help, and expert installation. See our proven process.",
   alternates: { canonical: "https://www.gatesroof.com/how-it-works" },
   openGraph: {
     title: "How It Works | Roofing Process | Gates Enterprises",
     description:
-      "See exactly what to expect from your roof replacement. Free inspection, honest assessment, insurance claims assistance, material selection, and professional installation. 7,200+ roofs completed. (720) 766-3377",
+      "Your roof replacement in 5 simple steps. Free inspection, material selection, insurance help, and expert installation. See our proven process.",
     url: "https://www.gatesroof.com/how-it-works",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How It Works | Roofing Process | Gates Enterprises",
     description:
-      "See exactly what to expect from your roof replacement. Free inspection, honest assessment, insurance claims assistance, material selection, and professional installation. 7,200+ roofs completed. (720) 766-3377",
+      "Your roof replacement in 5 simple steps. Free inspection, material selection, insurance help, and expert installation. See our proven process.",
     images: [
       "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
     ],

@@ -4,11 +4,11 @@ import BlogContent from "./content";
 export const metadata: Metadata = {
   title: "Roofing Tips & News | Gates Enterprises Blog",
   description:
-    "Expert roofing advice for Colorado homeowners. Storm prep, maintenance tips, and industry insights from Gates Enterprises.",
+    "Roofing tips, Colorado hail season guides, and shingle comparisons from a 4x certified contractor. Expert advice for Front Range homeowners.",
   openGraph: {
     title: "Roofing Tips & News | Gates Enterprises Blog",
     description:
-      "Expert roofing tips, Colorado hail season updates, insurance restoration advice & shingle comparisons from Gates Enterprises.",
+      "Roofing tips, Colorado hail season guides, and shingle comparisons from a 4x certified contractor.",
     url: "https://www.gatesroof.com/blog",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

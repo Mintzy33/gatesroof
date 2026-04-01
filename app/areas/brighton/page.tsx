@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+  description: "Trusted Brighton CO roofer with 306+ five-star reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
   alternates: { canonical: "https://www.gatesroof.com/areas/brighton" },
   openGraph: {
     title: "Brighton CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Brighton's trusted 4x certified roofer. 7,200+ roofs completed, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+    description: "Trusted Brighton CO roofer with 306+ five-star reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
     url: "https://www.gatesroof.com/areas/brighton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

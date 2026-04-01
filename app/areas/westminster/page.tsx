@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Westminster CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Westminster's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377",
+  description: "Westminster CO roofer offering storm restoration and full roof replacements. 4x manufacturer certified, 7,200+ roofs. Call for your free estimate.",
   alternates: { canonical: "https://www.gatesroof.com/areas/westminster" },
   openGraph: {
     title: "Westminster CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Westminster's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377",
+    description: "Westminster CO roofer offering storm restoration and full roof replacements. 4x manufacturer certified, 7,200+ roofs. Call for your free estimate.",
     url: "https://www.gatesroof.com/areas/westminster",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

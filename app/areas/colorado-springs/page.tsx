@@ -5,11 +5,11 @@ import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Colorado Springs CO Roofer | 4x Certified, 306+ Reviews",
-  description: "Colorado Springs roofing contractor with 7,200+ completed projects. GAF Master Elite certified, hail damage repair, and insurance claims assistance. Free inspection.",
+  description: "Colorado Springs roofer serving the Pikes Peak region. 4x certified, 4.9 stars, and warranties up to 50 years. Book your free roof inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/colorado-springs" },
   openGraph: {
     title: "Colorado Springs CO Roofer | 4x Certified, 306+ Reviews",
-    description: "Colorado Springs roofing contractor with 7,200+ completed projects. GAF Master Elite certified, hail damage repair, and insurance claims assistance. Free inspection.",
+    description: "Colorado Springs roofer serving the Pikes Peak region. 4x certified, 4.9 stars, and warranties up to 50 years. Book your free roof inspection today.",
     url: "https://www.gatesroof.com/areas/colorado-springs",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

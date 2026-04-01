@@ -6,12 +6,12 @@ import { breadcrumbSchema } from "../../lib/schema";
 export const metadata: Metadata = {
   title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
   description:
-    "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.9★ from 306 Reviews. Free estimates. (720) 766-3377",
+    "Affordable roof financing with $0 down options for Colorado homeowners. Multiple plans available to fit your budget. Get a free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/financing" },
   openGraph: {
     title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
     description:
-      "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.9★ from 306 Reviews. Free estimates. (720) 766-3377",
+      "Affordable roof financing with $0 down options for Colorado homeowners. Multiple plans available to fit your budget. Get a free estimate today.",
     url: "https://www.gatesroof.com/financing",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Roof Financing | $0 Down Options ★ Gates Enterprises",
     description:
-      "Flexible roof financing with $0 down payment options. Insurance claim help included. 7,200+ roofs, 4.9★ from 306 Reviews. Free estimates. (720) 766-3377",
+      "Affordable roof financing with $0 down options for Colorado homeowners. Multiple plans available to fit your budget. Get a free estimate today.",
     images: [
       "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
     ],

@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Broomfield CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Broomfield's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377 today",
+  description: "Broomfield CO roofing by a 4x manufacturer certified contractor. Replacements, storm repair, and gutter services. 7,200+ roofs completed. Free estimate.",
   alternates: { canonical: "https://www.gatesroof.com/areas/broomfield" },
   openGraph: {
     title: "Broomfield CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Broomfield's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite certified. Free storm inspections. Call (720) 766-3377 today",
+    description: "Broomfield CO roofing by a 4x manufacturer certified contractor. Replacements, storm repair, and gutter services. 7,200+ roofs completed. Free estimate.",
     url: "https://www.gatesroof.com/areas/broomfield",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

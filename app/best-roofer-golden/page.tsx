@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Golden's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 306+ Google reviews. Free roof inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-golden" },
   openGraph: {
     title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Golden's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\u2605 from 306 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 306+ Google reviews. Free roof inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-golden",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

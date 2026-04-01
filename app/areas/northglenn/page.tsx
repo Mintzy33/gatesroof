@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Northglenn CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Northglenn's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more. Free storm inspections. Call (720) 766-3377",
+  description: "Northglenn CO roofer with 4.9 stars and 306+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/northglenn" },
   openGraph: {
     title: "Northglenn CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Northglenn's most certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more. Free storm inspections. Call (720) 766-3377",
+    description: "Northglenn CO roofer with 4.9 stars and 306+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.",
     url: "https://www.gatesroof.com/areas/northglenn",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
