@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-  description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
+  description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
     title: "#1 Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-    description: "Denver's most certified roofing contractor. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more. Free inspections. Call (720) 766-3377",
+    description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

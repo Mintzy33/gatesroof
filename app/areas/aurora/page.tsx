@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "#1 Aurora CO Roofer | 4x Certified ★ Free Inspection",
-  description: "Aurora's most certified roofing contractor. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377 today",
+  description: "Aurora CO roofer rated 4.9 stars from 306+ reviews. Roof replacement, hail damage, and insurance claims assistance. Call (720) 766-3377 for a free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/aurora" },
   openGraph: {
     title: "#1 Aurora CO Roofer | 4x Certified ★ Free Inspection",
-    description: "Aurora's most certified roofing contractor. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. Call (720) 766-3377 today",
+    description: "Aurora CO roofer rated 4.9 stars from 306+ reviews. Roof replacement, hail damage, and insurance claims assistance. Call (720) 766-3377 for a free inspection.",
     url: "https://www.gatesroof.com/areas/aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

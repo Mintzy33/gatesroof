@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Castle Rock CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Castle Rock's top-rated roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free hail damage inspections. Call (720) 766-3377",
+  description: "Castle Rock CO roofing from a GAF Master Elite contractor. Storm damage repair, insurance help, and warranties up to 50 years. Free inspection available.",
   alternates: { canonical: "https://www.gatesroof.com/areas/castle-rock" },
   openGraph: {
     title: "Castle Rock CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Castle Rock's top-rated roofer. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free hail damage inspections. Call (720) 766-3377",
+    description: "Castle Rock CO roofing from a GAF Master Elite contractor. Storm damage repair, insurance help, and warranties up to 50 years. Free inspection available.",
     url: "https://www.gatesroof.com/areas/castle-rock",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

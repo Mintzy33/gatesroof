@@ -4,11 +4,11 @@ import RoofReplacementContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
-  description: "4x certified roof replacement in Colorado. 7,200+ roofs, warranties up to 50 years. GAF, Owens Corning, Malarkey & CertainTeed. Free estimates. (720) 766-3377",
+  description: "Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with 7,200+ installs. Get a free estimate. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/roof-replacement" },
   openGraph: {
     title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
-    description: "4x certified roof replacement in Colorado. 7,200+ roofs, warranties up to 50 years. GAF, Owens Corning, Malarkey & CertainTeed. Free estimates. (720) 766-3377",
+    description: "Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with 7,200+ installs. Get a free estimate. (720) 766-3377",
     url: "https://www.gatesroof.com/services/roof-replacement",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

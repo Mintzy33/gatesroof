@@ -4,11 +4,11 @@ import GuttersContent from "./content";
 
 export const metadata: Metadata = {
   title: "Gutter Installation CO | Seamless ★ Free Estimates",
-  description: "Seamless gutter installation & guards in Colorado. 7,200+ projects, 4.9★ from 306 Reviews. Protect your home from water damage. Free estimates. (720) 766-3377",
+  description: "Seamless gutter installation and leaf guards in Colorado. Prevent water damage and protect your foundation. 10+ years local experience. Free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/services/gutters-guards" },
   openGraph: {
     title: "Gutter Installation CO | Seamless ★ Free Estimates",
-    description: "Seamless gutter installation & guards in Colorado. 7,200+ projects, 4.9★ from 306 Reviews. Protect your home from water damage. Free estimates. (720) 766-3377",
+    description: "Seamless gutter installation and leaf guards in Colorado. Prevent water damage and protect your foundation. 10+ years local experience. Free estimate today.",
     url: "https://www.gatesroof.com/services/gutters-guards",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

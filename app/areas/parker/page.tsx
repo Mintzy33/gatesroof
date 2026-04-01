@@ -5,11 +5,11 @@ import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Parker CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Parker's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free hail inspections. Call (720) 766-3377",
+  description: "Parker CO roofing by a 4x manufacturer certified contractor. Roof replacement, hail repair, and insurance help. 7,200+ roofs done. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
     title: "Parker CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Parker's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free hail inspections. Call (720) 766-3377",
+    description: "Parker CO roofing by a 4x manufacturer certified contractor. Roof replacement, hail repair, and insurance help. 7,200+ roofs done. Free inspection.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",

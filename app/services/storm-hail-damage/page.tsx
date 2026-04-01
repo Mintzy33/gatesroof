@@ -4,11 +4,11 @@ import StormContent from "./content";
 
 export const metadata: Metadata = {
   title: "Hail Damage Repair CO | 4x Certified ★ Free Inspection",
-  description: "Colorado hail & storm damage experts. 7,200+ roofs restored, 4.9★ from 306 Reviews. Free inspections + insurance claim help. Call (720) 766-3377 today",
+  description: "Hail and storm damage roof repair across Colorado. We help with insurance claims and restore your roof fast. 306+ five-star reviews. Free inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/services/storm-hail-damage" },
   openGraph: {
     title: "Hail Damage Repair CO | 4x Certified ★ Free Inspection",
-    description: "Colorado hail & storm damage experts. 7,200+ roofs restored, 4.9★ from 306 Reviews. Free inspections + insurance claim help. Call (720) 766-3377 today",
+    description: "Hail and storm damage roof repair across Colorado. We help with insurance claims and restore your roof fast. 306+ five-star reviews. Free inspection today.",
     url: "https://www.gatesroof.com/services/storm-hail-damage",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

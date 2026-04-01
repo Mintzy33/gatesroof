@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Thornton CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Thornton's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+  description: "Thornton CO roofing contractor with 10+ years serving the Front Range. GAF Master Elite certified, storm and hail repair. Get a free estimate today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
     title: "Thornton CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Thornton's trusted 4x certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. Free storm damage inspections. Call (720) 766-3377 today",
+    description: "Thornton CO roofing contractor with 10+ years serving the Front Range. GAF Master Elite certified, storm and hail repair. Get a free estimate today.",
     url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

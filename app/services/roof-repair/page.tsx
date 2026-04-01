@@ -4,11 +4,11 @@ import RepairContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Repair CO | Fast, Certified ★ Free Inspection",
-  description: "Fast Colorado roof repair by 4x certified experts. 7,200+ roofs, same-week scheduling. Leaks, storm damage, missing shingles. Free inspections. (720) 766-3377",
+  description: "Same-week roof repair in Colorado. Leaks, missing shingles, wind and storm fixes. Locally operated, 10+ years experience. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/services/roof-repair" },
   openGraph: {
     title: "Roof Repair CO | Fast, Certified ★ Free Inspection",
-    description: "Fast Colorado roof repair by 4x certified experts. 7,200+ roofs, same-week scheduling. Leaks, storm damage, missing shingles. Free inspections. (720) 766-3377",
+    description: "Same-week roof repair in Colorado. Leaks, missing shingles, wind and storm fixes. Locally operated, 10+ years experience. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/services/roof-repair",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

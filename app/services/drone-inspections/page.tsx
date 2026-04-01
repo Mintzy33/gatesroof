@@ -4,11 +4,11 @@ import DroneContent from "./content";
 
 export const metadata: Metadata = {
   title: "Drone Roof Inspections CO | HD Aerial Assessments | Gates",
-  description: "Free drone roof inspections in Colorado. HD aerial photos and video for insurance claims and damage assessment. FAA-certified pilots. Call (720) 766-3377.",
+  description: "HD drone roof inspections with FAA-certified pilots. See damage up close without climbing your roof. Great for insurance claims. Book your free flight today.",
   alternates: { canonical: "https://www.gatesroof.com/services/drone-inspections" },
   openGraph: {
     title: "Drone Roof Inspections CO | HD Aerial Assessments | Gates",
-    description: "Free drone roof inspections in Colorado. HD aerial photos and video for insurance claims and damage assessment. FAA-certified pilots. Call (720) 766-3377.",
+    description: "HD drone roof inspections with FAA-certified pilots. See damage up close without climbing your roof. Great for insurance claims. Book your free flight today.",
     url: "https://www.gatesroof.com/services/drone-inspections",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

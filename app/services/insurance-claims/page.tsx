@@ -4,11 +4,11 @@ import InsuranceContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Insurance Claims CO | We Handle Everything",
-  description: "We handle your entire roof insurance claim. 7,200+ restorations, 4.9★ from 306 Reviews. Free inspection, adjuster meetings & paperwork. (720) 766-3377",
+  description: "Full roof insurance claim assistance from inspection to final payment. Adjuster meetings, paperwork, and repairs handled for you. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/services/insurance-claims" },
   openGraph: {
     title: "Roof Insurance Claims CO | We Handle Everything",
-    description: "We handle your entire roof insurance claim. 7,200+ restorations, 4.9★ from 306 Reviews. Free inspection, adjuster meetings & paperwork. (720) 766-3377",
+    description: "Full roof insurance claim assistance from inspection to final payment. Adjuster meetings, paperwork, and repairs handled for you. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/services/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Arvada CO Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
+  description: "Locally operated Arvada CO roofer. Hail damage, full replacements, and storm restoration. 4x certified, 4.9 star rated. Call today for a free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/arvada" },
   openGraph: {
     title: "Arvada CO Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Arvada's #1 certified roofer. 7,200+ roofs, 4.9★ from 306 Reviews. GAF Master Elite + 3 more certs. Free storm damage inspections. Call (720) 766-3377",
+    description: "Locally operated Arvada CO roofer. Hail damage, full replacements, and storm restoration. 4x certified, 4.9 star rated. Call today for a free inspection.",
     url: "https://www.gatesroof.com/areas/arvada",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

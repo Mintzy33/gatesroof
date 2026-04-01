@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Lakewood Roofer | Local HQ, 4x Certified, 306+ Reviews ★",
-  description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
+  description: "Headquartered in Lakewood, CO. Your local roofer with 306+ five-star Google reviews and up to 50-year warranties. Call today for a free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
     title: "Lakewood Roofer | Local HQ, 4x Certified, 306+ Reviews ★",
-    description: "Lakewood's hometown roofer, headquartered here. 7,200+ roofs, 4.9★ from 306 Reviews. 4x manufacturer certified. Free inspections. (720) 766-3377",
+    description: "Headquartered in Lakewood, CO. Your local roofer with 306+ five-star Google reviews and up to 50-year warranties. Call today for a free inspection.",
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
