@@ -730,3 +730,30 @@
   Found 0 hail detections from HailScore
 
 ✅ No qualifying hail events detected. All clear.
+=== Wed Apr  1 09:38:28 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-01 09:38:28
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Wed Apr  1 10:08:31 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-01 10:08:32
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Wed Apr  1 10:38:35 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-01 10:38:36
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.

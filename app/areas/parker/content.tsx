@@ -298,7 +298,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Specialists</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Experts</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               When a hailstorm damages your roof, the restoration process can feel overwhelming. Gates Enterprises is an <Link href="/services/insurance-claims" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>insurance restoration expert</Link>, guiding Parker homeowners through the restoration process from initial inspection through final installation. We document damage thoroughly and work with your insurance adjuster to support your claim.
             </p>

@@ -254,7 +254,7 @@ export default function CityContent() {
           </div>
 
           <div>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Specialists.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Experts.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Lakewood gets hit by hail regularly, and the restoration process can be confusing. Gates Enterprises LLC is an insurance restoration expert. We document damage meticulously, provide clear reports, and manage the restoration process from your initial inspection through the final installation. You get a fully restored home without the stress.
             </p>
