@@ -24,7 +24,7 @@ Every campaign is built for maximum quality score:
 - **6 callout assets** highlighting trust signals
 - **Call asset** with (720) 766-3377
 - **Structured snippet** listing services
-- **Landing page** → gatesroof.com/services/storm-damage (intent-matched)
+- **Landing page** → gatesroof.com/services/storm-hail-damage (intent-matched)
 - **Enhanced manual CPC** bidding
 
 ## Setup

@@ -182,7 +182,7 @@ Storm interest typically fades 5-7 days after the event. Signs it's time:
 ### Tracking Setup:
 - **Google:** Conversion tracking via Google Ads + GA4 (property 524938162)
 - **Meta:** Meta Pixel 1621445598880955 tracks PageView, Lead events
-- **Landing page:** gatesroof.com/services/storm-damage
+- **Landing page:** gatesroof.com/services/storm-hail-damage
 - **Phone tracking:** (720) 766-3377 (consider call tracking number for attribution)
 
 ---

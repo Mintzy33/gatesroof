@@ -11,8 +11,8 @@
         "link_description": "Free Roof Inspection",
         "cta": "BOOK_NOW",
         "cta_fallback": "LEARN_MORE",
-        "display_link": "gatesroof.com/services/storm-damage",
-        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=storm_alert"
+        "display_link": "gatesroof.com/services/storm-hail-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-hail-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=storm_alert"
       },
       "format": "single_image",
       "recommended_image": "Storm damage close-up or hail on roof. Real Gates project photo preferred.",
@@ -28,8 +28,8 @@
         "description": "Trusted by Colorado homeowners. 4x manufacturer certified.",
         "link_description": "See Our Reviews",
         "cta": "GET_QUOTE",
-        "display_link": "gatesroof.com/services/storm-damage",
-        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=social_proof"
+        "display_link": "gatesroof.com/services/storm-hail-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-hail-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=social_proof"
       },
       "format": "single_image",
       "recommended_image": "Team photo, completed roof, or before/after. Shows professionalism.",
@@ -45,8 +45,8 @@
         "description": "Insurance claims assistance. From inspection to installation.",
         "link_description": "Learn About Our Process",
         "cta": "LEARN_MORE",
-        "display_link": "gatesroof.com/services/storm-damage",
-        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=insurance_focus"
+        "display_link": "gatesroof.com/services/storm-hail-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-hail-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=insurance_focus"
       },
       "format": "single_image",
       "recommended_image": "Inspector on roof or insurance paperwork with Gates branding.",
@@ -62,8 +62,8 @@
         "description": "Limited time to file insurance claims. Free inspections available.",
         "link_description": "Schedule Your Free Inspection",
         "cta": "BOOK_NOW",
-        "display_link": "gatesroof.com/services/storm-damage",
-        "website_url": "https://www.gatesroof.com/services/storm-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=urgency_deadline"
+        "display_link": "gatesroof.com/services/storm-hail-damage",
+        "website_url": "https://www.gatesroof.com/services/storm-hail-damage?utm_source=meta&utm_medium=paid&utm_campaign=storm_{CITY_SLUG}&utm_content=urgency_deadline"
       },
       "format": "single_image",
       "recommended_image": "Damaged roof with visible hail impact. Conveys urgency.",

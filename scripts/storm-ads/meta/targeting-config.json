@@ -81,7 +81,7 @@
           "url_rules": [
             {
               "type": "url_contains",
-              "value": "/services/storm-damage"
+              "value": "/services/storm-hail-damage"
             },
             {
               "type": "url_contains",

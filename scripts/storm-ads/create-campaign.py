@@ -8,7 +8,7 @@ Quality Score Target: 8+
 - Mixed keyword match types (exact, phrase, broad)
 - Negative keywords to block junk traffic
 - Sitelink, callout, call, structured snippet assets
-- Landing page: gatesroof.com/services/storm-damage (matches ad intent)
+- Landing page: gatesroof.com/services/storm-hail-damage (matches ad intent)
 - Manual CPC with enhanced CPC
 
 Usage:

@@ -126,7 +126,7 @@ To run retargeting campaigns, you need a Custom Audience:
 1. Go to Meta Business Suite > Audiences > Create Audience > Custom Audience
 2. Select "Website" as the source
 3. Pixel: `1621445598880955`
-4. Rule: People who visited URLs containing `/services/storm-damage` OR `/areas/`
+4. Rule: People who visited URLs containing `/services/storm-hail-damage` OR `/areas/`
 5. Exclude: People who visited `/thank-you` (already converted)
 6. Retention: 30 days
 7. Name: "Storm Damage Page Visitors - 30 Days"
@@ -160,7 +160,7 @@ Before the system is fully operational, Alex needs to provide:
 - **Google Ads storm system:** `~/gatesroof/scripts/storm-ads/`
 - **Storm trigger script:** `~/gatesroof/scripts/storm-ads/storm-trigger.py`
 - **Gates website:** `~/gatesroof/` (Next.js app)
-- **Landing page:** `gatesroof.com/services/storm-damage`
+- **Landing page:** `gatesroof.com/services/storm-hail-damage`
 
 ---
 
