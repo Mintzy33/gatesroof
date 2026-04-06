@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Search, FileText, Shield, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Clock, Zap } from "lucide-react";
 import AnswerCapsule from "../../components/AnswerCapsule";
+import StormLeadForm from "./StormLeadForm";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -75,6 +76,13 @@ export default function StormContent() {
               (720) 766-3377
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ─── LEAD FORM ─── */}
+      <section style={{ background: "#F8FAFC", padding: "64px 24px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <StormLeadForm />
         </div>
       </section>
 
