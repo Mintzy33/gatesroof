@@ -55,11 +55,11 @@ def create_campaign(client, customer_id, campaign_name, budget_rn, landing_page)
     c.advertising_channel_type = client.enums.AdvertisingChannelTypeEnum.SEARCH
     c.status = client.enums.CampaignStatusEnum.PAUSED
     c.campaign_budget = budget_rn
-    c.manual_cpc.enhanced_cpc_enabled = True
+    c._pb.manual_cpc.SetInParent()
     c.network_settings.target_google_search = True
     c.network_settings.target_search_network = True
     c.network_settings.target_content_network = False
-    c.start_date = date.today().strftime("%Y%m%d")
+    c.contains_eu_political_advertising = 3  # TristateBoolean.NO
     c.final_url_suffix = ""
     resp = service.mutate_campaigns(customer_id=customer_id, operations=[op])
     return resp.results[0].resource_name
@@ -266,6 +266,7 @@ def add_call_asset(client, customer_id, campaign_rn, config):
         a.name = f"Call - {uuid.uuid4().hex[:6]}"
         a.call_asset.country_code = "US"
         a.call_asset.phone_number = config["gates_info"]["phone"]
+        a.call_asset.call_recorded = False
         a.call_asset.call_conversion_reporting_state = (
             client.enums.CallConversionReportingStateEnum.DISABLED
         )

@@ -106,15 +106,21 @@ class MetaAdsClient:
 
     def create_ad_creative(self, city: str) -> Dict[str, Any]:
         landing = self.defaults["landing_page"]
+        # Drone aerial photo of Gates crew doing a full roof replacement
+        # Uploaded to Meta ad account 2026-04-08. Re-upload if account changes.
+        image_hash = self.config.get("meta_ads", {}).get(
+            "ad_image_hash", "c70f596cb50b3077e84168da2a3ac108"
+        )
         link_data = {
             "link": landing,
             "message": (
-                f"Storm hit {city}? Gates Enterprises has been repairing Colorado roofs for years. "
-                "Free inspection, full insurance support, no obligation."
+                f"Storm hit {city}? Gates Enterprises has replaced 7,200+ roofs across Colorado. "
+                "Free inspection. We assist you through the insurance claims process. No obligation."
             ),
             "name": f"Free Storm Damage Inspection in {city}",
-            "description": "Quadruple manufacturer certified. 308+ five-star reviews.",
+            "description": "Quadruple manufacturer certified. 308 reviews. 4.9 stars.",
             "call_to_action": {"type": "GET_QUOTE", "value": {"link": landing}},
+            "image_hash": image_hash,
         }
         payload = {
             "name": f"Storm Creative - {city}",

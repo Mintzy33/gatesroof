@@ -6,7 +6,7 @@
       "use_case": "First ad to fire after a storm. Direct response, urgency-driven.",
       "creative": {
         "headline": "Hail Damage in {CITY}? Free Roof Inspection",
-        "primary_text": "{CITY} was just hit by {HAIL_SIZE} inch hail. If you're in {ZIP_CODES}, your roof likely took damage you can't see from the ground.\n\nGates Enterprises has completed 7,200+ roofs across the Front Range. We assist you through the insurance claims process.\n\n4x manufacturer certified. 306 Google reviews. 4.9 stars.\n\nBook your free inspection today.",
+        "primary_text": "{CITY} was just hit by {HAIL_SIZE} inch hail. If you're in {ZIP_CODES}, your roof likely took damage you can't see from the ground.\n\nGates Enterprises has completed 7,200+ roofs across the Front Range. We assist you through the insurance claims process.\n\n4x manufacturer certified. 308 Google reviews. 4.9 stars.\n\nBook your free inspection today.",
         "description": "Free storm damage inspections. Insurance claims assistance.",
         "link_description": "Free Roof Inspection",
         "cta": "BOOK_NOW",
@@ -24,7 +24,7 @@
       "use_case": "Builds trust. Run alongside Template A for broader reach.",
       "creative": {
         "headline": "306 Reviews. 7,200+ Roofs. Storm Season Is Here.",
-        "primary_text": "Your neighbors in {CITY} trust Gates Enterprises for storm damage repair. We're the only roofer in Colorado with all four major manufacturer certifications.\n\nFree inspections. No obligation. We assist you through the insurance claims process.\n\nDon't wait until the damage gets worse.",
+        "primary_text": "Your neighbors in {CITY} trust Gates Enterprises for storm damage inspections and full roof replacements. We're the only roofer in Colorado with all four major manufacturer certifications.\n\nFree inspections. No obligation. We assist you through the insurance claims process.\n\nDon't wait until the damage gets worse.",
         "description": "Trusted by Colorado homeowners. 4x manufacturer certified.",
         "link_description": "See Our Reviews",
         "cta": "GET_QUOTE",
@@ -40,8 +40,8 @@
       "priority": "secondary",
       "use_case": "Targets homeowners worried about insurance. Run days 2-5 after storm.",
       "creative": {
-        "headline": "Storm Damage? We Help With Insurance Claims",
-        "primary_text": "After the recent hail in {CITY}, your roof may have hidden damage that could lead to leaks and costly repairs.\n\nGates Enterprises assists you through the insurance claims process. From inspection to installation, we make it simple.\n\n7,200+ roofs completed. 306 reviews. 4.9 stars.",
+        "headline": "Storm Damage? Free Inspection. We Help.",
+        "primary_text": "After the recent hail in {CITY}, your roof may have hidden damage that could lead to leaks — and the longer you wait, the worse it gets.\n\nGates Enterprises offers free inspections and assists you through the insurance claims process. From inspection to installation, we make it simple.\n\n7,200+ roofs completed. 308 reviews. 4.9 stars.",
         "description": "Insurance claims assistance. From inspection to installation.",
         "link_description": "Learn About Our Process",
         "cta": "LEARN_MORE",
@@ -58,7 +58,7 @@
       "use_case": "Late-stage urgency. Run days 5-10 to capture procrastinators.",
       "creative": {
         "headline": "Insurance Claims Have Deadlines. Don't Wait.",
-        "primary_text": "If your roof was damaged in the recent {CITY} hail storm, you have a limited window to file an insurance claim.\n\nGates Enterprises offers free storm damage inspections and assists you through the claims process. We've completed 7,200+ roofs.\n\nSchedule your free inspection before the deadline passes.",
+        "primary_text": "If your roof was damaged in the recent {CITY} hail storm, you have a limited window to file an insurance claim.\n\nGates Enterprises offers free storm damage inspections and assists you through the claims process. We've completed 7,200+ roofs. 308 reviews. 4.9 stars.\n\nSchedule your free inspection before the deadline passes.",
         "description": "Limited time to file insurance claims. Free inspections available.",
         "link_description": "Schedule Your Free Inspection",
         "cta": "BOOK_NOW",
