@@ -3769,3 +3769,31 @@
   Found 0 hail detections from HailScore
 
 ✅ No qualifying hail events detected. All clear.
+=== Wed Apr  8 12:25:45 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-08 12:25:45
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Wed Apr  8 12:55:48 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-08 12:55:49
+============================================================
+🔍 Checking NWS alerts...
+⚠️  NWS API error: HTTPSConnectionPool(host='api.weather.gov', port=443): Read timed out. (read timeout=15)
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.
+=== Wed Apr  8 13:26:06 MDT 2026 ===
+🌩️  Storm Trigger — 2026-04-08 13:26:07
+============================================================
+🔍 Checking NWS alerts...
+  Found 0 hail detections from NWS
+🔍 Checking HailScore API...
+  Found 0 hail detections from HailScore
+
+✅ No qualifying hail events detected. All clear.

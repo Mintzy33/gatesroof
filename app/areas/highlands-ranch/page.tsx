@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Highlands Ranch Roofer | 4x Certified, 306+ Reviews ★",
-  description: "Highlands Ranch roofing with up to 50-year warranties. GAF Master Elite and Owens Corning Preferred certified. 4.9 stars, 306 reviews. Free inspection.",
+  title: "Highlands Ranch Roofer | 4x Certified, 308+ Reviews ★",
+  description: "Highlands Ranch roofing with up to 50-year warranties. GAF Master Elite and Owens Corning Preferred certified. 4.9 stars, 308 reviews. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
-    title: "Highlands Ranch Roofer | 4x Certified, 306+ Reviews ★",
-    description: "Highlands Ranch roofing with up to 50-year warranties. GAF Master Elite and Owens Corning Preferred certified. 4.9 stars, 306 reviews. Free inspection.",
+    title: "Highlands Ranch Roofer | 4x Certified, 308+ Reviews ★",
+    description: "Highlands Ranch roofing with up to 50-year warranties. GAF Master Elite and Owens Corning Preferred certified. 4.9 stars, 308 reviews. Free inspection.",
     url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.5500, "longitude": -104.9697 },
   "areaServed": { "@type": "City", "name": "Highlands Ranch", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "306", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "308", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

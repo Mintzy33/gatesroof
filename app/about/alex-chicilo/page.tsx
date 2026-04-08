@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
   description:
-    "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 306 reviews, and 4x manufacturer certified.",
+    "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 308 reviews, and 4x manufacturer certified.",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
     title: "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
     description:
-      "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 306 reviews, and 4x manufacturer certified.",
+      "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 308 reviews, and 4x manufacturer certified.",
     url: "https://www.gatesroof.com/about/alex-chicilo",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -338,7 +338,7 @@ export default function AlexChiciloPage() {
               margin: "0 0 0",
             }}
           >
-            With over 306 Google reviews and a 4.9-star average rating,
+            With over 308 Google reviews and a 4.9-star average rating,
             Alex and the Gates Enterprises team have built their
             reputation on honest assessments, quality workmanship, and
             straightforward communication. Whether it is a{" "}
@@ -519,8 +519,8 @@ export default function AlexChiciloPage() {
               },
               {
                 icon: <Star size={28} color={ACCENT} />,
-                title: "306+ Reviews, 4.9 Stars",
-                desc: "Over 306 verified Google reviews with a 4.9-star average. Real homeowners sharing real results.",
+                title: "308+ Reviews, 4.9 Stars",
+                desc: "Over 308 verified Google reviews with a 4.9-star average. Real homeowners sharing real results.",
               },
               {
                 icon: <BarChart3 size={28} color={ACCENT} />,
@@ -600,7 +600,7 @@ export default function AlexChiciloPage() {
                 display: "inline-block",
               }}
             >
-              Read Our 306+ Google Reviews
+              Read Our 308+ Google Reviews
             </a>
           </div>
         </div>

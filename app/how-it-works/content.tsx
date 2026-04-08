@@ -166,7 +166,7 @@ const STATS = [
   { value: "4x", label: "Manufacturer Certified" },
   { value: "7,200+", label: "Roofs Completed" },
   { value: "4.9", label: "Star Rating", hasStar: true },
-  { value: "306", label: "Customer Reviews" },
+  { value:   "308", label: "Customer Reviews" },
 ];
 
 const FAQS = [

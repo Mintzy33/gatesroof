@@ -4,11 +4,11 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Lone Tree CO Roofer | 4x Certified, 306+ Reviews ★",
+  title: "Lone Tree CO Roofer | 4x Certified, 308+ Reviews ★",
   description: "Lone Tree CO roofing by a top rated contractor. Insurance claims assistance, premium shingles, and warranties up to 50 years. Schedule your free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/lone-tree" },
   openGraph: {
-    title: "Lone Tree CO Roofer | 4x Certified, 306+ Reviews ★",
+    title: "Lone Tree CO Roofer | 4x Certified, 308+ Reviews ★",
     description: "Lone Tree CO roofing by a top rated contractor. Insurance claims assistance, premium shingles, and warranties up to 50 years. Schedule your free inspection.",
     url: "https://www.gatesroof.com/areas/lone-tree",
     siteName: "Gates Enterprises LLC",
@@ -56,7 +56,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "306",
+        "reviewCount": "308",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

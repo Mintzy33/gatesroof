@@ -4,11 +4,11 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Colorado Springs CO Roofer | 4x Certified, 306+ Reviews",
+  title: "Colorado Springs CO Roofer | 4x Certified, 308+ Reviews",
   description: "Colorado Springs roofer serving the Pikes Peak region. 4x certified, 4.9 stars, and warranties up to 50 years. Book your free roof inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/colorado-springs" },
   openGraph: {
-    title: "Colorado Springs CO Roofer | 4x Certified, 306+ Reviews",
+    title: "Colorado Springs CO Roofer | 4x Certified, 308+ Reviews",
     description: "Colorado Springs roofer serving the Pikes Peak region. 4x certified, 4.9 stars, and warranties up to 50 years. Book your free roof inspection today.",
     url: "https://www.gatesroof.com/areas/colorado-springs",
     siteName: "Gates Enterprises LLC",
@@ -29,7 +29,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Colorado Springs, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 306+ Google reviews, 4.9 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Colorado Springs, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 308+ Google reviews, 4.9 stars.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lakewood",
@@ -62,7 +62,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "306",
+        "reviewCount": "308",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

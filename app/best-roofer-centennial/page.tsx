@@ -4,12 +4,12 @@ import BestRooferCentennialContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 306 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
+  title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 308+ Reviews",
+  description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 308 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-centennial" },
   openGraph: {
-    title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 306 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
+    title: "Best Roofer Centennial CO (2026) | 4x Certified \u2605 308+ Reviews",
+    description: "Centennial's top rated roofer. 10+ years local, 4.9 stars from 308 reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-centennial",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Centennial?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Centennial. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Centennial. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a Centennial roofer have?",

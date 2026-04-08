@@ -4,11 +4,11 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Littleton CO Roofer | 4x Certified, 306+ Reviews ★",
+  title: "Littleton CO Roofer | 4x Certified, 308+ Reviews ★",
   description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
-    title: "Littleton CO Roofer | 4x Certified, 306+ Reviews ★",
+    title: "Littleton CO Roofer | 4x Certified, 308+ Reviews ★",
     description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.6136, "longitude": -105.0166 },
   "areaServed": { "@type": "City", "name": "Littleton", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "306", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "308", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

@@ -62,7 +62,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "306",
+        "reviewCount": "308",
         "bestRating": "5"
       },
       "hasOfferCatalog": {

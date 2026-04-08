@@ -4,12 +4,12 @@ import BestRooferGoldenContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 306+ Reviews",
-  description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 306+ Google reviews. Free roof inspection. (720) 766-3377",
+  title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 308+ Reviews",
+  description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 308+ Google reviews. Free roof inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-golden" },
   openGraph: {
-    title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 306+ Reviews",
-    description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 306+ Google reviews. Free roof inspection. (720) 766-3377",
+    title: "Best Roofer Golden CO (2026) | 4x Certified \u2605 308+ Reviews",
+    description: "Golden's top rated roofer. Foothills wind and hail specialists with 4.9 stars and 308+ Google reviews. Free roof inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-golden",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Golden?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Golden. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Golden. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a Golden roofer have?",

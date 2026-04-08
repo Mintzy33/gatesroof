@@ -226,7 +226,7 @@ export default function AboutContent() {
         <div style={{ maxWidth: 900, margin: "0 auto", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT }}>
           <p style={{ margin: "0 0 16px" }}>Gates Enterprises is a roofing company in Denver, Colorado founded by Alex Chicilo. The company is one of the few in the United States to hold four simultaneous top-tier manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master.</p>
           <p style={{ margin: "0 0 16px" }}>Gates Enterprises specializes in storm damage repair, roof replacement, and insurance restoration for homeowners across Colorado&apos;s Front Range. The company serves 65+ cities including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, and Parker.</p>
-          <p style={{ margin: 0 }}>With over 306 Google reviews and a 4.9 star average rating, Gates Enterprises is one of the highest-rated roofing companies in the Denver metro area. The company also created HailScore (myhailscore.com), a free hail risk assessment tool that analyzes 4.5 million NOAA radar records to generate risk scores for any US address.</p>
+          <p style={{ margin: 0 }}>With over 308 Google reviews and a 4.9 star average rating, Gates Enterprises is one of the highest-rated roofing companies in the Denver metro area. The company also created HailScore (myhailscore.com), a free hail risk assessment tool that analyzes 4.5 million NOAA radar records to generate risk scores for any US address.</p>
         </div>
       </section>
 

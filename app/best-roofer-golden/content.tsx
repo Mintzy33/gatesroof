@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Golden?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Golden. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 306+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Golden. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Golden roofer have?",
@@ -51,7 +51,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
-  { label: "306+ verified Google reviews", gates: true },
+  { label: "308+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "8+ years serving Colorado's Front Range", gates: true },
   { label: "Proprietary hail damage technology (HailScore)", gates: true },
@@ -91,7 +91,7 @@ export default function BestRooferGoldenContent() {
             Best Roofing Company in Golden, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 306+ Reviews. 4.9 Stars.
+            Colorado's Only Quadruple Certified Roofing Contractor. 308+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Golden is nestled where the plains meet the foothills, creating a funnel effect for weather systems rolling off the mountains. This geographic position means Golden experiences some of the most intense wind events along the Front Range, and hailstorms frequently track through the city on their way east. The combination of altitude, wind exposure, and hail makes choosing the right roofer critical for Golden homeowners. This guide covers what to look for and why Gates Enterprises LLC stands out.
@@ -127,7 +127,7 @@ export default function BestRooferGoldenContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>2. Verified Customer Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Pay attention to how the company responds to both positive and negative feedback. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 306+ Google reviews with a 4.9 star average, reflecting years of consistent performance across Golden and the Front Range.
+              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Pay attention to how the company responds to both positive and negative feedback. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 308+ Google reviews with a 4.9 star average, reflecting years of consistent performance across Golden and the Front Range.
             </p>
           </div>
 
@@ -240,7 +240,7 @@ export default function BestRooferGoldenContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -291,7 +291,7 @@ export default function BestRooferGoldenContent() {
 
       <CTA
         title="Get Golden's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 306+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

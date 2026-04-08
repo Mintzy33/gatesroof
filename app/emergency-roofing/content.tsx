@@ -99,7 +99,7 @@ const WHY_GATES = [
   },
   {
     Icon: Star,
-    bold: "4.9 stars from 306 reviews.",
+    bold: "4.9 stars from 308 reviews.",
     rest: "Homeowners across the Front Range trust Gates Enterprises because we deliver results under pressure, every time.",
   },
   {

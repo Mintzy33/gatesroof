@@ -442,7 +442,7 @@ export default function AreasContent() {
               {[
                 { value: 30, suffix: "+", label: "Cities Served" },
                 { value: 7200, suffix: "+", label: "Roofs Completed" },
-                { value: 306, suffix: "", label: "Reviews" },
+                { value: 308, suffix: "", label: "Reviews" },
               ].map((stat, i) => (
                 <div
                   key={i}

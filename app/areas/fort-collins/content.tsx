@@ -203,10 +203,10 @@ export default function CityContent() {
             Roofing Contractor in Fort Collins, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 306+ Five Star Reviews. Serving Northern Colorado for 8+ Years.
+            Quadruple Manufacturer Certified. 308+ Five Star Reviews. Serving Northern Colorado for 8+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Fort Collins sits at the northern end of Colorado's Front Range, where storms forming along the foothills produce some of the most frequent and severe hail in the state. With a population of roughly 175,000 and rapid growth pushing east into Timnath and beyond, thousands of homes face hail damage every season. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 306+ Google reviews, and has completed 7,200+ roofs across Colorado. From historic bungalows in Old Town to new construction in Rigden Farm, we deliver the same quality and care on every project.
+            Fort Collins sits at the northern end of Colorado's Front Range, where storms forming along the foothills produce some of the most frequent and severe hail in the state. With a population of roughly 175,000 and rapid growth pushing east into Timnath and beyond, thousands of homes face hail damage every season. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 308+ Google reviews, and has completed 7,200+ roofs across Colorado. From historic bungalows in Old Town to new construction in Rigden Farm, we deliver the same quality and care on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -237,9 +237,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>306+ Google Reviews. 4.9 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>308+ Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Northern Colorado homeowners have plenty of roofing contractors to choose from. They keep choosing Gates Enterprises because we deliver honest assessments, quality craftsmanship, and straightforward communication. Our 4.9 star rating across 306+ reviews reflects that consistency.
+              Northern Colorado homeowners have plenty of roofing contractors to choose from. They keep choosing Gates Enterprises because we deliver honest assessments, quality craftsmanship, and straightforward communication. Our 4.9 star rating across 308+ reviews reflects that consistency.
             </p>
           </div>
 
@@ -382,18 +382,18 @@ export default function CityContent() {
             What Fort Collins Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 306+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the most trusted roofing contractors serving Northern Colorado. Our reviews come from real homeowners across the Front Range. Here is what they have to say.
+            With 308+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the most trusted roofing contractors serving Northern Colorado. Our reviews come from real homeowners across the Front Range. Here is what they have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(306+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 306+ Reviews on Google &rarr;
+            Read All 308+ Reviews on Google &rarr;
           </a>
         </div>
       </section>

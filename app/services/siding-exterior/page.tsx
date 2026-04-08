@@ -4,11 +4,11 @@ import SidingContent from "./content";
 
 export const metadata: Metadata = {
   title: "Siding Installation CO | Certified ★ Free Estimates",
-  description: "James Hardie, vinyl, and engineered wood siding in Colorado. Boost curb appeal and energy efficiency. 4.9 stars from 306 reviews. Get a free estimate.",
+  description: "James Hardie, vinyl, and engineered wood siding in Colorado. Boost curb appeal and energy efficiency. 4.9 stars from 308 reviews. Get a free estimate.",
   alternates: { canonical: "https://www.gatesroof.com/services/siding-exterior" },
   openGraph: {
     title: "Siding Installation CO | Certified ★ Free Estimates",
-    description: "James Hardie, vinyl, and engineered wood siding in Colorado. Boost curb appeal and energy efficiency. 4.9 stars from 306 reviews. Get a free estimate.",
+    description: "James Hardie, vinyl, and engineered wood siding in Colorado. Boost curb appeal and energy efficiency. 4.9 stars from 308 reviews. Get a free estimate.",
     url: "https://www.gatesroof.com/services/siding-exterior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
