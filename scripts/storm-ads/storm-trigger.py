@@ -99,24 +99,39 @@ def send_discord_notification(config, message: str):
         return False
 
 
-def build_storm_notification(city, hail_size, google_ok, meta_ok, dry_run=False):
+def build_storm_notification(city, hail_size, google_ok, meta_ok, dry_run=False, auto_activated=False):
     """Build the Discord notification message for a storm event."""
     mode = " [DRY RUN]" if dry_run else ""
-    google_status = "✅ Created (PAUSED)" if google_ok else "❌ Failed"
-    meta_status = "✅ Created (PAUSED)" if meta_ok else "❌ Failed"
     today = date.today().isoformat()
 
-    return (
-        f"🚨 **STORM ALERT — {city}**{mode}\n"
-        f"**Hail size:** {hail_size}\"\n"
-        f"**Date:** {today}\n\n"
-        f"**Campaigns created:**\n"
-        f"• Google Search: {google_status}\n"
-        f"• Meta (FB/IG): {meta_status}\n\n"
-        f"**Both are PAUSED.** Reply `activate {city}` to go live on both channels.\n"
-        f"Google Ads: <https://ads.google.com/aw/campaigns>\n"
-        f"Meta Ads: <https://business.facebook.com/adsmanager>"
-    )
+    if auto_activated:
+        google_status = "✅ LIVE (auto-activated)" if google_ok else "❌ Failed"
+        meta_status = "✅ LIVE (auto-activated)" if meta_ok else "❌ Failed"
+        return (
+            f"🚨🟢 **STORM ALERT — {city} — ADS ARE LIVE**{mode}\n"
+            f"**Hail size:** {hail_size}\" (≥1.5\" threshold — auto-activated)\n"
+            f"**Date:** {today}\n\n"
+            f"**Campaigns:**\n"
+            f"• Google Search: {google_status}\n"
+            f"• Meta (FB/IG): {meta_status}\n\n"
+            f"Ads are running now ($50/day Google + $30/day Meta). Pause if needed:\n"
+            f"Google Ads: <https://ads.google.com/aw/campaigns>\n"
+            f"Meta Ads: <https://business.facebook.com/adsmanager>"
+        )
+    else:
+        google_status = "✅ Created (PAUSED)" if google_ok else "❌ Failed"
+        meta_status = "✅ Created (PAUSED)" if meta_ok else "❌ Failed"
+        return (
+            f"🚨 **STORM ALERT — {city}**{mode}\n"
+            f"**Hail size:** {hail_size}\"\n"
+            f"**Date:** {today}\n\n"
+            f"**Campaigns created:**\n"
+            f"• Google Search: {google_status}\n"
+            f"• Meta (FB/IG): {meta_status}\n\n"
+            f"**Both are PAUSED.** Run `--activate {city}` to go live on both channels.\n"
+            f"Google Ads: <https://ads.google.com/aw/campaigns>\n"
+            f"Meta Ads: <https://business.facebook.com/adsmanager>"
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -382,7 +397,11 @@ def main():
         if city not in config["colorado_cities"]:
             print(f"❌ City '{city}' not in config.")
             sys.exit(1)
+        auto_activate_size = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
+        will_auto_activate = args.force_size >= auto_activate_size
         print(f"⚡ Force mode: creating campaigns for {city} ({args.force_size}\" hail)")
+        if will_auto_activate:
+            print(f"🟢 Hail size ≥ {auto_activate_size}\" — will AUTO-ACTIVATE after creation")
 
         if not args.dry_run and campaign_exists_today(state, city):
             print(f"⚠️  Campaign already created for {city} today. Clear .storm-state.json to retry.")
@@ -396,7 +415,22 @@ def main():
         if not args.dry_run and (google_ok or meta_ok):
             record_campaign(state, city, google_ok=google_ok, meta_ok=meta_ok)
 
-        msg = build_storm_notification(city, args.force_size, google_ok, meta_ok, args.dry_run)
+        # Auto-activate if hail size meets threshold
+        auto_activated = False
+        if will_auto_activate and not args.dry_run:
+            print(f"\n🟢 Auto-activating campaigns for {city}...")
+            if google_ok:
+                print(f"  📊 Google Ads:")
+                activate_google_campaign(city)
+            if meta_ok:
+                print(f"  📱 Meta Ads:")
+                activate_meta_campaigns(city)
+            auto_activated = True
+        elif will_auto_activate and args.dry_run:
+            print(f"  [DRY RUN] Would auto-activate campaigns for {city}")
+            auto_activated = True
+
+        msg = build_storm_notification(city, args.force_size, google_ok, meta_ok, args.dry_run, auto_activated=auto_activated)
         print(f"\n📣 Sending Discord notification...")
         send_discord_notification(config, msg)
         return
@@ -444,7 +478,11 @@ def main():
             skipped += 1
             continue
 
+        auto_activate_size = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
+        will_auto_activate = info["hail_size"] >= auto_activate_size
         print(f"🌩️  Creating campaigns for {city} ({info['hail_size']}\" hail)...")
+        if will_auto_activate:
+            print(f"  🟢 Hail ≥ {auto_activate_size}\" — will AUTO-ACTIVATE")
 
         print(f"\n  📊 Google Ads:")
         google_ok = create_google_campaign(city, info["hail_size"], args.dry_run)
@@ -455,8 +493,23 @@ def main():
         if not args.dry_run:
             record_campaign(state, city, google_ok=google_ok, meta_ok=meta_ok)
 
+        # Auto-activate if hail size meets threshold
+        auto_activated = False
+        if will_auto_activate and not args.dry_run:
+            print(f"\n  🟢 Auto-activating campaigns for {city}...")
+            if google_ok:
+                print(f"    📊 Google Ads:")
+                activate_google_campaign(city)
+            if meta_ok:
+                print(f"    📱 Meta Ads:")
+                activate_meta_campaigns(city)
+            auto_activated = True
+        elif will_auto_activate and args.dry_run:
+            print(f"  [DRY RUN] Would auto-activate campaigns for {city}")
+            auto_activated = True
+
         # Notify Alex regardless of dry run
-        msg = build_storm_notification(city, info["hail_size"], google_ok, meta_ok, args.dry_run)
+        msg = build_storm_notification(city, info["hail_size"], google_ok, meta_ok, args.dry_run, auto_activated=auto_activated)
         print(f"\n  📣 Notifying Alex...")
         send_discord_notification(config, msg)
 
@@ -464,10 +517,11 @@ def main():
             created += 1
 
     print(f"\n{'='*60}")
+    auto_activate_size_final = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
     print(f"📊 Summary: {created} cities processed, {skipped} skipped")
     if created > 0 and not args.dry_run:
-        print(f"⚠️  Campaigns are PAUSED. Alex notified via Discord.")
-        print(f"   To activate: python storm-trigger.py --activate <CITY>")
+        print(f"✅ Campaigns created. Hail ≥ {auto_activate_size_final}\" = auto-activated. Hail < {auto_activate_size_final}\" = PAUSED (manual activate).")
+        print(f"   To manually activate: python storm-trigger.py --activate <CITY>")
 
 
 if __name__ == "__main__":

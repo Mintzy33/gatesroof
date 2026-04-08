@@ -6,7 +6,7 @@
     "ad_image_hash": "c70f596cb50b3077e84168da2a3ac108",
     "ad_image_name": "gates-storm-drone.jpg",
     "access_token": "EAA0JSj5oZB24BRBLab5SqJAx9oyKZB9Q4nkeUqAVN35eyPacLo5s7GDRQws3nuj2RYvqeZAWLJDLH2Slhli2MJoF3kHVkM1jaEvSjEeYcqZClMVwYCEZBMTYdA1lPNAuBRwbmpZBJU4pqgn8Y40SINQyUY4kxdZAa5mLIA397QuJiRe8QHngboZAcqmssQZDZD",
-    "api_version": "v19.0",
+    "api_version": "v21.0",
     "base_url": "https://graph.facebook.com"
   },
   "campaign_defaults": {
@@ -42,7 +42,7 @@
     ],
     "roofs_completed": "7,200+",
     "reviews_count": "308",
-    "review_rating": "4.8"
+    "review_rating": "4.9"
   },
   "colorado_cities": {
     "Denver": {
