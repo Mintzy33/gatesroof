@@ -139,6 +139,7 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Denver CO", href: "/areas/denver" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Lone Tree", href: "/best-roofer-lone-tree" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

@@ -140,6 +140,7 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Lakewood CO", href: "/areas/lakewood" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Evergreen", href: "/best-roofer-evergreen" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

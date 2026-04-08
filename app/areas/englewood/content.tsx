@@ -109,6 +109,15 @@ export default function CityContent() {
       </section>
       <HailScoreCard citySlug="englewood" cityName="Englewood" />
 
+      <section style={{ padding: "32px 24px", background: "#f8f9fb", borderTop: "1px solid rgba(13,33,55,0.06)" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "#4a5568", marginBottom: 8 }}>Related:</p>
+          <a href="/best-roofer-englewood" style={{ display: "inline-flex", alignItems: "center", gap: 6, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: "#1a56a4", fontWeight: 600, textDecoration: "none" }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+            Best Roofer in Englewood, CO
+          </a>
+        </div>
+      </section>
       <LocalSEOInfo citySlug="englewood" cityName="Englewood" showMapsLink />
 
       <Footer />

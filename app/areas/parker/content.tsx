@@ -174,6 +174,7 @@ const INTERNAL_LINKS = [
   { label: "Class 4 Impact Resistant Shingles", href: "/blog/class-4-impact-resistant-shingles-colorado" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Parker", href: "/best-roofer-parker" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

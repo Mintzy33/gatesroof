@@ -154,6 +154,7 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Aurora CO", href: "/areas/aurora" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Colorado Springs", href: "/best-roofer-colorado-springs" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

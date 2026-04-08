@@ -139,6 +139,7 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Lakewood CO", href: "/areas/lakewood" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Morrison", href: "/best-roofer-morrison" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

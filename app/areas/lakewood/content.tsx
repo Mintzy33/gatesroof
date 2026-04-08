@@ -143,6 +143,7 @@ const INTERNAL_LINKS = [
   { label: "Roofing Contractor Parker CO", href: "/areas/parker" },
   { label: "About Gates Enterprises", href: "/about" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Best Roofer in Lakewood", href: "/best-roofer-lakewood" }, 
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
