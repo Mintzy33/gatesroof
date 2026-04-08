@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ScrollReveal } from "../components/GSAPAnimations";
 
-declare global { interface Window { fbq: (...args: unknown[]) => void } }
+declare global { interface Window { fbq?: (...args: unknown[]) => void } }
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
