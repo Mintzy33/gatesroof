@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Parker CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Parker CO roofing by a 4x manufacturer certified contractor. Roof replacement, hail repair, and insurance help. 7,200+ roofs done. Free inspection.",
+  title: "Best Roofer in Parker CO | 308 Reviews, 4.9 Stars | Free Inspection",
+  description: "Parker's top-rated roofing company. 308 five-star Google reviews, 4x manufacturer certified, 7,200+ roofs. Hail damage? Get your free inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Parker CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Parker CO roofing by a 4x manufacturer certified contractor. Roof replacement, hail repair, and insurance help. 7,200+ roofs done. Free inspection.",
+    title: "Best Roofer in Parker CO | 308 Reviews, 4.9 Stars | Free Inspection",
+    description: "Parker's top-rated roofing company. 308 five-star Google reviews, 4x manufacturer certified, 7,200+ roofs. Hail damage? Get your free inspection today.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",
