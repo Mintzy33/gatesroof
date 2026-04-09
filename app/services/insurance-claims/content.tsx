@@ -276,6 +276,26 @@ export default function InsuranceContent() {
         </div>
       </section>
 
+      {/* ─── BEST ROOFER LINKS ─── */}
+      <section style={{ padding: "48px 24px", background: WHITE }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>CERTIFIED ROOFERS NEAR YOU</span>
+          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Best Roofer for Your Insurance Claim</h2>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>A certified contractor makes all the difference in the insurance claims process. Find the top-rated roofer in your city.</p>
+          <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
+            {[
+              { n: "Best Roofer in Denver", s: "denver" }, { n: "Best Roofer in Aurora", s: "aurora" }, { n: "Best Roofer in Lakewood", s: "lakewood" },
+              { n: "Best Roofer in Arvada", s: "arvada" }, { n: "Best Roofer in Thornton", s: "thornton" }, { n: "Best Roofer in Westminster", s: "westminster" },
+              { n: "Best Roofer in Littleton", s: "littleton" }, { n: "Best Roofer in Parker", s: "parker" }, { n: "Best Roofer in Centennial", s: "centennial" },
+              { n: "Best Roofer in Englewood", s: "englewood" }, { n: "Best Roofer in Highlands Ranch", s: "highlands-ranch" }, { n: "Best Roofer in Castle Rock", s: "castle-rock" },
+              { n: "Best Roofer in Broomfield", s: "broomfield" }, { n: "Best Roofer in Boulder", s: "boulder" }, { n: "Best Roofer in Fort Collins", s: "fort-collins" },
+            ].map((c) => (
+              <Link key={c.s} href={`/best-roofer-${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(37,99,235,0.25)", background: "rgba(37,99,235,0.04)", color: ACCENT, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── SERVICE AREAS ─── */}
       <section style={{ padding: "64px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
