@@ -2,8 +2,8 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 
-const VIDEO_URL = "https://res.cloudinary.com/dyr5ihre/video/upload/q_auto,f_mp4,w_1280,br_1500k/v1776889523/gatesroof_header_v4.mp4";
-const VIDEO_POSTER = "https://res.cloudinary.com/dyr5ihrer/video/upload/q_40,f_webp,w_800,so_0/v1776889523/gatesroof_header_v4.mp4";
+const VIDEO_URL = "https://res.cloudinary.com/dyr5ihrer/video/upload/q_auto,f_mp4,w_1920,br_8000k/v1776889931/gatesroof_header_v4_hq.mp4";
+const VIDEO_POSTER = "https://res.cloudinary.com/dyr5ihrer/video/upload/q_60,f_webp,w_1280,so_0/v1776889931/gatesroof_header_v4_hq.mp4";
 
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -24,7 +24,7 @@ export default function HeroVideo() {
           transition: "opacity 0.8s ease",
           zIndex: 1,
         }}
-        quality={40}
+        quality={60}
       />
       {/* Video plays over the poster once loaded */}
       <video
@@ -33,7 +33,7 @@ export default function HeroVideo() {
         muted
         loop
         playsInline
-        preload="none"
+        preload="metadata"
         onPlaying={() => setVideoReady(true)}
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.55, zIndex: 0 }}
       >
