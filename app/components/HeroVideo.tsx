@@ -35,7 +35,7 @@ export default function HeroVideo() {
         playsInline
         preload="metadata"
         onPlaying={() => setVideoReady(true)}
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.55, zIndex: 0 }}
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", opacity: 0.55, zIndex: 0 }}
       >
         <source src={VIDEO_URL} type="video/mp4" />
       </video>
