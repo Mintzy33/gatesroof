@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Top Rated Aurora CO Roofer | 4x Certified ★ Free Inspection",
-  description: "Aurora CO roofer rated 4.9 stars from 308+ reviews. Roof replacement, hail damage, and insurance claims assistance. Call (720) 766-3377 for a free inspection.",
+  title: "Aurora CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 308 five-star reviews and 7,200+ roofs replaced. Free inspection — no pressure.",
   alternates: { canonical: "https://www.gatesroof.com/areas/aurora" },
   openGraph: {
-    title: "Top Rated Aurora CO Roofer | 4x Certified ★ Free Inspection",
-    description: "Aurora CO roofer rated 4.9 stars from 308+ reviews. Roof replacement, hail damage, and insurance claims assistance. Call (720) 766-3377 for a free inspection.",
+    title: "Aurora CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 308 five-star reviews and 7,200+ roofs replaced. Free inspection — no pressure.",
     url: "https://www.gatesroof.com/areas/aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

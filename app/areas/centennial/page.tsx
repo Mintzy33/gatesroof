@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Centennial CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Centennial CO roofing contractor with 7,200+ completed projects. Owens Corning Preferred and GAF certified. Hail damage and repairs. Free estimate today.",
+  title: "Centennial CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Centennial hail season is here. Gates Enterprises: 308 five-star Google reviews, GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/centennial" },
   openGraph: {
-    title: "Centennial CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Centennial CO roofing contractor with 7,200+ completed projects. Owens Corning Preferred and GAF certified. Hail damage and repairs. Free estimate today.",
+    title: "Centennial CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Centennial hail season is here. Gates Enterprises: 308 five-star Google reviews, GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
     url: "https://www.gatesroof.com/areas/centennial",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

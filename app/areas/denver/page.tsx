@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Top Rated Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-  description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
+  title: "Denver CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Denver hail season is April through August. Gates Enterprises: 10+ years, 7,200+ roofs, 308 five-star reviews. GAF Master Elite certified. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
-    title: "Top Rated Denver CO Roofer | 4x Certified, 7,200+ Roofs ★",
-    description: "Denver roofing with warranties up to 50 years. GAF, Owens Corning Preferred, Malarkey, and CertainTeed certified. 7,200+ roofs. Free estimate today.",
+    title: "Denver CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Denver hail season is April through August. Gates Enterprises: 10+ years, 7,200+ roofs, 308 five-star reviews. GAF Master Elite certified. Free inspection.",
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

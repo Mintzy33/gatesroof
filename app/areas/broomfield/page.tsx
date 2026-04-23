@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Broomfield CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Broomfield CO roofing by a 4x manufacturer certified contractor. Replacements, storm repair, and gutter services. 7,200+ roofs completed. Free estimate.",
+  title: "Broomfield CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 308 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/broomfield" },
   openGraph: {
-    title: "Broomfield CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Broomfield CO roofing by a 4x manufacturer certified contractor. Replacements, storm repair, and gutter services. 7,200+ roofs completed. Free estimate.",
+    title: "Broomfield CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 308 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
     url: "https://www.gatesroof.com/areas/broomfield",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

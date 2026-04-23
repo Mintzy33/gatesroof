@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer in Thornton CO | 308 Reviews, 4.9 Stars | Hail Experts",
-  description: "Thornton's top-rated roofing company. 308 five-star Google reviews, GAF Master Elite certified, 10+ years on the Front Range. Free hail damage inspection.",
+  title: "Thornton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Thornton hail season runs April through August. Gates Enterprises: 308 five-star reviews, 4x certified, 7,200+ roofs. Free hail damage inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
-    title: "Best Roofer in Thornton CO | 308 Reviews, 4.9 Stars | Hail Experts",
-    description: "Thornton's top-rated roofing company. 308 five-star Google reviews, GAF Master Elite certified, 10+ years on the Front Range. Free hail damage inspection.",
+    title: "Thornton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Thornton hail season runs April through August. Gates Enterprises: 308 five-star reviews, 4x certified, 7,200+ roofs. Free hail damage inspection today.",
     url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Littleton CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
+  title: "Littleton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 308 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
-    title: "Littleton CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Littleton CO roofer with GAF, Owens Corning, Malarkey, and CertainTeed certifications. 7,200+ roofs and counting. Call for a free roof inspection.",
+    title: "Littleton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 308 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

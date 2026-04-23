@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer in Parker CO | 308 Reviews, 4.9 Stars | Free Inspection",
-  description: "Parker's top-rated roofing company. 308 five-star Google reviews, 4x manufacturer certified, 7,200+ roofs. Hail damage? Get your free inspection today.",
+  title: "Parker CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 308 five-star reviews, free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Best Roofer in Parker CO | 308 Reviews, 4.9 Stars | Free Inspection",
-    description: "Parker's top-rated roofing company. 308 five-star Google reviews, 4x manufacturer certified, 7,200+ roofs. Hail damage? Get your free inspection today.",
+    title: "Parker CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 308 five-star reviews, free inspection. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",

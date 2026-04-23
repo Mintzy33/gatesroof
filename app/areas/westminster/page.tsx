@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Westminster CO Roofer | 4x Certified, 308+ Reviews ★",
-  description: "Westminster CO roofer offering storm restoration and full roof replacements. 4x manufacturer certified, 7,200+ roofs. Call for your free estimate.",
+  title: "Westminster CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+  description: "Westminster hail damage? Gates Enterprises has 308 five-star reviews and 7,200+ roofs replaced across the Front Range. Free inspection. 4x certified.",
   alternates: { canonical: "https://www.gatesroof.com/areas/westminster" },
   openGraph: {
-    title: "Westminster CO Roofer | 4x Certified, 308+ Reviews ★",
-    description: "Westminster CO roofer offering storm restoration and full roof replacements. 4x manufacturer certified, 7,200+ roofs. Call for your free estimate.",
+    title: "Westminster CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
+    description: "Westminster hail damage? Gates Enterprises has 308 five-star reviews and 7,200+ roofs replaced across the Front Range. Free inspection. 4x certified.",
     url: "https://www.gatesroof.com/areas/westminster",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
