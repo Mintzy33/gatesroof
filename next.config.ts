@@ -52,6 +52,8 @@ const nextConfig: NextConfig = {
       { source: "/service-areas/laurel-mt", destination: "/", permanent: true },
       { source: "/service-areas/worden-mt", destination: "/", permanent: true },
       { source: "/service-areas/park-city-mt", destination: "/", permanent: true },
+      // Privacy policy alias (Meta app requires this URL)
+      { source: "/privacy-policy", destination: "/privacy", permanent: false },
       // Old about page
       { source: "/about-us", destination: "/about", permanent: true },
       // Catch-all for any other old service-areas URLs
