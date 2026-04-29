@@ -57,7 +57,17 @@ export default function StormContent() {
 
       {/* ─── HERO ─── */}
       <section className="sd-hero" style={{ position: "relative", minHeight: "75vh", display: "flex", alignItems: "center", overflow: "hidden", background: NAVY }}>
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(170deg, rgba(6,38,63,0.85) 0%, rgba(13,33,55,0.95) 60%, rgba(13,33,55,0.98) 100%)" }} />
+        {/* Background video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.35 }}
+        >
+          <source src="https://res.cloudinary.com/dyr5ihrer/video/upload/q_auto,f_auto/gatesroof_header_v4.mp4" type="video/mp4" />
+        </video>
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(170deg, rgba(6,38,63,0.82) 0%, rgba(13,33,55,0.92) 60%, rgba(13,33,55,0.97) 100%)" }} />
         <div style={{ position: "relative", zIndex: 1, maxWidth: 800, margin: "0 auto", padding: "160px 24px 80px" }}>
           <Link href="/" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
             Home &rarr; Services &rarr; Storm &amp; Hail Damage
@@ -65,16 +75,22 @@ export default function StormContent() {
           <h1 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 800, color: WHITE, margin: "20px 0 16px", lineHeight: 1.1 }}>
             Colorado Storm Damage and Hail Repair You Can Trust
           </h1>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Fast response, expert craftsmanship, and insurance claims assistance from a team that has replaced thousands of roofs across the Front Range.
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 12, maxWidth: 700 }}>
+            Fast response, expert craftsmanship from a team that has replaced 7,200+ roofs across the Front Range.
           </p>
+          {/* Urgency bar */}
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(37,99,235,0.25)", border: "1px solid rgba(37,99,235,0.5)", borderRadius: 100, padding: "8px 18px", marginBottom: 28 }}>
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#22C55E", flexShrink: 0, boxShadow: "0 0 6px #22C55E" }} />
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.9)", fontWeight: 600 }}>Responding to storm calls now &mdash; inspections within 24 hrs</span>
+          </div>
           <div className="sd-hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
-            <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
-              Request a Free Inspection & Estimate &rarr;
-            </Link>
-            <a href="tel:7207663377" style={{ display: "inline-block", background: "rgba(255,255,255,0.06)", color: WHITE, border: "1px solid rgba(255,255,255,0.12)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 500 }}>
+            <a href="tel:7207663377" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: WHITE, color: NAVY, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 700 }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.13h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               (720) 766-3377
             </a>
+            <Link href="/contact" style={{ display: "inline-block", background: "rgba(255,255,255,0.08)", color: WHITE, border: "1px solid rgba(255,255,255,0.2)", borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
+              Request Free Inspection &rarr;
+            </Link>
           </div>
         </div>
       </section>
@@ -82,6 +98,12 @@ export default function StormContent() {
       {/* ─── LEAD FORM ─── */}
       <section style={{ background: "#F8FAFC", padding: "64px 24px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ textAlign: "center" as const, marginBottom: 24 }}>
+            <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "#64748B", margin: 0, display: "inline-flex", alignItems: "center", gap: 6 }}>
+              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#22C55E", display: "inline-block" }} />
+              We typically respond within 2 hours during business hours
+            </p>
+          </div>
           <StormLeadForm />
         </div>
       </section>
