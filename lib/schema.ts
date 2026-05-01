@@ -79,10 +79,10 @@ export function blogPostingSchema(post: {
     dateModified: post.publishDate,
     author: {
       "@type": "Person",
-      "@id": "https://www.gatesroof.com/about/alex-chicilo#person",
-      name: "Alex Chicilo",
-      url: "https://www.gatesroof.com/about/alex-chicilo",
-      jobTitle: "Owner",
+      "@id": "https://www.gatesroof.com/about/andrew-gates#person",
+      name: "Andrew Gates",
+      url: "https://www.gatesroof.com/about/gates-enterprises",
+      jobTitle: "Founder",
       worksFor: {
         "@type": "Organization",
         name: BUSINESS_INFO.name,

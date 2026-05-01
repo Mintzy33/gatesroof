@@ -62,9 +62,9 @@ const localBusinessSchema = {
   foundingDate: "2014",
   founder: {
     "@type": "Person",
-    "@id": "https://www.gatesroof.com/about/alex-chicilo#person",
-    name: "Alex Chicilo",
-    url: "https://www.gatesroof.com/about/alex-chicilo",
+    "@id": "https://www.gatesroof.com/about/andrew-gates#person",
+    name: "Andrew Gates",
+    url: "https://www.gatesroof.com/about/gates-enterprises",
   },
   address: {
     "@type": "PostalAddress",
@@ -242,7 +242,7 @@ const timeline = [
   {
     year: "2014",
     title: "Gates Enterprises Founded",
-    desc: "Alex Chicilo started Gates Enterprises with one truck, one ladder, and one rule: treat every roof like it belongs to your own family.",
+    desc: "Andrew Gates started Gates Enterprises with one truck, one ladder, and one rule: treat every roof like it belongs to your own family.",
   },
   {
     year: "2016",

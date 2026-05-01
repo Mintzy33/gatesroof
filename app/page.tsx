@@ -391,7 +391,7 @@ export default function Home() {
         <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", flexWrap: "wrap" as const, gap: 12, justifyContent: "center" }}>
           {[
             { l: "Free Roofing Tools", h: "/tools" },
-            { l: "About Alex Chicilo", h: "/about/alex-chicilo" },
+            { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
             { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
             { l: "Insurance Coverage Estimator", h: "/tools/insurance-coverage-estimator" },
             { l: "Roof Replacement Cost Estimator", h: "/tools/roof-age-calculator" },
@@ -418,7 +418,7 @@ export default function Home() {
               { q: "What is Gates Enterprises?", a: `Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over ${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating} star average.` },
               { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado. Homeowners typically pay only their deductible." },
               { q: "What areas does Gates Enterprises serve?", a: "Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities." },
-              { q: "What is HailScore?", a: "HailScore is a free hail risk assessment tool created by Gates Enterprises owner Alex Chicilo. It analyzes 4.5 million NOAA radar records to generate risk scores for any US address. Available at myhailscore.com." },
+              { q: "What is HailScore?", a: "HailScore is a free hail risk assessment tool created by Gates Enterprises founder Andrew Gates. It analyzes 4.5 million NOAA radar records to generate risk scores for any US address. Available at myhailscore.com." },
             ].map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div style={{ padding: "24px 28px", background: WHITE, borderRadius: 16, border: "1px solid rgba(13,33,55,0.04)" }}>
