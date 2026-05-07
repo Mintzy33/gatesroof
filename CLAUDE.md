@@ -1,7 +1,16 @@
 # Gates Enterprises – CLAUDE.md
 
 ## What this is
-Marketing site for Gates Enterprises LLC, a roofing contractor based in Lakewood, Colorado. Domain: gatesroof.com. Owned by Alex Chicilo (Mintzy). Sister site/business: HailScore (myhailscore.com). Separate roofing entity: Chicilo & Co LLC (storm chasing / hail damage focus).
+Marketing site for **Gates Enterprises LLC**, a roofing contractor based in Lakewood, Colorado. Domain: gatesroof.com.
+
+**Ownership & roles:**
+- Owner: Andrew Gates
+- Director of Marketing/Operations: Alex Chicilo (Mintzy) — primary point of contact for site changes, marketing, content, dev work
+- Public-facing founder name on the site: Andrew Gates (do NOT change this back to Alex Chicilo)
+
+**Related entities (different ownership, do not confuse):**
+- HailScore (myhailscore.com) — owned/founded by Alex Chicilo. Separate site, separate repo.
+- Chicilo & Co LLC — Alex's separate roofing entity focused on storm chasing / hail damage. Separate from Gates.
 
 ## Stack
 - **Framework:** Next.js (App Router, TypeScript)
