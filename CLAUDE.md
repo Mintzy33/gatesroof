@@ -100,4 +100,4 @@ This repo is one of four under active Claude Code development:
 - Don't auto-install dependencies without listing what and why first
 - Don't refactor working code "for cleanliness" unless asked
 - Don't run `npm audit fix --force` — breaks things
-- Don't push to main directly. Branch + PR.
+- Don't push to main without verifying the change locally first. Solo operator, direct push is fine, but `npm run dev` and exercise the actual page before pushing.
