@@ -422,6 +422,51 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
 }
 
 // ---------------------------------------------------------------------------
+// City-specific FAQ overrides — curated content takes precedence over generator
+// ---------------------------------------------------------------------------
+
+const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
+  littleton: [
+    {
+      question: "Do I need a permit to replace my roof in Littleton?",
+      answer: "Yes. The City of Littleton requires a building permit for any full roof replacement, and inspections are required after installation. Depending on your property location, permits may be issued through the City of Littleton Building Division, Arapahoe County, or Douglas County. Gates Enterprises handles permit pulling and inspection scheduling as standard practice — you don't need to manage that process yourself.",
+    },
+    {
+      question: "My property is on the Arapahoe/Douglas County line. How does that affect permitting?",
+      answer: "It depends on your specific address and which jurisdiction your parcel falls under. Both counties have slightly different application processes and fee schedules. We've worked in both jurisdictions extensively and will identify the correct permit authority before any work begins. This is a common situation in south Littleton, and it's not a complication — just a step we handle as part of standard project setup.",
+    },
+    {
+      question: "When does hail season typically peak in Littleton?",
+      answer: "Colorado's hail season runs April through September, with the highest frequency of large-hail events in May, June, and July. Littleton's western location, close to the foothills storm interface, means it often receives storms that have organized and intensified before tracking northeast toward the metro. NOAA data for the Littleton area shows 11 storms delivering 2.0-inch or larger hail between 2019 and 2024 — an average of more than two significant events per year.",
+    },
+    {
+      question: "My roof looks fine from the ground. How do I know if I have hail damage?",
+      answer: "You often can't tell from the ground. Hail impact damage to asphalt shingles — called bruising — appears as soft spots in the shingle mat that aren't visible without getting on the roof and pressing by hand or probing with a tool. Impact fractures accelerate granule loss and eventually expose the fiberglass mat to UV and moisture. We provide free post-storm inspections with written documentation so you have an accurate picture of what, if anything, needs attention.",
+    },
+    {
+      question: "How long does a roof replacement take in Littleton?",
+      answer: "A standard residential roof replacement in Littleton takes one to two days for most single-family homes, weather permitting. Larger homes, complex multi-plane roofs, and jobs requiring HOA approval or permit processing add time to the front end. We give you a realistic timeline at estimate and stick to it.",
+    },
+    {
+      question: "Will my HOA in Ken Caryl or Columbine need to approve my new roof?",
+      answer: "Most HOA-governed communities in Littleton require architectural review committee approval for roofing material and color changes. The Ken Caryl Ranch Master Association is one of the more active HOAs in this regard. We handle HOA submittal documentation — color samples, manufacturer spec sheets, project description — and factor the typical 7–14 day approval window into your project schedule so it doesn't cause delays.",
+    },
+    {
+      question: "What manufacturer certifications does Gates Enterprises hold?",
+      answer: "We hold four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Each certification comes with access to enhanced warranty programs — including GAF's System Plus and Golden Pledge warranties and Owens Corning's Platinum Protection limited warranty — that non-certified installers cannot offer their customers.",
+    },
+    {
+      question: "Does Gates Enterprises work with homeowners filing insurance claims?",
+      answer: "Yes. We assist Littleton homeowners through the full documentation and inspection process. We conduct thorough inspections, provide written damage reports, coordinate documentation with insurance adjusters, and ensure that the scope of damage is fully represented before a claim is settled. You are responsible for your deductible — our role is to support you through the process and make sure the work is scoped and priced accurately.",
+    },
+    {
+      question: "What roofing materials do you recommend for Littleton's climate?",
+      answer: "For most Littleton homes, we recommend Class 4 impact-resistant asphalt shingles — GAF Timberline HDZ or Owens Corning Duration Storm are the most common choices. Class 4 IR shingles are the highest impact resistance rating available and frequently qualify for a premium discount through your homeowner's insurance carrier in Colorado. The Littleton area's storm history makes the modest cost premium on Class 4 shingles a straightforward return on investment for most homeowners.",
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
 // PUBLIC API
 // ---------------------------------------------------------------------------
 
@@ -438,9 +483,10 @@ export function getServiceCityFAQItems(citySlug: string, serviceSlug: string): F
 
 /**
  * Get unique FAQ items for a city-only area page.
- * Returns 7 unique FAQs about general roofing for that city.
+ * Curated overrides take precedence; otherwise returns 7 generated FAQs.
  */
 export function getCityFAQItems(citySlug: string): FAQItem[] {
+  if (CITY_FAQ_OVERRIDES[citySlug]) return CITY_FAQ_OVERRIDES[citySlug];
   const city = getCityBySlug(citySlug);
   if (!city) return [];
   return getCityOnlyFAQs(city);
