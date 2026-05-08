@@ -4,7 +4,7 @@ import Image from "next/image";
 const GALLERY_IMAGES = [
   { src: "/images/services/black-asphalt-shingle-roof-colorado.webp", baseAlt: "Asphalt shingle roof replacement" },
   { src: "/images/services/residential-roof-replacement-colorado.webp", baseAlt: "Residential roof replacement" },
-  { src: "/images/projects/roof-replacement-project-colorado-2.webp", baseAlt: "Roof replacement project" },
+  { src: "/images/services/large-home-roof-replacement-colorado.webp", baseAlt: "Large residential roof replacement" },
 ];
 
 interface CityGalleryProps {
