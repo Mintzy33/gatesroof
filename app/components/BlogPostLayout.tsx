@@ -190,7 +190,7 @@ export default function BlogPostLayout({
             <div>
               <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: TEXT_LIGHT, marginBottom: 2 }}>Written by</div>
               <Link href="/about/alex-chicilo" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY, textDecoration: "none" }}>Alex Chicilo</Link>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Owner, Gates Enterprises &middot; Quadruple Manufacturer Certified</div>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Director of Operations, Gates Enterprises &middot; Quadruple Manufacturer Certified</div>
             </div>
           </div>
         </div>

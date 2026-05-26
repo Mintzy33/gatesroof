@@ -18,12 +18,12 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
+    "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
   description:
     "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 308 reviews, and 4x manufacturer certified.",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
-    title: "Alex Chicilo | Owner, Gates Enterprises | Colorado Roofing Expert",
+    title: "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
     description:
       "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 308 reviews, and 4x manufacturer certified.",
     url: "https://www.gatesroof.com/about/alex-chicilo",
@@ -45,7 +45,7 @@ const personSchema = {
   "@type": "Person",
   "@id": "https://www.gatesroof.com/about/alex-chicilo#person",
   name: "Alex Chicilo",
-  jobTitle: "Owner",
+  jobTitle: "Director of Operations",
   worksFor: {
     "@type": "RoofingContractor",
     "@id": "https://www.gatesroof.com/#organization",
@@ -55,7 +55,7 @@ const personSchema = {
   url: "https://www.gatesroof.com/about/alex-chicilo",
   image: "https://www.gatesroof.com/images/alex-chicilo.jpg",
   description:
-    "Owner of Gates Enterprises LLC, Colorado's only quadruple manufacturer-certified roofing contractor. Creator of HailScore, a proprietary hail risk assessment tool analyzing 4.5M+ NOAA radar records.",
+    "Director of Operations at Gates Enterprises LLC, Colorado's only quadruple manufacturer-certified roofing contractor. Creator of HailScore, a proprietary hail risk assessment tool analyzing 4.5M+ NOAA radar records.",
   knowsAbout: [
     "Residential roofing",
     "Commercial roofing",
@@ -179,7 +179,7 @@ export default function AlexChiciloPage() {
                 margin: "0 0 12px",
               }}
             >
-              Meet the Owner
+              Meet the Team
             </p>
             <h1
               style={{
@@ -204,7 +204,7 @@ export default function AlexChiciloPage() {
                 margin: 0,
               }}
             >
-              Owner of Gates Enterprises LLC. Quadruple
+              Director of Operations at Gates Enterprises LLC. Quadruple
               manufacturer-certified roofing expert. Creator of{" "}
               <a
                 href="https://myhailscore.com"
@@ -265,7 +265,7 @@ export default function AlexChiciloPage() {
               margin: "0 0 24px",
             }}
           >
-            Alex Chicilo founded Gates Enterprises in 2014 with a single
+            Gates Enterprises was founded in 2014 with a single
             truck and a straightforward philosophy: treat every roof like
             it belongs to your own family. What started as a one-person
             operation in Lakewood, Colorado has grown into one of the

@@ -1063,7 +1063,7 @@ export default function GatesEnterprisesPage() {
                   textDecoration: "underline",
                 }}
               >
-                Meet the Owner
+                Meet the Team
               </Link>
               <Link
                 href="/contact"
