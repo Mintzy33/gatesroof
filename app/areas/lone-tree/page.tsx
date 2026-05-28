@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
@@ -148,8 +147,8 @@ const areaBreadcrumbs = cityBreadcrumb("Lone Tree", "lone-tree");
 export default function Page() {
   return (
     <>
-      <Script id="lone-tree-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
-            <Script id="lone-tree-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
+      <script id="lone-tree-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+            <script id="lone-tree-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <CityContent />
     </>
   );

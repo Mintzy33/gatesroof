@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import HowItWorksContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -63,12 +62,12 @@ const faqs = faqSchema([
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="how-it-works-breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
-      <Script
+      <script
         id="how-it-works-faq"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqs) }}

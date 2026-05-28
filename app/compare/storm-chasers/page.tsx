@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import StormChasersContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
@@ -46,8 +45,8 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script id="storm-chasers-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
-      <Script id="storm-chasers-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script id="storm-chasers-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
+      <script id="storm-chasers-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <StormChasersContent />
     </>
   );

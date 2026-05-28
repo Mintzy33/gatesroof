@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import AreasContent from "./areas-content";
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ const breadcrumbSchema = {
 export default function AreasPage() {
   return (
     <>
-      <Script
+      <script
         id="areas-breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import BestRooferHighlandsRanchContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -49,8 +48,8 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script id="best-roofer-highlands-ranch-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
-      <Script id="best-roofer-highlands-ranch-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script id="best-roofer-highlands-ranch-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
+      <script id="best-roofer-highlands-ranch-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <BestRooferHighlandsRanchContent />
     </>
   );

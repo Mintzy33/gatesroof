@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import ReviewsContent from "./content";
 import { reviewPageSchema, breadcrumbSchema } from "../../lib/schema";
 import { reviews } from "../data/reviews";
@@ -21,12 +20,12 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="review-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
