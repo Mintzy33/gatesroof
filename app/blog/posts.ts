@@ -12,6 +12,9 @@ export interface BlogPost {
   targetKeyword: string;
   title: string;
   publishDate: string;
+  /** Optional. Set when content is materially revised so the visible "Last updated"
+   *  line and schema dateModified reflect the refresh (quarterly refresh discipline). */
+  updatedDate?: string;
   readTime: string;
   category: string;
   excerpt: string;

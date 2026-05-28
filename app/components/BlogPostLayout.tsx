@@ -16,6 +16,7 @@ interface BlogPostLayoutProps {
   title: string;
   category: string;
   publishDate: string;
+  updatedDate?: string;
   readTime: string;
   content: string[];
   internalLinks: { placeholder: string; href: string; text: string }[];
@@ -25,7 +26,9 @@ interface BlogPostLayoutProps {
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  // Parse YYYY-MM-DD as a local date (not UTC) to avoid an off-by-one day in display.
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Date(iso + "T00:00:00") : new Date(iso);
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }
 
 function renderParagraph(
@@ -118,7 +121,7 @@ function renderParagraph(
 }
 
 export default function BlogPostLayout({
-  title, category, publishDate, readTime, content, internalLinks, slug, relatedPosts, coverImage,
+  title, category, publishDate, updatedDate, readTime, content, internalLinks, slug, relatedPosts, coverImage,
 }: BlogPostLayoutProps) {
   return (
     <div style={{ background: WHITE, minHeight: "100vh" }}>
@@ -138,7 +141,7 @@ export default function BlogPostLayout({
               background: "rgba(37,99,235,0.1)", padding: "5px 12px", borderRadius: 100,
             }}>{category}</span>
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>
-              {formatDate(publishDate)} &middot; {readTime}
+              {updatedDate ? `Last updated ${formatDate(updatedDate)}` : formatDate(publishDate)} &middot; {readTime}
             </span>
           </div>
           <h1 style={{
