@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import EmergencyContent from "./content";
 
 export const metadata: Metadata = {
@@ -125,6 +126,7 @@ const breadcrumbSchema = {
 export default function Page() {
   return (
     <>
+      <PageSchema route="/emergency-roofing" />
       <script
         id="service-schema"
         type="application/ld+json"

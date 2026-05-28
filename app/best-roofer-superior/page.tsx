@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import BestRooferSuperiorContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -48,6 +49,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
+      <PageSchema route="/best-roofer-superior" />
       <script id="best-roofer-superior-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
       <script id="best-roofer-superior-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <BestRooferSuperiorContent />

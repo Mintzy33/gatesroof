@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import HowItWorksContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -62,6 +63,7 @@ const faqs = faqSchema([
 export default function Page() {
   return (
     <>
+      <PageSchema route="/how-it-works" />
       <script
         id="how-it-works-breadcrumb"
         type="application/ld+json"

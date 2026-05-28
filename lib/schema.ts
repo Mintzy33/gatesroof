@@ -1,6 +1,7 @@
 // Shared JSON-LD schema generators for Gates Enterprises
 // All schema types used across the site
 import { SITE_STATS } from './site-stats';
+import pageDates from './page-dates.json';
 
 export const BUSINESS_INFO = {
   name: "Gates Enterprises LLC",
@@ -31,6 +32,22 @@ export const BUSINESS_INFO = {
     "https://www.google.com/maps/place/Gates+Enterprises+LLC",
   ],
 } as const;
+
+// ─── WebPage Schema (carries dateModified for recency / GEO freshness) ──
+// Date comes from lib/page-dates.json (git-derived; run `npm run update:dates`).
+export function webPageSchema(route: string): object {
+  const url = route === "/" ? BUSINESS_INFO.url : `${BUSINESS_INFO.url}${route}`;
+  const dateModified = (pageDates as Record<string, string>)[route];
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    isPartOf: { "@id": `${BUSINESS_INFO.url}/#website` },
+    about: { "@id": `${BUSINESS_INFO.url}/#organization` },
+    ...(dateModified ? { dateModified } : {}),
+  };
+}
 
 // ─── Breadcrumb Schema ───────────────────────────────────────────────
 export function breadcrumbSchema(

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
@@ -47,6 +48,7 @@ const areaFaqs = faqSchema(cityFaqItems("Edgewater"));
 export default function Page() {
   return (
     <>
+      <PageSchema route="/areas/edgewater" />
       <script id="city-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
             <script id="edgewater-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <script id="edgewater-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqs) }} />

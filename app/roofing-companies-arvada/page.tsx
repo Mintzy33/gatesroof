@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -58,6 +59,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
+      <PageSchema route="/roofing-companies-arvada" />
       <script id="roofing-companies-arvada-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
       <script id="roofing-companies-arvada-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <div style={{ background: WHITE, minHeight: "100vh" }}>

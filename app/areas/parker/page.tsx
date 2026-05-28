@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
@@ -196,6 +197,7 @@ const areaBreadcrumbs = cityBreadcrumb("Parker", "parker");
 export default function Page() {
   return (
     <>
+      <PageSchema route="/areas/parker" />
       <script id="parker-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
       <script id="parker-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <CityContent />
