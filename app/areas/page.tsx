@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import AreasContent from "./areas-content";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ const breadcrumbSchema = {
 export default function AreasPage() {
   return (
     <>
+      <PageSchema route="/areas" />
       <script
         id="areas-breadcrumb"
         type="application/ld+json"

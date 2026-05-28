@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import ToolsContent from "./content";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ const breadcrumbSchema = {
 export default function Page() {
   return (
     <>
+      <PageSchema route="/tools" />
       <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ToolsContent />
     </>

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "update:dates": "node scripts/gen-page-dates.mjs"
   },
   "dependencies": {
     "gsap": "^3.14.2",

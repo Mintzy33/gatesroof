@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import AboutContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
@@ -32,6 +33,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
+      <PageSchema route="/about" />
       <script
         id="breadcrumb-schema"
         type="application/ld+json"

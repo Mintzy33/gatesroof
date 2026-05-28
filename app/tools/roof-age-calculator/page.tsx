@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import RoofCostEstimatorContent from "./content";
 
 export const metadata: Metadata = {
@@ -99,6 +100,7 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
+      <PageSchema route="/tools/roof-age-calculator" />
       <script
         id="webapp-schema"
         type="application/ld+json"

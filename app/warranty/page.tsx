@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSchema from "@/app/components/PageSchema";
 import WarrantyContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
@@ -43,6 +44,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
+      <PageSchema route="/warranty" />
       <script
         id="warranty-breadcrumb"
         type="application/ld+json"
