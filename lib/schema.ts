@@ -67,6 +67,7 @@ export function blogPostingSchema(post: {
   description: string;
   slug: string;
   publishDate: string;
+  updatedDate?: string;
   category: string;
   keyword: string;
 }): object {
@@ -76,7 +77,7 @@ export function blogPostingSchema(post: {
     headline: post.title,
     description: post.description,
     datePublished: post.publishDate,
-    dateModified: post.publishDate,
+    dateModified: post.updatedDate || post.publishDate,
     author: {
       "@type": "Person",
       "@id": "https://www.gatesroof.com/about/andrew-gates#person",

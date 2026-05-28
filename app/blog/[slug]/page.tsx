@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "en_US",
       type: "article",
       publishedTime: post.publishDate,
+      modifiedTime: post.updatedDate || post.publishDate,
       ...(post.coverImage ? { images: [{ url: `https://www.gatesroof.com${post.coverImage.src}`, width: post.coverImage.width, height: post.coverImage.height, alt: post.coverImage.alt }] } : {}),
     },
     alternates: {
@@ -58,6 +59,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.metaDescription,
     slug: post.slug,
     publishDate: post.publishDate,
+    updatedDate: post.updatedDate,
     category: post.category,
     keyword: post.targetKeyword,
   });
@@ -84,6 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
         title={post.title}
         category={post.category}
         publishDate={post.publishDate}
+        updatedDate={post.updatedDate}
         readTime={post.readTime}
         content={post.content}
         internalLinks={post.internalLinks}

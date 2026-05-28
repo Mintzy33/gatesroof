@@ -14,7 +14,9 @@ const TEXT_LIGHT = "#64748B";
 const LIGHT_BG = "#FAFBFD";
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+  // Parse YYYY-MM-DD as a local date (not UTC) to avoid an off-by-one day in display.
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Date(iso + "T00:00:00") : new Date(iso);
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 
 const categoryColors: Record<string, string> = {
