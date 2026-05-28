@@ -4,7 +4,7 @@
 
 // Centralized site statistics — update here, propagates everywhere
 export const SITE_STATS = {
-  reviewCount: 306,
+  reviewCount: 308,
   starRating: 4.9,
   totalRoofs: '7,200+',
   totalRoofsNumber: 7204,
