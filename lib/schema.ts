@@ -97,7 +97,7 @@ export function blogPostingSchema(post: {
     dateModified: post.updatedDate || post.publishDate,
     author: {
       "@type": "Person",
-      "@id": "https://www.gatesroof.com/about/andrew-gates#person",
+      "@id": "https://www.gatesroof.com/about/gates-enterprises#person",
       name: "Andrew Gates",
       url: "https://www.gatesroof.com/about/gates-enterprises",
       jobTitle: "Founder",
@@ -152,7 +152,6 @@ export function reviewPageSchema(
         bestRating: "5",
       },
       reviewBody: r.text,
-      datePublished: "2025-01-01",
     })),
   };
 }
