@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -137,12 +136,12 @@ const certifications = [
 export default function AlexChiciloPage() {
   return (
     <div style={{ background: WHITE, minHeight: "100vh" }}>
-      <Script
+      <script
         id="person-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
@@ -265,7 +264,7 @@ export default function AlexChiciloPage() {
               margin: "0 0 24px",
             }}
           >
-            Gates Enterprises was founded in 2014 with a single
+            Gates Enterprises started in 2014 with a single
             truck and a straightforward philosophy: treat every roof like
             it belongs to your own family. What started as a one-person
             operation in Lakewood, Colorado has grown into one of the

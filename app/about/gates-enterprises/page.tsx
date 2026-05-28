@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -307,14 +306,14 @@ const serviceAreas = [
 export default function GatesEnterprisesPage() {
   return (
     <div style={{ background: WHITE, minHeight: "100vh" }}>
-      <Script
+      <script
         id="local-business-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessSchema),
         }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
@@ -371,7 +370,7 @@ export default function GatesEnterprisesPage() {
             }}
           >
             Colorado&apos;s only quadruple manufacturer-certified roofing
-            company. Founded in 2014. Thousands of roofs completed. 65+
+            company. Established 2014. Thousands of roofs completed. 65+
             cities served.
           </p>
         </div>
