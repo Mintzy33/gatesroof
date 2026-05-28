@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
@@ -156,8 +155,8 @@ const areaBreadcrumbs = cityBreadcrumb("Lakewood", "lakewood");
 export default function Page() {
   return (
     <>
-      <Script id="lakewood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
-            <Script id="lakewood-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
+      <script id="lakewood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+            <script id="lakewood-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <CityContent />
     </>
   );

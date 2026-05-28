@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import InsuranceRestorationContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -49,8 +48,8 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script id="insurance-restoration-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
-      <Script id="insurance-restoration-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script id="insurance-restoration-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
+      <script id="insurance-restoration-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <InsuranceRestorationContent />
     </>
   );

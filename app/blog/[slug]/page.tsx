@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { blogPosts } from "../posts";
 import BlogPostLayout from "../../components/BlogPostLayout";
 import { blogPostingSchema, breadcrumbSchema } from "../../../lib/schema";
@@ -71,12 +70,12 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <Script
+      <script
         id={`blog-schema-${post.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-      <Script
+      <script
         id={`breadcrumb-schema-${post.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}

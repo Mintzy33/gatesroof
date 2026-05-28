@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import ContactContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
@@ -18,7 +17,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}

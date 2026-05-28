@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import RoofCostEstimatorContent from "./content";
 
 export const metadata: Metadata = {
@@ -100,17 +99,17 @@ const faqSchema = {
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="webapp-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

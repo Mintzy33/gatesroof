@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import WarrantyContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
 
@@ -44,7 +43,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="warranty-breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}

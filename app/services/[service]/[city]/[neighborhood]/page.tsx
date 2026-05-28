@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import { services, getCityBySlug, getServiceBySlug } from "../../../../../lib/service-areas-data";
 import { neighborhoods, getNeighborhoodBySlug, getNeighborhoodsByCity } from "../../../../../lib/neighborhoods";
@@ -141,9 +140,9 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
-      <Script id="service-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <Script id="faq-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script id="service-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script id="faq-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script id="breadcrumb-neighborhood-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <NeighborhoodContent
         serviceSlug={serviceSlug}
         citySlug={citySlug}

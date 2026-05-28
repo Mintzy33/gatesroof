@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import EmergencyContent from "./content";
 
 export const metadata: Metadata = {
@@ -126,17 +125,17 @@ const breadcrumbSchema = {
 export default function Page() {
   return (
     <>
-      <Script
+      <script
         id="service-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

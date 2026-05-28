@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 
@@ -153,8 +152,8 @@ const areaBreadcrumbs = cityBreadcrumb("Colorado Springs", "colorado-springs");
 export default function Page() {
   return (
     <>
-      <Script id="colorado-springs-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
-      <Script id="colorado-springs-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
+      <script id="colorado-springs-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+      <script id="colorado-springs-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <CityContent />
     </>
   );

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import WhyGatesContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
@@ -49,8 +48,8 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script id="why-gates-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
-      <Script id="why-gates-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script id="why-gates-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
+      <script id="why-gates-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <WhyGatesContent />
     </>
   );
