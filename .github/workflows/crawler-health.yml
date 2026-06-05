@@ -1,0 +1,34 @@
+# Daily GEO early-warning alarm: verifies AI crawlers get HTTP 200 + real JSON-LD
+# on 6 key pages. Failures alert Discord #geo-alerts and fail this run.
+# Manual run: Actions tab → "Crawler health" → Run workflow (optionally with --inject-404).
+name: Crawler health
+
+on:
+  schedule:
+    - cron: '0 14 * * *' # daily 14:00 UTC (07:00/08:00 MT)
+  workflow_dispatch:
+    inputs:
+      inject_404:
+        description: 'Inject a 404 check to test the alert path'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  crawler-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Zero dependencies — no npm install needed.
+      - name: Run crawler health checks
+        env:
+          DISCORD_WEBHOOK_ALERTS: ${{ secrets.DISCORD_WEBHOOK_ALERTS }}
+        run: node scripts/crawler-health.mjs ${{ inputs.inject_404 && '--inject-404' || '' }}
