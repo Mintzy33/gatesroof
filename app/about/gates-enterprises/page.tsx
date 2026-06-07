@@ -52,8 +52,8 @@ const localBusinessSchema = {
   name: "Gates Enterprises LLC",
   alternateName: "Gates Enterprises",
   url: "https://www.gatesroof.com",
-  logo: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
-  image: "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
+  logo: "https://www.gatesroof.com/logo.png",
+  image: "https://www.gatesroof.com/og-image.jpg",
   description:
     "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. Thousands of roofs completed since 2014.",
   telephone: "+17207663377",

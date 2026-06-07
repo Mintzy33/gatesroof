@@ -25,7 +25,7 @@ const citySchema = {
       "@type": "LocalBusiness",
       "@id": "https://www.gatesroof.com/#organization",
       "name": "Gates Enterprises LLC",
-      "image": "https://www.gatesroof.com/images/gates-enterprises-logo.png",
+      "image": "https://www.gatesroof.com/logo.png",
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2017-05",

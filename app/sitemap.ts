@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { readdirSync } from "fs";
+import { join } from "path";
 import { blogPosts } from "./blog/posts";
 import { cities as allCities, services as allServices } from "../lib/service-areas-data";
 import { neighborhoods as allNeighborhoods } from "../lib/neighborhoods";
@@ -33,6 +35,8 @@ const areas = [
   "lone-tree",
   "morrison",
   "evergreen",
+  "colorado-springs",
+  "fort-collins",
 ];
 
 // Service parent pages (the main /services/X pages)
@@ -49,12 +53,6 @@ const serviceParents = [
 const landingPages = [
   "insurance-claims",
   "impact-resistant-shingles",
-  "best-roofer-denver",
-  "best-roofer-colorado-springs",
-  "best-roofer-aurora",
-  "best-roofer-fort-collins",
-  "best-roofer-lakewood",
-  "best-roofer-parker",
   "why-gates-enterprises",
   "insurance-restoration",
   "emergency-roofing",
@@ -144,8 +142,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p === "tools" ? 0.8 : 0.7,
   }));
 
+  // Programmatic landing pages (best-roofer-*, roofing-companies-*) — filesystem-derived
+  // so the sitemap never drifts from the actual pages on disk.
+  const programmaticSlugs = readdirSync(join(process.cwd(), "app"), { withFileTypes: true })
+    .filter(
+      (d) =>
+        d.isDirectory() &&
+        (d.name.startsWith("best-roofer-") || d.name.startsWith("roofing-companies-"))
+    )
+    .map((d) => d.name)
+    .sort();
+  const programmatic: MetadataRoute.Sitemap = programmaticSlugs.map((slug) => ({
+    url: `${BASE}/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   // Neighborhood pages are noindexed — excluded from sitemap
   // They still exist and pass link equity via follow directive
 
-  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...tools, ...blog, ...serviceCityPages];
+  return [...home, ...landing, ...servicePages, ...areaPages, ...utility, ...tools, ...blog, ...serviceCityPages, ...programmatic];
 }

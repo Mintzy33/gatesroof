@@ -10,8 +10,8 @@ export const BUSINESS_INFO = {
   telephone: "+17207663377",
   telephoneDisplay: "(720) 766-3377",
   email: "info@gatesroof.com",
-  logo: "https://www.gatesroof.com/images/gates-enterprises-logo.png",
-  image: "https://www.gatesroof.com/images/gates-enterprises-og.jpg",
+  logo: "https://www.gatesroof.com/logo.png",
+  image: "https://www.gatesroof.com/og-image.jpg",
   description:
     "Colorado's only quadruple manufacturer certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master.",
   address: {
