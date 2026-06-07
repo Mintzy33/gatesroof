@@ -36,7 +36,7 @@ export async function POST(req: Request) {
 
     await getResend().emails.send({
       from: "Gates Storm Response <noreply@gatesroof.com>",
-      to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
+      to: ["a.chicilo@gatesroof.com"],
       subject: `STORM LEAD: ${name.trim()} (${city})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

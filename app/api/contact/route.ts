@@ -57,7 +57,7 @@ export async function POST(req: Request) {
     // Send notification email to the business
     await getResend().emails.send({
       from: "Gates Enterprises <noreply@gatesroof.com>",
-      to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
+      to: ["a.chicilo@gatesroof.com"],
       subject: `New Lead: ${name.trim()} — ${serviceLabel}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -73,7 +73,7 @@ export async function POST(req: Request) {
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; font-weight: 600; color: #374151;">Phone</td>
                 <td style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; color: #111827;">
-                  <a href="tel:${phone.replace(/\D/g, "")}" style="color: #2563EB; text-decoration: none;">${phone || "Not provided"}</a>
+                  <a href="tel:${(phone || "").replace(/\D/g, "")}" style="color: #2563EB; text-decoration: none;">${phone || "Not provided"}</a>
                 </td>
               </tr>
               <tr>
