@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: "What is HailScore and how does it help Parker homeowners?",
-    a: "HailScore is a proprietary tool developed by Gates Enterprises that uses NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, this is especially valuable because it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
+    a: "HailScore is an independent hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, this is especially valuable because it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
   }
 ];
 

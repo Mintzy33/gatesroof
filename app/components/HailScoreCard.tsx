@@ -188,7 +188,7 @@ export default function HailScoreCard({
                   >
                     HailScore
                   </a>
-                  , a Gates Enterprises company.
+                  , an independent hail-data tool.
                 </div>
               </div>
             </div>

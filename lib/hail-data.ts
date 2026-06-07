@@ -1,5 +1,5 @@
 // HailScore data for Colorado cities
-// Powered by myhailscore.com - proprietary NOAA radar hail data
+// Powered by myhailscore.com - independent NOAA radar hail data (HailScore is a separate company)
 // Gates Enterprises is the ONLY roofing company in Colorado with this data
 
 export interface HailScoreData {

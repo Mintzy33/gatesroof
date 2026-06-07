@@ -54,7 +54,7 @@ const CHECKLIST = [
   { label: "308+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "8+ years serving Colorado's Front Range", gates: true },
-  { label: "Proprietary hail damage technology (HailScore)", gates: true },
+  { label: "HailScore radar hail data tool", gates: true },
   { label: "Free inspections with no pressure", gates: true },
   { label: "Insurance restoration expertise", gates: true },
   { label: "All four major shingle brands available", gates: true },
@@ -141,7 +141,7 @@ export default function BestRooferNorthglennContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>4. Technology and Transparency</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The best roofing companies use technology to provide better service. Gates Enterprises developed <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, a proprietary tool that uses NOAA radar data to analyze hail impact history for any Colorado address. This means they can show you exactly what storms have hit your neighborhood, down to hailstone size and date. No other roofing company in Colorado offers this level of data driven transparency.
+              The best roofing companies use technology to provide better service. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, an independent hail-data tool that uses NOAA radar data to analyze hail impact history for any Colorado address. This means they can show you exactly what storms have hit your neighborhood, down to hailstone size and date. Few roofing companies in Colorado offer this level of data driven transparency.
             </p>
           </div>
 
@@ -214,16 +214,16 @@ export default function BestRooferNorthglennContent() {
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            HailScore: Technology No Other Roofer Has
+            HailScore: Data-Driven Roof Intelligence
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
             Most roofing companies show up, look at your roof, and tell you what they think. Gates Enterprises shows up with data.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is a proprietary tool developed by Gates Enterprises that analyzes NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected your property going back over a decade.
+            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is an independent hail-data tool that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected your property going back over a decade.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            This matters because hail damage is cumulative. A roof that has been hit by multiple storms over several years may look fine from the ground but have compromised shingles that will fail during the next event. HailScore gives Northglenn homeowners an objective, data backed view of their roof's exposure, something no other roofer in Colorado can provide.
+            This matters because hail damage is cumulative. A roof that has been hit by multiple storms over several years may look fine from the ground but have compromised shingles that will fail during the next event. HailScore gives Northglenn homeowners an objective, data backed view of their roof's exposure.
           </p>
           <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Check Your HailScore &rarr;

@@ -54,7 +54,7 @@ const CHECKLIST = [
   { label: "308+ verified Google reviews" },
   { label: "4.9 star average rating" },
   { label: "8+ years serving Colorado's Front Range" },
-  { label: "Proprietary HailScore radar technology" },
+  { label: "HailScore radar hail data tool" },
   { label: "Free inspections with zero pressure" },
   { label: "Insurance restoration expertise" },
   { label: "Products from GAF, Owens Corning, Malarkey, and CertainTeed" },
@@ -134,7 +134,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>HailScore: Data Driven Roof Intelligence</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fort Collins gets hammered by hail. Storms that develop along the foothills frequently track through Larimer County with large, damaging hailstones. Gates Enterprises developed <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, a proprietary tool that uses NOAA radar data to reveal the exact hail history for any Fort Collins address. It shows which storms hit your property, hailstone sizes, and how many events your home has endured. This objective, data backed approach to inspections is unique to Gates Enterprises.
+              Fort Collins gets hammered by hail. Storms that develop along the foothills frequently track through Larimer County with large, damaging hailstones. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, an independent hail-data tool that uses NOAA radar data to reveal the exact hail history for any Fort Collins address. It shows which storms hit your property, hailstone sizes, and how many events your home has endured. This objective, data backed approach sets Gates Enterprises apart.
             </p>
           </div>
 

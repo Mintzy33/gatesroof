@@ -87,7 +87,7 @@ export default function HailRiskContent() {
               marginBottom: 28,
             }}>
               {[
-                { value: "4.5M+", label: "Hail Records" },
+                { value: "Millions", label: "Hail Records" },
                 { value: "10 Years", label: "of Data" },
                 { value: "All 50", label: "States" },
               ].map((stat) => (
@@ -176,7 +176,7 @@ export default function HailRiskContent() {
               What Is HailScore?
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
-              HailScore is a proprietary hail risk intelligence platform built by Gates Enterprises. It analyzes over 4.5 million NOAA radar hail records spanning 10+ years to calculate a risk score for any address in the United States. Your score (0-100) reflects how frequently and severely hail has impacted your area.
+              HailScore is an independent hail risk intelligence platform that Gates Enterprises uses. It analyzes millions of NOAA radar hail records spanning 10+ years to calculate a risk score for any address in the United States. Your score (0-100) reflects how frequently and severely hail has impacted your area.
             </p>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 16 }}>
               Colorado's Front Range is one of the most hail-prone regions in the country. Cities like Denver, Lakewood, Aurora, and Arvada regularly see hailstones large enough to damage roofs, siding, and gutters. Knowing your hail risk helps you make informed decisions about <Link href="/impact-resistant-shingles" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>impact-resistant shingles</Link>, insurance coverage, and inspection timing.

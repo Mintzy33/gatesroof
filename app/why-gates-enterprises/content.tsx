@@ -29,15 +29,15 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews, a 4.9 star rating, proprietary HailScore technology, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews, a 4.9 star rating, HailScore radar data, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
-    a: "Three things set Gates apart. First, quadruple manufacturer certification that no other Colorado roofer has achieved. Second, HailScore, a proprietary tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 308+ Google reviews reflecting years of consistent quality."
+    a: "Three things set Gates apart. First, quadruple manufacturer certification that no other Colorado roofer has achieved. Second, HailScore, an independent hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 308+ Google reviews reflecting years of consistent quality."
   },
   {
     q: "What is HailScore?",
-    a: "HailScore is a proprietary technology developed by Gates Enterprises that analyzes NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property, giving homeowners objective data before an inspector even climbs up."
+    a: "HailScore is an independent technology that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property, giving homeowners objective data before an inspector even climbs up."
   },
   {
     q: "Does Gates Enterprises offer warranties?",
@@ -148,13 +148,13 @@ export default function WhyGatesContent() {
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            Our Technology Advantage: HailScore
+            Our Data Advantage: HailScore
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
             Most roofing companies rely on visual inspections alone. Gates Enterprises starts with data.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is a proprietary platform built by Gates Enterprises that analyzes NOAA radar data to map hail impact history for any address in Colorado. It reveals:
+            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is an independent platform that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It reveals:
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 28 }}>
             {[
@@ -173,7 +173,7 @@ export default function WhyGatesContent() {
             This matters because hail damage is cumulative. A roof that has been hit by multiple storms may look acceptable from the ground but have compromised shingles that will fail during the next event. HailScore gives you an objective, data backed understanding of your roof's condition before any sales conversation begins.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            No other roofing company in Colorado has built anything like HailScore. It represents a fundamentally different approach to roof inspections: transparent, data driven, and focused on giving homeowners the information they need to make confident decisions.
+            Few roofing companies in Colorado use data like this. It represents a fundamentally different approach to roof inspections: transparent, data driven, and focused on giving homeowners the information they need to make confident decisions.
           </p>
           <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Check Your HailScore &rarr;
@@ -230,7 +230,7 @@ export default function WhyGatesContent() {
             {[
               { factor: "Manufacturer Certifications", gates: "All four major brands (GAF, Owens Corning, Malarkey, CertainTeed)", typical: "Zero to one" },
               { factor: "Google Reviews", gates: "308+ reviews, 4.9 star average", typical: "Under 100, varying ratings" },
-              { factor: "Hail Data Technology", gates: "Proprietary HailScore platform with NOAA radar data", typical: "None" },
+              { factor: "Hail Data Technology", gates: "HailScore radar hail data (independent tool)", typical: "None" },
               { factor: "Warranty Access", gates: "Best warranties from all four manufacturers", typical: "Limited to one manufacturer's standard warranty" },
               { factor: "Insurance Restoration Experience", gates: "Thousands of claims guided, specialist level", typical: "Varies widely" },
               { factor: "Years in Colorado", gates: "8+ years, headquartered in Lakewood", typical: "Many are out of state storm chasers" },
@@ -311,7 +311,7 @@ export default function WhyGatesContent() {
 
       <CTA
         title="See the Difference for Yourself"
-        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Proprietary HailScore technology. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. HailScore radar data. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

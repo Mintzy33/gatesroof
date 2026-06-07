@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: "How do I know if my Lakewood roof has hail damage?",
-    a: "Hail damage is not always visible from the ground. Look for dented gutters, cracked siding, or dings on outdoor AC units as ground level indicators. On the roof, hail creates circular dents in shingles that expose the underlying fiberglass mat. The best approach is a free professional inspection. Gates Enterprises also offers HailScore, which uses NOAA radar data to show exactly which storms have hit your Lakewood address."
+    a: "Hail damage is not always visible from the ground. Look for dented gutters, cracked siding, or dings on outdoor AC units as ground level indicators. On the roof, hail creates circular dents in shingles that expose the underlying fiberglass mat. The best approach is a free professional inspection. Gates Enterprises also uses HailScore, which uses NOAA radar data to show exactly which storms have hit your Lakewood address."
   },
   {
     q: "Does Gates Enterprises offer free inspections in Lakewood?",

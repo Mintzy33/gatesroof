@@ -2452,7 +2452,7 @@ export const blogPosts: BlogPost[] = [
       "The most important thing to understand is that hail damage is often invisible from the ground. Granule loss, bruising, and micro-fractures in shingle surfaces do not look dramatic, but they compromise your roof's ability to shed water. Left unaddressed, this hidden damage leads to leaks, wood rot, and premature roof failure.",
       "How to Check Your Home's Hail History",
       "Most homeowners have no idea how many hail events have passed near their property. That data exists. NOAA maintains a database of verified hail events recorded by radar and storm spotters going back decades.",
-      "You can [LINK: hailscore] against 4.5 million verified NOAA radar hail records. You get a risk score from 0 to 100 based on storm frequency, hail size, proximity, and recency. It is free and takes about 30 seconds.",
+      "You can [LINK: hailscore] against millions of verified NOAA radar hail records. You get a risk score from 0 to 100 based on storm frequency, hail size, proximity, and recency. It is free and takes about 30 seconds.",
       "Knowing your hail history is the first step in understanding whether your roof may have accumulated damage you cannot see.",
       "What to Do Before Hail Season 2026",
       "Get a professional inspection now. Not after the first storm. Now. Here is why that matters.",

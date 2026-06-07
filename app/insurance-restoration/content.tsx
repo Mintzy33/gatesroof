@@ -140,7 +140,7 @@ export default function InsuranceRestorationContent() {
               {
                 num: 2,
                 title: "HailScore Data Analysis",
-                desc: "Before we even climb your roof, we use our proprietary HailScore technology to pull NOAA radar data for your specific address. This shows the exact hail events that have impacted your property, including hailstone sizes and dates. This objective data strengthens the documentation we provide."
+                desc: "Before we even climb your roof, we use HailScore, an independent hail-data tool, to pull NOAA radar data for your specific address. This shows the exact hail events that have impacted your property, including hailstone sizes and dates. This objective data strengthens the documentation we provide."
               },
               {
                 num: 3,
