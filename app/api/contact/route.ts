@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     // Send notification email to the business
     await getResend().emails.send({
       from: "Gates Enterprises <noreply@gatesroof.com>",
-      to: ["a.chicilo@gatesroof.com"],
+      to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
       subject: `New Lead: ${name.trim()} — ${serviceLabel}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
