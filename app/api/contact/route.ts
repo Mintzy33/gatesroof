@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
@@ -12,6 +13,7 @@ interface ContactForm {
   address?: string;
   service?: string;
   message?: string;
+  company?: string; // honeypot
 }
 
 const SERVICE_LABELS: Record<string, string> = {
@@ -27,8 +29,16 @@ const SERVICE_LABELS: Record<string, string> = {
 
 export async function POST(req: Request) {
   try {
+    if (!rateLimit(`contact:${getClientIp(req)}`).ok) {
+      return NextResponse.json({ error: "Too many requests. Please try again in a few minutes." }, { status: 429 });
+    }
     const body: ContactForm = await req.json();
     const { name, phone, email, address, service, message } = body;
+
+    // Honeypot: bots fill the hidden "company" field; real users never see it.
+    if (body.company && body.company.trim() !== "") {
+      return NextResponse.json({ success: true });
+    }
 
     // Server-side validation
     if (!name || name.trim().length < 2) {

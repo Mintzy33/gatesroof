@@ -24,6 +24,7 @@ export default function ReferralPage() {
     theirEmail: "",
     theirAddress: "",
     notes: "",
+    company: "", // honeypot
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -308,6 +309,17 @@ export default function ReferralPage() {
                   </div>
                 )}
 
+                {/* honeypot — hidden from real users; bots fill it and get silently dropped */}
+                <input
+                  type="text"
+                  name="company"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  value={formData.company}
+                  onChange={handleChange}
+                  style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+                />
                 <button type="submit" disabled={submitting} style={{ width: "100%", background: ACCENT, color: WHITE, borderRadius: 14, padding: "18px 36px", border: "none", cursor: submitting ? "not-allowed" : "pointer", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, boxShadow: "0 8px 24px rgba(37,99,235,0.25)", opacity: submitting ? 0.7 : 1, transition: "opacity 0.2s" }}>
                   {submitting ? "Submitting..." : "Submit My Referral →"}
                 </button>

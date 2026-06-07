@@ -18,7 +18,7 @@ const TEXT_LIGHT = "#64748B";
 const ERROR_RED = "#DC2626";
 
 export default function ContactContent() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", address: "", service: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", address: "", service: "", message: "", company: "" });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -193,6 +193,17 @@ export default function ContactContent() {
                       <option value="other">Other</option>
                     </select>
                     <textarea placeholder="Anything else we should know?" rows={4} style={{ ...inp, resize: "vertical" as const }} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} />
+                    {/* honeypot — hidden from real users; bots fill it and get silently dropped */}
+                    <input
+                      type="text"
+                      name="company"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                      value={form.company}
+                      onChange={e => setForm({ ...form, company: e.target.value })}
+                      style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+                    />
                     <button
                       onClick={handleSubmit}
                       disabled={loading}

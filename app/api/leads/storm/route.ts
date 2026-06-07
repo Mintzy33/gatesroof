@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
@@ -11,12 +12,21 @@ interface StormLead {
   address: string;
   city: string;
   message?: string;
+  company?: string; // honeypot
 }
 
 export async function POST(req: Request) {
   try {
+    if (!rateLimit(`storm:${getClientIp(req)}`).ok) {
+      return NextResponse.json({ error: "Too many requests. Please try again in a few minutes." }, { status: 429 });
+    }
     const body: StormLead = await req.json();
     const { name, phone, address, city, message } = body;
+
+    // Honeypot: bots fill the hidden "company" field; real users never see it.
+    if (body.company && body.company.trim() !== "") {
+      return NextResponse.json({ success: true });
+    }
 
     if (!name || name.trim().length < 2) {
       return NextResponse.json({ error: "Name is required" }, { status: 400 });

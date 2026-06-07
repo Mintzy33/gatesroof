@@ -23,7 +23,7 @@ declare global {
 }
 
 export default function StormLeadForm() {
-  const [form, setForm] = useState({ name: "", phone: "", address: "", city: "", message: "" });
+  const [form, setForm] = useState({ name: "", phone: "", address: "", city: "", message: "", company: "" });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [err, setErr] = useState("");
 
@@ -113,6 +113,17 @@ export default function StormLeadForm() {
         Takes 30 seconds. No obligation. We respond fast.
       </p>
 
+      {/* honeypot — hidden from real users; bots fill it and get silently dropped */}
+      <input
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        value={form.company}
+        onChange={(e) => update("company", e.target.value)}
+        style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+      />
       <div style={{ marginBottom: 14 }}>
         <label style={labelStyle}>Full Name</label>
         <input style={inputStyle} required value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="Jane Doe" />

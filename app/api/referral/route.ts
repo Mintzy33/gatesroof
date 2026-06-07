@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
@@ -24,11 +25,19 @@ interface ReferralForm {
   theirEmail?: string;
   theirAddress?: string;
   notes?: string;
+  company?: string; // honeypot
 }
 
 export async function POST(request: Request) {
   try {
+    if (!rateLimit(`referral:${getClientIp(request)}`).ok) {
+      return NextResponse.json({ error: "Too many requests. Please try again in a few minutes." }, { status: 429 });
+    }
     const data: ReferralForm = await request.json();
+    // Honeypot: bots fill the hidden "company" field; real users never see it.
+    if (data.company && data.company.trim() !== "") {
+      return NextResponse.json({ success: true });
+    }
     const { yourName, yourPhone, yourEmail, theirName, theirPhone, theirEmail, theirAddress, notes } = data;
 
     // Validate required fields
