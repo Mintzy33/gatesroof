@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Does homeowners insurance cover hail damage to my roof?",
-    a: "Most standard homeowners insurance policies in Colorado cover hail damage to your roof, siding, and gutters under dwelling coverage. You are typically responsible for your deductible, and the insurance company may cover the remaining cost of repairs or replacement. Coverage details vary by carrier and policy, so reviewing your specific policy is important. Gates Enterprises provides free inspections and thorough documentation to help support your claim."
+    a: "Many standard homeowners policies in Colorado may cover sudden hail damage to your roof, siding, and gutters, though coverage depends on your specific policy. You are typically responsible for your deductible, and the insurance company may cover the remaining cost of repairs or replacement. Coverage details vary by carrier and policy, so reviewing your specific policy is important. Gates Enterprises provides free inspections and thorough documentation to help support your claim."
   },
   {
     q: "How does the insurance claim process work for roof damage?",

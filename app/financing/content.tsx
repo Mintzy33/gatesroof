@@ -130,7 +130,7 @@ export default function FinancingContent() {
             {[
               {
                 title: "Insurance Claims",
-                desc: "Most of our projects are covered by homeowners insurance. You typically pay only your deductible, and the insurance company may cover the rest. We assist with the entire claim process.",
+                desc: "Many of our projects involve an insurance claim. Coverage depends on your policy and the cause of damage; if a claim is approved, your out-of-pocket is typically your deductible. We assist with the entire claim process.",
                 icon: <ShieldIcon />,
               },
               {

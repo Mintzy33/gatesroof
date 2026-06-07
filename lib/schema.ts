@@ -211,7 +211,7 @@ export function cityFaqItems(cityName: string): { q: string; a: string }[] {
   return [
     {
       q: `How much does a roof replacement cost in ${cityName}, Colorado?`,
-      a: `Roof replacement costs in ${cityName} vary based on roof size, pitch, material choice, and the condition of the decking underneath. Most residential replacements in ${cityName} fall between $10,000 and $30,000. Many ${cityName} homeowners pay little to nothing out of pocket when insurance covers storm damage. Contact us for a free estimate specific to your ${cityName} home.`,
+      a: `Roof replacement costs in ${cityName} vary based on roof size, pitch, material choice, and the condition of the decking underneath. Most residential replacements in ${cityName} fall between $10,000 and $30,000. When storm damage is involved, an approved insurance claim can offset much of that cost, depending on your policy. Contact us for a free estimate specific to your ${cityName} home.`,
     },
     {
       q: `How often does ${cityName} get hail storms?`,
@@ -223,7 +223,7 @@ export function cityFaqItems(cityName: string): { q: string; a: string }[] {
     },
     {
       q: `Does homeowners insurance cover hail damage in ${cityName}?`,
-      a: `Yes. Most homeowners insurance policies in ${cityName} cover hail damage to your roof, siding, and gutters under dwelling coverage. You are responsible for your deductible, but the rest is typically covered. Gates Enterprises handles the entire insurance claims process for ${cityName} homeowners so you do not have to deal with adjusters on your own.`,
+      a: `Many homeowners policies in ${cityName} cover sudden hail damage to your roof, siding, and gutters, but whether your claim is covered depends on your specific policy and the cause of damage. Gates Enterprises documents the damage thoroughly and works with your adjuster through the ${cityName} claims process so decisions are based on clear, evidence-backed assessments.`,
     },
     {
       q: `How long does a roof replacement take in ${cityName}?`,

@@ -4,11 +4,11 @@ import InsuranceCoverageEstimatorContent from "./content";
 
 export const metadata: Metadata = {
   title: "Free Roof Insurance Estimator | Gates Enterprises",
-  description: "Estimate your roof insurance coverage in seconds. Most Colorado homeowners pay only their deductible for a full replacement. Free tool, no signup.",
+  description: "Estimate your roof insurance coverage in seconds. Coverage depends on your policy and the cause of damage. Free tool, no signup.",
   alternates: { canonical: "https://www.gatesroof.com/tools/insurance-coverage-estimator" },
   openGraph: {
     title: "Free Roof Insurance Estimator | Gates Enterprises",
-    description: "Estimate your roof insurance coverage in seconds. Most Colorado homeowners pay only their deductible for a full replacement. Free tool, no signup.",
+    description: "Estimate your roof insurance coverage in seconds. Coverage depends on your policy and the cause of damage. Free tool, no signup.",
     url: "https://www.gatesroof.com/tools/insurance-coverage-estimator",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -20,7 +20,7 @@ const webAppSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Insurance Coverage Estimator",
-  "description": "Estimate how much insurance could cover for your roof replacement in Colorado. Most homeowners pay only their deductible.",
+  "description": "Estimate how much insurance could cover for your roof replacement in Colorado. Coverage depends on your policy and the cause of damage.",
   "url": "https://www.gatesroof.com/tools/insurance-coverage-estimator",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "All",

@@ -41,7 +41,7 @@ const TESTIMONIALS = [
 ];
 
 const FAQS = [
-  { q: "How much will I pay out of pocket?", a: "In most cases, your only out of pocket cost is your insurance deductible. Your homeowner\u2019s insurance typically covers the full replacement cost minus the deductible. As required by Colorado law, homeowners are responsible for paying their deductible." },
+  { q: "How much will I pay out of pocket?", a: "If your claim is approved, your out-of-pocket is typically your policy deductible. Your homeowner\u2019s insurance coverage depends on your specific policy and the cause of damage. As required by Colorado law, homeowners are responsible for paying their deductible." },
   { q: "What is your claim success rate?", a: "When Gates Enterprises recommends filing a claim, our success rate is over 99%. We only recommend filing when we\u2019re confident the damage warrants it. We never pressure homeowners to file unnecessary claims." },
   { q: "What are supplements?", a: "Supplements are additional documentation submitted to your insurance company when the initial estimate doesn\u2019t cover the full scope of work. Most homeowners don\u2019t know they exist. We prepare and submit supplement documentation, which often results in thousands of additional dollars toward your project." },
   { q: "Do you meet with my adjuster?", a: "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and support a fair and accurate estimate." },

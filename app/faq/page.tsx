@@ -22,7 +22,7 @@ const faqData = [
     items: [
       {
         q: "How much does a roof replacement cost in Colorado?",
-        a: "Roof replacement costs in Colorado typically range from $10,000 to $30,000 for a standard residential home, though larger or more complex roofs can exceed that. The final price depends on your roof's size, pitch, material choice, and the condition of the decking underneath. Many Colorado homeowners pay only their insurance deductible because hail and storm damage claims cover the rest. During your free inspection, we document everything and provide a detailed estimate so there are no surprises. We work with GAF, Owens Corning, Malarkey, and CertainTeed shingle systems at various price points.",
+        a: "Roof replacement costs in Colorado typically range from $10,000 to $30,000 for a standard residential home, though larger or more complex roofs can exceed that. The final price depends on your roof's size, pitch, material choice, and the condition of the decking underneath. When a storm-damage claim is approved, homeowners are typically responsible for their policy deductible, with coverage depending on the specific policy. During your free inspection, we document everything and provide a detailed estimate so there are no surprises. We work with GAF, Owens Corning, Malarkey, and CertainTeed shingle systems at various price points.",
       },
       {
         q: "Will I pay anything beyond my insurance deductible?",

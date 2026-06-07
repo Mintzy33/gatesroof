@@ -109,7 +109,7 @@ export default function StormContent() {
       </section>
 
       {/* ─── ANSWER CAPSULE ─── */}
-      <AnswerCapsule text="Colorado averages 3 to 4 significant hail events per year. Most hail damage is not visible from the ground and requires a professional inspection to identify. If your home was in a recent hail zone, your homeowner's insurance typically covers the full cost of repair minus your deductible." />
+      <AnswerCapsule text="Colorado averages 3 to 4 significant hail events per year. Most hail damage is not visible from the ground and requires a professional inspection to identify. If your home was in a recent hail zone, your homeowner's insurance may cover much of the repair cost, depending on your policy and the cause of damage." />
 
       {/* ─── INTRO SECTION ─── */}
       <ScrollReveal>

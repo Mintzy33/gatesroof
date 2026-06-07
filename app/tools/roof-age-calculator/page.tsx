@@ -75,7 +75,7 @@ const faqSchema = {
       name: "Could my insurance cover roof replacement?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If your roof has storm damage from hail or wind, your homeowner's insurance policy may cover the full replacement cost minus your deductible. Many Colorado homeowners pay only $1,000 to $2,000 out of pocket for a new roof after a qualifying storm event.",
+        text: "If your roof has storm damage from hail or wind, your homeowner's insurance policy may cover much of the replacement cost, depending on your policy and the cause of damage. If a claim is approved, your out-of-pocket is typically your policy deductible.",
       },
     },
     {

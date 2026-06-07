@@ -26,7 +26,7 @@ const StarIcon = () => (
 const FAQS = [
   {
     q: "How much does a new roof cost in Parker CO?",
-    a: "A new roof in Parker typically costs between $8,000 and $25,000+ depending on the size of your home, the roofing materials selected, and the complexity of the roof. Many Parker homeowners pay little to nothing out of pocket when their roof replacement is covered by a legitimate insurance claim for storm damage. Gates Enterprises offers free inspections and detailed estimates so you know exactly what to expect before any work begins."
+    a: "A new roof in Parker typically costs between $8,000 and $25,000+ depending on the size of your home, the roofing materials selected, and the complexity of the roof. When storm damage is involved, an approved insurance claim can offset much of that cost, depending on your policy. Gates Enterprises offers free inspections and detailed estimates so you know exactly what to expect before any work begins."
   },
   {
     q: "Does insurance cover hail damage in Parker?",

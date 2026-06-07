@@ -812,7 +812,7 @@ export const services: ServiceData[] = [
       { step: "Supplement if Needed", desc: "If the initial approval doesn't cover the full scope of damage, we prepare and submit supplements with additional documentation." },
     ],
     faqs: [
-      { q: "Does insurance cover hail damage?", a: "Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're responsible for your deductible — Gates Enterprises handles everything else." },
+      { q: "Does insurance cover hail damage?", a: "Whether hail damage is covered depends on your specific policy and the cause of damage. You're responsible for your deductible — Gates Enterprises documents the damage and works with your adjuster through the claim." },
       { q: "How do I know if I have hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. The only way to know for sure is a professional roof inspection." },
       { q: "Is the inspection really free?", a: "Completely free with no obligation. We'll show you exactly what we find and give you an honest assessment. If there's no damage, we'll tell you." },
       { q: "How long do I have to file a claim?", a: "Most Colorado insurance policies have a 1-year window from the date of the storm. Don't wait — filing promptly gives you the best chance of full coverage." },

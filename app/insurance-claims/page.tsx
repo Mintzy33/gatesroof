@@ -4,11 +4,11 @@ import InsuranceClaimsContent from "./content";
 
 export const metadata: Metadata = {
   title: "Roof Insurance Claims CO | We Fight for You ★",
-  description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
+  description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. 7,200+ claims handled. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/insurance-claims" },
   openGraph: {
     title: "Roof Insurance Claims CO | We Fight for You ★",
-    description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. Most pay only their deductible. 7,200+ claims. (720) 766-3377",
+    description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. 7,200+ claims handled. (720) 766-3377",
     url: "https://www.gatesroof.com/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -22,7 +22,7 @@ const serviceSchema = {
   "@type": "Service",
   "serviceType": "Roof Insurance Claim Assistance",
   "name": "Roof Insurance Claims in Colorado",
-  "description": "Full-service roof insurance claim support. Free inspection, adjuster coordination, supplement handling, and certified installation. Most homeowners pay only their deductible.",
+  "description": "Full-service roof insurance claim support. Free inspection, adjuster coordination, supplement handling, and certified installation.",
   "url": "https://www.gatesroof.com/insurance-claims",
   "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"},

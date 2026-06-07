@@ -174,7 +174,7 @@ export default function InsuranceCoverageEstimatorContent() {
             color: TEXT_LIGHT,
             lineHeight: 1.7,
           }}>
-            Find out how much insurance could cover for your roofing project. Most Colorado homeowners pay only their deductible.
+            Find out how much insurance could cover for your roofing project. Coverage depends on your policy and the cause of damage.
           </p>
         </section>
 
@@ -288,7 +288,7 @@ export default function InsuranceCoverageEstimatorContent() {
                   textTransform: "uppercase" as const,
                   letterSpacing: "0.06em",
                 }}>
-                  Your Roof Replacement Could Be Covered For
+                  Estimated Roof Replacement Cost
                 </div>
                 <div style={{
                   fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
@@ -305,7 +305,7 @@ export default function InsuranceCoverageEstimatorContent() {
                   color: TEXT_LIGHT,
                   marginTop: 6,
                 }}>
-                  Insurance typically covers this when damage is storm-related
+                  If storm damage is approved, a claim may cover much of this, depending on your policy
                 </div>
               </div>
 
@@ -327,7 +327,7 @@ export default function InsuranceCoverageEstimatorContent() {
                   letterSpacing: "0.06em",
                   marginBottom: 6,
                 }}>
-                  What Most Colorado Homeowners Actually Pay
+                  Typical Deductible Range
                 </div>
                 <div style={{
                   fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
@@ -344,7 +344,7 @@ export default function InsuranceCoverageEstimatorContent() {
                   color: NAVY,
                   marginTop: 6,
                 }}>
-                  Your deductible. That's it.
+                  If a claim is approved, your out-of-pocket is usually your policy deductible.
                 </div>
               </div>
 
@@ -396,7 +396,7 @@ export default function InsuranceCoverageEstimatorContent() {
                     letterSpacing: "0.06em",
                     marginBottom: 4,
                   }}>
-                    You Pay
+                    Typical Deductible
                   </div>
                   <div style={{
                     fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
@@ -510,7 +510,7 @@ export default function InsuranceCoverageEstimatorContent() {
               textAlign: "center",
               marginBottom: 32,
             }}>
-              Gates Enterprises has helped hundreds of Colorado homeowners navigate the insurance claims process. Most homeowners pay only their deductible when storm damage is approved by their insurance company.
+              Gates Enterprises has helped hundreds of Colorado homeowners navigate the insurance claims process. When a storm-damage claim is approved, homeowners are typically responsible for their policy deductible.
             </p>
 
             {[
@@ -518,7 +518,7 @@ export default function InsuranceCoverageEstimatorContent() {
               { num: "2", title: "Detailed Documentation", desc: "We photograph and document every issue so nothing gets missed." },
               { num: "3", title: "Insurance Claim Filing", desc: "We help you file your claim and communicate with your adjuster." },
               { num: "4", title: "Insurance May Cover Replacement", desc: "If approved, your insurance company covers the cost per your policy terms." },
-              { num: "5", title: "You Pay Only Your Deductible", desc: "Most homeowners pay $1,000 to $2,500. That's it." },
+              { num: "5", title: "Your Deductible Applies", desc: "If your claim is approved, your out-of-pocket is typically your policy deductible." },
             ].map((step) => (
               <div key={step.num} style={{
                 display: "flex",

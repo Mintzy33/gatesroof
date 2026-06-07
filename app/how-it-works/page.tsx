@@ -52,7 +52,7 @@ const faqs = faqSchema([
   },
   {
     q: "Will my insurance cover the cost of a new roof?",
-    a: "If your roof has storm damage, most homeowners insurance policies cover the replacement cost minus your deductible. Our team documents all damage, files the claim on your behalf, and meets with your insurance adjuster to ensure nothing is missed. You typically only pay your deductible.",
+    a: "If your roof has storm damage, an approved insurance claim may cover much of the replacement cost — coverage depends on your policy and the cause of damage. Our team documents all damage, files the claim on your behalf, and meets with your adjuster so nothing is missed. If your claim is approved, you are typically responsible for your deductible.",
   },
   {
     q: "What happens if you inspect my roof and there is no damage?",

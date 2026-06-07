@@ -23,7 +23,7 @@ const tools = [
   },
   {
     title: "Insurance Coverage Estimator",
-    desc: "Find out how much your roof replacement could be worth through insurance. Most Colorado homeowners pay only their deductible.",
+    desc: "Find out how much your roof replacement could be worth through insurance. Coverage depends on your policy and the cause of damage.",
     href: "/tools/insurance-coverage-estimator",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
