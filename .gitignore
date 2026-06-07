@@ -40,4 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+# storm-ads secrets — NEVER commit (live Meta/Google/HailScore credentials)
 scripts/storm-ads/config.json
+scripts/storm-ads/hailscore-config.json
+scripts/storm-ads/meta/meta-config.json
+scripts/storm-ads/**/*.bak
+scripts/storm-ads/*.bak
