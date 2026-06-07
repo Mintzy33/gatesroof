@@ -416,7 +416,7 @@ export default function Home() {
           <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
             {[
               { q: "What is Gates Enterprises?", a: `Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over ${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating} star average.` },
-              { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado. Homeowners typically pay only their deductible." },
+              { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion." },
               { q: "What areas does Gates Enterprises serve?", a: "Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities." },
               { q: "What is HailScore?", a: "HailScore is a free, independent hail risk assessment tool at myhailscore.com. It analyzes millions of NOAA radar records to generate a hail risk score for any US address, and Gates Enterprises uses it to give homeowners objective storm data." },
             ].map((faq, i) => (
@@ -442,7 +442,7 @@ export default function Home() {
           </ScrollReveal>
           <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
             {[
-              { q: "Does insurance cover hail damage?", a: "Yes. Colorado homeowners insurance typically covers hail damage under your dwelling coverage. You're responsible for your deductible. We help document damage and work with your adjuster throughout the claims process." },
+              { q: "Does insurance cover hail damage?", a: "Coverage depends on your specific policy and the cause of damage. Gates Enterprises documents storm damage thoroughly and works with your adjuster throughout the claims process so decisions are based on clear, evidence-backed assessments." },
               { q: "How long does a roof replacement take?", a: "Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins." },
               { q: "What's the difference between repair and replacement?", a: "Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty." },
               { q: "Do you offer financing?", a: "Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection." },
