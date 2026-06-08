@@ -45,7 +45,7 @@ const FAQS = [
   { q: "What is your claim success rate?", a: "When Gates Enterprises recommends filing a claim, our success rate is over 99%. We only recommend filing when we\u2019re confident the damage warrants it. We never pressure homeowners to file unnecessary claims." },
   { q: "What are supplements?", a: "Supplements are additional documentation submitted to your insurance company when the initial estimate doesn\u2019t cover the full scope of work. Most homeowners don\u2019t know they exist. We prepare and submit supplement documentation, which often results in thousands of additional dollars toward your project." },
   { q: "Do you meet with my adjuster?", a: "Yes. We attend every adjuster meeting on site. We walk the roof with your adjuster, point out all documented damage, and support a fair and accurate estimate." },
-  { q: "Does my insurance really cover a full roof replacement?", a: "Most Colorado homeowner\u2019s insurance policies cover the full replacement cost of a storm damaged roof, minus your deductible. Many homeowners don\u2019t realize this. We help you understand your coverage and work with your insurance company to pursue the coverage your policy provides." },
+  { q: "Does my insurance really cover a full roof replacement?", a: "Most Colorado homeowner\u2019s insurance policies may cover much of the replacement cost of a storm-damaged roof, depending on your coverage. Many homeowners don\u2019t realize this. We help you understand your coverage and work with your insurance company to pursue the coverage your policy provides." },
   { q: "How long does the process take?", a: "From initial inspection to completed installation, most projects take 4 to 8 weeks. The timeline depends on insurance company response times, supplement reviews, and weather. We keep the process moving and communicate with you at every step." },
   { q: "Is there a deadline to file a claim?", a: "Most policies have a time limit, often one year from the date of the storm. Schedule an inspection as soon as possible to protect your eligibility." },
 ];
@@ -68,10 +68,10 @@ export default function InsuranceClaimsContent() {
             Your Roof Insurance Claim, Supported From Start to Finish
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 12, maxWidth: 700 }}>
-            Most Colorado homeowners don&apos;t realize their insurance may cover the full replacement cost of a storm damaged roof, minus the deductible. Many roofers don&apos;t document thoroughly. We do.
+            Most Colorado homeowners don&apos;t realize their insurance may cover much of the replacement cost of a storm damaged roof, depending on their policy. Many roofers don&apos;t document thoroughly. We do.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: GOLD, lineHeight: 1.6, marginBottom: 32, maxWidth: 700, fontWeight: 600 }}>
-            In most cases, your only cost is your insurance deductible.
+            If your claim is approved, your out-of-pocket is typically your policy deductible.
           </p>
           <div className="icl-hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" as const }}>
             <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -149,7 +149,7 @@ export default function InsuranceClaimsContent() {
                 </div>
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 18, fontWeight: 700, color: DEEP, marginBottom: 8 }}>Your Insurance May Cover More Than You Think</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.75, color: TEXT_LIGHT, margin: 0 }}>
-                  Most Colorado homeowner&apos;s insurance policies may cover the full replacement cost of a storm damaged roof. Your responsibility typically includes your deductible. Coverage depends on your specific policy, but many homeowners are surprised by how much is covered.
+                  Most Colorado homeowner&apos;s insurance policies may cover much of the replacement cost of a storm damaged roof, depending on your coverage. Your responsibility typically includes your deductible. Coverage depends on your specific policy, but many homeowners are surprised by how much is covered.
                 </p>
               </div>
               <div className="icl-info-card" style={{ background: WHITE, borderRadius: 20, padding: "32px 28px", border: "2px solid transparent", transition: "border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease" }}>

@@ -26,7 +26,7 @@ const faqData = [
       },
       {
         q: "Will I pay anything beyond my insurance deductible?",
-        a: "In most insurance roof replacement projects, your deductible is your primary out-of-pocket cost. Your homeowners insurance policy typically covers the approved scope of work minus your deductible. If the adjuster's initial estimate falls short, we file supplements with additional documentation to support the full cost of proper installation. Gates Enterprises has helped homeowners secure supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate. We document thoroughly to support the full scope your roof needs.",
+        a: "If your claim is approved, your out-of-pocket is typically your policy deductible, with coverage depending on your specific policy. If the adjuster's initial estimate falls short, we file supplements with additional documentation to support the full cost of proper installation. Gates Enterprises has helped homeowners secure supplement approvals that other contractors leave on the table. We never cut corners to match a low estimate. We document thoroughly to support the full scope your roof needs.",
       },
       {
         q: "Does Gates offer financing?",

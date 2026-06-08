@@ -389,7 +389,7 @@ export default function RoofCostEstimatorContent() {
                     fontWeight: 600,
                   }}
                 >
-                  Most Colorado homeowners with storm damage pay $0 - $2,000 out of pocket after insurance.
+                  If a storm-damage claim is approved, your out-of-pocket is typically your policy deductible.
                 </p>
                 <p
                   style={{
@@ -400,7 +400,7 @@ export default function RoofCostEstimatorContent() {
                     margin: "8px 0 0",
                   }}
                 >
-                  Your deductible is typically your only cost.
+                  Coverage and any out-of-pocket amount depend on your specific policy.
                 </p>
               </div>
 
