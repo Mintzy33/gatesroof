@@ -23,7 +23,7 @@ declare global {
 }
 
 export default function StormLeadForm() {
-  const [form, setForm] = useState({ name: "", phone: "", address: "", city: "", message: "", company: "" });
+  const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", city: "", message: "", company: "" });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [err, setErr] = useState("");
 
@@ -145,6 +145,10 @@ export default function StormLeadForm() {
       <div style={{ marginBottom: 14 }}>
         <label style={labelStyle}>Phone</label>
         <input style={inputStyle} required type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} placeholder="(720) 555-0100" />
+      </div>
+      <div style={{ marginBottom: 14 }}>
+        <label style={labelStyle}>Email <span style={{ fontWeight: 400, color: "#94A3B8" }}>(optional)</span></label>
+        <input style={inputStyle} type="email" value={form.email} onChange={(e) => update("email", e.target.value)} placeholder="you@example.com" />
       </div>
       <div style={{ marginBottom: 14 }}>
         <label style={labelStyle}>Street Address</label>

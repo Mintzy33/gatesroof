@@ -14,6 +14,7 @@ const META_PIXEL_ID = process.env.META_PIXEL_ID || "1621445598880955";
 interface StormLead {
   name: string;
   phone: string;
+  email?: string;
   address: string;
   city: string;
   message?: string;
@@ -45,6 +46,7 @@ async function fireMetaCapiLead(opts: {
   eventId?: string;
   name: string;
   phone: string;
+  email?: string;
   city: string;
   clientIp?: string;
   userAgent?: string;
@@ -61,6 +63,8 @@ async function fireMetaCapiLead(opts: {
       ct: [sha256(opts.city.trim().toLowerCase().replace(/\s+/g, ""))],
       country: [sha256("us")],
     };
+    // Email is Meta's strongest match signal — send it (hashed) when provided.
+    if (opts.email && opts.email.trim()) user_data.em = [sha256(opts.email.trim().toLowerCase())];
     if (first) user_data.fn = [sha256(first)];
     if (rest.length) user_data.ln = [sha256(rest.join(" "))];
     // IP / UA / fbp / fbc are sent RAW (not hashed) per Meta's spec.
@@ -101,7 +105,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Too many requests. Please try again in a few minutes." }, { status: 429 });
     }
     const body: StormLead = await req.json();
-    const { name, phone, address, city, message, eventId, fbp, fbc } = body;
+    const { name, phone, email, address, city, message, eventId, fbp, fbc } = body;
 
     // Honeypot: bots fill the hidden "company" field; real users never see it.
     // Return 200 so the bot thinks it worked, but signal `lead: false` so the
@@ -140,6 +144,7 @@ export async function POST(req: Request) {
             <table style="width: 100%; border-collapse: collapse;">
               <tr><td style="padding: 10px 0; font-weight: 600; width: 130px;">Name</td><td>${name.trim()}</td></tr>
               <tr><td style="padding: 10px 0; font-weight: 600;">Phone</td><td><a href="tel:${phone.replace(/\D/g, "")}">${phone}</a></td></tr>
+              ${email ? `<tr><td style="padding: 10px 0; font-weight: 600;">Email</td><td><a href="mailto:${email}">${email}</a></td></tr>` : ""}
               <tr><td style="padding: 10px 0; font-weight: 600;">Address</td><td>${address}</td></tr>
               <tr><td style="padding: 10px 0; font-weight: 600;">City</td><td>${city}</td></tr>
               ${message ? `<tr><td style="padding: 10px 0; font-weight: 600; vertical-align: top;">What happened</td><td style="white-space: pre-wrap;">${message}</td></tr>` : ""}
@@ -158,6 +163,7 @@ export async function POST(req: Request) {
       eventId,
       name,
       phone,
+      email,
       city,
       clientIp: getClientIp(req),
       userAgent: req.headers.get("user-agent") || undefined,
