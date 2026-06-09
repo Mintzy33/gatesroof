@@ -31,23 +31,37 @@ export default function StormLeadForm() {
     setForm((f) => ({ ...f, [k]: v }));
   }
 
+  function readCookie(name: string): string | undefined {
+    if (typeof document === "undefined") return undefined;
+    const m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : undefined;
+  }
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("submitting");
     setErr("");
+    // Shared dedupe key for the browser Pixel + the server-side CAPI Lead, so
+    // Meta counts one Lead, not two, when both fire.
+    const eventId =
+      typeof crypto !== "undefined" && crypto.randomUUID
+        ? crypto.randomUUID()
+        : `lead_${Date.now()}_${Math.round(Math.random() * 1e9)}`;
     try {
       const res = await fetch("/api/leads/storm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, eventId, fbp: readCookie("_fbp"), fbc: readCookie("_fbc") }),
       });
+      const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
         throw new Error(data.error || "Submission failed");
       }
-      if (typeof window !== "undefined") {
+      // Only fire Lead for a real submission — the server returns `lead: false`
+      // for honeypot/bot hits so we never poison the Pixel's conversion signal.
+      if (typeof window !== "undefined" && data.lead !== false) {
         if (typeof window.fbq === "function") {
-          window.fbq("track", "Lead");
+          window.fbq("track", "Lead", {}, { eventID: eventId });
         }
         if (Array.isArray(window.dataLayer)) {
           window.dataLayer.push({ event: "lead_form_submit", form: "storm_response" });

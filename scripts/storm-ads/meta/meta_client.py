@@ -97,8 +97,19 @@ class MetaAdsClient:
             "campaign_id": campaign_id,
             "daily_budget": self.defaults["daily_budget_cents"],
             "billing_event": self.defaults.get("billing_event", "IMPRESSIONS"),
-            "optimization_goal": self.defaults.get("optimization_goal", "LEAD_GENERATION"),
+            # Website-conversion campaign: optimize for the Pixel LEAD event.
+            # NOT "LEAD_GENERATION" — that's Meta's on-platform Instant Form goal
+            # and does nothing for a link ad that drives to gatesroof.com. The
+            # required pairing for a website lead is OFFSITE_CONVERSIONS + a
+            # promoted_object naming the pixel and the LEAD custom event. Without
+            # the promoted_object, Meta has no conversion target and just buys
+            # cheap clicks → spend, no leads. (board: GATES-MKT-1, 2026-06-08)
+            "optimization_goal": "OFFSITE_CONVERSIONS",
             "bid_strategy": self.defaults.get("bid_strategy", "LOWEST_COST_WITHOUT_CAP"),
+            "promoted_object": json.dumps({
+                "pixel_id": self.pixel_id,
+                "custom_event_type": "LEAD",
+            }),
             "targeting": json.dumps(targeting),
             "status": self.defaults.get("initial_status", "PAUSED"),
         }
