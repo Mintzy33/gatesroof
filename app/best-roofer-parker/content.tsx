@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: "What is HailScore and how does it help Parker homeowners?",
-    a: "HailScore is an independent hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
+    a: "HailScore is a hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
   }
 ];
 
@@ -130,7 +130,7 @@ export default function BestRooferParkerContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>HailScore: Palmer Divide Data at Your Fingertips</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, an independent hail-data tool that uses NOAA radar data to map the complete hail history for any Parker address. Given Parker's position on the Palmer Divide, most properties have been impacted by multiple significant hail events. HailScore reveals exactly which storms hit your home, the hailstone sizes, and the cumulative exposure your roof has endured. Few roofing companies in Parker offer this data driven approach.
+              Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, a hail-data tool that uses NOAA radar data to map the complete hail history for any Parker address. Given Parker's position on the Palmer Divide, most properties have been impacted by multiple significant hail events. HailScore reveals exactly which storms hit your home, the hailstone sizes, and the cumulative exposure your roof has endured. Few roofing companies in Parker offer this data driven approach.
             </p>
           </div>
 

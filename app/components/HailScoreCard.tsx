@@ -188,7 +188,7 @@ export default function HailScoreCard({
                   >
                     HailScore
                   </a>
-                  , an independent hail-data tool.
+                  , a hail-data tool.
                 </div>
               </div>
             </div>

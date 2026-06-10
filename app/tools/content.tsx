@@ -33,7 +33,7 @@ const tools = [
   },
   {
     title: "Hail Risk Check",
-    desc: "Look up your home's hail risk score with HailScore, an independent hail-data tool. Millions of hail records across all 50 states.",
+    desc: "Look up your home's hail risk score with HailScore, a hail-data tool. Millions of hail records across all 50 states.",
     href: "/tools/hail-risk-check",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

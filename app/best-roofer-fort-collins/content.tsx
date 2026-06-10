@@ -134,7 +134,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>HailScore: Data Driven Roof Intelligence</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fort Collins gets hammered by hail. Storms that develop along the foothills frequently track through Larimer County with large, damaging hailstones. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, an independent hail-data tool that uses NOAA radar data to reveal the exact hail history for any Fort Collins address. It shows which storms hit your property, hailstone sizes, and how many events your home has endured. This objective, data backed approach sets Gates Enterprises apart.
+              Fort Collins gets hammered by hail. Storms that develop along the foothills frequently track through Larimer County with large, damaging hailstones. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, a hail-data tool that uses NOAA radar data to reveal the exact hail history for any Fort Collins address. It shows which storms hit your property, hailstone sizes, and how many events your home has endured. This objective, data backed approach sets Gates Enterprises apart.
             </p>
           </div>
 

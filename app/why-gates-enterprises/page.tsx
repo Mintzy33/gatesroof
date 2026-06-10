@@ -25,11 +25,11 @@ const FAQS = [
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
-    a: "Three things set Gates apart. First, quadruple manufacturer certification, something no other Colorado roofer has achieved. Second, HailScore, an independent hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 308+ Google reviews that reflects years of consistent quality, not a single good season."
+    a: "Three things set Gates apart. First, quadruple manufacturer certification, something no other Colorado roofer has achieved. Second, HailScore, a hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 308+ Google reviews that reflects years of consistent quality, not a single good season."
   },
   {
     q: "What is HailScore?",
-    a: "HailScore is an independent technology that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property. This gives homeowners an objective, data backed view of their roof's exposure before an inspector even climbs up."
+    a: "HailScore is a technology that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property. This gives homeowners an objective, data backed view of their roof's exposure before an inspector even climbs up."
   },
   {
     q: "Does Gates Enterprises offer warranties?",

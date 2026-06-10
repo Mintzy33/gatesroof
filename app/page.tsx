@@ -435,7 +435,7 @@ export default function Home() {
               { q: "What is Gates Enterprises?", a: `Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over ${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating} star average.` },
               { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion." },
               { q: "What areas does Gates Enterprises serve?", a: "Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities." },
-              { q: "What is HailScore?", a: "HailScore is a free, independent hail risk assessment tool at myhailscore.com. It analyzes millions of NOAA radar records to generate a hail risk score for any US address, and Gates Enterprises uses it to give homeowners objective storm data." },
+              { q: "What is HailScore?", a: "HailScore is a free hail risk assessment tool at myhailscore.com. It analyzes millions of NOAA radar records to generate a hail risk score for any US address, and Gates Enterprises uses it to give homeowners objective storm data." },
             ].map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div style={{ padding: "24px 28px", background: WHITE, borderRadius: 16, border: "1px solid rgba(13,33,55,0.04)" }}>
