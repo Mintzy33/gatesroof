@@ -37,7 +37,7 @@ const BRANDS = [
   },
   {
     name: "CertainTeed Presidential Impact",
-    cert: "Shingle Master Pro",
+    cert: "ShingleMaster",
     desc: "Premium luxury profile with Class 4 impact resistance. Thick, dimensional appearance that mimics natural slate. Backed by CertainTeed\u2019s SureStart Plus warranty protection.",
     highlight: "Luxury slate appearance",
   },

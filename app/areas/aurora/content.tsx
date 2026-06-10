@@ -64,7 +64,7 @@ export default function CityContent() {
               "Arapahoe County permit and inspection coordination",
               "thousands of roofs completed across the Denver metro",
               "4.9 star Google rating from 300+ verified reviews",
-              "Owens Corning Preferred and CertainTeed Shingle Master Pro certified",
+              "Owens Corning Preferred and CertainTeed ShingleMaster certified",
               "Free inspections with documented photo evidence",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>

@@ -28,8 +28,8 @@ const citySchema = {
       "image": "https://www.gatesroof.com/logo.png",
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
-      "foundingDate": "2017-05",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed Shingle Master Pro. 308 Google reviews, 4.9 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
+      "foundingDate": "2014",
+      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. 308 Google reviews, 4.9 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",

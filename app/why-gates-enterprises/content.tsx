@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews, a 4.9 star rating, HailScore radar data, and 8+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews, a 4.9 star rating, HailScore radar data, and 10+ years on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: "How long has Gates Enterprises been in business?",
-    a: "Gates Enterprises LLC was founded in May 2017 and has been serving Colorado's Front Range for over 8 years, completing thousands of roofing and exterior projects."
+    a: "Gates Enterprises LLC was founded in 2014 and has been serving Colorado's Front Range for over 10 years, completing thousands of roofing and exterior projects."
   }
 ];
 
@@ -124,9 +124,9 @@ export default function WhyGatesContent() {
                 desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Premium contractor, Gates Enterprises is specially trained to install Malarkey's advanced NEX Polymer Modified asphalt shingles, which deliver superior flexibility, adhesion, and durability in Colorado's extreme weather conditions."
               },
               {
-                name: "CertainTeed Shingle Master Pro\u2122",
+                name: "CertainTeed ShingleMaster\u2122",
                 detail: "Master level installation training",
-                desc: "CertainTeed's Shingle Master Pro credential requires completion of master level training in advanced shingle application techniques. This certification ensures every installation meets CertainTeed's highest standards, qualifying homeowners for their most comprehensive warranty coverage. Gates Enterprises' crews are trained to handle even the most complex roof configurations."
+                desc: "CertainTeed's ShingleMaster credential requires completion of master level training in advanced shingle application techniques. This certification ensures every installation meets CertainTeed's highest standards, qualifying homeowners for their most comprehensive warranty coverage. Gates Enterprises' crews are trained to handle even the most complex roof configurations."
               },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
@@ -205,7 +205,7 @@ export default function WhyGatesContent() {
           </div>
 
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            Gates Enterprises LLC was founded in May 2017 and has completed thousands of roofing and exterior projects across Colorado's Front Range. From Denver and Lakewood to Parker, Aurora, and Colorado Springs, homeowners have trusted Gates with their most valuable asset: their home.
+            Gates Enterprises LLC was founded in 2014 and has completed thousands of roofing and exterior projects across Colorado's Front Range. From Denver and Lakewood to Parker, Aurora, and Colorado Springs, homeowners have trusted Gates with their most valuable asset: their home.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
             The 308+ Google reviews with a 4.9 star average did not accumulate overnight. They represent years of showing up on time, communicating honestly, installing correctly, and following through on promises. When you read through the reviews, you will notice consistent themes: professionalism, quality, transparency, and genuine care for the homeowner's experience.
@@ -233,7 +233,7 @@ export default function WhyGatesContent() {
               { factor: "Hail Data Technology", gates: "HailScore radar hail data (independent tool)", typical: "None" },
               { factor: "Warranty Access", gates: "Best warranties from all four manufacturers", typical: "Limited to one manufacturer's standard warranty" },
               { factor: "Insurance Restoration Experience", gates: "Thousands of claims guided, specialist level", typical: "Varies widely" },
-              { factor: "Years in Colorado", gates: "8+ years, headquartered in Lakewood", typical: "Many are out of state storm chasers" },
+              { factor: "Years in Colorado", gates: "10+ years, headquartered in Lakewood", typical: "Many are out of state storm chasers" },
               { factor: "Product Selection", gates: "Full lines from four manufacturers", typical: "One or two brands" },
             ].map((row, i) => (
               <div key={i} style={{ background: WHITE, borderRadius: 12, padding: "24px", border: "1px solid rgba(13,33,55,0.06)" }}>

@@ -318,7 +318,7 @@ export default function HowItWorksContent() {
                   { name: "GAF Master Elite", detail: "Top 2% of roofers nationwide" },
                   { name: "Owens Corning Preferred", detail: "Preferred contractor network" },
                   { name: "Malarkey Emerald Premium", detail: "Highest Malarkey tier" },
-                  { name: "CertainTeed Shingle Master", detail: "Advanced certification" },
+                  { name: "CertainTeed ShingleMaster", detail: "Advanced certification" },
                 ].map((cert) => (
                   <div key={cert.name} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                     <CheckIcon />

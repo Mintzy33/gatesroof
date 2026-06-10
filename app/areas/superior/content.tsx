@@ -123,8 +123,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey Roofing Products are known for sustainability and durability. Emerald Premium contractors are specially trained to install Malarkey's premium shingle lines, including their industry leading NEX\u00AE Polymer Modified asphalt shingles."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires master level training in shingle installation techniques. This certification ensures Superior homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires master level training in shingle installation techniques. This certification ensures Superior homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
   }
 ];
 
@@ -191,10 +191,10 @@ export default function CityContent() {
             Roofing Contractor in Superior, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted by Superior Families for 8+ Years.
+            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted by Superior Families for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Superior homeowners deserve a roofing contractor who understands the unique challenges of this community. From the devastating Marshall Fire that reshaped the town to the Front Range hailstorms that threaten roofs every summer, your home needs protection you can count on. Gates Enterprises LLC has been protecting homes across Superior and Boulder County since 2017. We bring quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and a commitment to honest, quality work on every project.
+            Superior homeowners deserve a roofing contractor who understands the unique challenges of this community. From the devastating Marshall Fire that reshaped the town to the Front Range hailstorms that threaten roofs every summer, your home needs protection you can count on. Gates Enterprises LLC has been protecting homes across Superior and Boulder County since 2014. We bring quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and a commitment to honest, quality work on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -219,7 +219,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. That means Superior homeowners get access to the best warranty options and highest quality materials available.
+              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. That means Superior homeowners get access to the best warranty options and highest quality materials available.
             </p>
           </div>
 
@@ -231,9 +231,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>8+ Years Serving Colorado's Front Range.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>10+ Years Serving Colorado's Front Range.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Founded in May 2017, Gates Enterprises LLC has completed thousands of roofing and exterior projects across Boulder County and the greater Denver metro. We know Superior. We know the weather patterns. We know the building codes. And we know how to get the job done right.
+              Founded in 2014, Gates Enterprises LLC has completed thousands of roofing and exterior projects across Boulder County and the greater Denver metro. We know Superior. We know the weather patterns. We know the building codes. And we know how to get the job done right.
             </p>
           </div>
 
@@ -400,7 +400,7 @@ export default function CityContent() {
       {/* ─── 9. ADDITIONAL CTA SECTION ─── */}
       <CTA
         title="Protect Your Superior Home Today"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, fire damage restoration, or exterior repairs, Gates Enterprises LLC is ready to help. With 8+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, fire damage restoration, or exterior repairs, Gates Enterprises LLC is ready to help. With 10+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
       />
 
       {/* ─── 10. INTERNAL LINKS SECTION ─── */}

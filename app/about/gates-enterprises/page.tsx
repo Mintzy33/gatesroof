@@ -55,7 +55,7 @@ const localBusinessSchema = {
   logo: "https://www.gatesroof.com/logo.png",
   image: "https://www.gatesroof.com/og-image.jpg",
   description:
-    "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master. Thousands of roofs completed since 2014.",
+    "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Thousands of roofs completed since 2014.",
   telephone: "+17207663377",
   email: "info@gatesroof.com",
   foundingDate: "2014",
@@ -72,11 +72,6 @@ const localBusinessSchema = {
     addressRegion: "CO",
     postalCode: "80215",
     addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 39.7047,
-    longitude: -105.0814,
   },
   numberOfEmployees: {
     "@type": "QuantitativeValue",
@@ -182,7 +177,7 @@ const localBusinessSchema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "Manufacturer Certification",
-      name: "CertainTeed Shingle Master",
+      name: "CertainTeed ShingleMaster",
     },
   ],
   aggregateRating: {
@@ -191,21 +186,6 @@ const localBusinessSchema = {
     reviewCount:   "308",
     bestRating: "5",
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "17:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "00:00",
-      closes: "00:00",
-      description: "By appointment",
-    },
-  ],
   priceRange: "$$",
   knowsAbout: [
     "Residential roofing",
@@ -520,7 +500,7 @@ export default function GatesEnterprisesPage() {
               },
               {
                 icon: <Award size={32} color={ACCENT} />,
-                title: "CertainTeed Shingle Master",
+                title: "CertainTeed ShingleMaster",
                 desc: "CertainTeed's premier residential roofing certification. Requires factory-level training, licensing verification, and documented commitment to quality installation. Enables CertainTeed's strongest warranty options.",
               },
             ].map((cert) => (

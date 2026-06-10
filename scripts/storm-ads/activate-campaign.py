@@ -63,11 +63,6 @@ def activate_campaign(client, customer_id, campaign_resource_name):
     campaign.status = client.enums.CampaignStatusEnum.ENABLED
 
     # Set the field mask
-    client.copy_from(
-        campaign_operation.update_mask,
-        protobuf_helpers.field_mask(None, campaign._pb),
-    )
-
     from google.protobuf import field_mask_pb2
     campaign_operation.update_mask.CopyFrom(
         field_mask_pb2.FieldMask(paths=["status"])

@@ -116,7 +116,7 @@ export default function Page() {
               308 five-star Google reviews. 7,200+ completed roofs. The only 4x manufacturer certified roofer in Colorado.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 32, textAlign: "left" as const }}>
-              {["GAF Master Elite Contractor", "Owens Corning Preferred Contractor", "Malarkey Emerald Premium Contractor", "CertainTeed Shingle Master Pro", "308 five-star Google reviews", "7,200+ roofs completed", "10+ years on the Front Range", "Free inspections, no pressure"].map((item, i) => (
+              {["GAF Master Elite Contractor", "Owens Corning Preferred Contractor", "Malarkey Emerald Premium Contractor", "CertainTeed ShingleMaster", "308 five-star Google reviews", "7,200+ roofs completed", "10+ years on the Front Range", "Free inspections, no pressure"].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: 2, flexShrink: 0 }}><polyline points="20 6 9 17 4 12" /></svg>
                   <span style={{ fontFamily: "var(--font-dm-sans)", fontSize: 14, color: TEXT, fontWeight: 500 }}>{item}</span>

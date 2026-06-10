@@ -65,7 +65,7 @@ const FAQS = [
   },
   {
     q: "Is Gates Enterprises a local Colorado roofing company?",
-    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2017. They have a permanent local presence, 308+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
+    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2014. They have a permanent local presence, 308+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
   },
 ];
 
@@ -215,8 +215,8 @@ export default function StormChasersContent() {
 
           <div className="gates-advantage-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             {[
-              { title: "Local Since 2017", desc: "Gates Enterprises has been roofing along Colorado's Front Range since 2017. A permanent, local team that is here today and will be here when you need them." },
-              { title: "Quadruple Certified", desc: "The only roofer in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro." },
+              { title: "Local Since 2014", desc: "Gates Enterprises has been roofing along Colorado's Front Range since 2014. A permanent, local team that is here today and will be here when you need them." },
+              { title: "Quadruple Certified", desc: "The only roofer in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster." },
               { title: "308+ Reviews, 4.9 Stars", desc: "Over 308 verified Google reviews from real Colorado homeowners with a 4.9 star average. Years of consistent five-star performance, not a flash in the pan." },
               { title: "Real Warranty Protection", desc: "Your warranty is backed by both the manufacturer AND a workmanship guarantee from Gates Enterprises. Not a piece of paper from a company that will not exist next year." },
             ].map((item, i) => (

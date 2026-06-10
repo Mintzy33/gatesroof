@@ -102,7 +102,7 @@ const localBusinessSchema = {
   "knowsAbout": ["GAF roofing systems","CertainTeed roofing","Malarkey shingles","Owens Corning roofing","Class 4 impact-resistant shingles","Colorado hail damage","Insurance restoration"],
   "hasCredential": [
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"GAF Master Elite Contractor"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"CertainTeed Shingle Master"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"CertainTeed ShingleMaster"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
@@ -176,22 +176,6 @@ const siteNavigationSchema = {
   ]
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 308 Google reviews with a 4.9 star average."}},
-    {"@type":"Question","name":"Does Gates Enterprises help with insurance claims?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion."}},
-    {"@type":"Question","name":"What areas does Gates Enterprises serve?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities."}},
-    {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Coverage depends on your specific policy and the cause of damage. Gates Enterprises documents storm damage thoroughly and works with your adjuster throughout the claims process so decisions are based on clear, evidence-backed assessments."}},
-    {"@type":"Question","name":"How long does a roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins."}},
-    {"@type":"Question","name":"What's the difference between repair and replacement?","acceptedAnswer":{"@type":"Answer","text":"Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty."}},
-    {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection."}},
-    {"@type":"Question","name":"How do I know if my roof has hail damage?","acceptedAnswer":{"@type":"Answer","text":"Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. Those are signs your roof was likely hit too. The only way to know for sure is a professional inspection."}},
-    {"@type":"Question","name":"What if my insurance claim is denied?","acceptedAnswer":{"@type":"Answer","text":"Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively."}}
-  ]
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${playfairDisplay.variable} ${raleway.variable}`}>
@@ -206,7 +190,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script id="local-business-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
         <script id="organization-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script id="website-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script id="site-navigation-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }} />
       </head>
       <body style={{ margin: 0, padding: 0, paddingBottom: 70 }}>

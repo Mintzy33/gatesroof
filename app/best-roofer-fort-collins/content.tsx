@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Fort Collins?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, their quality speaks for itself."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, their quality speaks for itself."
   },
   {
     q: "Does Fort Collins get a lot of hail?",
@@ -53,7 +53,7 @@ const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
   { label: "308+ verified Google reviews" },
   { label: "4.9 star average rating" },
-  { label: "8+ years serving Colorado's Front Range" },
+  { label: "10+ years serving Colorado's Front Range" },
   { label: "HailScore radar hail data tool" },
   { label: "Free inspections with zero pressure" },
   { label: "Insurance restoration expertise" },
@@ -120,7 +120,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Premium Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro.
+              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function BestRooferFortCollinsContent() {
           <div>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Longevity and Local Commitment</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Storm chasers flood Fort Collins after every major hail event. They offer low prices, rush through the work, and disappear. Gates Enterprises has been serving Colorado's Front Range since 2017 and is committed to the communities they serve. When you need warranty service or a follow up inspection years from now, they will be here.
+              Storm chasers flood Fort Collins after every major hail event. They offer low prices, rush through the work, and disappear. Gates Enterprises has been serving Colorado's Front Range since 2014 and is committed to the communities they serve. When you need warranty service or a follow up inspection years from now, they will be here.
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function BestRooferFortCollinsContent() {
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's network. Enhanced warranties and premium product lines." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's NEX Polymer Modified asphalt technology for superior Northern Colorado durability." },
-              { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level shingle application training. CertainTeed's strongest warranty programs." },
+              { name: "CertainTeed ShingleMaster\u2122", desc: "Master level shingle application training. CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${GOLD}, ${GOLD}80)` }} />

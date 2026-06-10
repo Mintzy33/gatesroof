@@ -25,9 +25,26 @@ const Icons = {
   star: (c = GOLD) => (<svg width="14" height="14" viewBox="0 0 24 24" fill={c} stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>),
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 308 Google reviews with a 4.9 star average."}},
+    {"@type":"Question","name":"Does Gates Enterprises help with insurance claims?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion."}},
+    {"@type":"Question","name":"What areas does Gates Enterprises serve?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities."}},
+    {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Coverage depends on your specific policy and the cause of damage. Gates Enterprises documents storm damage thoroughly and works with your adjuster throughout the claims process so decisions are based on clear, evidence-backed assessments."}},
+    {"@type":"Question","name":"How long does a roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most residential roofs are completed in a single day. Larger or more complex roofs may take 2-3 days. We'll give you an exact timeline before work begins."}},
+    {"@type":"Question","name":"What's the difference between repair and replacement?","acceptedAnswer":{"@type":"Answer","text":"Minor damage (a few missing or cracked shingles) can often be repaired. If damage exceeds 30% of the roof area or your roof is near end of life, replacement is more cost-effective and comes with a full warranty."}},
+    {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible financing options for homeowners who need them. Ask us about $0 down payment plans during your free inspection."}},
+    {"@type":"Question","name":"How do I know if my roof has hail damage?","acceptedAnswer":{"@type":"Answer","text":"Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. Those are signs your roof was likely hit too. The only way to know for sure is a professional inspection."}},
+    {"@type":"Question","name":"What if my insurance claim is denied?","acceptedAnswer":{"@type":"Answer","text":"Our team provides thorough documentation to support your claim, including detailed supplement packages. We know what adjusters need and how to present it effectively."}}
+  ]
+};
+
 export default function Home() {
   return (
     <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>
+      <script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
 
       {/* HERO */}
@@ -66,7 +83,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.45} direction="left">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                {[{ t: "4x Manufacturer Certified", d: "GAF Master Elite · Owens Corning Preferred · Malarkey Emerald Premium · CertainTeed Shingle Master Pro" }, { t: "Insurance Restoration Experts", d: "Inspection to completion, we help navigate it all" }].map((c, i) => (
+                {[{ t: "4x Manufacturer Certified", d: "GAF Master Elite · Owens Corning Preferred · Malarkey Emerald Premium · CertainTeed ShingleMaster" }, { t: "Insurance Restoration Experts", d: "Inspection to completion, we help navigate it all" }].map((c, i) => (
                   <div key={i} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)", display: "flex", flexDirection: "column" as const, alignItems: "center", justifyContent: "center", textAlign: "center" as const }}>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: WHITE, marginBottom: 4 }}>{c.t}</div>
                     <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.5 }}>{c.d}</div>

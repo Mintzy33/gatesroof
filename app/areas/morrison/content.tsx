@@ -123,8 +123,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey Roofing Products are known for sustainability and durability. Emerald Premium contractors are specially trained to install Malarkey's premium shingle lines, including their industry leading NEX\u00AE Polymer Modified asphalt shingles."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires master level training in shingle installation techniques. This certification ensures Morrison homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires master level training in shingle installation techniques. This certification ensures Morrison homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
   }
 ];
 
@@ -191,10 +191,10 @@ export default function CityContent() {
             Roofing Contractor in Morrison, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted Mountain Roofing Experts for 8+ Years.
+            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted Mountain Roofing Experts for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2017, with quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and deep experience with mountain roofing.
+            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2014, with quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and deep experience with mountain roofing.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -219,7 +219,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. That means Morrison homeowners get access to the best warranty options and highest quality materials available.
+              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. That means Morrison homeowners get access to the best warranty options and highest quality materials available.
             </p>
           </div>
 
@@ -231,9 +231,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>8+ Years Serving Colorado's Front Range.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>10+ Years Serving Colorado's Front Range.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Founded in May 2017, Gates Enterprises LLC has completed thousands of roofing and exterior projects across Jefferson County and the greater Denver metro. We know Morrison. We understand mountain weather patterns, steep roof pitches, and the unique logistics of working on foothills properties.
+              Founded in 2014, Gates Enterprises LLC has completed thousands of roofing and exterior projects across Jefferson County and the greater Denver metro. We know Morrison. We understand mountain weather patterns, steep roof pitches, and the unique logistics of working on foothills properties.
             </p>
           </div>
 
@@ -400,7 +400,7 @@ export default function CityContent() {
       {/* ─── 9. ADDITIONAL CTA SECTION ─── */}
       <CTA
         title="Protect Your Morrison Home Today"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises LLC is ready to help. With 8+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises LLC is ready to help. With 10+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
       />
 
       {/* ─── 10. INTERNAL LINKS SECTION ─── */}

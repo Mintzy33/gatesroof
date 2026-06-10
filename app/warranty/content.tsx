@@ -71,7 +71,7 @@ const MANUFACTURERS = [
     description: "Malarkey Roofing Products offers enhanced warranty coverage exclusively through their Emerald Premium certified contractors. This certification means Gates Enterprises has met Malarkey's strict standards for installation quality and business practices. The result is stronger, longer warranty protection for every Malarkey roof we install.",
   },
   {
-    name: "CertainTeed Shingle Master",
+    name: "CertainTeed ShingleMaster",
     color: "#1B4D8E",
     warranty: "SureStart Plus Warranty",
     details: [
@@ -79,9 +79,9 @@ const MANUFACTURERS = [
       "Includes workmanship coverage",
       "Non prorated material protection",
       "Covers both materials and installation",
-      "Exclusive to Shingle Master certified contractors",
+      "Exclusive to ShingleMaster certified contractors",
     ],
-    description: "CertainTeed's SureStart Plus Warranty provides an extended period of coverage that goes beyond their standard warranty. As a Shingle Master certified contractor, Gates Enterprises unlocks this enhanced warranty for every CertainTeed roof we install. The SureStart Plus warranty covers both materials and workmanship, providing comprehensive protection.",
+    description: "CertainTeed's SureStart Plus Warranty provides an extended period of coverage that goes beyond their standard warranty. As a ShingleMaster certified contractor, Gates Enterprises unlocks this enhanced warranty for every CertainTeed roof we install. The SureStart Plus warranty covers both materials and workmanship, providing comprehensive protection.",
   },
 ];
 

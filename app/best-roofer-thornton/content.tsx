@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Thornton?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Thornton. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Thornton roofer have?",
@@ -53,7 +53,7 @@ const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
   { label: "308+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
-  { label: "8+ years serving Colorado's Front Range", gates: true },
+  { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "HailScore radar hail data tool", gates: true },
   { label: "Free inspections with no pressure", gates: true },
   { label: "Insurance restoration expertise", gates: true },
@@ -134,7 +134,7 @@ export default function BestRooferThorntonContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>3. Local Experience and Longevity</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best Thornton roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2017 and has completed over 7,200 projects.
+              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best Thornton roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2014 and has completed over 7,200 projects.
             </p>
           </div>
 
@@ -195,7 +195,7 @@ export default function BestRooferThorntonContent() {
               { name: "GAF Master Elite\u00AE", desc: "Awarded to the top 2% of roofing contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Recognizes contractors who meet the highest standards for professionalism, reliability, and quality. Provides access to Owens Corning's enhanced warranty programs." },
               { name: "Malarkey Emerald Premium", desc: "Certifies expertise in Malarkey's advanced NEX Polymer Modified asphalt technology. Malarkey leads the industry in sustainable, high performance roofing materials." },
-              { name: "CertainTeed Shingle Master Pro\u2122", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
+              { name: "CertainTeed ShingleMaster\u2122", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${GOLD}, ${GOLD}80)` }} />

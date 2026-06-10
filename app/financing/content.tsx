@@ -75,7 +75,7 @@ export default function FinancingContent() {
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
           </div>
           <div style={{ width: 1, height: 24, background: "rgba(13,33,55,0.12)" }} />
-          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>GAF Master Elite &bull; Owens Corning Preferred &bull; Malarkey Emerald Premium &bull; CertainTeed Shingle Master</span>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>GAF Master Elite &bull; Owens Corning Preferred &bull; Malarkey Emerald Premium &bull; CertainTeed ShingleMaster</span>
         </div>
       </section>
 

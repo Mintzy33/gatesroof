@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Commerce City?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Commerce City. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Commerce City. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
   },
   {
     q: "What certifications should a Commerce City roofer have?",

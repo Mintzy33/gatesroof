@@ -26,7 +26,7 @@ const StarIcon = () => (
 const FAQS = [
   {
     q: "Is Gates Enterprises actually based in Lakewood?",
-    a: "Yes. Gates Enterprises LLC is headquartered in Lakewood, CO. This is our home and has been since we were founded in May 2017. When you hire us, you are hiring your neighbors."
+    a: "Yes. Gates Enterprises LLC is headquartered in Lakewood, CO. This is our home and has been since we were founded in 2014. When you hire us, you are hiring your neighbors."
   },
   {
     q: "How do I know if my Lakewood home has hail damage?",
@@ -63,7 +63,7 @@ const NEIGHBORHOODS = [
 ];
 
 const HAIL_EVENTS = [
-  { date: "May 8, 2017", desc: "The same storm that caused over $2.3 billion in insured losses across the Denver metro dropped damaging hail across Lakewood neighborhoods, including Green Mountain and Bear Creek. This storm was a defining moment for Gates Enterprises LLC, which was founded that same month and immediately began helping neighbors restore their homes." },
+  { date: "May 8, 2017", desc: "The same storm that caused over $2.3 billion in insured losses across the Denver metro dropped damaging hail across Lakewood neighborhoods, including Green Mountain and Bear Creek. It was a defining moment for Gates Enterprises LLC, and our team was on the ground helping neighbors across Lakewood restore their homes." },
   { date: "June 2018", desc: "Multiple rounds of severe hail tracked across Jefferson County throughout June, with some Lakewood neighborhoods sustaining repeated damage." },
   { date: "June 2019", desc: "A series of intense hailstorms hit Lakewood and surrounding areas, producing hailstones exceeding 1.5 inches across the Belmar and Applewood neighborhoods." },
   { date: "2021 and 2022", desc: "Both years brought significant hail events to Lakewood, with Jefferson County recording dozens of severe thunderstorm warnings each summer." },
@@ -127,8 +127,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey is known for innovation and sustainability in roofing materials. As an Emerald Premium contractor, Gates Enterprises is trained to install Malarkey's advanced product lines, including their NEX\u00AE Polymer Modified asphalt shingles, which deliver exceptional durability in Colorado's harsh climate."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires master level training in shingle installation. This ensures Lakewood homeowners receive installations that meet the highest standards in the industry, qualifying for CertainTeed's top warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires master level training in shingle installation. This ensures Lakewood homeowners receive installations that meet the highest standards in the industry, qualifying for CertainTeed's top warranty coverage."
   }
 ];
 
@@ -204,7 +204,7 @@ export default function CityContent() {
             Locally Headquartered. Quadruple Manufacturer Certified. 300+ Five Star Reviews. Your Neighbors. Your Roofer.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2017, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With 300+ Google reviews and a 4.9 star rating, Lakewood homeowners trust us because they know us.
+            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2014, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With 300+ Google reviews and a 4.9 star rating, Lakewood homeowners trust us because they know us.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -236,7 +236,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
+              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
             </p>
           </div>
 
@@ -248,9 +248,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>8+ Years Serving Colorado's Front Range.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>10+ Years Serving Colorado's Front Range.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Founded in May 2017, Gates Enterprises LLC has grown from a local startup into one of the most trusted roofing companies on Colorado's Front Range. We have completed thousands of projects across Jefferson County and the greater Denver metro, and our roots remain firmly planted in Lakewood.
+              Founded in 2014, Gates Enterprises LLC has grown from a local startup into one of the most trusted roofing companies on Colorado's Front Range. We have completed thousands of projects across Jefferson County and the greater Denver metro, and our roots remain firmly planted in Lakewood.
             </p>
           </div>
 

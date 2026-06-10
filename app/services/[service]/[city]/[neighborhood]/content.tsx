@@ -54,7 +54,7 @@ function getNeighborhoodWhySection(
 
 function getNeighborhoodWhyChoose(neighborhoodName: string, cityName: string, housingAge: string): string[] {
   return [
-    "GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master certified",
+    "GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certified",
     "308 Google reviews with a 4.9-star rating from Colorado homeowners",
     "Over thousands of roofing projects completed across the Front Range",
     "Free inspections with no obligation and no pressure",

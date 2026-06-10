@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Loveland?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Loveland. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Loveland. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "How do I choose a roofing company in Loveland?",
@@ -53,7 +53,7 @@ const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
   { label: "308+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
-  { label: "8+ years serving Colorado's Front Range", gates: true },
+  { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "HailScore radar hail data tool", gates: true },
   { label: "Free inspections with no pressure", gates: true },
   { label: "Insurance restoration expertise", gates: true },
@@ -141,7 +141,7 @@ export default function BestRooferLovelandContent() {
               { name: "GAF Master Elite®", desc: "Awarded to the top 2% of roofing contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Recognizes contractors who meet the highest standards for professionalism, reliability, and quality. Provides access to Owens Corning's enhanced warranty programs." },
               { name: "Malarkey Emerald Premium", desc: "Certifies expertise in Malarkey's advanced NEX Polymer Modified asphalt technology. Malarkey leads the industry in sustainable, high performance roofing materials." },
-              { name: "CertainTeed Shingle Master Pro™", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
+              { name: "CertainTeed ShingleMaster™", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
             ].map((cert, i) => (
               <div key={i} style={{ background: WHITE, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${GOLD}, ${GOLD}80)` }} />

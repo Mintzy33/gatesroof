@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews and a 4.9 star rating, their reputation is built on consistent results."
+    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, their reputation is built on consistent results."
   },
   {
     q: "How often does Aurora get hail damage?",
@@ -53,7 +53,7 @@ const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
   { label: "308+ verified Google reviews" },
   { label: "4.9 star average rating" },
-  { label: "8+ years serving Colorado's Front Range" },
+  { label: "10+ years serving Colorado's Front Range" },
   { label: "HailScore radar hail data tool" },
   { label: "Free inspections with zero pressure" },
   { label: "Insurance restoration expertise" },
@@ -120,7 +120,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. No other roofer in Colorado can say the same.
+              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. No other roofer in Colorado can say the same.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function BestRooferAuroraContent() {
           <div>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Local Presence, Not Storm Chasing</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              After every major storm, Aurora gets flooded with out of state contractors who knock on doors, offer rock bottom prices, do the work, and vanish. Gates Enterprises has been roofing along the Front Range since 2017 and is headquartered in the Denver metro. They will be here for warranty service, follow ups, and anything else you need years down the road.
+              After every major storm, Aurora gets flooded with out of state contractors who knock on doors, offer rock bottom prices, do the work, and vanish. Gates Enterprises has been roofing along the Front Range since 2014 and is headquartered in the Denver metro. They will be here for warranty service, follow ups, and anything else you need years down the road.
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function BestRooferAuroraContent() {
               { name: "GAF Master Elite\u00AE", desc: "Top 2% of roofing contractors in North America. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's contractor network. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Premium", desc: "Certified expertise in Malarkey's NEX Polymer Modified asphalt technology for superior Colorado durability." },
-              { name: "CertainTeed Shingle Master Pro\u2122", desc: "Master level training in advanced shingle application. Access to CertainTeed's strongest warranty programs." },
+              { name: "CertainTeed ShingleMaster\u2122", desc: "Master level training in advanced shingle application. Access to CertainTeed's strongest warranty programs." },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: `2px solid ${GOLD}20`, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${GOLD}, ${GOLD}80)` }} />

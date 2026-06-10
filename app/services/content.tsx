@@ -329,7 +329,7 @@ export default function ServicesContent() {
               "GAF Master Elite",
               "Owens Corning Preferred",
               "Malarkey Emerald Premium",
-              "CertainTeed Shingle Master",
+              "CertainTeed ShingleMaster",
             ].map((cert) => (
               <div
                 key={cert}

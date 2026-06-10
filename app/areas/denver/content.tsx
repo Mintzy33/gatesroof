@@ -136,8 +136,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Premium contractor, Gates Enterprises is specially trained to install Malarkey's advanced shingle lines, including their NEX\u00AE Polymer Modified asphalt technology for superior durability."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires completion of master level training in advanced shingle application. This certification ensures Denver homeowners receive installations that meet CertainTeed's highest standards, qualifying for their best warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires completion of master level training in advanced shingle application. This certification ensures Denver homeowners receive installations that meet CertainTeed's highest standards, qualifying for their best warranty coverage."
   }
 ];
 
@@ -204,10 +204,10 @@ export default function CityContent() {
             Roofing Contractor in Denver, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Protecting Denver Homes for 8+ Years.
+            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Protecting Denver Homes for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Denver sits in one of the most active hail corridors in North America. Every spring and summer, severe storms roll off the Rocky Mountains and pound neighborhoods across the metro area. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 300+ Google reviews, and has been serving Denver homeowners since 2017. From historic bungalows in Washington Park to new construction in Green Valley Ranch, we deliver the same quality and care on every project.
+            Denver sits in one of the most active hail corridors in North America. Every spring and summer, severe storms roll off the Rocky Mountains and pound neighborhoods across the metro area. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 300+ Google reviews, and has been serving Denver homeowners since 2014. From historic bungalows in Washington Park to new construction in Green Valley Ranch, we deliver the same quality and care on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -233,7 +233,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
+              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
             </p>
           </div>
 
@@ -245,9 +245,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>8+ Years on Colorado's Front Range.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>10+ Years on Colorado's Front Range.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC was founded in May 2017 and has completed thousands of roofing and exterior projects across the Denver metro area. We understand Denver's building codes, HOA requirements, and the unique challenges that come with both historic and modern construction.
+              Gates Enterprises LLC was founded in 2014 and has completed thousands of roofing and exterior projects across the Denver metro area. We understand Denver's building codes, HOA requirements, and the unique challenges that come with both historic and modern construction.
             </p>
           </div>
 

@@ -145,8 +145,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey Roofing Products are known for sustainability and durability. Emerald Premium contractors are specially trained to install Malarkey's premium shingle lines, including their industry leading NEX\u00AE Polymer Modified asphalt shingles."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires master level training in shingle installation techniques. This certification ensures Parker homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires master level training in shingle installation techniques. This certification ensures Parker homeowners receive installations that meet CertainTeed's highest standards and qualify for top tier warranty coverage."
   }
 ];
 
@@ -280,7 +280,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: <Link href="/blog/manufacturer-certified-roofer-colorado" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro</Link>. That means Parker homeowners get access to the best warranty options and highest quality materials available.
+              Fewer than 2% of roofing contractors nationwide hold even one premium manufacturer certification. Gates Enterprises holds four: <Link href="/blog/manufacturer-certified-roofer-colorado" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster</Link>. That means Parker homeowners get access to the best warranty options and highest quality materials available.
             </p>
           </div>
 

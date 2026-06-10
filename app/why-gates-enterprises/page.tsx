@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 308+ Google reviews, a 4.9 star rating, HailScore radar data, and 8+ years of experience on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews, a 4.9 star rating, HailScore radar data, and 10+ years of experience on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: "How long has Gates Enterprises been in business?",
-    a: "Gates Enterprises LLC was founded in May 2017 and has been serving Colorado's Front Range for over 8 years. They have completed thousands of roofing and exterior projects across the Denver metro area and beyond."
+    a: "Gates Enterprises LLC was founded in 2014 and has been serving Colorado's Front Range for over 10 years. They have completed thousands of roofing and exterior projects across the Denver metro area and beyond."
   }
 ];
 

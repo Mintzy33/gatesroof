@@ -189,11 +189,11 @@ export default function BlogPostLayout({
               display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
               fontSize: 20, fontWeight: 800, color: WHITE,
-            }}>AC</div>
+            }}>AG</div>
             <div>
               <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: TEXT_LIGHT, marginBottom: 2 }}>Written by</div>
-              <Link href="/about/alex-chicilo" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY, textDecoration: "none" }}>Alex Chicilo</Link>
-              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Director of Operations, Gates Enterprises &middot; Quadruple Manufacturer Certified</div>
+              <Link href="/about/gates-enterprises" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 700, color: NAVY, textDecoration: "none" }}>Andrew Gates</Link>
+              <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, color: TEXT_LIGHT }}>Founder, Gates Enterprises &middot; Quadruple Manufacturer Certified</div>
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@ export default function BlogPostLayout({
           </div>
           <div style={{ marginTop: 16, display: "flex", gap: 16, flexWrap: "wrap" }}>
             <Link href="/tools" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>Free Roofing Tools →</Link>
-            <Link href="/about/alex-chicilo" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>About Alex Chicilo →</Link>
+            <Link href="/about/gates-enterprises" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>About Andrew Gates →</Link>
             <Link href="/reviews" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>Read Reviews →</Link>
           </div>
         </div>

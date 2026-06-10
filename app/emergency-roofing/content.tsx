@@ -105,7 +105,7 @@ const WHY_GATES = [
   {
     Icon: ShieldCheck,
     bold: "Quadruple manufacturer certified.",
-    rest: "GAF Master Elite, CertainTeed Shingle Master Pro, Owens Corning Preferred, and Malarkey Emerald Premium. Fewer than 1% of contractors in the nation hold all four.",
+    rest: "GAF Master Elite, CertainTeed ShingleMaster, Owens Corning Preferred, and Malarkey Emerald Premium. Fewer than 1% of contractors in the nation hold all four.",
   },
   {
     Icon: Shield,

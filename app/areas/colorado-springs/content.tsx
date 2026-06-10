@@ -136,8 +136,8 @@ const CERTIFICATIONS = [
     desc: "Malarkey Roofing Products leads the industry in sustainable, high performance roofing materials. As an Emerald Premium contractor, Gates Enterprises is specially trained to install Malarkey's advanced shingle lines, including their NEX\u00AE Polymer Modified asphalt technology for superior durability."
   },
   {
-    name: "CertainTeed Shingle Master Pro\u2122",
-    desc: "CertainTeed's Shingle Master Pro credential requires completion of master level training in advanced shingle application. This certification ensures Colorado Springs homeowners receive installations that meet CertainTeed's highest standards, qualifying for their best warranty coverage."
+    name: "CertainTeed ShingleMaster\u2122",
+    desc: "CertainTeed's ShingleMaster credential requires completion of master level training in advanced shingle application. This certification ensures Colorado Springs homeowners receive installations that meet CertainTeed's highest standards, qualifying for their best warranty coverage."
   }
 ];
 
@@ -235,7 +235,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. For Colorado Springs homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
+              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. For Colorado Springs homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
             </p>
           </div>
 
@@ -249,7 +249,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>7,200+ Roofs Completed Across Colorado.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC was founded in May 2017 and has completed over 7,200 roofing and exterior projects across Colorado's Front Range. We understand Pikes Peak Regional Building Department codes, El Paso County HOA requirements, and the unique challenges that come with roofing in a city that sees some of the most extreme weather in the state.
+              Gates Enterprises LLC was founded in 2014 and has completed over 7,200 roofing and exterior projects across Colorado's Front Range. We understand Pikes Peak Regional Building Department codes, El Paso County HOA requirements, and the unique challenges that come with roofing in a city that sees some of the most extreme weather in the state.
             </p>
           </div>
 

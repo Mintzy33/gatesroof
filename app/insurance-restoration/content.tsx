@@ -115,7 +115,7 @@ export default function InsuranceRestorationContent() {
             The goal of insurance restoration is to return your home to its pre-storm condition. This may include replacing your roof, repairing or replacing siding, installing new gutters, and addressing any other covered damage. The process involves coordination between you, your insurance company, and your roofing contractor.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-            Choosing the right contractor for insurance restoration is critical. You need a company that understands how to document damage thoroughly, communicate effectively with insurance adjusters, and perform quality restoration work. Gates Enterprises has been doing exactly this for Colorado homeowners since 2017.
+            Choosing the right contractor for insurance restoration is critical. You need a company that understands how to document damage thoroughly, communicate effectively with insurance adjusters, and perform quality restoration work. Gates Enterprises has been doing exactly this for Colorado homeowners since 2014.
           </p>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function InsuranceRestorationContent() {
               "Supplementing expertise to capture damage that initial estimates may miss",
               "Quadruple manufacturer certification ensuring the highest quality installation regardless of which brand you choose",
               "308+ Google reviews and a 4.9 star rating reflecting years of trusted insurance restoration work",
-              "8+ years of experience navigating Colorado's insurance restoration landscape",
+              "10+ years of experience navigating Colorado's insurance restoration landscape",
               "Clear communication throughout every stage of the process",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>

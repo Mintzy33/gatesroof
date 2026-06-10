@@ -64,7 +64,7 @@ export default function CityContent() {
               "Residential and commercial roof systems covered",
               "thousands of roofs completed across the Denver metro",
               "4.9 star Google rating from 300+ verified reviews",
-              "CertainTeed Shingle Master Pro and Owens Corning Preferred certified",
+              "CertainTeed ShingleMaster and Owens Corning Preferred certified",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>

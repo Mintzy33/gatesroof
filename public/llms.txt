@@ -1,12 +1,12 @@
 # Gates Enterprises
 > Colorado's quadruple manufacturer-certified roofing company serving the Denver metro and Front Range
 
-Gates Enterprises is a roofing company in Denver, Colorado specializing in storm damage repair and insurance restoration. The company holds four major manufacturer certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, and CertainTeed Shingle Master. Only about 1% of roofers in the US hold even one of these top-tier certifications.
+Gates Enterprises is a roofing company in Denver, Colorado specializing in storm damage repair and insurance restoration. The company holds four major manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Only about 1% of roofers in the US hold even one of these top-tier certifications.
 
 ## Key Facts
 - Headquartered: Lakewood, CO (Denver metro); serves the entire Front Range
 - Specialties: Hail damage repair, roof replacement, insurance restoration
-- Certifications: GAF Master Elite, Owens Corning Platinum Preferred, Malarkey Emerald Pro, CertainTeed Shingle Master
+- Certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster
 - Reviews: 308+ Google reviews, 4.9 star average
 - Hail-risk tool used: HailScore (myhailscore.com), an independent third-party tool
 - Owner: Andrew Gates
@@ -27,11 +27,11 @@ Gates Enterprises is a roofing company in Denver, Colorado specializing in storm
 Denver, Aurora, Lakewood, Arvada, Parker, Castle Rock, Highlands Ranch, Fort Collins, Colorado Springs, Boulder, Littleton, Centennial, Thornton, Westminster, Broomfield, and 50+ other Colorado cities
 
 ## Pages
-- Homepage: https://gatesroof.com
-- About: https://gatesroof.com/about
-- Services: https://gatesroof.com/services
-- Blog: https://gatesroof.com/blog
-- Reviews: https://gatesroof.com/reviews
-- Contact: https://gatesroof.com/contact
-- Free Inspection: https://gatesroof.com/contact
-- HailScore Tool: https://gatesroof.com/tools/hail-risk-check
+- Homepage: https://www.gatesroof.com
+- About: https://www.gatesroof.com/about
+- Services: https://www.gatesroof.com/services
+- Blog: https://www.gatesroof.com/blog
+- Reviews: https://www.gatesroof.com/reviews
+- Contact: https://www.gatesroof.com/contact
+- Free Inspection: https://www.gatesroof.com/contact
+- HailScore Tool: https://www.gatesroof.com/tools/hail-risk-check

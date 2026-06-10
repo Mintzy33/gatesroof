@@ -88,7 +88,7 @@ const personSchema = {
     {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "Manufacturer Certification",
-      name: "CertainTeed Shingle Master",
+      name: "CertainTeed ShingleMaster",
     },
   ],
   sameAs: [
@@ -127,7 +127,7 @@ const certifications = [
       "Malarkey's top contractor designation. Demonstrates expertise in installing Malarkey's full product line, including their industry-leading impact-resistant shingles.",
   },
   {
-    name: "CertainTeed Shingle Master",
+    name: "CertainTeed ShingleMaster",
     description:
       "CertainTeed's premier credential for residential roofing. Requires factory training, licensing verification, and a commitment to quality installation practices.",
   },
