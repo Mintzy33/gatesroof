@@ -46,3 +46,7 @@ scripts/storm-ads/hailscore-config.json
 scripts/storm-ads/meta/meta-config.json
 scripts/storm-ads/**/*.bak
 scripts/storm-ads/*.bak
+
+# storm-ads runtime logs (operational output, not source — keep on disk, out of git)
+scripts/storm-ads/*.log
+scripts/storm-ads/logs/
