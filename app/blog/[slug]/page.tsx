@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPosts } from "../posts";
 import BlogPostLayout from "../../components/BlogPostLayout";
-import { blogPostingSchema, breadcrumbSchema } from "../../../lib/schema";
+import { blogPostingSchema, breadcrumbSchema, faqSchema } from "../../../lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -70,6 +70,8 @@ export default async function BlogPostPage({ params }: Props) {
     { name: post.title, url: `https://www.gatesroof.com/blog/${post.slug}` },
   ]);
 
+  const faqLd = post.faqs?.length ? faqSchema(post.faqs) : null;
+
   return (
     <>
       <script
@@ -82,6 +84,13 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
+      {faqLd && (
+        <script
+          id={`faq-schema-${post.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
       <BlogPostLayout
         title={post.title}
         category={post.category}
@@ -93,6 +102,7 @@ export default async function BlogPostPage({ params }: Props) {
         slug={post.slug}
         relatedPosts={related}
         coverImage={post.coverImage}
+        faqs={post.faqs}
       />
     </>
   );

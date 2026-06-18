@@ -21,9 +21,62 @@ export interface BlogPost {
   coverImage?: BlogImage;
   content: string[];
   internalLinks: { placeholder: string; href: string; text: string }[];
+  /** Optional. When set, renders a visible FAQ section + emits FAQPage JSON-LD
+   *  (via faqSchema) on the post page. Visible text must equal the schema text. */
+  faqs?: { q: string; a: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "hail-storm-damage-roof-repair-denver",
+    metaTitle: "Hail & Storm Damage Roof Repair in Denver: Who to Call (2026 Guide)",
+    metaDescription: `A straight guide to hail and storm damage roof repair in Denver — how to spot hail damage, repair vs. replace, how the insurance claim works, and how to avoid storm-chasers. Free inspections from Gates Enterprises, (720) 766-3377.`,
+    targetKeyword: "hail damage roof repair Denver",
+    title: "Hail & Storm Damage Roof Repair in Denver: Who to Call and What to Do",
+    publishDate: "2026-06-18",
+    readTime: "9 min read",
+    category: "Storm Damage",
+    excerpt: `After a Denver hailstorm, the right first call is a local, established roofer with insurance-restoration experience — not the out-of-town crew knocking your door the next morning. Here is how to spot hail damage, decide repair vs. replace, run the insurance claim, and avoid storm-chasers.`,
+    content: [
+      `After a Denver hailstorm, the right first call is a local, established roofing contractor with insurance-restoration experience — not the out-of-town crew knocking on your door the next morning. A good local roofer inspects your roof for free, tells you honestly whether the damage is worth a claim, documents it properly, and stands with you through the adjuster meeting and the repair.`,
+      `That is exactly what Gates Enterprises does for Denver-area homeowners. We are Lakewood-based and have spent 10+ years and 7,200+ roofs on the Front Range, we carry a 4.9-star rating across 308 reviews, and we attend the insurance adjuster meeting on every storm claim [LINK: storm-hail]. Free inspection, honest answer, and on a covered claim, your out-of-pocket cost is typically just your deductible. Call (720) 766-3377.`,
+      `Here is the quick decision tree for what to do first. If you heard or saw hail and want to know whether there is damage, get a free ground-and-roof inspection from a storm-experienced local roofer before you call insurance. If you can already see obvious damage — leaks, dented gutters, shingle debris in the yard — document it, then get an inspection and file a claim. If an adjuster is already scheduled, have your roofer present for that inspection so the damage gets documented in real time. And if a door-knocker is pressuring you to sign on the spot, slow down and verify they are local, licensed, and insured before you sign anything.`,
+      `How to Spot Hail Damage on Your Denver Roof`,
+      `Denver sits in "Hail Alley" — the Front Range is one of the most hail-battered regions in the country, and the damage is not always obvious from the ground. The tell that adjusters rely on is collateral damage around the property, so it pays to know exactly where to look.`,
+      `On the shingles, look for dark "bruises" or soft spots, missing granules, and cracked or split shingles that expose the black mat underneath. In the gutters and downspouts, look for dents and dings and a pile of shingle granules that washed down off the roof. On metal surfaces, check for dented vents, flashing, valleys, and chimney caps. Around the house, look for dented AC fins, torn window screens, splatter marks on the deck, and a dinged garage door. And on vehicles and outdoor items, dented car panels are some of the strongest evidence of a hail event and a clue to how big the stones were.`,
+      `Two cautions are worth remembering. A roof can have functional hail damage you simply cannot see from the driveway, which is exactly why a roof-level inspection matters. And age matters — an older roof with widespread bruising is usually a replacement, not a patch. When in doubt, get it documented before the damage is masked by weather or time.`,
+      `Repair or Replace Your Hail-Damaged Roof`,
+      `The honest answer depends on how widespread the damage is and how old your roof already was. Lean toward a repair when the damage is isolated to one slope or a few shingles, the roof is relatively new and the shingles can still be matched, there are no active leaks or decking problems, and the insurer approves a repair scope. Lean toward a full replacement when the bruising and granule loss are widespread across multiple slopes, the roof is older and discontinued shingles cannot be matched, there are leaks or soft decking or a history of repeated repairs, or the insurer totals the roof — which is common after major Denver hail.`,
+      `A repair makes sense for limited, recent damage. But after a significant Front Range hailstorm, insurers frequently approve a full replacement, and that is often the better long-term call — especially if you upgrade to Class 4 impact-resistant shingles, which stand up to future hail and can earn an insurance premium discount in Colorado. For replacement pricing, see our [LINK: cost-guide].`,
+      `The Denver Hail Timeline`,
+      `Denver's hail season runs April through September, peaking May–July, so here is the play in each window. During and right after the storm, stay off the roof — from the ground, photograph the roof, gutters, AC unit, screens, and any dented cars, and note the date and any weather alerts. Within a few days, get an independent roof inspection before the adjuster comes out, so you have your own benchmark; Gates offers free storm inspections across the Denver metro [LINK: free-inspection]. When you file the claim, report the facts to your insurer, get a claim number, and ask that your roofer be present for the adjuster inspection. At the adjuster meeting, have your roofer walk the roof with the adjuster so the damage is documented in real time. After approval, your roofer schedules the work, files a supplement for anything that was missed, and helps you recover your depreciation holdback.`,
+      `How the Insurance Side Works`,
+      `Most Denver hail repairs are insurance claims, and how you run the claim decides your payout. On an approved claim, your insurer pays the approved scope minus your deductible, and a good roofer documents the damage, meets the adjuster, and files supplements for missed items. Colorado law also protects you. For example, a contractor cannot legally pay or waive your deductible (C.R.S. § 6-22-105), and a roofer who offers to is a red flag.`,
+      `We walk through the full process with you — ACV vs. RCV, deductibles, supplements, depreciation, and the relevant Colorado statutes — and you can read the detail in our [LINK: claims-guide]. Gates runs this process alongside you on every storm claim [LINK: insurance-claims].`,
+      `Avoiding Storm-Chaser Roofers in Denver`,
+      `After every big Denver hailstorm, out-of-town crews flood the neighborhood, knock doors, and push homeowners to sign on the spot. Some do fine work; many subcontract the job, cut corners, and are unreachable when a warranty problem shows up two winters later. The single best protection is to hire a locally established roofer who will still be here next season.`,
+      `The contrast is stark when you line the two up. A storm chaser is out-of-town and follows storms across states, while a local roofer like Gates is Lakewood-based with 10+ years on the Front Range. A storm chaser door-knocks with high-pressure "sign today" tactics, while a local roofer gives you a free inspection, an honest answer, and no pressure. A storm chaser often subcontracts the actual work, while a local roofer puts an accountable crew and a workmanship warranty behind the job. A storm chaser is hard to reach after the check clears, while a local roofer has a local phone, local reviews, and is still here next season. And a storm chaser may offer to "waive your deductible" — which is illegal in Colorado — while a local roofer follows Colorado law, period.`,
+      `Gates Enterprises has spent 10+ years on the Front Range and built a 4.9-star reputation over 308 reviews doing exactly this work — storm and hail restoration — for Denver-area homeowners [LINK: denver-area]. Few local roofers can match that combination of longevity, insurance-claim experience, and review track record.`,
+      `Hailstorm Hit Your Denver Home`,
+      `Gates Enterprises will inspect your roof for free, tell you honestly whether you have a claim, and stand with you from the adjuster meeting through the final repair. Call (720) 766-3377 or schedule a free inspection online [LINK: free-inspection]. We work across Denver and the entire Front Range, and on a covered claim your out-of-pocket cost is typically just your deductible.`,
+    ],
+    internalLinks: [
+      { placeholder: "storm-hail", href: "/services/storm-hail-damage", text: "storm and hail damage repair" },
+      { placeholder: "cost-guide", href: "/blog/roof-replacement-cost-denver", text: "Denver roof replacement cost guide" },
+      { placeholder: "free-inspection", href: "/contact", text: "schedule a free inspection" },
+      { placeholder: "claims-guide", href: "/blog/colorado-roof-insurance-claims-guide", text: "Colorado roof insurance claims guide" },
+      { placeholder: "insurance-claims", href: "/services/insurance-claims", text: "insurance claims help" },
+      { placeholder: "denver-area", href: "/areas/denver", text: "Denver-area homeowners" },
+    ],
+    faqs: [
+      { q: "Who is the best roofer for hail damage in Denver?", a: `The best choice for Denver hail damage is a local, established roofer with insurance-restoration experience and a strong local review record — someone who will document the damage, meet your adjuster, and still be reachable for warranty work years later. Gates Enterprises fits that profile: Lakewood-based, 10+ years and 7,200+ roofs on the Front Range, 4.9 stars across 308 reviews, and present at the adjuster meeting on every claim.` },
+      { q: "How do I know if my Denver roof has hail damage?", a: `Look for bruised or cracked shingles and granule loss, plus collateral signs like dented gutters, vents, AC fins, screens, and cars. Much hail damage isn't visible from the ground, so get a free roof-level inspection after any significant storm.` },
+      { q: "Should I repair or replace a hail-damaged roof?", a: `Repair makes sense for isolated, recent damage on a newer roof. Replace when bruising is widespread across multiple slopes, the roof is older, shingles can't be matched, or your insurer totals the roof — which is common after major Denver hail.` },
+      { q: "Does insurance cover hail damage roof repair in Colorado?", a: `Usually, yes. Colorado is one of the most hail-prone states, and standard homeowner policies typically cover sudden hail and wind damage, though coverage depends on your specific policy. When a claim is approved, you generally pay your deductible and insurance covers the rest of the approved scope.` },
+      { q: "How much does hail damage roof repair cost in Denver?", a: `Minor repairs are a few hundred to a few thousand dollars; a full hail replacement runs about $12,000–$28,000 for a typical Denver home, with most falling around $15,000–$22,000. Most storm work is handled through insurance, so on a covered claim your out-of-pocket cost is usually just your deductible. See our Denver roof replacement cost guide for the full breakdown.` },
+      { q: "How do I avoid storm-chaser roofers after a Denver hailstorm?", a: `Hire local. Verify a physical Colorado address, current license and insurance, and real local reviews — and walk away from anyone pressuring you to sign immediately or offering to pay or waive your deductible (which is illegal in Colorado).` },
+    ],
+  },
   {
     slug: "most-certified-roofing-contractor-colorado",
     metaTitle: "Most Certified Roofing Contractor in Colorado (2026)",

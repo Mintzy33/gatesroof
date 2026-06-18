@@ -23,6 +23,7 @@ interface BlogPostLayoutProps {
   slug: string;
   relatedPosts: { slug: string; title: string; category: string; readTime: string }[];
   coverImage?: { src: string; alt: string; width: number; height: number };
+  faqs?: { q: string; a: string }[];
 }
 
 function formatDate(iso: string) {
@@ -121,7 +122,7 @@ function renderParagraph(
 }
 
 export default function BlogPostLayout({
-  title, category, publishDate, updatedDate, readTime, content, internalLinks, slug, relatedPosts, coverImage,
+  title, category, publishDate, updatedDate, readTime, content, internalLinks, slug, relatedPosts, coverImage, faqs,
 }: BlogPostLayoutProps) {
   return (
     <div style={{ background: WHITE, minHeight: "100vh" }}>
@@ -174,6 +175,30 @@ export default function BlogPostLayout({
           {content.map((p, i) => renderParagraph(p, internalLinks, i))}
         </div>
       </article>
+
+      {/* FAQ */}
+      {faqs && faqs.length > 0 && (
+        <section style={{ padding: "0 24px 64px" }}>
+          <div style={{ maxWidth: 760, margin: "0 auto" }}>
+            <h2 style={{
+              fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif",
+              fontSize: 26, fontWeight: 700, color: NAVY, margin: "0 0 24px", lineHeight: 1.3,
+            }}>Frequently Asked Questions</h2>
+            {faqs.map((f, i) => (
+              <div key={i} style={{ marginBottom: 24 }}>
+                <h3 style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 18, fontWeight: 700, color: NAVY, margin: "0 0 8px", lineHeight: 1.4,
+                }}>{f.q}</h3>
+                <p style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 17, lineHeight: 1.85, color: TEXT, margin: 0,
+                }}>{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Author Box */}
       <section style={{ padding: "0 24px 64px" }}>
