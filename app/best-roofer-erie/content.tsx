@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Erie?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Erie. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 308+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Erie. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "How do I choose a roofing company in Erie?",
@@ -51,7 +51,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
-  { label: "308+ verified Google reviews", gates: true },
+  { label: "339+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "HailScore radar hail data tool", gates: true },
@@ -91,7 +91,7 @@ export default function BestRooferErieContent() {
             Best Roofing Company in Erie, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado&apos;s Only Quadruple Certified Roofing Contractor. 308+ Reviews. 4.9 Stars.
+            Colorado&apos;s Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Erie sits on the boundary of Weld and Boulder counties in one of Colorado's fastest growing corridors, with thousands of new homes built in the last decade. The area sits directly in the path of hail storms that track east from the mountains toward the plains, making roof replacement one of the most common needs for Erie homeowners.
@@ -162,7 +162,7 @@ export default function BestRooferErieContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -210,7 +210,7 @@ export default function BestRooferErieContent() {
 
       <CTA
         title="Get Erie's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 308+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

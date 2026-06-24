@@ -57,7 +57,7 @@ const localBusinessSchema = {
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/logo.png",
   "image": "https://www.gatesroof.com/og-image.jpg",
-  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, 308+ Google reviews.",
+  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, 339+ Google reviews.",
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
@@ -106,7 +106,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
-  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":  "308","bestRating":"5"},
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":  "339","bestRating":"5"},
   "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"},
   "priceRange": "$$",
   "sameAs": [

@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Broomfield CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
-  description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 308 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
+  title: "Broomfield CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
+  description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 339 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/broomfield" },
   openGraph: {
-    title: "Broomfield CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
-    description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 308 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
+    title: "Broomfield CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
+    description: "Broomfield hail damage? Gates Enterprises is 4x manufacturer certified with 339 five-star reviews. 7,200+ roofs replaced on the Front Range. Free inspection.",
     url: "https://www.gatesroof.com/areas/broomfield",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.9205, "longitude": -105.0867 },
   "areaServed": { "@type": "City", "name": "Broomfield", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "308", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "339", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

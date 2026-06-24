@@ -183,7 +183,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount:   "308",
+    reviewCount:   "339",
     bestRating: "5",
   },
   priceRange: "$$",

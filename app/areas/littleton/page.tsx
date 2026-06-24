@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Littleton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
-  description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 308 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
+  title: "Littleton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
+  description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
-    title: "Littleton CO Roofer | Hail Damage Experts, 308 Reviews, 4.9 Stars",
-    description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 308 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
+    title: "Littleton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
+    description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +35,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.6136, "longitude": -105.0166 },
   "areaServed": { "@type": "City", "name": "Littleton", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "308", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "339", "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

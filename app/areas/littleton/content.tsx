@@ -190,7 +190,7 @@ export default function CityContent() {
       <section style={{ padding: "48px 24px", background: WHITE, borderBottom: "1px solid rgba(13,33,55,0.06)" }}>
         <div className="littleton-trust-grid" style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 32, textAlign: "center" }}>
           <div>
-            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>308</div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>339</div>
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Google Reviews</div>
             <div style={{ display: "flex", justifyContent: "center", gap: 2, marginTop: 4 }}>
               {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
@@ -226,9 +226,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>308 Google Reviews. 4.9 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>339 Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              We&apos;ve earned 308 verified Google reviews from homeowners across the South Metro — Littleton, Englewood, Centennial, and beyond. A 4.9-star average isn&apos;t a marketing number, it&apos;s a reflection of how we operate on every job: clear communication, clean sites, no surprises on the invoice.
+              We&apos;ve earned 339 verified Google reviews from homeowners across the South Metro — Littleton, Englewood, Centennial, and beyond. A 4.9-star average isn&apos;t a marketing number, it&apos;s a reflection of how we operate on every job: clear communication, clean sites, no surprises on the invoice.
             </p>
           </div>
 
@@ -445,18 +445,18 @@ export default function CityContent() {
             What Littleton Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 308 Google reviews and a 4.9 star rating, Gates Enterprises is one of the highest rated roofing contractors on Colorado&apos;s Front Range. Don&apos;t just take our word for it. See what your Littleton neighbors have to say.
+            With 339 Google reviews and a 4.9 star rating, Gates Enterprises is one of the highest rated roofing contractors on Colorado&apos;s Front Range. Don&apos;t just take our word for it. See what your Littleton neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(308 Reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339 Reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 308 Reviews on Google →
+            Read All 339 Reviews on Google →
           </a>
         </div>
       </section>
@@ -470,7 +470,7 @@ export default function CityContent() {
       {/* 12. FINAL CTA */}
       <CTA
         title="Get a Free Roof Inspection in Littleton"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 308 five star reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 339 five star reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
       />
 
       {/* 13. SERVICES TAIL */}

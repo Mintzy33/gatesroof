@@ -129,7 +129,7 @@ class MetaAdsClient:
                 "Free inspection. We assist you through the insurance claims process. No obligation."
             ),
             "name": f"Free Storm Damage Inspection in {city}",
-            "description": "Quadruple manufacturer certified. 308 reviews. 4.9 stars.",
+            "description": "Quadruple manufacturer certified. 339 reviews. 4.9 stars.",
             "call_to_action": {"type": "GET_QUOTE", "value": {"link": landing}},
             "image_hash": image_hash,
         }

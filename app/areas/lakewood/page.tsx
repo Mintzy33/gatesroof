@@ -4,12 +4,12 @@ import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Lakewood CO Roofer | Local HQ, Hail Experts, 308 Reviews, 4.9 Stars",
-  description: "Gates Enterprises is headquartered in Lakewood. 308 five-star reviews, 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
+  title: "Lakewood CO Roofer | Local HQ, Hail Experts, 339 Reviews, 4.9 Stars",
+  description: "Gates Enterprises is headquartered in Lakewood. 339 five-star reviews, 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
-    title: "Lakewood CO Roofer | Local HQ, Hail Experts, 308 Reviews, 4.9 Stars",
-    description: "Gates Enterprises is headquartered in Lakewood. 308 five-star reviews, 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
+    title: "Lakewood CO Roofer | Local HQ, Hail Experts, 339 Reviews, 4.9 Stars",
+    description: "Gates Enterprises is headquartered in Lakewood. 339 five-star reviews, 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -64,7 +64,7 @@ const citySchema = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "308",
+        "reviewCount": "339",
         "bestRating": "5"
       },
       "hasOfferCatalog": {
