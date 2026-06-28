@@ -54,7 +54,7 @@ const CHECKLIST = [
   { label: "339+ verified Google reviews", gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "10+ years serving Colorado's Front Range", gates: true },
-  { label: "HailScore radar hail data tool", gates: true },
+  { label: "Uses HailScore, an independent third-party radar hail-data tool", gates: true },
   { label: "Free inspections with no pressure", gates: true },
   { label: "Insurance restoration expertise", gates: true },
   { label: "All four major shingle brands available", gates: true },

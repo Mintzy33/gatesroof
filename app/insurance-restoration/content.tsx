@@ -140,7 +140,7 @@ export default function InsuranceRestorationContent() {
               {
                 num: 2,
                 title: "HailScore Data Analysis",
-                desc: "Before we even climb your roof, we use HailScore, a hail-data tool, to pull NOAA radar data for your specific address. This shows the exact hail events that have impacted your property, including hailstone sizes and dates. This objective data strengthens the documentation we provide."
+                desc: "Before we even climb your roof, we use HailScore, an independent, third-party hail-data tool, to pull NOAA radar data for your specific address. This shows the exact hail events that have impacted your property, including hailstone sizes and dates. This objective data strengthens the documentation we provide."
               },
               {
                 num: 3,
@@ -220,7 +220,7 @@ export default function InsuranceRestorationContent() {
             The outcome of your insurance claim often depends on the quality of documentation provided. A quick walk around your property with a few phone photos is not enough. Gates Enterprises takes a comprehensive approach.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            We document every damaged shingle, every dented gutter section, every cracked piece of siding. We include measurements, overhead diagrams, and close up photos that clearly show the nature and extent of the damage. Our HailScore data adds an additional layer of objective evidence, showing that significant hail events have indeed impacted your property.
+            We document every damaged shingle, every dented gutter section, every cracked piece of siding. We include measurements, overhead diagrams, and close up photos that clearly show the nature and extent of the damage. Data from HailScore, an independent third-party hail-data tool, adds an additional layer of objective evidence, showing that significant hail events have indeed impacted your property.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
             This level of documentation helps ensure your insurance company can process your claim accurately and completely. When adjusters see professional, thorough documentation, the process typically moves more smoothly for everyone involved.

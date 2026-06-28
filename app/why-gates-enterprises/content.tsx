@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
-    a: "Three things set Gates apart. First, quadruple manufacturer certification that no other Colorado roofer has achieved. Second, HailScore, a hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 339+ Google reviews reflecting years of consistent quality."
+    a: "Three things set Gates apart. First, quadruple manufacturer certification that no other Colorado roofer has achieved. Second, HailScore, an independent, third-party hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 339+ Google reviews reflecting years of consistent quality."
   },
   {
     q: "What is HailScore?",
@@ -83,7 +83,7 @@ export default function WhyGatesContent() {
             Quadruple Certified. Data Driven. Proven by 339+ Five Star Reviews.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Colorado has thousands of roofing contractors. Many are good. Some are great. But when you look at the full picture, certifications, reviews, technology, and track record, one company stands apart. Gates Enterprises LLC has built something no other Colorado roofer has: quadruple manufacturer certification, a proprietary data platform, and a reputation backed by 339+ verified Google reviews. Here is exactly what sets us apart and why it matters for your home.
+            Colorado has thousands of roofing contractors. Many are good. Some are great. But when you look at the full picture, certifications, reviews, technology, and track record, one company stands apart. Gates Enterprises LLC has built something no other Colorado roofer has: quadruple manufacturer certification, a data-driven inspection process powered by HailScore (an independent, third-party hail-data tool it uses), and a reputation backed by 339+ verified Google reviews. Here is exactly what sets us apart and why it matters for your home.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -148,13 +148,13 @@ export default function WhyGatesContent() {
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            Our Data Advantage: HailScore
+            Our Data Advantage: Independent Radar Hail Data
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
             Most roofing companies rely on visual inspections alone. Gates Enterprises starts with data.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is a platform that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It reveals:
+            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is an independent, third-party platform that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It reveals:
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 28 }}>
             {[

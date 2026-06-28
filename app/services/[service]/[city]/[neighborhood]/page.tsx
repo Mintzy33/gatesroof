@@ -193,9 +193,9 @@ function generateNeighborhoodFAQs(
 
   // Hail risk answer varies by FEMA rating
   const hailAnswers: Record<typeof hailLevel, string> = {
-    "very-high": `${c.city} has a HailScore of ${hailScore}/100, indicating ${riskWord} hail risk. FEMA's National Risk Index rates ${cd.county ?? c.city} County as "${femaRating}" for hail, placing it among the most hail-exposed counties in the nation. ${n.uniqueFact} Annual roof inspections are essential for ${n.name} homeowners, especially after the spring and summer storm season (April through August). Gates Enterprises offers free storm damage inspections with detailed documentation.`,
-    high: `${c.city} has a HailScore of ${hailScore}/100, indicating ${riskWord} hail risk. FEMA rates ${cd.county ?? c.city} County as "${femaRating}" for hail damage. ${n.uniqueFact} We strongly recommend annual roof inspections for all ${n.name} homeowners, especially after severe weather events. Gates Enterprises offers free storm damage inspections to identify and document hail impact on your roof.`,
-    moderate: `${c.city} has a HailScore of ${hailScore}/100. While the risk is moderate compared to some Front Range areas, FEMA still rates ${cd.county ?? c.city} County as "${femaRating}" for hail. ${n.uniqueFact} Regular roof inspections remain advisable for ${n.name} homeowners, particularly after notable storm events. Gates Enterprises provides free inspections to catch damage early before it leads to leaks.`,
+    "very-high": `${c.city} scores ${hailScore}/100 on HailScore, an independent third-party hail-data tool, indicating ${riskWord} hail risk. FEMA's National Risk Index rates ${cd.county ?? c.city} County as "${femaRating}" for hail, placing it among the most hail-exposed counties in the nation. ${n.uniqueFact} Annual roof inspections are essential for ${n.name} homeowners, especially after the spring and summer storm season (April through August). Gates Enterprises offers free storm damage inspections with detailed documentation.`,
+    high: `${c.city} scores ${hailScore}/100 on HailScore, an independent third-party hail-data tool, indicating ${riskWord} hail risk. FEMA rates ${cd.county ?? c.city} County as "${femaRating}" for hail damage. ${n.uniqueFact} We strongly recommend annual roof inspections for all ${n.name} homeowners, especially after severe weather events. Gates Enterprises offers free storm damage inspections to identify and document hail impact on your roof.`,
+    moderate: `${c.city} scores ${hailScore}/100 on HailScore, an independent third-party hail-data tool. While the risk is moderate compared to some Front Range areas, FEMA still rates ${cd.county ?? c.city} County as "${femaRating}" for hail. ${n.uniqueFact} Regular roof inspections remain advisable for ${n.name} homeowners, particularly after notable storm events. Gates Enterprises provides free inspections to catch damage early before it leads to leaks.`,
   };
 
   // Insurance answer varies by housing era
@@ -233,7 +233,7 @@ function generateNeighborhoodFAQs(
     },
     {
       q: `What makes Gates Enterprises different from other roofers in ${n.name}?`,
-      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339 Google reviews (4.9 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also provide free HailScore data for ${c.city} to help homeowners understand their specific risk.`,
+      a: `Gates Enterprises is the only contractor in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339 Google reviews (4.9 stars) and thousands of completed projects, we bring unmatched credentials to every ${n.name} project. We also point homeowners to HailScore, an independent third-party hail-data tool, for free ${c.city} hail-history data to help them understand their specific risk.`,
     },
   ];
 

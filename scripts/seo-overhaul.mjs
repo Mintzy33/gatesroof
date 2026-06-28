@@ -332,7 +332,7 @@ const bestRooferPages = {
   'best-roofer-denver/page.tsx': {
     oldTitle: 'Best Roofing Company in Denver, Colorado (2026) | Gates Enterprises',
     newTitle: 'Best Roofer Denver CO (2026) | 4x Certified ★ 305+ Reviews',
-    oldDesc: "Looking for the best roofer in Denver? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, proprietary HailScore technology. Free inspections. (720) 766-3377.",
+    oldDesc: "Looking for the best roofer in Denver? Gates Enterprises is Colorado's only quadruple certified roofing contractor. 305+ Google reviews, 4.8 stars, HailScore data. Free inspections. (720) 766-3377.",
     newDesc: "Denver's best roofer: 4x manufacturer certified, 7,200+ roofs, 4.8★ from 305 reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
   },
   'best-roofer-fort-collins/page.tsx': {
@@ -485,7 +485,7 @@ const otherPages = {
   'why-gates-enterprises/page.tsx': {
     oldTitle: "Why Choose Gates Enterprises Over Other Colorado Roofers | Gates Enterprises",
     newTitle: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-    oldDesc: "What makes Gates Enterprises different? Colorado's only quadruple certified roofing contractor with 305+ Google reviews, 4.8 stars, and proprietary HailScore technology. See how we compare.",
+    oldDesc: "What makes Gates Enterprises different? Colorado's only quadruple certified roofing contractor with 305+ Google reviews, 4.8 stars, and HailScore data. See how we compare.",
     newDesc: "Colorado's only 4x manufacturer certified roofer. 7,200+ roofs, 4.8★ from 305 reviews, plus HailScore technology. See why homeowners choose us",
   },
 };
@@ -513,7 +513,7 @@ const toolPages = {
   'tools/hail-risk-check/page.tsx': {
     oldTitle: "Hail Risk Check | Check Your Home's Hail Score | Gates Enterprises",
     newTitle: "Free Hail Risk Check | Your Home's Score ★ Gates",
-    oldDesc: "Look up your home's hail risk score powered by HailScore, a Gates Enterprises company. 4.5 million+ hail records, 10 years of data, all 50 states. Free instant results.",
+    oldDesc: "Look up your home's hail risk score powered by HailScore, an independent third-party tool. 4.5 million+ hail records, 10 years of data, all 50 states. Free instant results.",
     newDesc: "Check your home's hail risk score free. 4.5M+ hail records, 10 years of data, all 50 states. Instant results. Powered by HailScore. (720) 766-3377",
   },
   'tools/insurance-coverage-estimator/page.tsx': {

@@ -4,11 +4,11 @@ import HailRiskContent from "./content";
 
 export const metadata: Metadata = {
   title: "Free Hail Risk Check | Your Home's Score ★ Gates",
-  description: "Check your home's hail risk score for free. Powered by millions of radar records spanning 10 years and all 50 states. Instant results from HailScore.",
+  description: "Check your home's hail risk score for free. Powered by millions of radar records spanning 10 years and all 50 states. Instant results from HailScore, an independent third-party hail-data tool.",
   alternates: { canonical: "https://www.gatesroof.com/tools/hail-risk-check" },
   openGraph: {
     title: "Free Hail Risk Check | Your Home's Score ★ Gates",
-    description: "Check your home's hail risk score for free. Powered by millions of radar records spanning 10 years and all 50 states. Instant results from HailScore.",
+    description: "Check your home's hail risk score for free. Powered by millions of radar records spanning 10 years and all 50 states. Instant results from HailScore, an independent third-party hail-data tool.",
     url: "https://www.gatesroof.com/tools/hail-risk-check",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -20,7 +20,7 @@ const webAppSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Hail Risk Check",
-  "description": "Check your home's hail risk score based on millions of NOAA radar hail records. Powered by HailScore.",
+  "description": "Check your home's hail risk score based on millions of NOAA radar hail records. Hail data provided by HailScore, an independent third-party tool.",
   "url": "https://www.gatesroof.com/tools/hail-risk-check",
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "All",

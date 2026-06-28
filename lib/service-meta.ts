@@ -120,7 +120,7 @@ export function getMetaTitle(service: ServiceData, city: CityData): string {
 export function getMetaDescription(service: ServiceData, city: CityData): string {
   const hailData = getHailScore(city.slug);
   const hailPrefix = hailData
-    ? `${city.city} has a HailScore of ${hailData.hailScore}/100. `
+    ? `${city.city} scores ${hailData.hailScore}/100 on HailScore, an independent third-party hail-data tool. `
     : "";
 
   const variants = descriptionVariants[service.slug];

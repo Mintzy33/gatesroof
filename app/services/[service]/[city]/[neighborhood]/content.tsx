@@ -61,7 +61,7 @@ function getNeighborhoodWhyChoose(neighborhoodName: string, cityName: string, ho
     `Experience with ${housingAge} homes common in ${neighborhoodName}`,
     `Local knowledge of ${cityName} permitting and inspection requirements`,
     "Full manufacturer warranty options on every certified installation",
-    `Free HailScore risk assessment for your ${neighborhoodName} property`,
+    `Free hail-history lookup via HailScore, an independent third-party tool, for your ${neighborhoodName} property`,
   ];
 }
 

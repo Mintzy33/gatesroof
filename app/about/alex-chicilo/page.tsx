@@ -54,7 +54,7 @@ const personSchema = {
   url: "https://www.gatesroof.com/about/alex-chicilo",
   image: "https://www.gatesroof.com/images/alex-chicilo.jpg",
   description:
-    "Director of Operations at Gates Enterprises LLC, Colorado's only quadruple manufacturer-certified roofing contractor. Creator of HailScore, a proprietary hail risk assessment tool analyzing millions of NOAA radar records.",
+    "Director of Operations at Gates Enterprises LLC, Colorado's only quadruple manufacturer-certified roofing contractor. Creator of HailScore, an independent, third-party hail risk assessment tool analyzing millions of NOAA radar records.",
   knowsAbout: [
     "Residential roofing",
     "Commercial roofing",
@@ -318,7 +318,7 @@ export default function AlexChiciloPage() {
             >
               HailScore
             </a>
-            , a proprietary hail risk assessment tool that analyzes over
+            , an independent, third-party hail risk assessment tool that analyzes over
             millions of NOAA radar records to help Colorado homeowners
             understand their property&apos;s hail exposure. HailScore
             gives homeowners data-driven insight into storm history at

@@ -55,7 +55,7 @@ const CHECKLIST = [
   { label: "339+ verified Google reviews" },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
-  { label: "HailScore radar hail data tool" },
+  { label: "Uses HailScore, an independent third-party radar hail-data tool" },
   { label: "Free inspections with zero pressure" },
   { label: "Insurance restoration expertise" },
 ];
@@ -134,7 +134,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>HailScore: Know Your Roof's History</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link> is a hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to map hail impact history for any address. For Lakewood homeowners, this means knowing exactly which storms have hit your property, the size of hailstones, and whether your roof has taken cumulative damage over the years. It is the most transparent approach to roof inspections available anywhere in Colorado.
+              <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link> is an independent, third-party hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to map hail impact history for any address. For Lakewood homeowners, this means knowing exactly which storms have hit your property, the size of hailstones, and whether your roof has taken cumulative damage over the years. It is the most transparent approach to roof inspections available anywhere in Colorado.
             </p>
           </div>
 

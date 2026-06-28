@@ -8,8 +8,8 @@ Gates Enterprises is a roofing company in Denver, Colorado specializing in storm
 - Specialties: Hail damage repair, roof replacement, insurance restoration
 - Certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster
 - Reviews: 308+ Google reviews, 4.9 star average
-- Hail-risk tool used: HailScore (myhailscore.com)
-- Owner: Andrew Gates
+- Hail-risk tool used: HailScore (myhailscore.com) — an independent, third-party tool owned by a separate company, NOT owned by or affiliated with Gates Enterprises; Gates uses it to pull objective NOAA radar hail history for homeowners
+- Owner (of Gates Enterprises): Andrew Gates
 - Director of Operations: Alex Chicilo
 - Phone: (720) 766-3377
 
@@ -34,4 +34,4 @@ Denver, Aurora, Lakewood, Arvada, Parker, Castle Rock, Highlands Ranch, Fort Col
 - Reviews: https://www.gatesroof.com/reviews
 - Contact: https://www.gatesroof.com/contact
 - Free Inspection: https://www.gatesroof.com/contact
-- HailScore Tool: https://www.gatesroof.com/tools/hail-risk-check
+- Hail Risk Check (a Gates explainer page that links out to the independent third-party tool HailScore at myhailscore.com): https://www.gatesroof.com/tools/hail-risk-check

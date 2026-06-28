@@ -73,7 +73,7 @@ export default function HailScoreCard({
           >
             <img
               src="/hailscore-wordmark.png"
-              alt="HailScore - Hail Risk Data"
+              alt="HailScore - independent third-party hail risk data tool"
               style={{ height: 28 }}
             />
           </a>
@@ -188,7 +188,7 @@ export default function HailScoreCard({
                   >
                     HailScore
                   </a>
-                  , a hail-data tool.
+                  , an independent, third-party hail-data tool.
                 </div>
               </div>
             </div>

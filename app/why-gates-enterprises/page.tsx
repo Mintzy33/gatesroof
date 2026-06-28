@@ -5,11 +5,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-  description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, HailScore data, and warranties others cannot offer.",
+  description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.",
   alternates: { canonical: "https://www.gatesroof.com/why-gates-enterprises" },
   openGraph: {
     title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-    description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, HailScore data, and warranties others cannot offer.",
+    description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.",
     url: "https://www.gatesroof.com/why-gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews, a 4.9 star rating, HailScore radar data, and 10+ years of experience on the Front Range, Gates combines credentials, track record, and innovation in a way no other Colorado roofer can."
+    a: "Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews, a 4.9 star rating, NOAA hail history pulled from the independent third-party tool HailScore, and 10+ years of experience on the Front Range, Gates combines credentials, track record, and a data-driven process in a way no other Colorado roofer can."
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
-    a: "Three things set Gates apart. First, quadruple manufacturer certification, something no other Colorado roofer has achieved. Second, HailScore, a hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 339+ Google reviews that reflects years of consistent quality, not a single good season."
+    a: "Three things set Gates apart. First, quadruple manufacturer certification, something no other Colorado roofer has achieved. Second, HailScore, an independent, third-party hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 339+ Google reviews that reflects years of consistent quality, not a single good season."
   },
   {
     q: "What is HailScore?",
-    a: "HailScore is a technology that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property. This gives homeowners an objective, data backed view of their roof's exposure before an inspector even climbs up."
+    a: "HailScore is an independent, third-party tool built and operated by a separate company that Gates Enterprises uses to analyze NOAA radar data and map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property. This gives homeowners an objective, data backed view of their roof's exposure before an inspector even climbs up."
   },
   {
     q: "Does Gates Enterprises offer warranties?",

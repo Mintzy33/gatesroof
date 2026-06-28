@@ -923,7 +923,7 @@ export default function GatesEnterprisesPage() {
                 >
                   free tools
                 </Link>
-                , and{" "}
+                , and the independent third-party tool{" "}
                 <a
                   href="https://myhailscore.com"
                   target="_blank"

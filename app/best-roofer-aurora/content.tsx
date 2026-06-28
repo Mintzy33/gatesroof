@@ -54,7 +54,7 @@ const CHECKLIST = [
   { label: "339+ verified Google reviews" },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
-  { label: "HailScore radar hail data tool" },
+  { label: "Uses HailScore, an independent third-party radar hail-data tool" },
   { label: "Free inspections with zero pressure" },
   { label: "Insurance restoration expertise" },
   { label: "Products from GAF, Owens Corning, Malarkey, and CertainTeed" },
@@ -134,7 +134,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Radar Backed Hail Data with HailScore</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Aurora's eastern neighborhoods sit where storms from the mountains meet the open plains, creating some of the most intense hail in the state. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, a hail-data tool that pulls NOAA radar data to reveal the exact hail history for any Aurora address. Before the inspector even climbs your roof, they know which storms have impacted your home, the hailstone sizes, and how many events your property has endured. Few Aurora roofers offer this.
+              Aurora's eastern neighborhoods sit where storms from the mountains meet the open plains, creating some of the most intense hail in the state. Gates Enterprises uses <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>HailScore</Link>, an independent, third-party hail-data tool that pulls NOAA radar data to reveal the exact hail history for any Aurora address. Before the inspector even climbs your roof, they know which storms have impacted your home, the hailstone sizes, and how many events your property has endured. Few Aurora roofers offer this.
             </p>
           </div>
 
