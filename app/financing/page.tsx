@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+        url: "https://www.gatesroof.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Roofing Financing & Payment Options - Gates Enterprises",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Affordable roof financing with $0 down options for Colorado homeowners. Multiple plans available to fit your budget. Get a free estimate today.",
     images: [
-      "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+      "https://www.gatesroof.com/og-image.jpg",
     ],
   },
 };

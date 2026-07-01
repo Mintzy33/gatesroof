@@ -108,7 +108,7 @@ export default function ServicesContent() {
               marginBottom: 20,
             }}
           >
-            Colorado&apos;s only quadruple manufacturer certified contractor
+            One of Colorado&apos;s only quadruple manufacturer certified contractors
           </p>
           <p
             style={{

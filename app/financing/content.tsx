@@ -50,7 +50,7 @@ export default function FinancingContent() {
             Flexible Payment Options for Your Roof
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified. 339+ Five Star Reviews. 4.9 Star Rating.
+            Quadruple Certified. 339+ Google Reviews. 4.9 Star Rating.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             A new roof is one of the most important investments you can make in your home. At Gates Enterprises, we believe cost should never prevent you from protecting your property. That is why we offer multiple payment options and work closely with insurance companies to help make the process as affordable as possible.

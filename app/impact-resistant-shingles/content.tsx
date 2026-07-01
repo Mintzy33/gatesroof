@@ -80,7 +80,7 @@ export default function ImpactResistantContent() {
             Class 4 Impact Resistant Shingles for Colorado Homes
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 12, maxWidth: 700 }}>
-            Protect your home from Colorado hail with the highest rated impact resistant shingles on the market. Installed by Colorado&apos;s only quadruple certified roofing contractor.
+            Protect your home from Colorado hail with the highest rated impact resistant shingles on the market. Installed by one of Colorado&apos;s only quadruple certified roofing contractors.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: GOLD, lineHeight: 1.6, marginBottom: 32, maxWidth: 700, fontWeight: 600 }}>
             Many Colorado homeowners save up to 28% on insurance premiums with a Class 4 roof.

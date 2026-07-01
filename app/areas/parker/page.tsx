@@ -5,11 +5,11 @@ import { cityBreadcrumb } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Parker CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 five-star reviews, free inspection. Call (720) 766-3377.",
+  description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 Google reviews (4.9 stars), free inspection. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
     title: "Parker CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 five-star reviews, free inspection. Call (720) 766-3377.",
+    description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 Google reviews (4.9 stars), free inspection. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -23,7 +23,7 @@ const citySchema = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.gatesroof.com/#organization",
+      "@id": "https://www.gatesroof.com/areas/parker#localbusiness",
       "name": "Gates Enterprises LLC",
       "image": "https://www.gatesroof.com/logo.png",
       "url": "https://www.gatesroof.com",
@@ -87,8 +87,8 @@ const citySchema = {
       },
       "sameAs": [
         "https://www.google.com/maps/place/Gates+Enterprises+LLC",
-        "https://www.facebook.com/gatesenterprises",
-        "https://www.instagram.com/gatesenterprises"
+        "https://www.facebook.com/GatesEnterprisesLLC/",
+        "https://www.instagram.com/gatesroofing"
       ]
     },
     {

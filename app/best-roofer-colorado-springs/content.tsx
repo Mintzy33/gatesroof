@@ -29,11 +29,11 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Colorado Springs?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality is well documented."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality is well documented."
   },
   {
     q: "What certifications should a Colorado Springs roofer have?",
-    a: "Look for manufacturer certifications from major brands like GAF, Owens Corning, Malarkey, and CertainTeed. These require contractors to meet strict standards for training, quality, and customer satisfaction. Certified roofers can offer extended warranties that uncertified companies cannot. Gates Enterprises holds all four, something no other Colorado roofer can claim."
+    a: "Look for manufacturer certifications from major brands like GAF, Owens Corning, Malarkey, and CertainTeed. These require contractors to meet strict standards for training, quality, and customer satisfaction. Certified roofers can offer extended warranties that uncertified companies cannot. Gates Enterprises holds all four, something very few Colorado roofers can claim."
   },
   {
     q: "How do I choose a roofing company in Colorado Springs?",
@@ -91,7 +91,7 @@ export default function BestRooferColoradoSpringsContent() {
             Best Roofing Company in Colorado Springs (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado Springs homeowners know that weather along the Front Range does not play favorites. From the massive hailstorms that sweep down from the Palmer Divide to the high winds that funnel through the Ute Pass corridor, your roof takes a beating. Finding the right roofing company is not about picking the cheapest bid. It is about choosing a contractor with the certifications, reviews, and technology to protect your biggest investment. Here is what to look for and why Gates Enterprises LLC leads the field.
@@ -120,7 +120,7 @@ export default function BestRooferColoradoSpringsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Manufacturer Certifications That Prove Quality</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The roofing industry's highest credentials come from the manufacturers themselves. GAF, Owens Corning, Malarkey, and CertainTeed each run certification programs that vet contractors for installation quality, business stability, and customer satisfaction. Most roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado that holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.
+              The roofing industry's highest credentials come from the manufacturers themselves. GAF, Owens Corning, Malarkey, and CertainTeed each run certification programs that vet contractors for installation quality, business stability, and customer satisfaction. Most roofers hold zero certifications. A few hold one. Gates Enterprises LLC is one of the only roofing contractors in Colorado that hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function BestRooferColoradoSpringsContent() {
 
       <CTA
         title="Colorado Springs Deserves Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

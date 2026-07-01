@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Brighton CO Roofer | 4x Certified, 339+ Reviews ★",
-  description: "Trusted Brighton CO roofer with 339+ five-star reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
+  description: "Trusted Brighton CO roofer with 339+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
   alternates: { canonical: "https://www.gatesroof.com/areas/brighton" },
   openGraph: {
     title: "Brighton CO Roofer | 4x Certified, 339+ Reviews ★",
-    description: "Trusted Brighton CO roofer with 339+ five-star reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
+    description: "Trusted Brighton CO roofer with 339+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
     url: "https://www.gatesroof.com/areas/brighton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -23,13 +23,13 @@ const citySchema = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.gatesroof.com/#organization",
+      "@id": "https://www.gatesroof.com/areas/brighton#localbusiness",
       "name": "Gates Enterprises LLC",
       "image": "https://www.gatesroof.com/logo.png",
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2014",
-      "description": "Quadruple manufacturer certified roofing contractor serving Brighton, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. 300+ Google reviews, 4.9 stars.",
+      "description": "Quadruple manufacturer certified roofing contractor serving Brighton, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. 339+ Google reviews, 4.9 stars.",
       "areaServed": [
         {
           "@type": "City",
@@ -63,19 +63,19 @@ const citySchema = {
         "@type": "OfferCatalog",
         "name": "Roofing and Exterior Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://www.gatesroof.com/storm-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://www.gatesroof.com/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://www.gatesroof.com/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://www.gatesroof.com/siding" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://www.gatesroof.com/gutters" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://www.gatesroof.com/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://www.gatesroof.com/painting" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://www.gatesroof.com/services/storm-hail-damage" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://www.gatesroof.com/services/roof-replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://www.gatesroof.com/services/roof-repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://www.gatesroof.com/services/siding-exterior" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://www.gatesroof.com/services/gutters-guards" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://www.gatesroof.com/services/windows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://www.gatesroof.com/services/paint" } }
         ]
       },
       "sameAs": [
         "https://www.google.com/maps/place/Gates+Enterprises+LLC",
-        "https://www.facebook.com/gatesenterprises",
-        "https://www.instagram.com/gatesenterprises"
+        "https://www.facebook.com/GatesEnterprisesLLC/",
+        "https://www.instagram.com/gatesroofing"
       ]
     },
     {

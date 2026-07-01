@@ -204,7 +204,7 @@ export default function CityContent() {
             Roofing Contractor in Fort Collins, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 339+ Five Star Reviews. Serving Northern Colorado for 10+ Years.
+            Quadruple Manufacturer Certified. 339+ Google Reviews. Serving Northern Colorado for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Fort Collins sits at the northern end of Colorado's Front Range, where storms forming along the foothills produce some of the most frequent and severe hail in the state. With a population of roughly 175,000 and rapid growth pushing east into Timnath and beyond, thousands of homes face hail damage every season. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 339+ Google reviews, and has completed 7,200+ roofs across Colorado. From historic bungalows in Old Town to new construction in Rigden Farm, we deliver the same quality and care on every project.

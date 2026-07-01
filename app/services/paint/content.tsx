@@ -128,9 +128,9 @@ export default function PaintContent() {
           </div>
           <div>
             <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 44, fontWeight: 800, color: GOLD }}>
-              <CounterGSAP end={293} suffix="+" duration={2} delay={0.4} />
+              <CounterGSAP end={339} suffix="+" duration={2} delay={0.4} />
             </div>
-            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Five Star Reviews</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Google Reviews</div>
           </div>
         </div>
       </section>

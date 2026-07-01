@@ -216,7 +216,7 @@ export default function StormChasersContent() {
           <div className="gates-advantage-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             {[
               { title: "Local Since 2014", desc: "Gates Enterprises has been roofing along Colorado's Front Range since 2014. A permanent, local team that is here today and will be here when you need them." },
-              { title: "Quadruple Certified", desc: "The only roofer in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster." },
+              { title: "Quadruple Certified", desc: "One of the only roofers in Colorado certified by all four major manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster." },
               { title: "339+ Reviews, 4.9 Stars", desc: "Over 339 verified Google reviews from real Colorado homeowners with a 4.9 star average. Years of consistent five-star performance, not a flash in the pan." },
               { title: "Real Warranty Protection", desc: "Your warranty is backed by both the manufacturer AND a workmanship guarantee from Gates Enterprises. Not a piece of paper from a company that will not exist next year." },
             ].map((item, i) => (
@@ -257,7 +257,7 @@ export default function StormChasersContent() {
 
       <CTA
         title="Choose a Roofer Who Will Be Here Tomorrow"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

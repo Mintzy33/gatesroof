@@ -364,7 +364,7 @@ export default function RoofReplacementContent() {
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" as const }}>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: ACCENT, letterSpacing: "0.2em" }}>CERTIFIED ROOFERS NEAR YOU</span>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 800, color: NAVY, margin: "10px 0 12px" }}>Best Roofer for Roof Replacement in Colorado</h2>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>GAF Master Elite, Owens Corning Preferred, and 339 five-star reviews. Find out why we are the top-rated replacement contractor in your city.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>GAF Master Elite, Owens Corning Preferred, and 339 Google reviews (4.9 stars). Find out why we are the top-rated replacement contractor in your city.</p>
           <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 8, justifyContent: "center" }}>
             {[
               { n: "Best Roofer in Denver", s: "denver" }, { n: "Best Roofer in Aurora", s: "aurora" }, { n: "Best Roofer in Lakewood", s: "lakewood" },

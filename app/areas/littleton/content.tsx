@@ -470,7 +470,7 @@ export default function CityContent() {
       {/* 12. FINAL CTA */}
       <CTA
         title="Get a Free Roof Inspection in Littleton"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 339 five star reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and 339 Google reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online."
       />
 
       {/* 13. SERVICES TAIL */}

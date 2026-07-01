@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Conifer CO Roofer | 4x Certified ★ Mountain Experts",
-  description: "Conifer CO mountain roofing by a 4x certified contractor. Built for altitude, snow, and Colorado storms. 339+ five-star reviews. Free inspection.",
+  description: "Conifer CO mountain roofing by a 4x certified contractor. Built for altitude, snow, and Colorado storms. 339+ Google reviews. Free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/conifer" },
   openGraph: {
     title: "Conifer CO Roofer | 4x Certified ★ Mountain Experts",
-    description: "Conifer CO mountain roofing by a 4x certified contractor. Built for altitude, snow, and Colorado storms. 339+ five-star reviews. Free inspection.",
+    description: "Conifer CO mountain roofing by a 4x certified contractor. Built for altitude, snow, and Colorado storms. 339+ Google reviews. Free inspection.",
     url: "https://www.gatesroof.com/areas/conifer",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -8,11 +8,11 @@ import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Roofing Companies in Aurora CO (2026) | Gates Enterprises | 339+ Reviews",
-  description: "Looking for roofing companies in Aurora, CO? Gates Enterprises is 4x manufacturer certified with 339 five-star Google reviews. Free inspections. (720) 766-3377",
+  description: "Looking for roofing companies in Aurora, CO? Gates Enterprises is 4x manufacturer certified with 339 Google reviews, 4.9 stars. Free inspections. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/roofing-companies-aurora" },
   openGraph: {
     title: "Roofing Companies in Aurora CO (2026) | 4x Certified | 339+ Reviews",
-    description: "Looking for roofing companies in Aurora, CO? Gates Enterprises is 4x manufacturer certified with 339 five-star Google reviews. Free inspections. (720) 766-3377",
+    description: "Looking for roofing companies in Aurora, CO? Gates Enterprises is 4x manufacturer certified with 339 Google reviews, 4.9 stars. Free inspections. (720) 766-3377",
     url: "https://www.gatesroof.com/roofing-companies-aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -31,7 +31,7 @@ const TEXT_LIGHT = "#64748B";
 const FAQS = [
   {
     q: "What should I look for in a roofing company in Aurora?",
-    a: "Start with manufacturer certifications — they verify quality, training, and installation standards. Check Google reviews for consistent recent feedback. Confirm proper insurance and licensing. Ask about experience with Colorado hail damage specifically. Gates Enterprises holds all four major manufacturer certifications and has 339 five-star Google reviews from Aurora-area homeowners."
+    a: "Start with manufacturer certifications — they verify quality, training, and installation standards. Check Google reviews for consistent recent feedback. Confirm proper insurance and licensing. Ask about experience with Colorado hail damage specifically. Gates Enterprises holds all four major manufacturer certifications and has 339 Google reviews (4.9-star average) from Aurora-area homeowners."
   },
   {
     q: "How do I know if a roofing company is legitimate in Colorado?",
@@ -113,10 +113,10 @@ export default function Page() {
               Why Aurora Homeowners Choose Gates Enterprises
             </h2>
             <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: 16, color: TEXT_LIGHT, lineHeight: 1.7, marginBottom: 32 }}>
-              339 five-star Google reviews. 7,200+ completed roofs. The only 4x manufacturer certified roofer in Colorado.
+              339 Google reviews, 4.9 stars. 7,200+ completed roofs. One of the only 4x manufacturer certified roofers in Colorado.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 32, textAlign: "left" as const }}>
-              {["GAF Master Elite Contractor", "Owens Corning Preferred Contractor", "Malarkey Emerald Premium Contractor", "CertainTeed ShingleMaster", "339 five-star Google reviews", "7,200+ roofs completed", "10+ years on the Front Range", "Free inspections, no pressure"].map((item, i) => (
+              {["GAF Master Elite Contractor", "Owens Corning Preferred Contractor", "Malarkey Emerald Premium Contractor", "CertainTeed ShingleMaster", "339 Google reviews, 4.9 stars", "7,200+ roofs completed", "10+ years on the Front Range", "Free inspections, no pressure"].map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: 2, flexShrink: 0 }}><polyline points="20 6 9 17 4 12" /></svg>
                   <span style={{ fontFamily: "var(--font-dm-sans)", fontSize: 14, color: TEXT, fontWeight: 500 }}>{item}</span>

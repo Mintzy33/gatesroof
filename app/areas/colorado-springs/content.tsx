@@ -206,7 +206,7 @@ export default function CityContent() {
             Roofing Contractor in Colorado Springs, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 339+ Five Star Reviews. 7,200+ Roofs Completed.
+            Quadruple Manufacturer Certified. 339+ Google Reviews. 7,200+ Roofs Completed.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado Springs sits at the base of Pikes Peak, directly in the path of severe Palmer Divide storms that deliver some of the most damaging hail in Colorado. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 339+ Google reviews, and has completed over 7,200 roofing projects across Colorado's Front Range. From historic homes in Old Colorado City to planned communities in Briargate and Flying Horse, we deliver the same quality and care on every project.

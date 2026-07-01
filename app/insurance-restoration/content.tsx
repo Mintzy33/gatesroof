@@ -86,7 +86,7 @@ export default function InsuranceRestorationContent() {
             Colorado's Premier Insurance Restoration Roofer
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified. Data Driven Documentation. 339+ Five Star Reviews.
+            Quadruple Certified. Data Driven Documentation. 339+ Google Reviews.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado ranks number one in the nation for insured hail losses. Every year, tens of thousands of homeowners along the Front Range file insurance claims for storm damage to their roofs, siding, and gutters. The insurance restoration process can feel overwhelming, but it does not have to be. Gates Enterprises LLC has guided thousands of Colorado homeowners through the process, providing thorough documentation, clear communication, and quality restoration work backed by four manufacturer certifications.

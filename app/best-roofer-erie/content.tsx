@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Erie?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Erie. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Erie. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "How do I choose a roofing company in Erie?",
@@ -91,7 +91,7 @@ export default function BestRooferErieContent() {
             Best Roofing Company in Erie, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado&apos;s Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado&apos;s Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Erie sits on the boundary of Weld and Boulder counties in one of Colorado's fastest growing corridors, with thousands of new homes built in the last decade. The area sits directly in the path of hail storms that track east from the mountains toward the plains, making roof replacement one of the most common needs for Erie homeowners.
@@ -131,7 +131,7 @@ export default function BestRooferErieContent() {
       <section style={{ padding: "80px 24px", background: LIGHT_BG }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            The Only Quadruple Certified Roofer in Colorado
+            One of the Only Quadruple Certified Roofers in Colorado
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four, giving Erie homeowners access to the best warranties and materials in the industry.
@@ -210,7 +210,7 @@ export default function BestRooferErieContent() {
 
       <CTA
         title="Get Erie's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

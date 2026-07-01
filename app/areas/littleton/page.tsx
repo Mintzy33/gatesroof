@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Littleton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
+  description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 Google reviews (4.9 stars). Free inspection. Serving Littleton for 10+ years.",
   alternates: { canonical: "https://www.gatesroof.com/areas/littleton" },
   openGraph: {
     title: "Littleton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 five-star reviews. Free inspection. Serving Littleton for 10+ years.",
+    description: "Hail hit your Littleton roof? Gates Enterprises is GAF Master Elite certified with 339 Google reviews (4.9 stars). Free inspection. Serving Littleton for 10+ years.",
     url: "https://www.gatesroof.com/areas/littleton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

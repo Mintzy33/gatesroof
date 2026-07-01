@@ -294,7 +294,7 @@ export default function HowItWorksContent() {
               What Makes Gates Different
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: TEXT_LIGHT, textAlign: "center", maxWidth: 600, margin: "0 auto 48px" }}>
-              Colorado's only quadruple manufacturer certified roofing contractor. The numbers speak for themselves.
+              One of Colorado's only quadruple manufacturer certified roofing contractors. The numbers speak for themselves.
             </p>
             <div className="stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24 }}>
               {STATS.map((stat) => (

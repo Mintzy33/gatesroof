@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Centennial CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Centennial hail season is here. Gates Enterprises: 339 five-star Google reviews, GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
+  description: "Centennial hail season is here. Gates Enterprises: 339 Google reviews (4.9 stars), GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/centennial" },
   openGraph: {
     title: "Centennial CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Centennial hail season is here. Gates Enterprises: 339 five-star Google reviews, GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
+    description: "Centennial hail season is here. Gates Enterprises: 339 Google reviews (4.9 stars), GAF Master Elite certified, 7,200+ roofs replaced. Free hail inspection.",
     url: "https://www.gatesroof.com/areas/centennial",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

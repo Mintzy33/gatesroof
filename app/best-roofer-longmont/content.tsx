@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Longmont?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Longmont. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Longmont. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
   },
   {
     q: "What certifications should a Longmont roofer have?",
@@ -91,7 +91,7 @@ export default function BestRooferLongmontContent() {
             Best Roofing Company in Longmont, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Longmont stretches across the northern Front Range plains between Boulder and the agricultural lands to the east, sitting squarely in one of Colorado's most active hail corridors. The city has experienced multiple catastrophic hail events in recent years, with storms producing baseball sized hail that devastated entire neighborhoods. For Longmont homeowners, choosing a certified, experienced roofer is not optional. This guide explains what to look for and why Gates Enterprises LLC is a standout choice.
@@ -120,7 +120,7 @@ export default function BestRooferLongmontContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>1. Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Manufacturer certifications are the gold standard in roofing. Companies like GAF, Owens Corning, Malarkey, and CertainTeed only certify contractors who meet rigorous standards for installation quality, business practices, and customer satisfaction. Certified contractors can offer extended warranties that uncertified companies simply cannot. In all of Colorado, only one company holds all four premium certifications: Gates Enterprises LLC.
+              Manufacturer certifications are the gold standard in roofing. Companies like GAF, Owens Corning, Malarkey, and CertainTeed only certify contractors who meet rigorous standards for installation quality, business practices, and customer satisfaction. Certified contractors can offer extended warranties that uncertified companies simply cannot. In all of Colorado, only a handful of companies hold all four premium certifications — Gates Enterprises LLC is one of them.
             </p>
           </div>
 
@@ -185,10 +185,10 @@ export default function BestRooferLongmontContent() {
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            The Only Quadruple Certified Roofer in Colorado
+            One of the Only Quadruple Certified Roofers in Colorado
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that sets Gates apart from every other roofing company in Colorado.
+            Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that very few roofing companies in Colorado can match.
           </p>
           <div className="best-roofer-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
@@ -291,7 +291,7 @@ export default function BestRooferLongmontContent() {
 
       <CTA
         title="Get Longmont's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

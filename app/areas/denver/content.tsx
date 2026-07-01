@@ -204,10 +204,10 @@ export default function CityContent() {
             Roofing Contractor in Denver, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Protecting Denver Homes for 10+ Years.
+            Quadruple Manufacturer Certified. 339+ Google Reviews. Protecting Denver Homes for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Denver sits in one of the most active hail corridors in North America. Every spring and summer, severe storms roll off the Rocky Mountains and pound neighborhoods across the metro area. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 300+ Google reviews, and has been serving Denver homeowners since 2014. From historic bungalows in Washington Park to new construction in Green Valley Ranch, we deliver the same quality and care on every project.
+            Denver sits in one of the most active hail corridors in North America. Every spring and summer, severe storms roll off the Rocky Mountains and pound neighborhoods across the metro area. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across 339+ Google reviews, and has been serving Denver homeowners since 2014. From historic bungalows in Washington Park to new construction in Green Valley Ranch, we deliver the same quality and care on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -238,9 +238,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.9 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>339+ Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Denver homeowners have hundreds of roofing contractors to choose from. They keep choosing Gates Enterprises because we deliver honest assessments, quality craftsmanship, and straightforward communication. Our 4.9 star rating across 300+ reviews reflects that consistency.
+              Denver homeowners have hundreds of roofing contractors to choose from. They keep choosing Gates Enterprises because we deliver honest assessments, quality craftsmanship, and straightforward communication. Our 4.9 star rating across 339+ reviews reflects that consistency.
             </p>
           </div>
 
@@ -292,6 +292,9 @@ export default function CityContent() {
           </div>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             Denver's hail season runs from April through September, peaking in May, June, and July. If your home has been through a storm season without a professional inspection, there may be hidden damage shortening the life of your roof.
+          </p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
+            Not sure what to do after a storm? Our guide to <Link href="/blog/hail-storm-damage-roof-repair-denver" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>hail and storm damage roof repair in Denver &mdash; who to call and what to do</Link> walks through spotting hail damage, deciding repair vs. replacement, running the insurance claim, and avoiding storm-chasers.
           </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Request a Free Inspection &amp; Estimate &rarr;
@@ -383,18 +386,18 @@ export default function CityContent() {
             What Denver Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 300+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the most trusted roofing contractors in the Denver metro. Our reviews come from real homeowners across Denver's neighborhoods. Here is what they have to say.
+            With 339+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the most trusted roofing contractors in the Denver metro. Our reviews come from real homeowners across Denver's neighborhoods. Here is what they have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 300+ Reviews on Google &rarr;
+            Read All 339+ Reviews on Google &rarr;
           </a>
         </div>
       </section>

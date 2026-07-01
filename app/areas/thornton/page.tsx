@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Thornton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Thornton hail season runs April through August. Gates Enterprises: 339 five-star reviews, 4x certified, 7,200+ roofs. Free hail damage inspection today.",
+  description: "Thornton hail season runs April through August. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free hail damage inspection today.",
   alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
     title: "Thornton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Thornton hail season runs April through August. Gates Enterprises: 339 five-star reviews, 4x certified, 7,200+ roofs. Free hail damage inspection today.",
+    description: "Thornton hail season runs April through August. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free hail damage inspection today.",
     url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

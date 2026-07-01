@@ -29,7 +29,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 339 Google reviews with a 4.9 star average."}},
+    {"@type":"Question","name":"What is Gates Enterprises?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises is a quadruple manufacturer-certified roofing company headquartered in Lakewood, Colorado, serving the Denver metro and Front Range. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over 339 Google reviews with a 4.9 star average."}},
     {"@type":"Question","name":"Does Gates Enterprises help with insurance claims?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion."}},
     {"@type":"Question","name":"What areas does Gates Enterprises serve?","acceptedAnswer":{"@type":"Answer","text":"Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities."}},
     {"@type":"Question","name":"Does insurance cover hail damage?","acceptedAnswer":{"@type":"Answer","text":"Coverage depends on your specific policy and the cause of damage. Gates Enterprises documents storm damage thoroughly and works with your adjuster throughout the claims process so decisions are based on clear, evidence-backed assessments."}},
@@ -98,7 +98,7 @@ export default function Home() {
       {/* TRUST BAR */}
       <section className="trust-bar" style={{ background: WHITE, padding: "20px 16px", borderBottom: "1px solid rgba(13,33,55,0.04)" }}>
         <div className="trust-badges" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap" as const }}>
-          {["GAF MASTER ELITE", "OWENS CORNING PREFERRED", "MALARKEY EMERALD PREMIUM", "CERTAINTEED SHINGLE MASTER PRO", "BBB A+"].map((b) => (
+          {["GAF MASTER ELITE", "OWENS CORNING PREFERRED", "MALARKEY EMERALD PREMIUM", "CERTAINTEED SHINGLEMASTER", "BBB A+"].map((b) => (
             <span key={b} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: NAVY, letterSpacing: "0.12em", opacity: 0.65 }}>{b}</span>
           ))}
         </div>
@@ -409,7 +409,6 @@ export default function Home() {
           {[
             { l: "Free Roofing Tools", h: "/tools" },
             { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
-            { l: "About Gates Enterprises", h: "/about/gates-enterprises" },
             { l: "Insurance Coverage Estimator", h: "/tools/insurance-coverage-estimator" },
             { l: "Roof Replacement Cost Estimator", h: "/tools/roof-age-calculator" },
             { l: "Hail Risk Check", h: "/tools/hail-risk-check" },
@@ -432,7 +431,7 @@ export default function Home() {
           </ScrollReveal>
           <div style={{ display: "flex", flexDirection: "column" as const, gap: 24 }}>
             {[
-              { q: "What is Gates Enterprises?", a: `Gates Enterprises is a quadruple manufacturer-certified roofing company in Denver, Colorado. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over ${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating} star average.` },
+              { q: "What is Gates Enterprises?", a: `Gates Enterprises is a quadruple manufacturer-certified roofing company headquartered in Lakewood, Colorado, serving the Denver metro and Front Range. They hold certifications from GAF, Owens Corning, Malarkey, and CertainTeed, and have over ${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating} star average.` },
               { q: "Does Gates Enterprises help with insurance claims?", a: "Gates Enterprises helps homeowners document storm damage for insurance claims. They work with all major insurance carriers in Colorado and guide you through the adjuster process from inspection to completion." },
               { q: "What areas does Gates Enterprises serve?", a: "Gates Enterprises serves the entire Colorado Front Range, including Denver, Aurora, Lakewood, Colorado Springs, Fort Collins, Boulder, Parker, Castle Rock, and 50+ other cities." },
               { q: "What is HailScore?", a: "HailScore is a free, independent third-party hail risk assessment tool at myhailscore.com (a separate company, not owned by Gates). It analyzes millions of NOAA radar records to generate a hail risk score for any US address, and Gates Enterprises uses it to give homeowners objective storm data." },

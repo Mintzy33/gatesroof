@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+        url: "https://www.gatesroof.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Roofing Process - Gates Enterprises",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Your roof replacement in 5 simple steps. Free inspection, material selection, insurance help, and expert installation. See our proven process.",
     images: [
-      "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+      "https://www.gatesroof.com/og-image.jpg",
     ],
   },
 };

@@ -55,13 +55,13 @@ const localBusinessSchema = {
   logo: "https://www.gatesroof.com/logo.png",
   image: "https://www.gatesroof.com/og-image.jpg",
   description:
-    "Colorado's only quadruple manufacturer-certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Thousands of roofs completed since 2014.",
+    "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, 339+ Google reviews.",
   telephone: "+17207663377",
   email: "info@gatesroof.com",
   foundingDate: "2014",
   founder: {
     "@type": "Person",
-    "@id": "https://www.gatesroof.com/about/andrew-gates#person",
+    "@id": "https://www.gatesroof.com/about/gates-enterprises#person",
     name: "Andrew Gates",
     url: "https://www.gatesroof.com/about/gates-enterprises",
   },
@@ -72,10 +72,6 @@ const localBusinessSchema = {
     addressRegion: "CO",
     postalCode: "80215",
     addressCountry: "US",
-  },
-  numberOfEmployees: {
-    "@type": "QuantitativeValue",
-    minValue: 100,
   },
   areaServed: [
     { "@type": "City", name: "Denver", addressRegion: "CO" },
@@ -349,8 +345,8 @@ export default function GatesEnterprisesPage() {
               marginRight: "auto",
             }}
           >
-            Colorado&apos;s only quadruple manufacturer-certified roofing
-            company. Established 2014. Thousands of roofs completed. 65+
+            One of Colorado&apos;s only quadruple manufacturer-certified roofing
+            companies. Established 2014. Thousands of roofs completed. 65+
             cities served.
           </p>
         </div>

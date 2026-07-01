@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Aurora CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 339 five-star reviews and 7,200+ roofs replaced. Free inspection — no pressure.",
+  description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 339 Google reviews (4.9 stars) and 7,200+ roofs replaced. Free inspection — no pressure.",
   alternates: { canonical: "https://www.gatesroof.com/areas/aurora" },
   openGraph: {
     title: "Aurora CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 339 five-star reviews and 7,200+ roofs replaced. Free inspection — no pressure.",
+    description: "Aurora's hail season hits hard. Gates Enterprises is 4x certified with 339 Google reviews (4.9 stars) and 7,200+ roofs replaced. Free inspection — no pressure.",
     url: "https://www.gatesroof.com/areas/aurora",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

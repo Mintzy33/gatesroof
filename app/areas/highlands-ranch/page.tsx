@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Highlands Ranch Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Highlands Ranch gets hit hard every hail season. Gates Enterprises: 339 five-star reviews, 4x certified, 7,200+ roofs. Free inspection — call (720) 766-3377.",
+  description: "Highlands Ranch gets hit hard every hail season. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free inspection — call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/areas/highlands-ranch" },
   openGraph: {
     title: "Highlands Ranch Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Highlands Ranch gets hit hard every hail season. Gates Enterprises: 339 five-star reviews, 4x certified, 7,200+ roofs. Free inspection — call (720) 766-3377.",
+    description: "Highlands Ranch gets hit hard every hail season. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free inspection — call (720) 766-3377.",
     url: "https://www.gatesroof.com/areas/highlands-ranch",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

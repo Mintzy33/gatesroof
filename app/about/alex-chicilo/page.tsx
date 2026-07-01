@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
   description:
-    "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 339 reviews, and 4x manufacturer certified.",
+    "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. 7,200+ roofs, 339 reviews, and 4x manufacturer certified.",
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
     title: "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
     description:
-      "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore. 7,200+ roofs, 339 reviews, and 4x manufacturer certified.",
+      "Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. 7,200+ roofs, 339 reviews, and 4x manufacturer certified.",
     url: "https://www.gatesroof.com/about/alex-chicilo",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -54,7 +54,7 @@ const personSchema = {
   url: "https://www.gatesroof.com/about/alex-chicilo",
   image: "https://www.gatesroof.com/images/alex-chicilo.jpg",
   description:
-    "Director of Operations at Gates Enterprises LLC, Colorado's only quadruple manufacturer-certified roofing contractor. Creator of HailScore, an independent, third-party hail risk assessment tool analyzing millions of NOAA radar records.",
+    "Director of Operations at Gates Enterprises LLC, one of Colorado's only quadruple manufacturer-certified roofing contractors. Creator of HailScore, an independent, third-party hail risk assessment tool analyzing millions of NOAA radar records.",
   knowsAbout: [
     "Residential roofing",
     "Commercial roofing",
@@ -94,7 +94,6 @@ const personSchema = {
   sameAs: [
     "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC",
-    "https://myhailscore.com",
   ],
   address: {
     "@type": "PostalAddress",
@@ -524,7 +523,7 @@ export default function AlexChiciloPage() {
               {
                 icon: <BarChart3 size={28} color={ACCENT} />,
                 title: "HailScore Technology",
-                desc: "Alex built HailScore to analyze millions of NOAA radar records, giving homeowners data-driven hail risk assessments at their address.",
+                desc: "Alex built HailScore — an independent, third-party tool separate from Gates — to analyze millions of NOAA radar records, giving homeowners data-driven hail risk assessments at their address.",
               },
               {
                 icon: <MapPin size={28} color={ACCENT} />,

@@ -191,10 +191,10 @@ export default function CityContent() {
             Roofing Contractor in Morrison, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. 300+ Five Star Reviews. Trusted Mountain Roofing Experts for 10+ Years.
+            Quadruple Manufacturer Certified. 339+ Google Reviews. Trusted Mountain Roofing Experts for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2014, with quadruple manufacturer certifications, a 4.9 star reputation across 300+ Google reviews, and deep experience with mountain roofing.
+            Morrison sits at the gateway to the mountains, where the foothills meet the plains at roughly 5,800 feet elevation. Home to Red Rocks Amphitheatre and Bear Creek Canyon, this small town faces unique roofing challenges: hailstorms that intensify along the foothills, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. Gates Enterprises LLC has been protecting homes across Morrison and Jefferson County since 2014, with quadruple manufacturer certifications, a 4.9 star reputation across 339+ Google reviews, and deep experience with mountain roofing.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -224,7 +224,7 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>300+ Google Reviews. 4.9 Stars.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>339+ Google Reviews. 4.9 Stars.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
               Our reputation speaks for itself. Families across the foothills consistently rate Gates Enterprises among the top roofing contractors on Colorado's Front Range. We earn every review through transparent communication, quality craftsmanship, and respect for your home and property.
             </p>
@@ -369,18 +369,18 @@ export default function CityContent() {
             What Morrison Homeowners Say About Gates Enterprises
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 8 }}>
-            With 300+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Morrison neighbors have to say.
+            With 339+ Google reviews and a 4.9 star rating, Gates Enterprises LLC is one of the highest rated roofing contractors on Colorado's Front Range. Don't just take our word for it. See what your Morrison neighbors have to say.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(300+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
         <div style={{ maxWidth: 800, margin: "32px auto 0", display: "flex", gap: 14, flexWrap: "wrap" }}>
           <a href="https://www.google.com/maps/place/Gates+Enterprises+LLC" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}>
-            Read All 300+ Reviews on Google &rarr;
+            Read All 339+ Reviews on Google &rarr;
           </a>
         </div>
       </section>
@@ -400,7 +400,7 @@ export default function CityContent() {
       {/* ─── 9. ADDITIONAL CTA SECTION ─── */}
       <CTA
         title="Protect Your Morrison Home Today"
-        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises LLC is ready to help. With 10+ years of experience, quadruple manufacturer certifications, and 300+ five star reviews, you can trust us to get it right."
+        subtitle="Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises LLC is ready to help. With 10+ years of experience, quadruple manufacturer certifications, and 339+ Google reviews, you can trust us to get it right."
       />
 
       {/* ─── 10. INTERNAL LINKS SECTION ─── */}

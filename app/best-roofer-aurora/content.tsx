@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their reputation is built on consistent results."
+    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their reputation is built on consistent results."
   },
   {
     q: "How often does Aurora get hail damage?",
@@ -91,7 +91,7 @@ export default function BestRooferAuroraContent() {
             Best Roofing Company in Aurora, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Aurora is Colorado's third largest city and one of the most hail impacted communities along the Front Range. Stretching from the eastern edge of Denver across Arapahoe and Adams counties, Aurora's sprawling neighborhoods face severe storm exposure every year. When it is time to repair or replace your roof, the contractor you choose matters more here than almost anywhere else. This guide covers what to look for in an Aurora roofing company and why Gates Enterprises LLC consistently rises to the top.
@@ -120,7 +120,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. No other roofer in Colorado can say the same.
+              The most reliable indicator of a quality roofer is manufacturer certification. GAF, Owens Corning, Malarkey, and CertainTeed each vet contractors for installation quality, business practices, and customer satisfaction before granting certification. Most roofers hold none. Gates Enterprises LLC holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Very few roofers in Colorado can say the same.
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export default function BestRooferAuroraContent() {
 
       <CTA
         title="Aurora's Hail Season Demands Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

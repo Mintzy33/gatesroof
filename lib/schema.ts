@@ -13,7 +13,7 @@ export const BUSINESS_INFO = {
   logo: "https://www.gatesroof.com/logo.png",
   image: "https://www.gatesroof.com/og-image.jpg",
   description:
-    "Colorado's only quadruple manufacturer certified roofing contractor. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.",
+    "One of Colorado's only quadruple manufacturer certified roofing contractors. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.",
   address: {
     street: "1445 Holland St",
     locality: "Lakewood",
@@ -25,8 +25,8 @@ export const BUSINESS_INFO = {
   rating: { value: String(SITE_STATS.starRating), count: String(SITE_STATS.reviewCount), best: "5" },
   priceRange: "$$",
   sameAs: [
-    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
-    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.facebook.com/GatesEnterprisesLLC/",
+    "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC",

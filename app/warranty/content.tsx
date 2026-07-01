@@ -124,7 +124,7 @@ export default function WarrantyContent() {
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
           </div>
           <div style={{ width: 1, height: 24, background: "rgba(13,33,55,0.12)" }} />
-          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Colorado's Only Quadruple Certified Roofer</span>
+          <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>One of Colorado's Only Quadruple Certified Roofers</span>
         </div>
       </section>
 

@@ -63,7 +63,7 @@ export default function CityContent() {
               "Experienced with Broomfield HOA approval and documentation process",
               "Full insurance restoration support on hail and storm claims",
               "thousands of roofs completed across the Denver metro",
-              "4.9 star Google rating from 300+ verified reviews",
+              "4.9 star Google rating from 339+ verified reviews",
               "CertainTeed ShingleMaster and Malarkey Emerald Premium certified",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

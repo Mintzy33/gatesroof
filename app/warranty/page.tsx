@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+        url: "https://www.gatesroof.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Roofing Warranty Information - Gates Enterprises",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Roof warranties up to 50 years from four major manufacturers. Only 4x certified contractors qualify for this level of coverage. Learn your options.",
     images: [
-      "https://res.cloudinary.com/dyr5their/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
+      "https://www.gatesroof.com/og-image.jpg",
     ],
   },
 };

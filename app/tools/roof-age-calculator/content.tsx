@@ -424,8 +424,8 @@ export default function RoofCostEstimatorContent() {
                   }}
                 >
                   Gates Enterprises has helped thousands of Colorado homeowners navigate
-                  insurance claims. As Colorado&apos;s only quadruple manufacturer
-                  certified roofer (GAF Master Elite, Owens Corning Preferred, Malarkey
+                  insurance claims. As one of Colorado&apos;s only quadruple manufacturer
+                  certified roofers (GAF Master Elite, Owens Corning Preferred, Malarkey
                   Emerald Premium, CertainTeed ShingleMaster), we ensure your replacement
                   meets the highest standards.
                 </p>
@@ -507,7 +507,7 @@ export default function RoofCostEstimatorContent() {
               },
               {
                 q: "Why choose Gates Enterprises for roof replacement?",
-                a: "Gates Enterprises is Colorado's only quadruple manufacturer certified roofer, holding GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certifications. This means access to the best warranty options and installation standards from every major manufacturer.",
+                a: "Gates Enterprises is one of Colorado's only quadruple manufacturer certified roofers, holding GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certifications. This means access to the best warranty options and installation standards from every major manufacturer.",
               },
             ].map((faq, i) => (
               <div

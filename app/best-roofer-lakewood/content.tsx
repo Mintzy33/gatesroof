@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Lakewood, Colorado?",
-    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, they are a proven choice."
+    a: "Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, they are a proven choice."
   },
   {
     q: "Why choose a Lakewood based roofing company?",
@@ -120,7 +120,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Four Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Fewer than 2% of roofers in the country hold even one of these. No other Colorado roofer holds all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
+              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Fewer than 2% of roofers in the country hold even one of these. Very few Colorado roofers hold all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
             </p>
           </div>
 
@@ -249,7 +249,7 @@ export default function BestRooferLakewoodContent() {
 
       <CTA
         title="Your Lakewood Neighbor. Colorado's Best Roofer."
-        subtitle="Free inspections from the quadruple certified roofer headquartered right here in Lakewood. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections from the quadruple certified roofer headquartered right here in Lakewood. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

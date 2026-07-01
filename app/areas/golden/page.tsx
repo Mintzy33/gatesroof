@@ -5,11 +5,11 @@ import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Golden CO Roofer | 4x Certified, 339+ Reviews ★",
-  description: "Golden CO roofing from a locally operated, 4x certified team. Foothills wind and hail damage repair. 339+ five-star reviews. Book a free inspection.",
+  description: "Golden CO roofing from a locally operated, 4x certified team. Foothills wind and hail damage repair. 339+ Google reviews. Book a free inspection.",
   alternates: { canonical: "https://www.gatesroof.com/areas/golden" },
   openGraph: {
     title: "Golden CO Roofer | 4x Certified, 339+ Reviews ★",
-    description: "Golden CO roofing from a locally operated, 4x certified team. Foothills wind and hail damage repair. 339+ five-star reviews. Book a free inspection.",
+    description: "Golden CO roofing from a locally operated, 4x certified team. Foothills wind and hail damage repair. 339+ Google reviews. Book a free inspection.",
     url: "https://www.gatesroof.com/areas/golden",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

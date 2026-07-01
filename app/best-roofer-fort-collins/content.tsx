@@ -29,7 +29,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Fort Collins?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are the only contractor in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality speaks for itself."
+    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality speaks for itself."
   },
   {
     q: "Does Fort Collins get a lot of hail?",
@@ -91,7 +91,7 @@ export default function BestRooferFortCollinsContent() {
             Best Roofing Company in Fort Collins, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Fort Collins homeowners face a unique set of roofing challenges. Between the severe hailstorms that roll through Northern Colorado, the intense UV exposure at elevation, and the dramatic temperature swings from season to season, your roof needs to be installed right the first time. Finding the best roofing company in Fort Collins means looking beyond the cheapest quote. It means choosing a contractor with real certifications, a proven track record, and technology that sets them apart. Here is what to look for and why Gates Enterprises LLC stands above the competition.
@@ -120,7 +120,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Premium Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is the only roofing contractor in Colorado to hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.
+              The most reliable signal of a quality roofer is certification from the manufacturers whose products they install. GAF, Owens Corning, Malarkey, and CertainTeed each run rigorous certification programs that evaluate installation quality, business stability, and customer satisfaction. Most Fort Collins roofers hold zero certifications. A few hold one. Gates Enterprises LLC is one of the only roofing contractors in Colorado to hold all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster.
             </p>
           </div>
 
@@ -175,7 +175,7 @@ export default function BestRooferFortCollinsContent() {
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            Four Certifications No Other Colorado Roofer Has
+            Four Certifications Very Few Colorado Roofers Hold
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             Each certification means Fort Collins homeowners get access to the best products and warranties from that manufacturer.
@@ -252,7 +252,7 @@ export default function BestRooferFortCollinsContent() {
 
       <CTA
         title="Fort Collins Deserves Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
       />
 
       <Footer />

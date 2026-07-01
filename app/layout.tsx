@@ -110,8 +110,8 @@ const localBusinessSchema = {
   "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"},
   "priceRange": "$$",
   "sameAs": [
-    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
-    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.facebook.com/GatesEnterprisesLLC/",
+    "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC"
@@ -121,7 +121,7 @@ const localBusinessSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://www.gatesroof.com/#org",
+  "@id": "https://www.gatesroof.com/#organization",
   "name": "Gates Enterprises LLC",
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/logo.png",
@@ -134,8 +134,8 @@ const organizationSchema = {
     "availableLanguage": ["English","Spanish"]
   },
   "sameAs": [
-    "https://www.facebook.com/p/Gates-Enterprises-LLC-100087607205221/",
-    "https://www.linkedin.com/company/gatesenterprises",
+    "https://www.facebook.com/GatesEnterprisesLLC/",
+    "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC"

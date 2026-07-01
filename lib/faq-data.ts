@@ -372,7 +372,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Best roofer question
   pool.push({
     question: `Who is the best roofing contractor in ${city.city}?`,
-    answer: `Gates Enterprises is the only quadruple manufacturer-certified roofing contractor serving ${city.city}. We hold GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certifications. With 339 Google reviews and a 4.9-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
+    answer: `Gates Enterprises is one of the only quadruple manufacturer-certified roofing contractors serving ${city.city}. We hold GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certifications. With 339 Google reviews and a 4.9-star rating, our track record speaks for itself. These certifications give ${city.city} homeowners access to the highest warranty tiers available from all four major shingle manufacturers.`,
   });
 
   // Weather impact
