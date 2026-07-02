@@ -397,8 +397,9 @@ def main():
         if city not in config["colorado_cities"]:
             print(f"❌ City '{city}' not in config.")
             sys.exit(1)
+        auto_activate_enabled = config["storm_trigger"].get("auto_activate_enabled", False)
         auto_activate_size = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
-        will_auto_activate = args.force_size >= auto_activate_size
+        will_auto_activate = auto_activate_enabled and args.force_size >= auto_activate_size
         print(f"⚡ Force mode: creating campaigns for {city} ({args.force_size}\" hail)")
         if will_auto_activate:
             print(f"🟢 Hail size ≥ {auto_activate_size}\" — will AUTO-ACTIVATE after creation")
@@ -438,6 +439,14 @@ def main():
     # -----------------------------------------------------------------------
     # Normal mode: check for storms
     # -----------------------------------------------------------------------
+    # Scheduled runs only fire during active hours (default 6am–11pm local) so
+    # the 30-min launchd cron doesn't ping Discord overnight. The manual
+    # --activate / --force paths above intentionally bypass this guard.
+    active_hours = config["storm_trigger"].get("active_hours", [6, 23])
+    if not (active_hours[0] <= now.hour <= active_hours[1]):
+        print(f"\n💤 Outside active hours ({active_hours[0]:02d}:00–{active_hours[1]:02d}:59 local). Skipping scheduled check.")
+        return
+
     detections = []
 
     if args.source in ("nws", "both"):
@@ -478,8 +487,9 @@ def main():
             skipped += 1
             continue
 
+        auto_activate_enabled = config["storm_trigger"].get("auto_activate_enabled", False)
         auto_activate_size = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
-        will_auto_activate = info["hail_size"] >= auto_activate_size
+        will_auto_activate = auto_activate_enabled and info["hail_size"] >= auto_activate_size
         print(f"🌩️  Creating campaigns for {city} ({info['hail_size']}\" hail)...")
         if will_auto_activate:
             print(f"  🟢 Hail ≥ {auto_activate_size}\" — will AUTO-ACTIVATE")
@@ -517,10 +527,14 @@ def main():
             created += 1
 
     print(f"\n{'='*60}")
+    auto_activate_enabled_final = config["storm_trigger"].get("auto_activate_enabled", False)
     auto_activate_size_final = config["storm_trigger"].get("auto_activate_hail_size_inches", 1.5)
     print(f"📊 Summary: {created} cities processed, {skipped} skipped")
     if created > 0 and not args.dry_run:
-        print(f"✅ Campaigns created. Hail ≥ {auto_activate_size_final}\" = auto-activated. Hail < {auto_activate_size_final}\" = PAUSED (manual activate).")
+        if auto_activate_enabled_final:
+            print(f"✅ Campaigns created. Hail ≥ {auto_activate_size_final}\" = auto-activated. Hail < {auto_activate_size_final}\" = PAUSED (manual activate).")
+        else:
+            print(f"✅ Campaigns created — ALL PAUSED (auto-activate disabled, no ad spend until you activate).")
         print(f"   To manually activate: python storm-trigger.py --activate <CITY>")
 
 

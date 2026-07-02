@@ -50,3 +50,6 @@ scripts/storm-ads/*.bak
 # storm-ads runtime logs (operational output, not source — keep on disk, out of git)
 scripts/storm-ads/*.log
 scripts/storm-ads/logs/
+
+# Local SEO audit reports (not part of the site)
+/seo/
