@@ -319,6 +319,7 @@ export default function StormContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 24, lineHeight: 1.7 }}>Expert guides on storm damage, insurance claims, and protecting your Colorado home.</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             {[
+              { t: "Hail & Storm Damage Roof Repair in Denver: Who to Call", h: "/blog/hail-storm-damage-roof-repair-denver" },
               { t: "Colorado Hail Season 2026: Complete Guide", h: "/blog/colorado-hail-season-2026-homeowners-guide" },
               { t: "What Does Hail Damage Look Like on a Roof?", h: "/blog/what-does-hail-damage-look-like-on-roof" },
               { t: "What to Do After a Hailstorm in Colorado", h: "/blog/what-to-do-after-hailstorm-colorado" },
