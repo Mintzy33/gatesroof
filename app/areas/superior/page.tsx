@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Superior CO Roofer | 4x Certified, 339+ Reviews ★",
-  description: "Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. 7,200+ projects completed. Free estimate.",
+  title: `Superior CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+  description: `Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. ${SITE_STATS.totalRoofs} projects completed. Free estimate.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/superior" },
   openGraph: {
-    title: "Superior CO Roofer | 4x Certified, 339+ Reviews ★",
-    description: "Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. 7,200+ projects completed. Free estimate.",
+    title: `Superior CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+    description: `Superior CO roofing backed by four manufacturer certifications. Storm damage, reroof, and exterior services. ${SITE_STATS.totalRoofs} projects completed. Free estimate.`,
     url: "https://www.gatesroof.com/areas/superior",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -55,8 +56,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

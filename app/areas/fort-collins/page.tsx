@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Fort Collins CO Roofer | 4x Certified, 339+ Reviews",
-  description: "Fort Collins roofing with 7,200+ completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.",
+  title: `Fort Collins CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews`,
+  description: `Fort Collins roofing with ${SITE_STATS.totalRoofs} completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/fort-collins" },
   openGraph: {
-    title: "Fort Collins CO Roofer | 4x Certified, 339+ Reviews",
-    description: "Fort Collins roofing with 7,200+ completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.",
+    title: `Fort Collins CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews`,
+    description: `Fort Collins roofing with ${SITE_STATS.totalRoofs} completed projects across Northern Colorado. Hail repair, full replacements, and claims support. Free inspection.`,
     url: "https://www.gatesroof.com/areas/fort-collins",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -61,8 +62,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

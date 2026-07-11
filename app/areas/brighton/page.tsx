@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Brighton CO Roofer | 4x Certified, 339+ Reviews ★",
-  description: "Trusted Brighton CO roofer with 339+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
+  title: `Brighton CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+  description: `Trusted Brighton CO roofer with ${SITE_STATS.reviewCount}+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/brighton" },
   openGraph: {
-    title: "Brighton CO Roofer | 4x Certified, 339+ Reviews ★",
-    description: "Trusted Brighton CO roofer with 339+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.",
+    title: `Brighton CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+    description: `Trusted Brighton CO roofer with ${SITE_STATS.reviewCount}+ Google reviews. Hail and storm repair, full replacements, and 50-year warranty options. Free inspection available.`,
     url: "https://www.gatesroof.com/areas/brighton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -55,8 +56,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

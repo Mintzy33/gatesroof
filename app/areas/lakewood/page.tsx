@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Lakewood CO Roofer | Local HQ, Hail Experts, 339 Reviews, 4.9 Stars",
-  description: "Gates Enterprises is headquartered in Lakewood. 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
+  title: `Lakewood CO Roofer | Local HQ, Hail Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+  description: `Gates Enterprises is headquartered in Lakewood. ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), 4x certified, ${SITE_STATS.totalRoofs} roofs. Hail damage or full replacement — free inspection today.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/lakewood" },
   openGraph: {
-    title: "Lakewood CO Roofer | Local HQ, Hail Experts, 339 Reviews, 4.9 Stars",
-    description: "Gates Enterprises is headquartered in Lakewood. 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Hail damage or full replacement — free inspection today.",
+    title: `Lakewood CO Roofer | Local HQ, Hail Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+    description: `Gates Enterprises is headquartered in Lakewood. ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), 4x certified, ${SITE_STATS.totalRoofs} roofs. Hail damage or full replacement — free inspection today.`,
     url: "https://www.gatesroof.com/areas/lakewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -63,8 +64,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

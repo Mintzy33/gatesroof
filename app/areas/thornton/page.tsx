@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Thornton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Thornton hail season runs April through August. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free hail damage inspection today.",
+  title: `Thornton CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+  description: `Thornton hail season runs April through August. Gates Enterprises: ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), 4x certified, ${SITE_STATS.totalRoofs} roofs. Free hail damage inspection today.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/thornton" },
   openGraph: {
-    title: "Thornton CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Thornton hail season runs April through August. Gates Enterprises: 339 Google reviews (4.9 stars), 4x certified, 7,200+ roofs. Free hail damage inspection today.",
+    title: `Thornton CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+    description: `Thornton hail season runs April through August. Gates Enterprises: ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), 4x certified, ${SITE_STATS.totalRoofs} roofs. Free hail damage inspection today.`,
     url: "https://www.gatesroof.com/areas/thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +36,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8680, "longitude": -104.9719 },
   "areaServed": { "@type": "City", "name": "Thornton", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "339", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": String(SITE_STATS.starRating), "reviewCount": String(SITE_STATS.reviewCount), "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

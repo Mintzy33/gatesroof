@@ -30,9 +30,8 @@ export default function StickyBottomCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const firePixel = () => {
-    if (typeof window !== "undefined" && (window as unknown as { fbq?: (...a: unknown[]) => void }).fbq)
-      (window as unknown as { fbq: (...a: unknown[]) => void }).fbq("track", "Contact", { content_name: "phone_call" });
+  const firePhone = () => {
+    void import("@/lib/analytics-events").then((m) => m.pushPhoneClick("sticky_cta"));
   };
 
   return (
@@ -61,7 +60,7 @@ export default function StickyBottomCTA() {
         {/* Phone link */}
         <a
           href="tel:7207663377"
-          onClick={firePixel}
+          onClick={firePhone}
           style={{
             display: "inline-flex",
             alignItems: "center",

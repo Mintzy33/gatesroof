@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Northglenn CO Roofer | 4x Certified, 339+ Reviews ★",
-  description: "Northglenn CO roofer with 4.9 stars and 339+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.",
+  title: `Northglenn CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+  description: `Northglenn CO roofer with ${SITE_STATS.starRating} stars and ${SITE_STATS.reviewCount}+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/northglenn" },
   openGraph: {
-    title: "Northglenn CO Roofer | 4x Certified, 339+ Reviews ★",
-    description: "Northglenn CO roofer with 4.9 stars and 339+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.",
+    title: `Northglenn CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
+    description: `Northglenn CO roofer with ${SITE_STATS.starRating} stars and ${SITE_STATS.reviewCount}+ reviews. Full replacements, storm restoration, and insurance claims support. Get a free roof inspection.`,
     url: "https://www.gatesroof.com/areas/northglenn",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -35,7 +36,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.8872, "longitude": -104.9814 },
   "areaServed": { "@type": "City", "name": "Northglenn", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "339", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": String(SITE_STATS.starRating), "reviewCount": String(SITE_STATS.reviewCount), "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
@@ -55,8 +56,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

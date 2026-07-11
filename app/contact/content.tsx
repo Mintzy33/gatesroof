@@ -4,8 +4,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ScrollReveal } from "../components/GSAPAnimations";
-
-declare global { interface Window { fbq?: (...args: unknown[]) => void } }
+import { pushGenerateLead, pushPhoneClick } from "@/lib/analytics-events";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -47,7 +46,10 @@ export default function ContactContent() {
         body: JSON.stringify(form),
       });
       if (res.ok) {
-        if (window.fbq) window.fbq("track", "Lead", { content_name: form.service || "general", content_category: "contact_form" });
+        if (typeof window !== "undefined" && typeof window.fbq === "function") {
+          window.fbq("track", "Lead", { content_name: form.service || "general", content_category: "contact_form" });
+        }
+        pushGenerateLead("contact", { service: form.service || "general" });
         setSent(true);
       } else {
         alert("Something went wrong. Please call us at (720) 766-3377.");
@@ -240,7 +242,7 @@ export default function ContactContent() {
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: DEEP, marginBottom: 24 }}>Contact Info</h3>
                 <div style={{ marginBottom: 20 }}>
                   <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", marginBottom: 4 }}>PHONE</div>
-                  <a href="tel:7207663377" onClick={() => { if (window.fbq) window.fbq("track", "Contact", { content_name: "phone_call" }); }} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: TEXT, textDecoration: "none", fontWeight: 500 }}>(720) 766-3377</a>
+                  <a href="tel:7207663377" onClick={() => pushPhoneClick("contact")} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: TEXT, textDecoration: "none", fontWeight: 500 }}>(720) 766-3377</a>
                 </div>
                 <div style={{ marginBottom: 20 }}>
                   <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", marginBottom: 4 }}>EMAIL</div>
@@ -301,7 +303,7 @@ export default function ContactContent() {
               <div style={{ background: NAVY, borderRadius: 24, padding: "36px 32px" }}>
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: WHITE, marginBottom: 12 }}>Prefer to Call?</h3>
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 24 }}>Talk to a real person, not a call center.</p>
-                <a href="tel:7207663377" onClick={() => { if (window.fbq) window.fbq("track", "Contact", { content_name: "phone_call" }); }} style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600 }}>
+                <a href="tel:7207663377" onClick={() => pushPhoneClick("contact")} style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600 }}>
                   Call (720) 766-3377
                 </a>
               </div>

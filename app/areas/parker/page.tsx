@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Parker CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 Google reviews (4.9 stars), free inspection. Call (720) 766-3377.",
+  title: `Parker CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+  description: `Parker hail season is here. Gates Enterprises has replaced ${SITE_STATS.totalRoofs} roofs across Douglas County. ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), free inspection. Call (720) 766-3377.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/parker" },
   openGraph: {
-    title: "Parker CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Parker hail season is here. Gates Enterprises has replaced 7,200+ roofs across Douglas County. 339 Google reviews (4.9 stars), free inspection. Call (720) 766-3377.",
+    title: `Parker CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+    description: `Parker hail season is here. Gates Enterprises has replaced ${SITE_STATS.totalRoofs} roofs across Douglas County. ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars), free inspection. Call (720) 766-3377.`,
     url: "https://www.gatesroof.com/areas/parker",
     siteName: "Gates Enterprises",
     locale: "en_US",
@@ -67,8 +68,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

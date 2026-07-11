@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { pushLeadFormSubmit } from "@/lib/analytics-events";
 
 const NAVY = "#06263f";
 const ACCENT = "#2563EB";
@@ -18,7 +19,6 @@ const CO_CITIES = [
 declare global {
   interface Window {
     fbq?: (...args: unknown[]) => void;
-    dataLayer?: Record<string, unknown>[];
   }
 }
 
@@ -63,9 +63,7 @@ export default function StormLeadForm() {
         if (typeof window.fbq === "function") {
           window.fbq("track", "Lead", {}, { eventID: eventId });
         }
-        if (Array.isArray(window.dataLayer)) {
-          window.dataLayer.push({ event: "lead_form_submit", form: "storm_response" });
-        }
+        pushLeadFormSubmit("storm_response");
       }
       setStatus("success");
     } catch (e) {

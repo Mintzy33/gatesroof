@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Castle Rock CO Roofer | 4x Certified, 339+ Reviews ★",
+  title: `Castle Rock CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
   description: "Castle Rock CO roofing from a GAF Master Elite contractor. Storm damage repair, insurance help, and warranties up to 50 years. Free inspection available.",
   alternates: { canonical: "https://www.gatesroof.com/areas/castle-rock" },
   openGraph: {
-    title: "Castle Rock CO Roofer | 4x Certified, 339+ Reviews ★",
+    title: `Castle Rock CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
     description: "Castle Rock CO roofing from a GAF Master Elite contractor. Storm damage repair, insurance help, and warranties up to 50 years. Free inspection available.",
     url: "https://www.gatesroof.com/areas/castle-rock",
     siteName: "Gates Enterprises LLC",
@@ -35,7 +36,7 @@ const citySchema = {
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 39.3722, "longitude": -104.8561 },
   "areaServed": { "@type": "City", "name": "Castle Rock", "addressRegion": "CO" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "339", "bestRating": "5" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": String(SITE_STATS.starRating), "reviewCount": String(SITE_STATS.reviewCount), "bestRating": "5" },
   "priceRange": "$$",
   "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
   "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]

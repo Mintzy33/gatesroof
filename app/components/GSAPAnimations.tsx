@@ -172,9 +172,15 @@ export function CounterGSAP({ end, suffix = "", duration = 2.2, delay = 0 }: { e
 /* ─── PhoneLink ─── (unchanged, just re-exported for convenience) ─── */
 export function PhoneLink({ children, style }: { children: ReactNode; style: React.CSSProperties }) {
   return (
-    <a href="tel:7207663377" onClick={() => {
-      if (typeof window !== "undefined" && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq)
-        (window as unknown as { fbq: (...args: unknown[]) => void }).fbq("track", "Contact", { content_name: "phone_call" });
-    }} style={style}>{children}</a>
+    <a
+      href="tel:7207663377"
+      onClick={() => {
+        // Lazy require avoids pulling analytics into every server bundle that re-exports this file.
+        void import("@/lib/analytics-events").then((m) => m.pushPhoneClick("phone_link"));
+      }}
+      style={style}
+    >
+      {children}
+    </a>
   );
 }

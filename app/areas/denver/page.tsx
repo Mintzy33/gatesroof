@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Denver CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-  description: "Denver hail season is April through August. Gates Enterprises: 10+ years, 7,200+ roofs, 339 Google reviews (4.9 stars). GAF Master Elite certified. Free inspection.",
+  title: `Denver CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+  description: `Denver hail season is April through August. Gates Enterprises: 10+ years, ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars). GAF Master Elite certified. Free inspection.`,
   alternates: { canonical: "https://www.gatesroof.com/areas/denver" },
   openGraph: {
-    title: "Denver CO Roofer | Hail Damage Experts, 339 Reviews, 4.9 Stars",
-    description: "Denver hail season is April through August. Gates Enterprises: 10+ years, 7,200+ roofs, 339 Google reviews (4.9 stars). GAF Master Elite certified. Free inspection.",
+    title: `Denver CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
+    description: `Denver hail season is April through August. Gates Enterprises: 10+ years, ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} Google reviews (${SITE_STATS.starRating} stars). GAF Master Elite certified. Free inspection.`,
     url: "https://www.gatesroof.com/areas/denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -61,8 +62,8 @@ const citySchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "339",
+        "ratingValue": String(SITE_STATS.starRating),
+        "reviewCount": String(SITE_STATS.reviewCount),
         "bestRating": "5"
       },
       "hasOfferCatalog": {

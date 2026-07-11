@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { pushPhoneClick } from "@/lib/analytics-events";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const WHITE = "#FFFFFF";
@@ -164,11 +165,11 @@ export default function Header() {
               Referral
             </Link>
             <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.12)" }} />
-            <a href="tel:7207663377" style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none", whiteSpace: "nowrap" as const }}>(720) 766-3377</a>
+            <a href="tel:7207663377" onClick={() => pushPhoneClick("header_desktop")} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, textDecoration: "none", whiteSpace: "nowrap" as const }}>(720) 766-3377</a>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "10px 22px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, boxShadow: "0 4px 14px rgba(59,125,216,0.2)", position: "relative", zIndex: 10, whiteSpace: "nowrap" as const }}>Free Inspection</Link>
           </nav>
           <div className="mobile-nav" style={{ display: "none", alignItems: "center", gap: 10 }}>
-            <a href="tel:7207663377" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "8px 14px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
+            <a href="tel:7207663377" onClick={() => pushPhoneClick("header_mobile")} style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "8px 14px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               Call
             </a>
@@ -233,7 +234,7 @@ export default function Header() {
           </Link>
         </div>
         <div style={{ padding: "24px 28px 40px", background: "#FAFBFD" }}>
-          <a href="tel:7207663377" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, fontWeight: 700, color: NAVY, textDecoration: "none", marginBottom: 16 }}>
+          <a href="tel:7207663377" onClick={() => pushPhoneClick("header_menu")} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, fontWeight: 700, color: NAVY, textDecoration: "none", marginBottom: 16 }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={NAVY} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             (720) 766-3377
           </a>
