@@ -4,12 +4,12 @@ import BestRooferKenCarylContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Ken Caryl CO (2026) | 4x Certified ★ 339+ Reviews",
-  description: "Top rated Ken Caryl roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+  title: "Ken Caryl Roofer | Storm & Hail Damage, Free Inspection | Gates",
+  description: "Storm damage roofing in Ken Caryl? Gates Enterprises — free hail inspection, insurance claim support, 4x certified. Serving Ken Caryl Ranch & Columbine. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-ken-caryl" },
   openGraph: {
-    title: "Best Roofer Ken Caryl CO (2026) | 4x Certified ★ 339+ Reviews",
-    description: "Top rated Ken Caryl roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+    title: "Ken Caryl Roofer | Storm & Hail Damage, Free Inspection | Gates",
+    description: "Storm damage roofing in Ken Caryl? Gates Enterprises — free hail inspection, insurance claim support, 4x certified. Serving Ken Caryl Ranch & Columbine. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-ken-caryl",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
