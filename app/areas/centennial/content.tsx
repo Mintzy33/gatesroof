@@ -8,6 +8,7 @@ import FAQAccordion from "../../components/FAQAccordion";
 import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
+import { cityHref } from "../../../lib/city-links";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";
@@ -129,7 +130,7 @@ export default function CityContent() {
               { name: "Denver", slug: "denver" },
               { name: "Castle Rock", slug: "castle-rock" },
             ].map((city) => (
-              <Link key={city.slug} href={`/areas/${city.slug}`} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 16px", background: LIGHT_BG, borderRadius: 100, border: `1px solid rgba(37,99,235,0.1)` }}>{city.name}</Link>
+              <Link key={city.slug} href={cityHref(city.slug)} style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: ACCENT, textDecoration: "none", fontWeight: 500, padding: "8px 16px", background: LIGHT_BG, borderRadius: 100, border: `1px solid rgba(37,99,235,0.1)` }}>{city.name}</Link>
             ))}
           </div>
         </div>

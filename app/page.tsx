@@ -6,6 +6,7 @@ import HeroVideo from "./components/HeroVideo";
 import { ScrollReveal, StaggerCards, CounterGSAP, PhoneLink } from "./components/GSAPAnimations";
 import ReviewCarousel from "./components/LazyReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { cityHref } from "../lib/city-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -53,22 +54,6 @@ const faqSchema = {
  * Resolution order: the /areas hub page, then the city's best-roofer page, then its
  * roof-replacement service page. Verified live 2026-08-31 — all 32 tiles resolve to HTTP 200.
  */
-const AREA_HUB_SLUGS = new Set([
-  "arvada", "aurora", "brighton", "broomfield", "castle-rock", "centennial",
-  "colorado-springs", "commerce-city", "conifer", "denver", "edgewater", "englewood",
-  "evergreen", "federal-heights", "fort-collins", "golden", "highlands-ranch", "lakewood",
-  "littleton", "lone-tree", "morrison", "northglenn", "parker", "superior", "thornton",
-  "westminster", "wheat-ridge",
-]);
-const BEST_ROOFER_SLUGS = new Set([
-  "boulder", "erie", "greenwood-village", "lafayette", "longmont", "louisville", "loveland",
-]);
-function cityHref(slug: string): string {
-  if (AREA_HUB_SLUGS.has(slug)) return `/areas/${slug}`;
-  if (BEST_ROOFER_SLUGS.has(slug)) return `/best-roofer-${slug}`;
-  return `/services/roof-replacement/${slug}`;
-}
-
 export default function Home() {
   return (
     <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>

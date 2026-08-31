@@ -15,6 +15,7 @@ import FAQAccordion from "../../../components/FAQAccordion";
 import { getServiceCityFAQItems } from "../../../../lib/faq-data";
 import HailScoreCard from "../../../components/HailScoreCard";
 import { getRelatedBlogPosts } from "../../../../lib/blog-links";
+import { cityHref } from "../../../../lib/city-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -642,7 +643,7 @@ export default function ServiceCityContent({
               ← All {service.service} Locations
             </Link>
             <Link
-              href={`/areas/${city.slug}`}
+              href={cityHref(city.slug)}
               style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none" }}
             >
               ← {city.city} Main Page

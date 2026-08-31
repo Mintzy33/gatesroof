@@ -18,6 +18,7 @@ import {
   FileCheck,
   Globe,
 } from "lucide-react";
+import { cityHref } from "../../../lib/city-links";
 
 export const metadata: Metadata = {
   title:
@@ -593,7 +594,7 @@ export default function GatesEnterprisesPage() {
               return (
                 <Link
                   key={city}
-                  href={`/areas/${slug}`}
+                  href={cityHref(slug)}
                   style={{
                     fontFamily:
                       "var(--font-dm-sans), 'DM Sans', sans-serif",

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../components/GSAPAnimations";
 import { Search, FileText, Shield, Users, Hammer, CheckCircle, Award, ShieldCheck, MapPin, Clock, DollarSign, AlertTriangle } from "lucide-react";
+import { cityHref } from "../../lib/city-links";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -383,7 +384,7 @@ export default function InsuranceClaimsContent() {
               { n: "Westminster", s: "westminster" }, { n: "Thornton", s: "thornton" }, { n: "Boulder", s: "boulder" },
               { n: "Littleton", s: "littleton" }, { n: "Golden", s: "golden" }, { n: "Highlands Ranch", s: "highlands-ranch" },
             ].map((c) => (
-              <Link key={c.s} href={`/areas/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
+              <Link key={c.s} href={cityHref(c.s)} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}
           </div>
         </div>

@@ -17,6 +17,7 @@ import HailScoreCard from "../../../../components/HailScoreCard";
 import FAQAccordion from "../../../../components/FAQAccordion";
 import { getRelatedBlogPosts } from "../../../../../lib/blog-links";
 import type { CityData } from "../../../../data/location-data";
+import { cityHref } from "../../../../../lib/city-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -651,7 +652,7 @@ export default function NeighborhoodContent({
               </div>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 48 }}>
                 <Link
-                  href={`/areas/${city.slug}`}
+                  href={cityHref(city.slug)}
                   style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, fontWeight: 600, color: ACCENT, textDecoration: "none", background: "rgba(37,99,235,0.06)", padding: "8px 16px", borderRadius: 8 }}
                 >
                   Roofing in {city.city} →
