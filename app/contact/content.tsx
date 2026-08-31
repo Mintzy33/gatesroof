@@ -36,7 +36,8 @@ export default function ContactContent() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e?: React.FormEvent) => {
+    e?.preventDefault();
     if (!validate()) return;
     setLoading(true);
     try {
@@ -151,7 +152,7 @@ export default function ContactContent() {
                 <div>
                   <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 28, fontWeight: 800, color: DEEP, marginBottom: 8 }}>Request a Free Inspection & Estimate</h2>
                   <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, marginBottom: 36 }}>No obligation. No pressure. Just an honest assessment.</p>
-                  <div style={{ display: "flex", flexDirection: "column" as const, gap: 20 }}>
+                  <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column" as const, gap: 20 }}>
                     <div className="ct-form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                       <div>
                         <input
@@ -207,7 +208,7 @@ export default function ContactContent() {
                       style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
                     />
                     <button
-                      onClick={handleSubmit}
+                      type="submit"
                       disabled={loading}
                       style={{
                         background: loading ? "#93B4F0" : ACCENT,
@@ -230,7 +231,7 @@ export default function ContactContent() {
                     <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.6, color: TEXT_LIGHT, margin: 0, maxWidth: 520 }}>
                       By submitting, you give Gates Enterprises your express written consent to contact you at the phone number and email you provided &mdash; by call, text, or email, including messages sent using automated technology. Consent is not a condition of purchase. Message and data rates may apply; reply STOP to opt out. See our <Link href="/privacy" style={{ color: TEXT_LIGHT, textDecoration: "underline" }}>Privacy Policy</Link>.
                     </p>
-                  </div>
+                  </form>
                 </div>
               )}
             </div>
