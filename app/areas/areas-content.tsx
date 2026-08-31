@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../components/GSAPAnimations";
+import { cityHref } from "../../lib/city-links";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -90,6 +91,7 @@ const REGIONS: { title: string; cities: CityDef[] }[] = [
       { name: "Centennial", slug: "centennial" },
       { name: "Littleton", slug: "littleton" },
       { name: "Lone Tree", slug: "lone-tree" },
+      { name: "Castle Pines", slug: "castle-pines" },
     ],
   },
   {
@@ -103,6 +105,9 @@ const REGIONS: { title: string; cities: CityDef[] }[] = [
       { name: "Broomfield", slug: "broomfield" },
       { name: "Brighton", slug: "brighton" },
       { name: "Superior", slug: "superior" },
+      { name: "Erie", slug: "erie" },
+      { name: "Louisville", slug: "louisville" },
+      { name: "Lafayette", slug: "lafayette" },
     ],
   },
   {
@@ -112,6 +117,16 @@ const REGIONS: { title: string; cities: CityDef[] }[] = [
       { name: "Conifer", slug: "conifer" },
       { name: "Morrison", slug: "morrison" },
       { name: "Golden", slug: "golden" },
+    ],
+  },
+  {
+    // Added 2026-08-31. These cities are in INDEXED_CITIES with live, sitemapped
+    // service pages, but no region listed them — so they had zero inbound internal
+    // links anywhere on the site.
+    title: "Southern Colorado",
+    cities: [
+      { name: "Colorado Springs", slug: "colorado-springs" },
+      { name: "Pueblo", slug: "pueblo" },
     ],
   },
 ];
@@ -126,7 +141,6 @@ const ChevronRight = () => (
 /* ─── City Card with expandable services ─── */
 function CityCard({ city }: { city: CityDef }) {
   const [expanded, setExpanded] = useState(false);
-  const hasPage = CITIES_WITH_PAGES.has(city.slug);
 
   return (
     <div
@@ -148,32 +162,22 @@ function CityCard({ city }: { city: CityDef }) {
     >
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
-          {hasPage ? (
-            <Link
-              href={`/areas/${city.slug}`}
-              onClick={(e) => e.stopPropagation()}
-              style={{
-                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                fontSize: 17,
-                fontWeight: 600,
-                color: NAVY,
-                textDecoration: "none",
-              }}
-            >
-              {city.name}
-            </Link>
-          ) : (
-            <span
-              style={{
-                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-                fontSize: 17,
-                fontWeight: 600,
-                color: NAVY,
-              }}
-            >
-              {city.name}
-            </span>
-          )}
+          {/* Always a link: cityHref() resolves to a page that exists (hub -> best-roofer
+              -> service page). This used to render as dead <span> text for the 11 cities
+              with no /areas hub, which is why their live pages had zero inbound links. */}
+          <Link
+            href={cityHref(city.slug)}
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 17,
+              fontWeight: 600,
+              color: NAVY,
+              textDecoration: "none",
+            }}
+          >
+            {city.name}
+          </Link>
           <p style={{
             fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
             fontSize: 13,
@@ -232,7 +236,7 @@ function CityCard({ city }: { city: CityDef }) {
           {SERVICES.map((svc) => (
             <Link
               key={svc.citySlug}
-              href={hasPage ? `/services/${svc.citySlug}/${city.slug}` : `/services/${svc.parentSlug}`}
+              href={`/services/${svc.citySlug}/${city.slug}`}
               onClick={(e) => e.stopPropagation()}
               style={{
                 display: "flex",
@@ -259,7 +263,7 @@ function CityCard({ city }: { city: CityDef }) {
           {SERVICES.map((svc) => (
             <a
               key={svc.citySlug}
-              href={hasPage ? `/services/${svc.citySlug}/${city.slug}` : `/services/${svc.parentSlug}`}
+              href={`/services/${svc.citySlug}/${city.slug}`}
               style={{ display: "block", padding: "4px 0" }}
             >
               {svc.label} in {city.name}
