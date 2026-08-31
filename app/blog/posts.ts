@@ -687,7 +687,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "certifications", href: "/about", text: "our manufacturer certifications" },
       { placeholder: "reviews", href: "/reviews", text: "our customer reviews" },
       { placeholder: "warranties", href: "/services", text: "warranty options" },
-      { placeholder: "service-areas", href: "/service-areas", text: "our service areas" },
+      { placeholder: "service-areas", href: "/areas", text: "our service areas" },
       { placeholder: "free-inspection", href: "/contact", text: "free inspection" },
       { placeholder: "lakewood-area", href: "/areas/lakewood", text: "Lakewood" },
       { placeholder: "aurora-area", href: "/areas/aurora", text: "Aurora" },

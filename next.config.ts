@@ -59,7 +59,7 @@ const nextConfig: NextConfig = {
       // Catch-all for any other old service-areas URLs
       { source: "/service-areas/:slug", destination: "/areas/:slug", permanent: true },
       // Old service index pages
-      { source: "/service-areas", destination: "/areas/lakewood", permanent: true },
+      { source: "/service-areas", destination: "/areas", permanent: true },
       { source: "/services/residential-roofing", destination: "/services/roof-replacement", permanent: true },
       { source: "/services/general-contractor", destination: "/services/roof-replacement", permanent: true },
       { source: "/services/commercial-roofing", destination: "/services/roof-replacement", permanent: true },
