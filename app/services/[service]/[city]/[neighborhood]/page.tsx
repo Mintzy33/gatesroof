@@ -228,7 +228,7 @@ function generateNeighborhoodFAQs(
       a: hailAnswers[hailLevel],
     },
     {
-      q: `Do you handle insurance claims for ${n.name} homeowners?`,
+      q: `Do you work with insurance claims for ${n.name} homeowners?`,
       a: insuranceAnswers[era],
     },
     {

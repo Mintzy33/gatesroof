@@ -815,8 +815,8 @@ export const services: ServiceData[] = [
       { q: "Does insurance cover hail damage?", a: "Whether hail damage is covered depends on your specific policy and the cause of damage. You're responsible for your deductible — Gates Enterprises documents the damage and works with your adjuster through the claim." },
       { q: "How do I know if I have hail damage?", a: "Most hail damage isn't visible from the ground. Look for dented gutters, chipped paint on window sills, or damaged patio furniture. The only way to know for sure is a professional roof inspection." },
       { q: "Is the inspection really free?", a: "Completely free with no obligation. We'll show you exactly what we find and give you an honest assessment. If there's no damage, we'll tell you." },
-      { q: "How long do I have to file a claim?", a: "Most Colorado insurance policies have a 1-year window from the date of the storm. Don't wait — filing promptly gives you the best chance of full coverage." },
-      { q: "What if my claim is denied?", a: "We fight for you. Our team has overturned many denied claims by providing additional documentation and evidence. We know what adjusters need to see." },
+      { q: "How long do I have to file a claim?", a: "Most Colorado insurance policies have a 1-year window from the date of the storm. Don't wait — filing promptly means the damage is still fresh and easier to document." },
+      { q: "What if my claim is denied?", a: "A denial isn't always the end of it. We'll re-inspect, document anything the first look missed with photos and measurements, and put together a supplement your insurer can review. The decision stays with them." },
     ],
   },
   {
@@ -902,8 +902,8 @@ export const services: ServiceData[] = [
     service: "Insurance Claim Assistance",
     slug: "insurance-claims",
     parentSlug: "insurance-claims",
-    shortDesc: "Full insurance restoration support — from initial claim filing through final supplement approval.",
-    longDesc: "Navigating a homeowners insurance claim after storm damage is stressful and confusing. Insurance companies have teams of adjusters and estimators working for their interests — you deserve someone working for yours. Gates Enterprises has managed thousands of insurance restoration projects across the Colorado Front Range and knows exactly how the process works.\n\nOur Xactimate-certified estimators speak the same language as insurance adjusters. We document damage thoroughly, prepare estimates in the format adjusters require, meet adjusters on-site to ensure nothing is missed, and handle supplements when the initial approval falls short. You pay your deductible — we handle everything else.",
+    shortDesc: "Insurance restoration support — from the first inspection through adjuster meetings and supplement documentation.",
+    longDesc: "Navigating a homeowners insurance claim after storm damage is stressful and confusing. Insurance companies have teams of adjusters and estimators working for their interests — you deserve someone working for yours. Gates Enterprises has managed thousands of insurance restoration projects across the Colorado Front Range and knows exactly how the process works.\n\nOur Xactimate-certified estimators speak the same language as insurance adjusters. We document damage thoroughly, prepare estimates in the format adjusters require, meet adjusters on-site to ensure nothing is missed, and prepare supplements when the initial estimate falls short of the damage we documented. You pay your deductible; we do the roofing work.",
     process: [
       { step: "Free Damage Assessment", desc: "We inspect your entire exterior — roof, siding, gutters, windows, paint — and document every point of storm damage." },
       { step: "Claim Filing Support", desc: "We help you file your claim with properly formatted documentation that adjusters need to approve your project." },

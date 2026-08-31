@@ -22,7 +22,7 @@ const titleMap: Record<string, (city: string) => string> = {
   "siding": (c) => `${c} Siding Installation | Certified ★ Gates`,
   "gutters": (c) => `${c} Gutter Installation | Seamless ★ Gates`,
   "roof-inspection": (c) => `Free Roof Inspection ${c} CO | 4x Certified ★`,
-  "insurance-claims": (c) => `${c} Roof Insurance Claims | We Handle It All ★`,
+  "insurance-claims": (c) => `${c} Roof Insurance Claims | 4x Certified ★ Gates`,
   "metal-roofing": (c) => `${c} Metal Roofing | 50-Year Warranty ★ Gates`,
 };
 
@@ -48,9 +48,9 @@ const descriptionVariants: Record<string, ((city: string) => string)[]> = {
     (c) =>
       `Storm damage restoration in ${c}, CO by Gates Enterprises. Free inspections, insurance claim help, and certified repairs. 4.9 star rated, 7,200+ jobs done.`,
     (c) =>
-      `${c} storm damage? Gates Enterprises handles it all: free inspection, insurance paperwork, and certified repairs. Quadruple manufacturer certified contractor.`,
+      `${c} storm damage? Gates Enterprises documents it all: free inspection, photo evidence for your claim, and certified repairs. Quadruple certified contractor.`,
     (c) =>
-      `Gates Enterprises restores storm and hail damaged roofs in ${c}, Colorado. 7,200+ projects, 4.9 stars, and we handle your entire insurance claim for you.`,
+      `Gates Enterprises restores storm and hail damaged roofs in ${c}, Colorado. 7,200+ projects, 4.9 stars, and full documentation for your insurance claim.`,
   ],
   "roof-repair": [
     (c) =>
@@ -92,11 +92,11 @@ const descriptionVariants: Record<string, ((city: string) => string)[]> = {
   ],
   "insurance-claims": [
     (c) =>
-      `Roof insurance claim help in ${c}, CO from Gates Enterprises. We handle inspections, adjuster meetings, and paperwork. Quadruple certified, 4.9 star rated.`,
+      `Roof insurance claim help in ${c}, CO from Gates Enterprises. We handle the inspection, the adjuster meeting, and the documentation. 4.9 star rated.`,
     (c) =>
-      `Gates Enterprises manages roof insurance claims in ${c}, Colorado. 7,200+ restoration projects completed. Free inspection, full claim support, no hassle.`,
+      `Gates Enterprises documents storm damage for roof insurance claims in ${c}, CO. 7,200+ restoration projects completed. Free inspection, adjuster meetings.`,
     (c) =>
-      `Insurance claim assistance in ${c} by Gates Enterprises. We fight for full coverage on your storm damage claim. Quadruple certified with 4.9 stars.`,
+      `Insurance claim support in ${c} by Gates Enterprises. We document your storm damage and meet your adjuster on the roof. Quadruple certified, 4.9 stars.`,
   ],
   "metal-roofing": [
     (c) =>

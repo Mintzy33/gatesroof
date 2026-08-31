@@ -15,13 +15,22 @@ const TEXT = "#2D3748";
 const TEXT_LIGHT = "#64748B";
 
 /* ─── Service definitions ─── */
+/*
+ * Two vocabularies, and they are NOT interchangeable — this mismatch shipped 48 dead links:
+ *   citySlug   -> the per-city route /services/<citySlug>/<city>, generated from
+ *                 `services[]` in lib/service-areas-data.ts  ("siding", "gutters")
+ *   parentSlug -> the standalone page /services/<parentSlug>, a real directory under
+ *                 app/services/                              ("siding-exterior", "gutters-guards")
+ * Using parentSlug in a city URL 404s (/services/siding-exterior/denver), and using citySlug
+ * as a standalone 404s (/services/siding). Pick per link type. Verified 2026-08-31.
+ */
 const SERVICES = [
-  { label: "Storm Damage Restoration", slug: "storm-hail-damage" },
-  { label: "Roof Replacement", slug: "roof-replacement" },
-  { label: "Roof Repair", slug: "roof-repair" },
-  { label: "Siding", slug: "siding-exterior" },
-  { label: "Gutters", slug: "gutters-guards" },
-  { label: "Insurance Claims", slug: "insurance-claims" },
+  { label: "Storm Damage Restoration", citySlug: "storm-hail-damage", parentSlug: "storm-hail-damage" },
+  { label: "Roof Replacement", citySlug: "roof-replacement", parentSlug: "roof-replacement" },
+  { label: "Roof Repair", citySlug: "roof-repair", parentSlug: "roof-repair" },
+  { label: "Siding", citySlug: "siding", parentSlug: "siding-exterior" },
+  { label: "Gutters", citySlug: "gutters", parentSlug: "gutters-guards" },
+  { label: "Insurance Claims", citySlug: "insurance-claims", parentSlug: "insurance-claims" },
 ];
 
 /* ─── Cities that have area pages ─── */
@@ -31,6 +40,9 @@ const CITIES_WITH_PAGES = new Set([
   "federal-heights", "golden", "highlands-ranch", "lakewood", "littleton",
   "lone-tree", "morrison", "northglenn", "parker", "superior", "thornton",
   "westminster", "wheat-ridge",
+  // Added 2026-08-31: both have had a real page under app/areas/ for months but were
+  // missing here, so the hub rendered them as dead text and sent them zero internal links.
+  "colorado-springs", "fort-collins",
 ]);
 
 interface CityDef {
@@ -219,8 +231,8 @@ function CityCard({ city }: { city: CityDef }) {
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           {SERVICES.map((svc) => (
             <Link
-              key={svc.slug}
-              href={hasPage ? `/services/${svc.slug}/${city.slug}` : `/services/${svc.slug}`}
+              key={svc.citySlug}
+              href={hasPage ? `/services/${svc.citySlug}/${city.slug}` : `/services/${svc.parentSlug}`}
               onClick={(e) => e.stopPropagation()}
               style={{
                 display: "flex",
@@ -246,8 +258,8 @@ function CityCard({ city }: { city: CityDef }) {
         <div style={{ marginTop: 16 }}>
           {SERVICES.map((svc) => (
             <a
-              key={svc.slug}
-              href={hasPage ? `/services/${svc.slug}/${city.slug}` : `/services/${svc.slug}`}
+              key={svc.citySlug}
+              href={hasPage ? `/services/${svc.citySlug}/${city.slug}` : `/services/${svc.parentSlug}`}
               style={{ display: "block", padding: "4px 0" }}
             >
               {svc.label} in {city.name}

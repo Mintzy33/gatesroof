@@ -318,11 +318,11 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
     "insurance-claims": [
       {
         question: `Can I choose my own contractor for an insurance claim in ${city.city}?`,
-        answer: `Yes. Colorado law gives you the right to choose your own contractor regardless of what your insurance company suggests. Insurance company "preferred vendor" programs exist to benefit the insurer, not the homeowner. Gates Enterprises works for you, not for the insurance company. We document all damage thoroughly, meet adjusters on-site, and fight for the full scope of work your ${city.city} home needs.`,
+        answer: `Yes. Colorado law gives you the right to choose your own contractor regardless of what your insurance company suggests. Insurance company "preferred vendor" programs exist to benefit the insurer, not the homeowner. Gates Enterprises works for you, not for the insurance company. We document all damage thoroughly, meet adjusters on-site, and put the full scope of work your ${city.city} home needs in front of them in writing.`,
       },
       {
         question: `What if my insurance adjuster misses damage on my ${city.city} roof?`,
-        answer: `This happens more often than you might expect. Adjusters handle dozens of claims per week and may rush through inspections, especially after major storm events in ${city.city}. Gates Enterprises meets your adjuster on-site to walk the roof together and point out every item of damage. If the initial approval still falls short, we prepare detailed supplements with additional documentation. We have successfully overturned many underpaid and denied claims.`,
+        answer: `This happens more often than you might expect. Adjusters handle dozens of claims per week and may rush through inspections, especially after major storm events in ${city.city}. Gates Enterprises meets your adjuster on-site to walk the roof together and point out every item of damage. If the initial approval still falls short, we prepare detailed supplements with additional documentation. That documentation is what gives your insurer a basis to reconsider.`,
       },
     ],
     "metal-roofing": [

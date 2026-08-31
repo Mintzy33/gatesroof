@@ -22,7 +22,7 @@ const SERVICES = [
     title: "Storm & Hail Damage",
     href: "/services/storm-hail-damage",
     icon: CloudLightning,
-    desc: "Free storm damage inspections. We document the damage, file your claim, and handle every step of the insurance process.",
+    desc: "Free storm damage inspections. We document the damage, meet your adjuster on the roof, and prepare the supplements your insurer needs.",
   },
   {
     title: "Roof Repair",

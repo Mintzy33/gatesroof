@@ -1,9 +1,17 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
+}
+
+// Provider error text can echo back a submitted address — keep PII out of logs.
+function scrubPii(msg: string): string {
+  return msg
+    .replace(/[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"',]+/g, "[email]")
+    .replace(/\+?\d[\d().\- ]{8,}\d/g, "[phone]");
 }
 
 interface ContactForm {
@@ -64,8 +72,11 @@ export async function POST(req: Request) {
       timeStyle: "short",
     });
 
+    // Correlation id for the logs — no PII, and echoed back so a caller can quote it.
+    const ref = randomUUID().slice(0, 8);
+
     // Send notification email to the business
-    await getResend().emails.send({
+    const notification = await getResend().emails.send({
       from: "Gates Enterprises <noreply@gatesroof.com>",
       to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
       subject: `New Lead: ${name.trim()} — ${serviceLabel}`,
@@ -115,9 +126,30 @@ export async function POST(req: Request) {
       `,
     });
 
+    // Resend returns { data: null, error } on a non-2xx — it does NOT throw. This
+    // email IS the lead record (no DB, no CRM), so a swallowed error loses the lead.
+    if (notification.error) {
+      console.error("Contact form lead email FAILED — lead NOT delivered:", {
+        route: "/api/contact",
+        ref,
+        service: serviceLabel,
+        resendError: notification.error.name,
+        statusCode: notification.error.statusCode,
+        message: scrubPii(notification.error.message),
+      });
+      return NextResponse.json(
+        {
+          error:
+            "Your request did not go through. Please call us at (720) 766-3377 so we don't lose it.",
+          ref,
+        },
+        { status: 502 }
+      );
+    }
+
     // Send confirmation email to the customer (only if they provided an email)
     if (email) {
-      await getResend().emails.send({
+      const confirmation = await getResend().emails.send({
         from: "Gates Enterprises <noreply@gatesroof.com>",
         to: [email],
         subject: "We received your request — Gates Enterprises",
@@ -145,6 +177,17 @@ export async function POST(req: Request) {
           </div>
         `,
       });
+
+      // Courtesy auto-reply only. The lead is already delivered, so log and move on.
+      if (confirmation.error) {
+        console.error("Contact form confirmation email failed (lead WAS delivered):", {
+          route: "/api/contact",
+          ref,
+          resendError: confirmation.error.name,
+          statusCode: confirmation.error.statusCode,
+          message: scrubPii(confirmation.error.message),
+        });
+      }
     }
 
     return NextResponse.json({ success: true });

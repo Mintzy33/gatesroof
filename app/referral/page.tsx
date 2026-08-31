@@ -29,6 +29,9 @@ export default function ReferralPage() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  // Attestation that the referrer has the referred person's OK to share their
+  // contact info. Kept out of formData so the POST body the API expects is unchanged.
+  const [hasPermission, setHasPermission] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -36,6 +39,7 @@ export default function ReferralPage() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (!hasPermission) return;
     setSubmitting(true);
     setError("");
     try {
@@ -320,9 +324,25 @@ export default function ReferralPage() {
                   onChange={handleChange}
                   style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
                 />
-                <button type="submit" disabled={submitting} style={{ width: "100%", background: ACCENT, color: WHITE, borderRadius: 14, padding: "18px 36px", border: "none", cursor: submitting ? "not-allowed" : "pointer", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, boxShadow: "0 8px 24px rgba(37,99,235,0.25)", opacity: submitting ? 0.7 : 1, transition: "opacity 0.2s" }}>
+                <label style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 16, cursor: "pointer" }}>
+                  <input
+                    type="checkbox"
+                    name="hasPermission"
+                    required
+                    checked={hasPermission}
+                    onChange={e => setHasPermission(e.target.checked)}
+                    style={{ width: 18, height: 18, marginTop: 2, flexShrink: 0, accentColor: ACCENT, cursor: "pointer" }}
+                  />
+                  <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.6, color: TEXT_LIGHT }}>
+                    I have this person&apos;s permission to share their name and contact information with Gates Enterprises. *
+                  </span>
+                </label>
+                <button type="submit" disabled={submitting || !hasPermission} style={{ width: "100%", background: ACCENT, color: WHITE, borderRadius: 14, padding: "18px 36px", border: "none", cursor: submitting || !hasPermission ? "not-allowed" : "pointer", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, boxShadow: "0 8px 24px rgba(37,99,235,0.25)", opacity: submitting || !hasPermission ? 0.7 : 1, transition: "opacity 0.2s" }}>
                   {submitting ? "Submitting..." : "Submit My Referral →"}
                 </button>
+                <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.6, color: TEXT_LIGHT, margin: "14px 0 0" }}>
+                  By submitting, you give Gates Enterprises your express written consent to contact you at the phone number and email you provided &mdash; by call, text, or email, including messages sent using automated technology. Consent is not a condition of purchase. Message and data rates may apply; reply STOP to opt out. Anyone you refer can opt out the same way. See our <Link href="/privacy" style={{ color: TEXT_LIGHT, textDecoration: "underline" }}>Privacy Policy</Link>.
+                </p>
               </form>
             </ScrollReveal>
           )}

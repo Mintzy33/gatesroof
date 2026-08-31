@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
@@ -14,6 +15,13 @@ function esc(v: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+// Provider error text can echo back a submitted address — keep PII out of logs.
+function scrubPii(msg: string): string {
+  return msg
+    .replace(/[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"',]+/g, "[email]")
+    .replace(/\+?\d[\d().\- ]{8,}\d/g, "[phone]");
 }
 
 interface ReferralForm {
@@ -57,7 +65,10 @@ export async function POST(request: Request) {
         <td style="padding: 10px 0; border-bottom: 1px solid #f3f4f6; color: #111827;">${value}</td>
       </tr>`;
 
-    await getResend().emails.send({
+    // Correlation id for the logs — no PII, and echoed back so a caller can quote it.
+    const ref = randomUUID().slice(0, 8);
+
+    const notification = await getResend().emails.send({
       from: "Gates Enterprises <noreply@gatesroof.com>",
       to: ["a.chicilo@gatesroof.com"],
       replyTo: yourEmail,
@@ -89,6 +100,26 @@ export async function POST(request: Request) {
         </div>
       `,
     });
+
+    // Resend returns { data: null, error } on a non-2xx — it does NOT throw. This
+    // email IS the referral record (no DB, no CRM), so a swallowed error loses it.
+    if (notification.error) {
+      console.error("Referral notification email FAILED — referral NOT delivered:", {
+        route: "/api/referral",
+        ref,
+        resendError: notification.error.name,
+        statusCode: notification.error.statusCode,
+        message: scrubPii(notification.error.message),
+      });
+      return NextResponse.json(
+        {
+          error:
+            "Your referral did not go through. Please call us at (720) 766-3377 so we don't lose it.",
+          ref,
+        },
+        { status: 502 }
+      );
+    }
 
     return NextResponse.json({ success: true, message: "Referral submitted successfully" });
   } catch (error) {

@@ -41,6 +41,34 @@ const faqSchema = {
   ]
 };
 
+/*
+ * Service-area grid link resolver.
+ *
+ * The grid advertises "65+ cities served" but only 27 cities have an /areas/<slug> page.
+ * Until 2026-08-31 every tile linked to /areas/<slug> unconditionally, so eight tiles —
+ * Boulder, Longmont, Loveland, Erie, Louisville, Lafayette, Greenwood Village, Castle Pines —
+ * dropped a homeowner on a 404 that also served the wrong <title>. Every one of those cities
+ * DOES have a live landing page; the tile was just pointing at the wrong one.
+ *
+ * Resolution order: the /areas hub page, then the city's best-roofer page, then its
+ * roof-replacement service page. Verified live 2026-08-31 — all 32 tiles resolve to HTTP 200.
+ */
+const AREA_HUB_SLUGS = new Set([
+  "arvada", "aurora", "brighton", "broomfield", "castle-rock", "centennial",
+  "colorado-springs", "commerce-city", "conifer", "denver", "edgewater", "englewood",
+  "evergreen", "federal-heights", "fort-collins", "golden", "highlands-ranch", "lakewood",
+  "littleton", "lone-tree", "morrison", "northglenn", "parker", "superior", "thornton",
+  "westminster", "wheat-ridge",
+]);
+const BEST_ROOFER_SLUGS = new Set([
+  "boulder", "erie", "greenwood-village", "lafayette", "longmont", "louisville", "loveland",
+]);
+function cityHref(slug: string): string {
+  if (AREA_HUB_SLUGS.has(slug)) return `/areas/${slug}`;
+  if (BEST_ROOFER_SLUGS.has(slug)) return `/best-roofer-${slug}`;
+  return `/services/roof-replacement/${slug}`;
+}
+
 export default function Home() {
   return (
     <div style={{ background: WHITE, minHeight: "100vh", overflowX: "hidden" }}>
@@ -324,7 +352,7 @@ export default function Home() {
               {n:"Golden",s:"golden"},{n:"Broomfield",s:"broomfield"},{n:"Highlands Ranch",s:"highlands-ranch"},{n:"Parker",s:"parker"},{n:"Castle Rock",s:"castle-rock"},
               {n:"Commerce City",s:"commerce-city"},{n:"Conifer",s:"conifer"},{n:"Edgewater",s:"edgewater"},{n:"Federal Heights",s:"federal-heights"},{n:"Northglenn",s:"northglenn"},
             ].map((c) => (
-              <Link key={c.n} href={`/areas/${c.s}`} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
+              <Link key={c.n} href={cityHref(c.s)} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}
           </div>
         </div>
@@ -352,7 +380,7 @@ export default function Home() {
               { n: "Fort Collins", s: "fort-collins" }, { n: "Loveland", s: "loveland" }, { n: "Colorado Springs", s: "colorado-springs" }, { n: "Conifer", s: "conifer" },
             ].map((c) => (
               <div key={c.s} style={{ background: WHITE, borderRadius: 16, padding: "20px 18px", border: "1px solid rgba(13,33,55,0.06)", boxShadow: "0 2px 8px rgba(13,33,55,0.04)" }}>
-                <Link href={`/areas/${c.s}`} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, textDecoration: "none", display: "block", marginBottom: 10 }}>{c.n}</Link>
+                <Link href={cityHref(c.s)} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 16, fontWeight: 700, color: NAVY, textDecoration: "none", display: "block", marginBottom: 10 }}>{c.n}</Link>
                 <div style={{ display: "flex", flexWrap: "wrap" as const, gap: 4 }}>
                   {[
                     { l: "Roof Replacement", sl: "roof-replacement" },

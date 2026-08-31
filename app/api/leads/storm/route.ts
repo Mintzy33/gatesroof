@@ -1,10 +1,17 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { createHash } from "crypto";
+import { createHash, randomUUID } from "crypto";
 import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
+}
+
+// Provider error text can echo back a submitted address — keep PII out of logs.
+function scrubPii(msg: string): string {
+  return msg
+    .replace(/[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"',]+/g, "[email]")
+    .replace(/\+?\d[\d().\- ]{8,}\d/g, "[phone]");
 }
 
 // Pixel id is public (already in app/components/Analytics.tsx). The CAPI token
@@ -131,7 +138,10 @@ export async function POST(req: Request) {
       timeStyle: "short",
     });
 
-    await getResend().emails.send({
+    // Correlation id for the logs — no PII, and echoed back so a caller can quote it.
+    const ref = randomUUID().slice(0, 8);
+
+    const notification = await getResend().emails.send({
       from: "Gates Storm Response <noreply@gatesroof.com>",
       to: ["a.chicilo@gatesroof.com", "info@gatesroof.com"],
       subject: `STORM LEAD: ${name.trim()} (${city})`,
@@ -156,6 +166,28 @@ export async function POST(req: Request) {
         </div>
       `,
     });
+
+    // Resend returns { data: null, error } on a non-2xx — it does NOT throw. This
+    // email IS the lead record (no DB, no CRM), so a swallowed error loses the lead.
+    // Bail before the CAPI call: never book a Lead conversion we did not receive.
+    if (notification.error) {
+      console.error("Storm lead email FAILED — lead NOT delivered:", {
+        route: "/api/leads/storm",
+        ref,
+        city: city.trim(),
+        resendError: notification.error.name,
+        statusCode: notification.error.statusCode,
+        message: scrubPii(notification.error.message),
+      });
+      return NextResponse.json(
+        {
+          error:
+            "Your request did not go through. Please call us at (720) 766-3377 so we don't lose it.",
+          ref,
+        },
+        { status: 502 }
+      );
+    }
 
     // Server-side Lead conversion to Meta (best-effort; awaited so it completes
     // before the serverless function freezes — never fire-and-forget on Vercel).

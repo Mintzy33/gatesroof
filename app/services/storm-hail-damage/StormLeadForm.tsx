@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { pushLeadFormSubmit } from "@/lib/analytics-events";
 
@@ -196,8 +197,15 @@ export default function StormLeadForm() {
       >
         {status === "submitting" ? "Submitting..." : "Get My Free Inspection"}
       </button>
-      <p style={{ fontSize: 12, color: "#94A3B8", textAlign: "center", marginTop: 12, marginBottom: 0 }}>
-        By submitting, you agree to be contacted by Gates Enterprises about your inspection.
+      <p style={{ fontSize: 12, color: "#94A3B8", textAlign: "center", marginTop: 12, marginBottom: 0, lineHeight: 1.5 }}>
+        By submitting, you give Gates Enterprises your express written consent to contact you at the
+        phone number and email you provided &mdash; by call, text, or email, including messages sent
+        using automated technology. Consent is not a condition of purchase. Message and data rates may
+        apply; reply STOP to opt out. See our{" "}
+        <Link href="/privacy" style={{ color: "#94A3B8", textDecoration: "underline" }}>
+          privacy policy
+        </Link>
+        .
       </p>
     </form>
   );

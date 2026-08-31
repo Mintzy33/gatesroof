@@ -227,6 +227,9 @@ export default function ContactContent() {
                     >
                       {loading ? "Sending..." : "Request a Free Inspection & Estimate →"}
                     </button>
+                    <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.6, color: TEXT_LIGHT, margin: 0, maxWidth: 520 }}>
+                      By submitting, you give Gates Enterprises your express written consent to contact you at the phone number and email you provided &mdash; by call, text, or email, including messages sent using automated technology. Consent is not a condition of purchase. Message and data rates may apply; reply STOP to opt out. See our <Link href="/privacy" style={{ color: TEXT_LIGHT, textDecoration: "underline" }}>Privacy Policy</Link>.
+                    </p>
                   </div>
                 </div>
               )}

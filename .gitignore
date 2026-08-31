@@ -53,3 +53,23 @@ scripts/storm-ads/logs/
 
 # Local SEO audit reports (not part of the site)
 /seo/
+
+# Weekly SEO/GEO marketing reports (internal docs, not part of the site)
+/marketing-reports/
+
+# Weekly GEO tracking archive (competitor citation intelligence, prompt matrices, run summaries).
+# DELIBERATELY NOT COMMITTED: this repo is PUBLIC (github.com/Mintzy33/gatesroof), and these files
+# name competitors, the exact queries Gates contests, and where Gates is losing. Committing them
+# publishes the playbook. Same treatment as /seo/ and /marketing-reports/ above.
+# Backed up outside git — see ~/Desktop/Gates Master/geo-archive-backups/.
+/geo/
+
+# Internal audit / strategy docs — NEVER commit: this repo is PUBLIC, and these contain
+# competitive analysis, findings, and (in the 2026-06-06 audit) a partial Meta token.
+/GATESROOF-AUDIT-*.md
+/GATESROOF-FLYWHEEL-AUDIT-*.md
+/CLAUDE-CODE-GEO-BRIEF.md
+/gates_board_review.html
+
+# storm-ads runtime logs under meta/ (operational output, not source)
+scripts/storm-ads/meta/logs/

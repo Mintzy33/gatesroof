@@ -101,7 +101,7 @@ export default function FinancingContent() {
               { num: 1, title: "Free Storm Damage Inspection", desc: "We perform a comprehensive roof inspection at no cost to you, documenting every instance of damage with detailed photos and measurements." },
               { num: 2, title: "Claim Filing Guidance", desc: "We help you understand the claim process and provide guidance on what to communicate to your insurance company." },
               { num: 3, title: "Adjuster Coordination", desc: "A Gates Enterprises representative meets with your insurance adjuster to walk through all documented damage and help ensure nothing is overlooked." },
-              { num: 4, title: "Supplement Support", desc: "If the initial estimate does not capture the full scope of damage, we prepare and submit supplements to your insurance company on your behalf." },
+              { num: 4, title: "Supplement Support", desc: "If the initial estimate does not capture the full scope of damage, we prepare a supplement with the photos and measurements to back it up, and provide it for your claim." },
               { num: 5, title: "Quality Restoration", desc: "Once approved, our certified crews complete the work to manufacturer specifications, backed by the strongest warranties in the industry." },
             ].map((step) => (
               <div key={step.num} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>

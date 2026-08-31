@@ -79,6 +79,20 @@ export function faqSchema(faqs: { q: string; a: string }[]): object {
 }
 
 // ─── BlogPosting Schema ─────────────────────────────────────────────
+// Returns the value only if it is a real, non-future YYYY-MM-DD calendar day.
+// Anything else (empty, "July 2026", "2026-02-31", tomorrow) returns null so
+// dateModified falls back to the publish date instead of emitting a bad date.
+function isoDay(value: string | undefined): string | null {
+  if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const parsed = new Date(`${value}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return null;
+  // Date rolls impossible days over (2026-02-31 -> 2026-03-03); reject those.
+  if (parsed.toISOString().slice(0, 10) !== value) return null;
+  // Never advertise a revision that has not happened yet.
+  if (parsed.getTime() > Date.now()) return null;
+  return value;
+}
+
 export function blogPostingSchema(post: {
   title: string;
   description: string;
@@ -88,13 +102,18 @@ export function blogPostingSchema(post: {
   category: string;
   keyword: string;
 }): object {
+  const updated = isoDay(post.updatedDate);
+  const published = isoDay(post.publishDate);
+  // Prefer updatedDate, but never let it predate the publish date.
+  const dateModified =
+    updated && (!published || updated >= published) ? updated : post.publishDate;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
     datePublished: post.publishDate,
-    dateModified: post.updatedDate || post.publishDate,
+    dateModified,
     author: {
       "@type": "Person",
       "@id": "https://www.gatesroof.com/about/gates-enterprises#person",

@@ -113,11 +113,11 @@ const STEPS = [
     title: "Insurance Claims Assistance",
     icon: <FileTextIcon />,
     description:
-      "If storm damage is found, we help you file your insurance claim. We document the damage, meet with your adjuster, and handle the paperwork. If your claim is approved, you are typically responsible for your deductible.",
+      "If storm damage is found, we help you file your own insurance claim. We document the damage, meet your adjuster on the roof, and prepare the paperwork your insurer asks for. If your claim is approved, you are typically responsible for your deductible.",
     highlights: [
       "Full claim documentation",
       "We meet with your adjuster",
-      "Paperwork handled for you",
+      "Documentation prepared for your insurer",
       "If your claim is approved, you are typically responsible for your deductible",
     ],
   },
@@ -180,7 +180,7 @@ const FAQS = [
   },
   {
     q: "Will my insurance cover the cost of a new roof?",
-    a: "If your roof has storm damage, an approved insurance claim may cover much of the replacement cost — coverage depends on your policy and the cause of damage. Our team documents all damage, files the claim on your behalf, and meets with your adjuster so nothing is missed. If your claim is approved, you are typically responsible for your deductible.",
+    a: "If your roof has storm damage, an approved insurance claim may cover much of the replacement cost — coverage depends on your policy and the cause of damage. Our team documents all damage, helps you file your own claim, and meets your adjuster on the roof so nothing is missed. If your claim is approved, you are typically responsible for your deductible.",
   },
   {
     q: "What happens if you inspect my roof and there is no damage?",

@@ -3,12 +3,12 @@ import PageSchema from "@/app/components/PageSchema";
 import InsuranceContent from "./content";
 
 export const metadata: Metadata = {
-  title: "Roof Insurance Claims CO | We Handle Everything",
-  description: "Full roof insurance claim assistance from inspection to final payment. Adjuster meetings, paperwork, and repairs handled for you. Call (720) 766-3377.",
+  title: "Roof Insurance Claims CO | Adjuster Meetings & Supplements",
+  description: "We document storm damage, meet your adjuster on the roof, and prepare supplements for your insurance claim. Certified repairs after. Call (720) 766-3377.",
   alternates: { canonical: "https://www.gatesroof.com/services/insurance-claims" },
   openGraph: {
-    title: "Roof Insurance Claims CO | We Handle Everything",
-    description: "Full roof insurance claim assistance from inspection to final payment. Adjuster meetings, paperwork, and repairs handled for you. Call (720) 766-3377.",
+    title: "Roof Insurance Claims CO | Adjuster Meetings & Supplements",
+    description: "We document storm damage, meet your adjuster on the roof, and prepare supplements for your insurance claim. Certified repairs after. Call (720) 766-3377.",
     url: "https://www.gatesroof.com/services/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -22,7 +22,7 @@ const serviceSchema = {
   "@type": "Service",
   "serviceType": "Insurance Restoration",
   "name": "Roofing Insurance Restoration in Colorado",
-  "description": "Full insurance restoration support from free inspection through adjuster meetings and project completion. We support homeowners to get the coverage they deserve.",
+  "description": "Insurance restoration support from free inspection through adjuster meetings and project completion. We document the damage and supply the evidence your insurer needs to evaluate the claim.",
   "url": "https://www.gatesroof.com/services/insurance-claims",
   "provider": {"@id": "https://www.gatesroof.com/#organization"},
   "areaServed": {"@type": "State", "name": "Colorado"}
@@ -36,7 +36,7 @@ const faqSchema = {
     {"@type": "Question", "name": "How long does the insurance claim process take?", "acceptedAnswer": {"@type": "Answer", "text": "The typical insurance claim process runs four to eight weeks from filing to completed restoration. The largest variable is your insurance company's adjuster scheduling."}},
     {"@type": "Question", "name": "Can I choose my own contractor for an insurance claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Colorado law gives you the right to choose your own contractor regardless of what your insurance company suggests. Insurance company preferred vendor programs exist to benefit the insurer, not the homeowner."}},
     {"@type": "Question", "name": "What if my insurance estimate seems too low?", "acceptedAnswer": {"@type": "Answer", "text": "We review every insurance estimate line by line. If the estimate falls short, we prepare detailed supplements with additional documentation, photos, and manufacturer specifications."}},
-    {"@type": "Question", "name": "What if my insurance claim gets denied?", "acceptedAnswer": {"@type": "Answer", "text": "A denial is not always the final answer. We help you understand why coverage was denied and whether a re-inspection or supplement is worth pursuing. We have successfully overturned many denied claims."}},
+    {"@type": "Question", "name": "What if my insurance claim gets denied?", "acceptedAnswer": {"@type": "Answer", "text": "A denial is not always the final answer. We help you understand why coverage was denied and whether a re-inspection or supplement is worth pursuing. If it is, we supply the photos, measurements, and manufacturer specifications your insurer needs to look again."}},
     {"@type": "Question", "name": "Is there a deadline to file a roof insurance claim in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Most policies have a one-year window from the date of the storm to file a claim. Schedule an inspection as soon as possible to protect your eligibility."}},
     {"@type": "Question", "name": "What types of damage does homeowners insurance cover?", "acceptedAnswer": {"@type": "Answer", "text": "Homeowners insurance covers damage from hail, wind, fallen trees, lightning, and other sudden events. Normal wear and tear and deferred maintenance are typically not covered."}}
   ]

@@ -40,6 +40,10 @@ const areas = [
 ];
 
 // Service parent pages (the main /services/X pages)
+// Standalone /services/<slug> pages. NOTE: these are DIRECTORY slugs and are deliberately not
+// the same vocabulary as `services[]` in lib/service-areas-data.ts, which drives the per-city
+// /services/<slug>/<city> routes below ("siding" vs "siding-exterior"). Do not unify them
+// without changing the routes — mixing the two is what shipped 48 dead links (fixed 2026-08-31).
 const serviceParents = [
   "roof-replacement",
   "storm-hail-damage",
@@ -47,6 +51,10 @@ const serviceParents = [
   "siding-exterior",
   "gutters-guards",
   "insurance-claims",
+  // Added 2026-08-31 — live pages on disk that had never been listed (all verified 200).
+  "drone-inspections",
+  "paint",
+  "windows",
 ];
 
 // Standalone landing pages
@@ -62,12 +70,17 @@ const landingPages = [
 const toolPages = [
   "tools",
   "tools/roof-age-calculator",
-  "tools/repair-cost-estimator",
+  // repair-cost-estimator removed 2026-08-31: it is a 307 redirect stub with zero inbound
+  // links, so it spent crawl budget to teach Google a redirect. Its live successor is below.
+  "tools/insurance-coverage-estimator",
   "tools/hail-risk-check",
 ];
 
 // Static utility pages
-const utilityPages = ["about", "about/alex-chicilo", "about/gates-enterprises", "blog", "contact", "gallery", "reviews", "services", "financing", "warranty", "compare", "compare/storm-chasers"];
+// Added 2026-08-31 (all verified HTTP 200 before listing): areas, faq, how-it-works, referral.
+// /how-it-works was the one genuinely invisible page on the site — absent from the sitemap AND
+// carrying zero inbound links across a 326-page crawl.
+const utilityPages = ["about", "about/alex-chicilo", "about/gates-enterprises", "areas", "blog", "contact", "faq", "gallery", "how-it-works", "referral", "reviews", "services", "financing", "warranty", "compare", "compare/storm-chasers"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString().split("T")[0];
@@ -114,13 +127,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p === "contact" ? 0.8 : 0.7,
   }));
 
-  // Blog posts (auto-generated from posts.ts — never miss a post again)
-  const blog: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${BASE}/blog/${post.slug}`,
-    lastModified: post.publishDate,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  // Blog posts (auto-generated from posts.ts — never miss a post again).
+  // Deduped by slug: two slugs are currently defined twice in posts.ts
+  // (how-to-choose-roofing-contractor-colorado, how-to-file-hail-damage-insurance-claim-colorado),
+  // which listed the same URL twice in the sitemap. The underlying duplicate posts still need
+  // resolving in posts.ts — only one body of each pair is reachable — but the sitemap must never
+  // advertise one URL twice regardless. Keeps the FIRST occurrence, which is the one the route
+  // actually serves.
+  const seenSlugs = new Set<string>();
+  const blog: MetadataRoute.Sitemap = blogPosts
+    .filter((post) => {
+      if (seenSlugs.has(post.slug)) return false;
+      seenSlugs.add(post.slug);
+      return true;
+    })
+    .map((post) => ({
+      url: `${BASE}/blog/${post.slug}`,
+      lastModified: post.updatedDate || post.publishDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
 
   // Service × City programmatic pages (only indexed combos)
   const serviceCityPages: MetadataRoute.Sitemap = allServices.flatMap((svc) =>

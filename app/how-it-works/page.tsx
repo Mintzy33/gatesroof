@@ -52,7 +52,7 @@ const faqs = faqSchema([
   },
   {
     q: "Will my insurance cover the cost of a new roof?",
-    a: "If your roof has storm damage, an approved insurance claim may cover much of the replacement cost — coverage depends on your policy and the cause of damage. Our team documents all damage, files the claim on your behalf, and meets with your adjuster so nothing is missed. If your claim is approved, you are typically responsible for your deductible.",
+    a: "If your roof has storm damage, an approved insurance claim may cover much of the replacement cost — coverage depends on your policy and the cause of damage. Our team documents all damage, helps you file your own claim, and meets your adjuster on the roof so nothing is missed. If your claim is approved, you are typically responsible for your deductible.",
   },
   {
     q: "What happens if you inspect my roof and there is no damage?",

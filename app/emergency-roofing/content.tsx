@@ -87,7 +87,7 @@ const PROCESS_STEPS = [
     Icon: CheckCircle,
     step: "05",
     title: "Permanent Repair or Replacement",
-    desc: "With your claim approved, our crews complete the permanent repair or full replacement using manufacturer-certified installation techniques and premium materials backed by warranties of up to 50 years.",
+    desc: "Once your claim is settled, our crews complete the permanent repair or full replacement using manufacturer-certified installation techniques and premium materials backed by warranties of up to 50 years.",
   },
 ];
 
