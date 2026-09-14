@@ -350,6 +350,16 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
 // FAQ generators for CITY-ONLY pages (area pages)
 // ---------------------------------------------------------------------------
 
+// Per-city cost narratives. The dollar range stays formula-derived (see
+// priceMultiplier) so a city page can never drift from its siblings; only the
+// surrounding explanation is city-specific. Numbers quoted here must be
+// verifiable — the Aurora hail counts come from NOAA's Storm Events Database
+// (bulk CSVs at ncei.noaa.gov, Arapahoe County, CZ_TYPE=C, pulled 2026-09-14).
+const CITY_COST_NARRATIVE: Record<string, (low: string, high: string) => string> = {
+  aurora: (low, high) =>
+    `Residential roof replacement in Aurora typically ranges from $${low} to $${high}, reflecting the city's spread across Arapahoe, Adams, and Douglas County permit zones and its position in Colorado's primary hail corridor. NOAA's Storm Events Database records 115 hail events in Arapahoe County between 2019 and 2024, 38 of them producing hailstones of 1.5 inches or larger. When a covered storm event causes the damage, your homeowners insurance typically covers the cost minus your deductible. Gates Enterprises provides free storm damage inspections across Aurora \u2014 from Southlands and Saddle Rock in the east to Murphy Creek and Del Mar Parkway \u2014 and has completed projects across Aurora's major neighborhoods. Call (720) 766-3377 for a free estimate.`,
+};
+
 function getCityOnlyFAQs(city: CityData): FAQItem[] {
   const profile = getCityProfile(city);
   const seed = `city-only-${city.slug}`;
@@ -359,9 +369,13 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // General roofing cost
   const baseLow = Math.round(10000 * profile.priceMultiplier / 100) * 100;
   const baseHigh = Math.round(28000 * profile.priceMultiplier / 100) * 100;
+  const costLow = baseLow.toLocaleString();
+  const costHigh = baseHigh.toLocaleString();
   pool.push({
     question: `How much does a new roof cost in ${city.city}, Colorado?`,
-    answer: `Residential roof replacement in ${city.city} typically ranges from $${baseLow.toLocaleString()} to $${baseHigh.toLocaleString()}, depending on roof size, pitch, material choice, and deck condition. ${city.hailRisk === "high" || city.hailRisk === "moderate" ? "If your roof was damaged by hail or wind, your homeowners insurance typically covers the cost minus your deductible." : "For storm-damaged roofs, insurance may cover some or all of the cost."} Gates Enterprises provides free, no-obligation estimates for ${city.city} homeowners. Call (720) 766-3377 to schedule yours.`,
+    answer: CITY_COST_NARRATIVE[city.slug]
+      ? CITY_COST_NARRATIVE[city.slug](costLow, costHigh)
+      : `Residential roof replacement in ${city.city} typically ranges from $${baseLow.toLocaleString()} to $${baseHigh.toLocaleString()}, depending on roof size, pitch, material choice, and deck condition. ${city.hailRisk === "high" || city.hailRisk === "moderate" ? "If your roof was damaged by hail or wind, your homeowners insurance typically covers the cost minus your deductible." : "For storm-damaged roofs, insurance may cover some or all of the cost."} Gates Enterprises provides free, no-obligation estimates for ${city.city} homeowners. Call (720) 766-3377 to schedule yours.`,
   });
 
   // Hail frequency
@@ -419,7 +433,20 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   });
 
   // Pick 7 unique ones
-  return pickItems(pool, seed, 7);
+  const picked = pickItems(pool, seed, 7);
+
+  // A city only gets a CITY_COST_NARRATIVE because that cost answer is the
+  // page's quotable one, so pickItems() must not be allowed to drop it —
+  // Aurora's slug hash did exactly that, silently.
+  if (CITY_COST_NARRATIVE[city.slug]) {
+    const costQuestion = `How much does a new roof cost in ${city.city}, Colorado?`;
+    if (!picked.some((f) => f.question === costQuestion)) {
+      const cost = pool.find((f) => f.question === costQuestion);
+      if (cost) return [cost, ...picked.slice(0, 6)];
+    }
+  }
+
+  return picked;
 }
 
 // ---------------------------------------------------------------------------
