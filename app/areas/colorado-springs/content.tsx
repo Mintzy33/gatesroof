@@ -55,7 +55,7 @@ const HAIL_EVENTS = [
 const SERVICES = [
   {
     title: "Storm Damage Restoration",
-    desc: "Colorado Springs sits in one of the most active hail corridors in Colorado, with Palmer Divide storms regularly tracking through the city. Gates Enterprises LLC responds quickly with detailed inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, guiding you through the entire process so your home is fully protected.",
+    desc: "Colorado Springs sits in one of the most active hail corridors in Colorado, with Palmer Divide storms regularly tracking through the city. Gates Enterprises LLC responds quickly with detailed inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, guiding you through the documentation and claim process from first inspection through final walkthrough.",
     href: "/services/storm-hail-damage"
   },
   {

@@ -165,7 +165,7 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
     const high = Math.round(baseHigh * profile.priceMultiplier / 100) * 100;
     pool.push({
       question: `How much does ${service.service.toLowerCase()} cost in ${city.city}, Colorado?`,
-      answer: `${service.service} costs in ${city.city} typically range from $${low.toLocaleString()} to $${high.toLocaleString()} for most residential projects. The final price depends on your roof's size, pitch, material selection, and any underlying deck repairs needed. ${city.hailRisk === "high" ? "If your roof was damaged by a hail event, your homeowners insurance typically covers the cost minus your deductible." : "For storm-damaged roofs, insurance often covers most or all of the replacement cost."} Call us at (720) 766-3377 for a free estimate specific to your ${city.city} home.`,
+      answer: `${service.service} costs in ${city.city} typically range from $${low.toLocaleString()} to $${high.toLocaleString()} for most residential projects. The final price depends on your roof's size, pitch, material selection, and any underlying deck repairs needed. ${city.hailRisk === "high" ? "If a hail event damaged your roof, an approved insurance claim can offset much of that cost — coverage depends on your policy, and you are typically responsible for your deductible." : "For storm-damaged roofs, insurance often covers most or all of the replacement cost."} Call us at (720) 766-3377 for a free estimate specific to your ${city.city} home.`,
     });
   }
 
@@ -375,7 +375,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
     question: `How much does a new roof cost in ${city.city}, Colorado?`,
     answer: CITY_COST_NARRATIVE[city.slug]
       ? CITY_COST_NARRATIVE[city.slug](costLow, costHigh)
-      : `Residential roof replacement in ${city.city} typically ranges from $${baseLow.toLocaleString()} to $${baseHigh.toLocaleString()}, depending on roof size, pitch, material choice, and deck condition. ${city.hailRisk === "high" || city.hailRisk === "moderate" ? "If your roof was damaged by hail or wind, your homeowners insurance typically covers the cost minus your deductible." : "For storm-damaged roofs, insurance may cover some or all of the cost."} Gates Enterprises provides free, no-obligation estimates for ${city.city} homeowners. Call (720) 766-3377 to schedule yours.`,
+      : `Residential roof replacement in ${city.city} typically ranges from $${baseLow.toLocaleString()} to $${baseHigh.toLocaleString()}, depending on roof size, pitch, material choice, and deck condition. ${city.hailRisk === "high" || city.hailRisk === "moderate" ? "If hail or wind damaged your roof, an approved insurance claim can offset much of that cost — coverage depends on your policy, and you are typically responsible for your deductible." : "For storm-damaged roofs, insurance may cover some or all of the cost."} Gates Enterprises provides free, no-obligation estimates for ${city.city} homeowners. Call (720) 766-3377 to schedule yours.`,
   });
 
   // Hail frequency

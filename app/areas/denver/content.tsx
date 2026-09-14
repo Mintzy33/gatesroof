@@ -55,7 +55,7 @@ const HAIL_EVENTS = [
 const SERVICES = [
   {
     title: "Storm Damage Restoration",
-    desc: "Denver's severe storm season means thousands of homes sustain hail and wind damage every year. Gates Enterprises LLC responds quickly with detailed inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, guiding you through the entire restoration process so your home is fully protected.",
+    desc: "Denver's severe storm season means thousands of homes sustain hail and wind damage every year. Gates Enterprises LLC responds quickly with detailed inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, guiding you through the documentation and claim process from first inspection through final walkthrough.",
     href: "/services/storm-hail-damage"
   },
   {
