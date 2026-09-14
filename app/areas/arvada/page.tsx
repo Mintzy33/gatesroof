@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
-import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { cityBreadcrumb, faqSchema } from "../../../lib/schema";
+import { getCityFAQItems } from "../../../lib/faq-data";
 import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
@@ -43,7 +44,10 @@ const citySchema = {
 
 
 const areaBreadcrumbs = cityBreadcrumb("Arvada", "arvada");
-const areaFaqs = faqSchema(cityFaqItems("Arvada"));
+// FAQPage markup must mirror the FAQs the page actually renders. content.tsx
+// renders getCityFAQItems("arvada"); cityFaqItems() emitted a different, generic
+// set, so the marked-up Q/A never appeared in the HTML.
+const areaFaqs = faqSchema(getCityFAQItems("arvada").map((f) => ({ q: f.question, a: f.answer })));
 
 export default function Page() {
   return (
