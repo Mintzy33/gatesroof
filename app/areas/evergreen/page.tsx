@@ -81,7 +81,7 @@ const citySchema = {
           "name": "How do I know if my Evergreen home has hail damage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hail damage is not always visible from the ground, and tree cover in Evergreen can make it even harder to spot. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Evergreen homeowners."
+            "text": "Hail damage is not always visible from the ground, and heavy tree cover in Evergreen can make it even harder to spot. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Evergreen homeowners."
           }
         },
         {
@@ -89,7 +89,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with my insurance company?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
           }
         },
         {

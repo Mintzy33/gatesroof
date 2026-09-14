@@ -89,7 +89,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with my insurance company?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
           }
         },
         {
@@ -113,7 +113,7 @@ const citySchema = {
           "name": "How long does a roof replacement take in Lone Tree?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Larger custom homes in Lone Tree may require additional time."
+            "text": "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Larger custom homes in Lone Tree may require additional time. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
           }
         },
         {

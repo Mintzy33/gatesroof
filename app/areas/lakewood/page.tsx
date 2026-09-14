@@ -113,7 +113,7 @@ const citySchema = {
           "name": "What roofing materials work best for Lakewood homes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Lakewood homes due to the frequency of hail in Jefferson County. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
+            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Lakewood homes due to the frequency of hail in Jefferson County. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed. We help you choose the best option for your budget, style, and warranty preferences."
           }
         },
         {
@@ -121,7 +121,7 @@ const citySchema = {
           "name": "How quickly can you inspect my roof after a storm?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Because we are headquartered in Lakewood, we can typically schedule inspections within days of a storm event. During peak storm season, demand increases, so we recommend reaching out as soon as possible."
+            "text": "Because we are headquartered in Lakewood, we can typically schedule inspections within days of a storm event. During peak storm season, demand increases, so we recommend reaching out as soon as possible to secure your spot."
           }
         },
         {
@@ -129,7 +129,7 @@ const citySchema = {
           "name": "What warranties are available through Gates Enterprises?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer, including GAF's Golden Pledge with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS coverage."
+            "text": "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge\u00ae with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS\u2122 coverage. We walk you through every option so you can make an informed decision."
           }
         },
         {
@@ -137,7 +137,7 @@ const citySchema = {
           "name": "Does Gates Enterprises offer free inspections and estimates?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer completely free roof inspections and estimates for all Lakewood homeowners. No pressure, no obligation."
+            "text": "Yes. We offer completely free roof inspections and estimates for all Lakewood homeowners. No pressure, no obligation. We assess your roof's condition, explain what we find, and give you a clear recommendation."
           }
         }
       ]

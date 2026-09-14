@@ -89,7 +89,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with my insurance company?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
           }
         },
         {
@@ -105,7 +105,7 @@ const citySchema = {
           "name": "What roofing materials do you recommend for Brighton homes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Given Brighton's severe hail exposure on the open plains, we recommend impact resistant shingles rated Class 3 or Class 4. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
+            "text": "Given Brighton's severe hail exposure on the open plains, we recommend impact resistant shingles rated Class 3 or Class 4. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
           }
         },
         {
@@ -113,7 +113,7 @@ const citySchema = {
           "name": "How long does a roof replacement take in Brighton?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof."
+            "text": "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
           }
         },
         {

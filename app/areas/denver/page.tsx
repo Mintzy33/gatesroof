@@ -87,7 +87,7 @@ const citySchema = {
           "name": "How often should Denver homeowners inspect their roof?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Denver's position in the hail corridor means your roof takes more punishment than homes in most other cities."
+            "text": "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Denver's position in the hail corridor means your roof takes more punishment than homes in most other cities. Annual inspections catch small problems before they become expensive repairs."
           }
         },
         {
@@ -95,7 +95,7 @@ const citySchema = {
           "name": "Does Gates Enterprises work with insurance companies on storm damage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process."
+            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored."
           }
         },
         {
@@ -103,7 +103,7 @@ const citySchema = {
           "name": "Can you work on older Denver homes with unique roof designs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely. Denver has a wide range of architectural styles, from Victorian homes in Capitol Hill to Craftsman bungalows in Park Hill to mid century ranches in Harvey Park. Our crews have experience with steep pitches, complex valleys, and everything in between."
+            "text": "Absolutely. Denver has a wide range of architectural styles, from Victorian homes in Capitol Hill to Craftsman bungalows in Park Hill to mid century ranches in Harvey Park. Our crews have experience with steep pitches, complex valleys, slate to shingle conversions, and everything in between."
           }
         },
         {
@@ -111,7 +111,7 @@ const citySchema = {
           "name": "What type of shingles hold up best in Denver's climate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Denver homes. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed."
+            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Denver homes. These shingles are specifically designed to withstand hail impacts. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed."
           }
         },
         {
@@ -119,7 +119,7 @@ const citySchema = {
           "name": "How long does a typical roof replacement take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential roof replacements in Denver are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions."
+            "text": "Most residential roof replacements in Denver are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project."
           }
         },
         {
@@ -127,7 +127,7 @@ const citySchema = {
           "name": "Does Gates Enterprises serve the entire Denver metro?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC serves homeowners across Colorado's Front Range, including Lakewood, Parker, Aurora, Arvada, Westminster, Littleton, Centennial, and surrounding communities."
+            "text": "Yes. While this page focuses on Denver proper, Gates Enterprises LLC serves homeowners across Colorado's Front Range, including Lakewood, Parker, Aurora, Arvada, Westminster, Littleton, Centennial, and surrounding communities."
           }
         },
         {

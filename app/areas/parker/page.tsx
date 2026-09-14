@@ -134,7 +134,7 @@ const citySchema = {
           "name": "What roofing materials are best for Parker's hail corridor?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Given Parker's position along the Palmer Divide hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. These shingles are designed to withstand hail impact and may qualify you for insurance premium discounts. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
+            "text": "Given Parker's position along the Palmer Divide hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. These shingles are designed to withstand hail impact and may qualify you for insurance premium discounts. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
           }
         },
         {
@@ -158,7 +158,7 @@ const citySchema = {
           "name": "How soon should I get an inspection after a hailstorm?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. Hidden damage can worsen over time if left unaddressed, potentially leading to leaks, mold, or structural issues. We recommend scheduling a free inspection within a few weeks of any significant storm."
+            "text": "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. However, hidden damage can worsen over time if left unaddressed, potentially leading to leaks, mold, or structural issues. We recommend scheduling a free inspection within a few weeks of any significant storm."
           }
         }
       ]
