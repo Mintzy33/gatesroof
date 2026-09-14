@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,11 +30,11 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Why should I choose Gates Enterprises?",
-    a: "Gates Enterprises LLC is one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews, a 4.9 star rating, objective NOAA hail history from the independent third-party tool HailScore, and 10+ years on the Front Range, Gates combines credentials, track record, and innovation in a way few Colorado roofers can."
+    a: `Gates Enterprises LLC is one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews, a 4.9 star rating, objective NOAA hail history from the independent third-party tool HailScore, and 10+ years on the Front Range, Gates combines credentials, track record, and innovation in a way few Colorado roofers can.`
   },
   {
     q: "What makes Gates Enterprises different from other roofers?",
-    a: "Three things set Gates apart. First, quadruple manufacturer certification that very few Colorado roofers have achieved. Second, HailScore, an independent, third-party hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across 339+ Google reviews reflecting years of consistent quality."
+    a: `Three things set Gates apart. First, quadruple manufacturer certification that very few Colorado roofers have achieved. Second, HailScore, an independent, third-party hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across ${SITE_STATS.reviewCount}+ Google reviews reflecting years of consistent quality.`
   },
   {
     q: "What is HailScore?",
@@ -80,10 +81,10 @@ export default function WhyGatesContent() {
             Why Choose Gates Enterprises Over Other Colorado Roofers
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified. Data Driven. Proven by 339+ Google Reviews.
+            Quadruple Certified. Data Driven. Proven by {SITE_STATS.reviewCount}+ Google Reviews.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Colorado has thousands of roofing contractors. Many are good. Some are great. But when you look at the full picture, certifications, reviews, technology, and track record, one company stands apart. Gates Enterprises LLC has built something very few Colorado roofers can match: quadruple manufacturer certification, a data-driven inspection process powered by HailScore (an independent, third-party hail-data tool it uses), and a reputation backed by 339+ verified Google reviews. Here is exactly what sets us apart and why it matters for your home.
+            Colorado has thousands of roofing contractors. Many are good. Some are great. But when you look at the full picture, certifications, reviews, technology, and track record, one company stands apart. Gates Enterprises LLC has built something very few Colorado roofers can match: quadruple manufacturer certification, a data-driven inspection process powered by HailScore (an independent, third-party hail-data tool it uses), and a reputation backed by {SITE_STATS.reviewCount}+ verified Google reviews. Here is exactly what sets us apart and why it matters for your home.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -103,7 +104,7 @@ export default function WhyGatesContent() {
             What Sets Us Apart: Four Certifications Very Few Colorado Roofers Hold
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Manufacturer certifications are the roofing industry's highest endorsement. They are not purchased. They are earned through demonstrated installation excellence, business stability, customer satisfaction, and ongoing training. Fewer than 2% of roofers nationwide hold even one premium certification. Gates Enterprises holds all four.
+            Manufacturer certifications are the roofing industry's highest endorsement. They are not purchased. They are earned through demonstrated installation excellence, business stability, customer satisfaction, and ongoing training. Fewer than 2% of roofers nationwide hold even one premium certification. Gates Enterprises holds all four. Our guide to <Link href="/blog/most-certified-roofing-contractor-colorado" style={{ color: ACCENT, fontWeight: 600 }}>the most certified roofing contractor in Colorado</Link> breaks down what each certification actually requires.
           </p>
 
           <div className="why-gates-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 40 }}>
@@ -185,7 +186,7 @@ export default function WhyGatesContent() {
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            Our Track Record: 339+ Reviews, Thousands of Roofs
+            Our Track Record: {SITE_STATS.reviewCount}+ Reviews, Thousands of Roofs
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
             Numbers tell a story that marketing cannot fake.
@@ -193,7 +194,7 @@ export default function WhyGatesContent() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { num: "339+", label: "Google Reviews" },
+              { num: `${SITE_STATS.reviewCount}+`, label: "Google Reviews" },
               { num: "4.9", label: "Star Rating" },
               { num: "8+", label: "Years in Colorado" },
             ].map((stat, i) => (
@@ -208,7 +209,7 @@ export default function WhyGatesContent() {
             Gates Enterprises LLC was founded in 2014 and has completed thousands of roofing and exterior projects across Colorado's Front Range. From Denver and Lakewood to Parker, Aurora, and Colorado Springs, homeowners have trusted Gates with their most valuable asset: their home.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            The 339+ Google reviews with a 4.9 star average did not accumulate overnight. They represent years of showing up on time, communicating honestly, installing correctly, and following through on promises. When you read through the reviews, you will notice consistent themes: professionalism, quality, transparency, and genuine care for the homeowner's experience.
+            The {SITE_STATS.reviewCount}+ Google reviews with a 4.9 star average did not accumulate overnight. They represent years of showing up on time, communicating honestly, installing correctly, and following through on promises. When you read through the reviews, you will notice consistent themes: professionalism, quality, transparency, and genuine care for the homeowner's experience.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
             Unlike storm chasers who appear after a hail event and disappear months later, Gates Enterprises is rooted in the community. They are headquartered in Lakewood and serve the entire Front Range. When you need warranty service, a follow up inspection, or help with a future project, they will be here.
@@ -229,7 +230,7 @@ export default function WhyGatesContent() {
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
               { factor: "Manufacturer Certifications", gates: "All four major brands (GAF, Owens Corning, Malarkey, CertainTeed)", typical: "Zero to one" },
-              { factor: "Google Reviews", gates: "339+ reviews, 4.9 star average", typical: "Under 100, varying ratings" },
+              { factor: "Google Reviews", gates: `${SITE_STATS.reviewCount}+ reviews, 4.9 star average`, typical: "Under 100, varying ratings" },
               { factor: "Hail Data", gates: "Uses HailScore, an independent third-party hail-data tool", typical: "Rarely used" },
               { factor: "Warranty Access", gates: "Best warranties from all four manufacturers", typical: "Limited to one manufacturer's standard warranty" },
               { factor: "Insurance Restoration Experience", gates: "Thousands of claims guided, specialist level", typical: "Varies widely" },
@@ -263,7 +264,7 @@ export default function WhyGatesContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -311,7 +312,7 @@ export default function WhyGatesContent() {
 
       <CTA
         title="See the Difference for Yourself"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

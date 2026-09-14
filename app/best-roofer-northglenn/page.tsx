@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferNorthglennContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Northglenn CO (2026) | 4x Certified \u2605 339+ Reviews",
-  description: "Northglenn's top rated roofing company. 4.9 stars from 339 reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377",
+  title: `Best Roofer Northglenn CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
+  description: `Northglenn's top rated roofing company. 4.9 stars from ${SITE_STATS.reviewCount} reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-northglenn" },
   openGraph: {
-    title: "Best Roofer Northglenn CO (2026) | 4x Certified \u2605 339+ Reviews",
-    description: "Northglenn's top rated roofing company. 4.9 stars from 339 reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377",
+    title: `Best Roofer Northglenn CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
+    description: `Northglenn's top rated roofing company. 4.9 stars from ${SITE_STATS.reviewCount} reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-northglenn",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Northglenn?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Northglenn. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Northglenn. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself.`
   },
   {
     q: "What certifications should a Northglenn roofer have?",

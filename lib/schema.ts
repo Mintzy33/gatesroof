@@ -30,6 +30,7 @@ export const BUSINESS_INFO = {
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
     "https://www.google.com/maps/place/Gates+Enterprises+LLC",
+    "https://www.bbb.org/us/co/lakewood/profile/roofing-contractors/gates-enterprises-llc-1296-90248195",
   ],
 } as const;
 
@@ -156,12 +157,6 @@ export function reviewPageSchema(
     name: BUSINESS_INFO.name,
     url: BUSINESS_INFO.url,
     telephone: BUSINESS_INFO.telephoneDisplay,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: BUSINESS_INFO.rating.value,
-      reviewCount: BUSINESS_INFO.rating.count,
-      bestRating: BUSINESS_INFO.rating.best,
-    },
     review: reviews.slice(0, 10).map((r) => ({
       "@type": "Review",
       author: { "@type": "Person", name: r.name },
@@ -203,12 +198,6 @@ export function servicePageSchema(service: {
         addressRegion: BUSINESS_INFO.address.region,
         postalCode: BUSINESS_INFO.address.postalCode,
         addressCountry: BUSINESS_INFO.address.country,
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: BUSINESS_INFO.rating.value,
-        reviewCount: BUSINESS_INFO.rating.count,
-        bestRating: BUSINESS_INFO.rating.best,
       },
     },
     areaServed: { "@type": "State", name: "Colorado" },

@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Fort Collins?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality speaks for itself."
+    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality speaks for itself.`
   },
   {
     q: "Does Fort Collins get a lot of hail?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "339+ verified Google reviews" },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews` },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
   { label: "Uses HailScore, an independent third-party radar hail-data tool" },
@@ -91,7 +92,7 @@ export default function BestRooferFortCollinsContent() {
             Best Roofing Company in Fort Collins, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Fort Collins homeowners face a unique set of roofing challenges. Between the severe hailstorms that roll through Northern Colorado, the intense UV exposure at elevation, and the dramatic temperature swings from season to season, your roof needs to be installed right the first time. Finding the best roofing company in Fort Collins means looking beyond the cheapest quote. It means choosing a contractor with real certifications, a proven track record, and technology that sets them apart. Here is what to look for and why Gates Enterprises LLC stands above the competition.
@@ -127,7 +128,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>A Deep Bench of Verified Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              339+ Google reviews with a 4.9 star average does not happen by accident. It takes years of consistently excellent work, honest communication, and follow through on promises. Gates Enterprises has built that track record across thousands of projects along Colorado's Front Range, including Fort Collins and surrounding communities. The reviews are from real homeowners who have experienced the quality firsthand.
+              {SITE_STATS.reviewCount}+ Google reviews with a 4.9 star average does not happen by accident. It takes years of consistently excellent work, honest communication, and follow through on promises. Gates Enterprises has built that track record across thousands of projects along Colorado's Front Range, including Fort Collins and surrounding communities. The reviews are from real homeowners who have experienced the quality firsthand.
             </p>
           </div>
 
@@ -206,7 +207,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -252,7 +253,7 @@ export default function BestRooferFortCollinsContent() {
 
       <CTA
         title="Fort Collins Deserves Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

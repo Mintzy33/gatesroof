@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Colorado Springs?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality is well documented."
+    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality is well documented.`
   },
   {
     q: "What certifications should a Colorado Springs roofer have?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "339+ verified Google reviews" },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews` },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
   { label: "Uses HailScore, an independent third-party radar hail-data tool" },
@@ -91,7 +92,7 @@ export default function BestRooferColoradoSpringsContent() {
             Best Roofing Company in Colorado Springs (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Colorado Springs homeowners know that weather along the Front Range does not play favorites. From the massive hailstorms that sweep down from the Palmer Divide to the high winds that funnel through the Ute Pass corridor, your roof takes a beating. Finding the right roofing company is not about picking the cheapest bid. It is about choosing a contractor with the certifications, reviews, and technology to protect your biggest investment. Here is what to look for and why Gates Enterprises LLC leads the field.
@@ -127,7 +128,7 @@ export default function BestRooferColoradoSpringsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>A Proven Track Record of Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Online reviews are the most transparent indicator of quality. A handful of five star reviews can be misleading, but 339+ Google reviews with a 4.9 star average tells a consistent story. Gates Enterprises has earned that track record across years of work along the Front Range, from Colorado Springs to Denver and everywhere between. The reviews come from real homeowners who have seen the work firsthand.
+              Online reviews are the most transparent indicator of quality. A handful of five star reviews can be misleading, but {SITE_STATS.reviewCount}+ Google reviews with a 4.9 star average tells a consistent story. Gates Enterprises has earned that track record across years of work along the Front Range, from Colorado Springs to Denver and everywhere between. The reviews come from real homeowners who have seen the work firsthand.
             </p>
           </div>
 
@@ -209,7 +210,7 @@ export default function BestRooferColoradoSpringsContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -255,7 +256,7 @@ export default function BestRooferColoradoSpringsContent() {
 
       <CTA
         title="Colorado Springs Deserves Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

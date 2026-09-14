@@ -33,6 +33,7 @@ const serviceToBlogPosts: Record<string, string[]> = {
     "colorado-building-codes-roofing-2026",
     "why-manufacturer-certifications-matter-roofer",
     "gaf-master-elite-vs-preferred-difference",
+    "most-certified-roofing-contractor-colorado",
   ],
   "storm-hail-damage": [
     "colorado-hail-season-2026-homeowners-guide",
@@ -52,6 +53,7 @@ const serviceToBlogPosts: Record<string, string[]> = {
     "post-storm-roof-inspection-checklist-colorado",
     "preparing-roof-colorado-summer-storms",
     "wind-damage-roofs-colorado",
+    "most-certified-roofing-contractor-colorado",
   ],
   "roof-repair": [
     "emergency-roof-repair-after-storm",
@@ -168,6 +170,7 @@ const cityToBlogPosts: Record<string, string[]> = {
 
 // Blog post title lookup (for display in related articles sections)
 const blogPostTitles: Record<string, { title: string; category: string }> = {
+  "most-certified-roofing-contractor-colorado": { title: "Who Is the Most Certified Roofing Contractor in Colorado? (2026 Guide)", category: "Hiring Tips" },
   "class-4-impact-resistant-shingles-colorado": { title: "Class 4 Impact Resistant Shingles: Are They Worth It in Colorado?", category: "Roofing Materials" },
   "colorado-hail-season-2026-homeowners-guide": { title: "Colorado Hail Season 2026: Complete Homeowner's Guide", category: "Storm Damage" },
   "what-does-hail-damage-look-like-on-roof": { title: "What Does Hail Damage Look Like on a Roof?", category: "Storm Damage" },

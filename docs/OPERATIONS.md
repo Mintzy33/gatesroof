@@ -75,7 +75,8 @@ import Script from "next/script";  // ❌ for JSON-LD
 | `WebSite` + `SiteNavigationElement` | `app/layout.tsx` |
 | `FAQPage` | Homepage + landing pages + blog (per-page) |
 | `Service` | Each `app/services/*` page |
-| `Review` + `AggregateRating` | `/reviews` |
+| `Review` (individual) | `/reviews` |
+| `AggregateRating` | `app/layout.tsx` ONLY — see "One AggregateRating" below |
 | `Article` (`BlogPosting`) | `/blog/[slug]` |
 | `Person` | `/about/alex-chicilo`, `/about/gates-enterprises` |
 | `WebPage` (with `dateModified`) | 103 landing pages, via `<PageSchema route="…" />` |
@@ -109,7 +110,17 @@ git add lib/page-dates.json && git commit -m "chore: refresh page-dates"
 
 Single source of truth for `reviewCount`, `starRating`, `totalRoofs`, `phone`, etc. Schemas (`RoofingContractor.aggregateRating`) pull from here.
 
-**Known issue:** ~147 page files hardcode the review count inline instead of importing from `SITE_STATS`. When the number changes you must site-wide find/replace. Future improvement: refactor pages to read from `SITE_STATS`. The file's own comment warns about this — heed it.
+**Fixed 2026-09-14.** Every file under `app/` and `lib/` now reads `SITE_STATS.reviewCount` — 619 literals across 173 files were replaced, so changing the number is a one-line edit to `lib/site-stats.ts`. The only remaining hardcodes live outside the Next module graph and must still be updated by hand: `public/llms.txt`, `scripts/generate-best-roofer-pages.mjs`, and the Meta ad templates under `scripts/storm-ads/meta/`.
+
+Regression check — this must return nothing:
+```bash
+grep -rn "reviewCount\|Google reviews" app lib | grep -E "[0-9]{3}" | grep -v SITE_STATS
+```
+
+**One AggregateRating.** `app/layout.tsx`'s `localBusinessSchema` is the only place in the repo allowed to emit an `aggregateRating`. It sits on `@id` `https://www.gatesroof.com/#organization`, which renders in `<head>` on every page. Before 2026-09-14, 34 other files re-declared that same `@id` with a second rating; Google merges by `@id` and returned *"Review has multiple aggregate ratings"* on 288 pages. Adding a second one anywhere re-breaks all of them:
+```bash
+grep -rn "aggregateRating" app lib | grep -v node_modules   # must be exactly 1 hit
+```
 
 ### 5. `llms.txt` — `public/llms.txt`
 

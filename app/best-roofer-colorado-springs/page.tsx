@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Best Roofer Colorado Springs (2026) | 4x Certified ★",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Colorado Springs?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality is well documented."
+    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Colorado Springs. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality is well documented.`
   },
   {
     q: "What certifications should a Colorado Springs roofer have?",

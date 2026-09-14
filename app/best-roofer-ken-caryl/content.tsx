@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Ken Caryl?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Ken Caryl. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Ken Caryl. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their track record speaks for itself.`
   },
   {
     q: "How do I choose a roofing company in Ken Caryl?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
-  { label: "339+ verified Google reviews", gates: true },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews`, gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "Uses HailScore, an independent third-party radar hail-data tool", gates: true },
@@ -91,7 +92,7 @@ export default function BestRooferKenCarylContent() {
             Best Roofing Company in Ken Caryl, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado&apos;s Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado&apos;s Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Ken Caryl is a master-planned community in Jefferson County nestled against the foothills south of Lakewood. With strict HOA standards and homes that blend suburban density with mountain proximity, Ken Caryl homeowners need a roofer who understands both HOA compliance and Colorado's high-altitude roofing requirements.
@@ -162,7 +163,7 @@ export default function BestRooferKenCarylContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -210,7 +211,7 @@ export default function BestRooferKenCarylContent() {
 
       <CTA
         title="Get Ken Caryl's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

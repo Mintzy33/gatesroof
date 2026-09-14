@@ -157,16 +157,33 @@ the exhaustive sweep is the only defense.
    ```bash
    grep -rn "308\|308+\|300+" app lib public scripts
    ```
-   Known drift hotspots (all bit us in Runs 003–005): `public/llms.txt` · homepage
-   cert badge · `app/areas/*/page.tsx` (metadata title AND body AND `citySchema`
-   `aggregateRating` — titles and body drift independently) · `app/best-roofer-*`
-   pages · blog body copy in `app/blog/posts.ts` · FAQ generators `lib/faq-data.ts`
-   and `lib/schema.ts` (`cityFaqItems` fans out to every city page) · Meta ad
-   templates in `scripts/storm-ads/meta/build-storm-city.py`.
-4. **Schema precision rule:** `aggregateRating.reviewCount` must be the **exact
-   integer** (e.g. `"339"`); marketing copy may round down to "300+"-style only if
-   intentional — but Run 005 flagged exactly that mismatch as trust-eroding, so
-   prefer the exact number everywhere.
+   As of 2026-09-14 the review count is centralized: every `app/**` and `lib/**`
+   file reads `SITE_STATS.reviewCount`, so step 3 should find **nothing** there.
+   What it still finds — and what you must fix by hand — is everything OUTSIDE the
+   Next module graph: `public/llms.txt` (answer engines read it directly) ·
+   `scripts/generate-best-roofer-pages.mjs` (regenerating reverts the whole sweep
+   if it drifts — it now emits `SITE_STATS` refs, keep it that way) ·
+   `scripts/seo-overhaul.mjs` (spent one-off, still carries 305 — do not re-run) ·
+   Meta ad templates `scripts/storm-ads/meta/ad-templates.json` and the
+   `build-*.py` ad builders.
+   If step 3 DOES hit a file under `app/` or `lib/`, that is a regression: the fix
+   is a `SITE_STATS` reference, never a new literal.
+4. **One AggregateRating, one place (2026-09-14).** Google Search Console had 288
+   pages invalid with *"Review has multiple aggregate ratings"*: `app/layout.tsx`
+   emits the business under `@id` `https://www.gatesroof.com/#organization` on
+   every page, and 34 more files re-declared that same `@id` with a second
+   `aggregateRating`. Google merges by `@id` and rejects the entity.
+   **`app/layout.tsx`'s `localBusinessSchema` is now the ONLY place in this repo
+   allowed to emit an `aggregateRating`**, and both its `ratingValue` and
+   `reviewCount` read from `SITE_STATS`. Never add one to a page, a `provider`
+   node, a `citySchema`, or a service template — a second one re-breaks all 288
+   pages. Verify with:
+   ```bash
+   grep -rn "aggregateRating" app lib | grep -v node_modules   # must be 1 hit
+   ```
+   Note the rating is self-serving (the business rating itself), so clearing the
+   errors restores validity, not star snippets — Google has excluded self-serving
+   LocalBusiness review markup from review snippets since 2019.
 5. **Sync `public/llms.txt`** — answer engines read it directly.
 6. **Off-site drift is not code:** wrong Yelp phone, conflicting Chamber listings,
    GBP fields → list them for Alex's punch list (he owns logins), don't try to fix.

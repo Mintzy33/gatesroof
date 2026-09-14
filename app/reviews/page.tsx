@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import ReviewsContent from "./content";
 import { reviewPageSchema, breadcrumbSchema } from "../../lib/schema";
 import { reviews } from "../data/reviews";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "339+ Reviews, 4.9★ | Gates Enterprises LLC",
+  title: `${SITE_STATS.reviewCount}+ Reviews, 4.9★ | Gates Enterprises LLC`,
   description:
-    "Read 339+ verified reviews from Colorado homeowners. Rated 4.9 stars on Google. See why families across the Front Range trust Gates Enterprises.",
+    `Read ${SITE_STATS.reviewCount}+ verified reviews from Colorado homeowners. Rated 4.9 stars on Google. See why families across the Front Range trust Gates Enterprises.`,
   alternates: { canonical: "https://www.gatesroof.com/reviews" },
 };
 

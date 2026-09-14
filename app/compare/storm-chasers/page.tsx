@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import StormChasersContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Local Roofer vs Storm Chasers | Why It Matters",
@@ -33,7 +34,7 @@ const FAQS = [
   },
   {
     q: "Is Gates Enterprises a local Colorado roofing company?",
-    a: "Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2014. They have a permanent local presence, 339+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee."
+    a: `Yes. Gates Enterprises has been roofing along Colorado's Front Range since 2014. They have a permanent local presence, ${SITE_STATS.reviewCount}+ Google reviews from Colorado homeowners, and hold all four major manufacturer certifications. They are not going anywhere, and their warranties are backed by both the manufacturer and their own workmanship guarantee.`
   },
 ];
 

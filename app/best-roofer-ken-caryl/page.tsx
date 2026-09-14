@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferKenCarylContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Ken Caryl Roofer | Storm & Hail Damage, Free Inspection | Gates",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Ken Caryl?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Ken Caryl. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Ken Caryl. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself.`
   },
   {
     q: "How do I choose a roofing company in Ken Caryl?",

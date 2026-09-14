@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../components/GSAPAnimations";
 import { cityHref } from "../../lib/city-links";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -458,7 +459,7 @@ export default function AreasContent() {
               {[
                 { value: 30, suffix: "+", label: "Cities Served" },
                 { value: 7200, suffix: "+", label: "Roofs Completed" },
-                { value: 339, suffix: "", label: "Reviews" },
+                { value: SITE_STATS.reviewCount, suffix: "", label: "Reviews" },
               ].map((stat, i) => (
                 <div
                   key={i}

@@ -30,7 +30,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2014",
-      "description": "Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. 339 Google reviews, 4.9 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.",
+      "description": `Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.`,
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -65,12 +65,6 @@ const citySchema = {
           "longitude": -104.7614
         },
         "geoRadius": "30"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": String(SITE_STATS.starRating),
-        "reviewCount": String(SITE_STATS.reviewCount),
-        "bestRating": "5"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -182,7 +176,7 @@ const citySchema = {
         "containedInPlace": { "@type": "State", "name": "Colorado" }
       },
       "serviceType": "Roofing Contractor",
-      "description": "Complete roofing services for Parker, CO homeowners including roof replacement, storm damage restoration, roof repair, inspections, gutters, siding, windows, and painting. Quadruple manufacturer certified with 339 Google reviews and 4.9 stars.",
+      "description": `Complete roofing services for Parker, CO homeowners including roof replacement, storm damage restoration, roof repair, inspections, gutters, siding, windows, and painting. Quadruple manufacturer certified with ${SITE_STATS.reviewCount} Google reviews and 4.9 stars.`,
       "offers": {
         "@type": "Offer",
         "description": "Free Roof Inspection in Parker CO",

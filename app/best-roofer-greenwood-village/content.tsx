@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Greenwood Village?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Greenwood Village. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Greenwood Village. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their track record speaks for itself.`
   },
   {
     q: "How do I choose a roofing company in Greenwood Village?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
-  { label: "339+ verified Google reviews", gates: true },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews`, gates: true },
   { label: "4.9 star average rating", gates: true },
   { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "Uses HailScore, an independent third-party radar hail-data tool", gates: true },
@@ -91,7 +92,7 @@ export default function BestRooferGreenwoodVillageContent() {
             Best Roofing Company in Greenwood Village, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado&apos;s Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado&apos;s Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Greenwood Village is one of the most affluent communities in the Denver metro, with a concentration of high-value homes along the Denver Tech Center corridor. When hail hits Greenwood Village, the cost of replacement is significant. Homeowners here benefit most from working with a quadruple certified contractor who can ensure the best materials and the strongest warranty protection available.
@@ -162,7 +163,7 @@ export default function BestRooferGreenwoodVillageContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -210,7 +211,7 @@ export default function BestRooferGreenwoodVillageContent() {
 
       <CTA
         title="Get Greenwood Village's Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

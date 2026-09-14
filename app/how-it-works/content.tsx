@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -166,7 +167,7 @@ const STATS = [
   { value: "4x", label: "Manufacturer Certified" },
   { value: "7,200+", label: "Roofs Completed" },
   { value: "4.9", label: "Star Rating", hasStar: true },
-  { value:   "339", label: "Customer Reviews" },
+  { value: String(SITE_STATS.reviewCount), label: "Customer Reviews" },
 ];
 
 const FAQS = [

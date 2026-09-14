@@ -84,12 +84,6 @@ export default async function Page({ params }: Props) {
         postalCode: "80215",
         addressCountry: "US",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount:   "339",
-        bestRating: "5",
-      },
     },
     areaServed: {
       "@type": "City",

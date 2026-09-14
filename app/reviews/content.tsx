@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ReviewAvatar } from "../components/ReviewAvatar";
 import { reviews } from "../data/reviews";
+import { SITE_STATS } from "@/lib/site-stats";
 const NAVY = "#06263f";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -244,7 +245,7 @@ export default function ReviewsContent() {
             What Homeowners Say
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.7)", maxWidth: 550, margin: "0 auto 28px", lineHeight: 1.75 }}>
-            339+ Google reviews across Colorado&apos;s Front Range
+            {SITE_STATS.reviewCount}+ Google reviews across Colorado&apos;s Front Range
           </p>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 8 }}>
             <div style={{ display: "flex", gap: 4 }}>
@@ -316,7 +317,7 @@ export default function ReviewsContent() {
       <section style={{ padding: "clamp(48px, 8vw, 72px) 24px", background: NAVY }}>
         <div className="rv-stats" style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" as const }}>
           {[
-            { end: 339, suffix: "+", label: "Five Star Reviews" },
+            { end: SITE_STATS.reviewCount, suffix: "+", label: "Google Reviews" },
             { end: 0, suffix: "", label: "Average Rating", static: "4.9" },
             { end: 10, suffix: "+", label: "Years Serving Colorado" },
             { end: 7204, suffix: "+", label: "Roofs Completed" },
@@ -339,7 +340,7 @@ export default function ReviewsContent() {
       <section style={{ padding: "clamp(64px, 10vw, 100px) 24px", background: LIGHT_BG, textAlign: "center" as const }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: NAVY, margin: "0 0 16px", lineHeight: 1.1 }}>
-            Ready to Join 339+ Happy Homeowners?
+            Ready to Join {SITE_STATS.reviewCount}+ Happy Homeowners?
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: TEXT_LIGHT, margin: "0 0 36px", lineHeight: 1.75 }}>
             Schedule your free roof inspection today. No strings attached.
@@ -351,34 +352,6 @@ export default function ReviewsContent() {
       </section>
 
       <Footer />
-
-      {/* ─── ReviewAggregate Schema Markup ─── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Gates Enterprises",
-            image: "https://gatesroof.vercel.app/images/gaf-master-elite.png",
-            telephone: "+1-720-766-3377",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Lakewood",
-              addressRegion: "CO",
-              addressCountry: "US",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              bestRating: "5",
-              ratingCount:   "339",
-              reviewCount:   "339",
-            },
-            url: "https://www.gatesroof.com/reviews",
-          }),
-        }}
-      />
 
       <style>{`
         .rv-row2, .rv-row3 { display: block; }

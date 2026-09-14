@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Best Roofer Fort Collins (2026) | 4x Certified ★",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Fort Collins?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only roofing contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their quality speaks for itself."
+    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only roofing contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality speaks for itself.`
   },
   {
     q: "Does Fort Collins get a lot of hail?",

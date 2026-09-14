@@ -6,6 +6,7 @@ const CITIES = [
     slug: "arvada",
     name: "Arvada",
     intro: "Arvada sits at the gateway between Denver's urban core and the foothills of the Rocky Mountains, making it uniquely exposed to severe weather systems that sweep across the Front Range. Hailstorms frequently track through Arvada as they move east from the mountains, and the city's mix of older and newer neighborhoods means roofing needs vary widely. This guide breaks down exactly what to look for in a roofing company and why Gates Enterprises LLC consistently stands out among Arvada roofing contractors.",
+    desc: '"Top rated Arvada roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Westminster", href: "/best-roofer-westminster" },
       { label: "Best Roofer Wheat Ridge", href: "/best-roofer-wheat-ridge" },
@@ -19,6 +20,7 @@ const CITIES = [
     slug: "boulder",
     name: "Boulder",
     intro: "Boulder's position at the base of the Flatirons creates a unique microclimate where chinook winds, heavy snowfall, and severe hailstorms converge on rooftops year round. The city's elevation and proximity to the Continental Divide mean UV exposure is among the highest in the state, accelerating shingle degradation. Choosing the right roofer in Boulder requires finding a company that understands these specific challenges. This guide covers what matters most and why Gates Enterprises LLC is a top choice for Boulder homeowners.",
+    desc: '"Boulder\'s top rated roofing contractor. GAF Master Elite certified with 7,200+ roofs and 4.9 star rating. Free storm inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Louisville", href: "/best-roofer-louisville" },
       { label: "Best Roofer Lafayette", href: "/best-roofer-lafayette" },
@@ -32,6 +34,7 @@ const CITIES = [
     slug: "brighton",
     name: "Brighton",
     intro: "Brighton sits on Colorado's northeastern plains where severe thunderstorms build strength before sweeping across the metro area. The city's open terrain offers little natural protection from hail, and Brighton consistently ranks among the hardest hit communities during Colorado's spring and summer storm seasons. Picking the right roofer here is critical. This guide explains what to look for and why Gates Enterprises LLC stands out for Brighton homeowners.",
+    desc: '"Searching for Brighton\'s top roofer? 4x certified, 4.9 stars, and warranties up to 50 years. Locally operated since 2014. Free estimate. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Thornton", href: "/best-roofer-thornton" },
       { label: "Best Roofer Northglenn", href: "/best-roofer-northglenn" },
@@ -45,6 +48,7 @@ const CITIES = [
     slug: "broomfield",
     name: "Broomfield",
     intro: "Broomfield straddles the line between Boulder and Denver counties, placing it directly in the path of storm systems that build along the Front Range foothills and push east across the metro area. The city's rapid growth over the past decade means many neighborhoods have aging roofs that have absorbed years of hail impacts. This guide covers what to look for in a Broomfield roofing company and why Gates Enterprises LLC is a standout choice.",
+    desc: '`Broomfield\'s top rated roofer. Owens Corning Preferred and GAF Master Elite certified. ${SITE_STATS.reviewCount} Google reviews (4.9 stars). Free roof inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Westminster", href: "/best-roofer-westminster" },
       { label: "Best Roofer Arvada", href: "/best-roofer-arvada" },
@@ -58,6 +62,7 @@ const CITIES = [
     slug: "castle-rock",
     name: "Castle Rock",
     intro: "Castle Rock sits along the Palmer Divide, one of the most hail prone corridors in the entire United States. The elevated terrain between Denver and Colorado Springs acts as a trigger for severe thunderstorms, and Castle Rock homeowners know firsthand how quickly a summer storm can damage a roof. Selecting the right roofer in Castle Rock is essential. This guide explains what matters most and why Gates Enterprises LLC is a top choice.",
+    desc: '"Castle Rock\'s top rated roofing team. 7,200+ roofs, four manufacturer certifications, and insurance claims support. Free estimate. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Parker", href: "/best-roofer-parker" },
       { label: "Best Roofer Lone Tree", href: "/best-roofer-lone-tree" },
@@ -71,6 +76,7 @@ const CITIES = [
     slug: "centennial",
     name: "Centennial",
     intro: "Centennial is one of the largest cities in the south Denver metro, and its expansive residential neighborhoods are frequent targets for Colorado's severe hailstorms. The city's location along the southern Front Range means storm systems often stall over the area, producing damaging hail that can compromise roofing materials across entire subdivisions at once. This guide breaks down what to look for in a Centennial roofer and why Gates Enterprises LLC leads the field.",
+    desc: '`Centennial\'s top rated roofer. 10+ years local, 4.9 stars from ${SITE_STATS.reviewCount} reviews, and up to 50-year warranties. Free hail damage inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Highlands Ranch", href: "/best-roofer-highlands-ranch" },
       { label: "Best Roofer Lone Tree", href: "/best-roofer-lone-tree" },
@@ -84,6 +90,7 @@ const CITIES = [
     slug: "commerce-city",
     name: "Commerce City",
     intro: "Commerce City sits on the open plains northeast of Denver, directly in the path of storm systems that push across the metro from the mountains. With minimal topographic protection, Commerce City roofs take the full force of Colorado's hailstorms and high winds. The city's mix of established homes and new construction means roofing needs range from storm restoration to new installations. This guide covers what to look for and why Gates Enterprises LLC is a trusted choice for Commerce City homeowners.",
+    desc: '"Commerce City\'s top rated roofer. Locally operated, 4.9 star rated, and backed by four manufacturer certifications. Free storm inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Brighton", href: "/best-roofer-brighton" },
       { label: "Best Roofer Thornton", href: "/best-roofer-thornton" },
@@ -97,6 +104,7 @@ const CITIES = [
     slug: "englewood",
     name: "Englewood",
     intro: "Englewood sits just south of Denver in the heart of the metro area, where its tree lined neighborhoods and older housing stock face constant exposure to Colorado's severe weather. Many Englewood homes were built in the mid 20th century, meaning their roofs have absorbed decades of hail, wind, and UV damage. Finding a roofer who understands both restoration and modern roofing systems is critical here. This guide explains what to look for and why Gates Enterprises LLC is a leading choice for Englewood homeowners.",
+    desc: '"Englewood\'s top rated roofing contractor. Storm damage, full replacements, and claims assistance. 4.9 stars, 7,200+ roofs. Free estimate. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Littleton", href: "/best-roofer-littleton" },
       { label: "Best Roofer Centennial", href: "/best-roofer-centennial" },
@@ -110,6 +118,7 @@ const CITIES = [
     slug: "evergreen",
     name: "Evergreen",
     intro: "Evergreen's mountain setting at over 7,000 feet of elevation brings unique roofing challenges that Front Range contractors rarely encounter. Heavy snow loads, steep roof pitches, intense UV exposure at altitude, and severe mountain thunderstorms all take a toll on roofing materials. Evergreen homeowners need a roofer with the certifications and experience to handle these demanding conditions. This guide explains what matters most and why Gates Enterprises LLC is a top choice for Evergreen.",
+    desc: '`Evergreen\'s top rated mountain roofer. Built for altitude and Colorado storms. GAF Master Elite certified, ${SITE_STATS.reviewCount} reviews. Free inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Morrison", href: "/best-roofer-morrison" },
       { label: "Best Roofer Golden", href: "/best-roofer-golden" },
@@ -123,6 +132,7 @@ const CITIES = [
     slug: "golden",
     name: "Golden",
     intro: "Golden is nestled where the plains meet the foothills, creating a funnel effect for weather systems rolling off the mountains. This geographic position means Golden experiences some of the most intense wind events along the Front Range, and hailstorms frequently track through the city on their way east. The combination of altitude, wind exposure, and hail makes choosing the right roofer critical for Golden homeowners. This guide covers what to look for and why Gates Enterprises LLC stands out.",
+    desc: '`Golden\'s top rated roofer. Foothills wind and hail specialists with 4.9 stars and ${SITE_STATS.reviewCount}+ Google reviews. Free roof inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Arvada", href: "/best-roofer-arvada" },
       { label: "Best Roofer Lakewood", href: "/best-roofer-lakewood" },
@@ -136,6 +146,7 @@ const CITIES = [
     slug: "greeley",
     name: "Greeley",
     intro: "Greeley sits on the high plains of northern Colorado where severe thunderstorms develop with little warning and produce some of the largest hail in the state. The city's flat, open landscape offers no protection from these storms, and Greeley has been the target of multiple significant hail events in recent years. Choosing a roofer with the right certifications and storm restoration experience is essential for Greeley homeowners. This guide covers what matters and why Gates Enterprises LLC is a top choice.",
+    desc: '"Greeley\'s top rated roofing company. Serving Weld County with 7,200+ completed roofs and up to 50-year warranties. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Longmont", href: "/best-roofer-longmont" },
       { label: "Best Roofer Fort Collins", href: "/best-roofer-fort-collins" },
@@ -149,6 +160,7 @@ const CITIES = [
     slug: "highlands-ranch",
     name: "Highlands Ranch",
     intro: "Highlands Ranch is one of Colorado's largest planned communities, and its vast residential footprint makes it a frequent target for severe hailstorms that sweep through the south metro area. The community's consistent architectural styles mean storm damage often affects entire neighborhoods at once, creating high demand for qualified roofers after major events. This guide explains what Highlands Ranch homeowners should look for and why Gates Enterprises LLC consistently stands out.",
+    desc: '"Highlands Ranch top rated roofer. Premium shingles, insurance claims assistance, and 50-year warranty options. 4.9 stars. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Lone Tree", href: "/best-roofer-lone-tree" },
       { label: "Best Roofer Centennial", href: "/best-roofer-centennial" },
@@ -162,6 +174,7 @@ const CITIES = [
     slug: "lafayette",
     name: "Lafayette",
     intro: "Lafayette sits between Boulder and the open plains to the east, placing it in a transition zone where mountain weather patterns collide with prairie storm systems. This geographic position makes Lafayette particularly susceptible to severe hail and high winds during Colorado's storm season. The city's growing mix of new developments and established neighborhoods means roofing needs are diverse. This guide covers what to look for and why Gates Enterprises LLC is a strong choice for Lafayette homeowners.",
+    desc: '"Lafayette\'s top rated roofer. Locally operated, GAF Master Elite certified, and 7,200+ completed roofs. Free storm damage inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Louisville", href: "/best-roofer-louisville" },
       { label: "Best Roofer Boulder", href: "/best-roofer-boulder" },
@@ -175,6 +188,7 @@ const CITIES = [
     slug: "littleton",
     name: "Littleton",
     intro: "Littleton spans from the South Platte River valley to the foothills west of Denver, giving it a range of elevations and weather exposures. The city's mature neighborhoods feature established trees and older roofing systems that have absorbed years of hail and UV damage at Colorado's intense altitude. Finding a roofer who can handle both insurance restoration and quality new installations is key for Littleton homeowners. This guide covers what matters most and why Gates Enterprises LLC leads the way.",
+    desc: '"Littleton\'s top rated roofing team. Four certifications, 4.9 star rating, and 10+ years serving the South Metro area. Free roof inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Englewood", href: "/best-roofer-englewood" },
       { label: "Best Roofer Highlands Ranch", href: "/best-roofer-highlands-ranch" },
@@ -188,6 +202,7 @@ const CITIES = [
     slug: "longmont",
     name: "Longmont",
     intro: "Longmont stretches across the northern Front Range plains between Boulder and the agricultural lands to the east, sitting squarely in one of Colorado's most active hail corridors. The city has experienced multiple catastrophic hail events in recent years, with storms producing baseball sized hail that devastated entire neighborhoods. For Longmont homeowners, choosing a certified, experienced roofer is not optional. This guide explains what to look for and why Gates Enterprises LLC is a standout choice.",
+    desc: '`Longmont\'s top rated roofing contractor. Hail capital of Colorado coverage. 4x certified, ${SITE_STATS.reviewCount} reviews, 4.9 stars. Free inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Boulder", href: "/best-roofer-boulder" },
       { label: "Best Roofer Lafayette", href: "/best-roofer-lafayette" },
@@ -201,6 +216,7 @@ const CITIES = [
     slug: "louisville",
     name: "Louisville",
     intro: "Louisville is a small but densely built community between Boulder and Broomfield that faces the full spectrum of Colorado's weather extremes. From the devastating Marshall Fire to routine summer hailstorms, Louisville homeowners understand the importance of a resilient roof. The city's compact neighborhoods and mix of rebuilt and original homes create diverse roofing needs. This guide covers what to look for and why Gates Enterprises LLC is a leading choice for Louisville homeowners.",
+    desc: '"Louisville\'s top rated roofer. Storm and hail damage experts with 7,200+ completed projects. Locally operated since 2014. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Boulder", href: "/best-roofer-boulder" },
       { label: "Best Roofer Lafayette", href: "/best-roofer-lafayette" },
@@ -214,6 +230,7 @@ const CITIES = [
     slug: "morrison",
     name: "Morrison",
     intro: "Morrison is a small foothill community tucked into the hogback formations west of Denver, where its unique geography creates challenging conditions for roofing. Steep slopes, intense mountain winds, heavy snow accumulation, and exposure to storms channeling through the foothills all demand roofing expertise beyond what typical metro area contractors provide. This guide explains what Morrison homeowners should look for and why Gates Enterprises LLC is a top choice.",
+    desc: '"Morrison\'s top rated mountain roofer. Wind, snow, and hail damage repair backed by 4 manufacturer certifications. Free foothills inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Evergreen", href: "/best-roofer-evergreen" },
       { label: "Best Roofer Golden", href: "/best-roofer-golden" },
@@ -227,6 +244,7 @@ const CITIES = [
     slug: "northglenn",
     name: "Northglenn",
     intro: "Northglenn is a north Denver suburb that sits on the open plains between Denver and the northern communities, making it highly exposed to severe storms moving across the Front Range. The city's established residential areas feature homes from multiple decades, many with roofs that have endured years of hail impacts without replacement. Finding a qualified roofer who can handle both insurance restoration and new installations is essential. This guide covers what to look for and why Gates Enterprises LLC stands out for Northglenn homeowners.",
+    desc: '`Northglenn\'s top rated roofing company. 4.9 stars from ${SITE_STATS.reviewCount} reviews, insurance claims assistance, and 50-year warranty options. Free estimate. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Thornton", href: "/best-roofer-thornton" },
       { label: "Best Roofer Westminster", href: "/best-roofer-westminster" },
@@ -240,6 +258,7 @@ const CITIES = [
     slug: "superior",
     name: "Superior",
     intro: "Superior is a small community between Boulder and Broomfield that gained national attention after the Marshall Fire in late 2021. Many homes in Superior have been rebuilt or repaired, and the community understands firsthand how critical quality roofing is for protecting a home. Beyond fire, Superior faces the same hail and wind exposure as the rest of the northern Front Range. This guide explains what Superior homeowners should look for in a roofer and why Gates Enterprises LLC is a leading choice.",
+    desc: '`Superior\'s top rated roofer with 10+ years of Front Range experience. 4x certified, ${SITE_STATS.reviewCount} reviews, and premium warranty options. Free inspection. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Louisville", href: "/best-roofer-louisville" },
       { label: "Best Roofer Boulder", href: "/best-roofer-boulder" },
@@ -253,6 +272,7 @@ const CITIES = [
     slug: "lone-tree",
     name: "Lone Tree",
     intro: "Lone Tree is an affluent south metro community where homeowners invest significantly in their properties and expect premium quality from every contractor. The city's location along the southern Front Range means it is regularly impacted by severe hailstorms, and the higher end homes in Lone Tree deserve roofing work that matches the quality of the rest of the property. This guide covers what to look for and why Gates Enterprises LLC is the right choice for Lone Tree homeowners.",
+    desc: '"Lone Tree\'s top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. 7,200+ roofs. Free estimate. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Highlands Ranch", href: "/best-roofer-highlands-ranch" },
       { label: "Best Roofer Centennial", href: "/best-roofer-centennial" },
@@ -266,6 +286,7 @@ const CITIES = [
     slug: "thornton",
     name: "Thornton",
     intro: "Thornton is one of the fastest growing cities in the north Denver metro, stretching from established neighborhoods in the south to brand new developments pushing north toward the open plains. This growth corridor sits directly in the path of severe storm systems that frequently produce damaging hail across the northern Front Range. Whether your roof is on a decades old home or a new build, choosing the right roofer in Thornton is critical. This guide explains what to look for and why Gates Enterprises LLC is a top choice.",
+    desc: '"Thornton\'s top rated roofer. North Metro hail and storm repair specialists. 7,200+ completed projects, 4.9 stars. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Northglenn", href: "/best-roofer-northglenn" },
       { label: "Best Roofer Westminster", href: "/best-roofer-westminster" },
@@ -279,6 +300,7 @@ const CITIES = [
     slug: "westminster",
     name: "Westminster",
     intro: "Westminster spans a wide stretch of the northwest metro between Denver and Boulder, and its diverse neighborhoods face consistent exposure to Front Range hailstorms and high winds. The city's position between the foothills and the plains means weather systems often intensify as they pass through, producing damaging hail that impacts both older and newer roofs. This guide covers what Westminster homeowners should look for in a roofing company and why Gates Enterprises LLC consistently stands above the competition.",
+    desc: '`Westminster\'s top rated roofing company. Locally operated, 4x certified, and ${SITE_STATS.reviewCount}+ Google reviews. Warranties up to 50 years. Free estimate. (720) 766-3377`',
     nearby: [
       { label: "Best Roofer Arvada", href: "/best-roofer-arvada" },
       { label: "Best Roofer Broomfield", href: "/best-roofer-broomfield" },
@@ -292,6 +314,7 @@ const CITIES = [
     slug: "wheat-ridge",
     name: "Wheat Ridge",
     intro: "Wheat Ridge is a close in Denver suburb with a mix of mid century homes and newer construction, all of which face Colorado's relentless weather patterns. The city's proximity to both the foothills and Denver proper means it catches storms from multiple directions, and its older housing stock is especially vulnerable to cumulative hail damage. Finding a roofer with the right certifications and local expertise is essential. This guide covers what matters and why Gates Enterprises LLC is a leading choice for Wheat Ridge homeowners.",
+    desc: '"Wheat Ridge top rated roofer near our Lakewood HQ. 7,200+ roofs completed, 4.9 star rating, and claims support included. Free inspection. (720) 766-3377"',
     nearby: [
       { label: "Best Roofer Arvada", href: "/best-roofer-arvada" },
       { label: "Best Roofer Golden", href: "/best-roofer-golden" },
@@ -310,17 +333,18 @@ function pascalCase(slug) {
 function generatePageTsx(city) {
   const componentName = `BestRoofer${pascalCase(city.slug)}Content`;
   return `import type { Metadata } from "next";
-import Script from "next/script";
+import PageSchema from "@/app/components/PageSchema";
 import ${componentName} from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Best Roofer ${city.name} CO (2026) | 4x Certified \\u2605 339+ Reviews",
-  description: "${city.name}'s best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\\u2605 from 339 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+  title: \`Best Roofer ${city.name} CO (2026) | 4x Certified \\u2605 \${SITE_STATS.reviewCount}+ Reviews\`,
+  description: ${city.desc},
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-${city.slug}" },
   openGraph: {
-    title: "Best Roofer ${city.name} CO (2026) | 4x Certified \\u2605 339+ Reviews",
-    description: "${city.name}'s best roofer: 4x manufacturer certified, 7,200+ roofs, 4.9\\u2605 from 339 Reviews. GAF Master Elite. Free storm inspections. (720) 766-3377",
+    title: \`Best Roofer ${city.name} CO (2026) | 4x Certified \\u2605 \${SITE_STATS.reviewCount}+ Reviews\`,
+    description: ${city.desc},
     url: "https://www.gatesroof.com/best-roofer-${city.slug}",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -332,7 +356,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in ${city.name}?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in ${city.name}. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 339+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: \`Gates Enterprises LLC is widely recognized as one of the top roofing companies in ${city.name}. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With \${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself.\`
   },
   {
     q: "What certifications should a ${city.name} roofer have?",
@@ -360,8 +384,9 @@ const breadcrumbs = breadcrumbSchema([
 export default function Page() {
   return (
     <>
-      <Script id="best-roofer-${city.slug}-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
-      <Script id="best-roofer-${city.slug}-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <PageSchema route="/best-roofer-${city.slug}" />
+      <script id="best-roofer-${city.slug}-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }} />
+      <script id="best-roofer-${city.slug}-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <${componentName} />
     </>
   );
@@ -380,6 +405,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -404,7 +430,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in ${city.name}?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in ${city.name}. They are the only roofing contractor in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed Shingle Master Pro. With 339+ Google reviews and a 4.9 star rating, their track record speaks for itself."
+    a: \`Gates Enterprises LLC is widely recognized as one of the top roofing companies in ${city.name}. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With \${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their track record speaks for itself.\`
   },
   {
     q: "What certifications should a ${city.name} roofer have?",
@@ -426,9 +452,9 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
-  { label: "339+ verified Google reviews", gates: true },
+  { label: \`\${SITE_STATS.reviewCount}+ verified Google reviews\`, gates: true },
   { label: "4.9 star average rating", gates: true },
-  { label: "8+ years serving Colorado's Front Range", gates: true },
+  { label: "10+ years serving Colorado's Front Range", gates: true },
   { label: "Uses HailScore, an independent third-party radar hail-data tool", gates: true },
   { label: "Free inspections with no pressure", gates: true },
   { label: "Insurance restoration expertise", gates: true },
@@ -466,7 +492,7 @@ export default function ${componentName}() {
             Best Roofing Company in ${city.name}, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Colorado's Only Quadruple Certified Roofing Contractor. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             ${city.intro}
@@ -495,21 +521,21 @@ export default function ${componentName}() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>1. Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Manufacturer certifications are the gold standard in roofing. Companies like GAF, Owens Corning, Malarkey, and CertainTeed only certify contractors who meet rigorous standards for installation quality, business practices, and customer satisfaction. Certified contractors can offer extended warranties that uncertified companies simply cannot. In all of Colorado, only one company holds all four premium certifications: Gates Enterprises LLC.
+              Manufacturer certifications are the gold standard in roofing. Companies like GAF, Owens Corning, Malarkey, and CertainTeed only certify contractors who meet rigorous standards for installation quality, business practices, and customer satisfaction. Certified contractors can offer extended warranties that uncertified companies simply cannot. In all of Colorado, only a handful of companies hold all four premium certifications — Gates Enterprises LLC is one of them.
             </p>
           </div>
 
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>2. Verified Customer Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Pay attention to how the company responds to both positive and negative feedback. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated 339+ Google reviews with a 4.9 star average, reflecting years of consistent performance across ${city.name} and the Front Range.
+              Reviews tell the real story. Look for a roofer with hundreds of verified Google reviews and a rating above 4.5 stars. Pay attention to how the company responds to both positive and negative feedback. Consistent praise across years of reviews indicates reliable quality, not a one time spike. Gates Enterprises has accumulated {SITE_STATS.reviewCount}+ Google reviews with a 4.9 star average, reflecting years of consistent performance across ${city.name} and the Front Range.
             </p>
           </div>
 
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>3. Local Experience and Longevity</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best ${city.name} roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2017 and has completed over 7,200 projects.
+              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best ${city.name} roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2014 and has completed over 7,200 projects.
             </p>
           </div>
 
@@ -523,7 +549,7 @@ export default function ${componentName}() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>5. Insurance Claims Assistance</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              In ${city.name}, a significant percentage of roof replacements involve insurance claims from hail and wind damage. The best roofers understand the insurance restoration process inside and out. They document damage thoroughly, communicate clearly with adjusters, and advocate for complete restoration of your property. Gates Enterprises has guided thousands of Colorado homeowners through the claims process.
+              In ${city.name}, a significant percentage of roof replacements involve insurance claims from hail and wind damage. The best roofers understand the insurance restoration process inside and out. They document damage thoroughly, communicate clearly with adjusters, and support complete restoration of your property. Gates Enterprises has guided thousands of Colorado homeowners through the claims process.
             </p>
           </div>
 
@@ -560,17 +586,17 @@ export default function ${componentName}() {
       <section style={{ padding: "80px 24px", background: WHITE }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 16, lineHeight: 1.2 }}>
-            The Only Quadruple Certified Roofer in Colorado
+            One of the Only Quadruple Certified Roofers in Colorado
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that sets Gates apart from every other roofing company in Colorado.
+            Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that very few roofing companies in Colorado can match.
           </p>
           <div className="best-roofer-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
               { name: "GAF Master Elite\\u00AE", desc: "Awarded to the top 2% of roofing contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Recognizes contractors who meet the highest standards for professionalism, reliability, and quality. Provides access to Owens Corning's enhanced warranty programs." },
               { name: "Malarkey Emerald Premium", desc: "Certifies expertise in Malarkey's advanced NEX Polymer Modified asphalt technology. Malarkey leads the industry in sustainable, high performance roofing materials." },
-              { name: "CertainTeed Shingle Master Pro\\u2122", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
+              { name: "CertainTeed ShingleMaster\\u2122", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },
             ].map((cert, i) => (
               <div key={i} style={{ background: LIGHT_BG, borderRadius: 16, padding: "28px 24px", border: \`2px solid \${GOLD}20\`, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: \`linear-gradient(90deg, \${GOLD}, \${GOLD}80)\` }} />
@@ -595,10 +621,10 @@ export default function ${componentName}() {
             Most roofing companies show up, look at your roof, and tell you what they think. Gates Enterprises shows up with data.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is an independent, third-party hail-data tool that Gates Enterprises uses to analyze NOAA radar data and map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected your property going back over a decade.
+            <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>HailScore</Link> is an independent, third-party hail-data tool that Gates Enterprises uses to analyze NOAA radar data to map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected your property going back over a decade.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            This matters because hail damage is cumulative. A roof that has been hit by multiple storms over several years may look fine from the ground but have compromised shingles that will fail during the next event. HailScore gives ${city.name} homeowners an objective, data backed view of their roof's exposure, something no other roofer in Colorado can provide.
+            This matters because hail damage is cumulative. A roof that has been hit by multiple storms over several years may look fine from the ground but have compromised shingles that will fail during the next event. HailScore gives ${city.name} homeowners an objective, data backed view of their roof's exposure.
           </p>
           <Link href="https://myhailscore.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Check Your HailScore &rarr;
@@ -614,8 +640,8 @@ export default function ${componentName}() {
           </h2>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.8 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -661,7 +687,7 @@ ${nearbyLinks}
 
       <CTA
         title="Get ${city.name}'s Best Roofer on Your Roof"
-        subtitle="Free inspections. Quadruple certified quality. 339+ five star reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={\`Free inspections. Quadruple certified quality. \${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.\`}
       />
 
       <Footer />

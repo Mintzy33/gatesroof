@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import { breadcrumbSchema, BUSINESS_INFO } from "../../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 import {
   ShieldCheck,
   Award,
@@ -56,7 +57,7 @@ const localBusinessSchema = {
   logo: "https://www.gatesroof.com/logo.png",
   image: "https://www.gatesroof.com/og-image.jpg",
   description:
-    "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, 339+ Google reviews.",
+    `Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, ${SITE_STATS.reviewCount}+ Google reviews.`,
   telephone: "+17207663377",
   email: "info@gatesroof.com",
   foundingDate: "2014",
@@ -177,12 +178,6 @@ const localBusinessSchema = {
       name: "CertainTeed ShingleMaster",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount:   "339",
-    bestRating: "5",
-  },
   priceRange: "$$",
   knowsAbout: [
     "Residential roofing",

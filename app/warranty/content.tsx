@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -121,7 +122,7 @@ export default function WarrantyContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
           <div style={{ width: 1, height: 24, background: "rgba(13,33,55,0.12)" }} />
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>One of Colorado's Only Quadruple Certified Roofers</span>
@@ -178,7 +179,7 @@ export default function WarrantyContent() {
             Certified contractors like Gates Enterprises unlock an entirely different tier of warranty protection. These enhanced warranties cover both materials and workmanship, are often non prorated, and provide significantly longer coverage periods. The best part: this upgraded protection comes at no additional cost to the homeowner.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Manufacturers only grant these certifications to contractors who meet strict standards for installation quality, business practices, customer satisfaction, and ongoing training. Less than 1% of roofing contractors in the country hold all four major manufacturer certifications.
+            Manufacturers only grant these certifications to contractors who meet strict standards for installation quality, business practices, customer satisfaction, and ongoing training. Less than 1% of roofing contractors in the country hold all four major manufacturer certifications. Here is what it takes to be <Link href="/blog/most-certified-roofing-contractor-colorado" style={{ color: ACCENT, fontWeight: 600 }}>the most certified roofing contractor in Colorado</Link>, and how to verify any contractor&apos;s credentials yourself before you sign.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
@@ -232,7 +233,7 @@ export default function WarrantyContent() {
             Beyond manufacturer warranties, Gates Enterprises stands behind the quality of every installation we perform. Our workmanship guarantee means that if any issue arises due to installation, we will return to make it right. No questions asked.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            We have built our reputation on doing the job right the first time. With thousands of completed roofing projects across the Front Range, a 4.9 star rating from 339+ reviews, and four manufacturer certifications, our track record speaks for itself.
+            We have built our reputation on doing the job right the first time. With thousands of completed roofing projects across the Front Range, a 4.9 star rating from {SITE_STATS.reviewCount}+ reviews, and four manufacturer certifications, our track record speaks for itself.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             When you choose Gates Enterprises, you get the confidence of knowing that your roof is protected by both the manufacturer and the contractor who installed it. That is the kind of double coverage most homeowners never get.
@@ -243,7 +244,7 @@ export default function WarrantyContent() {
               "Every installation backed by our workmanship guarantee",
               "Certified crews trained to manufacturer specifications",
               "Thousands of completed projects across Colorado's Front Range",
-              "4.9 star rating from 339+ verified Google reviews",
+              `4.9 star rating from ${SITE_STATS.reviewCount}+ verified Google reviews`,
               "Responsive service team for any post installation questions",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import { breadcrumbSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Compare Roofers | Gates vs Others ★ 4x Certified",
@@ -99,7 +100,7 @@ export default function ComparePage() {
             The roofing industry has a trust problem. Homeowners often feel pressured into decisions without enough information. We publish these comparisons because we believe transparency builds trust, and trust builds lasting relationships.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 20 }}>
-            As one of Colorado's only quadruple certified roofing contractors with 339+ Google reviews and a 4.9 star rating, we are confident in where we stand. We would rather you compare the facts and choose us because you are convinced, not because you were pressured.
+            As one of Colorado's only quadruple certified roofing contractors with {SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, we are confident in where we stand. We would rather you compare the facts and choose us because you are convinced, not because you were pressured.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT }}>
             Have a question about how Gates Enterprises compares to a specific roofing company or approach? <Link href="/contact" style={{ color: ACCENT, textDecoration: "none", fontWeight: 600 }}>Reach out to us</Link> and we will give you an honest answer.
@@ -109,7 +110,7 @@ export default function ComparePage() {
 
       <CTA
         title="Ready to Work with Colorado's Best?"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

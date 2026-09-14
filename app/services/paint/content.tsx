@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAnimations";
 import { Palette, Hammer, Paintbrush, CheckCircle, ShieldCheck, Sparkles, Home, FileText } from "lucide-react";
 import AnswerCapsule from "../../components/AnswerCapsule";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -128,7 +129,7 @@ export default function PaintContent() {
           </div>
           <div>
             <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 44, fontWeight: 800, color: GOLD }}>
-              <CounterGSAP end={339} suffix="+" duration={2} delay={0.4} />
+              <CounterGSAP end={SITE_STATS.reviewCount} suffix="+" duration={2} delay={0.4} />
             </div>
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>Google Reviews</div>
           </div>

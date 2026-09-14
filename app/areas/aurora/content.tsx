@@ -239,7 +239,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Claims Done Correctly</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              We document damage, meet adjusters on the roof, and file supplements when the first scope is short. On a covered claim your out-of-pocket is typically your deductible — we do not offer illegal deductible waivers under Colorado law.
+              We document damage, meet adjusters on the roof, and file supplements when the first scope is short. On a covered claim your out-of-pocket is typically your deductible — we do not offer illegal deductible waivers under Colorado law. If you have not been through one before, here is <Link href="/blog/hail-damage-roof-insurance-claims-denver" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>how insurance claims work in the Denver metro</Link>, start to finish.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ export default function CityContent() {
             Aurora&apos;s Hail History — Why Your Roof Is at Risk
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 28 }}>
-            Aurora is repeatedly cited among Colorado&apos;s most hail-active cities. Storms build on the eastern plains and track west or northwest across open neighborhoods with little natural shelter. Between 2019 and 2025, multiple 2.0-inch-plus events hit southern and eastern Aurora corridors — exactly where Saddle Rock, Southlands, and Tallyn&apos;s Reach sit.
+            Aurora is repeatedly cited among Colorado&apos;s most hail-active cities. Storms build on the eastern plains and track west or northwest across open neighborhoods with little natural shelter. Between 2019 and 2025, multiple 2.0-inch-plus events hit southern and eastern Aurora corridors — exactly where Saddle Rock, Southlands, and Tallyn&apos;s Reach sit. See our <Link href="/services/storm-hail-damage/aurora" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Aurora storm and hail damage repair</Link> page for how the inspection and restoration process runs here.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
             {HAIL_EVENTS.map((event, i) => (

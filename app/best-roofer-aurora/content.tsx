@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Aurora, Colorado?",
-    a: "Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, their reputation is built on consistent results."
+    a: `Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their reputation is built on consistent results.`
   },
   {
     q: "How often does Aurora get hail damage?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "339+ verified Google reviews" },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews` },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
   { label: "Uses HailScore, an independent third-party radar hail-data tool" },
@@ -91,7 +92,7 @@ export default function BestRooferAuroraContent() {
             Best Roofing Company in Aurora, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Aurora is Colorado's third largest city and one of the most hail impacted communities along the Front Range. Stretching from the eastern edge of Denver across Arapahoe and Adams counties, Aurora's sprawling neighborhoods face severe storm exposure every year. When it is time to repair or replace your roof, the contractor you choose matters more here than almost anywhere else. This guide covers what to look for in an Aurora roofing company and why Gates Enterprises LLC consistently rises to the top.
@@ -127,7 +128,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Hundreds of Verified Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              A few five star reviews can be bought or faked. Hundreds cannot. Gates Enterprises has earned 339+ Google reviews with a 4.9 star average over years of consistent work across the Denver metro, including Aurora. That volume of positive feedback reflects genuine, repeatable quality.
+              A few five star reviews can be bought or faked. Hundreds cannot. Gates Enterprises has earned {SITE_STATS.reviewCount}+ Google reviews with a 4.9 star average over years of consistent work across the Denver metro, including Aurora. That volume of positive feedback reflects genuine, repeatable quality.
             </p>
           </div>
 
@@ -206,7 +207,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -252,7 +253,7 @@ export default function BestRooferAuroraContent() {
 
       <CTA
         title="Aurora's Hail Season Demands Colorado's Best Roofer"
-        subtitle="Free inspections. Quadruple certified quality. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections. Quadruple certified quality. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

@@ -8,6 +8,7 @@ import FAQAccordion from "../../components/FAQAccordion";
 import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
+import { SITE_STATS } from "@/lib/site-stats";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";
@@ -63,7 +64,7 @@ export default function CityContent() {
               "Respectful approach to mid century home architecture",
               "Full insurance restoration support on hail and storm claims",
               "thousands of roofs completed across the Denver metro",
-              "4.9 star Google rating from 339+ verified reviews",
+              `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,
               "Jefferson County permit and inspection coordination",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (

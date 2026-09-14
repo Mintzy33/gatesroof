@@ -30,7 +30,7 @@ const citySchema = {
       "url": "https://www.gatesroof.com",
       "telephone": "(720) 766-3377",
       "foundingDate": "2014",
-      "description": "Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with 339+ Google reviews and 4.9 stars. Serving Lakewood and Colorado's Front Range since 2014.",
+      "description": `Locally headquartered roofing contractor in Lakewood, CO. Gates Enterprises LLC is quadruple manufacturer certified with ${SITE_STATS.reviewCount}+ Google reviews and 4.9 stars. Serving Lakewood and Colorado's Front Range since 2014.`,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1445 Holland St",
@@ -61,12 +61,6 @@ const citySchema = {
           "longitude": -105.0814
         },
         "geoRadius": "30"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": String(SITE_STATS.starRating),
-        "reviewCount": String(SITE_STATS.reviewCount),
-        "bestRating": "5"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

@@ -9,6 +9,7 @@ import { getCityFAQItems } from "../../../lib/faq-data";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { cityHref } from "../../../lib/city-links";
+import { SITE_STATS } from "@/lib/site-stats";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const LIGHT_BG = "#FAFBFD";
@@ -64,7 +65,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and storm claims",
               "Premium materials including impact resistant Class 4 options",
               "thousands of roofs completed across the Denver metro",
-              "4.9 star Google rating from 339+ verified reviews",
+              `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,
               "CertainTeed ShingleMaster and Owens Corning Preferred certified",
               "Free inspections with detailed photo documentation",
             ].map((item, i) => (

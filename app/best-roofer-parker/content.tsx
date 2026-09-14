@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -29,7 +30,7 @@ const CheckIcon = () => (
 const FAQS = [
   {
     q: "Who is the best roofer in Parker, Colorado?",
-    a: "Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker. They are one of the only contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, Parker homeowners trust the quality."
+    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker. They are one of the only contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Parker homeowners trust the quality.`
   },
   {
     q: "Why is Parker especially vulnerable to hail damage?",
@@ -51,7 +52,7 @@ const FAQS = [
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
-  { label: "339+ verified Google reviews" },
+  { label: `${SITE_STATS.reviewCount}+ verified Google reviews` },
   { label: "4.9 star average rating" },
   { label: "10+ years serving Colorado's Front Range" },
   { label: "Uses HailScore, an independent third-party radar hail-data tool" },
@@ -91,7 +92,7 @@ export default function BestRooferParkerContent() {
             Best Roofing Company in Parker, Colorado (2026)
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            One of Colorado's Only Quadruple Certified Roofing Contractors. 339+ Reviews. 4.9 Stars.
+            One of Colorado's Only Quadruple Certified Roofing Contractors. {SITE_STATS.reviewCount}+ Reviews. 4.9 Stars.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Parker sits on the Palmer Divide, one of the most hail active areas in the entire United States. The elevated terrain between Denver and Colorado Springs creates atmospheric instability that produces some of Colorado's largest and most destructive hailstorms. For Parker homeowners, choosing the right roofing company is not optional. It is essential. This guide covers what makes a great Parker roofer and why Gates Enterprises LLC is the clear leader.
@@ -135,9 +136,9 @@ export default function BestRooferParkerContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>339+ Google Reviews</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>{SITE_STATS.reviewCount}+ Google Reviews</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              With 339+ Google reviews and a 4.9 star average, Gates Enterprises has one of the strongest track records of any roofing company serving Parker. These reviews are from real Colorado homeowners who have experienced the quality of Gates' work, communication, and follow through. That kind of consistency over hundreds of projects does not happen by accident.
+              With {SITE_STATS.reviewCount}+ Google reviews and a 4.9 star average, Gates Enterprises has one of the strongest track records of any roofing company serving Parker. These reviews are from real Colorado homeowners who have experienced the quality of Gates' work, communication, and follow through. That kind of consistency over hundreds of projects does not happen by accident.
             </p>
           </div>
 
@@ -206,7 +207,7 @@ export default function BestRooferParkerContent() {
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8 }}>
             {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
             <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: NAVY, marginLeft: 8 }}>4.9 out of 5</span>
-            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>(339+ reviews)</span>
+            <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginLeft: 4 }}>({SITE_STATS.reviewCount}+ reviews)</span>
           </div>
         </div>
         <ReviewCarousel />
@@ -252,7 +253,7 @@ export default function BestRooferParkerContent() {
 
       <CTA
         title="Palmer Divide Hail Demands Colorado's Best Roofer"
-        subtitle="Free inspections for Parker homeowners. Quadruple certified. 339+ Google reviews. Call (720) 766-3377 or request your free inspection online."
+        subtitle={`Free inspections for Parker homeowners. Quadruple certified. ${SITE_STATS.reviewCount}+ Google reviews. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       <Footer />

@@ -4,6 +4,7 @@ import SmoothScroll from "./components/SmoothScroll";
 import Analytics from "./components/Analytics";
 import StickyBottomCTA from "./components/StickyBottomCTA";
 import LoadingScreen from "./components/LoadingScreen";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -57,7 +58,7 @@ const localBusinessSchema = {
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/logo.png",
   "image": "https://www.gatesroof.com/og-image.jpg",
-  "description": "Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, 339+ Google reviews.",
+  "description": `Quadruple manufacturer certified roofing and exterior contractor serving Colorado's Front Range. Thousands of roofs completed, 4.9 star rating, ${SITE_STATS.reviewCount}+ Google reviews.`,
   "telephone": "+17207663377",
   "email": "info@gatesroof.com",
   "address": {
@@ -106,7 +107,7 @@ const localBusinessSchema = {
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Owens Corning Preferred"},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"Manufacturer Certification","name":"Malarkey Emerald Premium"}
   ],
-  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":  "339","bestRating":"5"},
+  "aggregateRating": {"@type":"AggregateRating","ratingValue": String(SITE_STATS.starRating),"reviewCount": String(SITE_STATS.reviewCount),"bestRating":"5"},
   "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"},
   "priceRange": "$$",
   "sameAs": [
@@ -114,7 +115,8 @@ const localBusinessSchema = {
     "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
-    "https://www.google.com/maps/place/Gates+Enterprises+LLC"
+    "https://www.google.com/maps/place/Gates+Enterprises+LLC",
+    "https://www.bbb.org/us/co/lakewood/profile/roofing-contractors/gates-enterprises-llc-1296-90248195"
   ]
 };
 
@@ -138,7 +140,8 @@ const organizationSchema = {
     "https://www.linkedin.com/company/gatesenterprisesllc/",
     "https://www.yelp.com/biz/gates-enterprises-lakewood-4",
     "https://www.instagram.com/gatesroofing",
-    "https://www.google.com/maps/place/Gates+Enterprises+LLC"
+    "https://www.google.com/maps/place/Gates+Enterprises+LLC",
+    "https://www.bbb.org/us/co/lakewood/profile/roofing-contractors/gates-enterprises-llc-1296-90248195"
   ]
 };
 

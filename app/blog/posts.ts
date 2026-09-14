@@ -1,3 +1,5 @@
+import { SITE_STATS } from "@/lib/site-stats";
+
 export interface BlogImage {
   src: string;
   alt: string;
@@ -96,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: `After a Denver hailstorm, the right first call is a local, established roofer with insurance-restoration experience — not the out-of-town crew knocking your door the next morning. Here is how to spot hail damage, decide repair vs. replace, run the insurance claim, and avoid storm-chasers.`,
     content: [
       `After a Denver hailstorm, the right first call is a local, established roofing contractor with insurance-restoration experience — not the out-of-town crew knocking on your door the next morning. A good local roofer inspects your roof for free, tells you honestly whether the damage is worth a claim, documents it properly, and stands with you through the adjuster meeting and the repair.`,
-      `That is exactly what Gates Enterprises does for Denver-area homeowners. We are Lakewood-based and have spent 10+ years and 7,200+ roofs on the Front Range, we carry a 4.9-star rating across 339 reviews, and we attend the insurance adjuster meeting on every storm claim [LINK: storm-hail]. Free inspection, honest answer, and on a covered claim, your out-of-pocket cost is typically just your deductible. Call (720) 766-3377.`,
+      `That is exactly what Gates Enterprises does for Denver-area homeowners. We are Lakewood-based and have spent 10+ years and 7,200+ roofs on the Front Range, we carry a 4.9-star rating across ${SITE_STATS.reviewCount} reviews, and we attend the insurance adjuster meeting on every storm claim [LINK: storm-hail]. Free inspection, honest answer, and on a covered claim, your out-of-pocket cost is typically just your deductible. Call (720) 766-3377.`,
       `Here is the quick decision tree for what to do first. If you heard or saw hail and want to know whether there is damage, get a free ground-and-roof inspection from a storm-experienced local roofer before you call insurance. If you can already see obvious damage — leaks, dented gutters, shingle debris in the yard — document it, then get an inspection and file a claim. If an adjuster is already scheduled, have your roofer present for that inspection so the damage gets documented in real time. And if a door-knocker is pressuring you to sign on the spot, slow down and verify they are local, licensed, and insured before you sign anything.`,
       `How to Spot Hail Damage on Your Denver Roof`,
       `Denver sits in "Hail Alley" — the Front Range is one of the most hail-battered regions in the country, and the damage is not always obvious from the ground. The tell that adjusters rely on is collateral damage around the property, so it pays to know exactly where to look.`,
@@ -113,7 +115,7 @@ export const blogPosts: BlogPost[] = [
       `Avoiding Storm-Chaser Roofers in Denver`,
       `After every big Denver hailstorm, out-of-town crews flood the neighborhood, knock doors, and push homeowners to sign on the spot. Some do fine work; many subcontract the job, cut corners, and are unreachable when a warranty problem shows up two winters later. The single best protection is to hire a locally established roofer who will still be here next season.`,
       `The contrast is stark when you line the two up. A storm chaser is out-of-town and follows storms across states, while a local roofer like Gates is Lakewood-based with 10+ years on the Front Range. A storm chaser door-knocks with high-pressure "sign today" tactics, while a local roofer gives you a free inspection, an honest answer, and no pressure. A storm chaser often subcontracts the actual work, while a local roofer puts an accountable crew and a workmanship warranty behind the job. A storm chaser is hard to reach after the check clears, while a local roofer has a local phone, local reviews, and is still here next season. And a storm chaser may offer to "waive your deductible" — which is illegal in Colorado — while a local roofer follows Colorado law, period.`,
-      `Gates Enterprises has spent 10+ years on the Front Range and built a 4.9-star reputation over 339 reviews doing exactly this work — storm and hail restoration — for Denver-area homeowners [LINK: denver-area]. Few local roofers can match that combination of longevity, insurance-claim experience, and review track record.`,
+      `Gates Enterprises has spent 10+ years on the Front Range and built a 4.9-star reputation over ${SITE_STATS.reviewCount} reviews doing exactly this work — storm and hail restoration — for Denver-area homeowners [LINK: denver-area]. Few local roofers can match that combination of longevity, insurance-claim experience, and review track record.`,
       `Hailstorm Hit Your Denver Home`,
       `Gates Enterprises will inspect your roof for free, tell you honestly whether you have a claim, and stand with you from the adjuster meeting through the final repair. Call (720) 766-3377 or schedule a free inspection online [LINK: free-inspection]. We work across Denver and the entire Front Range, and on a covered claim your out-of-pocket cost is typically just your deductible.`,
       "Gates Enterprises serves homeowners across the South Metro, including [LINK: littleton-area] and [LINK: aurora-area] — free storm inspections, insurance claim support, and certified installations.",
@@ -134,7 +136,7 @@ export const blogPosts: BlogPost[] = [
       { placeholder: "rel-post-storm", href: "/blog/post-storm-roof-inspection-checklist-colorado", text: "a post-storm roof inspection checklist" },
     ],
     faqs: [
-      { q: "Who is the best roofer for hail damage in Denver?", a: `The best choice for Denver hail damage is a local, established roofer with insurance-restoration experience and a strong local review record — someone who will document the damage, meet your adjuster, and still be reachable for warranty work years later. Gates Enterprises fits that profile: Lakewood-based, 10+ years and 7,200+ roofs on the Front Range, 4.9 stars across 339 reviews, and present at the adjuster meeting on every claim.` },
+      { q: "Who is the best roofer for hail damage in Denver?", a: `The best choice for Denver hail damage is a local, established roofer with insurance-restoration experience and a strong local review record — someone who will document the damage, meet your adjuster, and still be reachable for warranty work years later. Gates Enterprises fits that profile: Lakewood-based, 10+ years and 7,200+ roofs on the Front Range, 4.9 stars across ${SITE_STATS.reviewCount} reviews, and present at the adjuster meeting on every claim.` },
       { q: "How do I know if my Denver roof has hail damage?", a: `Look for bruised or cracked shingles and granule loss, plus collateral signs like dented gutters, vents, AC fins, screens, and cars. Much hail damage isn't visible from the ground, so get a free roof-level inspection after any significant storm.` },
       { q: "Should I repair or replace a hail-damaged roof?", a: `Repair makes sense for isolated, recent damage on a newer roof. Replace when bruising is widespread across multiple slopes, the roof is older, shingles can't be matched, or your insurer totals the roof — which is common after major Denver hail.` },
       { q: "Does insurance cover hail damage roof repair in Colorado?", a: `Usually, yes. Colorado is one of the most hail-prone states, and standard homeowner policies typically cover sudden hail and wind damage, though coverage depends on your specific policy. When a claim is approved, you generally pay your deductible and insurance covers the rest of the approved scope.` },
@@ -627,7 +629,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-choose-roofing-contractor-denver",
     metaTitle: "How to Choose a Roofing Contractor in Denver (Without Getting Scammed)",
-    metaDescription: "Looking for a roofing contractor in Denver? Learn the red flags to avoid, the credentials to verify, and why Gates Enterprises has earned 339+ Google reviews across the Front Range.",
+    metaDescription: `Looking for a roofing contractor in Denver? Learn the red flags to avoid, the credentials to verify, and why Gates Enterprises has earned ${SITE_STATS.reviewCount}+ Google reviews across the Front Range.`,
     targetKeyword: "how to choose roofing contractor Denver",
     title: "How to Choose a Roofing Contractor in Denver (Without Getting Scammed)",
     publishDate: "2026-03-06",
@@ -661,7 +663,7 @@ export const blogPosts: BlogPost[] = [
       "What to Look For Instead",
       "Now that we have covered the red flags, here is what a trustworthy Denver roofing contractor actually looks like.",
       "Strong Review Profile",
-      "Look for companies with a substantial number of verified reviews on Google, not just a handful of five-star ratings that could be from friends and family. Gates Enterprises has earned 339+ reviews with a 4.9-star average [LINK: reviews]. More importantly, those reviews are detailed, recent, and come from real homeowners across the Denver metro area.",
+      `Look for companies with a substantial number of verified reviews on Google, not just a handful of five-star ratings that could be from friends and family. Gates Enterprises has earned ${SITE_STATS.reviewCount}+ reviews with a 4.9-star average [LINK: reviews]. More importantly, those reviews are detailed, recent, and come from real homeowners across the Denver metro area.`,
       "Read both the positive and negative reviews. How does the company respond to criticism? Do they address concerns professionally or get defensive? A company's response to negative feedback tells you a lot about their culture.",
       "Verifiable Local History",
       "How long has the company been operating in Colorado? Are they registered with the Colorado Secretary of State? Have they been involved with local organizations like the Better Business Bureau or their local chamber of commerce?",
@@ -746,7 +748,7 @@ export const blogPosts: BlogPost[] = [
       "Step 9: Choose Your Contractor Carefully",
       "Once your insurance claim is approved, choose a contractor based on credentials, reputation, and communication, not on who knocked on your door first.",
       "Look for manufacturer certifications, which are among the most reliable indicators of installation quality. Gates Enterprises holds all four major roofing manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster [LINK: certifications]. Very few roofing companies in Colorado hold all four.",
-      "We also have 339+ verified reviews with a 4.9-star average, built over more than a decade of work across the Front Range. That reputation is something we protect on every single job.",
+      `We also have ${SITE_STATS.reviewCount}+ verified reviews with a 4.9-star average, built over more than a decade of work across the Front Range. That reputation is something we protect on every single job.`,
       "You Do Not Have to Navigate This Alone",
       "Dealing with hail damage is stressful. The insurance process is complicated. And the roofing market in Colorado can feel overwhelming to navigate.",
       "Gates Enterprises is here to help you through every step, from the initial inspection to the final installation. Call us at (720) 766-3377 or schedule your free inspection online [LINK: free-inspection]. We will make sure your home is protected and that you get the coverage you have been paying for See our [LINK: best-roofer-denver] page for certified roofing options near you..",
@@ -2564,7 +2566,7 @@ export const blogPosts: BlogPost[] = [
       "What About Storm Chasers Knocking on Your Door",
       "After major hailstorms, out of state contractors descend on Colorado neighborhoods offering free inspections and immediate service. While some are legitimate, many are not. They may do poor quality work, use inferior materials, refuse to file proper supplements, or disappear entirely when warranty issues arise.",
       "Protect yourself by choosing a contractor that has been in Colorado for years (not weeks), holds manufacturer certifications, has verifiable Google reviews, carries proper licensing and insurance, and will provide references from your own neighborhood.",
-      "Gates Enterprises has been serving the Colorado Front Range since 2014. We are one of the only quadruple certified roofing contractors in the state, with certifications from GAF, Owens Corning, CertainTeed, and Malarkey. Our 339 Google reviews and 4.9 star rating speak for themselves.",
+      `Gates Enterprises has been serving the Colorado Front Range since 2014. We are one of the only quadruple certified roofing contractors in the state, with certifications from GAF, Owens Corning, CertainTeed, and Malarkey. Our ${SITE_STATS.reviewCount} Google reviews and 4.9 star rating speak for themselves.`,
       "Schedule Your Free Hail Damage Inspection",
       "Think your roof might have hail damage? Do not guess. Schedule a free inspection with Gates Enterprises and get a clear answer backed by professional documentation. Call (720) 766-3377 or book online today See our [LINK: best-roofer-denver] page for certified roofing options near you..",
     ],
@@ -2732,7 +2734,7 @@ export const blogPosts: BlogPost[] = [
       "Should I get my roof inspected before hail season? Absolutely. Pre season inspections catch existing damage, give you time to file claims before deadlines expire, and avoid the rush that follows every major storm.",
       "Does insurance cover hail damage in Colorado? Yes. Most homeowners insurance policies in Colorado cover wind and hail damage. Colorado is a right to repair state, meaning insurance companies must pay for damage caused by covered events.",
       "Schedule Your Free Pre Season Inspection",
-      "Gates Enterprises LLC is a quadruple manufacturer certified roofing contractor based in Lakewood, Colorado. We have completed thousands of roofs across the Front Range and maintain a 4.9 star rating with 339+ Google reviews.",
+      `Gates Enterprises LLC is a quadruple manufacturer certified roofing contractor based in Lakewood, Colorado. We have completed thousands of roofs across the Front Range and maintain a 4.9 star rating with ${SITE_STATS.reviewCount}+ Google reviews.`,
       "Our free pre season roof inspections include a complete roof surface evaluation, photo documentation of any existing damage, gutter and flashing assessment, and a written report with our findings See our [LINK: best-roofer-denver] page for certified roofing options near you..",
       "Call (720) 766-3377 or visit our contact page to schedule your inspection before storm season begins [LINK: contact-us].",
       "A forecast is only useful if you act on it. [LINK: rel-season-guide] covers what a Colorado hail season does to a roof, and [LINK: rel-prep-2026] is the pre-season checklist.",
@@ -2801,7 +2803,7 @@ export const blogPosts: BlogPost[] = [
       "Red Flags When Getting Roof Estimates",
       "Storm chasers show up after every hailstorm offering \"free roofs\" and pressuring homeowners to sign contracts on the spot. Here is what to watch for:",
       "No local address or permanent office. No manufacturer certifications. Pressure to sign immediately or \"lose your spot.\" Asking you to pay your deductible to them. Unusually low bids that seem too good to be true. No references from local homeowners.",
-      "Gates Enterprises has been headquartered in Lakewood, Colorado since 2014. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), carry full insurance, and have 339+ Google reviews with a 4.9 star rating.",
+      `Gates Enterprises has been headquartered in Lakewood, Colorado since 2014. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), carry full insurance, and have ${SITE_STATS.reviewCount}+ Google reviews with a 4.9 star rating.`,
       "Frequently Asked Questions",
       "How long does a roof replacement take? Most residential roof replacements are completed in one day. Larger or more complex roofs may take two to three days.",
       "Will my insurance pay for a new roof? If your roof has damage from a covered event like hail or wind, yes. We help homeowners navigate the insurance claims process every day.",
@@ -5001,7 +5003,7 @@ export const blogPosts: BlogPost[] = [
 
       "Why Gates Enterprises Serves Parker",
       "Gates Enterprises is one of the few roofing companies serving Parker with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. That means Parker homeowners get access to all four major shingle brands with the highest tier warranty coverage from each.",
-      "With over 339 Google reviews and a 4.9 star rating, our reputation is built on consistent quality across hundreds of Front Range projects. We have worked extensively in Parker neighborhoods and understand the local HOA landscape, the permitting process, and the weather patterns that affect your roof.",
+      `With over ${SITE_STATS.reviewCount} Google reviews and a 4.9 star rating, our reputation is built on consistent quality across hundreds of Front Range projects. We have worked extensively in Parker neighborhoods and understand the local HOA landscape, the permitting process, and the weather patterns that affect your roof.`,
       "If you are a Parker homeowner who needs a roof inspection, is considering a replacement, or has questions about storm damage, call Gates Enterprises at (720) 766-3377 or [LINK: contact] to schedule a free inspection See our [LINK: best-roofer-parker] page for certified roofing options near you..",
       "Parker homeowners working a specific storm can go deeper in [LINK: rel-parker-hail], and [LINK: rel-parker-choose] walks through comparing the companies knocking on your street.",
     ],
@@ -5152,7 +5154,7 @@ export const blogPosts: BlogPost[] = [
       "If the replacement is covered by an insurance claim, your out-of-pocket cost is typically limited to your deductible. The insurance company covers the rest based on the approved scope of work [LINK: roof-replacement].",
 
       "Gates Enterprises in Highlands Ranch",
-      "Gates Enterprises has completed numerous roofing projects throughout Highlands Ranch, working with homeowners, HOAs, and insurance companies to deliver quality results. With quadruple manufacturer certification, over 339 Google reviews at 4.9 stars, and deep experience with HR's specific requirements, we provide Highlands Ranch homeowners with the full range of roofing options and the local knowledge to execute the project smoothly.",
+      `Gates Enterprises has completed numerous roofing projects throughout Highlands Ranch, working with homeowners, HOAs, and insurance companies to deliver quality results. With quadruple manufacturer certification, over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, and deep experience with HR's specific requirements, we provide Highlands Ranch homeowners with the full range of roofing options and the local knowledge to execute the project smoothly.`,
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Highlands Ranch home See our [LINK: best-roofer-highlands-ranch] page for certified roofing options near you..",
     ],
     internalLinks: [
@@ -5208,7 +5210,7 @@ export const blogPosts: BlogPost[] = [
 
       "Choosing a Roofing Contractor in Castle Rock",
       "Castle Rock attracts storm chasers after every major hail event. These out-of-area contractors show up within days, knock on doors, and disappear once the work is done. Protecting yourself means choosing a contractor with verifiable local presence and history, manufacturer certifications from major brands, strong review volume and rating (300 or more reviews above 4.5 stars), and Colorado licensing and insurance documentation.",
-      "Gates Enterprises serves Castle Rock with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over 339 Google reviews at 4.9 stars, our team understands Castle Rock's unique weather challenges and can recommend the right materials and installation approach for your specific home and neighborhood See our [LINK: best-roofer-castle-rock] page for certified roofing options near you..",
+      `Gates Enterprises serves Castle Rock with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, our team understands Castle Rock's unique weather challenges and can recommend the right materials and installation approach for your specific home and neighborhood See our [LINK: best-roofer-castle-rock] page for certified roofing options near you..`,
       "Schedule a free roof inspection for your Castle Rock home by calling (720) 766-3377 or visiting [LINK: contact].",
       "The storms that hit Castle Rock rarely stop here. [LINK: rel-palmer-divide] explains why this corridor gets hit so often, and [LINK: rel-hr] and [LINK: rel-centennial] cover the South Metro neighborhoods on the same storm tracks.",
     ],
@@ -5270,7 +5272,7 @@ export const blogPosts: BlogPost[] = [
       "Aurora homeowners can [LINK: hailscore] to see what storms have passed over their property, with radar verified data showing hail sizes and dates. It is a smart first step before calling for a professional inspection.",
 
       "Gates Enterprises in Aurora",
-      "Gates Enterprises serves Aurora from the older neighborhoods near Colfax to the newest developments east of E-470. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) means Aurora homeowners get the full range of material options with top-tier warranty coverage. With over 339 Google reviews at 4.9 stars, we deliver consistent quality across every Aurora neighborhood.",
+      `Gates Enterprises serves Aurora from the older neighborhoods near Colfax to the newest developments east of E-470. Our quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) means Aurora homeowners get the full range of material options with top-tier warranty coverage. With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, we deliver consistent quality across every Aurora neighborhood.`,
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Aurora home See our [LINK: best-roofer-aurora] page for certified roofing options near you..",
       "Gates works the whole metro, not just the east side. [LINK: rel-arvada] covers what homeowners on the northwest side see from the same Front Range storm season.",
     ],
@@ -5331,7 +5333,7 @@ export const blogPosts: BlogPost[] = [
 
       "Why Gates Enterprises Serves Lakewood",
       "Gates Enterprises is quadruple manufacturer certified: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. This gives Lakewood homeowners access to all four major shingle brands with the best warranty coverage available from each.",
-      "With over 339 Google reviews at 4.9 stars, our reputation is built on consistent execution across hundreds of projects. We understand Lakewood's diverse housing stock, from mid-century ranches to modern foothills homes, and we tailor our recommendations to each home's specific needs.",
+      `With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, our reputation is built on consistent execution across hundreds of projects. We understand Lakewood's diverse housing stock, from mid-century ranches to modern foothills homes, and we tailor our recommendations to each home's specific needs.`,
       "Call (720) 766-3377 or [LINK: contact] for a free roof inspection on your Lakewood home See our [LINK: best-roofer-lakewood] page for certified roofing options near you..",
     ],
     internalLinks: [
@@ -5389,7 +5391,7 @@ export const blogPosts: BlogPost[] = [
       "Fort Collins homeowners can [LINK: hailscore] to see radar verified hail events for their specific address, including dates and stone sizes.",
 
       "Gates Enterprises in Fort Collins",
-      "Gates Enterprises serves Fort Collins and Northern Colorado with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over 339 Google reviews at 4.9 stars, we bring the same quality and expertise to Fort Collins that we deliver across the entire Front Range.",
+      `Gates Enterprises serves Fort Collins and Northern Colorado with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, we bring the same quality and expertise to Fort Collins that we deliver across the entire Front Range.`,
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Fort Collins home See our [LINK: best-roofer-fort-collins] page for certified roofing options near you..",
     ],
     internalLinks: [
@@ -5449,7 +5451,7 @@ export const blogPosts: BlogPost[] = [
       "Many Colorado Springs neighborhoods, particularly in the newer developments on the north and east sides, have HOAs with architectural guidelines. Communities like Flying Horse, Cordera, and Northgate have specific requirements for roofing materials. Check with your HOA before selecting materials and submit any required approval requests.",
 
       "Gates Enterprises in Colorado Springs",
-      "Gates Enterprises serves Colorado Springs with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over 339 Google reviews at 4.9 stars, we deliver the same certified quality to Springs homeowners and military families that we provide across the entire Front Range.",
+      `Gates Enterprises serves Colorado Springs with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, we deliver the same certified quality to Springs homeowners and military families that we provide across the entire Front Range.`,
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Colorado Springs home See our [LINK: best-roofer-colorado-springs] page for certified roofing options near you..",
     ],
     internalLinks: [
@@ -5500,7 +5502,7 @@ export const blogPosts: BlogPost[] = [
       "Choosing a Roofing Contractor in Arvada",
       "The same principles apply in Arvada as throughout the Front Range: prioritize manufacturer certifications, review volume and consistency, local presence, and insurance claim experience.",
       "Storm chasers are common in Arvada after major hail events. Protect yourself by verifying credentials, checking reviews, and never signing a contract under pressure on your doorstep [LINK: insurance-claims].",
-      "Gates Enterprises serves Arvada with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over 339 Google reviews at 4.9 stars, we understand Arvada's unique geography and its implications for your roof.",
+      `Gates Enterprises serves Arvada with quadruple manufacturer certification: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, we understand Arvada's unique geography and its implications for your roof.`,
       "Call (720) 766-3377 or [LINK: contact] to schedule a free roof inspection for your Arvada home See our [LINK: best-roofer-arvada] page for certified roofing options near you..",
     ],
     internalLinks: [
@@ -6214,7 +6216,7 @@ export const blogPosts: BlogPost[] = [
 
       "Gates Enterprises: Quadruple Certified",
       "Gates Enterprises is one of the few roofing contractors in Colorado with all four major manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. This means every Colorado homeowner we work with has access to all four product lines with the strongest possible warranty from each manufacturer.",
-      "With over 339 Google reviews at 4.9 stars, our certifications are backed by consistent customer satisfaction across hundreds of projects.",
+      `With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, our certifications are backed by consistent customer satisfaction across hundreds of projects.`,
       "Call (720) 766-3377 or [LINK: contact] to learn how manufacturer certifications protect your investment See our [LINK: best-roofer-denver] page for certified roofing options near you..",
       "Once you know why the credentials matter, the next question is who in this state has earned them. We answered that in our guide to [LINK: rel-most-certified], and [LINK: rel-master-elite] breaks down the difference between the two GAF tiers you will see quoted most often.",
     ],
@@ -6273,7 +6275,7 @@ export const blogPosts: BlogPost[] = [
 
       "The Bottom Line",
       "When choosing between roofing contractors, GAF certification level is one of the most objective quality indicators available. Master Elite represents the top 2 percent, offers the best warranties, and signals a contractor's commitment to ongoing excellence.",
-      "Gates Enterprises holds GAF Master Elite certification along with top-tier certifications from Owens Corning (Preferred), CertainTeed (ShingleMaster), and Malarkey (Emerald Premium). With over 339 Google reviews at 4.9 stars, our certifications are backed by proven customer satisfaction See our [LINK: best-roofer-denver] page for certified roofing options near you..",
+      `Gates Enterprises holds GAF Master Elite certification along with top-tier certifications from Owens Corning (Preferred), CertainTeed (ShingleMaster), and Malarkey (Emerald Premium). With over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, our certifications are backed by proven customer satisfaction See our [LINK: best-roofer-denver] page for certified roofing options near you..`,
       "Call (720) 766-3377 or [LINK: contact] to discuss which GAF product and warranty level is right for your home [LINK: insurance-claims].",
       "Gates Enterprises serves homeowners across the South Metro, including [LINK: littleton-area] and [LINK: aurora-area] — free storm inspections, insurance claim support, and certified installations.",
       "Master Elite is one badge among several a roofer can hold. [LINK: rel-why-certs] covers why manufacturer certifications matter at all, and [LINK: rel-most-certified] shows which Colorado companies carry which credentials.",
@@ -6346,7 +6348,7 @@ export const blogPosts: BlogPost[] = [
       "Walk away if you hear any of these. We can waive your deductible (illegal in Colorado). Sign today and we will give you a special price (high-pressure tactic). We do not need a permit for this job (they do). We require full payment before starting work (never agree to this). We will handle your insurance claim for you (this should be a collaborative process, not a takeover) [LINK: storm-hail-damage].",
 
       "Gates Enterprises: Ask Us Anything",
-      "Gates Enterprises welcomes every question on this list. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), have over 339 Google reviews at 4.9 stars, and have been serving Colorado Front Range homeowners with transparent, quality work.",
+      `Gates Enterprises welcomes every question on this list. We are quadruple manufacturer certified (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), have over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, and have been serving Colorado Front Range homeowners with transparent, quality work.`,
       "Call (720) 766-3377 or [LINK: contact] to start the conversation See our [LINK: best-roofer-denver] page for certified roofing options near you..",
       "Credentials narrow the field before you ever pick up the phone. Our guide to [LINK: rel-most-certified] shows which certifications exist and who holds them, and [LINK: rel-storm-chaser] covers the tells that separate an established local company from a crew that followed the storm in.",
     ],
@@ -6411,7 +6413,7 @@ export const blogPosts: BlogPost[] = [
       "If a storm chaser offers to waive your deductible, you can report them to the Colorado Division of Insurance. This practice is illegal under state law and the Division investigates complaints. You can also report deceptive business practices to the Colorado Attorney General's office and the Better Business Bureau [LINK: roof-replacement].",
 
       "Gates Enterprises: A Local Company You Can Verify",
-      "Gates Enterprises is a Colorado-based roofing company with quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), over 339 Google reviews at 4.9 stars, and a permanent presence serving the Front Range. Every certification is verifiable. Every review is from a real Colorado homeowner.",
+      `Gates Enterprises is a Colorado-based roofing company with quadruple manufacturer certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster), over ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, and a permanent presence serving the Front Range. Every certification is verifiable. Every review is from a real Colorado homeowner.`,
       "Call (720) 766-3377 or [LINK: contact] for a no-pressure roof inspection from a company that will be here long after the storm chasers have left See our [LINK: best-roofer-denver] page for certified roofing options near you..",
       "Manufacturer certifications are the one credential a storm chaser cannot fake, because the manufacturer grants them and can pull them. See [LINK: rel-most-certified] for who holds what in Colorado, and [LINK: rel-questions] for the questions that flush out a fly-by-night crew.",
     ],
@@ -6517,7 +6519,7 @@ export const blogPosts: BlogPost[] = [
 
       "Consider for Replacement: Roofs Over 15 Years Old with Multiple Issues",
       "If your roof is aging and the inspection reveals multiple problems across different areas, a full replacement before hail season may be the smartest financial move. A new roof with Class 4 impact resistant shingles gives you the best possible protection going into storm season, and most Colorado insurance companies offer a 20 to 35 percent premium discount for Class 4 roofs [LINK: roof-replacement].",
-      "As a quadruple certified contractor (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster), Gates Enterprises installs impact resistant products from every major manufacturer. We can give you an honest comparison of the options without being locked into pushing one brand. With 339 plus reviews, a 4.9 star average, and more than 7,200 completed projects across the Front Range, we have the experience to back up every recommendation we make.",
+      `As a quadruple certified contractor (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster), Gates Enterprises installs impact resistant products from every major manufacturer. We can give you an honest comparison of the options without being locked into pushing one brand. With ${SITE_STATS.reviewCount} plus reviews, a 4.9 star average, and more than 7,200 completed projects across the Front Range, we have the experience to back up every recommendation we make.`,
 
       "Your Complete Spring Roof Maintenance Checklist",
       "Here is everything in one list you can print or save to your phone.",
@@ -6747,7 +6749,7 @@ export const blogPosts: BlogPost[] = [
       "Step 8: Choose Your Contractor and Complete the Repairs",
       "Once your claim is approved and you understand your financial picture, it is time to select your contractor and get the work done. You have the right to choose any licensed contractor you want. Your insurance company may recommend specific companies, but they cannot require you to use one.",
       "When choosing a contractor for an insurance restoration project, look for manufacturer certifications, experience with insurance claims, a strong local reputation, and proper licensing and insurance coverage [LINK: contractor-blog].",
-      "Gates Enterprises is one of the only quadruple-certified roofing companies in Colorado: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339 Reviews, a 4.9-star average, and over 7,200 roofs completed across the Front Range, we bring a level of experience and accountability that protects your investment.",
+      `Gates Enterprises is one of the only quadruple-certified roofing companies in Colorado: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount} Reviews, a 4.9-star average, and over 7,200 roofs completed across the Front Range, we bring a level of experience and accountability that protects your investment.`,
       "We serve homeowners across the Denver metro area, including Parker [LINK: parker], Denver [LINK: denver], Castle Rock, Aurora, Lakewood, Littleton, Centennial, Highlands Ranch, and communities throughout the Front Range [LINK: storm-damage].",
 
       "Colorado-Specific Details That Affect Your Claim",
@@ -6777,7 +6779,7 @@ export const blogPosts: BlogPost[] = [
       "How Gates Enterprises Helps With the Entire Process",
       "At Gates Enterprises, insurance restoration is one of our core specialties [LINK: insurance-claims]. We do not just show up, replace shingles, and leave. We walk with you through every step of the claims process, from the initial inspection to the final supplement.",
       "Here is what that looks like in practice. We start with a free, thorough roof inspection where we document every area of damage with photos and detailed notes. We attend the adjuster inspection with you and walk the roof alongside the adjuster to ensure nothing is missed. We review the insurance estimate line by line and compare it to our findings. If items are missing or underpriced, we prepare a supplement documenting what we found. We keep the paperwork organized and, with your authorization, talk through the scope directly with your adjuster. And when it is time for the replacement, our certified crews install your new roof to manufacturer specifications with the highest available warranty backing.",
-      "With 339 Reviews, a 4.9-star average, and over 7,200 roofs completed, we have earned the trust of Colorado homeowners by delivering results on every project. Our quadruple certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) means you get access to the best warranty products from every major manufacturer.",
+      `With ${SITE_STATS.reviewCount} Reviews, a 4.9-star average, and over 7,200 roofs completed, we have earned the trust of Colorado homeowners by delivering results on every project. Our quadruple certification (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) means you get access to the best warranty products from every major manufacturer.`,
       "If your roof was damaged by a storm, give us a call at (720) 766-3377 or schedule a free inspection online [LINK: free-inspection]. We will take it from there.",
 
       "Frequently Asked Questions",
@@ -6877,7 +6879,7 @@ export const blogPosts: BlogPost[] = [
       "Want to know how much hail your Centennial address has been exposed to? {hailscore-link} uses NOAA radar data going back to 2015 to show exactly how many hail events have occurred near your property. It is free and takes about 10 seconds.",
 
       "Get a Free Centennial Roof Inspection",
-      "If you live in Centennial and want to know the true condition of your roof, {free-inspection}. Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range. We carry a 4.9 star Google rating with 339 Reviews. We will give you an honest assessment, no pressure, and help you understand your options whether that means repair, replacement, or simply keeping an eye on things for now See our [LINK: best-roofer-centennial] page for certified roofing options near you..",
+      `If you live in Centennial and want to know the true condition of your roof, {free-inspection}. Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range. We carry a 4.9 star Google rating with ${SITE_STATS.reviewCount} Reviews. We will give you an honest assessment, no pressure, and help you understand your options whether that means repair, replacement, or simply keeping an eye on things for now See our [LINK: best-roofer-centennial] page for certified roofing options near you..`,
       "The same storm cells usually cross into the east metro. [LINK: rel-aurora] covers what Aurora homeowners deal with on the other side of E-470.",
     ],
     internalLinks: [
@@ -7009,7 +7011,7 @@ export const blogPosts: BlogPost[] = [
 
       "Get Your Roof Inspected Before the Next Storm",
       "Colorado hail season runs from April through September, and 2026 is shaping up to be another active year along the Front Range. If your roof has been through even one significant hailstorm and has not been professionally inspected, you could be sitting on damage that is getting worse with every passing month.",
-      "Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range. We carry a 4.9-star rating with over 339 verified reviews. We hold all four major manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Very few roofing companies in Colorado hold all four.",
+      `Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range. We carry a 4.9-star rating with over ${SITE_STATS.reviewCount} verified reviews. We hold all four major manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Very few roofing companies in Colorado hold all four.`,
       "We serve homeowners across {lakewood-link}, {denver-link}, {aurora-link}, {arvada-link}, {castle-rock-link}, and dozens of other Front Range communities. Our inspections are free, thorough, and come with zero pressure.",
       "Call us at (720) 766-3377 or schedule your free inspection online [LINK: free-inspection]. We will tell you exactly what shape your roof is in and help you figure out the smartest next step, whether that is filing a claim, scheduling repairs, or simply keeping an eye on things until the next storm See our [LINK: best-roofer-denver] page for certified roofing options near you..",
       "Once you know what you are looking at, the next moves matter more than the photos. [LINK: rel-after-hailstorm] covers the first days after a Colorado hailstorm, and [LINK: rel-repair-cost] covers what the repair actually runs.",
@@ -7075,7 +7077,7 @@ export const blogPosts: BlogPost[] = [
       "How to Choose an Emergency Roofer",
       "When your roof is leaking, it is tempting to call the first number that pops up. But storm chasers, unlicensed operators, and fly-by-night outfits flood into Colorado communities after major storms. They knock on doors, offer quick fixes, and disappear before the first winter freeze tests their work.",
       "Start with manufacturer certifications. Certifications from GAF, Owens Corning, Malarkey, and CertainTeed mean the contractor has been vetted, trained, and approved to install products to specification. Gates Enterprises holds all four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Very few Colorado roofers hold all four.",
-      "Look for a local company with a permanent address, a track record in the community, and insurance claims experience. Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range, backed by a 4.9-star rating with over 339 verified reviews. A contractor who does not understand the insurance process can cost you thousands in underpaid claims.",
+      `Look for a local company with a permanent address, a track record in the community, and insurance claims experience. Gates Enterprises has completed over 7,200 roofing projects across the Colorado Front Range, backed by a 4.9-star rating with over ${SITE_STATS.reviewCount} verified reviews. A contractor who does not understand the insurance process can cost you thousands in underpaid claims.`,
 
       "Prevent Future Roofing Emergencies",
       "The best emergency roof repair is the one you never need. Schedule professional roof inspections at least once a year, ideally in early spring before storm season. Inspections catch cracked flashing, worn sealant, and lifted shingles before they become entry points during a storm [LINK: free-inspection].",
@@ -7144,7 +7146,7 @@ export const blogPosts: BlogPost[] = [
 
       "Local vs. Out of State",
       "A roofing company based in Douglas County is accountable to its community in a way that a contractor from out of state simply is not. Local contractors have a real reputation to protect in the place where they live and work. Their crew members are local. Their suppliers are local. When you have a warranty issue three years from now, a local company is a phone call away.",
-      "Gates Enterprises LLC has its headquarters in Lakewood, Colorado and has been serving the Front Range, including Parker and all of Douglas County, for over 10 years. We are not chasing the storm season across state lines. We are here. We have completed over 7,200 roofing projects across Colorado, backed by 339 Google reviews and a 4.9-star rating [LINK: free-inspection].",
+      `Gates Enterprises LLC has its headquarters in Lakewood, Colorado and has been serving the Front Range, including Parker and all of Douglas County, for over 10 years. We are not chasing the storm season across state lines. We are here. We have completed over 7,200 roofing projects across Colorado, backed by ${SITE_STATS.reviewCount} Google reviews and a 4.9-star rating [LINK: free-inspection].`,
 
       "A Practical Checklist for Parker Homeowners",
       "Use this before calling any roofing company. Confirm each of the following before you agree to any work.",

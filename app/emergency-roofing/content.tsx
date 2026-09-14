@@ -22,6 +22,7 @@ import {
   Star,
   ChevronDown,
 } from "lucide-react";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -99,7 +100,7 @@ const WHY_GATES = [
   },
   {
     Icon: Star,
-    bold: "4.9 stars from 339 reviews.",
+    bold: `4.9 stars from ${SITE_STATS.reviewCount} reviews.`,
     rest: "Homeowners across the Front Range trust Gates Enterprises because we deliver results under pressure, every time.",
   },
   {

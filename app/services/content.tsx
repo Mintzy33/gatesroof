@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Home, CloudLightning, Wrench, Layers, Droplets, Square, Paintbrush, FileText } from "lucide-react";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -121,7 +122,7 @@ export default function ServicesContent() {
             }}
           >
             Gates Enterprises handles everything above your foundation. Roofing,
-            siding, gutters, windows, paint, and insurance claims. 339 Reviews,
+            siding, gutters, windows, paint, and insurance claims. {SITE_STATS.reviewCount} Reviews,
             4.9 stars, and certifications from all four major shingle
             manufacturers. One call, one contractor, one standard of work.
           </p>

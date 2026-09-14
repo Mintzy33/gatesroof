@@ -61,12 +61,6 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Roof Insurance Claim Services",
   "brand": {"@type": "Brand", "name": "Gates Enterprises LLC"},
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "339",
-    "bestRating": "5"
-  },
   "review": [
     {
       "@type": "Review",

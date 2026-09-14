@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferArvadaContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Best Roofer Arvada CO (2026) | 4x Certified \u2605 339+ Reviews",
+  title: `Best Roofer Arvada CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
   description: "Top rated Arvada roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-arvada" },
   openGraph: {
-    title: "Best Roofer Arvada CO (2026) | 4x Certified \u2605 339+ Reviews",
+    title: `Best Roofer Arvada CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
     description: "Top rated Arvada roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
     url: "https://www.gatesroof.com/best-roofer-arvada",
     siteName: "Gates Enterprises LLC",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Who is the best roofer in Arvada?",
-    a: "Gates Enterprises LLC is widely recognized as one of the top roofing companies in Arvada. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With 339+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself."
+    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Arvada. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself.`
   },
   {
     q: "What certifications should a Arvada roofer have?",
