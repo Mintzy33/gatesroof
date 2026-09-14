@@ -272,6 +272,7 @@ export default function BestRooferDenverContent() {
               { label: "Storm Damage Restoration", href: "/services/storm-hail-damage" },
               { label: "Hail Damage Roof Repair in Denver: Who to Call", href: "/blog/hail-storm-damage-roof-repair-denver" },
               { label: "Roof Replacement", href: "/services/roof-replacement" },
+              { label: "Roofing Contractor Denver", href: "/areas/denver" },
               { label: "Roofing Contractor Aurora", href: "/areas/aurora" },
               { label: "Roofing Contractor Lakewood", href: "/areas/lakewood" },
               { label: "Roofing Contractor Parker", href: "/areas/parker" },

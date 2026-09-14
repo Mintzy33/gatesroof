@@ -189,6 +189,7 @@ export default function BestRooferEdgewaterContent() {
           </h2>
           <div className="best-roofer-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Edgewater", href: "/areas/edgewater" },
               { label: "Best Roofer Lakewood", href: "/best-roofer-lakewood" },
               { label: "Best Roofer Denver", href: "/best-roofer-denver" },
               { label: "Best Roofer Wheat Ridge", href: "/best-roofer-wheat-ridge" },

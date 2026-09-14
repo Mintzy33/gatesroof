@@ -267,6 +267,7 @@ export default function BestRooferHighlandsRanchContent() {
           </h2>
           <div className="best-roofer-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Highlands Ranch", href: "/areas/highlands-ranch" },
               { label: "Why Choose Gates Enterprises", href: "/why-gates-enterprises" },
               { label: "Insurance Restoration", href: "/insurance-restoration" },
               { label: "Storm Damage Restoration", href: "/services/storm-hail-damage" },

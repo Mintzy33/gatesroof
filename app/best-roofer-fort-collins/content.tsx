@@ -233,6 +233,7 @@ export default function BestRooferFortCollinsContent() {
           </h2>
           <div className="best-roofer-ftc-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Fort Collins", href: "/areas/fort-collins" },
               { label: "Best Roofer Denver", href: "/best-roofer-denver" },
               { label: "Why Choose Gates Enterprises", href: "/why-gates-enterprises" },
               { label: "Insurance Restoration", href: "/insurance-restoration" },

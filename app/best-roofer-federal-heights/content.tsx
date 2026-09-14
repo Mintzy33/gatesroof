@@ -189,6 +189,7 @@ export default function BestRooferFederalHeightsContent() {
           </h2>
           <div className="best-roofer-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Federal Heights", href: "/areas/federal-heights" },
               { label: "Best Roofer Westminster", href: "/best-roofer-westminster" },
               { label: "Best Roofer Thornton", href: "/best-roofer-thornton" },
               { label: "Best Roofer Northglenn", href: "/best-roofer-northglenn" },

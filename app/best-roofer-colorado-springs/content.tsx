@@ -236,6 +236,7 @@ export default function BestRooferColoradoSpringsContent() {
           </h2>
           <div className="best-roofer-cos-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Colorado Springs", href: "/areas/colorado-springs" },
               { label: "Best Roofer Denver", href: "/best-roofer-denver" },
               { label: "Why Choose Gates Enterprises", href: "/why-gates-enterprises" },
               { label: "Insurance Restoration", href: "/insurance-restoration" },

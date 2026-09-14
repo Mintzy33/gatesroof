@@ -189,6 +189,7 @@ export default function BestRooferConiferContent() {
           </h2>
           <div className="best-roofer-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Conifer", href: "/areas/conifer" },
               { label: "Best Roofer Morrison", href: "/best-roofer-morrison" },
               { label: "Best Roofer Evergreen", href: "/best-roofer-evergreen" },
               { label: "Best Roofer Golden", href: "/best-roofer-golden" },

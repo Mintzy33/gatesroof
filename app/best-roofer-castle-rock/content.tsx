@@ -267,6 +267,7 @@ export default function BestRooferCastleRockContent() {
           </h2>
           <div className="best-roofer-links" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 32px" }}>
             {[
+              { label: "Roofing Contractor Castle Rock", href: "/areas/castle-rock" },
               { label: "Why Choose Gates Enterprises", href: "/why-gates-enterprises" },
               { label: "Insurance Restoration", href: "/insurance-restoration" },
               { label: "Storm Damage Restoration", href: "/services/storm-hail-damage" },
