@@ -19,7 +19,7 @@ Deep background lives in the repo — read these, don't duplicate them:
 | `geo/GATES-GEO-CITATION-TRACKER.md` | Append-only run ledger + Layer-6 scorecard ("numbers to beat"). |
 | `geo/gates-geo-prompt-matrix.csv` | The 35-prompt matrix (tiers A–D) all runs sample from. |
 | `lib/site-stats.ts` | SITE_STATS — single source of truth for every public number. |
-| `lib/schema.ts` | All JSON-LD builders (`blogPostingSchema`, `faqSchema`, `cityFaqItems`, …). |
+| `lib/schema.ts` | All JSON-LD builders (`blogPostingSchema`, `faqSchema`, `servicePageSchema`, …). City-page FAQs come from `getCityFAQItems` in `lib/faq-data.ts`, which is also what the pages render — keep the two in sync. |
 | `app/blog/posts.ts` | Blog content: typed `BlogPost[]` array (no MDX in this repo). |
 | `app/areas/aurora/` | Canonical area-page template (`page.tsx` + `content.tsx`). |
 

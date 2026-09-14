@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
-import { cityBreadcrumb, faqSchema, cityFaqItems } from "../../../lib/schema";
+import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {

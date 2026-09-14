@@ -214,32 +214,6 @@ export function servicePageSchema(service: {
   };
 }
 
-// ─── City area page FAQ generator (unique per city) ─────────────────
-export function cityFaqItems(cityName: string): { q: string; a: string }[] {
-  return [
-    {
-      q: `How much does a roof replacement cost in ${cityName}, Colorado?`,
-      a: `Roof replacement costs in ${cityName} vary based on roof size, pitch, material choice, and the condition of the decking underneath. Most residential replacements in ${cityName} fall between $10,000 and $30,000. When storm damage is involved, an approved insurance claim can offset much of that cost, depending on your policy. Contact us for a free estimate specific to your ${cityName} home.`,
-    },
-    {
-      q: `How often does ${cityName} get hail storms?`,
-      a: `${cityName} sits along Colorado's Front Range hail corridor, one of the most active hail regions in the country. Most ${cityName} neighborhoods experience at least one significant hail event per year. Some years bring multiple storms with hailstones large enough to damage roofing, siding, and gutters. Regular inspections after storms are the best way to catch damage early.`,
-    },
-    {
-      q: `What is the best roofing material for homes in ${cityName}?`,
-      a: `For ${cityName} homes, we recommend Class 4 impact resistant shingles. They withstand hail up to golf ball size and qualify for insurance premium discounts in Colorado. Top options include GAF Timberline HDZ IR, Owens Corning Duration FLEX, Malarkey Vista AR, and CertainTeed Landmark IR. Each comes with strong warranties and proven performance in ${cityName}'s weather.`,
-    },
-    {
-      q: `Does homeowners insurance cover hail damage in ${cityName}?`,
-      a: `Many homeowners policies in ${cityName} cover sudden hail damage to your roof, siding, and gutters, but whether your claim is covered depends on your specific policy and the cause of damage. Gates Enterprises documents the damage thoroughly and works with your adjuster through the ${cityName} claims process so decisions are based on clear, evidence-backed assessments.`,
-    },
-    {
-      q: `How long does a roof replacement take in ${cityName}?`,
-      a: `Most residential roof replacements in ${cityName} are completed in a single day. Larger homes or roofs with complex features like multiple valleys, skylights, or steep pitch may require two days. Weather can also affect timing during Colorado's storm season. We provide a specific timeline before starting any ${cityName} project.`,
-    },
-  ];
-}
-
 // ─── City Breadcrumb ────────────────────────────────────────────────
 export function cityBreadcrumb(cityName: string, citySlug: string): object {
   return breadcrumbSchema([

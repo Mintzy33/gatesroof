@@ -45,8 +45,8 @@ const citySchema = {
 
 const areaBreadcrumbs = cityBreadcrumb("Broomfield", "broomfield");
 // FAQPage markup must mirror the FAQs the page actually renders. content.tsx
-// renders getCityFAQItems("broomfield"); cityFaqItems() emitted a different, generic
-// set, so the marked-up Q/A never appeared in the HTML.
+// renders getCityFAQItems("broomfield"); this page previously emitted a
+// different, generic set, so the marked-up Q/A never appeared in the HTML.
 const areaFaqs = faqSchema(getCityFAQItems("broomfield").map((f) => ({ q: f.question, a: f.answer })));
 
 export default function Page() {
