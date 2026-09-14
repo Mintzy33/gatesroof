@@ -505,7 +505,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with my insurance company?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We document damage thoroughly and walk you through repair vs replace options so you can decide next steps with clear information.",
     },
     {
       question: "Why does Brighton get so much hail?",
@@ -565,7 +565,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with insurance companies on storm damage?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to document damage thoroughly and explain repair vs replace options clearly so you can decide next steps.",
     },
     {
       question: "Can you work on older Denver homes with unique roof designs?",
@@ -595,7 +595,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with my insurance company?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We document damage thoroughly and walk you through repair vs replace options so you can decide next steps with clear information.",
     },
     {
       question: "How does Evergreen's elevation affect roofing?",
@@ -685,7 +685,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with my insurance company?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We document damage thoroughly and walk you through repair vs replace options so you can decide next steps with clear information.",
     },
     {
       question: "Why should Lone Tree homeowners invest in quality roofing?",
@@ -715,7 +715,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with my insurance company?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We document damage thoroughly and walk you through repair vs replace options so you can decide next steps with clear information.",
     },
     {
       question: "How do mountain weather patterns affect roofs in Morrison?",
@@ -783,7 +783,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Does Gates Enterprises work with my insurance company?",
-      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We document damage thoroughly and walk you through repair vs replace options so you can decide next steps with clear information.",
     },
     {
       question: "How did the Marshall Fire affect roofing needs in Superior?",

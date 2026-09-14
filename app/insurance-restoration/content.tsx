@@ -156,7 +156,7 @@ export default function InsuranceRestorationContent() {
               {
                 num: 5,
                 title: "Supplementing When Necessary",
-                desc: "Sometimes the initial insurance estimate does not capture the full scope of damage. When additional damage is discovered during the project or when line items are missed, we prepare and submit supplements to your insurance company. This process helps ensure your property is fully restored, not partially patched."
+                desc: "Sometimes the initial insurance estimate does not capture the full scope of damage. When additional damage is discovered during the project or when line items are missed, we prepare and submit supplements to your insurance company. This process focuses on documenting the full scope of damage so repairs address what was found — not a partial patch."
               },
               {
                 num: 6,

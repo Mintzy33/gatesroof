@@ -142,7 +142,7 @@ export default function BestRooferFortCollinsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Know How</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Many Fort Collins roof replacements involve insurance claims from storm damage. The best roofers know how to document damage thoroughly, communicate with adjusters, and ensure your property is fully restored. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process from first inspection to final walkthrough.
+              Many Fort Collins roof replacements involve insurance claims from storm damage. The best roofers know how to document damage thoroughly, communicate with adjusters, and walk you through repair vs replace with clear documentation. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process from first inspection to final walkthrough.
             </p>
           </div>
 

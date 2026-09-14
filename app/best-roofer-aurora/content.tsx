@@ -142,7 +142,7 @@ export default function BestRooferAuroraContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Experience</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              With Aurora's hail exposure, many roof replacements involve insurance claims. The best roofers understand how to document damage comprehensively, communicate with adjusters, and ensure your property is fully restored. Gates Enterprises is an insurance restoration specialist that has helped thousands of Colorado homeowners navigate the process.
+              With Aurora's hail exposure, many roof replacements involve insurance claims. The best roofers understand how to document damage comprehensively, communicate with adjusters, and walk you through repair vs replace with clear documentation. Gates Enterprises is an insurance restoration specialist that has helped thousands of Colorado homeowners navigate the process.
             </p>
           </div>
 

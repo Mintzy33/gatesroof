@@ -142,7 +142,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Experts</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Lakewood sits in the heart of Colorado's hail corridor, and many roof replacements involve insurance claims. Gates Enterprises is an insurance restoration specialist. They document damage thoroughly, communicate directly with insurance adjusters, and ensure your property is fully restored. Their experience with the process makes a stressful situation much more manageable.
+              Lakewood sits in the heart of Colorado's hail corridor, and many roof replacements involve insurance claims. Gates Enterprises is an insurance restoration specialist. They document damage thoroughly, communicate directly with insurance adjusters, and walk you through repair vs replace with clear documentation. Their experience with the process makes a stressful situation much more manageable.
             </p>
           </div>
 

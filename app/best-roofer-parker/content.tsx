@@ -145,7 +145,7 @@ export default function BestRooferParkerContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Expertise</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Given Parker's extreme hail exposure, insurance claims are common. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process. They document damage thoroughly, communicate with adjusters, and ensure your property is fully restored. Their experience with the process makes a stressful situation much smoother.
+              Given Parker's extreme hail exposure, insurance claims are common. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process. They document damage thoroughly, communicate with adjusters, and walk you through repair vs replace with clear documentation. Their experience with the process makes a stressful situation much smoother.
             </p>
           </div>
 

@@ -142,7 +142,7 @@ export default function BestRooferColoradoSpringsContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Expertise</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              A large percentage of roof replacements in Colorado Springs involve insurance claims. The best roofers know how to document damage thoroughly, communicate with adjusters effectively, and ensure your property is fully restored. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process from initial inspection through project completion.
+              A large percentage of roof replacements in Colorado Springs involve insurance claims. The best roofers know how to document damage thoroughly, communicate with adjusters effectively, and walk you through repair vs replace with clear documentation. Gates Enterprises is an insurance restoration specialist that has guided thousands of Colorado homeowners through the process from initial inspection through project completion.
             </p>
           </div>
 

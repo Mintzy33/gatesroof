@@ -46,7 +46,7 @@ const HAIL_EVENTS = [
 const SERVICES = [
   {
     title: "Storm Damage Restoration",
-    desc: "When hail and wind tear through Lakewood, Gates Enterprises LLC is already here, ready to respond. As your locally headquartered roofing contractor, we provide fast inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, managing the entire restoration process so your home is fully restored.",
+    desc: "When hail and wind tear through Lakewood, Gates Enterprises LLC is already here, ready to respond. As your locally headquartered roofing contractor, we provide fast inspections, thorough damage documentation, and expert restoration. We are an insurance restoration expert, managing the documentation and rebuild process and keeping you informed at each step.",
     href: "/services/storm-hail-damage"
   },
   {
@@ -81,7 +81,7 @@ const SERVICES = [
   },
   {
     title: "Insurance Restoration",
-    desc: "Gates Enterprises LLC is an insurance restoration expert headquartered right here in Lakewood. We manage the entire restoration process, from initial damage documentation through completed installation. Clear communication, thorough work, and a fully restored home.",
+    desc: "Gates Enterprises LLC is an insurance restoration expert headquartered right here in Lakewood. We manage the entire restoration process, from initial damage documentation through completed installation. Clear communication, thorough work, and a clear repair-vs-replace recommendation.",
     href: "/services/insurance-claims"
   }
 ];
@@ -230,7 +230,7 @@ export default function CityContent() {
           <div>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Insurance Restoration Experts.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Lakewood gets hit by hail regularly, and the restoration process can be confusing. Gates Enterprises LLC is an insurance restoration expert. We document damage meticulously, provide clear reports, and manage the restoration process from your initial inspection through the final installation. You get a fully restored home without the stress.
+              Lakewood gets hit by hail regularly, and the restoration process can be confusing. Gates Enterprises LLC is an insurance restoration expert. We document damage meticulously, provide clear reports, and manage the restoration process from your initial inspection through the final installation. You get clear documentation and a straightforward plan — without the runaround.
             </p>
           </div>
         </div>
