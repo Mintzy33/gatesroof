@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: `Lone Tree CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews ★`,
@@ -75,64 +76,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I know if my Lone Tree home has hail damage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Lone Tree homeowners."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with my insurance company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why should Lone Tree homeowners invest in quality roofing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Lone Tree has some of the highest property values in Douglas County. A quality roof protects your investment, maintains curb appeal, and ensures your home meets the standards expected in communities like Heritage Hills and Ridgegate. Premium roofing materials and certified installation also provide better long term warranty protection."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What roofing materials do you recommend for Lone Tree homes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Given Lone Tree's location in Douglas County's hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. For upscale homes, we also offer designer shingle lines that combine aesthetics with durability. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a roof replacement take in Lone Tree?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Larger custom homes in Lone Tree may require additional time. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Gates Enterprises LLC licensed and insured in Douglas County?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Douglas County, the City of Lone Tree, and throughout Colorado's Front Range."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Lone Tree have specific HOA roofing requirements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many Lone Tree communities have HOA guidelines that specify approved roofing materials, colors, and styles. Gates Enterprises LLC is experienced working within HOA requirements and can help you select materials that meet your community's standards while providing maximum protection against Colorado's severe weather."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("lone-tree").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     }
   ]
 };

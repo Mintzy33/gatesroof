@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: `Lakewood CO Roofer | Local HQ, Hail Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
@@ -83,64 +84,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Gates Enterprises actually based in Lakewood?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is headquartered in Lakewood, CO. This is our home and has been since we were founded in 2014. When you hire us, you are hiring your neighbors."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I know if my Lakewood home has hail damage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hail damage is often invisible from the ground. Signs to watch for include dented gutters, granule accumulation in downspout splash zones, and cracked or bruised shingles. The most reliable way to know is a professional inspection. Gates Enterprises LLC offers free inspections for Lakewood homeowners."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with my insurance company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all damage with detailed photos and measurements, provide comprehensive reports, and coordinate documentation with your insurance company throughout the entire restoration process."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What roofing materials work best for Lakewood homes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Lakewood homes due to the frequency of hail in Jefferson County. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed. We help you choose the best option for your budget, style, and warranty preferences."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How quickly can you inspect my roof after a storm?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Because we are headquartered in Lakewood, we can typically schedule inspections within days of a storm event. During peak storm season, demand increases, so we recommend reaching out as soon as possible to secure your spot."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What warranties are available through Gates Enterprises?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge\u00ae with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS\u2122 coverage. We walk you through every option so you can make an informed decision."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises offer free inspections and estimates?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We offer completely free roof inspections and estimates for all Lakewood homeowners. No pressure, no obligation. We assess your roof's condition, explain what we find, and give you a clear recommendation."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("lakewood").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     }
   ]
 };

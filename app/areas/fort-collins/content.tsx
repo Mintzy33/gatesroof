@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -30,36 +31,7 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How often should Fort Collins homeowners inspect their roof?",
-    a: "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Fort Collins sits in the Northern Colorado hail corridor where severe storms form along the foothills and track across the city. Annual inspections catch small problems before they become expensive repairs."
-  },
-  {
-    q: "Does Gates Enterprises work with insurance companies on storm damage in Fort Collins?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Fort Collins homeowners deal with frequent hail claims, and we handle the process from start to finish."
-  },
-  {
-    q: "What type of shingles hold up best in Fort Collins?",
-    a: "We recommend Class 3 or Class 4 impact resistant shingles for Fort Collins homes. Given the frequency of hail along the I-25 corridor, impact rated shingles provide the best long term protection. Our four manufacturer certifications give you access to the best product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "Can you work on older homes in Old Town Fort Collins?",
-    a: "Absolutely. Old Town Fort Collins has a mix of historic homes, some with original wood shake roofs. Our crews have experience with steep pitches, complex valleys, and transitioning older wood shake roofs to modern architectural shingles while preserving the character of the home."
-  },
-  {
-    q: "Does Fort Collins require permits for roof replacement?",
-    a: "Yes. The City of Fort Collins requires building permits for roof replacements. Fort Collins also has strict green building standards. Gates Enterprises LLC handles the permitting process for you and ensures all work meets or exceeds local code requirements."
-  },
-  {
-    q: "Do you serve Timnath, Windsor, and Loveland as well?",
-    a: "Yes. Gates Enterprises LLC serves the entire Northern Colorado region, including Timnath, Windsor, Loveland, Greeley, Longmont, and surrounding communities. We also serve Boulder, Denver, and the rest of the Front Range."
-  },
-  {
-    q: "How long does a roof replacement take in Fort Collins?",
-    a: "Most residential roof replacements in Fort Collins are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project."
-  }
-];
+const FAQS = getCityFAQItems("fort-collins").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Old Town", "Midtown", "South Fort Collins", "Timnath", "Windsor (nearby)",

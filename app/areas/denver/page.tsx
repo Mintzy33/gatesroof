@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: `Denver CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
@@ -81,64 +82,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often should Denver homeowners inspect their roof?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Denver's position in the hail corridor means your roof takes more punishment than homes in most other cities. Annual inspections catch small problems before they become expensive repairs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with insurance companies on storm damage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you work on older Denver homes with unique roof designs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Denver has a wide range of architectural styles, from Victorian homes in Capitol Hill to Craftsman bungalows in Park Hill to mid century ranches in Harvey Park. Our crews have experience with steep pitches, complex valleys, slate to shingle conversions, and everything in between."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What type of shingles hold up best in Denver's climate?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Denver homes. These shingles are specifically designed to withstand hail impacts. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a typical roof replacement take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most residential roof replacements in Denver are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises serve the entire Denver metro?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. While this page focuses on Denver proper, Gates Enterprises LLC serves homeowners across Colorado's Front Range, including Lakewood, Parker, Aurora, Arvada, Westminster, Littleton, Centennial, and surrounding communities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a cost for the initial roof inspection?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Gates Enterprises LLC offers free roof inspections and estimates for Denver homeowners. We assess your roof's condition honestly and provide a clear recommendation with no pressure and no obligation."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("denver").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     }
   ]
 };

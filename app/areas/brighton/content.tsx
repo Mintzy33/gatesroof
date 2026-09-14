@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How do I know if my Brighton home has hail damage?",
-    a: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. Brighton's open plains exposure means hailstones often arrive at high velocity with little wind break. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Brighton homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-  },
-  {
-    q: "Why does Brighton get so much hail?",
-    a: "Brighton sits on the open plains northeast of Denver with minimal terrain protection. Storms that develop along the Front Range move across flat agricultural land with nothing to weaken them before reaching Brighton neighborhoods. Adams County consistently sees high volumes of hail damage claims each storm season."
-  },
-  {
-    q: "What roofing materials do you recommend for Brighton homes?",
-    a: "Given Brighton's severe hail exposure on the open plains, we recommend impact resistant shingles rated Class 3 or Class 4. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
-  },
-  {
-    q: "How long does a roof replacement take in Brighton?",
-    a: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
-  },
-  {
-    q: "Is Gates Enterprises LLC licensed and insured in Adams County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Adams County, the City of Brighton, and throughout Colorado's Front Range."
-  },
-  {
-    q: "Does Brighton's rapid growth affect roofing services?",
-    a: "Brighton is one of the fastest growing communities in Colorado. While newer homes may have intact roofs, even recent construction can sustain hail damage. We work with both established neighborhoods and new developments across Brighton, and our team is familiar with the building codes and HOA requirements in the area."
-  }
-];
+const FAQS = getCityFAQItems("brighton").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Bromley Park", "Prairie Center", "Brighton Crossing", "Lochbuie",

@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -30,36 +31,7 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How often should Denver homeowners inspect their roof?",
-    a: "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Denver's position in the hail corridor means your roof takes more punishment than homes in most other cities. Annual inspections catch small problems before they become expensive repairs."
-  },
-  {
-    q: "Does Gates Enterprises work with insurance companies on storm damage?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored."
-  },
-  {
-    q: "Can you work on older Denver homes with unique roof designs?",
-    a: "Absolutely. Denver has a wide range of architectural styles, from Victorian homes in Capitol Hill to Craftsman bungalows in Park Hill to mid century ranches in Harvey Park. Our crews have experience with steep pitches, complex valleys, slate to shingle conversions, and everything in between."
-  },
-  {
-    q: "What type of shingles hold up best in Denver's climate?",
-    a: "We recommend Class 3 or Class 4 impact resistant shingles for Denver homes. These shingles are specifically designed to withstand hail impacts. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "How long does a typical roof replacement take?",
-    a: "Most residential roof replacements in Denver are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project."
-  },
-  {
-    q: "Does Gates Enterprises serve the entire Denver metro?",
-    a: "Yes. While this page focuses on Denver proper, Gates Enterprises LLC serves homeowners across Colorado's Front Range, including Lakewood, Parker, Aurora, Arvada, Westminster, Littleton, Centennial, and surrounding communities."
-  },
-  {
-    q: "Is there a cost for the initial roof inspection?",
-    a: "No. Gates Enterprises LLC offers free roof inspections and estimates for Denver homeowners. We assess your roof's condition honestly and provide a clear recommendation with no pressure and no obligation."
-  }
-];
+const FAQS = getCityFAQItems("denver").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Washington Park (Wash Park)", "Cherry Creek", "Highlands (LoHi and West Highlands)",

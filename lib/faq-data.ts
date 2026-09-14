@@ -453,6 +453,12 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
 // City-specific FAQ overrides — curated content takes precedence over generator
 // ---------------------------------------------------------------------------
 
+// Curated, city-specific FAQs. A slug listed here bypasses the generated
+// getCityOnlyFAQs() pool entirely. This is the ONLY place a city's FAQ copy
+// may live: both app/areas/<city>/page.tsx (FAQPage JSON-LD) and its
+// content.tsx (the rendered accordion) read it through getCityFAQItems(),
+// so the markup and the visible text cannot drift apart. Before 2026-09-14
+// ten cities kept two hardcoded copies and 20 answers had already diverged.
 const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
   littleton: [
     {
@@ -490,6 +496,314 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     {
       question: "What roofing materials do you recommend for Littleton's climate?",
       answer: "For most Littleton homes, we recommend Class 4 impact-resistant asphalt shingles — GAF Timberline HDZ or Owens Corning Duration Storm are the most common choices. Class 4 IR shingles are the highest impact resistance rating available and frequently qualify for a premium discount through your homeowner's insurance carrier in Colorado. The Littleton area's storm history makes the modest cost premium on Class 4 shingles a straightforward return on investment for most homeowners.",
+    },
+  ],
+  brighton: [
+    {
+      question: "How do I know if my Brighton home has hail damage?",
+      answer: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. Brighton's open plains exposure means hailstones often arrive at high velocity with little wind break. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Brighton homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+    },
+    {
+      question: "Why does Brighton get so much hail?",
+      answer: "Brighton sits on the open plains northeast of Denver with minimal terrain protection. Storms that develop along the Front Range move across flat agricultural land with nothing to weaken them before reaching Brighton neighborhoods. Adams County consistently sees high volumes of hail damage claims each storm season.",
+    },
+    {
+      question: "What roofing materials do you recommend for Brighton homes?",
+      answer: "Given Brighton's severe hail exposure on the open plains, we recommend impact resistant shingles rated Class 3 or Class 4. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability.",
+    },
+    {
+      question: "How long does a roof replacement take in Brighton?",
+      answer: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family.",
+    },
+    {
+      question: "Is Gates Enterprises LLC licensed and insured in Adams County?",
+      answer: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Adams County, the City of Brighton, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "Does Brighton's rapid growth affect roofing services?",
+      answer: "Brighton is one of the fastest growing communities in Colorado. While newer homes may have intact roofs, even recent construction can sustain hail damage. We work with both established neighborhoods and new developments across Brighton, and our team is familiar with the building codes and HOA requirements in the area.",
+    },
+  ],
+  "colorado-springs": [
+    {
+      question: "How often should Colorado Springs homeowners inspect their roof?",
+      answer: "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Colorado Springs sits at the base of Pikes Peak where Palmer Divide storms regularly track through, making annual inspections critical for catching hidden damage before it leads to costly repairs.",
+    },
+    {
+      question: "Does Gates Enterprises work with insurance companies on storm damage in Colorado Springs?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. After major events like the June 2023 storm that caused $1.4 billion in damage, our team helped hundreds of homeowners navigate their claims.",
+    },
+    {
+      question: "What type of shingles hold up best against Colorado Springs hail?",
+      answer: "We recommend Class 3 or Class 4 impact resistant shingles for Colorado Springs homes. Given the city's position in a heavy hail corridor, impact resistant shingles provide significantly better protection. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "Does Gates Enterprises handle HOA requirements in Colorado Springs?",
+      answer: "Yes. Many Colorado Springs neighborhoods like Briargate, Flying Horse, and Wolf Ranch have strict HOA guidelines for roofing materials, colors, and styles. We work within your HOA's requirements and can assist with the approval process to ensure your new roof meets all community standards.",
+    },
+    {
+      question: "Who handles building permits for roofing in Colorado Springs?",
+      answer: "The Pikes Peak Regional Building Department handles all roofing permits in the Colorado Springs area. Gates Enterprises LLC manages the permitting process for you, ensuring your project meets all local building codes and passes inspection.",
+    },
+    {
+      question: "Do you work with military families at Fort Carson and the Air Force bases?",
+      answer: "Absolutely. Colorado Springs is home to Fort Carson, Peterson Space Force Base, Schriever Space Force Base, and the United States Air Force Academy. We understand that military families face frequent PCS moves and that roof condition directly impacts resale value. We provide thorough inspections and quality repairs on timelines that work with military schedules.",
+    },
+    {
+      question: "Is there a cost for the initial roof inspection in Colorado Springs?",
+      answer: "No. Gates Enterprises LLC offers free roof inspections and estimates for Colorado Springs homeowners. We assess your roof's condition honestly and provide a clear recommendation with no pressure and no obligation.",
+    },
+  ],
+  denver: [
+    {
+      question: "How often should Denver homeowners inspect their roof?",
+      answer: "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Denver's position in the hail corridor means your roof takes more punishment than homes in most other cities. Annual inspections catch small problems before they become expensive repairs.",
+    },
+    {
+      question: "Does Gates Enterprises work with insurance companies on storm damage?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Our goal is to ensure your home is fully restored.",
+    },
+    {
+      question: "Can you work on older Denver homes with unique roof designs?",
+      answer: "Absolutely. Denver has a wide range of architectural styles, from Victorian homes in Capitol Hill to Craftsman bungalows in Park Hill to mid century ranches in Harvey Park. Our crews have experience with steep pitches, complex valleys, slate to shingle conversions, and everything in between.",
+    },
+    {
+      question: "What type of shingles hold up best in Denver's climate?",
+      answer: "We recommend Class 3 or Class 4 impact resistant shingles for Denver homes. These shingles are specifically designed to withstand hail impacts. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a typical roof replacement take?",
+      answer: "Most residential roof replacements in Denver are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project.",
+    },
+    {
+      question: "Does Gates Enterprises serve the entire Denver metro?",
+      answer: "Yes. While this page focuses on Denver proper, Gates Enterprises LLC serves homeowners across Colorado's Front Range, including Lakewood, Parker, Aurora, Arvada, Westminster, Littleton, Centennial, and surrounding communities.",
+    },
+    {
+      question: "Is there a cost for the initial roof inspection?",
+      answer: "No. Gates Enterprises LLC offers free roof inspections and estimates for Denver homeowners. We assess your roof's condition honestly and provide a clear recommendation with no pressure and no obligation.",
+    },
+  ],
+  evergreen: [
+    {
+      question: "How do I know if my Evergreen home has hail damage?",
+      answer: "Hail damage is not always visible from the ground, and heavy tree cover in Evergreen can make it even harder to spot. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Evergreen homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+    },
+    {
+      question: "How does Evergreen's elevation affect roofing?",
+      answer: "At 7,220 feet elevation, Evergreen homes face extreme conditions including heavy snow loads, intense UV exposure, rapid temperature swings, hailstorms, and high winds. These factors accelerate shingle deterioration and make proper installation and material selection critical. Roofs in Evergreen typically endure more stress than those at lower elevations.",
+    },
+    {
+      question: "What roofing materials do you recommend for Evergreen homes?",
+      answer: "For Evergreen's high elevation mountain environment, we recommend impact resistant shingles rated Class 3 or Class 4 with high wind ratings and excellent snow load performance. Materials that handle extreme UV and freeze thaw cycles are essential at 7,220 feet. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "Does pine beetle tree damage affect roofs in Evergreen?",
+      answer: "Yes. Pine beetle damage has killed many trees throughout the Evergreen area, and dead trees are more likely to drop large branches onto roofs during storms or heavy snow. Falling debris can crack shingles, damage flashing, and compromise roof integrity. Regular inspections are especially important for homes surrounded by affected trees.",
+    },
+    {
+      question: "Is Gates Enterprises LLC licensed and insured in Jefferson County?",
+      answer: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Jefferson County, the Evergreen area, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "How does heavy snow affect roofs in Evergreen?",
+      answer: "Evergreen receives significantly more snow than Denver and the surrounding plains. Heavy snow loads can stress roof structures, cause ice dams, and lead to moisture intrusion if the roof system is compromised. Proper ventilation, ice and water shield underlayment, and impact resistant shingles are all important for Evergreen homes.",
+    },
+  ],
+  "fort-collins": [
+    {
+      question: "How often should Fort Collins homeowners inspect their roof?",
+      answer: "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Fort Collins sits in the Northern Colorado hail corridor where severe storms form along the foothills and track across the city. Annual inspections catch small problems before they become expensive repairs.",
+    },
+    {
+      question: "Does Gates Enterprises work with insurance companies on storm damage in Fort Collins?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. Fort Collins homeowners deal with frequent hail claims, and we handle the process from start to finish.",
+    },
+    {
+      question: "What type of shingles hold up best in Fort Collins?",
+      answer: "We recommend Class 3 or Class 4 impact resistant shingles for Fort Collins homes. Given the frequency of hail along the I-25 corridor, impact rated shingles provide the best long term protection. Our four manufacturer certifications give you access to the best product lines from GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "Can you work on older homes in Old Town Fort Collins?",
+      answer: "Absolutely. Old Town Fort Collins has a mix of historic homes, some with original wood shake roofs. Our crews have experience with steep pitches, complex valleys, and transitioning older wood shake roofs to modern architectural shingles while preserving the character of the home.",
+    },
+    {
+      question: "Does Fort Collins require permits for roof replacement?",
+      answer: "Yes. The City of Fort Collins requires building permits for roof replacements. Fort Collins also has strict green building standards. Gates Enterprises LLC handles the permitting process for you and ensures all work meets or exceeds local code requirements.",
+    },
+    {
+      question: "Do you serve Timnath, Windsor, and Loveland as well?",
+      answer: "Yes. Gates Enterprises LLC serves the entire Northern Colorado region, including Timnath, Windsor, Loveland, Greeley, Longmont, and surrounding communities. We also serve Boulder, Denver, and the rest of the Front Range.",
+    },
+    {
+      question: "How long does a roof replacement take in Fort Collins?",
+      answer: "Most residential roof replacements in Fort Collins are completed in one to three days, depending on the size of the home, roof complexity, and weather conditions. We coordinate closely with you on scheduling and keep you informed throughout the project.",
+    },
+  ],
+  lakewood: [
+    {
+      question: "Is Gates Enterprises actually based in Lakewood?",
+      answer: "Yes. Gates Enterprises LLC is headquartered in Lakewood, CO. This is our home and has been since we were founded in 2014. When you hire us, you are hiring your neighbors.",
+    },
+    {
+      question: "How do I know if my Lakewood home has hail damage?",
+      answer: "Hail damage is often invisible from the ground. Signs to watch for include dented gutters, granule accumulation in downspout splash zones, and cracked or bruised shingles. The most reliable way to know is a professional inspection. Gates Enterprises LLC offers free inspections for Lakewood homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all damage with detailed photos and measurements, provide comprehensive reports, and coordinate documentation with your insurance company throughout the entire restoration process.",
+    },
+    {
+      question: "What roofing materials work best for Lakewood homes?",
+      answer: "We recommend Class 3 or Class 4 impact resistant shingles for Lakewood homes due to the frequency of hail in Jefferson County. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed. We help you choose the best option for your budget, style, and warranty preferences.",
+    },
+    {
+      question: "How quickly can you inspect my roof after a storm?",
+      answer: "Because we are headquartered in Lakewood, we can typically schedule inspections within days of a storm event. During peak storm season, demand increases, so we recommend reaching out as soon as possible to secure your spot.",
+    },
+    {
+      question: "What warranties are available through Gates Enterprises?",
+      answer: "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge® with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS™ coverage. We walk you through every option so you can make an informed decision.",
+    },
+    {
+      question: "Does Gates Enterprises offer free inspections and estimates?",
+      answer: "Yes. We offer completely free roof inspections and estimates for all Lakewood homeowners. No pressure, no obligation. We assess your roof's condition, explain what we find, and give you a clear recommendation.",
+    },
+  ],
+  "lone-tree": [
+    {
+      question: "How do I know if my Lone Tree home has hail damage?",
+      answer: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Lone Tree homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+    },
+    {
+      question: "Why should Lone Tree homeowners invest in quality roofing?",
+      answer: "Lone Tree has some of the highest property values in Douglas County. A quality roof protects your investment, maintains curb appeal, and ensures your home meets the standards expected in communities like Heritage Hills and Ridgegate. Premium roofing materials and certified installation also provide better long term warranty protection.",
+    },
+    {
+      question: "What roofing materials do you recommend for Lone Tree homes?",
+      answer: "Given Lone Tree's location in Douglas County's hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. For upscale homes, we also offer designer shingle lines that combine aesthetics with durability. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a roof replacement take in Lone Tree?",
+      answer: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Larger custom homes in Lone Tree may require additional time. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family.",
+    },
+    {
+      question: "Is Gates Enterprises LLC licensed and insured in Douglas County?",
+      answer: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Douglas County, the City of Lone Tree, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "Does Lone Tree have specific HOA roofing requirements?",
+      answer: "Many Lone Tree communities have HOA guidelines that specify approved roofing materials, colors, and styles. Gates Enterprises LLC is experienced working within HOA requirements and can help you select materials that meet your community's standards while providing maximum protection against Colorado's severe weather.",
+    },
+  ],
+  morrison: [
+    {
+      question: "How do I know if my Morrison home has hail damage?",
+      answer: "Hail damage is not always visible from the ground, especially on mountain homes with steep roof pitches. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Morrison homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+    },
+    {
+      question: "How do mountain weather patterns affect roofs in Morrison?",
+      answer: "Morrison sits at approximately 5,800 feet elevation at the transition between the plains and the foothills. This geography creates unique weather patterns including sudden hailstorms, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. These conditions accelerate roof wear and make impact resistant, weather rated materials essential.",
+    },
+    {
+      question: "What roofing materials do you recommend for Morrison homes?",
+      answer: "For Morrison's mountain environment, we recommend impact resistant shingles rated Class 3 or Class 4 with high wind ratings. Materials that handle rapid freeze thaw cycles and heavy snow loads perform best at foothills elevation. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a roof replacement take in Morrison?",
+      answer: "Most residential roof replacements are completed in one to two days. However, Morrison homes with steep pitches, complex roof lines, or limited access on mountain properties may require additional time. Our team plans logistics carefully to ensure efficient completion.",
+    },
+    {
+      question: "Is Gates Enterprises LLC licensed and insured in Jefferson County?",
+      answer: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Jefferson County, the Town of Morrison, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "Can Gates Enterprises handle steep mountain roofs?",
+      answer: "Absolutely. Many Morrison homes feature steep roof pitches designed for snow shedding, along with complex architectural details. Our crews are experienced with mountain roofing installations and have the safety equipment and expertise to work on steep and high elevation roofs safely and effectively.",
+    },
+  ],
+  parker: [
+    {
+      question: "How much does a new roof cost in Parker CO?",
+      answer: "A new roof in Parker typically costs between $8,000 and $25,000+ depending on the size of your home, the roofing materials selected, and the complexity of the roof. When storm damage is involved, an approved insurance claim can offset much of that cost, depending on your policy. Gates Enterprises offers free inspections and detailed estimates so you know exactly what to expect before any work begins.",
+    },
+    {
+      question: "Does insurance cover hail damage in Parker?",
+      answer: "In most cases, yes. Standard homeowners insurance policies in Colorado typically cover hail damage to your roof. Parker sits along the Palmer Divide, one of the most active hail corridors in the country, so insurers in this area are familiar with storm damage claims. Gates Enterprises documents all damage thoroughly and works directly with your insurance company to support your claim.",
+    },
+    {
+      question: "How do I know if my Parker home has hail damage?",
+      answer: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. Soft metal damage on AC units, mailboxes, and window trim can also indicate roof damage. The most reliable way to know is to schedule a professional inspection. Gates Enterprises offers free roof inspections for Parker homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports with photo evidence, and coordinate documentation with your insurance company throughout the restoration process to ensure nothing is missed.",
+    },
+    {
+      question: "Why does Parker get so much hail?",
+      answer: "Parker sits along the Palmer Divide, a ridge of higher elevation terrain between Denver and Colorado Springs. This geography creates strong updrafts during storm season that produce frequent and often severe hailstorms. Douglas County consistently ranks among the most hail prone counties in Colorado, with 3 to 5 significant hail events in a typical year.",
+    },
+    {
+      question: "What roofing materials are best for Parker's hail corridor?",
+      answer: "Given Parker's position along the Palmer Divide hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. These shingles are designed to withstand hail impact and may qualify you for insurance premium discounts. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability.",
+    },
+    {
+      question: "How long does a roof replacement take in Parker?",
+      answer: "Most residential roof replacements in Parker are completed in one to two days, depending on the size and complexity of the roof. Larger or more complex projects may take an additional day. Gates Enterprises coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family.",
+    },
+    {
+      question: "Is Gates Enterprises licensed and insured in Douglas County?",
+      answer: "Yes. Gates Enterprises is fully licensed and insured to perform roofing and exterior work in Douglas County, the Town of Parker, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "How soon should I get an inspection after a hailstorm?",
+      answer: "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. However, hidden damage can worsen over time if left unaddressed, potentially leading to leaks, mold, or structural issues. We recommend scheduling a free inspection within a few weeks of any significant storm.",
+    },
+  ],
+  superior: [
+    {
+      question: "How do I know if my Superior home has hail damage?",
+      answer: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Superior homeowners.",
+    },
+    {
+      question: "Does Gates Enterprises work with my insurance company?",
+      answer: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored.",
+    },
+    {
+      question: "How did the Marshall Fire affect roofing needs in Superior?",
+      answer: "The Marshall Fire in December 2021 destroyed over 1,000 homes in Superior and Louisville. Many homes were rebuilt or repaired, and some surrounding properties sustained heat, smoke, or ember damage to roofing materials. If your home was in the affected area and has not had a professional roof inspection, hidden damage may be shortening the life of your roof.",
+    },
+    {
+      question: "What roofing materials do you recommend for Superior homes?",
+      answer: "Given Superior's exposure to both hail and high winds along the Front Range, we recommend impact resistant shingles rated Class 3 or Class 4. For homes rebuilt after the Marshall Fire, we also recommend fire resistant roofing materials. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a roof replacement take in Superior?",
+      answer: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family.",
+    },
+    {
+      question: "Is Gates Enterprises LLC licensed and insured in Boulder County?",
+      answer: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Boulder County, the Town of Superior, and throughout Colorado's Front Range.",
+    },
+    {
+      question: "Does Superior get significant hail damage?",
+      answer: "Yes. Superior sits along the Front Range where storms frequently produce damaging hail. The area's proximity to the foothills creates atmospheric conditions that intensify storms. Boulder County regularly sees hail damage claims, and Superior homeowners should schedule inspections after any significant storm event.",
     },
   ],
 };

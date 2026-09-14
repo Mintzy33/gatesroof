@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: "Morrison CO Roofer | 4x Certified ★ Mountain Experts",
@@ -75,64 +76,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I know if my Morrison home has hail damage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hail damage is not always visible from the ground, especially on mountain homes with steep roof pitches. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Morrison homeowners."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with my insurance company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do mountain weather patterns affect roofs in Morrison?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Morrison sits at approximately 5,800 feet elevation at the transition between the plains and the foothills. This geography creates unique weather patterns including sudden hailstorms, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. These conditions accelerate roof wear and make impact resistant, weather rated materials essential."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What roofing materials do you recommend for Morrison homes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For Morrison's mountain environment, we recommend impact resistant shingles rated Class 3 or Class 4 with high wind ratings. Materials that handle rapid freeze thaw cycles and heavy snow loads perform best at foothills elevation. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a roof replacement take in Morrison?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most residential roof replacements are completed in one to two days. However, Morrison homes with steep pitches, complex roof lines, or limited access on mountain properties may require additional time. Our team plans logistics carefully to ensure efficient completion."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Gates Enterprises LLC licensed and insured in Jefferson County?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Jefferson County, the Town of Morrison, and throughout Colorado's Front Range."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Gates Enterprises handle steep mountain roofs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Many Morrison homes feature steep roof pitches designed for snow shedding, along with complex architectural details. Our crews are experienced with mountain roofing installations and have the safety equipment and expertise to work on steep and high elevation roofs safely and effectively."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("morrison").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     }
   ]
 };

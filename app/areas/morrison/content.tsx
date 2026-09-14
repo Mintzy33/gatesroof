@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How do I know if my Morrison home has hail damage?",
-    a: "Hail damage is not always visible from the ground, especially on mountain homes with steep roof pitches. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Morrison homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-  },
-  {
-    q: "How do mountain weather patterns affect roofs in Morrison?",
-    a: "Morrison sits at approximately 5,800 feet elevation at the transition between the plains and the foothills. This geography creates unique weather patterns including sudden hailstorms, high winds channeled through canyons, heavy snow loads, and rapid temperature swings. These conditions accelerate roof wear and make impact resistant, weather rated materials essential."
-  },
-  {
-    q: "What roofing materials do you recommend for Morrison homes?",
-    a: "For Morrison's mountain environment, we recommend impact resistant shingles rated Class 3 or Class 4 with high wind ratings. Materials that handle rapid freeze thaw cycles and heavy snow loads perform best at foothills elevation. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "How long does a roof replacement take in Morrison?",
-    a: "Most residential roof replacements are completed in one to two days. However, Morrison homes with steep pitches, complex roof lines, or limited access on mountain properties may require additional time. Our team plans logistics carefully to ensure efficient completion."
-  },
-  {
-    q: "Is Gates Enterprises LLC licensed and insured in Jefferson County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Jefferson County, the Town of Morrison, and throughout Colorado's Front Range."
-  },
-  {
-    q: "Can Gates Enterprises handle steep mountain roofs?",
-    a: "Absolutely. Many Morrison homes feature steep roof pitches designed for snow shedding, along with complex architectural details. Our crews are experienced with mountain roofing installations and have the safety equipment and expertise to work on steep and high elevation roofs safely and effectively."
-  }
-];
+const FAQS = getCityFAQItems("morrison").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Mount Vernon Canyon", "Bear Creek", "Willow Springs",

@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How do I know if my Superior home has hail damage?",
-    a: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Superior homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-  },
-  {
-    q: "How did the Marshall Fire affect roofing needs in Superior?",
-    a: "The Marshall Fire in December 2021 destroyed over 1,000 homes in Superior and Louisville. Many homes were rebuilt or repaired, and some surrounding properties sustained heat, smoke, or ember damage to roofing materials. If your home was in the affected area and has not had a professional roof inspection, hidden damage may be shortening the life of your roof."
-  },
-  {
-    q: "What roofing materials do you recommend for Superior homes?",
-    a: "Given Superior's exposure to both hail and high winds along the Front Range, we recommend impact resistant shingles rated Class 3 or Class 4. For homes rebuilt after the Marshall Fire, we also recommend fire resistant roofing materials. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "How long does a roof replacement take in Superior?",
-    a: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
-  },
-  {
-    q: "Is Gates Enterprises LLC licensed and insured in Boulder County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Boulder County, the Town of Superior, and throughout Colorado's Front Range."
-  },
-  {
-    q: "Does Superior get significant hail damage?",
-    a: "Yes. Superior sits along the Front Range where storms frequently produce damaging hail. The area's proximity to the foothills creates atmospheric conditions that intensify storms. Boulder County regularly sees hail damage claims, and Superior homeowners should schedule inspections after any significant storm event."
-  }
-];
+const FAQS = getCityFAQItems("superior").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Original Town", "Rock Creek", "Superior Town Center", "Sagamore",

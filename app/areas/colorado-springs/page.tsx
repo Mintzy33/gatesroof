@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: `Colorado Springs CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews`,
@@ -81,64 +82,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often should Colorado Springs homeowners inspect their roof?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend a professional roof inspection at least once per year and after every significant hailstorm. Colorado Springs sits at the base of Pikes Peak where Palmer Divide storms regularly track through, making annual inspections critical for catching hidden damage before it leads to costly repairs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with insurance companies on storm damage in Colorado Springs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises LLC is an insurance restoration expert. We perform detailed inspections, document all damage with photos and measurements, and coordinate documentation with your insurance company throughout the restoration process. After major events like the June 2023 storm that caused $1.4 billion in damage, our team helped hundreds of homeowners navigate their claims."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What type of shingles hold up best against Colorado Springs hail?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend Class 3 or Class 4 impact resistant shingles for Colorado Springs homes. Given the city's position in a heavy hail corridor, impact resistant shingles provide significantly better protection. Our quadruple manufacturer certifications mean you can choose from the best product lines offered by GAF, Owens Corning, Malarkey, and CertainTeed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises handle HOA requirements in Colorado Springs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many Colorado Springs neighborhoods like Briargate, Flying Horse, and Wolf Ranch have strict HOA guidelines for roofing materials, colors, and styles. We work within your HOA's requirements and can assist with the approval process to ensure your new roof meets all community standards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who handles building permits for roofing in Colorado Springs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The Pikes Peak Regional Building Department handles all roofing permits in the Colorado Springs area. Gates Enterprises LLC manages the permitting process for you, ensuring your project meets all local building codes and passes inspection."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with military families at Fort Carson and the Air Force bases?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Colorado Springs is home to Fort Carson, Peterson Space Force Base, Schriever Space Force Base, and the United States Air Force Academy. We understand that military families face frequent PCS moves and that roof condition directly impacts resale value. We provide thorough inspections and quality repairs on timelines that work with military schedules."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a cost for the initial roof inspection in Colorado Springs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Gates Enterprises LLC offers free roof inspections and estimates for Colorado Springs homeowners. We assess your roof's condition honestly and provide a clear recommendation with no pressure and no obligation."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("colorado-springs").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     }
   ]
 };

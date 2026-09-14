@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How do I know if my Evergreen home has hail damage?",
-    a: "Hail damage is not always visible from the ground, and heavy tree cover in Evergreen can make it even harder to spot. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Evergreen homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-  },
-  {
-    q: "How does Evergreen's elevation affect roofing?",
-    a: "At 7,220 feet elevation, Evergreen homes face extreme conditions including heavy snow loads, intense UV exposure, rapid temperature swings, hailstorms, and high winds. These factors accelerate shingle deterioration and make proper installation and material selection critical. Roofs in Evergreen typically endure more stress than those at lower elevations."
-  },
-  {
-    q: "What roofing materials do you recommend for Evergreen homes?",
-    a: "For Evergreen's high elevation mountain environment, we recommend impact resistant shingles rated Class 3 or Class 4 with high wind ratings and excellent snow load performance. Materials that handle extreme UV and freeze thaw cycles are essential at 7,220 feet. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "Does pine beetle tree damage affect roofs in Evergreen?",
-    a: "Yes. Pine beetle damage has killed many trees throughout the Evergreen area, and dead trees are more likely to drop large branches onto roofs during storms or heavy snow. Falling debris can crack shingles, damage flashing, and compromise roof integrity. Regular inspections are especially important for homes surrounded by affected trees."
-  },
-  {
-    q: "Is Gates Enterprises LLC licensed and insured in Jefferson County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Jefferson County, the Evergreen area, and throughout Colorado's Front Range."
-  },
-  {
-    q: "How does heavy snow affect roofs in Evergreen?",
-    a: "Evergreen receives significantly more snow than Denver and the surrounding plains. Heavy snow loads can stress roof structures, cause ice dams, and lead to moisture intrusion if the roof system is compromised. Proper ventilation, ice and water shield underlayment, and impact resistant shingles are all important for Evergreen homes."
-  }
-];
+const FAQS = getCityFAQItems("evergreen").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Hiwan", "Bergen Park", "North Evergreen", "Marshdale",

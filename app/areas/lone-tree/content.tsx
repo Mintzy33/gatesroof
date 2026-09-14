@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "How do I know if my Lone Tree home has hail damage?",
-    a: "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. The most reliable way to know is to schedule a professional inspection. Gates Enterprises LLC offers free roof inspections for Lone Tree homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports, and coordinate documentation with your insurance company throughout the restoration process. We ensure nothing is missed so your home is fully restored."
-  },
-  {
-    q: "Why should Lone Tree homeowners invest in quality roofing?",
-    a: "Lone Tree has some of the highest property values in Douglas County. A quality roof protects your investment, maintains curb appeal, and ensures your home meets the standards expected in communities like Heritage Hills and Ridgegate. Premium roofing materials and certified installation also provide better long term warranty protection."
-  },
-  {
-    q: "What roofing materials do you recommend for Lone Tree homes?",
-    a: "Given Lone Tree's location in Douglas County's hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. For upscale homes, we also offer designer shingle lines that combine aesthetics with durability. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed."
-  },
-  {
-    q: "How long does a roof replacement take in Lone Tree?",
-    a: "Most residential roof replacements are completed in one to two days, depending on the size and complexity of the roof. Larger custom homes in Lone Tree may require additional time. Gates Enterprises LLC coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
-  },
-  {
-    q: "Is Gates Enterprises LLC licensed and insured in Douglas County?",
-    a: "Yes. Gates Enterprises LLC is fully licensed and insured to perform roofing and exterior work in Douglas County, the City of Lone Tree, and throughout Colorado's Front Range."
-  },
-  {
-    q: "Does Lone Tree have specific HOA roofing requirements?",
-    a: "Many Lone Tree communities have HOA guidelines that specify approved roofing materials, colors, and styles. Gates Enterprises LLC is experienced working within HOA requirements and can help you select materials that meet your community's standards while providing maximum protection against Colorado's severe weather."
-  }
-];
+const FAQS = getCityFAQItems("lone-tree").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Heritage Hills", "Ridgegate", "Carriage Club", "Lincoln Station",

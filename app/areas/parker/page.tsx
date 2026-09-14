@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 
 export const metadata: Metadata = {
   title: `Parker CO Roofer | Hail Damage Experts, ${SITE_STATS.reviewCount} Reviews, ${SITE_STATS.starRating} Stars`,
@@ -88,80 +89,11 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does a new roof cost in Parker CO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A new roof in Parker typically costs between $8,000 and $25,000+ depending on the size of your home, the roofing materials selected, and the complexity of the roof. When storm damage is involved, an approved insurance claim can offset much of that cost, depending on your policy. Gates Enterprises offers free inspections and detailed estimates so you know exactly what to expect before any work begins."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does insurance cover hail damage in Parker?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In most cases, yes. Standard homeowners insurance policies in Colorado typically cover hail damage to your roof. Parker sits along the Palmer Divide, one of the most active hail corridors in the country, so insurers in this area are familiar with storm damage claims. Gates Enterprises documents all damage thoroughly and works directly with your insurance company to support your claim."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I know if my Parker home has hail damage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hail damage is not always visible from the ground. Common signs include dented gutters, cracked or missing shingles, and granule loss in your downspout splash areas. Soft metal damage on AC units, mailboxes, and window trim can also indicate roof damage. The most reliable way to know is to schedule a professional inspection. Gates Enterprises offers free roof inspections for Parker homeowners."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Gates Enterprises work with my insurance company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises is an insurance restoration expert. We document all storm damage thoroughly, provide detailed reports with photo evidence, and coordinate documentation with your insurance company throughout the restoration process to ensure nothing is missed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why does Parker get so much hail?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parker sits along the Palmer Divide, a ridge of higher elevation terrain between Denver and Colorado Springs. This geography creates strong updrafts during storm season that produce frequent and often severe hailstorms. Douglas County consistently ranks among the most hail prone counties in Colorado, with 3 to 5 significant hail events in a typical year."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What roofing materials are best for Parker's hail corridor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Given Parker's position along the Palmer Divide hail corridor, we recommend impact resistant shingles rated Class 3 or Class 4. These shingles are designed to withstand hail impact and may qualify you for insurance premium discounts. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed, each offering excellent hail resistance and long term durability."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a roof replacement take in Parker?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most residential roof replacements in Parker are completed in one to two days, depending on the size and complexity of the roof. Larger or more complex projects may take an additional day. Gates Enterprises coordinates scheduling, materials delivery, and crew assignments to minimize disruption to your family."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Gates Enterprises licensed and insured in Douglas County?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Gates Enterprises is fully licensed and insured to perform roofing and exterior work in Douglas County, the Town of Parker, and throughout Colorado's Front Range."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How soon should I get an inspection after a hailstorm?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "As soon as possible. Most insurance policies have a deadline for filing storm damage claims, often within one year of the event. However, hidden damage can worsen over time if left unaddressed, potentially leading to leaks, mold, or structural issues. We recommend scheduling a free inspection within a few weeks of any significant storm."
-          }
-        }
-      ]
+      "mainEntity": getCityFAQItems("parker").map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+      }))
     },
     {
       "@type": "Service",

@@ -10,6 +10,7 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -24,36 +25,7 @@ const StarIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Is Gates Enterprises actually based in Lakewood?",
-    a: "Yes. Gates Enterprises LLC is headquartered in Lakewood, CO. This is our home and has been since we were founded in 2014. When you hire us, you are hiring your neighbors."
-  },
-  {
-    q: "How do I know if my Lakewood home has hail damage?",
-    a: "Hail damage is often invisible from the ground. Signs to watch for include dented gutters, granule accumulation in downspout splash zones, and cracked or bruised shingles. The most reliable way to know is a professional inspection. Gates Enterprises LLC offers free inspections for Lakewood homeowners."
-  },
-  {
-    q: "Does Gates Enterprises work with my insurance company?",
-    a: "Yes. Gates Enterprises LLC is an insurance restoration expert. We document all damage with detailed photos and measurements, provide comprehensive reports, and coordinate documentation with your insurance company throughout the entire restoration process."
-  },
-  {
-    q: "What roofing materials work best for Lakewood homes?",
-    a: "We recommend Class 3 or Class 4 impact resistant shingles for Lakewood homes due to the frequency of hail in Jefferson County. Our quadruple manufacturer certifications give you access to premium product lines from GAF, Owens Corning, Malarkey, and CertainTeed. We help you choose the best option for your budget, style, and warranty preferences."
-  },
-  {
-    q: "How quickly can you inspect my roof after a storm?",
-    a: "Because we are headquartered in Lakewood, we can typically schedule inspections within days of a storm event. During peak storm season, demand increases, so we recommend reaching out as soon as possible to secure your spot."
-  },
-  {
-    q: "What warranties are available through Gates Enterprises?",
-    a: "Our four manufacturer certifications unlock the highest tier warranties available from each manufacturer. That includes GAF's Golden Pledge\u00AE with 25 year workmanship coverage, Owens Corning's Preferred Protection, Malarkey's Emerald level warranties, and CertainTeed's SureStart PLUS\u2122 coverage. We walk you through every option so you can make an informed decision."
-  },
-  {
-    q: "Does Gates Enterprises offer free inspections and estimates?",
-    a: "Yes. We offer completely free roof inspections and estimates for all Lakewood homeowners. No pressure, no obligation. We assess your roof's condition, explain what we find, and give you a clear recommendation."
-  }
-];
+const FAQS = getCityFAQItems("lakewood").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Green Mountain", "Bear Creek", "Belmar", "Applewood", "Eiber", "Morse Park",
