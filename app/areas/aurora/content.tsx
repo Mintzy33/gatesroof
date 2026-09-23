@@ -5,10 +5,8 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import ReviewCarousel from "../../components/ReviewCarousel";
 import LocalSEOInfo from "../../components/LocalSEOInfo";
-import FAQAccordion from "../../components/FAQAccordion";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
-import { getCityFAQItems } from "../../../lib/faq-data";
 import { SITE_STATS } from "../../../lib/site-stats";
 
 const NAVY = "#0D2137";
@@ -146,8 +144,7 @@ const INTERNAL_LINKS = [
   { label: "Contact Us", href: "/contact" },
 ];
 
-export default function CityContent() {
-  const faqItems = getCityFAQItems("aurora");
+export default function CityContent({ faqSection }: { faqSection: React.ReactNode }) {
   const reviews = SITE_STATS.reviewCount;
   const rating = SITE_STATS.starRating;
   const roofs = SITE_STATS.totalRoofs;
@@ -447,11 +444,7 @@ export default function CityContent() {
           </a>
         </div>
       </section>
-
-      <FAQAccordion
-        items={faqItems}
-        title="Frequently Asked Questions: Roofing in Aurora, CO"
-      />
+      {faqSection}
 
       <CTA
         title="Get a Free Roof Inspection in Aurora"

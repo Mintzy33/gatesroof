@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -10,7 +9,6 @@ import LocalSEOInfo from "../../components/LocalSEOInfo";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
 import { SITE_STATS } from "@/lib/site-stats";
-import { getCityFAQItems } from "../../../lib/faq-data";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const GOLD = "#D4A853";
@@ -31,7 +29,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = getCityFAQItems("colorado-springs").map((f) => ({ q: f.question, a: f.answer }));
 
 const NEIGHBORHOODS = [
   "Broadmoor", "Briargate", "Northgate", "Flying Horse", "Old Colorado City",
@@ -130,42 +127,8 @@ const INTERNAL_LINKS = [
   { label: "Best Roofer in Colorado Springs", href: "/best-roofer-colorado-springs" }, 
 ];
 
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div style={{ borderBottom: `1px solid rgba(13,33,55,0.08)` }}>
-      <button
-        onClick={() => setOpen(!open)}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          width: "100%",
-          padding: "24px 0",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          textAlign: "left" as const,
-          gap: 16,
-        }}
-      >
-        <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, fontWeight: 600, color: NAVY, lineHeight: 1.5 }}>{q}</span>
-        <svg
-          width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ACCENT}
-          strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-          style={{ flexShrink: 0, transition: "transform 0.3s", transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
-        >
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
-      </button>
-      <div style={{ maxHeight: open ? 400 : 0, overflow: "hidden", transition: "max-height 0.35s ease" }}>
-        <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, lineHeight: 1.85, color: TEXT_LIGHT, margin: "0 0 24px", paddingRight: 36 }}>{a}</p>
-      </div>
-    </div>
-  );
-}
 
-export default function CityContent() {
+export default function CityContent({ faqSection }: { faqSection: React.ReactNode }) {
   return (
     <div style={{ background: WHITE }}>
       <Header />
@@ -374,17 +337,7 @@ export default function CityContent() {
         </div>
       </section>
 
-      {/* --- 8. FAQ SECTION --- */}
-      <section style={{ padding: "80px 24px", background: WHITE }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 800, color: NAVY, marginBottom: 32, lineHeight: 1.2 }}>
-            Frequently Asked Questions: Roofing in Colorado Springs, CO
-          </h2>
-          <div style={{ borderTop: `1px solid rgba(13,33,55,0.08)` }}>
-            {FAQS.map((faq, i) => <FAQItem key={i} q={faq.q} a={faq.a} />)}
-          </div>
-        </div>
-      </section>
+      {faqSection}
 
       {/* --- 9. ADDITIONAL CTA SECTION --- */}
       <CTA

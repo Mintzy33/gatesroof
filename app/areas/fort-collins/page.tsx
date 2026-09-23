@@ -4,6 +4,7 @@ import CityContent from "./content";
 import { cityBreadcrumb } from "../../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
 import { getCityFAQItems } from "../../../lib/faq-data";
+import FAQSection from "@/app/components/FAQSection";
 
 export const metadata: Metadata = {
   title: `Fort Collins CO Roofer | 4x Certified, ${SITE_STATS.reviewCount}+ Reviews`,
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
     images: [{ url: "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov", width: 1200, height: 630, alt: "Gates Enterprises LLC - Roofing Contractor in Fort Collins, CO" }],
   },
 };
+
+const faqItems = getCityFAQItems("fort-collins");
 
 const citySchema = {
   "@context": "https://schema.org",
@@ -82,7 +85,7 @@ const citySchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": getCityFAQItems("fort-collins").map((f) => ({
+      "mainEntity": faqItems.map((f) => ({
         "@type": "Question",
         "name": f.question,
         "acceptedAnswer": { "@type": "Answer", "text": f.answer },
@@ -99,7 +102,7 @@ export default function Page() {
       <PageSchema route="/areas/fort-collins" />
       <script id="fort-collins-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
       <script id="fort-collins-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
-      <CityContent />
+      <CityContent faqSection={<FAQSection items={faqItems} title="Frequently Asked Questions: Roofing in Fort Collins, CO" background="#FFFFFF" />} />
     </>
   );
 }

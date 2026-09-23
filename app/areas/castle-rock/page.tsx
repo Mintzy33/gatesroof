@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import CityContent from "./content";
 import { cityBreadcrumb, faqSchema } from "../../../lib/schema";
 import { getCityFAQItems } from "../../../lib/faq-data";
+import FAQSection from "@/app/components/FAQSection";
 import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
@@ -47,7 +48,8 @@ const areaBreadcrumbs = cityBreadcrumb("Castle Rock", "castle-rock");
 // FAQPage markup must mirror the FAQs the page actually renders. content.tsx
 // renders getCityFAQItems("castle-rock"); this page previously emitted a
 // different, generic set, so the marked-up Q/A never appeared in the HTML.
-const areaFaqs = faqSchema(getCityFAQItems("castle-rock").map((f) => ({ q: f.question, a: f.answer })));
+const faqItems = getCityFAQItems("castle-rock");
+const areaFaqs = faqSchema(faqItems.map((f) => ({ q: f.question, a: f.answer })));
 
 export default function Page() {
   return (
@@ -56,7 +58,7 @@ export default function Page() {
       <script id="city-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
             <script id="castle-rock-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaBreadcrumbs) }} />
       <script id="castle-rock-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqs) }} />
-      <CityContent />
+      <CityContent faqSection={<FAQSection items={faqItems} title="Frequently Asked Questions: Roofing in Castle Rock, CO" />} />
     </>
   );
 }

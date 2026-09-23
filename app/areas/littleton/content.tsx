@@ -5,10 +5,8 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import ReviewCarousel from "../../components/ReviewCarousel";
 import LocalSEOInfo from "../../components/LocalSEOInfo";
-import FAQAccordion from "../../components/FAQAccordion";
 import HailScoreCard from "../../components/HailScoreCard";
 import CityGallery from "../../components/CityGallery";
-import { getCityFAQItems } from "../../../lib/faq-data";
 import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#0D2137";
@@ -153,8 +151,7 @@ const INTERNAL_LINKS = [
   { label: "Best Roofer in Littleton", href: "/best-roofer-littleton" },
 ];
 
-export default function CityContent() {
-  const faqItems = getCityFAQItems("littleton");
+export default function CityContent({ faqSection }: { faqSection: React.ReactNode }) {
   return (
     <div style={{ background: WHITE }}>
       <Header />
@@ -463,10 +460,7 @@ export default function CityContent() {
       </section>
 
       {/* 11. FAQ */}
-      <FAQAccordion
-        items={faqItems}
-        title="Frequently Asked Questions: Roofing in Littleton, CO"
-      />
+      {faqSection}
 
       {/* 12. FINAL CTA */}
       <CTA
