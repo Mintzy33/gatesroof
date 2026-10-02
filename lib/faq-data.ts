@@ -4,10 +4,13 @@
 import type { CityData, ServiceData } from "./service-areas-data";
 import { getCityBySlug, getServiceBySlug } from "./service-areas-data";
 import { SITE_STATS } from "./site-stats";
+import { GAF_CERTIFICATION_DISCLOSURE } from "./gaf-disclosure";
 
 export interface FAQItem {
   question: string;
   answer: string;
+  /** Optional small print rendered directly under the answer (e.g. a required manufacturer disclosure). */
+  note?: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -224,6 +227,7 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
   pool.push({
     question: `Why choose a certified roofer in ${city.city}?`,
     answer: `Manufacturer certifications matter because they determine your warranty options. An uncertified contractor installing GAF shingles in ${city.city} can only offer a basic manufacturer warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors.`,
+    note: GAF_CERTIFICATION_DISCLOSURE,
   });
 
   // Local service question
