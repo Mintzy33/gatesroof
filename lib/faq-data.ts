@@ -509,7 +509,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Do I have to use the contractor my insurance company recommends in Arvada?",
-      answer: "No. Colorado law gives you the right to choose your own roofing contractor regardless of who your insurer recommends. Insurance company preferred vendors work for the carrier's interests, not yours. Gates Enterprises works for you — we document all damage, attend the adjuster meeting, and supplement if the initial approval falls short.",
+      answer: "No. Colorado law gives you the right to choose your own roofing contractor regardless of who your insurer recommends. Gates Enterprises works for you — we document all damage, attend the adjuster meeting, and supplement if the initial approval falls short.",
     },
     {
       question: "Can a roofer waive my deductible in Colorado?",
@@ -525,7 +525,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Why choose Gates Enterprises for roofing in Arvada?",
-      answer: `Gates Enterprises is based in Lakewood — five miles from Arvada — and has completed roofing projects throughout Jefferson County for over a decade. We hold four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) and carry ${SITE_STATS.reviewCount}+ Google reviews at ${SITE_STATS.starRating} stars. Our Xactimate-certified estimators handle every step of the insurance claim process from free inspection through final supplement.`,
+      answer: `Gates Enterprises is based in Lakewood — five miles from Arvada — and has completed roofing projects throughout Jefferson County for over a decade. We hold four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) and carry ${SITE_STATS.reviewCount}+ Google reviews at ${SITE_STATS.starRating} stars. Our Xactimate-certified estimators work with you through the insurance claim process, from free inspection through final supplement.`,
     },
   ],
   brighton: [
