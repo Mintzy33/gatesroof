@@ -7188,7 +7188,7 @@ export const blogPosts: BlogPost[] = [
       "The Storm Chaser Problem",
       "After every major hailstorm in Parker, out-of-state contractors arrive in force. They drive rental trucks, knock on doors within days of the storm, and push homeowners to sign assignment of benefits agreements or authorization forms on the spot. Some offer to start work immediately. Some mention your neighbor signed up.",
       "This is the classic storm chaser playbook. They are not based in Parker. They will not be there when the warranty needs to be honored. Their goal is to close as many jobs as quickly as possible before moving on to the next storm market.",
-      "There is one offer you should never accept from any roofing company: waiving your insurance deductible. This practice violates Colorado law under C.R.S. § 6-22-105. It can result in insurance fraud charges and void your policy. Any contractor making this offer is not working in your best interest.",
+      "There is one offer you should never accept from any roofing company: waiving your insurance deductible. This practice violates Colorado law under C.R.S. § 6-22-105, and your insurer does not have to consider an estimate from a contractor who violates it. Any contractor making this offer is not working in your best interest.",
 
       "Local vs. Out of State",
       "A roofing company based in Douglas County is accountable to its community in a way that a contractor from out of state simply is not. Local contractors have a real reputation to protect in the place where they live and work. Their crew members are local. Their suppliers are local. When you have a warranty issue three years from now, a local company is a phone call away.",
