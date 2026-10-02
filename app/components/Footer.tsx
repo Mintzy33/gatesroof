@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { cityHref } from "../../lib/city-links";
+import { GAF_CERTIFICATION_DISCLOSURE } from "../../lib/gaf-disclosure";
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
 const TEXT_LIGHT = "#64748B";
@@ -60,6 +61,8 @@ export default function Footer() {
           </div>
           <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, color: TEXT_LIGHT }}>Lakewood, Colorado</span>
         </div>
+        {/* GAF requires this disclosure alongside Master Elite / "Only 2%" statements; one copy here covers every page. */}
+        <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, lineHeight: 1.6, color: TEXT_LIGHT, margin: "16px 0 0" }}>{GAF_CERTIFICATION_DISCLOSURE}</p>
       </div>
       <style>{`
         .footer-social-link { color: #64748B; transition: color 0.2s ease, transform 0.2s ease; display: flex; align-items: center; }
