@@ -501,7 +501,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
   arvada: [
     {
       question: "Does Gates Enterprises help Arvada homeowners with insurance claims?",
-      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across all Arvada ZIP codes. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Your out-of-pocket cost on a covered claim is your deductible. Call (720) 766-3377.",
+      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across all Arvada ZIP codes. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Coverage depends on your policy, and you are typically responsible for your deductible. Call (720) 766-3377.",
     },
     {
       question: "How do I know if my Arvada roof has hail damage?",
