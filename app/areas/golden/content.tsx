@@ -65,7 +65,7 @@ export default function CityContent() {
               "Full insurance restoration support on hail and wind claims",
               "thousands of roofs completed across the Denver metro",
               `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,
-              "Jefferson County permit and inspection coordination",
+              "We pull the required local reroofing permit",
               "Free inspections with no obligation and no pressure",
             ].map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
