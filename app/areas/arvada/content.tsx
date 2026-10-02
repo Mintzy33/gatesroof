@@ -37,7 +37,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Your Local Arvada Roofing Experts</h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Arvada has a tremendous amount of housing stock built between the 1950s and 1970s — the classic low slope ranch homes that defined suburban Colorado. Many of these roofs have never been replaced, or were last replaced thirty or more years ago with materials that no longer meet current performance standards. Gates Enterprises is experienced at assessing these aging systems and providing honest recommendations, whether that means a full replacement or targeted repairs to extend the life of an existing roof.</p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Hail storms moving southward from the north regularly track through the Arvada corridor. Jefferson County and the greater Arvada area have seen multiple significant hail events in recent years that have damaged thousands of roofs. If your home was in the path of a storm and you haven't had a professional inspection, it's worth knowing what's up there — some hail damage isn't visible from the ground but leads to premature roof failure within a few years.</p>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>We pull Jefferson County building permits for every Arvada roof replacement and coordinate the inspection process from start to finish. Arvada is a growing city, and our team stays current with local code requirements so your project is done right and closed properly with no outstanding permit issues.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>We pull the required roofing permit (issued by the City of Arvada for homes inside city limits) for every Arvada roof replacement and coordinate the inspection process from start to finish. Arvada is a growing city, and our team stays current with local code requirements so your project is done right and closed properly with no outstanding permit issues.</p>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Our Services in Arvada</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 48 }}>
             {[
@@ -62,7 +62,7 @@ export default function CityContent() {
               "GAF Master Elite certified — top 2% of contractors nationwide",
               "Expert assessment of aging 1950s through 1970s roof systems",
               "Full insurance restoration support on hail and wind claims",
-              "Jefferson County permit and inspection coordination",
+              "City of Arvada permit and inspection coordination",
               "thousands of roofs completed across the Denver metro",
               `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,
               "Malarkey Emerald Premium and Owens Corning Preferred certified",
