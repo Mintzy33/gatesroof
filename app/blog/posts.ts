@@ -211,7 +211,7 @@ export const blogPosts: BlogPost[] = [
       "Here is what each of the four major credentials represents and what it means for your roof.",
 
       "GAF Master Elite",
-      "GAF is the largest roofing manufacturer in North America, and Master Elite is its top contractor designation. GAF limits it to roughly the top 2 to 3 percent of contractors nationwide, and it requires ongoing training, a licensing and insurance check, and a documented track record of quality. The practical benefit is access to GAF's Golden Pledge Limited Warranty, which covers materials and extends workmanship coverage far beyond what a standard installer can offer.",
+      "GAF is the largest roofing manufacturer in North America, and Master Elite is its top contractor designation. GAF says only 2% of roofers in North America are invited to become Master Elite contractors, and the designation requires ongoing training, a licensing and insurance check, and a documented track record of quality. The practical benefit is access to GAF's Golden Pledge Limited Warranty, which covers materials and extends workmanship coverage far beyond what a standard installer can offer.",
 
       "Owens Corning Preferred",
       "Owens Corning's Preferred Contractor program signals that a roofer has met the company's standards for professionalism, installation quality, and customer satisfaction. It gives homeowners access to Owens Corning's enhanced warranty programs and the assurance of a contractor the manufacturer has vetted and chosen to stand behind.",
