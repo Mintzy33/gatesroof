@@ -501,7 +501,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
   arvada: [
     {
       question: "Does Gates Enterprises help Arvada homeowners with insurance claims?",
-      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across all Arvada ZIP codes. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Coverage depends on your policy, and you are typically responsible for your deductible. Call (720) 766-3377.",
+      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across Arvada. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Coverage depends on your policy, and you are typically responsible for your deductible. Call (720) 766-3377.",
     },
     {
       question: "How do I know if my Arvada roof has hail damage?",
@@ -521,7 +521,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "How long does a roof replacement take in Arvada?",
-      answer: "Most Arvada residential roof replacements are completed in one to two days. Larger or more complex roofs may take two to three days. We pull all required Jefferson County permits and coordinate inspections as standard practice.",
+      answer: "Most Arvada residential roof replacements are completed in one to two days. Larger or more complex roofs may take two to three days. We pull the required roofing permit (issued by the City of Arvada for homes inside city limits) and coordinate inspections as standard practice.",
     },
     {
       question: "Why choose Gates Enterprises for roofing in Arvada?",
