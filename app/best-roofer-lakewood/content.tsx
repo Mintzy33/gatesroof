@@ -121,7 +121,7 @@ export default function BestRooferLakewoodContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Four Manufacturer Certifications</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Fewer than 2% of roofers in the country hold even one of these. Very few Colorado roofers hold all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
+              Gates Enterprises LLC holds certifications from all four major shingle manufacturers: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Very few Colorado roofers hold all four. For Lakewood homeowners, this means the widest selection of premium products and the strongest warranty coverage available.
             </p>
           </div>
 

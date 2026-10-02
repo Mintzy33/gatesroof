@@ -177,7 +177,7 @@ export default function CityContent() {
             Locally Headquartered. Quadruple Manufacturer Certified. {SITE_STATS.reviewCount}+ Google Reviews. Your Neighbors. Your Roofer.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2014, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With {SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Lakewood homeowners trust us because they know us.
+            Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2014, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications. With {SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Lakewood homeowners trust us because they know us.
           </p>
           {/* Manufacturer certifications — wording reused verbatim from the homepage hero card (app/page.tsx) */}
           <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)", marginBottom: 32, maxWidth: 700 }}>
@@ -214,7 +214,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
+              Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Lakewood homeowners get access to the best warranty options and highest quality materials available, installed by a local team they can trust.
             </p>
           </div>
 
@@ -300,7 +300,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified: Your Lakewood Neighbors Hold the Industry's Top Credentials
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>
-            When you hire Gates Enterprises LLC, you are hiring a Lakewood based team with credentials that fewer than 2% of roofers nationwide can match. Our four premium manufacturer certifications are earned through rigorous evaluation, ongoing training, and consistent customer satisfaction. They are not decorations on a website. They translate directly to better warranties, better materials, and better installations for your home.
+            When you hire Gates Enterprises LLC, you are hiring a Lakewood based team. Our four premium manufacturer certifications are earned through rigorous evaluation, ongoing training, and consistent customer satisfaction. They are not decorations on a website. They translate directly to better warranties, better materials, and better installations for your home.
           </p>
           <div className="lakewood-certs-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
             {CERTIFICATIONS.map((cert, i) => (

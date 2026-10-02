@@ -375,7 +375,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified for Aurora Homeowners
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>
-            Fewer than 2% of U.S. roofers hold a top-tier manufacturer credential. Gates holds four. For Aurora that means warranty access, HOA-compatible product lines, and install standards the manufacturers themselves audit.
+            Gates holds four. For Aurora that means warranty access, HOA-compatible product lines, and install standards the manufacturers themselves audit.
           </p>
           <div className="aurora-certs-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
             {CERTIFICATIONS.map((cert, i) => (
