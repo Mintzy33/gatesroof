@@ -498,6 +498,36 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
       answer: "For most Littleton homes, we recommend Class 4 impact-resistant asphalt shingles — GAF Timberline HDZ or Owens Corning Duration Storm are the most common choices. Class 4 IR shingles are the highest impact resistance rating available and frequently qualify for a premium discount through your homeowner's insurance carrier in Colorado. The Littleton area's storm history makes the modest cost premium on Class 4 shingles a straightforward return on investment for most homeowners.",
     },
   ],
+  arvada: [
+    {
+      question: "Does Gates Enterprises help Arvada homeowners with insurance claims?",
+      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across all Arvada ZIP codes. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Your out-of-pocket cost on a covered claim is your deductible. Call (720) 766-3377.",
+    },
+    {
+      question: "How do I know if my Arvada roof has hail damage?",
+      answer: "Most hail damage in Arvada isn't visible from the ground. Look for dented gutters and downspouts, chipped paint on window frames and fascia, and granule accumulation in downspout splash zones after a storm. Storms that move south from the Boulder County line can produce hail of one inch or larger across Arvada neighborhoods like Olde Town, Ralston Valley, West Woods, and Candelas. The only reliable way to confirm damage is a professional roof inspection from on top of the roof.",
+    },
+    {
+      question: "Do I have to use the contractor my insurance company recommends in Arvada?",
+      answer: "No. Colorado law gives you the right to choose your own roofing contractor regardless of who your insurer recommends. Insurance company preferred vendors work for the carrier's interests, not yours. Gates Enterprises works for you — we document all damage, attend the adjuster meeting, and supplement if the initial approval falls short.",
+    },
+    {
+      question: "Can a roofer waive my deductible in Colorado?",
+      answer: "No. Under C.R.S. section 6-22-105, waiving, paying, or rebating a homeowner's insurance deductible is a Class 2 misdemeanor in Colorado. Any Arvada contractor offering to cover your deductible is violating state law. Your cost on a covered claim is your deductible — no exceptions.",
+    },
+    {
+      question: "What is the best roofing material for Arvada homes?",
+      answer: "For Arvada's moderate-to-high hail exposure and Jefferson County location, we recommend Class 4 impact-resistant shingles rated UL 2218 Class 4. These withstand hail impacts that destroy standard shingles and frequently qualify for insurance premium discounts in Colorado. Gates Enterprises carries Class 4 product lines from all four manufacturers we're certified with: GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a roof replacement take in Arvada?",
+      answer: "Most Arvada residential roof replacements are completed in one to two days. Larger or more complex roofs may take two to three days. We pull all required Jefferson County permits and coordinate inspections as standard practice.",
+    },
+    {
+      question: "Why choose Gates Enterprises for roofing in Arvada?",
+      answer: `Gates Enterprises is based in Lakewood — five miles from Arvada — and has completed roofing projects throughout Jefferson County for over a decade. We hold four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) and carry ${SITE_STATS.reviewCount}+ Google reviews at ${SITE_STATS.starRating} stars. Our Xactimate-certified estimators handle every step of the insurance claim process from free inspection through final supplement.`,
+    },
+  ],
   brighton: [
     {
       question: "How do I know if my Brighton home has hail damage?",
