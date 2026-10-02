@@ -513,7 +513,7 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     },
     {
       question: "Can a roofer waive my deductible in Colorado?",
-      answer: "No. Under C.R.S. section 6-22-105, waiving, paying, or rebating a homeowner's insurance deductible is a Class 2 misdemeanor in Colorado. Any Arvada contractor offering to cover your deductible is violating state law. Your cost on a covered claim is your deductible — no exceptions.",
+      answer: "No. Under C.R.S. section 6-22-105, a roofing contractor paid from insurance proceeds may not advertise or promise to pay, waive, or rebate any part of your insurance deductible. If one does, your insurer does not have to consider that contractor's estimate, and you or your insurer can sue the contractor for resulting damages. Any Arvada contractor offering to cover your deductible is violating state law. Coverage depends on your policy, and you are typically responsible for your deductible.",
     },
     {
       question: "What is the best roofing material for Arvada homes?",
