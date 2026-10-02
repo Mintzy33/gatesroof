@@ -64,7 +64,7 @@ function FAQAccordionItem({ item }: { item: FAQItem }) {
       </button>
       <div
         style={{
-          maxHeight: open ? 500 : 0,
+          maxHeight: open ? (item.note ? 1200 : 500) : 0,
           overflow: "hidden",
           transition: "max-height 0.35s ease",
         }}
@@ -75,12 +75,26 @@ function FAQAccordionItem({ item }: { item: FAQItem }) {
             fontSize: 15,
             lineHeight: 1.85,
             color: TEXT_LIGHT,
-            margin: "0 0 20px",
+            margin: item.note ? "0 0 10px" : "0 0 20px",
             paddingRight: 36,
           }}
         >
           {item.answer}
         </p>
+        {item.note && (
+          <p
+            style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontSize: 12,
+              lineHeight: 1.6,
+              color: TEXT_LIGHT,
+              margin: "0 0 20px",
+              paddingRight: 36,
+            }}
+          >
+            {item.note}
+          </p>
+        )}
       </div>
     </div>
   );

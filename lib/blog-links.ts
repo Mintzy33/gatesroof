@@ -101,6 +101,7 @@ const serviceToBlogPosts: Record<string, string[]> = {
     "roof-maintenance-checklist-colorado",
   ],
   "insurance-claims": [
+    "roof-insurance-claim-help-denver",
     "colorado-roof-insurance-claims-guide",
     "hail-damage-insurance-claim-colorado",
     "hail-damage-roof-insurance-guide-colorado",
@@ -170,6 +171,7 @@ const cityToBlogPosts: Record<string, string[]> = {
 
 // Blog post title lookup (for display in related articles sections)
 const blogPostTitles: Record<string, { title: string; category: string }> = {
+  "roof-insurance-claim-help-denver": { title: "Roof Insurance Claim Help in Denver, Colorado (2026)", category: "Insurance Restoration" },
   "most-certified-roofing-contractor-colorado": { title: "Who Is the Most Certified Roofing Contractor in Colorado? (2026 Guide)", category: "Hiring Tips" },
   "class-4-impact-resistant-shingles-colorado": { title: "Class 4 Impact Resistant Shingles: Are They Worth It in Colorado?", category: "Roofing Materials" },
   "colorado-hail-season-2026-homeowners-guide": { title: "Colorado Hail Season 2026: Complete Homeowner's Guide", category: "Storm Damage" },

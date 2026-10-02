@@ -4,10 +4,13 @@
 import type { CityData, ServiceData } from "./service-areas-data";
 import { getCityBySlug, getServiceBySlug } from "./service-areas-data";
 import { SITE_STATS } from "./site-stats";
+import { GAF_CERTIFICATION_DISCLOSURE } from "./gaf-disclosure";
 
 export interface FAQItem {
   question: string;
   answer: string;
+  /** Optional small print rendered directly under the answer (e.g. a required manufacturer disclosure). */
+  note?: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -223,7 +226,8 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
   // Certification question
   pool.push({
     question: `Why choose a certified roofer in ${city.city}?`,
-    answer: `Manufacturer certifications matter because they determine your warranty options. An uncertified contractor installing GAF shingles in ${city.city} can only offer a basic manufacturer warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Fewer than 2% of roofers nationwide hold even one of these credentials.`,
+    answer: `Manufacturer certifications matter because they determine your warranty options. An uncertified contractor installing GAF shingles in ${city.city} can only offer a basic manufacturer warranty. Gates Enterprises, as a GAF Master Elite contractor, can offer the Golden Pledge warranty with 25 years of workmanship coverage. We hold four certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors.`,
+    note: GAF_CERTIFICATION_DISCLOSURE,
   });
 
   // Local service question
@@ -496,6 +500,36 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
     {
       question: "What roofing materials do you recommend for Littleton's climate?",
       answer: "For most Littleton homes, we recommend Class 4 impact-resistant asphalt shingles — GAF Timberline HDZ or Owens Corning Duration Storm are the most common choices. Class 4 IR shingles are the highest impact resistance rating available and frequently qualify for a premium discount through your homeowner's insurance carrier in Colorado. The Littleton area's storm history makes the modest cost premium on Class 4 shingles a straightforward return on investment for most homeowners.",
+    },
+  ],
+  arvada: [
+    {
+      question: "Does Gates Enterprises help Arvada homeowners with insurance claims?",
+      answer: "Yes. Gates Enterprises is headquartered in Lakewood, five miles from Arvada, and provides free storm damage inspections across Arvada. We document all damage, attend the insurance adjuster meeting on-site, and prepare supplements when the initial approval doesn't cover the full scope of documented work. Coverage depends on your policy, and you are typically responsible for your deductible. Call (720) 766-3377.",
+    },
+    {
+      question: "How do I know if my Arvada roof has hail damage?",
+      answer: "Most hail damage in Arvada isn't visible from the ground. Look for dented gutters and downspouts, chipped paint on window frames and fascia, and granule accumulation in downspout splash zones after a storm. Storms that move south from the Boulder County line can produce hail of one inch or larger across Arvada neighborhoods like Olde Town, Ralston Valley, West Woods, and Candelas. The only reliable way to confirm damage is a professional roof inspection from on top of the roof.",
+    },
+    {
+      question: "Do I have to use the contractor my insurance company recommends in Arvada?",
+      answer: "No. Colorado law gives you the right to choose your own roofing contractor regardless of who your insurer recommends. Gates Enterprises works for you — we document all damage, attend the adjuster meeting, and supplement if the initial approval falls short.",
+    },
+    {
+      question: "Can a roofer waive my deductible in Colorado?",
+      answer: "No. Under C.R.S. section 6-22-105, a roofing contractor paid from insurance proceeds may not advertise or promise to pay, waive, or rebate any part of your insurance deductible. If one does, your insurer does not have to consider that contractor's estimate, and you or your insurer can sue the contractor for resulting damages. Any Arvada contractor offering to cover your deductible is violating state law. Coverage depends on your policy, and you are typically responsible for your deductible.",
+    },
+    {
+      question: "What is the best roofing material for Arvada homes?",
+      answer: "For Arvada's moderate-to-high hail exposure and Jefferson County location, we recommend Class 4 impact-resistant shingles rated UL 2218 Class 4. These withstand hail impacts that destroy standard shingles and frequently qualify for insurance premium discounts in Colorado. Gates Enterprises carries Class 4 product lines from all four manufacturers we're certified with: GAF, Owens Corning, Malarkey, and CertainTeed.",
+    },
+    {
+      question: "How long does a roof replacement take in Arvada?",
+      answer: "Most Arvada residential roof replacements are completed in one to two days. Larger or more complex roofs may take two to three days. We pull the required roofing permit (issued by the City of Arvada for homes inside city limits) and coordinate inspections as standard practice.",
+    },
+    {
+      question: "Why choose Gates Enterprises for roofing in Arvada?",
+      answer: `Gates Enterprises is based in Lakewood — five miles from Arvada — and has completed roofing projects throughout Jefferson County for over a decade. We hold four manufacturer certifications (GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster) and carry ${SITE_STATS.reviewCount}+ Google reviews at ${SITE_STATS.starRating} stars. Our Xactimate-certified estimators work with you through the insurance claim process, from free inspection through final supplement.`,
     },
   ],
   brighton: [

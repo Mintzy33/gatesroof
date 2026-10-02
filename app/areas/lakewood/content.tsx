@@ -179,6 +179,11 @@ export default function CityContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Gates Enterprises LLC is not just another roofing company that shows up after a hailstorm and disappears. We are headquartered right here in Lakewood. This is our home. We live here, work here, and raise our families here. When a storm hits Lakewood, we are already on the ground, ready to help our neighbors. Since 2014, we have built our reputation on honest assessments, quality craftsmanship, and four manufacturer certifications that fewer than 2% of roofers nationwide can claim. With {SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Lakewood homeowners trust us because they know us.
           </p>
+          {/* Manufacturer certifications — wording reused verbatim from the homepage hero card (app/page.tsx) */}
+          <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)", borderRadius: 16, padding: "20px 18px", boxShadow: "0 4px 20px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.06)", marginBottom: 32, maxWidth: 700 }}>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600, color: WHITE, marginBottom: 4 }}>4x Manufacturer Certified</div>
+            <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.75)", lineHeight: 1.6 }}>GAF Master Elite · Owens Corning Preferred · Malarkey Emerald Premium · CertainTeed ShingleMaster</div>
+          </div>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
               Request a Free Inspection &amp; Estimate &rarr;
