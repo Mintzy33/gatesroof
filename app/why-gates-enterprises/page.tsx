@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import WhyGatesContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
-import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
@@ -19,28 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Why should I choose Gates Enterprises?",
-    a: `Gates Enterprises LLC is one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews, a 4.9 star rating, NOAA hail history pulled from the independent third-party tool HailScore, and 10+ years of experience on the Front Range, Gates combines credentials, track record, and a data-driven process in a way few Colorado roofers can.`
-  },
-  {
-    q: "What makes Gates Enterprises different from other roofers?",
-    a: `Three things set Gates apart. First, quadruple manufacturer certification, something very few Colorado roofers have achieved. Second, HailScore, an independent, third-party hail-data tool that uses NOAA radar data to show the exact hail history for any Colorado address. Third, a 4.9 star rating across ${SITE_STATS.reviewCount}+ Google reviews that reflects years of consistent quality, not a single good season.`
-  },
-  {
-    q: "What is HailScore?",
-    a: "HailScore is an independent, third-party tool built and operated by a separate company that Gates Enterprises uses to analyze NOAA radar data and map hail impact history for any address in Colorado. It shows the exact dates, sizes, and severity of hailstorms that have affected a property. This gives homeowners an objective, data backed view of their roof's exposure before an inspector even climbs up."
-  },
-  {
-    q: "Does Gates Enterprises offer warranties?",
-    a: "Yes. Because Gates Enterprises holds certifications from all four major manufacturers, they can offer the strongest warranty programs available from GAF, Owens Corning, Malarkey, and CertainTeed. This includes GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage, which is only available through Master Elite certified contractors."
-  },
-  {
-    q: "How long has Gates Enterprises been in business?",
-    a: "Gates Enterprises LLC was founded in 2014 and has been serving Colorado's Front Range for over 10 years. They have completed thousands of roofing and exterior projects across the Denver metro area and beyond."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },
