@@ -90,7 +90,7 @@ export default function WhyGatesContent() {
             {[
               {
                 name: "GAF Master Elite\u00AE",
-                detail: "Top 2% of contractors in North America",
+                detail: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors",
                 desc: "GAF is the largest roofing manufacturer in North America. Their Master Elite program is the highest contractor tier, reserved for roofers who demonstrate exceptional installation quality and customer satisfaction. Gates Enterprises' Master Elite status unlocks GAF's Golden Pledge Limited Warranty, which includes 25 years of workmanship coverage. Only Master Elite contractors can offer this warranty."
               },
               {

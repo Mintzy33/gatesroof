@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import RepairContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Roof Repair CO | Fast, Certified ★ Free Inspection",
@@ -28,18 +30,7 @@ const serviceSchema = {
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does a roof repair cost in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Minor roof repairs in Colorado typically cost $300 to $1,500. Simple repairs like pipe boot replacements run $200 to $600. More complex repairs involving flashing or valleys range from $500 to $2,000."}},
-    {"@type": "Question", "name": "How do I know if my roof needs repair or full replacement?", "acceptedAnswer": {"@type": "Answer", "text": "If your roof is less than 15 years old and the damage is isolated, repair is usually the right call. If approaching 20+ years with widespread damage, replacement is the better investment."}},
-    {"@type": "Question", "name": "What are the most common roof repairs in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Pipe boot seal failures, flashing leaks around chimneys and skylights, wind-lifted shingles, and minor hail damage. Most are straightforward and cost a fraction of a full replacement."}},
-    {"@type": "Question", "name": "Is a roof leak covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "Storm damage from hail, wind, or fallen debris is typically covered. Normal wear and tear or deferred maintenance is not. We can inspect and help determine if the damage is claim-worthy."}},
-    {"@type": "Question", "name": "How quickly can you respond to an emergency roof repair?", "acceptedAnswer": {"@type": "Answer", "text": "Emergency tarping to stop active leaks can often be done same-day or next-day. Our team carries common repair materials on our trucks to minimize return trips."}},
-    {"@type": "Question", "name": "Do you repair flat roofs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We handle both pitched and flat roof repairs, including TPO, EPDM, and modified bitumen systems."}}
-  ]
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

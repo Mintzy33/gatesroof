@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import WindowsContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Window Replacement CO | Energy Efficient ★ Free Quote",
@@ -28,16 +30,7 @@ const serviceSchema = {
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How do I know if my windows need to be replaced?", "acceptedAnswer": { "@type": "Answer", "text": "Drafts, condensation between panes, difficulty opening or closing, and rising energy bills are common signs. We offer free inspections to help you decide." } },
-    { "@type": "Question", "name": "What type of window is best for Colorado?", "acceptedAnswer": { "@type": "Answer", "text": "Double pane vinyl or fiberglass with Low-E glass and argon fill. These options offer excellent insulation against Colorado's temperature extremes." } },
-    { "@type": "Question", "name": "How long does window replacement take?", "acceptedAnswer": { "@type": "Answer", "text": "Most homes can be completed in one to two days depending on the number of windows being replaced." } },
-    { "@type": "Question", "name": "Are broken windows covered by insurance?", "acceptedAnswer": { "@type": "Answer", "text": "If the damage was caused by hail or wind, yes. We include window damage in storm damage restorations and handle the documentation." } },
-  ],
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

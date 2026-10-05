@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import EmergencyContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Emergency Roof Repair Colorado | 24/7 Response | (720) 766-3377",
@@ -57,52 +59,7 @@ const serviceSchema = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How quickly can Gates Enterprises respond to a roofing emergency?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We prioritize emergency calls and aim to have a crew on site as fast as possible. With over 100 team members across Colorado's Front Range, we have the capacity to respond rapidly after storms and other urgent situations. Call (720) 766-3377 any time.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What qualifies as an emergency roof repair?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "An emergency roof repair is needed when your home is actively taking on water, a tree or debris has punctured or collapsed part of the roof, storm damage has exposed the decking or underlayment, or structural damage makes the home unsafe. If you are unsure, call us and we will help you assess the situation.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does insurance cover emergency roof repairs?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Whether emergency repairs are covered depends on your policy and the cause of damage. When a sudden event like a storm, fallen tree, or hail is covered, policies often include temporary protective measures like tarping as well as permanent repairs, subject to your deductible. We document everything and coordinate documentation with your insurance company to support your claim.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What happens during an emergency roof tarping?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our crew secures heavy-duty tarps over the damaged area to stop water intrusion immediately. We anchor the tarps to prevent wind uplift and ensure your home is protected until permanent repairs can be completed. Tarping is a temporary measure designed to prevent further interior damage while the full scope of work is assessed.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Should I wait until the storm passes to call for emergency roof repair?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Call as soon as it is safe to do so. The sooner we know about the damage, the sooner we can schedule a response. Waiting allows water to cause secondary damage to insulation, drywall, and electrical systems, which can significantly increase repair costs.",
-      },
-    },
-  ],
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

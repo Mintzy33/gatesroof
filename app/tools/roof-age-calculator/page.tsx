@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import RoofCostEstimatorContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Roof Cost Estimator CO (2026) | Free ★ Gates",
@@ -58,44 +60,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does a roof replacement cost in Colorado?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most Colorado roof replacements cost between $8,000 and $25,000 for asphalt shingles, depending on home size, roof complexity, and material choice. Impact-resistant (Class 4) shingles typically run $9,000 to $40,000. Premium materials like metal or tile could cost significantly more.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Could my insurance cover roof replacement?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "If your roof has storm damage from hail or wind, your homeowner's insurance policy may cover much of the replacement cost, depending on your policy and the cause of damage. If a claim is approved, your out-of-pocket is typically your policy deductible.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What factors affect roof replacement cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The biggest factors include roof material, home square footage (which determines the number of roofing squares), number of stories, roof complexity (dormers, valleys, steep pitch), and your location in Colorado. Mountain area projects may cost more due to access and logistics.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Why choose Gates Enterprises for roof replacement?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Gates Enterprises is one of Colorado's only quadruple manufacturer certified roofers, holding GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certifications. This means access to the best warranty options and installation standards from every major manufacturer.",
-      },
-    },
-  ],
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 export default function Page() {
   return (

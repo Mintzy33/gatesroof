@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import DroneContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Drone Roof Inspections CO | HD Aerial Assessments | Gates",
@@ -28,17 +30,7 @@ const serviceSchema = {
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How long does a drone roof inspection take?", "acceptedAnswer": { "@type": "Answer", "text": "A full drone inspection typically takes 15 to 20 minutes to capture HD imagery of your entire roof from multiple angles. Traditional ladder inspections can take hours by comparison." } },
-    { "@type": "Question", "name": "Is the drone inspection really free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our drone inspections are completely free with no obligation. We believe in honest assessments — if your roof doesn't need work, we'll tell you." } },
-    { "@type": "Question", "name": "Are your drone pilots FAA certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All of our drone pilots hold FAA Part 107 Remote Pilot Certificates and follow all federal aviation regulations during every inspection." } },
-    { "@type": "Question", "name": "Can drone footage be used for insurance claims?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Our drone footage provides timestamped, geotagged HD imagery that insurance adjusters can use to verify damage. We've handled over 7,200 roofs and know exactly what adjusters need to see." } },
-    { "@type": "Question", "name": "Do I get copies of the photos and video?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You receive all high-resolution aerial photos and video from your inspection. This documentation is yours to keep and use for insurance claims or your own records." } },
-  ],
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import SidingContent from "./content";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Siding Installation CO | Certified ★ Free Estimates",
@@ -29,19 +31,7 @@ const serviceSchema = {
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does siding replacement cost in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Siding replacement in Colorado costs $8,000 to $20,000 depending on material, home size, and complexity. James Hardie fiber cement typically runs $10 to $15 per square foot installed."}},
-    {"@type": "Question", "name": "What siding material is best for Colorado homes?", "acceptedAnswer": {"@type": "Answer", "text": "James Hardie fiber cement siding is the top recommendation for Colorado. It handles UV radiation, temperature extremes, and hail better than vinyl or wood and carries a Class A fire rating."}},
-    {"@type": "Question", "name": "Does homeowners insurance cover siding replacement?", "acceptedAnswer": {"@type": "Answer", "text": "If your siding was damaged by hail, wind, or another covered event, your homeowners insurance should cover the replacement cost minus your deductible."}},
-    {"@type": "Question", "name": "How long does siding installation take?", "acceptedAnswer": {"@type": "Answer", "text": "A full siding installation typically takes one to two weeks depending on home size and complexity. Partial repairs are usually completed in one to two days."}},
-    {"@type": "Question", "name": "Can siding and roof replacement be done at the same time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Coordinating roof and siding work saves time, reduces disruption, and often reduces total cost. If both were damaged by the same storm, a single insurance claim typically covers everything."}},
-    {"@type": "Question", "name": "What is James Hardie fiber cement siding?", "acceptedAnswer": {"@type": "Answer", "text": "James Hardie is the leading manufacturer of fiber cement siding, made from a mix of cement, sand, and cellulose fibers. It resists fire, rot, pests, and hail better than vinyl or wood."}},
-    {"@type": "Question", "name": "Will new siding improve my home's energy efficiency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. New siding installation includes house wrap and often insulated sheathing that significantly reduces air infiltration, keeping conditioned air inside and extreme temperatures outside."}}
-  ]
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

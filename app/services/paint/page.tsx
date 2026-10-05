@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import PaintContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Exterior Painting CO | Certified ★ Free Estimates",
@@ -28,16 +30,7 @@ const serviceSchema = {
   "areaServed": { "@type": "State", "name": "Colorado" },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How long does a typical paint job take?", "acceptedAnswer": { "@type": "Answer", "text": "Most interior rooms take 1 to 2 days. Full exterior projects take 3 to 5 days depending on size and condition." } },
-    { "@type": "Question", "name": "Do you handle surface repairs before painting?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We repair cracks, holes, peeling, and other damage during prep. Proper preparation is essential." } },
-    { "@type": "Question", "name": "What kind of paint do you use?", "acceptedAnswer": { "@type": "Answer", "text": "Premium, low VOC paints from trusted brands formulated for Colorado's climate." } },
-    { "@type": "Question", "name": "Can you paint my home's exterior after a hail storm?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We can repair and repaint, and assist with insurance restoration if covered." } },
-  ],
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

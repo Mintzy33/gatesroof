@@ -9,7 +9,7 @@ import { ScrollReveal, StaggerCards, CounterGSAP } from "../../components/GSAPAn
 import { Search, FileText, Shield, Palette, Hammer, CheckCircle, Award, ShieldCheck, MapPin } from "lucide-react";
 import AnswerCapsule from "../../components/AnswerCapsule";
 import { SITE_STATS } from "@/lib/site-stats";
-import { GAF_CERTIFICATION_DISCLOSURE } from "@/lib/gaf-disclosure";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const DEEP = "#06263f";
@@ -36,18 +36,6 @@ const WHY_GATES = [
   { Icon: MapPin, bold: "Locally owned, 10+ years in Lakewood.", rest: "We live here. Our reputation is everything." },
 ];
 
-const FAQS = [
-  { q: "How long does a roof replacement take in Colorado?", a: "Most residential roof replacements are completed in one to two days. Larger or more complex roofs with steep pitches, multiple valleys, or extensive deck repairs may take two to three days. Gates Enterprises coordinates scheduling around Colorado weather patterns to minimize delays and keep your project on track." },
-  { q: "What does a roof replacement cost in Colorado?", a: "The average roof replacement in Colorado costs between $8,000 and $25,000 depending on roof size, material, and complexity. The final price also depends on the condition of the decking and any underlying repairs needed. If hail or wind damaged your roof, an approved insurance claim can offset much of that cost — coverage depends on your policy, and you are typically responsible for your deductible." },
-  { q: "What is the best roofing material for Colorado weather?", a: "Class 4 impact-resistant shingles are the top choice for Colorado homes. They withstand hail impacts that destroy standard shingles, and most insurance companies offer 20 to 30% premium discounts for Class 4 roofs. Popular options include GAF Armor Shield II, Owens Corning Duration FLEX, and Malarkey Highlander NEX. As a quadruple certified contractor, Gates Enterprises carries products from all four major manufacturers." },
-  { q: "Does homeowners insurance cover roof replacement?", a: "Insurance may cover roof replacement when the damage was caused by a covered event like hail, wind, or fallen debris, depending on your policy and the adjuster's assessment. In Colorado's hail corridor, many roof replacements involve documented storm damage. If your roof simply reached end of life from normal wear, that is typically not covered. A free inspection from Gates Enterprises will determine if your damage is claim-worthy." },
-  { q: "How do I know if I need a full replacement vs repair?", a: "If your roof is less than 15 years old and the damage is isolated to a specific area, repair is usually the right call. If your roof is approaching 20+ years, has widespread damage, or shows signs of systemic failure like curling shingles, granule loss, or multiple leak points, replacement is the better investment. Gates Enterprises inspects every roof and gives you an honest assessment. We never push replacements on roofs that still have useful life." },
-  { q: "What certifications should my roofer have?", a: "Manufacturer certifications determine your warranty options. An uncertified contractor can only offer a basic manufacturer warranty. Gates Enterprises holds four premium certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors.", note: GAF_CERTIFICATION_DISCLOSURE },
-  { q: "Can I get a roof replaced in winter in Colorado?", a: "Yes. Gates Enterprises performs roof replacements year-round. Winter installations require special cold-weather techniques, including hand-sealing shingles and using cold-weather adhesives. Spring (March through May) and fall (September through November) are ideal, but if you have storm damage or an active leak, don't wait for warmer weather. We'll get your project scheduled regardless of the season." },
-  { q: "What is the difference between a 25 year and 50 year warranty?", a: "The standard GAF System Plus warranty covers materials for 50 years and workmanship for 10. The Golden Pledge upgrades workmanship coverage to 25 years and is backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. We recommend Golden Pledge for every customer." },
-  { q: "Can I stay home during the roof replacement?", a: "Absolutely. We ask that you move vehicles out of the driveway and let us know about any pets. Otherwise, go about your day. We handle the rest." },
-  { q: "Do you offer financing for roof replacement?", a: "Yes. We offer flexible financing options so you can get the roof you need without waiting. Ask us for details during your free estimate." },
-];
 
 export default function RoofReplacementContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
