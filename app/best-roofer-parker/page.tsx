@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Parker CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
@@ -19,28 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Parker, Colorado?",
-    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker and the surrounding communities. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Parker homeowners can trust the quality.`
-  },
-  {
-    q: "Why is Parker especially vulnerable to hail damage?",
-    a: "Parker sits along the Palmer Divide, an elevated ridge between Denver and Colorado Springs that is notorious for generating severe thunderstorms. The Palmer Divide creates unique atmospheric conditions that produce some of the largest and most frequent hailstorms in Colorado. Parker homeowners should expect significant hail events and plan their roofing materials accordingly."
-  },
-  {
-    q: "What roofing company do Parker HOAs recommend?",
-    a: "Many Parker HOAs require homeowners to use certified, insured contractors for roof replacements. Gates Enterprises meets and exceeds these requirements with four premium manufacturer certifications, comprehensive insurance, and a proven track record of working within HOA guidelines across Parker communities including Stonegate, Pradera, The Pinery, and Idyllwilde."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Parker?",
-    a: "Yes. Gates Enterprises provides free, no obligation roof inspections for Parker homeowners. They assess your roof condition thoroughly, document findings with photos, and provide clear recommendations without any pressure."
-  },
-  {
-    q: "What is HailScore and how does it help Parker homeowners?",
-    a: "HailScore is an independent, third-party hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, this is especially valuable because it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },

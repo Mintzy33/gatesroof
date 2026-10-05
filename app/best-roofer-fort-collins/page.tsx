@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
-import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: "Best Roofer Fort Collins (2026) | 4x Certified ★",
@@ -19,28 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Fort Collins?",
-    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only roofing contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality speaks for itself.`
-  },
-  {
-    q: "Does Fort Collins get a lot of hail?",
-    a: "Yes. Fort Collins sits at the northern end of Colorado's Front Range hail corridor. The city has been hit by significant hailstorms throughout its history, including the devastating 2017 storms. Hail season runs from April through September, with June and July being the peak months. Fort Collins homeowners should have their roofs inspected after every significant storm."
-  },
-  {
-    q: "What should I look for in a Fort Collins roofing company?",
-    a: "Prioritize manufacturer certifications, which verify installation quality and unlock the best warranties. Check Google reviews for consistent feedback over time. Make sure the company has been in Colorado long enough to understand local weather, building codes, and HOA requirements. Gates Enterprises checks every box."
-  },
-  {
-    q: "Does Gates Enterprises serve Fort Collins?",
-    a: "Yes. Gates Enterprises LLC serves homeowners throughout Fort Collins and the Northern Colorado region, including Loveland, Windsor, Timnath, and Wellington. Their crews are experienced with the full range of home styles and roofing challenges found in the Fort Collins market."
-  },
-  {
-    q: "Can I get a free roof inspection in Fort Collins?",
-    a: "Yes. Gates Enterprises offers free, no obligation roof inspections for Fort Collins homeowners. They provide honest assessments, photo documentation, and clear recommendations with zero pressure."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },
