@@ -59,7 +59,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Golden Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
-              "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors",
+              "GAF Master Elite certified",
               "Foothills wind rated installation methods and Class 4 shingles",
               "Experience with complex multi plane rooflines on custom homes",
               "Full insurance restoration support on hail and wind claims",

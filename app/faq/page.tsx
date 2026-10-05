@@ -68,7 +68,7 @@ const faqData = [
     items: [
       {
         q: "What does GAF Master Elite mean?",
-        a: "GAF Master Elite is the highest certification offered by GAF, the largest roofing manufacturer in North America. Only the top 2% of roofing contractors nationwide earn this designation. It requires proven installation expertise, proper licensing and insurance, a strong reputation, and ongoing factory training. For homeowners, the biggest benefit is access to the GAF Golden Pledge Warranty — 25 years of workmanship coverage and 50 years of material coverage, backed directly by GAF, not just the contractor. Gates Enterprises has maintained GAF Master Elite status since 2018.",
+        a: "GAF Master Elite is the highest certification offered by GAF, the largest roofing manufacturer in North America. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. It requires proven installation expertise, proper licensing and insurance, a strong reputation, and ongoing factory training. For homeowners, the biggest benefit is access to the GAF Golden Pledge Warranty — 25 years of workmanship coverage and 50 years of material coverage, backed directly by GAF, not just the contractor. Gates Enterprises has maintained GAF Master Elite status since 2018.",
       },
       {
         q: "What does quadruple manufacturer certified mean?",

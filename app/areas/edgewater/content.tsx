@@ -60,7 +60,7 @@ export default function CityContent() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
               "Lakewood neighbors — minutes away for fast response",
-              "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors",
+              "GAF Master Elite certified",
               "Respectful approach to mid century home architecture",
               "Full insurance restoration support on hail and storm claims",
               "thousands of roofs completed across the Denver metro",
