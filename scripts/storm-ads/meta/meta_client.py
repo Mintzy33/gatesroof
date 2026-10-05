@@ -13,12 +13,44 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import sys
 from typing import Any, Dict, List, Optional
 
 import requests
 
 
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "meta-config.json")
+
+# Repo root, three levels up from scripts/storm-ads/meta/
+REPO_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
+)
+SITE_STATS_PATH = os.path.join(REPO_ROOT, "lib", "site-stats.ts")
+
+
+def site_review_count(path: str = SITE_STATS_PATH, fallback: int = 353) -> int:
+    """Read reviewCount from lib/site-stats.ts, the single source of truth for
+    every public stat.
+
+    Ad copy has to quote the same number the site does. This used to be
+    hardcoded here and drifted two sweeps behind (339 while the site said 353),
+    which is exactly the kind of mismatch a homeowner or an answer engine can
+    catch. The fallback only applies if the file cannot be read or parsed.
+    """
+    try:
+        with open(path, "r") as fh:
+            match = re.search(r"reviewCount:\s*(\d+)", fh.read())
+        if match:
+            return int(match.group(1))
+    except OSError:
+        pass
+    print(
+        f"WARNING: could not read reviewCount from {path}; "
+        f"ad copy will say {fallback}. Check lib/site-stats.ts.",
+        file=sys.stderr,
+    )
+    return fallback
 
 
 def load_config(path: str = CONFIG_PATH) -> Dict[str, Any]:
@@ -129,7 +161,7 @@ class MetaAdsClient:
                 "Free inspection. We assist you through the insurance claims process. No obligation."
             ),
             "name": f"Free Storm Damage Inspection in {city}",
-            "description": "Quadruple manufacturer certified. 339 reviews. 4.9 stars.",
+            "description": f"Quadruple manufacturer certified. {site_review_count()} reviews. 4.9 stars.",
             "call_to_action": {"type": "GET_QUOTE", "value": {"link": landing}},
             "image_hash": image_hash,
         }
