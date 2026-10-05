@@ -223,7 +223,7 @@ const timeline = [
   {
     year: "2018",
     title: "GAF Master Elite Certified",
-    desc: "Earned the most prestigious certification in residential roofing. Only the top 2% of contractors in North America qualify.",
+    desc: "Earned the most prestigious certification in residential roofing. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors.",
   },
   {
     year: "2020",
@@ -478,7 +478,7 @@ export default function GatesEnterprisesPage() {
               {
                 icon: <Award size={32} color={ACCENT} />,
                 title: "GAF Master Elite",
-                desc: "The highest contractor designation from GAF, North America's largest shingle manufacturer. Only 2% of roofers qualify. Unlocks the Golden Pledge Lifetime Warranty with 25-year workmanship coverage, the strongest in the industry.",
+                desc: "The highest contractor designation from GAF, North America's largest shingle manufacturer. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocks the Golden Pledge Lifetime Warranty with 25-year workmanship coverage, the strongest in the industry.",
               },
               {
                 icon: <Award size={32} color={ACCENT} />,

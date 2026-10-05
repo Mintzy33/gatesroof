@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -27,28 +28,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Greenwood Village?",
-    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Greenwood Village. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their track record speaks for itself.`
-  },
-  {
-    q: "How do I choose a roofing company in Greenwood Village?",
-    a: "Start with manufacturer certifications, which verify quality and training. Check Google reviews for consistent, recent feedback from real homeowners. Verify that the company carries proper insurance and licensing. Ask about their experience with Colorado weather challenges, especially hail. Look for a company that offers free inspections with no pressure."
-  },
-  {
-    q: "Does Gates Enterprises serve Greenwood Village, Colorado?",
-    a: "Yes. Gates Enterprises LLC provides full roofing services throughout Greenwood Village and Arapahoe County, including free roof inspections, storm damage assessment, insurance-assisted replacements, and new roof installations. Call (720) 766-3377 or request a free inspection online."
-  },
-  {
-    q: "What roofing certifications should I look for?",
-    a: "The most important certifications are manufacturer certifications from companies like GAF, Owens Corning, Malarkey, and CertainTeed. These unlock the best warranty programs for homeowners. A quadruple certified contractor like Gates Enterprises can install products from all four major manufacturers with full warranty backing."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Greenwood Village?",
-    a: "Yes. Gates Enterprises LLC provides free, no obligation roof inspections for Greenwood Village homeowners. Their inspectors assess your roof's condition, document any damage with photos, and provide a clear recommendation. There is no pressure to commit to any work."
-  }
-];
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from major brands", gates: true },
@@ -139,7 +118,7 @@ export default function BestRooferGreenwoodVillageContent() {
           </p>
           <div className="best-roofer-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite®", desc: "Awarded to the top 2% of roofing contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite®", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Recognizes contractors who meet the highest standards for professionalism, reliability, and quality. Provides access to Owens Corning's enhanced warranty programs." },
               { name: "Malarkey Emerald Premium", desc: "Certifies expertise in Malarkey's advanced NEX Polymer Modified asphalt technology. Malarkey leads the industry in sustainable, high performance roofing materials." },
               { name: "CertainTeed ShingleMaster™", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },

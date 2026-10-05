@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -27,28 +28,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Lakewood, Colorado?",
-    a: `Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, they are a proven choice.`
-  },
-  {
-    q: "Why choose a Lakewood based roofing company?",
-    a: "Choosing a locally headquartered roofer means faster response times, familiarity with local building codes and HOA requirements, and a company invested in the community. Gates Enterprises is based right here in Lakewood. Your neighborhood is their neighborhood."
-  },
-  {
-    q: "How do I know if my Lakewood roof has hail damage?",
-    a: "Hail damage is not always visible from the ground. Look for dented gutters, cracked siding, or dings on outdoor AC units as indicators. On the roof, hail creates circular dents in shingles. The best approach is a free professional inspection. Gates Enterprises also uses HailScore, which shows exact hail history for your address."
-  },
-  {
-    q: "Does Gates Enterprises offer free inspections in Lakewood?",
-    a: "Yes. As a Lakewood based company, Gates Enterprises provides free, no obligation roof inspections throughout the city. They assess your roof honestly, document findings with photos, and give you a clear recommendation."
-  },
-  {
-    q: "What is the best roofing material for Lakewood homes?",
-    a: "Class 4 impact resistant shingles provide the best protection for Lakewood homes while potentially reducing insurance premiums. Gates Enterprises installs impact resistant products from all four major manufacturers, giving you the widest selection."
-  }
-];
 
 const CHECKLIST = [
   { label: "Headquartered right here in Lakewood, CO" },
@@ -180,7 +159,7 @@ export default function BestRooferLakewoodContent() {
           </h2>
           <div className="best-roofer-lkwd-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's advanced NEX Polymer Modified technology for Colorado's demanding climate." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level installation training. CertainTeed's strongest warranty programs." },

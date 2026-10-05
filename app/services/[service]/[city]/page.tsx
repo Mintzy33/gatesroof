@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { cities, services, getCityBySlug, getServiceBySlug } from "../../../../lib/service-areas-data";
 import { getMetaTitle, getMetaDescription } from "../../../../lib/service-meta";
 import { shouldIndexServiceCity } from "../../../../lib/seo-config";
+import { getServiceCityFAQItems } from "../../../../lib/faq-data";
+import { faqSchema as buildFaqSchema } from "../../../../lib/schema";
 import ServiceCityContent from "./content";
 
 interface Props {
@@ -93,15 +95,13 @@ export default async function Page({ params }: Props) {
     },
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: service.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.q,
-      acceptedAnswer: { "@type": "Answer", text: faq.a },
-    })),
-  };
+  // FAQPage markup must mirror the FAQs the page actually renders. content.tsx
+  // renders getServiceCityFAQItems(citySlug, serviceSlug); this page previously
+  // emitted service.faqs — a different, per-service generic set — so none of the
+  // marked-up Q/A ever appeared in the HTML.
+  const faqSchema = buildFaqSchema(
+    getServiceCityFAQItems(citySlug, serviceSlug).map((f) => ({ q: f.question, a: f.answer }))
+  );
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

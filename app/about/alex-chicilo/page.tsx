@@ -114,7 +114,7 @@ const certifications = [
   {
     name: "GAF Master Elite",
     description:
-      "Reserved for the top 2% of roofing contractors in North America. Unlocks the GAF Golden Pledge Lifetime Warranty, the strongest manufacturer warranty available.",
+      "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocks the GAF Golden Pledge Lifetime Warranty, the strongest manufacturer warranty available.",
   },
   {
     name: "Owens Corning Preferred",

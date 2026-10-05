@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -27,28 +28,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Aurora, Colorado?",
-    a: `Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their reputation is built on consistent results.`
-  },
-  {
-    q: "How often does Aurora get hail damage?",
-    a: "Aurora sits along Colorado's Front Range hail corridor and experiences significant hail events nearly every year. Some years bring multiple storms with golf ball sized or larger hailstones. The eastern portions of Aurora tend to see the largest and most frequent hail. Regular roof inspections after storms are essential."
-  },
-  {
-    q: "What certifications should my Aurora roofer have?",
-    a: "The most valuable certifications come from the major shingle manufacturers: GAF, Owens Corning, Malarkey, and CertainTeed. These certifications are earned through demonstrated quality, not purchased. They unlock the best warranty programs. Gates Enterprises holds all four."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Aurora?",
-    a: "Yes. Gates Enterprises provides free, no obligation roof inspections for Aurora homeowners. They assess your roof honestly, document findings with photos, and deliver a clear recommendation with no pressure to commit."
-  },
-  {
-    q: "Can Gates Enterprises work with my insurance company on hail damage?",
-    a: "Yes. Gates Enterprises is an insurance restoration specialist. They perform detailed damage inspections, create thorough documentation, and communicate directly with your insurance company throughout the restoration process."
-  }
-];
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
@@ -183,7 +162,7 @@ export default function BestRooferAuroraContent() {
           </p>
           <div className="best-roofer-aurora-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of roofing contractors in North America. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's contractor network. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Premium", desc: "Certified expertise in Malarkey's NEX Polymer Modified asphalt technology for superior Colorado durability." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level training in advanced shingle application. Access to CertainTeed's strongest warranty programs." },

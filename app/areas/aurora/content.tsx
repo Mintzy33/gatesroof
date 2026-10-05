@@ -109,7 +109,7 @@ const SERVICES = [
 const CERTIFICATIONS = [
   {
     name: "GAF Master Elite",
-    desc: "Top 2% of GAF contractors nationally. Unlocks Golden Pledge–level warranty options with extended workmanship coverage — critical after repeated Aurora hail cycles.",
+    desc: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocks Golden Pledge–level warranty options with extended workmanship coverage — critical after repeated Aurora hail cycles.",
   },
   {
     name: "Owens Corning Preferred Contractor",

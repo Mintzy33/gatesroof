@@ -98,7 +98,7 @@ const SERVICES = [
 const CERTIFICATIONS = [
   {
     name: "GAF Master Elite\u00AE",
-    desc: "GAF is the largest roofing manufacturer in North America. Their Master Elite program accepts only the top 2% of contractors, granting access to GAF's most comprehensive warranty options including the Golden Pledge\u00AE Limited Warranty with 25 year workmanship coverage."
+    desc: "GAF is the largest roofing manufacturer in North America. Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors, granting access to GAF's most comprehensive warranty options including the Golden Pledge\u00AE Limited Warranty with 25 year workmanship coverage."
   },
   {
     name: "Owens Corning Preferred Contractor",

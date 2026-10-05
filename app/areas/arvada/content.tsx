@@ -59,7 +59,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Arvada Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
-              "GAF Master Elite certified — top 2% of contractors nationwide",
+              "GAF Master Elite certified",
               "Expert assessment of aging 1950s through 1970s roof systems",
               "Full insurance restoration support on hail and wind claims",
               "City of Arvada permit and inspection coordination",

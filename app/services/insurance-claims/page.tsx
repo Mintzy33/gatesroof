@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import InsuranceContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Roof Insurance Claims CO | Adjuster Meetings & Supplements",
@@ -28,19 +30,7 @@ const serviceSchema = {
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Do I have to pay anything out of pocket for an insurance claim?", "acceptedAnswer": {"@type": "Answer", "text": "You are typically responsible for your deductible. Beyond that, most storm damage repairs may be covered by your homeowners insurance depending on your policy and extent of damage."}},
-    {"@type": "Question", "name": "How long does the insurance claim process take?", "acceptedAnswer": {"@type": "Answer", "text": "The typical insurance claim process runs four to eight weeks from filing to completed restoration. The largest variable is your insurance company's adjuster scheduling."}},
-    {"@type": "Question", "name": "Can I choose my own contractor for an insurance claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Colorado law gives you the right to choose your own contractor regardless of what your insurance company suggests. Insurance company preferred vendor programs exist to benefit the insurer, not the homeowner."}},
-    {"@type": "Question", "name": "What if my insurance estimate seems too low?", "acceptedAnswer": {"@type": "Answer", "text": "We review every insurance estimate line by line. If the estimate falls short, we prepare detailed supplements with additional documentation, photos, and manufacturer specifications."}},
-    {"@type": "Question", "name": "What if my insurance claim gets denied?", "acceptedAnswer": {"@type": "Answer", "text": "A denial is not always the final answer. We help you understand why coverage was denied and whether a re-inspection or supplement is worth pursuing. If it is, we supply the photos, measurements, and manufacturer specifications your insurer needs to look again."}},
-    {"@type": "Question", "name": "Is there a deadline to file a roof insurance claim in Colorado?", "acceptedAnswer": {"@type": "Answer", "text": "Most policies have a one-year window from the date of the storm to file a claim. Schedule an inspection as soon as possible to protect your eligibility."}},
-    {"@type": "Question", "name": "What types of damage does homeowners insurance cover?", "acceptedAnswer": {"@type": "Answer", "text": "Homeowners insurance covers damage from hail, wind, fallen trees, lightning, and other sudden events. Normal wear and tear and deferred maintenance are typically not covered."}}
-  ]
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

@@ -61,7 +61,7 @@ export default function CityContent() {
             {[
               "Headquartered minutes away in Lakewood — fast response times",
               "Cedar shake to modern shingle conversion expertise",
-              "GAF Master Elite certified — top 2% of contractors nationwide",
+              "GAF Master Elite certified",
               "We pull the required local reroofing permit",
               "thousands of roofs completed across the Denver metro",
               `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,

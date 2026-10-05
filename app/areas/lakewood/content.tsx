@@ -89,7 +89,7 @@ const SERVICES = [
 const CERTIFICATIONS = [
   {
     name: "GAF Master Elite\u00AE",
-    desc: "GAF is the largest roofing manufacturer in North America. Only the top 2% of contractors qualify for Master Elite status. This gives Lakewood homeowners access to GAF's premier warranty programs, including the Golden Pledge\u00AE Limited Warranty with 25 year workmanship coverage."
+    desc: "GAF is the largest roofing manufacturer in North America. Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. This gives Lakewood homeowners access to GAF's premier warranty programs, including the Golden Pledge\u00AE Limited Warranty with 25 year workmanship coverage."
   },
   {
     name: "Owens Corning Preferred Contractor",

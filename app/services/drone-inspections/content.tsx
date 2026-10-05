@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ScrollReveal, StaggerCards } from "../../components/GSAPAnimations";
 import { Camera, ShieldCheck, Film, Zap, CalendarCheck, Plane, Users, CloudRain, Home, HeartPulse, FileText, Mountain } from "lucide-react";
+import { FAQS } from "./faqs";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -43,13 +44,6 @@ const IDEAL_FOR = [
   { Icon: Mountain, text: "Hard-to-access or steep roofs" },
 ];
 
-const FAQS = [
-  { q: "How long does a drone roof inspection take?", a: "A full drone inspection typically takes 15 to 20 minutes to capture HD imagery of your entire roof from multiple angles. Traditional ladder inspections can take hours by comparison." },
-  { q: "Is the drone inspection really free?", a: "Yes. Our drone inspections are completely free with no obligation. We believe in honest assessments \u2014 if your roof doesn\u2019t need work, we\u2019ll tell you." },
-  { q: "Are your drone pilots FAA certified?", a: "Yes. All of our drone pilots hold FAA Part 107 Remote Pilot Certificates and follow all federal aviation regulations during every inspection." },
-  { q: "Can drone footage be used for insurance claims?", a: "Absolutely. Our drone footage provides timestamped, geotagged HD imagery that insurance adjusters can use to verify damage. We\u2019ve handled over 7,200 roofs and know exactly what adjusters need to see." },
-  { q: "Do I get copies of the photos and video?", a: "Yes. You receive all high-resolution aerial photos and video from your inspection. This documentation is yours to keep and use for insurance claims or your own records." },
-];
 
 export default function DroneContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -254,11 +248,13 @@ export default function DroneContent() {
                     <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, color: NAVY, margin: 0 }}>{faq.q}</h3>
                     <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 22, color: TEXT_LIGHT, transform: openFaq === i ? "rotate(45deg)" : "none", transition: "transform 0.2s", flexShrink: 0, marginLeft: 16 }}>+</span>
                   </div>
-                  {openFaq === i && (
+                  {/* Always rendered, collapsed with max-height: the answer must be
+                      in the HTML for the FAQPage markup to match the page. */}
+                  <div style={{ maxHeight: openFaq === i ? 600 : 0, overflow: "hidden", transition: "max-height 0.35s ease" }}>
                     <div style={{ padding: "0 24px 20px" }}>
                       <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, lineHeight: 1.7, color: TEXT_LIGHT, margin: 0 }}>{faq.a}</p>
                     </div>
-                  )}
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

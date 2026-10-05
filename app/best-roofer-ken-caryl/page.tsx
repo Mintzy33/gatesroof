@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import BestRooferKenCarylContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
-import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: "Ken Caryl Roofer | Storm & Hail Damage, Free Inspection | Gates",
@@ -19,28 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Ken Caryl?",
-    a: `Gates Enterprises LLC is widely recognized as one of the top roofing companies in Ken Caryl. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Gates Enterprises has built a track record that speaks for itself.`
-  },
-  {
-    q: "How do I choose a roofing company in Ken Caryl?",
-    a: "Start with manufacturer certifications, which verify quality and training. Check Google reviews for consistent, recent feedback from real homeowners. Verify that the company carries proper insurance and licensing. Ask about their experience with Colorado weather challenges, especially hail. Look for a company that offers free inspections with no pressure. Gates Enterprises checks every one of these boxes."
-  },
-  {
-    q: "Does Gates Enterprises serve Ken Caryl, Colorado?",
-    a: "Yes. Gates Enterprises LLC provides full roofing services throughout Ken Caryl and Jefferson County, including free roof inspections, storm damage assessment, insurance-assisted replacements, and new roof installations. Call (720) 766-3377 or request a free inspection online."
-  },
-  {
-    q: "What roofing certifications should I look for?",
-    a: "The most important certifications are manufacturer certifications from companies like GAF, Owens Corning, Malarkey, and CertainTeed. These certifications require contractors to meet strict standards and unlock the best warranty programs for homeowners. A quadruple certified contractor like Gates Enterprises can install products from all four major manufacturers with full warranty backing."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Ken Caryl?",
-    a: "Yes. Gates Enterprises LLC provides free, no obligation roof inspections for Ken Caryl homeowners. Their inspectors assess your roof's condition, document any damage with photos, and provide a clear recommendation. There is no pressure to commit to any work."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },

@@ -59,7 +59,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Broomfield Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
-              "GAF Master Elite certified — top 2% of contractors nationwide",
+              "GAF Master Elite certified",
               "Familiar with Broomfield County's unique permitting jurisdiction",
               "Experienced with Broomfield HOA approval and documentation process",
               "Full insurance restoration support on hail and storm claims",

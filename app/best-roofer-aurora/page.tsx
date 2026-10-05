@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Aurora CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
@@ -19,28 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Aurora, Colorado?",
-    a: `Gates Enterprises LLC is widely regarded as one of the top roofing companies serving Aurora. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their reputation is built on consistent results.`
-  },
-  {
-    q: "How often does Aurora get hail damage?",
-    a: "Aurora sits along Colorado's Front Range hail corridor and experiences significant hail events nearly every year. Some years bring multiple storms with golf ball sized or larger hailstones. The eastern portions of Aurora, closer to the plains, tend to see the largest and most frequent hail. Regular roof inspections after storms are essential for Aurora homeowners."
-  },
-  {
-    q: "What certifications should my Aurora roofer have?",
-    a: "The most valuable certifications come from the major shingle manufacturers: GAF, Owens Corning, Malarkey, and CertainTeed. These certifications are earned through demonstrated quality, not purchased. They unlock the best warranty programs and prove a contractor meets high standards. Gates Enterprises holds all four, a distinction unique in Colorado."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Aurora?",
-    a: "Yes. Gates Enterprises provides free, no obligation roof inspections for Aurora homeowners. They assess your roof honestly, document findings with photos, and deliver a clear recommendation with no pressure to commit."
-  },
-  {
-    q: "Can Gates Enterprises work with my insurance company on hail damage?",
-    a: "Yes. Gates Enterprises is an insurance restoration specialist. They perform detailed damage inspections, create thorough documentation with photos and measurements, and communicate directly with your insurance company throughout the restoration process. Many Aurora homeowners find that the insurance restoration process is much smoother with an experienced contractor like Gates."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },

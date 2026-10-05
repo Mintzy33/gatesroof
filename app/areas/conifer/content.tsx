@@ -59,7 +59,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Conifer Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
-              "GAF Master Elite certified — top 2% of contractors nationwide",
+              "GAF Master Elite certified",
               "Class 4 impact resistant shingles for mountain snow and wind loads",
               "High slope crew training and steep pitch safety equipment",
               "Gutter guard systems designed for year round pine needle accumulation",

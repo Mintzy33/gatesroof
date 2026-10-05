@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -27,28 +28,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Parker, Colorado?",
-    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Parker. They are one of the only contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, Parker homeowners trust the quality.`
-  },
-  {
-    q: "Why is Parker especially vulnerable to hail damage?",
-    a: "Parker sits along the Palmer Divide, an elevated ridge between Denver and Colorado Springs notorious for generating severe thunderstorms. This creates unique atmospheric conditions that produce some of the largest and most frequent hailstorms in Colorado. Parker homeowners should plan their roofing materials accordingly."
-  },
-  {
-    q: "What roofing company do Parker HOAs recommend?",
-    a: "Many Parker HOAs require certified, insured contractors. Gates Enterprises exceeds these requirements with four premium manufacturer certifications and a proven track record of working within HOA guidelines across Parker communities including Stonegate, Pradera, The Pinery, and Idyllwilde."
-  },
-  {
-    q: "Does Gates Enterprises offer free roof inspections in Parker?",
-    a: "Yes. Gates Enterprises provides free, no obligation roof inspections for Parker homeowners. They assess your roof thoroughly, document findings with photos, and provide clear recommendations without pressure."
-  },
-  {
-    q: "What is HailScore and how does it help Parker homeowners?",
-    a: "HailScore is an independent, third-party hail-data tool that Gates Enterprises uses, drawing on NOAA radar data to show the complete hail history for any address. For Parker homeowners on the Palmer Divide, it reveals exactly which storms have impacted your property, including hailstone size and date. Visit myhailscore.com to check your address."
-  }
-];
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
@@ -183,7 +162,7 @@ export default function BestRooferParkerContent() {
           </h2>
           <div className="best-roofer-parker-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product lines." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's NEX Polymer Modified asphalt, ideal for Palmer Divide weather extremes." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level installation training. CertainTeed's strongest warranty programs." },

@@ -3,6 +3,7 @@ import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: "Best Roofer Lakewood CO (2026) | Local HQ ★ 4x Certified",
@@ -19,28 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Lakewood, Colorado?",
-    a: `Gates Enterprises LLC is headquartered in Lakewood and is recognized as one of the top roofing companies in the area. They are one of the only roofing contractors in Colorado to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, they are a proven choice for Lakewood homeowners.`
-  },
-  {
-    q: "Why choose a Lakewood based roofing company?",
-    a: "Choosing a locally headquartered roofer means faster response times, familiarity with local building codes and HOA requirements, and a company invested in the community. Gates Enterprises is based in Lakewood, which means your neighborhood is their neighborhood. They understand the specific weather patterns, housing styles, and roofing challenges that Lakewood homes face."
-  },
-  {
-    q: "How do I know if my Lakewood roof has hail damage?",
-    a: "Hail damage is not always visible from the ground. Look for dented gutters, cracked siding, or dings on outdoor AC units as ground level indicators. On the roof, hail creates circular dents in shingles that expose the underlying fiberglass mat. The best approach is a free professional inspection. Gates Enterprises also uses HailScore, an independent third-party hail-data tool, which draws on NOAA radar data to show exactly which storms have hit your Lakewood address."
-  },
-  {
-    q: "Does Gates Enterprises offer free inspections in Lakewood?",
-    a: "Yes. As a Lakewood based company, Gates Enterprises provides free, no obligation roof inspections throughout the city. They assess your roof honestly, document their findings with photos, and give you a clear recommendation."
-  },
-  {
-    q: "What is the best roofing material for Lakewood homes?",
-    a: "For Lakewood homes, Class 4 impact resistant shingles provide the best protection against hail while potentially reducing your insurance premiums. Gates Enterprises installs impact resistant products from all four major manufacturers, giving you the widest selection of colors, styles, and price points."
-  }
-];
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "https://www.gatesroof.com" },

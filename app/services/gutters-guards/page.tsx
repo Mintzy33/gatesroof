@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import GuttersContent from "./content";
+import { FAQS } from "./faqs";
+import { faqSchema as buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Gutter Installation CO | Seamless ★ Free Estimates",
@@ -28,17 +30,7 @@ const serviceSchema = {
   "areaServed": {"@type": "State", "name": "Colorado"}
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much do seamless gutters cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Seamless aluminum gutters typically cost $6 to $12 per linear foot installed, depending on gauge, size, and accessibility. An average home with 150 to 200 linear feet runs $1,200 to $2,400 for gutters alone. Guards add $3 to $8 per foot."}},
-    {"@type": "Question", "name": "How often should gutters be cleaned?", "acceptedAnswer": {"@type": "Answer", "text": "Without guards, twice a year minimum. Spring and fall. With guards installed, every 2 to 3 years is usually sufficient. Homes with heavy tree coverage may need more frequent attention."}},
-    {"@type": "Question", "name": "Can gutters be installed in winter?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We install gutters year round. Aluminum is easy to work with in cold weather, and there's no sealant or adhesive that needs warm temperatures to cure."}},
-    {"@type": "Question", "name": "What color options are available?", "acceptedAnswer": {"@type": "Answer", "text": "Over 25 standard colors to match virtually any home exterior. We bring a color chart so you can match your trim, fascia, or siding."}},
-    {"@type": "Question", "name": "Are damaged gutters covered by insurance?", "acceptedAnswer": {"@type": "Answer", "text": "If the damage was caused by hail or wind, yes. We include gutter damage in storm damage restorations and document it for your insurance company."}}
-  ]
-};
+const faqSchema = buildFaqSchema(FAQS);
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

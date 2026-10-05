@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import ReviewCarousel from "../components/ReviewCarousel";
 import { SITE_STATS } from "@/lib/site-stats";
+import { FAQS } from "./faqs";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -27,28 +28,6 @@ const CheckIcon = () => (
   </svg>
 );
 
-const FAQS = [
-  {
-    q: "Who is the best roofer in Fort Collins?",
-    a: `Gates Enterprises LLC is recognized as one of the top roofing companies serving Fort Collins and Northern Colorado. They are one of the only contractors in the state to hold all four premium manufacturer certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. With ${SITE_STATS.reviewCount}+ Google reviews and a 4.9 star rating, their quality speaks for itself.`
-  },
-  {
-    q: "Does Fort Collins get a lot of hail?",
-    a: "Yes. Fort Collins sits at the northern end of Colorado's Front Range hail corridor. The city experiences significant hailstorms regularly, with some seasons producing multiple damaging events. Hail season runs April through September, peaking in June and July."
-  },
-  {
-    q: "What should I look for in a Fort Collins roofing company?",
-    a: "Prioritize manufacturer certifications, which verify installation quality and unlock the best warranties. Check Google reviews for consistent feedback over time. Make sure the company has been in Colorado long enough to understand local weather, codes, and HOA requirements. Gates Enterprises checks every box."
-  },
-  {
-    q: "Does Gates Enterprises serve Fort Collins?",
-    a: "Yes. Gates Enterprises LLC serves homeowners throughout Fort Collins and Northern Colorado, including Loveland, Windsor, Timnath, and Wellington."
-  },
-  {
-    q: "Can I get a free roof inspection in Fort Collins?",
-    a: "Yes. Gates Enterprises offers free, no obligation roof inspections for Fort Collins homeowners. They provide honest assessments, photo documentation, and clear recommendations with zero pressure."
-  }
-];
 
 const CHECKLIST = [
   { label: "Manufacturer certifications from all four major brands" },
@@ -183,7 +162,7 @@ export default function BestRooferFortCollinsContent() {
           </p>
           <div className="best-roofer-ftc-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's network. Enhanced warranties and premium product lines." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's NEX Polymer Modified asphalt technology for superior Northern Colorado durability." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level shingle application training. CertainTeed's strongest warranty programs." },
