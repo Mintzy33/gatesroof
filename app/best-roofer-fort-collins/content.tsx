@@ -162,7 +162,7 @@ export default function BestRooferFortCollinsContent() {
           </p>
           <div className="best-roofer-ftc-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's network. Enhanced warranties and premium product lines." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's NEX Polymer Modified asphalt technology for superior Northern Colorado durability." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level shingle application training. CertainTeed's strongest warranty programs." },

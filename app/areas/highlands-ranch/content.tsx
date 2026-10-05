@@ -59,7 +59,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Why Highlands Ranch Homeowners Choose Gates</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {[
-              "GAF Master Elite certified — top 2% of contractors nationwide",
+              "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors",
               "HRCA approved materials knowledge and HOA submission experience",
               "Full insurance restoration support on hail and storm claims",
               "Douglas County permit and inspection coordination",

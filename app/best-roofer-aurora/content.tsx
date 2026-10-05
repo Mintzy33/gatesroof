@@ -162,7 +162,7 @@ export default function BestRooferAuroraContent() {
           </p>
           <div className="best-roofer-aurora-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of roofing contractors in North America. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Access to GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier in Owens Corning's contractor network. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Premium", desc: "Certified expertise in Malarkey's NEX Polymer Modified asphalt technology for superior Colorado durability." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level training in advanced shingle application. Access to CertainTeed's strongest warranty programs." },

@@ -172,7 +172,7 @@ export default function BestRooferHighlandsRanchContent() {
           </p>
           <div className="best-roofer-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Awarded to the top 2% of roofing contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Recognizes contractors who meet the highest standards for professionalism, reliability, and quality. Provides access to Owens Corning's enhanced warranty programs." },
               { name: "Malarkey Emerald Premium", desc: "Certifies expertise in Malarkey's advanced NEX Polymer Modified asphalt technology. Malarkey leads the industry in sustainable, high performance roofing materials." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Requires completion of master level training in advanced shingle application. Qualifies homeowners for CertainTeed's best warranty coverage." },

@@ -68,7 +68,7 @@ export default function Home() {
           <div>
               <div className="hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 100, padding: "7px 16px", marginBottom: 24 }}>
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#4ADE80", display: "inline-block" }} />
-                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.85)" }}>GAF Master Elite, Top 2% in North America</span>
+                <span style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.85)" }}>Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors</span>
               </div>
               <h1 className="hero-h1" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 4.5vw, 62px)", fontWeight: 800, color: WHITE, lineHeight: 1.06, margin: "0 0 20px" }}>
                 Colorado&apos;s Most{" "}<span style={{ background: `linear-gradient(135deg, ${ACCENT}, #60A5FA)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Trusted</span><br />Roofing Team
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <StaggerCards className="why-cards" stagger={0.1} distance={40}>
               {[
-                { n: "01", t: "Top 2% Nationwide", d: "GAF Master Elite. Highest training, best warranties.", c: ACCENT },
+                { n: "01", t: "GAF Master Elite", d: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Highest training, best warranties.", c: ACCENT },
                 { n: "02", t: "Insurance Fighters", d: "Recovered millions in supplements. We know what adjusters miss.", c: ACCENT },
                 { n: "03", t: "One Stop Exterior", d: "Roof, siding, gutters. One company, one warranty.", c: ACCENT },
                 { n: "04", t: "Lakewood Local", d: "Not a storm chaser. We live and work here.", c: ACCENT },
@@ -291,7 +291,7 @@ export default function Home() {
           </ScrollReveal>
           <StaggerCards className="cert-grid" stagger={0.1} distance={40}>
             {[
-              { t: "GAF Master Elite", d: "Top 2% of roofers nationwide. Unlocks the GAF Golden Pledge warranty — 25 years on labor, 50 years on materials. The strongest warranty in roofing." },
+              { t: "GAF Master Elite", d: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocks the GAF Golden Pledge warranty — 25 years on labor, 50 years on materials. The strongest warranty in roofing." },
               { t: "Owens Corning Preferred", d: "Preferred contractor status means access to the Total Protection Roofing System and extended warranties most contractors can't offer." },
               { t: "Malarkey Emerald Premium", d: "Certified installer of Malarkey's impact-resistant shingles — engineered specifically for Colorado's extreme hail." },
               { t: "CertainTeed ShingleMaster", d: "Advanced training in CertainTeed's premium product line. SureStart Plus warranty coverage for complete peace of mind." },

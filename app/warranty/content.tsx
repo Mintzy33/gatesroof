@@ -43,7 +43,7 @@ const MANUFACTURERS = [
       "Transferable to subsequent homeowner",
       "Only available through GAF Master Elite certified contractors",
     ],
-    description: "The Golden Pledge Warranty is the strongest warranty GAF offers. It provides 50 years of non prorated coverage on materials and 25 years of workmanship coverage, all at no additional cost when installed by a Master Elite contractor like Gates Enterprises. Less than 2% of roofing contractors in North America qualify for this certification.",
+    description: "The Golden Pledge Warranty is the strongest warranty GAF offers. It provides 50 years of non prorated coverage on materials and 25 years of workmanship coverage, all at no additional cost when installed by a Master Elite contractor like Gates Enterprises. Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors.",
   },
   {
     name: "Owens Corning Preferred",

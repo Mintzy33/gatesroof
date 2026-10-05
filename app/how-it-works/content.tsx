@@ -316,7 +316,7 @@ export default function HowItWorksContent() {
               </h3>
               <div className="certs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 16 }}>
                 {[
-                  { name: "GAF Master Elite", detail: "Top 2% of roofers nationwide" },
+                  { name: "GAF Master Elite", detail: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors" },
                   { name: "Owens Corning Preferred", detail: "Preferred contractor network" },
                   { name: "Malarkey Emerald Premium", detail: "Highest Malarkey tier" },
                   { name: "CertainTeed ShingleMaster", detail: "Advanced certification" },

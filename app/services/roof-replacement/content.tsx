@@ -145,7 +145,7 @@ export default function RoofReplacementContent() {
                 </h2>
                 <div style={{ width: 48, height: 3, background: GOLD, borderRadius: 2, marginBottom: 24 }} />
                 <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, lineHeight: 1.85, color: "rgba(255,255,255,0.8)", maxWidth: 700, margin: 0 }}>
-                  As a GAF Master Elite contractor (top 2% in the country), we can offer the GAF Golden Pledge warranty. This is the strongest warranty in residential roofing. It covers materials for 50 years and includes 25 years of workmanship coverage, backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. That&apos;s a level of protection most contractors simply cannot offer.
+                  Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. As a GAF Master Elite contractor, we can offer the GAF Golden Pledge warranty. This is the strongest warranty in residential roofing. It covers materials for 50 years and includes 25 years of workmanship coverage, backed directly by GAF, not by us. If Gates Enterprises ever closed its doors, your warranty would still stand. That&apos;s a level of protection most contractors simply cannot offer.
                 </p>
               </div>
             </div>

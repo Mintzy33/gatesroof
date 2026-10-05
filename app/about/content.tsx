@@ -17,7 +17,7 @@ const TEXT_LIGHT = "#64748B";
 const MILESTONES = [
   { y: "2014", t: "Gates Enterprises Founded", d: "One truck. One ladder. One promise: treat every roof like it's your mom's house." },
   { y: "2016", t: "1,000 Roofs Completed", d: "Grew entirely through referrals. No ads, no gimmicks. Just good work." },
-  { y: "2018", t: "GAF Master Elite Certified", d: "Joined the top 2% of roofing contractors in North America. Unlocked the Golden Pledge Lifetime Warranty for our customers." },
+  { y: "2018", t: "GAF Master Elite Certified", d: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Unlocked the Golden Pledge Lifetime Warranty for our customers." },
   { y: "2020", t: "Quadruple Manufacturer Certified", d: "Earned GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. Only 1% of contractors hold all four." },
   { y: "2022", t: "5,000 Roofs and Millions Recovered", d: "Surpassed 5,000 completed projects. Recovered millions in insurance supplements that adjusters tried to deny." },
   { y: "2024", t: "Full Exterior Services Launched", d: "Expanded beyond roofing into siding, gutters, windows, and paint. One contractor for everything above your foundation." },
@@ -293,7 +293,7 @@ export default function AboutContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, color: TEXT_LIGHT, lineHeight: 1.7, maxWidth: 600, margin: "0 auto 48px" }}>Only 1% of roofing contractors in the U.S. hold all four of these certifications.</p>
           <div className="certs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }}>
             {[
-              { Icon: Shield, name: "GAF Master Elite", desc: "Top 2% of contractors nationwide. Qualifies homeowners for the Golden Pledge Limited Lifetime Warranty with 25 years of workmanship coverage and 10 years of 100% material defect coverage." },
+              { Icon: Shield, name: "GAF Master Elite", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite® Contractors. Qualifies homeowners for the Golden Pledge Limited Lifetime Warranty with 25 years of workmanship coverage and 10 years of 100% material defect coverage." },
               { Icon: Award, name: "Owens Corning Preferred", desc: "Preferred Protection Limited Lifetime Warranty with up to 25 years of workmanship coverage. Only available through Owens Corning Preferred contractors." },
               { Icon: Leaf, name: "Malarkey Emerald Premium", desc: "Emerald Premium Warranty includes a limited lifetime material warranty plus 25 years of workmanship coverage. Eco-friendly shingles made with upcycled materials." },
               { Icon: Star, name: "CertainTeed ShingleMaster", desc: "5 Star extended warranty with 25 years of workmanship coverage backed directly by CertainTeed. Requires advanced installation training." },

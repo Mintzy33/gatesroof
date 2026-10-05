@@ -165,7 +165,7 @@ export default function BestRooferColoradoSpringsContent() {
           </p>
           <div className="best-roofer-cos-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors in North America. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. Unlocks GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier of Owens Corning's contractor network. Access to enhanced warranty programs and premium product lines." },
               { name: "Malarkey Emerald Premium", desc: "Certified expertise in Malarkey's NEX Polymer Modified asphalt technology for superior durability in Colorado's extreme conditions." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level training in advanced shingle application. Qualifies homeowners for CertainTeed's strongest warranty programs." },

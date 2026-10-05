@@ -159,7 +159,7 @@ export default function BestRooferLakewoodContent() {
           </h2>
           <div className="best-roofer-lkwd-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[
-              { name: "GAF Master Elite\u00AE", desc: "Top 2% of contractors nationwide. GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
+              { name: "GAF Master Elite\u00AE", desc: "Only 2% of roofers in North America are invited to become GAF Master Elite\u00AE Contractors. GAF's Golden Pledge Limited Warranty with 25 year workmanship coverage." },
               { name: "Owens Corning Preferred", desc: "Highest tier contractor status. Enhanced warranty programs and premium product access." },
               { name: "Malarkey Emerald Premium", desc: "Certified in Malarkey's advanced NEX Polymer Modified technology for Colorado's demanding climate." },
               { name: "CertainTeed ShingleMaster\u2122", desc: "Master level installation training. CertainTeed's strongest warranty programs." },

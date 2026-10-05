@@ -969,7 +969,7 @@ export const blogPosts: BlogPost[] = [
       "Anyone with a truck and a ladder can call themselves a roofing contractor. Colorado does not require a state roofing license, which means the barrier to entry is extremely low. That makes it even more important to verify a company's credentials before signing anything.",
       "Manufacturer Certifications",
       "The single most reliable indicator of quality is manufacturer certification. Companies like GAF, CertainTeed, Malarkey, and Owens Corning all have certification programs that require contractors to meet strict standards for training, workmanship, business stability, and customer satisfaction.",
-      "These are not easy certifications to earn. GAF's Master Elite program, for example, is only available to the top 2% of roofing contractors nationwide. CertainTeed's ShingleMaster is similarly exclusive.",
+      "These are not easy certifications to earn. GAF says only 2% of roofers in North America are invited to become Master Elite contractors. CertainTeed's ShingleMaster is similarly exclusive.",
       "Gates Enterprises is one of the only roofing companies in Colorado that hold all four major certifications: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster [LINK: certifications]. We mention this not to brag, but because it matters to you directly. Higher certifications mean better warranties, better materials, and better trained installers.",
       "Insurance and Workers' Compensation",
       "Always ask for proof of general liability insurance and workers' compensation coverage. If a worker gets injured on your property and the company does not carry workers' comp, you could be held liable. This is not hypothetical. It happens.",
