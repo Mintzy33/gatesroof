@@ -206,7 +206,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>Quadruple Manufacturer Certified.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
+              Gates Enterprises holds four: GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster. For Denver homeowners, this means access to the best warranty programs and highest quality roofing materials on the market.
             </p>
           </div>
 
@@ -302,7 +302,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified: What That Means for Denver Homeowners
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>
-            With thousands of roofing contractors operating in the Denver metro, credentials matter. Gates Enterprises LLC holds four premium manufacturer certifications, a distinction achieved by fewer than 2% of roofers nationwide. These certifications are not purchased. They are earned through rigorous vetting, ongoing training, proven customer satisfaction, and demonstrated installation excellence.
+            With thousands of roofing contractors operating in the Denver metro, credentials matter. Gates Enterprises LLC holds four premium manufacturer certifications. These certifications are not purchased. They are earned through rigorous vetting, ongoing training, proven customer satisfaction, and demonstrated installation excellence.
           </p>
           <div className="denver-certs-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
             {CERTIFICATIONS.map((cert, i) => (

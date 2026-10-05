@@ -182,7 +182,7 @@ export default function BestRooferColoradoSpringsContent() {
             Four Certifications. One Colorado Roofer.
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Fewer than 2% of roofers nationwide hold even one premium manufacturer certification. Gates Enterprises holds all four, giving Colorado Springs homeowners access to the best products and warranties from every major manufacturer.
+            Gates Enterprises holds all four, giving Colorado Springs homeowners access to the best products and warranties from every major manufacturer.
           </p>
           <div className="best-roofer-cos-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[

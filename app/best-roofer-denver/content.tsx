@@ -189,7 +189,7 @@ export default function BestRooferDenverContent() {
             One of the Only Quadruple Certified Roofers in Colorado
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Fewer than 2% of roofing contractors in the United States hold even one premium manufacturer certification. Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that very few roofing companies in Colorado can match.
+            Gates Enterprises LLC holds all four. This is not a marketing claim. It is a verifiable fact that very few roofing companies in Colorado can match.
           </p>
           <div className="best-roofer-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
             {[

@@ -104,7 +104,7 @@ export default function WhyGatesContent() {
             What Sets Us Apart: Four Certifications Very Few Colorado Roofers Hold
           </h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
-            Manufacturer certifications are the roofing industry's highest endorsement. They are not purchased. They are earned through demonstrated installation excellence, business stability, customer satisfaction, and ongoing training. Fewer than 2% of roofers nationwide hold even one premium certification. Gates Enterprises holds all four. Our guide to <Link href="/blog/most-certified-roofing-contractor-colorado" style={{ color: ACCENT, fontWeight: 600 }}>the most certified roofing contractor in Colorado</Link> breaks down what each certification actually requires.
+            Manufacturer certifications are the roofing industry's highest endorsement. They are not purchased. They are earned through demonstrated installation excellence, business stability, customer satisfaction, and ongoing training. Gates Enterprises holds all four. Our guide to <Link href="/blog/most-certified-roofing-contractor-colorado" style={{ color: ACCENT, fontWeight: 600 }}>the most certified roofing contractor in Colorado</Link> breaks down what each certification actually requires.
           </p>
 
           <div className="why-gates-certs" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 40 }}>

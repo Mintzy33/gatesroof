@@ -153,7 +153,7 @@ export default function StormChasersContent() {
               { title: "No Accountability", desc: "If something goes wrong with the installation, a local contractor has a reputation to protect. A storm chaser has no local reviews, no community ties, and no reason to come back and make it right." },
               { title: "High-Pressure Sales Tactics", desc: "Storm chasers rely on urgency and fear. They want you to sign before you have time to research or get other estimates. Legitimate roofing companies give you time to make an informed decision." },
               { title: "Subcontractor Roulette", desc: "Many storm chasers hire temporary local labor to do the actual work. You have no idea who is on your roof, what their qualifications are, or whether they will follow manufacturer installation guidelines." },
-              { title: "Deductible Fraud Risk", desc: "Offering to pay or waive your insurance deductible is illegal in Colorado. Storm chasers who make this offer are putting you at legal risk and signaling that they do not operate ethically." },
+              { title: "Deductible Waiver Risk", desc: "Colorado law (C.R.S. 6-22-105) prohibits contractors from paying or waiving a homeowner's deductible. Storm chasers who make this offer are signaling that they do not operate ethically." },
             ].map((risk, i) => (
               <div key={i} style={{ display: "flex", gap: 16, background: WHITE, borderRadius: 12, padding: "24px", border: "1px solid rgba(13,33,55,0.06)" }}>
                 <WarningIcon />

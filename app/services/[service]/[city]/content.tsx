@@ -153,24 +153,33 @@ export default function ServiceCityContent({
         }}
       >
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <Link
-            href="/"
-            style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 13,
-              color: "rgba(255,255,255,0.5)",
-              textDecoration: "none",
-            }}
-          >
-            Home → Services →{" "}
-            <Link
-              href={`/services/${service.parentSlug}`}
-              style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+          {/* Inline span (not a styled block) keeps the original line-box height. */}
+          <nav aria-label="Breadcrumb">
+            <span
+              style={{
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 13,
+                color: "rgba(255,255,255,0.5)",
+              }}
             >
-              {service.service}
-            </Link>{" "}
-            → {city.city}
-          </Link>
+              <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+                Home
+              </Link>
+              {" → "}
+              <Link href="/services" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+                Services
+              </Link>
+              {" → "}
+              <Link
+                href={`/services/${service.parentSlug}`}
+                style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}
+              >
+                {service.service}
+              </Link>
+              {" → "}
+              {city.city}
+            </span>
+          </nav>
 
           <h1
             style={{

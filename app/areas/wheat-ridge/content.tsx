@@ -37,7 +37,7 @@ export default function CityContent() {
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Your Local Wheat Ridge Roofing Experts</h2>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Wheat Ridge is undergoing a genuine transformation. What was once a quiet bedroom community of mid century ranch homes is becoming one of the most active renovation markets in the Jefferson County area. New buyers are discovering the neighborhood's potential, updating interiors and exteriors alike — and the roof is almost always part of that conversation. Many of Wheat Ridge's cedar shake roofs from the 1940s through 1960s are well past their functional lifespan and are now being replaced with modern Class 4 impact resistant asphalt shingles that perform far better in Colorado's hail environment.</p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 24 }}>Gates Enterprises is based just minutes away in Lakewood, which means faster response times, lower mobilization costs, and crews who know the neighborhood well. We've completed dozens of projects in Wheat Ridge and understand the character of these homes — their construction, their quirks, and how to approach them with the care they deserve.</p>
-          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>Whether you're a longtime Wheat Ridge homeowner ready to finally replace that aging shake roof, or a new buyer bringing a property up to date, we bring the same certified installation standards to every project. Jefferson County permits are pulled and coordinated on your behalf, and every job closes with a passed county inspection.</p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 40 }}>Whether you're a longtime Wheat Ridge homeowner ready to finally replace that aging shake roof, or a new buyer bringing a property up to date, we bring the same certified installation standards to every project.</p>
           <h2 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 30, fontWeight: 800, color: NAVY, marginBottom: 20 }}>Our Services in Wheat Ridge</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 48 }}>
             {[
@@ -62,7 +62,7 @@ export default function CityContent() {
               "Headquartered minutes away in Lakewood — fast response times",
               "Cedar shake to modern shingle conversion expertise",
               "GAF Master Elite certified — top 2% of contractors nationwide",
-              "Jefferson County permit and inspection coordination",
+              "We pull the required local reroofing permit",
               "thousands of roofs completed across the Denver metro",
               `4.9 star Google rating from ${SITE_STATS.reviewCount}+ verified reviews`,
               "Class 4 impact resistant materials for Colorado hail protection",
