@@ -71,7 +71,7 @@ import Script from "next/script";  // ❌ for JSON-LD
 
 | Type | Where rendered |
 |---|---|
-| `RoofingContractor` / `LocalBusiness` | `app/layout.tsx` (site-wide) |
+| `RoofingContractor` / `LocalBusiness` | `app/layout.tsx` (site-wide, `@id …/#organization`). The 27 `app/areas/*` pages add only an `areaServed` reference to that same `@id` — never a second business node with its own address/geo |
 | `Organization` | `app/layout.tsx` |
 | `WebSite` + `SiteNavigationElement` | `app/layout.tsx` |
 | `FAQPage` | Homepage + landing pages + blog (per-page) |
