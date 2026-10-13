@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Castle Rock CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Castle Rock's top rated roofing team. 7,200+ roofs, four manufacturer certifications, and insurance claims support. Free estimate. (720) 766-3377",
+  description: `Castle Rock's top rated roofing team. ${SITE_STATS.totalRoofs} roofs, four manufacturer certifications, and insurance claims support. Free estimate. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-castle-rock" },
   openGraph: {
     title: `Best Roofer Castle Rock CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Castle Rock's top rated roofing team. 7,200+ roofs, four manufacturer certifications, and insurance claims support. Free estimate. (720) 766-3377",
+    description: `Castle Rock's top rated roofing team. ${SITE_STATS.totalRoofs} roofs, four manufacturer certifications, and insurance claims support. Free estimate. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-castle-rock",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import WhyGatesContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { FAQS } from "./faqs";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-  description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.",
+  title: `Why Gates Enterprises? | 4x Certified, ${SITE_STATS.totalRoofs} Roofs`,
+  description: `Why Colorado homeowners choose Gates Enterprises. 4x certified, ${SITE_STATS.totalRoofs} roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.`,
   alternates: { canonical: "https://www.gatesroof.com/why-gates-enterprises" },
   openGraph: {
-    title: "Why Gates Enterprises? | 4x Certified, 7,200+ Roofs",
-    description: "Why Colorado homeowners choose Gates Enterprises. 4x certified, 7,200+ roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.",
+    title: `Why Gates Enterprises? | 4x Certified, ${SITE_STATS.totalRoofs} Roofs`,
+    description: `Why Colorado homeowners choose Gates Enterprises. 4x certified, ${SITE_STATS.totalRoofs} roofs, NOAA hail history via the independent third-party HailScore tool, and warranties others cannot offer.`,
     url: "https://www.gatesroof.com/why-gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

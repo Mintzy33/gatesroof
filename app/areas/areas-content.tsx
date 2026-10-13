@@ -458,7 +458,7 @@ export default function AreasContent() {
             >
               {[
                 { value: 30, suffix: "+", label: "Cities Served" },
-                { value: 7200, suffix: "+", label: "Roofs Completed" },
+                { value: SITE_STATS.totalRoofsNumber, suffix: "+", label: "Roofs Completed" },
                 { value: SITE_STATS.reviewCount, suffix: "", label: "Reviews" },
               ].map((stat, i) => (
                 <div

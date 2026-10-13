@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   title:
     "Gates Enterprises LLC | Colorado's Most Certified Roofing Company",
   description:
-    "Gates Enterprises LLC has completed 7,200+ roofs across 65+ Colorado cities since 2014. GAF, Owens Corning, Malarkey, and CertainTeed certified.",
+    `Gates Enterprises LLC has completed ${SITE_STATS.totalRoofs} roofs across 65+ Colorado cities since 2014. GAF, Owens Corning, Malarkey, and CertainTeed certified.`,
   alternates: {
     canonical: "https://www.gatesroof.com/about/gates-enterprises",
   },
   openGraph: {
     title: "Gates Enterprises LLC | Colorado's Most Certified Roofing Company",
     description:
-      "Gates Enterprises LLC has completed 7,200+ roofs across 65+ Colorado cities since 2014. GAF, Owens Corning, Malarkey, and CertainTeed certified.",
+      `Gates Enterprises LLC has completed ${SITE_STATS.totalRoofs} roofs across 65+ Colorado cities since 2014. GAF, Owens Corning, Malarkey, and CertainTeed certified.`,
     url: "https://www.gatesroof.com/about/gates-enterprises",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

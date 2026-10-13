@@ -114,7 +114,7 @@ export default function BestRooferHighlandsRanchContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>3. Local Experience and Longevity</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best Highlands Ranch roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2014 and has completed over 7,200 projects.
+              Colorado's climate is tough on roofs. Between intense UV exposure at altitude, rapid temperature swings, and severe hailstorms, a roofer needs to understand the specific challenges of Colorado's Front Range. Storm chasers come and go after every hail season. The best Highlands Ranch roofers are the ones who have been here for years and will still be here when you need warranty service. Gates Enterprises has been roofing along the Front Range since 2014 and has completed {SITE_STATS.totalRoofs} projects.
             </p>
           </div>
 

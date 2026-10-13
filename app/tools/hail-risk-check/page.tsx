@@ -25,11 +25,7 @@ const webAppSchema = {
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "All",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "provider": {
-    "@type": "RoofingContractor",
-    "name": "Gates Enterprises LLC",
-    "url": "https://www.gatesroof.com",
-  },
+  "provider": { "@id": "https://www.gatesroof.com/#organization" },
 };
 
 const breadcrumbSchema = {

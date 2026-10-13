@@ -180,7 +180,7 @@ export default function CityContent() {
             Quadruple Manufacturer Certified. {SITE_STATS.reviewCount}+ Google Reviews. Serving Northern Colorado for 10+ Years.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Fort Collins sits at the northern end of Colorado's Front Range, where storms forming along the foothills produce some of the most frequent and severe hail in the state. With a population of roughly 175,000 and rapid growth pushing east into Timnath and beyond, thousands of homes face hail damage every season. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across {SITE_STATS.reviewCount}+ Google reviews, and has completed 7,200+ roofs across Colorado. From historic bungalows in Old Town to new construction in Rigden Farm, we deliver the same quality and care on every project.
+            Fort Collins sits at the northern end of Colorado's Front Range, where storms forming along the foothills produce some of the most frequent and severe hail in the state. With a population of roughly 175,000 and rapid growth pushing east into Timnath and beyond, thousands of homes face hail damage every season. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials, not just a truck and a ladder. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across {SITE_STATS.reviewCount}+ Google reviews, and has completed {SITE_STATS.totalRoofs} roofs across Colorado. From historic bungalows in Old Town to new construction in Rigden Farm, we deliver the same quality and care on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -220,7 +220,7 @@ export default function CityContent() {
           <div style={{ marginBottom: 36 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>10+ Years on Colorado's Front Range.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC was founded in 2014 and has completed over 7,200 roofing and exterior projects across the Front Range. We understand Fort Collins' building codes, its strict green building standards, HOA requirements, and the unique challenges that come with both historic Old Town homes and rapid new construction in areas like Timnath and east Fort Collins.
+              Gates Enterprises LLC was founded in 2014 and has completed {SITE_STATS.totalRoofs} roofing and exterior projects across the Front Range. We understand Fort Collins' building codes, its strict green building standards, HOA requirements, and the unique challenges that come with both historic Old Town homes and rapid new construction in areas like Timnath and east Fort Collins.
             </p>
           </div>
 

@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import RoofReplacementContent from "./content";
 import { FAQS } from "./faqs";
 import { faqSchema as buildFaqSchema } from "@/lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
-  description: "Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with 7,200+ installs. Get a free estimate. (720) 766-3377",
+  description: `Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with ${SITE_STATS.totalRoofs} installs. Get a free estimate. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/services/roof-replacement" },
   openGraph: {
     title: "Roof Replacement CO | 4x Certified ★ Free Estimates",
-    description: "Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with 7,200+ installs. Get a free estimate. (720) 766-3377",
+    description: `Colorado roof replacement backed by up to 50-year manufacturer warranties. 4x certified with ${SITE_STATS.totalRoofs} installs. Get a free estimate. (720) 766-3377`,
     url: "https://www.gatesroof.com/services/roof-replacement",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

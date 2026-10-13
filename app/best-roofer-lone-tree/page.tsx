@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Lone Tree CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. 7,200+ roofs. Free estimate. (720) 766-3377",
+  description: `Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. ${SITE_STATS.totalRoofs} roofs. Free estimate. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-lone-tree" },
   openGraph: {
     title: `Best Roofer Lone Tree CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. 7,200+ roofs. Free estimate. (720) 766-3377",
+    description: `Lone Tree's top rated roofer. Premium materials, insurance claims support, and 4x manufacturer certifications. ${SITE_STATS.totalRoofs} roofs. Free estimate. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-lone-tree",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

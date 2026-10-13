@@ -9,6 +9,7 @@ import { Search, FileText, Shield, Hammer, CheckCircle, Award, ShieldCheck, MapP
 import AnswerCapsule from "../../components/AnswerCapsule";
 import StormLeadForm from "./StormLeadForm";
 import { FAQS } from "./faqs";
+import { SITE_STATS } from "@/lib/site-stats";
 
 const NAVY = "#06263f";
 const DEEP = "#0D2137";
@@ -65,7 +66,7 @@ export default function StormContent() {
             Colorado Storm Damage and Hail Repair You Can Trust
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 12, maxWidth: 700 }}>
-            Fast response, expert craftsmanship from a team that has replaced 7,200+ roofs across the Front Range.
+            Fast response, expert craftsmanship from a team that has replaced {SITE_STATS.totalRoofs} roofs across the Front Range.
           </p>
           {/* Urgency bar */}
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(37,99,235,0.25)", border: "1px solid rgba(37,99,235,0.5)", borderRadius: 100, padding: "8px 18px", marginBottom: 28 }}>

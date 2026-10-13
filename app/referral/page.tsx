@@ -149,7 +149,7 @@ export default function ReferralPage() {
           </ScrollReveal>
           <StaggerCards className="referral-why-grid" stagger={0.1} distance={40}>
             {[
-              { n: "7,200+", t: "Roofs Completed", d: "More experience than virtually any roofer in Colorado." },
+              { n: SITE_STATS.totalRoofs, t: "Roofs Completed", d: "More experience than virtually any roofer in Colorado." },
               { n: `${SITE_STATS.reviewCount}+`, t: "Google Reviews", d: "4.9 stars on Google. Our reputation speaks for itself." },
               { n: "4x", t: "Manufacturer Certified", d: "One of the only companies in Colorado with all four major certifications." },
               { n: "100%", t: "Free Inspections", d: "No cost, no obligation. We assist you through the insurance process." },

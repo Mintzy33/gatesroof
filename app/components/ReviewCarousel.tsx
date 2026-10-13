@@ -23,7 +23,7 @@ const GoogleG = () => (
 );
 
 const StarIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill={GOLD} stroke="none">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill={GOLD} stroke="none" aria-hidden="true">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
   </svg>
 );
@@ -56,6 +56,10 @@ function ReviewCard({ r }: { r: ReviewCardReview }) {
       flexShrink: 0,
     }}>
       <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
+        {/* The stars are decorative SVGs; this is the rating crawlers and screen readers get. */}
+        <span style={{ position: "absolute", width: 1, height: 1, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", border: 0 }}>
+          Rated {r.rating} out of 5 stars
+        </span>
         {Array.from({ length: r.rating }).map((_, j) => (
           <StarIcon key={j} />
         ))}

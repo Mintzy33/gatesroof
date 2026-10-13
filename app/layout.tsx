@@ -29,12 +29,12 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
-  description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
+  description: `Trusted Colorado roofer with ${SITE_STATS.totalRoofs} roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377`,
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com/" },
   openGraph: {
     title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
-    description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
+    description: `Trusted Colorado roofer with ${SITE_STATS.totalRoofs} roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377`,
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
-    description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
+    description: `Trusted Colorado roofer with ${SITE_STATS.totalRoofs} roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377`,
     images: ["https://www.gatesroof.com/og-image.jpg"],
   },
 };

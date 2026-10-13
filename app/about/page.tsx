@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import AboutContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "About Gates Enterprises | 4x Certified CO Roofer",
   description:
-    "Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. 7,200+ roofs, 10+ years locally operated. Meet our team.",
+    `Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. ${SITE_STATS.totalRoofs} roofs, 10+ years locally operated. Meet our team.`,
   alternates: { canonical: "https://www.gatesroof.com/about" },
   openGraph: {
     title: "About Gates Enterprises | 4x Certified CO Roofer",
-    description: "Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. 7,200+ roofs, 10+ years locally operated. Meet our team.",
+    description: `Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. ${SITE_STATS.totalRoofs} roofs, 10+ years locally operated. Meet our team.`,
     url: "https://www.gatesroof.com/about",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Gates Enterprises | 4x Certified CO Roofer",
-    description: "Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. 7,200+ roofs, 10+ years locally operated. Meet our team.",
+    description: `Learn about Gates Enterprises, Colorado's 4x manufacturer certified roofing company. ${SITE_STATS.totalRoofs} roofs, 10+ years locally operated. Meet our team.`,
     images: ["https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov"],
   },
 };

@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import InsuranceClaimsContent from "./content";
 import { FAQS } from "./faqs";
 import { faqSchema as buildFaqSchema } from "@/lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Roof Insurance Claims CO | We Fight for You ★",
-  description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. 7,200+ claims handled. (720) 766-3377",
+  description: `We support you through your roof insurance claim: adjuster meetings, supplements and claims support. ${SITE_STATS.totalRoofs} claims handled. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/insurance-claims" },
   openGraph: {
     title: "Roof Insurance Claims CO | We Fight for You ★",
-    description: "We support you through your roof insurance claim: adjuster meetings, supplements and claims support. 7,200+ claims handled. (720) 766-3377",
+    description: `We support you through your roof insurance claim: adjuster meetings, supplements and claims support. ${SITE_STATS.totalRoofs} claims handled. (720) 766-3377`,
     url: "https://www.gatesroof.com/insurance-claims",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

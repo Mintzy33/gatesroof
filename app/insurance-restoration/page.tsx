@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import InsuranceRestorationContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { FAQS } from "./faqs";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Insurance Restoration Roofer CO | 4x Certified ★",
-  description: "Insurance roof restoration in Colorado. Free inspections, adjuster meeting support, and quality repairs. 4x certified with 7,200+ completed projects.",
+  description: `Insurance roof restoration in Colorado. Free inspections, adjuster meeting support, and quality repairs. 4x certified with ${SITE_STATS.totalRoofs} completed projects.`,
   alternates: { canonical: "https://www.gatesroof.com/insurance-restoration" },
   openGraph: {
     title: "Insurance Restoration Roofer CO | 4x Certified ★",
-    description: "Insurance roof restoration in Colorado. Free inspections, adjuster meeting support, and quality repairs. 4x certified with 7,200+ completed projects.",
+    description: `Insurance roof restoration in Colorado. Free inspections, adjuster meeting support, and quality repairs. 4x certified with ${SITE_STATS.totalRoofs} completed projects.`,
     url: "https://www.gatesroof.com/insurance-restoration",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

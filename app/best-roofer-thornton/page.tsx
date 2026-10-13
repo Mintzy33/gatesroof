@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Thornton CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Thornton's top rated roofer. North Metro hail and storm repair specialists. 7,200+ completed projects, 4.9 stars. Free inspection. (720) 766-3377",
+  description: `Thornton's top rated roofer. North Metro hail and storm repair specialists. ${SITE_STATS.totalRoofs} completed projects, 4.9 stars. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-thornton" },
   openGraph: {
     title: `Best Roofer Thornton CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Thornton's top rated roofer. North Metro hail and storm repair specialists. 7,200+ completed projects, 4.9 stars. Free inspection. (720) 766-3377",
+    description: `Thornton's top rated roofer. North Metro hail and storm repair specialists. ${SITE_STATS.totalRoofs} completed projects, 4.9 stars. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-thornton",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

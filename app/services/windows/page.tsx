@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import WindowsContent from "./content";
 import { FAQS } from "./faqs";
 import { faqSchema as buildFaqSchema } from "@/lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Window Replacement CO | Energy Efficient ★ Free Quote",
-  description: "Vinyl, fiberglass, and wood window replacement in Colorado. Lower energy bills and improve comfort. Locally operated, 7,200+ projects. Free quote today.",
+  description: `Vinyl, fiberglass, and wood window replacement in Colorado. Lower energy bills and improve comfort. Locally operated, ${SITE_STATS.totalRoofs} projects. Free quote today.`,
   alternates: { canonical: "https://www.gatesroof.com/services/windows" },
   openGraph: {
     title: "Window Replacement CO | Energy Efficient ★ Free Quote",
-    description: "Vinyl, fiberglass, and wood window replacement in Colorado. Lower energy bills and improve comfort. Locally operated, 7,200+ projects. Free quote today.",
+    description: `Vinyl, fiberglass, and wood window replacement in Colorado. Lower energy bills and improve comfort. Locally operated, ${SITE_STATS.totalRoofs} projects. Free quote today.`,
     url: "https://www.gatesroof.com/services/windows",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

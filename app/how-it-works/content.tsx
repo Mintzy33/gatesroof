@@ -165,7 +165,7 @@ const STEPS = [
 
 const STATS = [
   { value: "4x", label: "Manufacturer Certified" },
-  { value: "7,200+", label: "Roofs Completed" },
+  { value: SITE_STATS.totalRoofs, label: "Roofs Completed" },
   { value: "4.9", label: "Star Rating", hasStar: true },
   { value: String(SITE_STATS.reviewCount), label: "Customer Reviews" },
 ];
