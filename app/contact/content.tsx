@@ -283,9 +283,8 @@ export default function ContactContent() {
               <div style={{ background: LIGHT_BG, borderRadius: 24, padding: "36px 32px", border: "1px solid rgba(13,33,55,0.04)" }}>
                 <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: DEEP, marginBottom: 16 }}>Office Hours</h3>
                 <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, color: TEXT_LIGHT, lineHeight: 2 }}>
-                  Monday through Friday: 8:00 AM to 5:00 PM<br />
-                  Saturday: By appointment<br />
-                  Sunday: Closed
+                  Mon–Sat 7 AM–7 PM<br />
+                  Sun closed
                 </div>
               </div>
 

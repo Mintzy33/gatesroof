@@ -1019,7 +1019,7 @@ export default function GatesEnterprisesPage() {
                   color: TEXT,
                 }}
               >
-                Mon-Fri 8am-5pm, Sat by appointment
+                Mon–Sat 7 AM–7 PM, Sun closed
               </span>
             </div>
             <div style={{ marginTop: 12, display: "flex", gap: 16 }}>
