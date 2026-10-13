@@ -100,8 +100,11 @@ freshness dates are git-derived.
 2. Rewrite `content.tsx` with **genuinely unique local content** — that city's hail
    history, neighborhoods, roof stock, city-specific FAQs. Thin find-and-replace
    templates get ignored by both Google and answer engines; uniqueness is the point.
-3. In `page.tsx`: update metadata/canonical, the `citySchema` object (geo coordinates,
-   `areaServed`), breadcrumb + FAQ calls. Keep `<PageSchema route="/areas/<city>" />`
+3. In `page.tsx`: update metadata/canonical, the `citySchema` `areaServed` (that city only),
+   breadcrumb + FAQ calls. `citySchema` is a *reference* to the main business
+   (`@id https://www.gatesroof.com/#organization`, 2026-10-13) — Google merges it into the
+   layout entity, so never put address, geo, url, telephone, image, serviceArea, description
+   or aggregateRating on it (a city address/geo there gives the one business two locations). Keep `<PageSchema route="/areas/<city>" />`
    and the native `<script type="application/ld+json" dangerouslySetInnerHTML>` tags.
 4. Add the city slug to the `areas` array in `app/sitemap.ts` (the sitemap is
    data-derived by design — never hand-add URL entries elsewhere in it).

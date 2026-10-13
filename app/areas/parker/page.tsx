@@ -24,26 +24,10 @@ const citySchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.gatesroof.com/areas/parker#localbusiness",
+      "@type": "RoofingContractor",
+      "@id": "https://www.gatesroof.com/#organization",
       "name": "Gates Enterprises LLC",
-      "image": "https://www.gatesroof.com/logo.png",
-      "url": "https://www.gatesroof.com",
-      "telephone": "(720) 766-3377",
       "foundingDate": "2014",
-      "description": `Quadruple manufacturer certified roofing contractor serving Parker, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. 7,200+ completed projects. Roof replacement, hail damage repair, and storm restoration for Parker homeowners along the Palmer Divide hail corridor.`,
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Parker",
-        "addressRegion": "CO",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.5186,
-        "longitude": -104.7614
-      },
       "areaServed": [
         {
           "@type": "City",
@@ -57,34 +41,6 @@ const citySchema = {
           "@type": "AdministrativeArea",
           "name": "Douglas County, Colorado"
         }
-      ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 39.5186,
-          "longitude": -104.7614
-        },
-        "geoRadius": "30"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Roofing and Exterior Services in Parker CO",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement in Parker CO", "url": "https://www.gatesroof.com/services/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration in Parker CO", "url": "https://www.gatesroof.com/services/storm-hail-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair in Parker CO", "url": "https://www.gatesroof.com/services/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Inspection in Parker CO", "url": "https://www.gatesroof.com/areas/parker" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutter Installation in Parker CO", "url": "https://www.gatesroof.com/services/gutters-guards" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding Installation in Parker CO", "url": "https://www.gatesroof.com/services/siding-exterior" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window Replacement in Parker CO", "url": "https://www.gatesroof.com/services/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Painting in Parker CO", "url": "https://www.gatesroof.com/services/paint" } }
-        ]
-      },
-      "sameAs": [
-        "https://www.google.com/maps/place/Gates+Enterprises+LLC",
-        "https://www.facebook.com/GatesEnterprisesLLC/",
-        "https://www.instagram.com/gatesroofing"
       ]
     },
     {
@@ -99,7 +55,7 @@ const citySchema = {
       "@type": "Service",
       "name": "Roofing Services in Parker, CO",
       "provider": {
-        "@type": "LocalBusiness",
+        "@type": "RoofingContractor",
         "@id": "https://www.gatesroof.com/#organization"
       },
       "areaServed": {

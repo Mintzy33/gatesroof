@@ -28,12 +28,12 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Top Rated Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+  title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
   description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
   keywords: "roofing contractor Lakewood CO, hail damage repair Denver, roof replacement Colorado, GAF Master Elite, insurance restoration roofer, storm damage repair",
   alternates: { canonical: "https://www.gatesroof.com/" },
   openGraph: {
-    title: "Top Rated Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+    title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
     description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
     url: "https://www.gatesroof.com",
     siteName: "Gates Enterprises LLC",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Top Rated Lakewood CO Roofer | 4x Certified, 7,200+ Roofs",
+    title: "Gates Enterprises | Lakewood CO Roofer | 4x Certified",
     description: "Trusted Colorado roofer with 7,200+ roofs completed and a 4.9 star rating. GAF Master Elite certified. Get a free inspection today. (720) 766-3377",
     images: ["https://www.gatesroof.com/og-image.jpg"],
   },
@@ -54,6 +54,7 @@ const localBusinessSchema = {
   "@type": "RoofingContractor",
   "@id": "https://www.gatesroof.com/#organization",
   "name": "Gates Enterprises LLC",
+  "legalName": "Gates Enterprises LLC",
   "alternateName": "Gates Enterprises",
   "url": "https://www.gatesroof.com",
   "logo": "https://www.gatesroof.com/logo.png",

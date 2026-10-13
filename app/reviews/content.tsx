@@ -202,7 +202,8 @@ function MarqueeRow({
 /* ─── Counter Component ─── */
 function Counter({ end, suffix = "", prefix = "" }: { end: number; suffix?: string; prefix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [display, setDisplay] = useState("0");
+  // Start at the final value so non-JS crawlers read the real stat; the count-up is client-only.
+  const [display, setDisplay] = useState(() => end.toLocaleString("en-US"));
 
   useEffect(() => {
     const el = ref.current;
@@ -212,12 +213,13 @@ function Counter({ end, suffix = "", prefix = "" }: { end: number; suffix?: stri
     Promise.all([import("gsap"), import("gsap/ScrollTrigger")]).then(([{ default: gsap }, { ScrollTrigger }]) => {
       gsap.registerPlugin(ScrollTrigger);
       const obj = { val: 0 };
+      setDisplay("0"); // JS is running: count up from 0 (raw HTML keeps the real value)
       tween = gsap.to(obj, {
         val: end,
         duration: 2.2,
         ease: "power2.out",
         snap: { val: 1 },
-        onUpdate: () => setDisplay(obj.val.toLocaleString()),
+        onUpdate: () => setDisplay(obj.val.toLocaleString("en-US")),
         scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
       });
     });

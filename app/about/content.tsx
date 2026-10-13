@@ -169,6 +169,7 @@ export default function AboutContent() {
           const prefix = el.dataset.prefix || "";
           const suffix = el.dataset.suffix || "";
           const obj = { val: 0 };
+          el.textContent = prefix + "0" + suffix; // JS is running: count up from 0 (raw HTML keeps the real value)
           gsap.to(obj, {
             val: target,
             duration: 1.8,
@@ -389,7 +390,7 @@ export default function AboutContent() {
                 {s.text ? (
                   <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.text}</div>
                 ) : (
-                  <div className="stat-count" data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.prefix}0{s.suffix}</div>
+                  <div className="stat-count" data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{`${s.prefix}${s.target}${s.suffix}`}</div>
                 )}
                 <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginTop: 4 }}>{s.label}</div>
               </div>
