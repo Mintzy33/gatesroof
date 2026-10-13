@@ -23,6 +23,7 @@ For the operational rhythm (rituals, build queue, who-approves-what), see `gates
 | FAQ content templates | `lib/faq-data.ts` |
 | Service-area / city data | `lib/service-areas-data.ts` |
 | Date-map generator script | `scripts/gen-page-dates.mjs` |
+| IndexNow ping (Bing / ChatGPT search) after a deploy | `node scripts/indexnow.mjs <urls...>` |
 
 ---
 
@@ -132,6 +133,23 @@ Plain-markdown summary served at `/llms.txt`. AI models read it to anchor facts 
 ### 6. Sitemap — `app/sitemap.ts`
 
 Next.js generates `/sitemap.xml` from this file at build time. New static pages under `app/` are usually picked up automatically (verify after adding). The legacy `public/sitemap.xml*` files are unused fallbacks — leave them alone or delete in a separate PR.
+
+### 7. IndexNow — `scripts/indexnow.mjs` + `public/ac44f489a7c9855f8149e1868a3e1bb0.txt`
+
+IndexNow tells Bing (whose index feeds ChatGPT search and Copilot) plus Yandex/Seznam/Naver that URLs changed, instead of waiting for a recrawl. The key file is public by design: IndexNow fetches `https://www.gatesroof.com/ac44f489a7c9855f8149e1868a3e1bb0.txt` to verify ownership, and its body must be the key and nothing else. Keep exactly one `<32-hex>.txt` in `public/` — the script reads the key from it.
+
+Run it by hand **after a production deploy is live** (never from the Vercel build — a preview build must not ping engines about production URLs):
+
+```bash
+node scripts/indexnow.mjs /contact /about                  # changed pages (paths or full www URLs)
+node scripts/indexnow.mjs --sitemap                        # every URL in the live sitemap (~324)
+node scripts/indexnow.mjs --dry-run --sitemap              # print the payload, send nothing
+```
+
+- Only `https://www.gatesroof.com/...` URLs are sent; apex/preview URLs are dropped (IndexNow would 422 them).
+- Before posting, the script checks the key file is live on www and stops with exit 2 if not ("deploy first").
+- `202` = accepted, key check pending (normal on first use); `200` = ok; `403` = key not verified; `422` = URL not on host; `429` = slow down.
+- Submit only changed URLs on routine deploys; use `--sitemap` after site-wide changes (schema, stats, NAP). Resubmitting the whole sitemap every deploy invites 429s.
 
 ---
 
