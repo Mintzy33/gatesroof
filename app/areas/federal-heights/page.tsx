@@ -23,23 +23,9 @@ export const metadata: Metadata = {
 const citySchema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
+  "@id": "https://www.gatesroof.com/#organization",
   "name": "Gates Enterprises LLC",
-  "url": "https://www.gatesroof.com/areas/federal-heights",
-  "telephone": "+17207663377",
-  "email": "info@gatesroof.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1445 Holland St",
-    "addressLocality": "Lakewood",
-    "addressRegion": "CO",
-    "postalCode": "80215",
-    "addressCountry": "US"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 39.8672, "longitude": -105.0136 },
-  "areaServed": { "@type": "City", "name": "Federal Heights", "addressRegion": "CO" },
-  "priceRange": "$$",
-  "image": "https://res.cloudinary.com/dyr5ihrer/video/upload/q_80,f_jpg,w_1200,h_630,c_fill,so_0/v1771207837/gatesroof.com_Header_on1ccl.mov",
-  "sameAs": ["https://www.facebook.com/GatesEnterprisesLLC/", "https://www.instagram.com/gatesroofing", "https://www.linkedin.com/company/gatesenterprisesllc/"]
+  "areaServed": { "@type": "City", "name": "Federal Heights", "addressRegion": "CO" }
 };
 
 

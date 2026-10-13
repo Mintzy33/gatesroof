@@ -24,20 +24,10 @@ const citySchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.gatesroof.com/areas/denver#localbusiness",
+      "@type": "RoofingContractor",
+      "@id": "https://www.gatesroof.com/#organization",
       "name": "Gates Enterprises LLC",
-      "image": "https://www.gatesroof.com/logo.png",
-      "url": "https://www.gatesroof.com",
-      "telephone": "(720) 766-3377",
       "foundingDate": "2014",
-      "description": `Quadruple manufacturer certified roofing contractor serving Denver, CO and Colorado's Front Range. GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, CertainTeed ShingleMaster. ${SITE_STATS.reviewCount}+ Google reviews, 4.9 stars.`,
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lakewood",
-        "addressRegion": "CO",
-        "addressCountry": "US"
-      },
       "areaServed": [
         {
           "@type": "City",
@@ -51,33 +41,6 @@ const citySchema = {
           "@type": "AdministrativeArea",
           "name": "Denver County, Colorado"
         }
-      ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 39.7392,
-          "longitude": -104.9903
-        },
-        "geoRadius": "40"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Roofing and Exterior Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm Damage Restoration", "url": "https://www.gatesroof.com/services/storm-hail-damage" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Replacement", "url": "https://www.gatesroof.com/services/roof-replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repair", "url": "https://www.gatesroof.com/services/roof-repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding", "url": "https://www.gatesroof.com/services/siding-exterior" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gutters", "url": "https://www.gatesroof.com/services/gutters-guards" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windows", "url": "https://www.gatesroof.com/services/windows" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting", "url": "https://www.gatesroof.com/services/paint" } }
-        ]
-      },
-      "sameAs": [
-        "https://www.google.com/maps/place/Gates+Enterprises+LLC",
-        "https://www.facebook.com/GatesEnterprisesLLC/",
-        "https://www.instagram.com/gatesroofing"
       ]
     },
     {
