@@ -179,10 +179,10 @@ export default function CityContent() {
             Roofing Contractor in Colorado Springs, CO | Gates Enterprises
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified. {SITE_STATS.reviewCount}+ Google Reviews. 7,200+ Roofs Completed.
+            Quadruple Manufacturer Certified. {SITE_STATS.reviewCount}+ Google Reviews. {SITE_STATS.totalRoofs} Roofs Completed.
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
-            Colorado Springs sits at the base of Pikes Peak, directly in the path of severe Palmer Divide storms that deliver some of the most damaging hail in Colorado. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across {SITE_STATS.reviewCount}+ Google reviews, and has completed over 7,200 roofing projects across Colorado's Front Range. From historic homes in Old Colorado City to planned communities in Briargate and Flying Horse, we deliver the same quality and care on every project.
+            Colorado Springs sits at the base of Pikes Peak, directly in the path of severe Palmer Divide storms that deliver some of the most damaging hail in Colorado. Your roof is your home's first line of defense, and it deserves a contractor who brings real credentials. Gates Enterprises LLC holds four premium manufacturer certifications, maintains a 4.9 star rating across {SITE_STATS.reviewCount}+ Google reviews, and has completed {SITE_STATS.totalRoofs} roofing projects across Colorado's Front Range. From historic homes in Old Colorado City to planned communities in Briargate and Flying Horse, we deliver the same quality and care on every project.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/contact" style={{ background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
@@ -220,9 +220,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>7,200+ Roofs Completed Across Colorado.</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>{SITE_STATS.totalRoofs} Roofs Completed Across Colorado.</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Gates Enterprises LLC was founded in 2014 and has completed over 7,200 roofing and exterior projects across Colorado's Front Range. We understand Pikes Peak Regional Building Department codes, El Paso County HOA requirements, and the unique challenges that come with roofing in a city that sees some of the most extreme weather in the state.
+              Gates Enterprises LLC was founded in 2014 and has completed {SITE_STATS.totalRoofs} roofing and exterior projects across Colorado's Front Range. We understand Pikes Peak Regional Building Department codes, El Paso County HOA requirements, and the unique challenges that come with roofing in a city that sees some of the most extreme weather in the state.
             </p>
           </div>
 

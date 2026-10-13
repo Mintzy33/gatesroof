@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { FAQS } from "./faqs";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Best Roofer Colorado Springs (2026) | 4x Certified ★",
-  description: "Colorado Springs' top rated roofing contractor. Pikes Peak region storm and hail experts. 7,200+ roofs, 4x certified. Free inspection. (720) 766-3377",
+  description: `Colorado Springs' top rated roofing contractor. Pikes Peak region storm and hail experts. ${SITE_STATS.totalRoofs} roofs, 4x certified. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-colorado-springs" },
   openGraph: {
     title: "Best Roofer Colorado Springs (2026) | 4x Certified ★",
-    description: "Colorado Springs' top rated roofing contractor. Pikes Peak region storm and hail experts. 7,200+ roofs, 4x certified. Free inspection. (720) 766-3377",
+    description: `Colorado Springs' top rated roofing contractor. Pikes Peak region storm and hail experts. ${SITE_STATS.totalRoofs} roofs, 4x certified. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-colorado-springs",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

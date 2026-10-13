@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Parker CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Parker's top rated roofing contractor. GAF, Owens Corning, Malarkey, and CertainTeed certified. 7,200+ roofs done. Free inspection. (720) 766-3377",
+  description: `Parker's top rated roofing contractor. GAF, Owens Corning, Malarkey, and CertainTeed certified. ${SITE_STATS.totalRoofs} roofs done. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-parker" },
   openGraph: {
     title: `Best Roofer Parker CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Parker's top rated roofing contractor. GAF, Owens Corning, Malarkey, and CertainTeed certified. 7,200+ roofs done. Free inspection. (720) 766-3377",
+    description: `Parker's top rated roofing contractor. GAF, Owens Corning, Malarkey, and CertainTeed certified. ${SITE_STATS.totalRoofs} roofs done. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-parker",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

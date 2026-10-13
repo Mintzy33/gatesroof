@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import PageSchema from "@/app/components/PageSchema";
 import GalleryContent from "./content";
 import { breadcrumbSchema } from "../../lib/schema";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
-  title: "Roofing Photo Gallery | 7,200+ Projects ★ Gates",
+  title: `Roofing Photo Gallery | ${SITE_STATS.totalRoofs} Projects ★ Gates`,
   description:
-    "Browse before and after photos from 7,200+ roofing, siding, and gutter projects across Colorado. See the quality behind our 4.9 star rating.",
+    `Browse before and after photos from ${SITE_STATS.totalRoofs} roofing, siding, and gutter projects across Colorado. See the quality behind our 4.9 star rating.`,
   alternates: { canonical: "https://www.gatesroof.com/gallery" },
 };
 

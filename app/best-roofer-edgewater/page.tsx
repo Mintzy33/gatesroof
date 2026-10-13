@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Edgewater CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Top rated Edgewater roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+  description: `Top rated Edgewater roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-edgewater" },
   openGraph: {
     title: `Best Roofer Edgewater CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Top rated Edgewater roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+    description: `Top rated Edgewater roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-edgewater",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

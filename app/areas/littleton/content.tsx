@@ -168,7 +168,7 @@ export default function CityContent() {
             Littleton, Colorado&apos;s Most Trusted Roofing Contractor
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Certified · 7,200+ Projects Completed · Serving Arapahoe and Douglas Counties
+            Quadruple Certified · {SITE_STATS.totalRoofs} Projects Completed · Serving Arapahoe and Douglas Counties
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Littleton sits at the intersection of two county jurisdictions, three distinct housing eras, and one of the most active hail corridors on Colorado&apos;s Front Range. Whether you&apos;re in Ken Caryl Ranch, the historic neighborhoods near Downtown Littleton, or the newer builds along the Highlands Ranch border, your roof takes a beating. Gates Enterprises has been working Arapahoe and Douglas County roofs for over a decade — we know the permit offices, the HOA boards, and the storm patterns that cycle through this part of the metro every spring and summer.
@@ -202,7 +202,7 @@ export default function CityContent() {
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Star Rating</div>
           </div>
           <div>
-            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>7,200+</div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>{SITE_STATS.totalRoofs}</div>
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Completed Projects</div>
           </div>
           <div>
@@ -234,9 +234,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>7,200+ Completed Projects Across Colorado</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>{SITE_STATS.totalRoofs} Completed Projects Across Colorado</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              Since 2014, Gates Enterprises has completed more than 7,200 roofing and exterior projects statewide. That volume means our crews have seen every roof type, every permit process, and every insurance scenario the Front Range throws at them. Experience compounds — a crew that&apos;s done 7,000 roofs makes fewer mistakes than one that&apos;s done 700.
+              Since 2014, Gates Enterprises has completed {SITE_STATS.totalRoofs} roofing and exterior projects statewide. That volume means our crews have seen every roof type, every permit process, and every insurance scenario the Front Range throws at them. Experience compounds — a crew that&apos;s done 7,000 roofs makes fewer mistakes than one that&apos;s done 700.
             </p>
           </div>
 
@@ -471,7 +471,7 @@ export default function CityContent() {
       {/* 12. FINAL CTA */}
       <CTA
         title="Get a Free Roof Inspection in Littleton"
-        subtitle={`Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and ${SITE_STATS.reviewCount} Google reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online.`}
+        subtitle={`Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, ${SITE_STATS.totalRoofs} completed projects, and ${SITE_STATS.reviewCount} Google reviews, Littleton homeowners can trust us to get it right. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       {/* 13. SERVICES TAIL */}

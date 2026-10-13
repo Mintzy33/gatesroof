@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Federal Heights CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Top rated Federal Heights roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+  description: `Top rated Federal Heights roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-federal-heights" },
   openGraph: {
     title: `Best Roofer Federal Heights CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Top rated Federal Heights roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+    description: `Top rated Federal Heights roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-federal-heights",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

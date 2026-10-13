@@ -191,7 +191,7 @@ export default function CityContent() {
             Parker, Colorado's Most Trusted Roofing Company
           </h1>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 17, color: ACCENT, fontWeight: 500, marginBottom: 20 }}>
-            Quadruple Manufacturer Certified &middot; {SITE_STATS.reviewCount} Google Reviews &middot; 7,200+ Completed Projects
+            Quadruple Manufacturer Certified &middot; {SITE_STATS.reviewCount} Google Reviews &middot; {SITE_STATS.totalRoofs} Completed Projects
           </p>
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, marginBottom: 32, maxWidth: 700 }}>
             Parker homeowners deserve a roofing contractor who understands the unique challenges of living along the Palmer Divide. From sudden summer hailstorms to heavy spring snow loads, your roof takes a beating year after year. Gates Enterprises has been protecting homes across Parker and Douglas County for over a decade. We bring quadruple manufacturer certifications, a 4.9 star reputation across {SITE_STATS.reviewCount} Google reviews, and a commitment to honest, quality work on every project.
@@ -225,7 +225,7 @@ export default function CityContent() {
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Star Rating</div>
           </div>
           <div>
-            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>7,200+</div>
+            <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 800, color: NAVY }}>{SITE_STATS.totalRoofs}</div>
             <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT }}>Completed Projects</div>
           </div>
           <div>
@@ -257,9 +257,9 @@ export default function CityContent() {
           </div>
 
           <div style={{ marginBottom: 36 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>7,200+ Completed Projects Across Colorado</h3>
+            <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: NAVY, marginBottom: 12 }}>{SITE_STATS.totalRoofs} Completed Projects Across Colorado</h3>
             <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT }}>
-              With over 7,200 completed roofing and exterior projects across Douglas County and the greater Denver metro, Gates Enterprises has the experience Parker homeowners can count on. We know Parker. We know the weather patterns. We know the building codes. And we know how to get the job done right.
+              With {SITE_STATS.totalRoofs} completed roofing and exterior projects across Douglas County and the greater Denver metro, Gates Enterprises has the experience Parker homeowners can count on. We know Parker. We know the weather patterns. We know the building codes. And we know how to get the job done right.
             </p>
           </div>
 
@@ -535,7 +535,7 @@ export default function CityContent() {
       {/* 10. ADDITIONAL CTA SECTION */}
       <CTA
         title="Get a Free Roof Inspection in Parker"
-        subtitle={`Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, 7,200+ completed projects, and ${SITE_STATS.reviewCount} Google reviews, you can trust us to get it right. Call (720) 766-3377 or request your free inspection online.`}
+        subtitle={`Your roof is the first line of defense for your family and your investment. Whether you need a post storm inspection, a full roof replacement, or exterior repairs, Gates Enterprises is ready to help. With 10+ years of experience, quadruple manufacturer certifications, ${SITE_STATS.totalRoofs} completed projects, and ${SITE_STATS.reviewCount} Google reviews, you can trust us to get it right. Call (720) 766-3377 or request your free inspection online.`}
       />
 
       {/* 11. SERVICES IN PARKER */}

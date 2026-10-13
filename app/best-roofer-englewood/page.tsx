@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Englewood CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Englewood's top rated roofing contractor. Storm damage, full replacements, and claims assistance. 4.9 stars, 7,200+ roofs. Free estimate. (720) 766-3377",
+  description: `Englewood's top rated roofing contractor. Storm damage, full replacements, and claims assistance. 4.9 stars, ${SITE_STATS.totalRoofs} roofs. Free estimate. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-englewood" },
   openGraph: {
     title: `Best Roofer Englewood CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Englewood's top rated roofing contractor. Storm damage, full replacements, and claims assistance. 4.9 stars, 7,200+ roofs. Free estimate. (720) 766-3377",
+    description: `Englewood's top rated roofing contractor. Storm damage, full replacements, and claims assistance. 4.9 stars, ${SITE_STATS.totalRoofs} roofs. Free estimate. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-englewood",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

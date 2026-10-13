@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Arvada CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Top rated Arvada roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+  description: `Top rated Arvada roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-arvada" },
   openGraph: {
     title: `Best Roofer Arvada CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Top rated Arvada roofer with four manufacturer certifications and 7,200+ completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377",
+    description: `Top rated Arvada roofer with four manufacturer certifications and ${SITE_STATS.totalRoofs} completed roofs. Warranties up to 50 years. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-arvada",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

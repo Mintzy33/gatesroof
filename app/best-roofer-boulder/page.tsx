@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Boulder CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Boulder's top rated roofing contractor. GAF Master Elite certified with 7,200+ roofs and 4.9 star rating. Free storm inspection. (720) 766-3377",
+  description: `Boulder's top rated roofing contractor. GAF Master Elite certified with ${SITE_STATS.totalRoofs} roofs and 4.9 star rating. Free storm inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-boulder" },
   openGraph: {
     title: `Best Roofer Boulder CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Boulder's top rated roofing contractor. GAF Master Elite certified with 7,200+ roofs and 4.9 star rating. Free storm inspection. (720) 766-3377",
+    description: `Boulder's top rated roofing contractor. GAF Master Elite certified with ${SITE_STATS.totalRoofs} roofs and 4.9 star rating. Free storm inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-boulder",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

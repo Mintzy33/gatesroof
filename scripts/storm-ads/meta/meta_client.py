@@ -53,6 +53,24 @@ def site_review_count(path: str = SITE_STATS_PATH, fallback: int = 353) -> int:
     return fallback
 
 
+def site_total_roofs(path: str = SITE_STATS_PATH, fallback: str = "7,200+") -> str:
+    """Read totalRoofs (e.g. "7,200+") from lib/site-stats.ts, same reasoning
+    as site_review_count: the ad has to quote the number the site quotes."""
+    try:
+        with open(path, "r") as fh:
+            match = re.search(r"totalRoofs:\s*'([^']+)'", fh.read())
+        if match:
+            return match.group(1)
+    except OSError:
+        pass
+    print(
+        f"WARNING: could not read totalRoofs from {path}; "
+        f"ad copy will say {fallback}. Check lib/site-stats.ts.",
+        file=sys.stderr,
+    )
+    return fallback
+
+
 def load_config(path: str = CONFIG_PATH) -> Dict[str, Any]:
     with open(path, "r") as fh:
         return json.load(fh)
@@ -157,7 +175,7 @@ class MetaAdsClient:
         link_data = {
             "link": landing,
             "message": (
-                f"Storm hit {city}? Gates Enterprises has replaced 7,200+ roofs across Colorado. "
+                f"Storm hit {city}? Gates Enterprises has replaced {site_total_roofs()} roofs across Colorado. "
                 "Free inspection. We assist you through the insurance claims process. No obligation."
             ),
             "name": f"Free Storm Damage Inspection in {city}",

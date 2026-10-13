@@ -96,7 +96,7 @@ const PROCESS_STEPS = [
 const WHY_GATES = [
   {
     Icon: Award,
-    bold: "7,200+ roofs completed.",
+    bold: `${SITE_STATS.totalRoofs} roofs completed.`,
     rest: "We have handled every type of roofing emergency Colorado can produce. Experience matters when your home is on the line.",
   },
   {
@@ -226,7 +226,7 @@ export default function EmergencyContent() {
             When your roof fails, every minute counts. Gates Enterprises
             provides rapid emergency roofing services across Colorado&apos;s
             Front Range. Tarping, temporary repairs, and full restoration backed
-            by 7,200+ completed roofs and four manufacturer certifications.
+            by {SITE_STATS.totalRoofs} completed roofs and four manufacturer certifications.
           </p>
 
           <div

@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Denver CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-  description: `Denver's top rated roofer with 7,200+ completed projects and ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. Up to 50-year warranties. Free inspection. (720) 766-3377`,
+  description: `Denver's top rated roofer with ${SITE_STATS.totalRoofs} completed projects and ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. Up to 50-year warranties. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-denver" },
   openGraph: {
     title: `Best Roofer Denver CO (2026) | 4x Certified ★ ${SITE_STATS.reviewCount}+ Reviews`,
-    description: `Denver's top rated roofer with 7,200+ completed projects and ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. Up to 50-year warranties. Free inspection. (720) 766-3377`,
+    description: `Denver's top rated roofer with ${SITE_STATS.totalRoofs} completed projects and ${SITE_STATS.reviewCount} Google reviews, 4.9 stars. Up to 50-year warranties. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-denver",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title:
     "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
   description:
-    `Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. 7,200+ roofs, ${SITE_STATS.reviewCount} reviews, and 4x manufacturer certified.`,
+    `Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} reviews, and 4x manufacturer certified.`,
   alternates: { canonical: "https://www.gatesroof.com/about/alex-chicilo" },
   openGraph: {
     title: "Alex Chicilo | Director of Operations, Gates Enterprises | Colorado Roofing Expert",
     description:
-      `Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. 7,200+ roofs, ${SITE_STATS.reviewCount} reviews, and 4x manufacturer certified.`,
+      `Meet Alex Chicilo, Director of Operations at Gates Enterprises and creator of HailScore, an independent third-party hail-data tool. ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} reviews, and 4x manufacturer certified.`,
     url: "https://www.gatesroof.com/about/alex-chicilo",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

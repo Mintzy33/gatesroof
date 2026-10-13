@@ -233,7 +233,7 @@ function getServiceCityFAQs(city: CityData, service: ServiceData): FAQItem[] {
   // Local service question
   pool.push({
     question: `Does Gates Enterprises serve ${city.city}, Colorado?`,
-    answer: `Yes. Gates Enterprises serves ${city.city} and all of ${city.county} County from our Lakewood headquarters. ${profile.localFlavor} With over 7,200 completed projects across the Front Range and a 4.9-star rating from ${SITE_STATS.reviewCount} Google reviews, we bring the same certified quality to every ${city.city} project. Call (720) 766-3377 to schedule your free inspection.`,
+    answer: `Yes. Gates Enterprises serves ${city.city} and all of ${city.county} County from our Lakewood headquarters. ${profile.localFlavor} With ${SITE_STATS.totalRoofs} completed projects across the Front Range and a 4.9-star rating from ${SITE_STATS.reviewCount} Google reviews, we bring the same certified quality to every ${city.city} project. Call (720) 766-3377 to schedule your free inspection.`,
   });
 
   // Hail-specific question
@@ -421,7 +421,7 @@ function getCityOnlyFAQs(city: CityData): FAQItem[] {
   // Service area confirmation
   pool.push({
     question: `Does Gates Enterprises serve all of ${city.city}?`,
-    answer: `Yes. ${profile.localFlavor} We are based in Lakewood and serve the entire Colorado Front Range, from Fort Collins to Pueblo. With over 7,200 completed projects and ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, ${city.city} homeowners can trust that they're getting the same certified quality we bring to every project. Call (720) 766-3377 to schedule a free inspection.`,
+    answer: `Yes. ${profile.localFlavor} We are based in Lakewood and serve the entire Colorado Front Range, from Fort Collins to Pueblo. With ${SITE_STATS.totalRoofs} completed projects and ${SITE_STATS.reviewCount} Google reviews at 4.9 stars, ${city.city} homeowners can trust that they're getting the same certified quality we bring to every project. Call (720) 766-3377 to schedule a free inspection.`,
   });
 
   // Best time question

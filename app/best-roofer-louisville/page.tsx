@@ -7,11 +7,11 @@ import { FAQS } from "./faqs";
 
 export const metadata: Metadata = {
   title: `Best Roofer Louisville CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-  description: "Louisville's top rated roofer. Storm and hail damage experts with 7,200+ completed projects. Locally operated since 2014. Free inspection. (720) 766-3377",
+  description: `Louisville's top rated roofer. Storm and hail damage experts with ${SITE_STATS.totalRoofs} completed projects. Locally operated since 2014. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-louisville" },
   openGraph: {
     title: `Best Roofer Louisville CO (2026) | 4x Certified \u2605 ${SITE_STATS.reviewCount}+ Reviews`,
-    description: "Louisville's top rated roofer. Storm and hail damage experts with 7,200+ completed projects. Locally operated since 2014. Free inspection. (720) 766-3377",
+    description: `Louisville's top rated roofer. Storm and hail damage experts with ${SITE_STATS.totalRoofs} completed projects. Locally operated since 2014. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-louisville",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",

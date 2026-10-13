@@ -7,12 +7,12 @@ import { SITE_STATS } from "@/lib/site-stats";
 export const metadata: Metadata = {
   title: "Roofing Services CO | 4x Certified | Gates Enterprises",
   description:
-    `Full-service Colorado roofer: replacement, hail repair, siding, gutters & windows. 7,200+ roofs, ${SITE_STATS.reviewCount} Reviews, 4.9★. Free inspections. (720) 766-3377`,
+    `Full-service Colorado roofer: replacement, hail repair, siding, gutters & windows. ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} Reviews, 4.9★. Free inspections. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/services" },
   openGraph: {
     title: "Roofing Services CO | 4x Certified | Gates Enterprises",
     description:
-      `Full-service Colorado roofer: replacement, hail repair, siding, gutters & windows. 7,200+ roofs, ${SITE_STATS.reviewCount} Reviews, 4.9★. Free inspections. (720) 766-3377`,
+      `Full-service Colorado roofer: replacement, hail repair, siding, gutters & windows. ${SITE_STATS.totalRoofs} roofs, ${SITE_STATS.reviewCount} Reviews, 4.9★. Free inspections. (720) 766-3377`,
     url: "https://www.gatesroof.com/services",
     siteName: "Gates Enterprises",
     locale: "en_US",

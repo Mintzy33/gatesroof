@@ -3,14 +3,15 @@ import PageSchema from "@/app/components/PageSchema";
 import BestRooferContent from "./content";
 import { breadcrumbSchema, faqSchema } from "../../lib/schema";
 import { FAQS } from "./faqs";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Best Roofer Fort Collins (2026) | 4x Certified ★",
-  description: "Fort Collins' top rated roofer serving Northern Colorado. 7,200+ roofs, 4x certified, and claims support. Free inspection. (720) 766-3377",
+  description: `Fort Collins' top rated roofer serving Northern Colorado. ${SITE_STATS.totalRoofs} roofs, 4x certified, and claims support. Free inspection. (720) 766-3377`,
   alternates: { canonical: "https://www.gatesroof.com/best-roofer-fort-collins" },
   openGraph: {
     title: "Best Roofer Fort Collins (2026) | 4x Certified ★",
-    description: "Fort Collins' top rated roofer serving Northern Colorado. 7,200+ roofs, 4x certified, and claims support. Free inspection. (720) 766-3377",
+    description: `Fort Collins' top rated roofer serving Northern Colorado. ${SITE_STATS.totalRoofs} roofs, 4x certified, and claims support. Free inspection. (720) 766-3377`,
     url: "https://www.gatesroof.com/best-roofer-fort-collins",
     siteName: "Gates Enterprises LLC",
     locale: "en_US",
