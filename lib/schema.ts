@@ -123,12 +123,15 @@ export function blogPostingSchema(post: {
       jobTitle: "Founder",
       worksFor: {
         "@type": "Organization",
+        "@id": "https://www.gatesroof.com/#organization",
         name: BUSINESS_INFO.name,
         url: BUSINESS_INFO.url,
       },
     },
+    // Same entity app/layout.tsx declares; the @id keeps it from parsing as a second business.
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.gatesroof.com/#organization",
       name: BUSINESS_INFO.name,
       url: BUSINESS_INFO.url,
       logo: {
