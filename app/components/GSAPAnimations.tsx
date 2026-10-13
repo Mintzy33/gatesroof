@@ -156,11 +156,10 @@ export function CounterGSAP({ end, suffix = "", duration = 2.2, delay = 0 }: { e
       const rect = el.getBoundingClientRect();
       const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
 
-      if (inViewport) {
-        // Count up from zero for a viewer; a hidden page (background tab, headless
-        // snapshot) keeps the real number until the tween actually ticks.
-        if (document.visibilityState === "visible") setDisplay(formatCount(0));
-      } else {
+      // JS is running, so drop to 0 for the count-up (crawlers without JS keep the server-rendered value).
+      setDisplay(formatCount(0));
+
+      if (!inViewport) {
         tweenVars.scrollTrigger = {
           trigger: el,
           start: "top 90%",

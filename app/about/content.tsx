@@ -169,6 +169,7 @@ export default function AboutContent() {
           const prefix = el.dataset.prefix || "";
           const suffix = el.dataset.suffix || "";
           const obj = { val: 0 };
+          el.textContent = prefix + "0" + suffix; // JS is running: count up from 0 (raw HTML keeps the real value)
           gsap.to(obj, {
             val: target,
             duration: 1.8,

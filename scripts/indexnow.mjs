@@ -64,7 +64,8 @@ for (let i = 0; i < args.length; i++) {
     raw.push(...[...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1]));
     continue;
   }
-  if (a.startsWith("--")) fail(1, `unknown flag ${a}`);
+  // Any other dash-led arg is a typo'd flag (e.g. -dry-run): stop rather than submit live.
+  if (/^[-\u2010-\u2015\u2212]/.test(a)) fail(1, `unknown flag ${a}`);
   raw.push(a);
 }
 if (!raw.length) fail(1, "usage: node scripts/indexnow.mjs [--dry-run] (--sitemap [url] | <url|/path> ...)");
@@ -72,6 +73,11 @@ if (!raw.length) fail(1, "usage: node scripts/indexnow.mjs [--dry-run] (--sitema
 // ── normalise: /path → full URL, keep https on the www host only, dedupe ──
 const urls = new Set();
 for (const r of raw) {
+  // Only /paths or full http(s) URLs: "www.gatesroof.com/x" would otherwise resolve to /www.gatesroof.com/x.
+  if (!/^(\/|https?:\/\/)/i.test(r)) {
+    console.warn(`skip (use a /path or a full https://${HOST}/... URL): ${r}`);
+    continue;
+  }
   let u;
   try {
     u = new URL(r, ORIGIN);
