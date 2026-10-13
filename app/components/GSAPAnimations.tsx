@@ -128,9 +128,13 @@ export function StaggerCards({
 }
 
 /* ─── CounterGSAP ─── scroll-triggered number counter ─── */
+// Fixed locale so the server-rendered value matches the first client render (no hydration mismatch).
+const formatCount = (n: number) => n.toLocaleString("en-US");
+
 export function CounterGSAP({ end, suffix = "", duration = 2.2, delay = 0 }: { end: number; suffix?: string; duration?: number; delay?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [display, setDisplay] = useState("0");
+  // Start at the final value so non-JS crawlers read the real stat; the count-up is client-only.
+  const [display, setDisplay] = useState(() => formatCount(end));
 
   useEffect(() => {
     const el = ref.current;
@@ -146,13 +150,17 @@ export function CounterGSAP({ end, suffix = "", duration = 2.2, delay = 0 }: { e
         delay,
         ease: "power2.out",
         snap: { val: 1 },
-        onUpdate: () => setDisplay(obj.val.toLocaleString()),
+        onUpdate: () => setDisplay(formatCount(obj.val)),
       };
 
       const rect = el.getBoundingClientRect();
       const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
 
-      if (!inViewport) {
+      if (inViewport) {
+        // Count up from zero for a viewer; a hidden page (background tab, headless
+        // snapshot) keeps the real number until the tween actually ticks.
+        if (document.visibilityState === "visible") setDisplay(formatCount(0));
+      } else {
         tweenVars.scrollTrigger = {
           trigger: el,
           start: "top 90%",

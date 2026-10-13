@@ -389,7 +389,7 @@ export default function AboutContent() {
                 {s.text ? (
                   <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.text}</div>
                 ) : (
-                  <div className="stat-count" data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{s.prefix}0{s.suffix}</div>
+                  <div className="stat-count" data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: 36, fontWeight: 800, color: ACCENT }}>{`${s.prefix}${s.target}${s.suffix}`}</div>
                 )}
                 <div style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 14, color: TEXT_LIGHT, marginTop: 4 }}>{s.label}</div>
               </div>
