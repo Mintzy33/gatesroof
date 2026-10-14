@@ -141,6 +141,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       seenSlugs.add(post.slug);
       return true;
     })
+    // A post canonicalized to another URL must not be advertised as its own page.
+    .filter((post) => !post.canonicalUrl)
     .map((post) => ({
       url: `${BASE}/blog/${post.slug}`,
       lastModified: post.updatedDate || post.publishDate,

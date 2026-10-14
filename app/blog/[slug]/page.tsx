@@ -17,6 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
 
+  const canonical = post.canonicalUrl ?? `https://www.gatesroof.com/blog/${post.slug}`;
+
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `https://www.gatesroof.com/blog/${post.slug}`,
+      url: canonical,
       siteName: "Gates Enterprises LLC",
       locale: "en_US",
       type: "article",
@@ -33,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(post.coverImage ? { images: [{ url: `https://www.gatesroof.com${post.coverImage.src}`, width: post.coverImage.width, height: post.coverImage.height, alt: post.coverImage.alt }] } : {}),
     },
     alternates: {
-      canonical: `https://www.gatesroof.com/blog/${post.slug}`,
+      canonical,
     },
   };
 }
@@ -45,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   // Get related posts (same category, exclude current, max 4)
   const related = blogPosts
-    .filter((p) => p.slug !== post.slug)
+    .filter((p) => p.slug !== post.slug && !p.canonicalUrl)
     .sort((a, b) => {
       if (a.category === post.category && b.category !== post.category) return -1;
       if (b.category === post.category && a.category !== post.category) return 1;

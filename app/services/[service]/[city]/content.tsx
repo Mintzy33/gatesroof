@@ -17,6 +17,7 @@ import HailScoreCard from "../../../components/HailScoreCard";
 import { getRelatedBlogPosts } from "../../../../lib/blog-links";
 import { cityHref } from "../../../../lib/city-links";
 import { SITE_STATS } from "@/lib/site-stats";
+import { getServiceCityAnswer } from "../../../../lib/service-city-answers";
 
 const NAVY = "#0D2137";
 const ACCENT = "#2563EB";
@@ -74,7 +75,7 @@ function getWhySection(city: CityData, service: ServiceData): string {
     },
     "insurance-claims": {
       high: `${city.city} homeowners file more insurance claims per capita than almost any other community in Colorado — that's what happens when you live in ${city.county} County's hail corridor. But filing a claim and getting the full scope of work approved are two different things. Insurance adjusters often miss damage or undervalue repairs. Gates Enterprises has managed thousands of claims in high-hail markets and knows how to document damage in the format adjusters need to approve the full scope.${city.neighborhoods ? ` We've guided homeowners throughout ${city.city} — from ${city.neighborhoods[0]} to ${city.neighborhoods[Math.min(2, city.neighborhoods.length - 1)]} — through the insurance process.` : ""}`,
-      moderate: `When a storm damages your ${city.city} home, the insurance process can feel overwhelming. ${city.county} County homeowners need a partner who understands both roofing and insurance. Gates Enterprises prepares Xactimate-formatted estimates, meets adjusters on-site, and handles supplements when the initial approval falls short. We've helped homeowners secure additional funding in supplemental approvals that homeowners would have lost without professional representation.`,
+      moderate: `When a storm damages your ${city.city} home, the insurance process can feel overwhelming. ${city.county} County homeowners need a partner who understands both roofing and insurance. Gates Enterprises prepares Xactimate-formatted estimates, meets adjusters on-site, and handles supplements when the initial approval falls short.`,
       low: `Insurance claims in mountain communities like ${city.city} have unique considerations. ${city.county} County homes often have more complex roof systems, steeper pitches, and harder access — all factors that increase the legitimate cost of restoration but that adjusters sometimes undervalue. Our team understands mountain-specific pricing and access factors and documents them properly in every claim.`,
     },
     "metal-roofing": {
@@ -94,8 +95,8 @@ function getWhySection(city: CityData, service: ServiceData): string {
 function getWhyChoose(city: CityData, service: ServiceData): string[] {
   const base = [
     `GAF Master Elite, Owens Corning Preferred, Malarkey Emerald Premium, and CertainTeed ShingleMaster certified`,
-    `${SITE_STATS.reviewCount} Google reviews with a 4.9-star rating from Colorado homeowners`,
-    `Over thousands of roofing projects completed across the Front Range`,
+    `${SITE_STATS.reviewCount} Google reviews with a ${SITE_STATS.starRating}-star rating from Colorado homeowners`,
+    `${SITE_STATS.totalRoofs} roofs completed across the Front Range`,
     `Free inspections with no obligation and no pressure`,
     `${city.county} County permit and inspection coordination included`,
     `Full manufacturer warranty options on every certified installation`,
@@ -140,6 +141,7 @@ export default function ServiceCityContent({
   const whyChooseItems = getWhyChoose(city, service);
   const faqItems = getServiceCityFAQItems(citySlug, serviceSlug);
   const relatedBlogPosts = getRelatedBlogPosts(service.slug, city.slug, 5);
+  const answer = getServiceCityAnswer(service.slug, city.slug);
 
   return (
     <div style={{ background: WHITE }}>
@@ -194,30 +196,62 @@ export default function ServiceCityContent({
             {service.service} in {city.city}, CO
           </h1>
 
-          <p
-            style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 17,
-              color: ACCENT,
-              fontWeight: 500,
-              marginBottom: 20,
-            }}
-          >
-            {city.county} County · Quadruple Manufacturer Certified · {SITE_STATS.reviewCount} Reviews · 4.9★
-          </p>
+          {answer ? (
+            <>
+              {/* Answer-first: the plain-text answer is the first copy after the H1. */}
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 18,
+                  color: "rgba(255,255,255,0.88)",
+                  lineHeight: 1.75,
+                  marginBottom: 16,
+                  maxWidth: 700,
+                }}
+              >
+                {answer.lead}
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 15,
+                  color: "#93B4F5",
+                  fontWeight: 500,
+                  lineHeight: 1.6,
+                  marginBottom: 32,
+                }}
+              >
+                {answer.facts}
+              </p>
+            </>
+          ) : (
+            <>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 17,
+                  color: ACCENT,
+                  fontWeight: 500,
+                  marginBottom: 20,
+                }}
+              >
+                {city.county} County · Quadruple Manufacturer Certified · {SITE_STATS.reviewCount} Reviews · 4.9★
+              </p>
 
-          <p
-            style={{
-              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
-              fontSize: 18,
-              color: "rgba(255,255,255,0.75)",
-              lineHeight: 1.75,
-              marginBottom: 32,
-              maxWidth: 700,
-            }}
-          >
-            {getHeroIntro(city, service)}
-          </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                  fontSize: 18,
+                  color: "rgba(255,255,255,0.75)",
+                  lineHeight: 1.75,
+                  marginBottom: 32,
+                  maxWidth: 700,
+                }}
+              >
+                {getHeroIntro(city, service)}
+              </p>
+            </>
+          )}
 
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link
@@ -291,10 +325,23 @@ export default function ServiceCityContent({
               marginBottom: 20,
             }}
           >
-            Our {service.service} Process
+            {answer ? answer.claimStepsHeading : `Our ${service.service} Process`}
           </h2>
+          {answer && (
+            <p
+              style={{
+                fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+                fontSize: 16,
+                lineHeight: 1.85,
+                color: TEXT_LIGHT,
+                marginBottom: 28,
+              }}
+            >
+              {answer.claimStepsIntro}
+            </p>
+          )}
           <div style={{ marginBottom: 48 }}>
-            {service.process.map((step, i) => (
+            {(answer ? answer.claimSteps : service.process).map((step, i) => (
               <div
                 key={i}
                 style={{

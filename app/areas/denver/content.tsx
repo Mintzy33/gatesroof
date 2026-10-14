@@ -269,6 +269,9 @@ export default function CityContent() {
           <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
             Not sure what to do after a storm? Our guide to <Link href="/blog/hail-storm-damage-roof-repair-denver" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>hail and storm damage roof repair in Denver &mdash; who to call and what to do</Link> walks through spotting hail damage, deciding repair vs. replacement, running the insurance claim, and avoiding storm-chasers.
           </p>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 16, lineHeight: 1.85, color: TEXT_LIGHT, marginBottom: 32 }}>
+            Ready to have the roof looked at? Our <Link href="/services/storm-hail-damage/denver" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Denver hail damage roof repair</Link> page covers the free inspection and what we check, and our page on <Link href="/services/insurance-claims/denver" style={{ color: ACCENT, textDecoration: "none", fontWeight: 500 }}>Denver hail insurance claims</Link> explains the adjuster meeting, supplements, and the Colorado rules that protect you.
+          </p>
           <Link href="/contact" style={{ display: "inline-block", background: ACCENT, color: WHITE, borderRadius: 100, padding: "16px 32px", textDecoration: "none", fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 15, fontWeight: 600 }}>
             Request a Free Inspection &amp; Estimate &rarr;
           </Link>
