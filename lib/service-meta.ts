@@ -1,6 +1,7 @@
 import type { CityData, ServiceData } from "./service-areas-data";
 import { getHailScore } from "./hail-data";
 import { SITE_STATS } from "./site-stats";
+import { getServiceCityAnswer } from "./service-city-answers";
 
 // ---------------------------------------------------------------------------
 // Simple string hash for deterministic rotation of description variants
@@ -119,6 +120,9 @@ export function getMetaTitle(service: ServiceData, city: CityData): string {
 }
 
 export function getMetaDescription(service: ServiceData, city: CityData): string {
+  const answer = getServiceCityAnswer(service.slug, city.slug);
+  if (answer) return answer.metaDescription;
+
   const hailData = getHailScore(city.slug);
   const hailPrefix = hailData
     ? `${city.city} scores ${hailData.hailScore}/100 on HailScore, an independent third-party hail-data tool. `

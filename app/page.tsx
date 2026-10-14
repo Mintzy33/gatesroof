@@ -341,6 +341,9 @@ export default function Home() {
               <Link key={c.n} href={cityHref(c.s)} style={{ display: "inline-block", padding: "8px 18px", borderRadius: 100, border: "1.5px solid rgba(13,33,55,0.1)", background: "transparent", color: NAVY, fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}>{c.n}</Link>
             ))}
           </div>
+          <p style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", fontSize: "clamp(14px, 2vw, 16px)", color: TEXT_LIGHT, maxWidth: 560, margin: "28px auto 0", lineHeight: 1.7 }}>
+            Hail hit your Denver home? Start with our <Link href="/services/storm-hail-damage/denver" style={{ color: ACCENT, fontWeight: 500 }}>Denver hail damage roof repair</Link> page, or see how we handle <Link href="/services/insurance-claims/denver" style={{ color: ACCENT, fontWeight: 500 }}>hail insurance claims in Denver</Link>, from the free inspection to the adjuster meeting.
+          </p>
         </div>
       </section>
 

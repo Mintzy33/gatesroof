@@ -5,6 +5,7 @@ import type { CityData, ServiceData } from "./service-areas-data";
 import { getCityBySlug, getServiceBySlug } from "./service-areas-data";
 import { SITE_STATS } from "./site-stats";
 import { GAF_CERTIFICATION_DISCLOSURE } from "./gaf-disclosure";
+import { GATES_ADDRESS, GATES_CERTIFICATIONS } from "./service-city-answers";
 
 export interface FAQItem {
   question: string;
@@ -843,14 +844,79 @@ const CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
 };
 
 // ---------------------------------------------------------------------------
+// Service × city FAQ overrides — keyed "<service>/<city>"
+// ---------------------------------------------------------------------------
+
+// Curated FAQs for the primary answer pages (see lib/service-city-answers.ts).
+// Same single-copy rule as CITY_FAQ_OVERRIDES: page.tsx (FAQPage JSON-LD) and
+// content.tsx (the accordion) both read getServiceCityFAQItems(). Legal answers
+// cite the statute and stay hedged where the outcome depends on the policy.
+const SERVICE_CITY_FAQ_OVERRIDES: Record<string, FAQItem[]> = {
+  "storm-hail-damage/denver": [
+    {
+      question: "Who should I call for hail damage in Denver?",
+      answer: `Call a local roofing contractor for a free roof inspection before you decide whether to file a claim. Gates Enterprises inspects and repairs hail-damaged roofs across Denver from its office at ${GATES_ADDRESS}; call ${SITE_STATS.phone}. Whoever you call, look for a permanent Colorado address, manufacturer certifications, and a written contract that follows Colorado's roofing statute (C.R.S. § 6-22-103).`,
+    },
+    {
+      question: "How do I know if hail damaged my roof?",
+      answer: "From the ground, look for dents in gutters, downspouts and roof vents, dings in your AC unit's fins, and shingle granules washing out of the downspouts. Most hail damage to shingles, like bruised or cracked mats and missing granules, can't be seen from the ground, so the reliable answer is an inspection on the roof. Don't climb up yourself after a storm; a wet or damaged roof is a fall hazard.",
+    },
+    {
+      question: "How long do I have to file a hail claim in Colorado?",
+      answer: "It depends on your policy. Most homeowners policies require you to report damage promptly, and some set a specific deadline for wind and hail claims, so read your policy or ask your agent. Colorado law (C.R.S. § 10-4-110.8(12)) protects a homeowner's time to file a lawsuit over a claim, but it does not replace your policy's notice requirements. Get the roof inspected soon after the storm so the damage is documented while it is clearly tied to that date.",
+    },
+    {
+      question: "Do I need a permit to replace a hail-damaged roof in Denver?",
+      answer: "Yes. The City and County of Denver requires a roofing permit to replace a roof, and for repairs on a house that cover more than 10% of the roof or two roofing squares, whichever is smaller. The permit comes with required city inspections, and Denver issues roofing permits to licensed contractors or to an owner-occupant doing the work themselves. Gates pulls the Denver permit and schedules the inspections as part of the job.",
+    },
+    {
+      question: "Are impact-resistant (Class 4) shingles worth it in Denver?",
+      answer: "Often, in a hail-prone city like Denver. Class 4 is the highest rating under the UL 2218 impact test, and some Colorado insurers offer a premium discount for a Class 4 roof. The discount varies by insurer, so ask yours before you choose. If your roof is being replaced on a claim, upgrading to Class 4 usually means you pay the price difference.",
+    },
+    {
+      question: "Can I wait to fix hail damage on my roof?",
+      answer: "You can, but it is a gamble. Hail-bruised shingles keep shedding granules and can start leaking months later, and your insurer may decline damage it attributes to a later storm or to wear. If you want to wait on the work, at least get the roof inspected and the damage documented now.",
+    },
+  ],
+  "insurance-claims/denver": [
+    {
+      question: "Who are the best roofers in Denver for insurance claims?",
+      answer: `Look for a local roofer that works hail claims every season, has a permanent Colorado address and manufacturer certifications, will meet your adjuster on the roof, and gives you a written contract that follows C.R.S. § 6-22-103. Gates Enterprises in Lakewood does all of that. It holds four manufacturer certifications (${GATES_CERTIFICATIONS}) and has a ${SITE_STATS.starRating}-star rating from ${SITE_STATS.reviewCount} Google reviews. Call ${SITE_STATS.phone} for a free inspection.`,
+    },
+    {
+      question: "Can a roofer talk to my insurance adjuster in Colorado?",
+      answer: "Yes, once you have signed a contract with them. Colorado law (C.R.S. § 6-22-105(3)) lets a roofing contractor with a valid contract discuss the scope of repairs with your insurance company on your behalf, including meeting the adjuster on the roof. The same law bars a roofer from acting as a public adjuster. If you want someone to negotiate the claim itself for you, that is a licensed public adjuster (C.R.S. § 10-2-417) or an attorney.",
+    },
+    {
+      question: "Will filing a hail claim raise my rates?",
+      answer: "It can, and it depends on your insurer. Each company sets its own rating and renewal rules, and a claim may be considered when your policy renews. If an insurer decides not to renew your policy, Colorado requires advance written notice with a specific reason. Ask your agent how your company treats weather claims before you file, and get a free inspection first so you are not filing on a roof without real storm damage. The Colorado Division of Insurance answers consumer questions at 303-894-7490.",
+    },
+    {
+      question: "Do I have to use the roofer my insurance company recommends?",
+      answer: "No. Colorado law (C.R.S. § 10-4-120) says you may choose any repair business, requires your insurer to tell you so, and bars insurers from pressuring you toward a particular contractor.",
+    },
+    {
+      question: "Can a roofer pay or waive my deductible in Colorado?",
+      answer: "No. C.R.S. § 6-22-105 prohibits a roofer paid from insurance proceeds from advertising or promising to pay, waive or rebate any part of your deductible. If a contractor does, your insurer does not have to consider that contractor's estimate, and you or your insurer can sue the contractor for the resulting damages. On a covered claim, your insurer pays the approved scope minus your deductible, and you pay the deductible.",
+    },
+    {
+      question: "What if my insurance company denies or underpays my hail claim?",
+      answer: "Ask for the decision in writing with the specific reason. If you signed a roofing contract, Colorado law (C.R.S. § 6-22-104) generally lets you cancel it within 72 hours of receiving a written denial, in whole or in part; a narrow exception covers denied supplements for damage that could not have been foreseen. If damage was missed, your roofer can document it and submit a supplement or ask for a re-inspection. Beyond that, your options include a licensed public adjuster, an attorney, or a complaint to the Colorado Division of Insurance.",
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
 // PUBLIC API
 // ---------------------------------------------------------------------------
 
 /**
  * Get unique FAQ items for a service x city page.
- * Returns 7 unique FAQs based on the city and service combination.
+ * Curated overrides take precedence; otherwise returns 7 generated FAQs.
  */
 export function getServiceCityFAQItems(citySlug: string, serviceSlug: string): FAQItem[] {
+  const override = SERVICE_CITY_FAQ_OVERRIDES[`${serviceSlug}/${citySlug}`];
+  if (override) return override;
   const city = getCityBySlug(citySlug);
   const service = getServiceBySlug(serviceSlug);
   if (!city || !service) return [];
