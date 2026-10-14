@@ -26,6 +26,10 @@ export interface BlogPost {
   /** Optional. When set, renders a visible FAQ section + emits FAQPage JSON-LD
    *  (via faqSchema) on the post page. Visible text must equal the schema text. */
   faqs?: { q: string; a: string }[];
+  /** Optional. Points rel=canonical (and og:url) at another URL that owns this
+   *  post's intent. The post stays live but leaves the sitemap and the
+   *  auto-generated related-post lists. */
+  canonicalUrl?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -36,6 +40,8 @@ export const blogPosts: BlogPost[] = [
     targetKeyword: "roof insurance claim help Denver Colorado",
     title: "Roof Insurance Claim Help in Denver, Colorado (2026)",
     publishDate: "2026-10-02",
+    // Same commercial intent as the Denver insurance-claims service page; that page owns it.
+    canonicalUrl: "https://www.gatesroof.com/services/insurance-claims/denver",
     readTime: "7 min read",
     category: "Insurance Restoration",
     excerpt: "When a hailstorm damages your Denver roof, filing the insurance claim is only the beginning. The real work — inspecting the damage thoroughly, preparing documentation the adjuster will accept, attending the adjuster meeting so nothing gets missed, and filing supplements when the initial approval falls short — is where most homeowners need a partner, not a pamphlet.",

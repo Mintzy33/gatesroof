@@ -101,7 +101,6 @@ const serviceToBlogPosts: Record<string, string[]> = {
     "roof-maintenance-checklist-colorado",
   ],
   "insurance-claims": [
-    "roof-insurance-claim-help-denver",
     "colorado-roof-insurance-claims-guide",
     "hail-damage-insurance-claim-colorado",
     "hail-damage-roof-insurance-guide-colorado",
